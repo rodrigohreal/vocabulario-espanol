@@ -1184,6 +1184,1010 @@ function updateTopbarStats() {
   const xn = $('topbar-xp-num');     if (xn) xn.textContent = state.pet.totalXp;
 }
 
+// ══════════════════════════════════════════════════════════
+//  DUOLINGO-STYLE LESSONS
+// ══════════════════════════════════════════════════════════
+
+// Exercise types:
+//   t='pick'       — show prompt + 4 options (emoji+text), pick correct
+//   t='translate'  — show source sentence, build target with tiles
+//   t='match'      — match 4 Spanish words with their L1 translations
+//   t='fill'       — fill blank in sentence by picking the right word
+
+const LESSONS = [
+  // ── 1. Saludos ────────────────────────────────────────
+  {
+    id: 'l1', name: 'Saludos', emoji: '👋', desc: 'Saluda en español',
+    exercises: [
+      { t: 'pick', q: '«Привет»', opts: [
+        { txt: 'hola',    em: '👋' },
+        { txt: 'adiós',   em: '🙋' },
+        { txt: 'gracias', em: '🙏' },
+        { txt: 'perdón',  em: '🙇' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Пока»', opts: [
+        { txt: 'hola',  em: '👋' },
+        { txt: 'adiós', em: '🙋' },
+        { txt: 'sí',    em: '✅' },
+        { txt: 'no',    em: '❌' },
+      ], correct: 1 },
+      { t: 'translate', from: 'Доброе утро', tiles: ['buenos', 'días', 'noches', 'tardes'], answer: ['buenos', 'días'] },
+      { t: 'translate', from: 'Добрый день',  tiles: ['buenas', 'tardes', 'noches', 'hola'], answer: ['buenas', 'tardes'] },
+      { t: 'match', pairs: [
+        ['hola',   'привет'],
+        ['adiós',  'пока'],
+        ['bien',   'хорошо'],
+        ['mal',    'плохо'],
+      ]},
+      { t: 'fill', sentence: ['Buenas', null, '.'], target: 'noches', opts: ['noches', 'días', 'mal'], hint: '«Спокойной ночи»' },
+      { t: 'pick', q: '«Как дела?»', opts: [
+        { txt: '¿cómo estás?',  em: '🤔' },
+        { txt: 'me llamo Ana',  em: '👤' },
+        { txt: 'gracias',       em: '🙏' },
+        { txt: 'adiós',         em: '🙋' },
+      ], correct: 0 },
+      { t: 'translate', from: 'Я в порядке', tiles: ['estoy', 'bien', 'mal', 'soy'], answer: ['estoy', 'bien'] },
+    ],
+  },
+
+  // ── 2. Yo soy ─────────────────────────────────────────
+  {
+    id: 'l2', name: 'Yo soy', emoji: '🙋', desc: 'Pronombres y verbo ser',
+    exercises: [
+      { t: 'pick', q: '«Я»', opts: [
+        { txt: 'yo',  em: '👤' },
+        { txt: 'tú',  em: '👉' },
+        { txt: 'él',  em: '👨' },
+        { txt: 'ella',em: '👩' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Она»', opts: [
+        { txt: 'él',   em: '👨' },
+        { txt: 'ella', em: '👩' },
+        { txt: 'yo',   em: '👤' },
+        { txt: 'tú',   em: '👉' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['yo',       'я'],
+        ['tú',       'ты'],
+        ['él',       'он'],
+        ['nosotros', 'мы'],
+      ]},
+      { t: 'translate', from: 'Меня зовут Ана', tiles: ['me', 'llamo', 'Ana', 'soy', 'tú'], answer: ['me', 'llamo', 'Ana'] },
+      { t: 'fill', sentence: ['Yo', null, 'María.'], target: 'soy', opts: ['soy', 'eres', 'es'], hint: '«Я» Мария' },
+      { t: 'fill', sentence: ['¿Cómo te', null, '?'], target: 'llamas', opts: ['llamas', 'llamo', 'llama'], hint: 'Как тебя зовут?' },
+      { t: 'translate', from: 'Я Денис', tiles: ['yo', 'soy', 'Denis', 'eres'], answer: ['yo', 'soy', 'Denis'] },
+    ],
+  },
+
+  // ── 3. Familia ────────────────────────────────────────
+  {
+    id: 'l3', name: 'Familia', emoji: '👨‍👩‍👧', desc: 'Miembros de la familia',
+    exercises: [
+      { t: 'pick', q: '«Мама»', opts: [
+        { txt: 'madre',  em: '👩' },
+        { txt: 'padre',  em: '👨' },
+        { txt: 'hermana',em: '👧' },
+        { txt: 'abuela', em: '👵' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Папа»', opts: [
+        { txt: 'hermano',em: '👦' },
+        { txt: 'hijo',   em: '🧒' },
+        { txt: 'padre',  em: '👨' },
+        { txt: 'abuelo', em: '👴' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Сестра»', opts: [
+        { txt: 'hermano', em: '👦' },
+        { txt: 'hermana', em: '👧' },
+        { txt: 'hija',    em: '👶' },
+        { txt: 'madre',   em: '👩' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['madre',   'мама'],
+        ['padre',   'папа'],
+        ['hijo',    'сын'],
+        ['hija',    'дочь'],
+      ]},
+      { t: 'match', pairs: [
+        ['hermano', 'брат'],
+        ['hermana', 'сестра'],
+        ['abuelo',  'дедушка'],
+        ['abuela',  'бабушка'],
+      ]},
+      { t: 'translate', from: 'Моя сестра', tiles: ['mi', 'hermana', 'hermano', 'su'], answer: ['mi', 'hermana'] },
+      { t: 'fill', sentence: ['Mi', null, 'es alta.'], target: 'madre', opts: ['madre', 'padre', 'hermano'], hint: 'Моя мама высокая' },
+    ],
+  },
+
+  // ── 4. Números 1-10 ───────────────────────────────────
+  {
+    id: 'l4', name: 'Números', emoji: '🔢', desc: 'Cuenta del 1 al 10',
+    exercises: [
+      { t: 'pick', q: '«1» (один)', opts: [
+        { txt: 'uno',    em: '1️⃣' },
+        { txt: 'dos',    em: '2️⃣' },
+        { txt: 'tres',   em: '3️⃣' },
+        { txt: 'cuatro', em: '4️⃣' },
+      ], correct: 0 },
+      { t: 'pick', q: '«5» (пять)', opts: [
+        { txt: 'tres',   em: '3️⃣' },
+        { txt: 'cuatro', em: '4️⃣' },
+        { txt: 'cinco',  em: '5️⃣' },
+        { txt: 'seis',   em: '6️⃣' },
+      ], correct: 2 },
+      { t: 'pick', q: '«10» (десять)', opts: [
+        { txt: 'siete',  em: '7️⃣' },
+        { txt: 'ocho',   em: '8️⃣' },
+        { txt: 'nueve',  em: '9️⃣' },
+        { txt: 'diez',   em: '🔟' },
+      ], correct: 3 },
+      { t: 'match', pairs: [
+        ['uno',  'один'],
+        ['dos',  'два'],
+        ['tres', 'три'],
+        ['cuatro','четыре'],
+      ]},
+      { t: 'match', pairs: [
+        ['seis',  'шесть'],
+        ['siete', 'семь'],
+        ['ocho',  'восемь'],
+        ['nueve', 'девять'],
+      ]},
+      { t: 'translate', from: 'Два кота', tiles: ['dos', 'tres', 'gatos', 'gato'], answer: ['dos', 'gatos'] },
+      { t: 'fill', sentence: ['Tengo', null, 'años.'], target: 'siete', opts: ['siete', 'ocho', 'sí'], hint: 'Мне 7 лет' },
+    ],
+  },
+
+  // ── 5. Colores ────────────────────────────────────────
+  {
+    id: 'l5', name: 'Colores', emoji: '🎨', desc: 'Aprende los colores',
+    exercises: [
+      { t: 'pick', q: '«Красный»', opts: [
+        { txt: 'rojo',     em: '🔴' },
+        { txt: 'azul',     em: '🔵' },
+        { txt: 'verde',    em: '🟢' },
+        { txt: 'amarillo', em: '🟡' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Синий»', opts: [
+        { txt: 'verde',    em: '🟢' },
+        { txt: 'azul',     em: '🔵' },
+        { txt: 'rosa',     em: '🌸' },
+        { txt: 'rojo',     em: '🔴' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Жёлтый»', opts: [
+        { txt: 'naranja',  em: '🟠' },
+        { txt: 'amarillo', em: '🟡' },
+        { txt: 'blanco',   em: '⚪' },
+        { txt: 'negro',    em: '⚫' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['rojo',   'красный'],
+        ['azul',   'синий'],
+        ['verde',  'зелёный'],
+        ['negro',  'чёрный'],
+      ]},
+      { t: 'match', pairs: [
+        ['amarillo','жёлтый'],
+        ['blanco',  'белый'],
+        ['rosa',    'розовый'],
+        ['naranja', 'оранжевый'],
+      ]},
+      { t: 'translate', from: 'Красная роза', tiles: ['una', 'rosa', 'roja', 'azul'], answer: ['una', 'rosa', 'roja'] },
+      { t: 'fill', sentence: ['El cielo es', null, '.'], target: 'azul', opts: ['azul', 'verde', 'rojo'], hint: 'Небо синее' },
+    ],
+  },
+
+  // ── 6. Comida ─────────────────────────────────────────
+  {
+    id: 'l6', name: 'Comida', emoji: '🍎', desc: 'Comida básica',
+    exercises: [
+      { t: 'pick', q: '«Хлеб»', opts: [
+        { txt: 'pan',     em: '🍞' },
+        { txt: 'queso',   em: '🧀' },
+        { txt: 'huevo',   em: '🥚' },
+        { txt: 'manzana', em: '🍎' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Вода»', opts: [
+        { txt: 'leche',   em: '🥛' },
+        { txt: 'café',    em: '☕' },
+        { txt: 'agua',    em: '💧' },
+        { txt: 'té',      em: '🍵' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Яблоко»', opts: [
+        { txt: 'pollo',   em: '🍗' },
+        { txt: 'manzana', em: '🍎' },
+        { txt: 'arroz',   em: '🍚' },
+        { txt: 'queso',   em: '🧀' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['pan',     'хлеб'],
+        ['agua',    'вода'],
+        ['leche',   'молоко'],
+        ['queso',   'сыр'],
+      ]},
+      { t: 'match', pairs: [
+        ['café',    'кофе'],
+        ['té',      'чай'],
+        ['huevo',   'яйцо'],
+        ['manzana', 'яблоко'],
+      ]},
+      { t: 'translate', from: 'Я пью воду', tiles: ['yo', 'bebo', 'agua', 'como'], answer: ['yo', 'bebo', 'agua'] },
+      { t: 'fill', sentence: ['Como una', null, '.'], target: 'manzana', opts: ['manzana', 'agua', 'leche'], hint: 'Я ем яблоко' },
+    ],
+  },
+
+  // ── 7. Animales ───────────────────────────────────────
+  {
+    id: 'l7', name: 'Animales', emoji: '🐶', desc: 'Animales comunes',
+    exercises: [
+      { t: 'pick', q: '«Собака»', opts: [
+        { txt: 'gato',  em: '🐱' },
+        { txt: 'perro', em: '🐶' },
+        { txt: 'pez',   em: '🐟' },
+        { txt: 'pájaro',em: '🐦' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Кот»', opts: [
+        { txt: 'gato',   em: '🐱' },
+        { txt: 'caballo',em: '🐴' },
+        { txt: 'oveja',  em: '🐑' },
+        { txt: 'conejo', em: '🐰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Лошадь»', opts: [
+        { txt: 'vaca',   em: '🐮' },
+        { txt: 'oveja',  em: '🐑' },
+        { txt: 'caballo',em: '🐴' },
+        { txt: 'perro',  em: '🐶' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['perro',  'собака'],
+        ['gato',   'кот'],
+        ['pájaro', 'птица'],
+        ['pez',    'рыба'],
+      ]},
+      { t: 'match', pairs: [
+        ['caballo','лошадь'],
+        ['vaca',   'корова'],
+        ['oveja',  'овца'],
+        ['conejo', 'кролик'],
+      ]},
+      { t: 'translate', from: 'У меня есть собака', tiles: ['tengo', 'un', 'perro', 'gato'], answer: ['tengo', 'un', 'perro'] },
+      { t: 'fill', sentence: ['El', null, 'maúlla.'], target: 'gato', opts: ['gato', 'perro', 'pez'], hint: 'Кот мяукает' },
+    ],
+  },
+
+  // ── 8. Días de la semana ──────────────────────────────
+  {
+    id: 'l8', name: 'Días', emoji: '📅', desc: 'Días de la semana',
+    exercises: [
+      { t: 'pick', q: '«Понедельник»', opts: [
+        { txt: 'lunes',     em: '1️⃣' },
+        { txt: 'martes',    em: '2️⃣' },
+        { txt: 'jueves',    em: '4️⃣' },
+        { txt: 'domingo',   em: '7️⃣' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Суббота»', opts: [
+        { txt: 'viernes', em: '5️⃣' },
+        { txt: 'sábado',  em: '6️⃣' },
+        { txt: 'domingo', em: '7️⃣' },
+        { txt: 'lunes',   em: '1️⃣' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Воскресенье»', opts: [
+        { txt: 'lunes',    em: '1️⃣' },
+        { txt: 'sábado',   em: '6️⃣' },
+        { txt: 'domingo',  em: '7️⃣' },
+        { txt: 'miércoles',em: '3️⃣' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['lunes',     'понедельник'],
+        ['martes',    'вторник'],
+        ['miércoles', 'среда'],
+        ['jueves',    'четверг'],
+      ]},
+      { t: 'match', pairs: [
+        ['viernes', 'пятница'],
+        ['sábado',  'суббота'],
+        ['domingo', 'воскресенье'],
+        ['hoy',     'сегодня'],
+      ]},
+      { t: 'translate', from: 'Сегодня понедельник', tiles: ['hoy', 'es', 'lunes', 'martes'], answer: ['hoy', 'es', 'lunes'] },
+      { t: 'fill', sentence: ['Mañana es', null, '.'], target: 'sábado', opts: ['sábado', 'lunes', 'hoy'], hint: 'Завтра суббота' },
+    ],
+  },
+
+  // ── 9. Verbos básicos ─────────────────────────────────
+  {
+    id: 'l9', name: 'Verbos', emoji: '🏃', desc: 'Verbos básicos',
+    exercises: [
+      { t: 'pick', q: '«Есть/Кушать»', opts: [
+        { txt: 'comer',  em: '🍽️' },
+        { txt: 'beber',  em: '🥤' },
+        { txt: 'hablar', em: '💬' },
+        { txt: 'vivir',  em: '🏠' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Пить»', opts: [
+        { txt: 'comer',  em: '🍽️' },
+        { txt: 'beber',  em: '🥤' },
+        { txt: 'ir',     em: '🚶' },
+        { txt: 'tener',  em: '✋' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Говорить»', opts: [
+        { txt: 'ir',     em: '🚶' },
+        { txt: 'vivir',  em: '🏠' },
+        { txt: 'hablar', em: '💬' },
+        { txt: 'tener',  em: '✋' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['ser',    'быть'],
+        ['tener',  'иметь'],
+        ['ir',     'идти'],
+        ['hablar', 'говорить'],
+      ]},
+      { t: 'match', pairs: [
+        ['comer',  'есть'],
+        ['beber',  'пить'],
+        ['vivir',  'жить'],
+        ['estar',  'находиться'],
+      ]},
+      { t: 'translate', from: 'Я ем хлеб', tiles: ['yo', 'como', 'pan', 'bebo'], answer: ['yo', 'como', 'pan'] },
+      { t: 'fill', sentence: ['Yo', null, 'español.'], target: 'hablo', opts: ['hablo', 'como', 'tengo'], hint: 'Я говорю по-испански' },
+    ],
+  },
+
+  // ── 10. Frases útiles ─────────────────────────────────
+  {
+    id: 'l10', name: 'Frases útiles', emoji: '💬', desc: 'Frases del día a día',
+    exercises: [
+      { t: 'pick', q: '«Спасибо»', opts: [
+        { txt: 'gracias',   em: '🙏' },
+        { txt: 'por favor', em: '🤲' },
+        { txt: 'perdón',    em: '🙇' },
+        { txt: 'salud',     em: '🥂' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Пожалуйста»', opts: [
+        { txt: 'gracias',   em: '🙏' },
+        { txt: 'por favor', em: '🤲' },
+        { txt: 'sí',        em: '✅' },
+        { txt: 'no',        em: '❌' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Извини»', opts: [
+        { txt: 'gracias',   em: '🙏' },
+        { txt: 'salud',     em: '🥂' },
+        { txt: 'perdón',    em: '🙇' },
+        { txt: 'mucho gusto',em: '🤝' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['gracias',   'спасибо'],
+        ['por favor', 'пожалуйста'],
+        ['sí',        'да'],
+        ['no',        'нет'],
+      ]},
+      { t: 'match', pairs: [
+        ['perdón',     'извини'],
+        ['hasta luego','до свидания'],
+        ['mucho gusto','приятно познакомиться'],
+        ['lo siento',  'мне жаль'],
+      ]},
+      { t: 'translate', from: 'Большое спасибо', tiles: ['muchas', 'gracias', 'por', 'favor'], answer: ['muchas', 'gracias'] },
+      { t: 'fill', sentence: ['Mucho', null, '.'], target: 'gusto', opts: ['gusto', 'gracias', 'favor'], hint: 'Приятно познакомиться' },
+    ],
+  },
+];
+
+// ── Lesson runtime state ─────────────────────────────────
+const lessonState = {
+  lessonId:    null,
+  exercises:   [],   // copy of current lesson exercises
+  current:     0,    // index of current exercise
+  hearts:      3,
+  wrong:       0,    // mistakes counter (for accuracy)
+  pendingOk:   false,// last check was correct
+  // Per-exercise inputs:
+  pickChoice:  null,    // 'pick'
+  buildAnswer: [],      // 'translate'
+  buildBank:   [],
+  matchPicks:  [],      // 'match' — currently selected tile { side, idx }
+  matchPairs:  0,       // count solved
+  fillChoice:  null,    // 'fill'
+};
+
+function getLessonProgress() {
+  if (!state.user) return {};
+  try {
+    return JSON.parse(localStorage.getItem('lesson_prog_' + state.user) || '{}');
+  } catch { return {}; }
+}
+function saveLessonProgress(prog) {
+  if (!state.user) return;
+  localStorage.setItem('lesson_prog_' + state.user, JSON.stringify(prog));
+}
+
+function lessonIsUnlocked(idx, prog) {
+  if (idx === 0) return true;
+  return !!prog[LESSONS[idx - 1].id]?.completed;
+}
+
+// ── Render lessons path on home ──────────────────────────
+function renderLessonsPath() {
+  const wrap = $('lessons-path');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+
+  const title = document.createElement('div');
+  title.className = 'lessons-path-title';
+  title.textContent = '🎓 Lecciones';
+  wrap.appendChild(title);
+
+  const prog = getLessonProgress();
+  const firstUnfinished = LESSONS.findIndex((l, i) => lessonIsUnlocked(i, prog) && !prog[l.id]?.completed);
+
+  LESSONS.forEach((lesson, idx) => {
+    const node = document.createElement('div');
+    const unlocked = lessonIsUnlocked(idx, prog);
+    const completed = !!prog[lesson.id]?.completed;
+    node.className = 'lesson-node' + (unlocked ? '' : ' locked') + (completed ? ' completed' : '');
+    if (idx === firstUnfinished && !completed) node.classList.add('start-here');
+
+    if (unlocked) {
+      const em = document.createElement('span');
+      em.className = 'lesson-node-emoji';
+      em.textContent = lesson.emoji;
+      node.appendChild(em);
+    } else {
+      const lock = document.createElement('span');
+      lock.className = 'lock-ico';
+      lock.textContent = '🔒';
+      node.appendChild(lock);
+    }
+
+    const lbl = document.createElement('span');
+    lbl.className = 'lesson-node-label';
+    lbl.textContent = lesson.name;
+    node.appendChild(lbl);
+
+    node.addEventListener('click', () => {
+      haptic.light();
+      if (!unlocked) {
+        flashLessonLocked(lesson, idx);
+        return;
+      }
+      showLessonPreview(lesson, completed);
+    });
+
+    wrap.appendChild(node);
+  });
+}
+
+function flashLessonLocked(lesson, idx) {
+  const prev = LESSONS[idx - 1];
+  showLessonPreview(lesson, false, { locked: true, prevName: prev?.name });
+}
+
+function showLessonPreview(lesson, completed, opts = {}) {
+  // Build a transient preview overlay
+  const prev = document.createElement('div');
+  prev.className = 'lesson-preview';
+  prev.innerHTML = `
+    <div class="lesson-preview-card">
+      <div class="lesson-preview-emoji">${opts.locked ? '🔒' : lesson.emoji}</div>
+      <div class="lesson-preview-name">${lesson.name}</div>
+      <div class="lesson-preview-desc">${
+        opts.locked
+          ? 'Completa "' + (opts.prevName || '...') + '" primero'
+          : (completed ? '¡Ya completaste esta lección! ¿Practicar de nuevo?' : lesson.desc)
+      }</div>
+      ${opts.locked ? '' : '<button class="act-btn" id="lp-start">¡Empezar!</button>'}
+      <button class="act-btn lesson-preview-skip" id="lp-cancel">${opts.locked ? 'Entendido' : 'Cancelar'}</button>
+    </div>
+  `;
+  document.body.appendChild(prev);
+  prev.querySelector('#lp-cancel').addEventListener('click', () => prev.remove());
+  if (!opts.locked) {
+    prev.querySelector('#lp-start').addEventListener('click', () => {
+      prev.remove();
+      startLesson(lesson.id);
+    });
+  }
+}
+
+// ── Start / restart lesson ───────────────────────────────
+function startLesson(lessonId) {
+  const lesson = LESSONS.find(l => l.id === lessonId);
+  if (!lesson) return;
+  haptic.medium();
+  lessonState.lessonId = lessonId;
+  lessonState.exercises = shuffleExercises(lesson.exercises);
+  lessonState.current = 0;
+  lessonState.hearts = 3;
+  lessonState.wrong = 0;
+  lessonState.pendingOk = false;
+  showScreen('lesson');
+  renderHearts();
+  renderCurrentExercise();
+}
+
+function shuffleExercises(list) {
+  // Shuffle order; for match exercises also shuffle pair display
+  return list.map(ex => {
+    if (ex.t === 'pick') {
+      // shuffle options but track new correct index
+      const correctOpt = ex.opts[ex.correct];
+      const opts = [...ex.opts].sort(() => Math.random() - 0.5);
+      return { ...ex, opts, correct: opts.indexOf(correctOpt) };
+    }
+    return ex;
+  });
+}
+
+function renderHearts() {
+  const el = $('lesson-hearts');
+  el.innerHTML = '';
+  for (let i = 0; i < 3; i++) {
+    const h = document.createElement('span');
+    h.className = 'heart' + (i >= lessonState.hearts ? ' lost' : '');
+    h.textContent = '❤️';
+    el.appendChild(h);
+  }
+}
+
+function updateLessonProgressBar() {
+  const total = lessonState.exercises.length;
+  const cur   = lessonState.current;
+  $('lesson-progress').style.width = ((cur / total) * 100) + '%';
+}
+
+function renderCurrentExercise() {
+  const ex = lessonState.exercises[lessonState.current];
+  if (!ex) return completeLesson();
+  updateLessonProgressBar();
+
+  // Reset feedback
+  $('lesson-feedback').classList.add('hidden');
+  $('lesson-feedback').classList.remove('correct', 'wrong');
+  // Reset check button
+  const checkBtn = $('lesson-check-btn');
+  checkBtn.disabled = true;
+  checkBtn.textContent = 'Verificar';
+  // Show actions, hide feedback initially handled above
+
+  // Reset per-exercise state
+  lessonState.pickChoice = null;
+  lessonState.buildAnswer = [];
+  lessonState.buildBank = [];
+  lessonState.matchPicks = [];
+  lessonState.matchPairs = 0;
+  lessonState.fillChoice = null;
+
+  const root = $('lesson-exercise');
+  root.innerHTML = '';
+
+  if (ex.t === 'pick')        renderPickExercise(root, ex);
+  else if (ex.t === 'translate') renderTranslateExercise(root, ex);
+  else if (ex.t === 'match')     renderMatchExercise(root, ex);
+  else if (ex.t === 'fill')      renderFillExercise(root, ex);
+}
+
+// ── Exercise: pick (multiple choice) ─────────────────────
+function renderPickExercise(root, ex) {
+  const inst = document.createElement('p');
+  inst.className = 'lex-instruction';
+  inst.textContent = '¿Cuál de estos es...?';
+  root.appendChild(inst);
+
+  const prompt = document.createElement('div');
+  prompt.className = 'lex-translation';
+  prompt.textContent = ex.q;
+  root.appendChild(prompt);
+
+  const grid = document.createElement('div');
+  grid.className = 'lex-pick-options';
+  ex.opts.forEach((opt, i) => {
+    const card = document.createElement('div');
+    card.className = 'lex-option';
+    card.innerHTML = `
+      <span class="lex-option-num">${i + 1}</span>
+      <span class="lex-option-emoji">${opt.em}</span>
+      <span class="lex-option-text">${opt.txt}</span>
+    `;
+    card.addEventListener('click', () => {
+      haptic.light();
+      grid.querySelectorAll('.lex-option').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      lessonState.pickChoice = i;
+      $('lesson-check-btn').disabled = false;
+    });
+    grid.appendChild(card);
+  });
+  root.appendChild(grid);
+}
+
+// ── Exercise: translate (build sentence) ─────────────────
+function renderTranslateExercise(root, ex) {
+  const inst = document.createElement('p');
+  inst.className = 'lex-instruction';
+  inst.textContent = 'Traduce al español';
+  root.appendChild(inst);
+
+  const bubble = document.createElement('div');
+  bubble.className = 'lex-bubble';
+  bubble.innerHTML = `
+    <div class="lex-bubble-avatar">🦎</div>
+    <div class="lex-bubble-text">${ex.from}</div>
+  `;
+  root.appendChild(bubble);
+
+  const ans = document.createElement('div');
+  ans.className = 'lex-answer-area';
+  ans.id = 'lex-answer-area';
+  root.appendChild(ans);
+
+  const bank = document.createElement('div');
+  bank.className = 'lex-bank';
+  bank.id = 'lex-bank';
+  root.appendChild(bank);
+
+  const tiles = [...ex.tiles].sort(() => Math.random() - 0.5);
+  lessonState.buildBank = tiles.map((word, i) => ({ word, i, used: false }));
+  drawTranslateBank();
+  drawTranslateAnswer();
+}
+
+function drawTranslateBank() {
+  const bank = $('lex-bank');
+  bank.innerHTML = '';
+  lessonState.buildBank.forEach((entry, idx) => {
+    const tile = document.createElement('div');
+    tile.className = 'lex-tile' + (entry.used ? ' used' : '');
+    tile.textContent = entry.word;
+    tile.addEventListener('click', () => {
+      if (entry.used) return;
+      haptic.light();
+      entry.used = true;
+      lessonState.buildAnswer.push(idx);
+      drawTranslateBank();
+      drawTranslateAnswer();
+    });
+    bank.appendChild(tile);
+  });
+}
+
+function drawTranslateAnswer() {
+  const ans = $('lex-answer-area');
+  ans.innerHTML = '';
+  lessonState.buildAnswer.forEach((bankIdx) => {
+    const entry = lessonState.buildBank[bankIdx];
+    const tile = document.createElement('div');
+    tile.className = 'lex-tile in-answer';
+    tile.textContent = entry.word;
+    tile.addEventListener('click', () => {
+      haptic.light();
+      entry.used = false;
+      lessonState.buildAnswer = lessonState.buildAnswer.filter(i => i !== bankIdx);
+      drawTranslateBank();
+      drawTranslateAnswer();
+    });
+    ans.appendChild(tile);
+  });
+  $('lesson-check-btn').disabled = lessonState.buildAnswer.length === 0;
+}
+
+// ── Exercise: match pairs ────────────────────────────────
+function renderMatchExercise(root, ex) {
+  const inst = document.createElement('p');
+  inst.className = 'lex-instruction';
+  inst.textContent = 'Empareja las palabras';
+  root.appendChild(inst);
+
+  const grid = document.createElement('div');
+  grid.className = 'lex-match-grid';
+  root.appendChild(grid);
+
+  // Build two columns of tiles
+  const left  = ex.pairs.map((p, i) => ({ side: 'L', idx: i, text: p[0] }));
+  const right = ex.pairs.map((p, i) => ({ side: 'R', idx: i, text: p[1] }));
+  shuffleArray(left);
+  shuffleArray(right);
+
+  // Interleave in 2-col grid: L1 R1 L2 R2 ... (so columns mix)
+  const interleaved = [];
+  for (let i = 0; i < left.length; i++) {
+    interleaved.push(left[i], right[i]);
+  }
+
+  interleaved.forEach((item) => {
+    const tile = document.createElement('div');
+    tile.className = 'lex-match-tile';
+    tile.textContent = item.text;
+    tile.dataset.side = item.side;
+    tile.dataset.idx = item.idx;
+    tile.addEventListener('click', () => handleMatchTap(tile, item, ex));
+    grid.appendChild(tile);
+  });
+
+  // For match, the "Verificar" button doesn't apply — auto-completes
+  $('lesson-check-btn').textContent = 'Continuar';
+  $('lesson-check-btn').disabled = true;
+}
+
+function handleMatchTap(tile, item, ex) {
+  if (tile.classList.contains('matched')) return;
+  haptic.light();
+
+  // Find currently selected tile on the same side and clear it
+  const grid = tile.parentElement;
+  const sameSide = grid.querySelector(`.lex-match-tile.selected[data-side="${item.side}"]`);
+  if (sameSide && sameSide !== tile) sameSide.classList.remove('selected');
+
+  if (tile.classList.contains('selected')) {
+    tile.classList.remove('selected');
+    return;
+  }
+  tile.classList.add('selected');
+
+  // Check if there's a tile selected on the other side
+  const otherSelected = grid.querySelector(`.lex-match-tile.selected[data-side="${item.side === 'L' ? 'R' : 'L'}"]`);
+  if (!otherSelected) return;
+
+  const a = tile;
+  const b = otherSelected;
+  if (a.dataset.idx === b.dataset.idx) {
+    // Match!
+    a.classList.add('flash-correct');
+    b.classList.add('flash-correct');
+    a.classList.remove('selected');
+    b.classList.remove('selected');
+    haptic.success();
+    setTimeout(() => {
+      a.classList.add('matched');
+      b.classList.add('matched');
+    }, 350);
+    lessonState.matchPairs++;
+    if (lessonState.matchPairs === ex.pairs.length) {
+      // All matched — auto-advance
+      $('lesson-check-btn').disabled = false;
+      setTimeout(() => onCheckPressed(), 600);
+    }
+  } else {
+    // Wrong
+    a.classList.add('flash-wrong');
+    b.classList.add('flash-wrong');
+    haptic.error();
+    setTimeout(() => {
+      a.classList.remove('flash-wrong', 'selected');
+      b.classList.remove('flash-wrong', 'selected');
+    }, 500);
+    lessonState.wrong++;
+    loseHeart();
+  }
+}
+
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+// ── Exercise: fill in the blank ──────────────────────────
+function renderFillExercise(root, ex) {
+  const inst = document.createElement('p');
+  inst.className = 'lex-instruction';
+  inst.textContent = 'Completa la oración';
+  root.appendChild(inst);
+
+  if (ex.hint) {
+    const hint = document.createElement('div');
+    hint.className = 'lex-bubble';
+    hint.innerHTML = `
+      <div class="lex-bubble-avatar">🦎</div>
+      <div class="lex-bubble-text">${ex.hint}</div>
+    `;
+    root.appendChild(hint);
+  }
+
+  const sentence = document.createElement('div');
+  sentence.className = 'lex-fill-sentence';
+  sentence.id = 'lex-fill-sentence';
+  drawFillSentence(sentence, ex);
+  root.appendChild(sentence);
+
+  const opts = document.createElement('div');
+  opts.className = 'lex-fill-options';
+  const shuffled = [...ex.opts].sort(() => Math.random() - 0.5);
+  shuffled.forEach(opt => {
+    const tile = document.createElement('div');
+    tile.className = 'lex-tile';
+    tile.textContent = opt;
+    tile.addEventListener('click', () => {
+      haptic.light();
+      lessonState.fillChoice = opt;
+      opts.querySelectorAll('.lex-tile').forEach(t => t.classList.remove('in-answer'));
+      tile.classList.add('in-answer');
+      drawFillSentence(sentence, ex);
+      $('lesson-check-btn').disabled = false;
+    });
+    opts.appendChild(tile);
+  });
+  root.appendChild(opts);
+}
+
+function drawFillSentence(el, ex) {
+  el.innerHTML = '';
+  ex.sentence.forEach((piece) => {
+    if (piece === null) {
+      const blank = document.createElement('span');
+      blank.className = 'lex-blank' + (lessonState.fillChoice ? '' : ' empty');
+      blank.textContent = lessonState.fillChoice || '     ';
+      el.appendChild(blank);
+    } else {
+      const text = document.createElement('span');
+      text.textContent = ' ' + piece + ' ';
+      el.appendChild(text);
+    }
+  });
+}
+
+// ── Check / continue ─────────────────────────────────────
+$('lesson-check-btn')?.addEventListener('click', onCheckPressed);
+$('feedback-continue')?.addEventListener('click', onContinuePressed);
+
+function onCheckPressed() {
+  const ex = lessonState.exercises[lessonState.current];
+  if (!ex) return;
+  let correct = false;
+  let userAnswerText = '';
+  let correctText = '';
+
+  if (ex.t === 'pick') {
+    correct = lessonState.pickChoice === ex.correct;
+    userAnswerText = ex.opts[lessonState.pickChoice]?.txt || '';
+    correctText = ex.opts[ex.correct].txt;
+  } else if (ex.t === 'translate') {
+    const userWords = lessonState.buildAnswer.map(i => lessonState.buildBank[i].word);
+    correct = arraysEqual(userWords, ex.answer);
+    userAnswerText = userWords.join(' ');
+    correctText = ex.answer.join(' ');
+  } else if (ex.t === 'match') {
+    correct = lessonState.matchPairs === ex.pairs.length;
+    correctText = ''; // no detail needed
+  } else if (ex.t === 'fill') {
+    correct = lessonState.fillChoice === ex.target;
+    userAnswerText = lessonState.fillChoice || '';
+    correctText = ex.target;
+  }
+
+  showFeedback(correct, correctText);
+  if (!correct) {
+    lessonState.wrong++;
+    loseHeart();
+  }
+}
+
+function arraysEqual(a, b) {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
+  return true;
+}
+
+function showFeedback(correct, correctText) {
+  const fb = $('lesson-feedback');
+  fb.classList.remove('hidden');
+  fb.classList.toggle('correct', correct);
+  fb.classList.toggle('wrong', !correct);
+  $('feedback-title').textContent = correct ? '¡Correcto!' : 'Incorrecto';
+  $('feedback-detail').innerHTML = correct
+    ? '¡Bien hecho! 🎉'
+    : (correctText ? `Respuesta: <strong>${correctText}</strong>` : 'Inténtalo de nuevo en la próxima.');
+  $('feedback-continue').textContent = 'Continuar';
+  lessonState.pendingOk = correct;
+  if (correct) haptic.success(); else haptic.error();
+}
+
+function onContinuePressed() {
+  haptic.light();
+  if (lessonState.hearts <= 0) return failLesson();
+  // If they got it wrong, they could re-try the same exercise — keep simple, advance
+  lessonState.current++;
+  if (lessonState.current >= lessonState.exercises.length) {
+    completeLesson();
+  } else {
+    renderCurrentExercise();
+  }
+}
+
+function loseHeart() {
+  lessonState.hearts = Math.max(0, lessonState.hearts - 1);
+  renderHearts();
+  if (lessonState.hearts === 0) {
+    setTimeout(() => failLesson(), 700);
+  }
+}
+
+// ── Lesson result ────────────────────────────────────────
+function completeLesson() {
+  const lesson = LESSONS.find(l => l.id === lessonState.lessonId);
+  if (!lesson) return renderHome();
+
+  // Save progress
+  const prog = getLessonProgress();
+  const prev = prog[lesson.id] || {};
+  const baseXp   = 50;
+  const heartXp  = lessonState.hearts * 10;
+  const earned   = baseXp + heartXp;
+  prog[lesson.id] = {
+    completed: true,
+    bestHearts: Math.max(prev.bestHearts || 0, lessonState.hearts),
+    plays: (prev.plays || 0) + 1,
+  };
+  saveLessonProgress(prog);
+
+  // Award pet XP
+  if (state.pet) {
+    petTouchActivity();
+    state.pet.hunger    = Math.min(100, state.pet.hunger + 18);
+    state.pet.happiness = Math.min(100, state.pet.happiness + 12);
+    petAddXp(earned);
+  }
+
+  // Compute stats
+  const total = lessonState.exercises.length;
+  const acc   = Math.round(((total - lessonState.wrong) / total) * 100);
+  $('lesson-result-xp').textContent     = '+' + earned;
+  $('lesson-result-hearts').textContent = lessonState.hearts;
+  $('lesson-result-acc').textContent    = acc + '%';
+  showScreen('lesson-results');
+  spawnConfetti();
+}
+
+function failLesson() {
+  showScreen('lesson-fail');
+}
+
+// ── Lesson nav buttons ───────────────────────────────────
+$('lesson-quit-btn')?.addEventListener('click', () => {
+  haptic.light();
+  if (confirm('¿Salir de la lección? Perderás tu progreso actual.')) {
+    renderHome();
+  }
+});
+
+$('lesson-skip-btn')?.addEventListener('click', () => {
+  haptic.light();
+  // Treat skip as wrong but advance
+  lessonState.wrong++;
+  loseHeart();
+  if (lessonState.hearts > 0) {
+    lessonState.current++;
+    if (lessonState.current >= lessonState.exercises.length) completeLesson();
+    else renderCurrentExercise();
+  }
+});
+
+$('lesson-results-continue')?.addEventListener('click', () => {
+  haptic.light();
+  renderHome();
+});
+
+$('lesson-retry-btn')?.addEventListener('click', () => {
+  haptic.light();
+  startLesson(lessonState.lessonId);
+});
+
+$('lesson-fail-home-btn')?.addEventListener('click', () => {
+  haptic.light();
+  renderHome();
+});
+
+// Add 'lesson' and 'lesson-results' / 'lesson-fail' screens to the screens map
+screens.lesson           = $('lesson-screen');
+screens['lesson-results']= $('lesson-results-screen');
+screens['lesson-fail']   = $('lesson-fail-screen');
+
+// Hook into renderHome so the lessons path is rendered/refreshed
+const _origRenderHomeLessons = renderHome;
+renderHome = function() {
+  _origRenderHomeLessons();
+  renderLessonsPath();
+};
+
 // ── INIT ──────────────────────────────────────────────────
 (async () => {
   state.users = await loadUsers();

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <div id="app">
@@ -51,6 +51,9 @@
           <div class="mini-progress"><div id="mini-progress-bar" class="mini-progress-bar"></div></div>
         </div>
       </div>
+      <!-- Duolingo-style lessons path -->
+      <div id="lessons-path" class="lessons-path"></div>
+
       <div id="category-list" class="category-list"></div>
       <div class="bottom-nav-spacer"></div>
     </div>
@@ -195,6 +198,77 @@
       </div>
     </div>
 
+    <!-- ── LESSON SCREEN ── -->
+    <div id="lesson-screen" class="screen">
+      <div class="lesson-header">
+        <button id="lesson-quit-btn" class="icon-btn" aria-label="Salir">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="lesson-progress-wrap">
+          <div id="lesson-progress" class="lesson-progress"></div>
+        </div>
+        <div class="lesson-hearts" id="lesson-hearts">
+          <span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span>
+        </div>
+      </div>
+
+      <div class="lesson-body">
+        <div id="lesson-exercise" class="lesson-exercise"></div>
+      </div>
+
+      <!-- Feedback footer (slides up when checking answer) -->
+      <div id="lesson-feedback" class="lesson-feedback hidden">
+        <div class="feedback-inner">
+          <div class="feedback-title" id="feedback-title"></div>
+          <div class="feedback-detail" id="feedback-detail"></div>
+        </div>
+        <button id="feedback-continue" class="act-btn feedback-continue-btn">Continuar</button>
+      </div>
+
+      <!-- Check button -->
+      <div class="lesson-actions">
+        <button id="lesson-skip-btn" class="act-btn ghost-btn">Saltar</button>
+        <button id="lesson-check-btn" class="act-btn primary-btn" disabled>Verificar</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON RESULTS SCREEN ── -->
+    <div id="lesson-results-screen" class="screen">
+      <div class="results-wrap">
+        <div class="trophy-anim" id="lesson-result-icon">🎉</div>
+        <h2 class="results-title" id="lesson-result-title">¡Lección completada!</h2>
+        <div class="lesson-stats">
+          <div class="lesson-stat-card xp">
+            <span class="lsc-ico">⭐</span>
+            <div class="lsc-num" id="lesson-result-xp">0</div>
+            <div class="lsc-lbl">XP ganados</div>
+          </div>
+          <div class="lesson-stat-card hearts">
+            <span class="lsc-ico">❤️</span>
+            <div class="lsc-num" id="lesson-result-hearts">3</div>
+            <div class="lsc-lbl">Vidas</div>
+          </div>
+          <div class="lesson-stat-card acc">
+            <span class="lsc-ico">🎯</span>
+            <div class="lsc-num" id="lesson-result-acc">100%</div>
+            <div class="lsc-lbl">Precisión</div>
+          </div>
+        </div>
+        <button id="lesson-results-continue" class="act-btn primary-btn">Continuar</button>
+      </div>
+    </div>
+
+    <!-- ── LESSON FAIL SCREEN ── -->
+    <div id="lesson-fail-screen" class="screen">
+      <div class="results-wrap">
+        <div class="trophy-anim">💔</div>
+        <h2 class="results-title">¡No te rindas!</h2>
+        <p class="results-sub">Te quedaste sin vidas. ¡Inténtalo de nuevo!</p>
+        <button id="lesson-retry-btn" class="act-btn primary-btn">Reintentar</button>
+        <button id="lesson-fail-home-btn" class="act-btn ghost-btn">Volver</button>
+      </div>
+    </div>
+
     <!-- ── GAME SCREEN ── -->
     <div id="game-screen" class="screen">
       <div class="game-header">
@@ -257,6 +331,6 @@
     </nav>
 
   </div>
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

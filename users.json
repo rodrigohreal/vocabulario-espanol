@@ -1,5 +1,12 @@
 [
   { "user": "demo",   "pass": "demo" },
   { "user": "alice",  "pass": "espanol1" },
+  { "user": "DaryaP",  "pass": "espanol1" },
+  { "user": "Ruslan",  "pass": "espanol1" },
+  { "user": "Anna",  "pass": "espanol1" },
+  { "user": "Denis",  "pass": "espanol1" },
+  { "user": "Elena",  "pass": "espanol1" },
+  { "user": "Sofia",  "pass": "espanol1" },
+  { "user": "AnnaV",  "pass": "espanol1" },
   { "user": "bob",    "pass": "espanol2" }
 ]

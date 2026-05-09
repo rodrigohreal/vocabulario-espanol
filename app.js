@@ -203,10 +203,11 @@ function encodeFilePath(filename) {
 function loadImage(src) {
   return new Promise((resolve, reject) => {
     const img = new Image();
-    img.crossOrigin = 'anonymous';
     img.onload  = () => resolve(img);
-    img.onerror = () => reject(new Error('No se pudo cargar la imagen'));
+    img.onerror = () => reject(new Error('No se pudo cargar la imagen: ' + src));
     img.src = encodeFilePath(src);
+    // Safety timeout — if neither onload nor onerror fires within 15 s
+    setTimeout(() => reject(new Error('Tiempo de carga agotado: ' + src)), 15000);
   });
 }
 

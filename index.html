@@ -6,17 +6,46 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <div id="app">
 
+    <!-- ── LOGIN SCREEN ── -->
+    <div id="login-screen" class="screen active">
+      <div class="login-wrap">
+        <div class="login-logo">🇪🇸</div>
+        <h1 class="login-title">Vocabulario</h1>
+        <p class="login-sub">Inicia sesión para guardar tu progreso</p>
+        <form class="login-form" id="login-form" autocomplete="on">
+          <input id="login-user" class="login-input" type="text"     placeholder="Usuario"     autocomplete="username"          autocapitalize="none" required>
+          <input id="login-pass" class="login-input" type="password" placeholder="Contraseña" autocomplete="current-password"  required>
+          <p id="login-error" class="login-error">&nbsp;</p>
+          <button type="submit" id="login-btn" class="act-btn primary-btn">Iniciar sesión</button>
+        </form>
+      </div>
+    </div>
+
     <!-- ── HOME SCREEN ── -->
-    <div id="home-screen" class="screen active">
+    <div id="home-screen" class="screen">
+      <div class="home-topbar">
+        <div class="user-pill">
+          <span class="user-icon">👤</span>
+          <span id="user-name"></span>
+        </div>
+        <button id="logout-btn" class="logout-btn" aria-label="Cerrar sesión">↪ Salir</button>
+      </div>
       <div class="home-header">
         <div class="home-logo">🇪🇸</div>
         <h1 class="home-title">Vocabulario</h1>
         <p class="home-subtitle">Elige un tema para practicar</p>
+        <div class="progress-summary">
+          <div class="prog-text">
+            <strong id="progress-count">0</strong>
+            <span> / <span id="progress-total">0</span> ejercicios completados</span>
+          </div>
+          <div class="mini-progress"><div id="mini-progress-bar" class="mini-progress-bar"></div></div>
+        </div>
       </div>
       <div id="category-list" class="category-list"></div>
     </div>
@@ -70,6 +99,6 @@
     </div>
 
   </div>
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

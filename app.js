@@ -81,7 +81,9 @@ const state = {
   showing:         false,  // toggled "reveal original" mode
   exercisePhase:   false,  // false = memorize (overlays hidden), true = play (overlays visible)
   countdownId:     null,   // interval handle for countdown
-  completed:       new Set(JSON.parse(localStorage.getItem('completed') || '[]')),
+  user:            null,   // currently logged-in username
+  users:           [],     // loaded from users.json
+  completed:       new Set(),  // per-user progress (loaded after login)
 };
 
 // ── Haptic helpers ─────────────────────────────────────────
@@ -94,7 +96,7 @@ const haptic = {
 
 // ── DOM refs ───────────────────────────────────────────────
 const $ = id => document.getElementById(id);
-const screens      = { home: $('home-screen'), game: $('game-screen'), results: $('results-screen') };
+const screens      = { login: $('login-screen'), home: $('home-screen'), game: $('game-screen'), results: $('results-screen') };
 const categoryList = $('category-list');
 const imageWrapper = $('image-wrapper');
 const vocabImage   = $('vocab-image');
@@ -128,6 +130,16 @@ function showScreen(name) {
 // ── HOME ──────────────────────────────────────────────────
 function renderHome() {
   showScreen('home');
+
+  // User pill + progress summary
+  const userNameEl = $('user-name');
+  if (userNameEl) userNameEl.textContent = state.user || '';
+  const total = EXERCISES.length;
+  const done  = state.completed.size;
+  const cnt = $('progress-count');     if (cnt) cnt.textContent = done;
+  const tot = $('progress-total');     if (tot) tot.textContent = total;
+  const bar = $('mini-progress-bar');  if (bar) bar.style.width = total ? ((done / total) * 100) + '%' : '0%';
+
   categoryList.innerHTML = '';
 
   // Group by category
@@ -544,9 +556,9 @@ backBtn?.addEventListener('click', () => {
 function showResults() {
   haptic.success();
 
-  // Mark as completed
+  // Mark as completed (per user)
   state.completed.add(state.exercise.file);
-  localStorage.setItem('completed', JSON.stringify([...state.completed]));
+  saveProgress();
 
   const total = state.wordRects.length;
   resultsMsg.textContent = `¡Colocaste ${total} de ${total} palabras!`;
@@ -608,5 +620,87 @@ window.addEventListener('resize', () => {
   }, 150);
 });
 
+// ── AUTH / USERS ──────────────────────────────────────────
+async function loadUsers() {
+  try {
+    const res = await fetch('users.json?_=' + Date.now());
+    if (!res.ok) throw new Error('http ' + res.status);
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch (e) {
+    console.warn('users.json not found, using fallback');
+    return [{ user: 'demo', pass: 'demo' }];
+  }
+}
+
+function loadProgress(username) {
+  try {
+    return new Set(JSON.parse(localStorage.getItem('progress_' + username) || '[]'));
+  } catch {
+    return new Set();
+  }
+}
+
+function saveProgress() {
+  if (!state.user) return;
+  localStorage.setItem('progress_' + state.user, JSON.stringify([...state.completed]));
+}
+
+function loginAs(username) {
+  state.user = username;
+  state.completed = loadProgress(username);
+  localStorage.setItem('currentUser', username);
+  renderHome();
+}
+
+function logout() {
+  state.user = null;
+  state.completed = new Set();
+  localStorage.removeItem('currentUser');
+  $('login-user').value = '';
+  $('login-pass').value = '';
+  $('login-error').textContent = ' ';
+  showScreen('login');
+}
+
+// Login form submit
+$('login-form')?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const u = $('login-user').value.trim();
+  const p = $('login-pass').value;
+  const errEl = $('login-error');
+
+  const found = state.users.find(x =>
+    x.user.toLowerCase() === u.toLowerCase() && x.pass === p
+  );
+  if (!found) {
+    errEl.textContent = 'Usuario o contraseña incorrectos';
+    errEl.classList.remove('shake');
+    void errEl.offsetWidth;
+    errEl.classList.add('shake');
+    haptic.error();
+    return;
+  }
+
+  errEl.textContent = ' ';
+  haptic.success();
+  loginAs(found.user);
+});
+
+// Logout button
+$('logout-btn')?.addEventListener('click', () => {
+  haptic.light();
+  logout();
+});
+
 // ── INIT ──────────────────────────────────────────────────
-renderHome();
+(async () => {
+  state.users = await loadUsers();
+  const savedUser = localStorage.getItem('currentUser');
+  const stillValid = savedUser && state.users.find(x => x.user === savedUser);
+  if (stillValid) {
+    loginAs(savedUser);
+  } else {
+    showScreen('login');
+  }
+})();

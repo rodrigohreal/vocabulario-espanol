@@ -79,7 +79,7 @@ const state = {
   selectedTileId:  null,   // currently highlighted tile id
   solved:          new Set(),
   showing:         false,  // toggled "reveal original" mode
-  zonesHidden:     false,  // true after the 15-second memorize window ends
+  exercisePhase:   false,  // false = memorize (overlays hidden), true = play (overlays visible)
   countdownId:     null,   // interval handle for countdown
   completed:       new Set(JSON.parse(localStorage.getItem('completed') || '[]')),
 };
@@ -167,7 +167,7 @@ async function startExercise(ex) {
   state.solved.clear();
   state.selectedTileId = null;
   state.showing = false;
-  state.zonesHidden = false;
+  state.exercisePhase = false;
   revealIcon.textContent = '👁';
   clearCountdown();
 
@@ -236,6 +236,7 @@ function renderGame() {
     state.scaleFactor = scale;
 
     buildOverlays(scale);
+    setOverlaysVisible(false);   // hide so student sees the full image
     buildTiles(scale);
     updateScore();
     startCountdown();
@@ -255,7 +256,7 @@ function buildOverlays(scale) {
       // word zone
       el.className = 'word-zone';
       el.dataset.id = rc.id;
-      el.innerHTML = `<span class="zone-number">${idx + 1}</span>`;
+      el.innerHTML = `<span class="zone-q">?</span>`;
       if (state.solved.has(rc.id)) {
         renderSolvedZone(el, rc, scale);
       }
@@ -331,6 +332,17 @@ function cropImageToElement(sourceImg, rc, scale) {
 // ── COUNTDOWN ─────────────────────────────────────────────
 const MEMORIZE_SECONDS = 15;
 
+function setOverlaysVisible(visible) {
+  imageWrapper.querySelectorAll('.cover-overlay, .word-zone').forEach(el => {
+    el.style.display = visible ? '' : 'none';
+  });
+  // Keep solved zones always visible
+  if (visible) return;
+  imageWrapper.querySelectorAll('.word-zone.solved').forEach(el => {
+    el.style.display = '';
+  });
+}
+
 function clearCountdown() {
   if (state.countdownId !== null) {
     clearInterval(state.countdownId);
@@ -340,11 +352,15 @@ function clearCountdown() {
 
 function startCountdown() {
   clearCountdown();
-  state.zonesHidden = false;
+  state.exercisePhase = false;
+
+  // Disable reveal during memorize (image is already visible)
+  revealBtn.disabled = true;
+  revealBtn.style.opacity = '0.35';
 
   // Show banner
   countdownBanner.classList.remove('hidden-banner');
-  countdownText.textContent = '¡Memoriza las posiciones!';
+  countdownText.textContent = '¡Mira dónde están las palabras!';
   countdownNum.classList.remove('cd-urgent');
 
   let remaining = MEMORIZE_SECONDS;
@@ -363,17 +379,22 @@ function startCountdown() {
 
     if (remaining <= 0) {
       clearCountdown();
-      hideZones();
+      showExercise();
     }
   }, 1000);
 }
 
-function hideZones() {
-  state.zonesHidden = true;
-  imageWrapper.querySelectorAll('.word-zone:not(.solved)').forEach(el => {
-    el.classList.add('zone-hidden');
-  });
-  // Update banner to instruct the user
+function showExercise() {
+  state.exercisePhase = true;
+
+  // Now show the opaque word zones — they cover the labels in the image
+  setOverlaysVisible(true);
+
+  // Re-enable reveal button
+  revealBtn.disabled = false;
+  revealBtn.style.opacity = '';
+
+  // Brief "Go!" message then hide banner
   countdownText.textContent = '¡Ahora coloca las palabras!';
   countdownNum.textContent = '';
   countdownNum.classList.remove('cd-urgent');
@@ -454,7 +475,7 @@ function markCorrect(id) {
   // Update zone → show image crop
   const zoneEl = imageWrapper.querySelector(`.word-zone[data-id="${id}"]`);
   if (zoneEl) {
-    zoneEl.classList.remove('accepting', 'zone-hidden');
+    zoneEl.classList.remove('accepting');
     const rc = state.wordRects.find(r => r.id === id);
     renderSolvedZone(zoneEl, rc, state.scaleFactor);
   }
@@ -487,13 +508,11 @@ function updateScore() {
 
 // ── REVEAL TOGGLE ──────────────────────────────────────────
 revealBtn?.addEventListener('click', () => {
+  if (!state.exercisePhase) return;
   haptic.light();
   state.showing = !state.showing;
   revealIcon.textContent = state.showing ? '🙈' : '👁';
-
-  imageWrapper.querySelectorAll('.cover-overlay, .word-zone').forEach(el => {
-    el.style.display = state.showing ? 'none' : '';
-  });
+  setOverlaysVisible(!state.showing);
 });
 
 // ── RESET ──────────────────────────────────────────────────
@@ -502,12 +521,13 @@ resetBtn?.addEventListener('click', () => {
   state.solved.clear();
   state.selectedTileId = null;
   state.showing = false;
-  state.zonesHidden = false;
+  state.exercisePhase = false;
   revealIcon.textContent = '👁';
 
   const scale = state.scaleFactor;
   imageWrapper.querySelectorAll('.cover-overlay, .word-zone').forEach(el => el.remove());
   buildOverlays(scale);
+  setOverlaysVisible(false);
   buildTiles(scale);
   updateScore();
   startCountdown();
@@ -582,6 +602,7 @@ window.addEventListener('resize', () => {
 
       imageWrapper.querySelectorAll('.cover-overlay, .word-zone').forEach(el => el.remove());
       buildOverlays(scale);
+      setOverlaysVisible(state.exercisePhase);
       buildTiles(scale);
     }
   }, 150);

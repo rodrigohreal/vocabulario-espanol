@@ -1,0 +1,138 @@
+{
+  "image_file": "comedor.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 438,
+      "y": 62,
+      "width": 115,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 436,
+      "y": 169,
+      "width": 99,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 440,
+      "y": 276,
+      "width": 98,
+      "height": 31,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 403,
+      "y": 445,
+      "width": 110,
+      "height": 21,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 212,
+      "y": 447,
+      "width": 114,
+      "height": 23,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 31,
+      "y": 441,
+      "width": 126,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 439,
+      "y": 36,
+      "width": 88,
+      "height": 24,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 442,
+      "y": 146,
+      "width": 78,
+      "height": 22,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 438,
+      "y": 252,
+      "width": 84,
+      "height": 23,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 403,
+      "y": 418,
+      "width": 106,
+      "height": 26,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 207,
+      "y": 419,
+      "width": 108,
+      "height": 25,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 31,
+      "y": 415,
+      "width": 108,
+      "height": 27,
+      "label": "Word 12"
+    },
+    {
+      "id": "word_12",
+      "type": "cover",
+      "x": 377,
+      "y": 600,
+      "width": 162,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_13",
+      "type": "word",
+      "x": 387,
+      "y": 571,
+      "width": 141,
+      "height": 25,
+      "label": "Word 14"
+    }
+  ]
+}

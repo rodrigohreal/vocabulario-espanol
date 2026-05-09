@@ -1,0 +1,81 @@
+{
+  "image_file": "electrodomesticos.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 31,
+      "y": 458,
+      "width": 315,
+      "height": 41,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 463,
+      "y": 462,
+      "width": 201,
+      "height": 33,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 106,
+      "y": 886,
+      "width": 165,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 497,
+      "y": 885,
+      "width": 142,
+      "height": 31,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "word",
+      "x": 49,
+      "y": 425,
+      "width": 273,
+      "height": 32,
+      "label": "Word 5"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 479,
+      "y": 422,
+      "width": 171,
+      "height": 40,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 111,
+      "y": 844,
+      "width": 162,
+      "height": 38,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 493,
+      "y": 847,
+      "width": 148,
+      "height": 32,
+      "label": "Word 8"
+    }
+  ]
+}

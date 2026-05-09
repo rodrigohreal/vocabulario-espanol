@@ -1,0 +1,100 @@
+{
+  "image_file": "compras2.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 358,
+      "y": 296,
+      "width": 166,
+      "height": 26,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 58,
+      "y": 298,
+      "width": 180,
+      "height": 22,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 70,
+      "y": 414,
+      "width": 108,
+      "height": 23,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 247,
+      "y": 429,
+      "width": 80,
+      "height": 19,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 423,
+      "y": 679,
+      "width": 134,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 366,
+      "y": 263,
+      "width": 152,
+      "height": 32,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 64,
+      "y": 268,
+      "width": 165,
+      "height": 30,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 92,
+      "y": 388,
+      "width": 88,
+      "height": 25,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 249,
+      "y": 394,
+      "width": 82,
+      "height": 28,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 433,
+      "y": 642,
+      "width": 117,
+      "height": 36,
+      "label": "Word 10"
+    }
+  ]
+}

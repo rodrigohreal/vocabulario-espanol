@@ -1,0 +1,101 @@
+{
+  "image_file": "deporte2.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 26,
+      "y": 545,
+      "width": 305,
+      "height": 37,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 460,
+      "y": 509,
+      "width": 211,
+      "height": 37,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 524,
+      "y": 105,
+      "width": 135,
+      "height": 35,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 478,
+      "y": 897,
+      "width": 178,
+      "height": 39,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 81,
+      "y": 893,
+      "width": 199,
+      "height": 40,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 62,
+      "y": 506,
+      "width": 251,
+      "height": 32,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 480,
+      "y": 474,
+      "width": 176,
+      "height": 33,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 521,
+      "y": 72,
+      "width": 134,
+      "height": 28,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 484,
+      "y": 855,
+      "width": 170,
+      "height": 36,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "cover",
+      "x": 25,
+      "y": 619,
+      "width": 329,
+      "height": 345,
+      "label": "(cover)",
+      "color": "#ffffff"
+    }
+  ]
+}

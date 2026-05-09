@@ -1,0 +1,110 @@
+{
+  "image_file": "baño2.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 520,
+      "y": 369,
+      "width": 217,
+      "height": 36,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 295,
+      "y": 339,
+      "width": 178,
+      "height": 71,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 35,
+      "y": 332,
+      "width": 200,
+      "height": 76,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 18,
+      "y": 445,
+      "width": 227,
+      "height": 520,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 423,
+      "y": 866,
+      "width": 149,
+      "height": 35,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 498,
+      "y": 532,
+      "width": 162,
+      "height": 27,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 39,
+      "y": 260,
+      "width": 171,
+      "height": 71,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 260,
+      "y": 298,
+      "width": 230,
+      "height": 37,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 534,
+      "y": 329,
+      "width": 195,
+      "height": 38,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 502,
+      "y": 496,
+      "width": 153,
+      "height": 33,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 441,
+      "y": 827,
+      "width": 134,
+      "height": 35,
+      "label": "Word 11"
+    }
+  ]
+}

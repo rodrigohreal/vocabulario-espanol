@@ -1,0 +1,81 @@
+{
+  "image_file": "sala2.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 12,
+      "y": 375,
+      "width": 231,
+      "height": 72,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 404,
+      "y": 407,
+      "width": 205,
+      "height": 39,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 84,
+      "y": 574,
+      "width": 132,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 41,
+      "y": 715,
+      "width": 173,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "word",
+      "x": 22,
+      "y": 307,
+      "width": 209,
+      "height": 69,
+      "label": "Word 5"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 416,
+      "y": 372,
+      "width": 177,
+      "height": 34,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 115,
+      "y": 535,
+      "width": 103,
+      "height": 35,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 78,
+      "y": 675,
+      "width": 138,
+      "height": 33,
+      "label": "Word 8"
+    }
+  ]
+}

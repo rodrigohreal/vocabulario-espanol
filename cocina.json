@@ -1,0 +1,119 @@
+{
+  "image_file": "cocina.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 50,
+      "y": 73,
+      "width": 132,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 268,
+      "y": 74,
+      "width": 152,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 507,
+      "y": 76,
+      "width": 128,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 53,
+      "y": 706,
+      "width": 128,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 279,
+      "y": 707,
+      "width": 115,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 498,
+      "y": 709,
+      "width": 175,
+      "height": 24,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 53,
+      "y": 42,
+      "width": 106,
+      "height": 32,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 267,
+      "y": 44,
+      "width": 144,
+      "height": 26,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 506,
+      "y": 39,
+      "width": 98,
+      "height": 33,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 52,
+      "y": 671,
+      "width": 117,
+      "height": 29,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 276,
+      "y": 675,
+      "width": 110,
+      "height": 24,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 494,
+      "y": 672,
+      "width": 146,
+      "height": 33,
+      "label": "Word 12"
+    }
+  ]
+}

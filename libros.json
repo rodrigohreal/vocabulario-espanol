@@ -1,0 +1,138 @@
+{
+  "image_file": "libros.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 542,
+      "y": 271,
+      "width": 216,
+      "height": 44,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 291,
+      "y": 281,
+      "width": 200,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 54,
+      "y": 390,
+      "width": 143,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 35,
+      "y": 831,
+      "width": 171,
+      "height": 27,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 330,
+      "y": 446,
+      "width": 125,
+      "height": 26,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 531,
+      "y": 440,
+      "width": 192,
+      "height": 37,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "cover",
+      "x": 391,
+      "y": 792,
+      "width": 261,
+      "height": 34,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 60,
+      "y": 350,
+      "width": 128,
+      "height": 39,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 302,
+      "y": 240,
+      "width": 187,
+      "height": 34,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 550,
+      "y": 242,
+      "width": 200,
+      "height": 31,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 521,
+      "y": 408,
+      "width": 171,
+      "height": 27,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 346,
+      "y": 405,
+      "width": 115,
+      "height": 33,
+      "label": "Word 12"
+    },
+    {
+      "id": "word_12",
+      "type": "word",
+      "x": 55,
+      "y": 792,
+      "width": 141,
+      "height": 29,
+      "label": "Word 13"
+    },
+    {
+      "id": "word_13",
+      "type": "word",
+      "x": 388,
+      "y": 755,
+      "width": 268,
+      "height": 32,
+      "label": "Word 14"
+    }
+  ]
+}

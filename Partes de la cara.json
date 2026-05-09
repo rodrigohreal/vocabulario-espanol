@@ -1,0 +1,131 @@
+{
+  "image_file": "Partes de la cara.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 27,
+      "y": 60,
+      "width": 146,
+      "height": 62,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 236,
+      "y": 67,
+      "width": 160,
+      "height": 57,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 438,
+      "y": 60,
+      "width": 171,
+      "height": 65,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 432,
+      "y": 194,
+      "width": 185,
+      "height": 61,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 427,
+      "y": 331,
+      "width": 190,
+      "height": 56,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 434,
+      "y": 454,
+      "width": 184,
+      "height": 62,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_6",
+      "type": "cover",
+      "x": 431,
+      "y": 588,
+      "width": 185,
+      "height": 56,
+      "label": "(cover)"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 26,
+      "y": 27,
+      "width": 127,
+      "height": 34,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 228,
+      "y": 28,
+      "width": 157,
+      "height": 37,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 440,
+      "y": 28,
+      "width": 88,
+      "height": 33,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 433,
+      "y": 157,
+      "width": 108,
+      "height": 34,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 432,
+      "y": 291,
+      "width": 118,
+      "height": 38,
+      "label": "Word 12"
+    },
+    {
+      "id": "word_12",
+      "type": "word",
+      "x": 432,
+      "y": 418,
+      "width": 113,
+      "height": 32,
+      "label": "Word 13"
+    },
+    {
+      "id": "word_13",
+      "type": "word",
+      "x": 436,
+      "y": 543,
+      "width": 98,
+      "height": 44,
+      "label": "Word 14"
+    }
+  ]
+}

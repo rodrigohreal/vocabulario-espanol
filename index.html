@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0d0d1a">
+  <title>Vocabulario Español</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ── HOME SCREEN ── -->
+    <div id="home-screen" class="screen active">
+      <div class="home-header">
+        <div class="home-logo">🇪🇸</div>
+        <h1 class="home-title">Vocabulario</h1>
+        <p class="home-subtitle">Elige un tema para practicar</p>
+      </div>
+      <div id="category-list" class="category-list"></div>
+    </div>
+
+    <!-- ── GAME SCREEN ── -->
+    <div id="game-screen" class="screen">
+      <div class="game-header">
+        <button id="back-btn" class="icon-btn" aria-label="Atrás">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <span id="game-title" class="game-title-text"></span>
+        <div id="score-badge" class="score-badge">0 / 0</div>
+      </div>
+      <div class="progress-bar-wrap"><div id="progress-bar" class="progress-bar"></div></div>
+
+      <div id="image-area" class="image-area">
+        <div id="image-wrapper" class="image-wrapper">
+          <img id="vocab-image" class="vocab-image" alt="Vocabulario">
+        </div>
+      </div>
+
+      <div class="tiles-section">
+        <p class="tiles-label">Toca una palabra y luego su lugar en la imagen</p>
+        <div id="tiles-container" class="tiles-container"></div>
+      </div>
+
+      <div class="game-actions">
+        <button id="reveal-btn" class="act-btn ghost-btn">
+          <span id="reveal-icon">👁</span> Ver original
+        </button>
+        <button id="reset-btn" class="act-btn ghost-btn">↺ Reiniciar</button>
+      </div>
+    </div>
+
+    <!-- ── RESULTS SCREEN ── -->
+    <div id="results-screen" class="screen">
+      <div class="results-wrap">
+        <div class="trophy-anim">🏆</div>
+        <h2 class="results-title">¡Completado!</h2>
+        <p class="results-sub" id="results-msg"></p>
+        <div class="results-stars" id="results-stars"></div>
+        <button id="play-again-btn" class="act-btn primary-btn">Jugar otra vez</button>
+        <button id="home-from-results-btn" class="act-btn ghost-btn">Inicio</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

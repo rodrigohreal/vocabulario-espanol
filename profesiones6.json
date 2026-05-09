@@ -1,0 +1,119 @@
+{
+  "image_file": "profesiones6.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 439,
+      "y": 315,
+      "width": 174,
+      "height": 24,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 232,
+      "y": 318,
+      "width": 169,
+      "height": 27,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 37,
+      "y": 316,
+      "width": 132,
+      "height": 23,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 38,
+      "y": 727,
+      "width": 129,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 234,
+      "y": 726,
+      "width": 163,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 451,
+      "y": 726,
+      "width": 151,
+      "height": 27,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 43,
+      "y": 286,
+      "width": 118,
+      "height": 26,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 247,
+      "y": 280,
+      "width": 137,
+      "height": 34,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 446,
+      "y": 282,
+      "width": 158,
+      "height": 28,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 45,
+      "y": 693,
+      "width": 113,
+      "height": 32,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 240,
+      "y": 692,
+      "width": 150,
+      "height": 29,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 457,
+      "y": 688,
+      "width": 141,
+      "height": 35,
+      "label": "Word 12"
+    }
+  ]
+}

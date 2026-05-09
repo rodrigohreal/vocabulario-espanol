@@ -1,0 +1,81 @@
+{
+  "image_file": "computadora.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 108,
+      "y": 562,
+      "width": 157,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 469,
+      "y": 552,
+      "width": 190,
+      "height": 41,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 105,
+      "y": 874,
+      "width": 157,
+      "height": 37,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 487,
+      "y": 873,
+      "width": 167,
+      "height": 37,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "word",
+      "x": 111,
+      "y": 527,
+      "width": 146,
+      "height": 30,
+      "label": "Word 5"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 487,
+      "y": 521,
+      "width": 166,
+      "height": 30,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 116,
+      "y": 835,
+      "width": 138,
+      "height": 37,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 509,
+      "y": 842,
+      "width": 117,
+      "height": 31,
+      "label": "Word 8"
+    }
+  ]
+}

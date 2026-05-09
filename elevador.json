@@ -1,0 +1,157 @@
+{
+  "image_file": "elevador.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 546,
+      "y": 112,
+      "width": 148,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 548,
+      "y": 380,
+      "width": 128,
+      "height": 33,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 497,
+      "y": 708,
+      "width": 176,
+      "height": 31,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 411,
+      "y": 515,
+      "width": 176,
+      "height": 34,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 48,
+      "y": 515,
+      "width": 151,
+      "height": 28,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 76,
+      "y": 866,
+      "width": 146,
+      "height": 28,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "cover",
+      "x": 23,
+      "y": 232,
+      "width": 198,
+      "height": 36,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_7",
+      "type": "cover",
+      "x": 496,
+      "y": 861,
+      "width": 162,
+      "height": 33,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 541,
+      "y": 75,
+      "width": 139,
+      "height": 32,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 544,
+      "y": 347,
+      "width": 110,
+      "height": 29,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 49,
+      "y": 198,
+      "width": 157,
+      "height": 32,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 63,
+      "y": 478,
+      "width": 120,
+      "height": 30,
+      "label": "Word 12"
+    },
+    {
+      "id": "word_12",
+      "type": "word",
+      "x": 422,
+      "y": 472,
+      "width": 155,
+      "height": 40,
+      "label": "Word 13"
+    },
+    {
+      "id": "word_13",
+      "type": "word",
+      "x": 492,
+      "y": 672,
+      "width": 171,
+      "height": 33,
+      "label": "Word 14"
+    },
+    {
+      "id": "word_14",
+      "type": "word",
+      "x": 505,
+      "y": 819,
+      "width": 148,
+      "height": 41,
+      "label": "Word 15"
+    },
+    {
+      "id": "word_15",
+      "type": "word",
+      "x": 98,
+      "y": 832,
+      "width": 128,
+      "height": 27,
+      "label": "Word 16"
+    }
+  ]
+}

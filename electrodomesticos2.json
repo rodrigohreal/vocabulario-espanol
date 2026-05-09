@@ -1,0 +1,138 @@
+{
+  "image_file": "electrodomesticos2.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 26,
+      "y": 256,
+      "width": 189,
+      "height": 36,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 283,
+      "y": 222,
+      "width": 188,
+      "height": 72,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 518,
+      "y": 257,
+      "width": 212,
+      "height": 33,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 20,
+      "y": 539,
+      "width": 200,
+      "height": 31,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 518,
+      "y": 419,
+      "width": 170,
+      "height": 28,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 411,
+      "y": 854,
+      "width": 186,
+      "height": 35,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "cover",
+      "x": 53,
+      "y": 820,
+      "width": 155,
+      "height": 65,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 45,
+      "y": 225,
+      "width": 158,
+      "height": 31,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 261,
+      "y": 188,
+      "width": 223,
+      "height": 35,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 536,
+      "y": 219,
+      "width": 186,
+      "height": 36,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 25,
+      "y": 497,
+      "width": 196,
+      "height": 38,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 514,
+      "y": 385,
+      "width": 142,
+      "height": 28,
+      "label": "Word 12"
+    },
+    {
+      "id": "word_12",
+      "type": "word",
+      "x": 9,
+      "y": 779,
+      "width": 223,
+      "height": 33,
+      "label": "Word 13"
+    },
+    {
+      "id": "word_13",
+      "type": "word",
+      "x": 430,
+      "y": 814,
+      "width": 150,
+      "height": 35,
+      "label": "Word 14"
+    }
+  ]
+}

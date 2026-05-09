@@ -1,0 +1,119 @@
+{
+  "image_file": "dormitorio.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 51,
+      "y": 556,
+      "width": 156,
+      "height": 35,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 365,
+      "y": 559,
+      "width": 147,
+      "height": 32,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 400,
+      "y": 690,
+      "width": 142,
+      "height": 26,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 399,
+      "y": 826,
+      "width": 129,
+      "height": 28,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 84,
+      "y": 824,
+      "width": 122,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 102,
+      "y": 690,
+      "width": 105,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 87,
+      "y": 526,
+      "width": 119,
+      "height": 28,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 361,
+      "y": 526,
+      "width": 133,
+      "height": 27,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 399,
+      "y": 658,
+      "width": 136,
+      "height": 27,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 110,
+      "y": 654,
+      "width": 100,
+      "height": 34,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 99,
+      "y": 786,
+      "width": 113,
+      "height": 34,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 392,
+      "y": 788,
+      "width": 138,
+      "height": 31,
+      "label": "Word 12"
+    }
+  ]
+}

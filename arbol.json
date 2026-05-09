@@ -1,0 +1,119 @@
+{
+  "image_file": "arbol.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 463,
+      "y": 439,
+      "width": 120,
+      "height": 35,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 68,
+      "y": 406,
+      "width": 122,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 69,
+      "y": 287,
+      "width": 120,
+      "height": 28,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 80,
+      "y": 172,
+      "width": 105,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 84,
+      "y": 60,
+      "width": 110,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 90,
+      "y": 28,
+      "width": 98,
+      "height": 27,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 103,
+      "y": 140,
+      "width": 86,
+      "height": 30,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 90,
+      "y": 259,
+      "width": 98,
+      "height": 24,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 79,
+      "y": 377,
+      "width": 107,
+      "height": 26,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 459,
+      "y": 410,
+      "width": 79,
+      "height": 23,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 113,
+      "y": 535,
+      "width": 101,
+      "height": 28,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "cover",
+      "x": 91,
+      "y": 562,
+      "width": 137,
+      "height": 32,
+      "label": "(cover)",
+      "color": "#c2c2c2"
+    }
+  ]
+}

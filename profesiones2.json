@@ -1,0 +1,110 @@
+{
+  "image_file": "profesiones2.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 435,
+      "y": 47,
+      "width": 197,
+      "height": 381,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 240,
+      "y": 348,
+      "width": 160,
+      "height": 39,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 37,
+      "y": 351,
+      "width": 142,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 28,
+      "y": 765,
+      "width": 158,
+      "height": 28,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 250,
+      "y": 760,
+      "width": 136,
+      "height": 30,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 449,
+      "y": 764,
+      "width": 168,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 253,
+      "y": 321,
+      "width": 142,
+      "height": 29,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 57,
+      "y": 322,
+      "width": 120,
+      "height": 30,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 41,
+      "y": 737,
+      "width": 144,
+      "height": 25,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 248,
+      "y": 734,
+      "width": 141,
+      "height": 24,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 461,
+      "y": 736,
+      "width": 148,
+      "height": 26,
+      "label": "Word 11"
+    }
+  ]
+}

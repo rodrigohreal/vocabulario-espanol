@@ -1,0 +1,119 @@
+{
+  "image_file": "ropa1.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "cover",
+      "x": 367,
+      "y": 239,
+      "width": 160,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_1",
+      "type": "cover",
+      "x": 394,
+      "y": 485,
+      "width": 119,
+      "height": 22,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_2",
+      "type": "cover",
+      "x": 367,
+      "y": 700,
+      "width": 160,
+      "height": 25,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_3",
+      "type": "cover",
+      "x": 46,
+      "y": 705,
+      "width": 215,
+      "height": 24,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_4",
+      "type": "cover",
+      "x": 94,
+      "y": 480,
+      "width": 122,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_5",
+      "type": "cover",
+      "x": 88,
+      "y": 234,
+      "width": 140,
+      "height": 29,
+      "label": "(cover)",
+      "color": "#ffffff"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 376,
+      "y": 207,
+      "width": 147,
+      "height": 31,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 107,
+      "y": 212,
+      "width": 101,
+      "height": 22,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 387,
+      "y": 454,
+      "width": 124,
+      "height": 28,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 101,
+      "y": 452,
+      "width": 109,
+      "height": 26,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 380,
+      "y": 671,
+      "width": 137,
+      "height": 26,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 43,
+      "y": 668,
+      "width": 220,
+      "height": 30,
+      "label": "Word 12"
+    }
+  ]
+}

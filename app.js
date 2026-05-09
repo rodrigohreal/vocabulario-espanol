@@ -79,6 +79,8 @@ const state = {
   selectedTileId:  null,   // currently highlighted tile id
   solved:          new Set(),
   showing:         false,  // toggled "reveal original" mode
+  zonesHidden:     false,  // true after the 15-second memorize window ends
+  countdownId:     null,   // interval handle for countdown
   completed:       new Set(JSON.parse(localStorage.getItem('completed') || '[]')),
 };
 
@@ -100,12 +102,15 @@ const tilesContainer=$('tiles-container');
 const scoreEl      = $('score-badge');
 const progressBar  = $('progress-bar');
 const gameTitleEl  = $('game-title');
-const revealBtn    = $('reveal-btn');
-const revealIcon   = $('reveal-icon');
-const resetBtn     = $('reset-btn');
-const backBtn      = $('back-btn');
-const resultsMsg   = $('results-msg');
-const resultsStars = $('results-stars');
+const revealBtn      = $('reveal-btn');
+const revealIcon     = $('reveal-icon');
+const resetBtn       = $('reset-btn');
+const backBtn        = $('back-btn');
+const resultsMsg     = $('results-msg');
+const resultsStars   = $('results-stars');
+const countdownBanner= $('countdown-banner');
+const countdownText  = $('countdown-text');
+const countdownNum   = $('countdown-num');
 
 // ── Screen navigation ──────────────────────────────────────
 function showScreen(name) {
@@ -162,7 +167,9 @@ async function startExercise(ex) {
   state.solved.clear();
   state.selectedTileId = null;
   state.showing = false;
+  state.zonesHidden = false;
   revealIcon.textContent = '👁';
+  clearCountdown();
 
   // Show loading overlay
   const overlay = showLoading();
@@ -230,6 +237,7 @@ function renderGame() {
     buildOverlays(scale);
     buildTiles(scale);
     updateScore();
+    startCountdown();
   });
 }
 
@@ -319,6 +327,58 @@ function cropImageToElement(sourceImg, rc, scale) {
   return img;
 }
 
+// ── COUNTDOWN ─────────────────────────────────────────────
+const MEMORIZE_SECONDS = 15;
+
+function clearCountdown() {
+  if (state.countdownId !== null) {
+    clearInterval(state.countdownId);
+    state.countdownId = null;
+  }
+}
+
+function startCountdown() {
+  clearCountdown();
+  state.zonesHidden = false;
+
+  // Show banner
+  countdownBanner.classList.remove('hidden-banner');
+  countdownText.textContent = '¡Memoriza las posiciones!';
+  countdownNum.classList.remove('cd-urgent');
+
+  let remaining = MEMORIZE_SECONDS;
+  countdownNum.textContent = remaining;
+
+  state.countdownId = setInterval(() => {
+    remaining--;
+
+    // Tick animation
+    countdownNum.classList.remove('tick');
+    void countdownNum.offsetWidth;
+    countdownNum.classList.add('tick');
+    countdownNum.textContent = remaining;
+
+    if (remaining <= 5) countdownNum.classList.add('cd-urgent');
+
+    if (remaining <= 0) {
+      clearCountdown();
+      hideZones();
+    }
+  }, 1000);
+}
+
+function hideZones() {
+  state.zonesHidden = true;
+  imageWrapper.querySelectorAll('.word-zone:not(.solved)').forEach(el => {
+    el.classList.add('zone-hidden');
+  });
+  // Update banner to instruct the user
+  countdownText.textContent = '¡Ahora coloca las palabras!';
+  countdownNum.textContent = '';
+  countdownNum.classList.remove('cd-urgent');
+  setTimeout(() => countdownBanner.classList.add('hidden-banner'), 1800);
+}
+
 // ── INTERACTION ────────────────────────────────────────────
 function handleTileTap(id) {
   if (state.solved.has(id)) return;
@@ -393,7 +453,7 @@ function markCorrect(id) {
   // Update zone → show image crop
   const zoneEl = imageWrapper.querySelector(`.word-zone[data-id="${id}"]`);
   if (zoneEl) {
-    zoneEl.classList.remove('accepting');
+    zoneEl.classList.remove('accepting', 'zone-hidden');
     const rc = state.wordRects.find(r => r.id === id);
     renderSolvedZone(zoneEl, rc, state.scaleFactor);
   }
@@ -441,6 +501,7 @@ resetBtn?.addEventListener('click', () => {
   state.solved.clear();
   state.selectedTileId = null;
   state.showing = false;
+  state.zonesHidden = false;
   revealIcon.textContent = '👁';
 
   const scale = state.scaleFactor;
@@ -448,11 +509,13 @@ resetBtn?.addEventListener('click', () => {
   buildOverlays(scale);
   buildTiles(scale);
   updateScore();
+  startCountdown();
 });
 
 // ── BACK BUTTON ────────────────────────────────────────────
 backBtn?.addEventListener('click', () => {
   haptic.light();
+  clearCountdown();
   renderHome();
 });
 

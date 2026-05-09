@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <div id="app">
@@ -33,7 +33,11 @@
           <span class="user-icon">👤</span>
           <span id="user-name"></span>
         </div>
-        <button id="logout-btn" class="logout-btn" aria-label="Cerrar sesión">↪ Salir</button>
+        <div class="topbar-stats">
+          <span class="stat-chip" id="topbar-streak" title="Racha"><span class="chip-ico">🔥</span><span id="topbar-streak-num">0</span></span>
+          <span class="stat-chip" id="topbar-xp" title="XP"><span class="chip-ico">⭐</span><span id="topbar-xp-num">0</span></span>
+        </div>
+        <button id="logout-btn" class="logout-btn" aria-label="Cerrar sesión">↪</button>
       </div>
       <div class="home-header">
         <div class="home-logo">🇪🇸</div>
@@ -48,6 +52,147 @@
         </div>
       </div>
       <div id="category-list" class="category-list"></div>
+      <div class="bottom-nav-spacer"></div>
+    </div>
+
+    <!-- ── PET SCREEN ── -->
+    <div id="pet-screen" class="screen">
+      <div class="pet-header">
+        <div class="pet-name-line">
+          <span id="pet-name" class="pet-name">Axolito</span>
+          <button id="rename-pet-btn" class="rename-btn" aria-label="Renombrar">✎</button>
+        </div>
+        <div class="pet-level-line">
+          <span class="pet-level-badge">Nv. <span id="pet-level">1</span></span>
+          <span class="pet-stage" id="pet-stage">Bebé</span>
+        </div>
+      </div>
+
+      <div class="pet-stats">
+        <div class="pet-stat" title="Felicidad">
+          <span class="ps-ico">💖</span>
+          <div class="ps-bar"><div id="pet-happy-bar" class="ps-bar-fill happy"></div></div>
+        </div>
+        <div class="pet-stat" title="Hambre">
+          <span class="ps-ico">🍤</span>
+          <div class="ps-bar"><div id="pet-hunger-bar" class="ps-bar-fill hunger"></div></div>
+        </div>
+        <div class="pet-stat" title="Racha">
+          <span class="ps-ico">🔥</span>
+          <span class="ps-streak"><span id="pet-streak-num">0</span> días</span>
+        </div>
+      </div>
+
+      <div class="pet-tank">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+
+        <div id="axolotl-wrap" class="axolotl-wrap">
+          <svg id="axolotl-svg" class="axolotl" viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
+            <!-- Tail -->
+            <path class="ax-tail" d="M40 95 Q15 90 8 75 Q22 95 18 110 Q30 100 40 105 Z" />
+            <!-- Body -->
+            <ellipse class="ax-body" cx="110" cy="105" rx="65" ry="42"/>
+            <!-- Belly -->
+            <ellipse class="ax-belly" cx="115" cy="118" rx="48" ry="22"/>
+            <!-- Front legs -->
+            <ellipse class="ax-leg" cx="78" cy="148" rx="10" ry="8"/>
+            <ellipse class="ax-leg" cx="148" cy="148" rx="10" ry="8"/>
+            <!-- Head -->
+            <circle class="ax-head" cx="135" cy="80" r="48"/>
+            <!-- Gills LEFT -->
+            <g class="ax-gills ax-gills-left">
+              <path d="M95 55 Q70 35 60 50 Q72 50 80 60 Z"/>
+              <path d="M95 65 Q65 55 58 70 Q72 68 82 75 Z"/>
+              <path d="M97 78 Q70 80 62 95 Q75 88 88 88 Z"/>
+            </g>
+            <!-- Gills RIGHT -->
+            <g class="ax-gills ax-gills-right">
+              <path d="M175 55 Q200 35 210 50 Q198 50 190 60 Z"/>
+              <path d="M175 65 Q205 55 212 70 Q198 68 188 75 Z"/>
+              <path d="M173 78 Q200 80 208 95 Q195 88 182 88 Z"/>
+            </g>
+            <!-- Cheeks -->
+            <circle class="ax-cheek" cx="108" cy="92" r="7"/>
+            <circle class="ax-cheek" cx="160" cy="92" r="7"/>
+            <!-- Eyes -->
+            <g id="ax-eyes" class="ax-eyes">
+              <circle class="ax-eye" cx="120" cy="78" r="5"/>
+              <circle class="ax-eye" cx="150" cy="78" r="5"/>
+              <circle class="ax-eye-shine" cx="121.5" cy="76" r="1.5"/>
+              <circle class="ax-eye-shine" cx="151.5" cy="76" r="1.5"/>
+            </g>
+            <!-- Sleepy eyes (hidden by default) -->
+            <g id="ax-eyes-sleep" class="ax-eyes-sleep">
+              <path d="M115 78 Q120 82 125 78" />
+              <path d="M145 78 Q150 82 155 78" />
+            </g>
+            <!-- Mouth (happy by default) -->
+            <path class="ax-mouth ax-mouth-happy" d="M128 100 Q135 106 142 100" />
+            <!-- Mouth (sad — hidden unless .is-sad) -->
+            <path class="ax-mouth ax-mouth-sad" d="M128 104 Q135 96 142 104" />
+            <!-- Accessory anchor (hat) -->
+            <g id="ax-hat" class="ax-hat"></g>
+          </svg>
+
+          <!-- Heart particles spawn here -->
+          <div id="heart-particles" class="heart-particles"></div>
+          <!-- Floating XP labels -->
+          <div id="xp-particles" class="xp-particles"></div>
+          <!-- Sleeping Z's -->
+          <div id="sleep-zzz" class="sleep-zzz">z<span>z</span><span>z</span></div>
+        </div>
+      </div>
+
+      <div class="pet-xp-wrap">
+        <div class="pet-xp-label">
+          <span>XP</span>
+          <span><span id="pet-xp-num">0</span> / <span id="pet-xp-need">100</span></span>
+        </div>
+        <div class="pet-xp-bar"><div id="pet-xp-fill" class="pet-xp-fill"></div></div>
+      </div>
+
+      <div class="pet-message" id="pet-message">¡Hola! Aprende palabras para alimentarme.</div>
+
+      <div class="pet-actions">
+        <button id="pet-action-feed" class="pet-act-btn" aria-label="Alimentar">
+          <span class="pa-ico">🍤</span><span class="pa-lbl">Alimentar</span>
+        </button>
+        <button id="pet-action-pet" class="pet-act-btn" aria-label="Acariciar">
+          <span class="pa-ico">🤗</span><span class="pa-lbl">Acariciar</span>
+        </button>
+        <button id="pet-action-customize" class="pet-act-btn" aria-label="Personalizar">
+          <span class="pa-ico">🎨</span><span class="pa-lbl">Color</span>
+        </button>
+      </div>
+
+      <div class="bottom-nav-spacer"></div>
+    </div>
+
+    <!-- ── CUSTOMIZE MODAL ── -->
+    <div id="customize-modal" class="modal hidden">
+      <div class="modal-card">
+        <h3 class="modal-title">Personaliza a tu axolote</h3>
+        <p class="modal-sub">Color</p>
+        <div id="color-picker" class="color-picker"></div>
+        <p class="modal-sub">Sombrero</p>
+        <div id="hat-picker" class="hat-picker"></div>
+        <button id="customize-close" class="act-btn primary-btn">Listo</button>
+      </div>
+    </div>
+
+    <!-- ── LEVEL UP MODAL ── -->
+    <div id="levelup-modal" class="modal hidden">
+      <div class="modal-card levelup-card">
+        <div class="lvl-burst">✨</div>
+        <h3 class="modal-title">¡Subiste de nivel!</h3>
+        <p class="modal-sub" id="levelup-text">Nivel 2</p>
+        <p class="lvl-reward" id="levelup-reward"></p>
+        <button id="levelup-close" class="act-btn primary-btn">¡Genial!</button>
+      </div>
     </div>
 
     <!-- ── GAME SCREEN ── -->
@@ -98,7 +243,20 @@
       </div>
     </div>
 
+    <!-- ── BOTTOM NAV ── -->
+    <nav id="bottom-nav" class="bottom-nav hidden">
+      <button class="nav-btn active" data-nav="home">
+        <span class="nav-ico">📚</span>
+        <span class="nav-lbl">Aprender</span>
+      </button>
+      <button class="nav-btn" data-nav="pet">
+        <span class="nav-ico">🦎</span>
+        <span class="nav-lbl">Axolito</span>
+        <span id="nav-pet-badge" class="nav-pet-badge hidden">!</span>
+      </button>
+    </nav>
+
   </div>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>

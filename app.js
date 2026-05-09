@@ -84,7 +84,61 @@ const state = {
   user:            null,   // currently logged-in username
   users:           [],     // loaded from users.json
   completed:       new Set(),  // per-user progress (loaded after login)
+  pet:             null,   // axolotl pet data (loaded after login)
+  currentNav:      'home', // 'home' | 'pet'
+  decayTimer:      null,   // timer that periodically decays hunger/happiness
 };
+
+// ── Pet config ────────────────────────────────────────────
+const PET_DEFAULT = {
+  name:        'Axolito',
+  color:       'pink',
+  hat:         null,
+  level:       1,
+  xp:          0,
+  happiness:   80,
+  hunger:      70,
+  streak:      0,
+  lastDay:     null,    // YYYY-MM-DD of last activity
+  totalXp:     0,
+  createdAt:   null,
+};
+
+const PET_COLORS = [
+  { id: 'pink',    name: 'Rosa',       body: '#ffb6cf', belly: '#ffd5e3', gill: '#ff7aa1', cheek: '#ff5e8e', requires: 0  },
+  { id: 'gold',    name: 'Dorado',     body: '#ffd86b', belly: '#fff1b8', gill: '#ff9a00', cheek: '#e07a00', requires: 3  },
+  { id: 'mint',    name: 'Menta',      body: '#a3f0d3', belly: '#d5f9ec', gill: '#3ec9a1', cheek: '#1da882', requires: 5  },
+  { id: 'blue',    name: 'Azul',       body: '#8fc8ff', belly: '#cee4ff', gill: '#3a8de0', cheek: '#1d6bc0', requires: 8  },
+  { id: 'lilac',   name: 'Lila',       body: '#cfaaff', belly: '#e7d4ff', gill: '#9a6cff', cheek: '#6b3fc7', requires: 12 },
+  { id: 'shadow',  name: 'Sombra',     body: '#3a3550', belly: '#5a5478', gill: '#9a8ad9', cheek: '#c0a8ff', requires: 18 },
+];
+
+const PET_HATS = [
+  { id: null,        emoji: '—',   name: 'Sin sombrero', requires: 0  },
+  { id: 'graduate',  emoji: '🎓', name: 'Graduación',   requires: 3  },
+  { id: 'wizard',    emoji: '🧙', name: 'Mago',         requires: 7  },
+  { id: 'crown',     emoji: '👑', name: 'Corona',       requires: 14 },
+  { id: 'party',     emoji: '🎉', name: 'Fiesta',       requires: 5  },
+  { id: 'flower',    emoji: '🌸', name: 'Flor',         requires: 2  },
+];
+
+const STAGE_FOR_LEVEL = (lvl) => {
+  if (lvl >= 20) return 'Legendario';
+  if (lvl >= 10) return 'Adulto';
+  if (lvl >= 5)  return 'Juvenil';
+  if (lvl >= 2)  return 'Joven';
+  return 'Bebé';
+};
+
+// XP needed to reach next level (cumulative growth)
+const xpForLevel = (lvl) => Math.round(80 + (lvl - 1) * 40);
+
+// XP awarded per word placed correctly
+const XP_PER_WORD = 5;
+// XP bonus on full exercise completion
+const XP_PER_COMPLETION = 30;
+// XP for daily streak bonus
+const XP_PER_STREAK_DAY = 15;
 
 // ── Haptic helpers ─────────────────────────────────────────
 const haptic = {
@@ -96,7 +150,7 @@ const haptic = {
 
 // ── DOM refs ───────────────────────────────────────────────
 const $ = id => document.getElementById(id);
-const screens      = { login: $('login-screen'), home: $('home-screen'), game: $('game-screen'), results: $('results-screen') };
+const screens      = { login: $('login-screen'), home: $('home-screen'), game: $('game-screen'), results: $('results-screen'), pet: $('pet-screen') };
 const categoryList = $('category-list');
 const imageWrapper = $('image-wrapper');
 const vocabImage   = $('vocab-image');
@@ -125,11 +179,23 @@ function showScreen(name) {
       el.classList.add('slide-out');
     }
   });
+  // Bottom nav: visible on home/pet, hidden elsewhere
+  const nav = document.getElementById('bottom-nav');
+  if (nav) {
+    if (state.user && (name === 'home' || name === 'pet')) {
+      nav.classList.remove('hidden');
+    } else {
+      nav.classList.add('hidden');
+    }
+  }
 }
 
 // ── HOME ──────────────────────────────────────────────────
 function renderHome() {
   showScreen('home');
+  setNav('home');
+  updateTopbarStats();
+  updateNavBadge();
 
   // User pill + progress summary
   const userNameEl = $('user-name');
@@ -495,6 +561,9 @@ function markCorrect(id) {
   state.selectedTileId = null;
   updateScore();
 
+  // Reward axolotl: each correct word feeds & happifies the pet a little
+  petAwardForWord();
+
   if (state.solved.size === state.wordRects.length) {
     setTimeout(showResults, 500);
   }
@@ -557,6 +626,7 @@ function showResults() {
   haptic.success();
 
   // Mark as completed (per user)
+  const wasNew = !state.completed.has(state.exercise.file);
   state.completed.add(state.exercise.file);
   saveProgress();
 
@@ -565,6 +635,9 @@ function showResults() {
 
   // Stars rating (always 3 on completion)
   resultsStars.textContent = '⭐⭐⭐';
+
+  // Reward pet for completing the whole exercise
+  petAwardForCompletion(wasNew);
 
   spawnConfetti();
   showScreen('results');
@@ -649,14 +722,24 @@ function saveProgress() {
 function loginAs(username) {
   state.user = username;
   state.completed = loadProgress(username);
+  state.pet = loadPet(username);
   localStorage.setItem('currentUser', username);
+  petCheckDailyStreak();
+  startPetDecayTimer();
+  $('bottom-nav').classList.remove('hidden');
+  setNav('home');
   renderHome();
+  applyPetVisuals();
+  updateTopbarStats();
 }
 
 function logout() {
+  stopPetDecayTimer();
   state.user = null;
   state.completed = new Set();
+  state.pet = null;
   localStorage.removeItem('currentUser');
+  $('bottom-nav').classList.add('hidden');
   $('login-user').value = '';
   $('login-pass').value = '';
   $('login-error').textContent = ' ';
@@ -693,6 +776,414 @@ $('logout-btn')?.addEventListener('click', () => {
   logout();
 });
 
+// ══════════════════════════════════════════════════════════
+//  AXOLOTL PET SYSTEM
+// ══════════════════════════════════════════════════════════
+
+function petKey(username) { return 'pet_' + username; }
+
+function loadPet(username) {
+  try {
+    const raw = localStorage.getItem(petKey(username));
+    if (raw) {
+      const data = { ...PET_DEFAULT, ...JSON.parse(raw) };
+      return data;
+    }
+  } catch {}
+  return { ...PET_DEFAULT, createdAt: todayStr() };
+}
+
+function savePet() {
+  if (!state.user || !state.pet) return;
+  localStorage.setItem(petKey(state.user), JSON.stringify(state.pet));
+}
+
+function todayStr() {
+  const d = new Date();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `${d.getFullYear()}-${m}-${dd}`;
+}
+
+function dayDiff(aStr, bStr) {
+  if (!aStr || !bStr) return null;
+  const a = new Date(aStr + 'T00:00:00');
+  const b = new Date(bStr + 'T00:00:00');
+  return Math.round((b - a) / 86400000);
+}
+
+// ── Daily streak check on login ─────────────────────────
+function petCheckDailyStreak() {
+  if (!state.pet) return;
+  const today = todayStr();
+  const last  = state.pet.lastDay;
+  if (!last) {
+    state.pet.lastDay = today;
+    savePet();
+    return;
+  }
+  const diff = dayDiff(last, today);
+  if (diff === 0) return;            // same day, no change
+  if (diff === 1) {
+    // yesterday: do nothing yet, the streak only increments after activity today
+    return;
+  }
+  // >1 day gap → streak broken; happiness drops
+  state.pet.streak = 0;
+  state.pet.happiness = Math.max(15, state.pet.happiness - 30 * Math.min(diff - 1, 3));
+  state.pet.hunger    = Math.max(5,  state.pet.hunger    - 25 * Math.min(diff - 1, 3));
+  savePet();
+}
+
+// Called when the user does activity that should count toward a streak
+function petTouchActivity() {
+  if (!state.pet) return;
+  const today = todayStr();
+  const last  = state.pet.lastDay;
+  if (last !== today) {
+    const diff = dayDiff(last, today);
+    if (diff === 1)       state.pet.streak += 1;
+    else if (diff === null || diff > 1) state.pet.streak = 1;
+    state.pet.lastDay = today;
+
+    // streak bonus XP
+    petAddXp(XP_PER_STREAK_DAY + Math.min(state.pet.streak * 2, 30), { silent: true });
+  }
+}
+
+// ── XP / leveling ───────────────────────────────────────
+function petAddXp(amount, opts = {}) {
+  if (!state.pet || amount <= 0) return;
+  state.pet.xp += amount;
+  state.pet.totalXp += amount;
+
+  let leveled = false;
+  while (state.pet.xp >= xpForLevel(state.pet.level)) {
+    state.pet.xp -= xpForLevel(state.pet.level);
+    state.pet.level += 1;
+    leveled = true;
+  }
+
+  if (!opts.silent) spawnXpParticle('+' + amount);
+  savePet();
+
+  if (leveled) showLevelUp();
+  refreshPetUI();
+  updateTopbarStats();
+}
+
+function petAwardForWord() {
+  if (!state.pet) return;
+  petTouchActivity();
+  state.pet.hunger    = Math.min(100, state.pet.hunger + 3);
+  state.pet.happiness = Math.min(100, state.pet.happiness + 2);
+  petAddXp(XP_PER_WORD);
+}
+
+function petAwardForCompletion(isNew) {
+  if (!state.pet) return;
+  petTouchActivity();
+  const bonus = isNew ? XP_PER_COMPLETION : Math.round(XP_PER_COMPLETION / 2);
+  state.pet.hunger    = Math.min(100, state.pet.hunger + 15);
+  state.pet.happiness = Math.min(100, state.pet.happiness + 10);
+  petAddXp(bonus);
+}
+
+function showLevelUp() {
+  haptic.success();
+  const modal = $('levelup-modal');
+  $('levelup-text').textContent = 'Nivel ' + state.pet.level + ' — ' + STAGE_FOR_LEVEL(state.pet.level);
+  // Reveal newly-unlocked rewards
+  const newColor = PET_COLORS.find(c => c.requires === state.pet.level);
+  const newHat   = PET_HATS.find(h => h.requires === state.pet.level && h.id);
+  const rewards = [];
+  if (newColor) rewards.push('🎨 Nuevo color: ' + newColor.name);
+  if (newHat)   rewards.push(newHat.emoji + ' Nuevo sombrero: ' + newHat.name);
+  $('levelup-reward').textContent = rewards.join('  ·  ');
+  modal.classList.remove('hidden');
+  spawnConfetti();
+}
+
+$('levelup-close')?.addEventListener('click', () => {
+  $('levelup-modal').classList.add('hidden');
+});
+
+// ── Decay over time (idle-degradation, very gentle) ─────
+function startPetDecayTimer() {
+  stopPetDecayTimer();
+  state.decayTimer = setInterval(() => {
+    if (!state.pet) return;
+    state.pet.hunger    = Math.max(0, state.pet.hunger    - 1);
+    state.pet.happiness = Math.max(0, state.pet.happiness - 0.5);
+    savePet();
+    if (state.currentNav === 'pet') refreshPetUI();
+  }, 60000); // every minute
+}
+function stopPetDecayTimer() {
+  if (state.decayTimer) { clearInterval(state.decayTimer); state.decayTimer = null; }
+}
+
+// ── Render / refresh pet UI ─────────────────────────────
+function refreshPetUI() {
+  if (!state.pet) return;
+  $('pet-name').textContent = state.pet.name;
+  $('pet-level').textContent = state.pet.level;
+  $('pet-stage').textContent = STAGE_FOR_LEVEL(state.pet.level);
+  $('pet-streak-num').textContent = state.pet.streak;
+
+  $('pet-happy-bar').style.width  = state.pet.happiness + '%';
+  $('pet-hunger-bar').style.width = state.pet.hunger    + '%';
+
+  const need = xpForLevel(state.pet.level);
+  $('pet-xp-num').textContent  = Math.floor(state.pet.xp);
+  $('pet-xp-need').textContent = need;
+  $('pet-xp-fill').style.width = ((state.pet.xp / need) * 100) + '%';
+
+  // Mood
+  const svg = $('axolotl-svg');
+  const wrap = $('axolotl-wrap');
+  svg.classList.remove('is-sad');
+  wrap.classList.remove('is-sleepy');
+  svg.classList.remove('is-sleepy');
+  if (state.pet.happiness < 30 || state.pet.hunger < 20) {
+    svg.classList.add('is-sad');
+  } else if (state.pet.hunger < 5) {
+    svg.classList.add('is-sleepy');
+    wrap.classList.add('is-sleepy');
+  }
+
+  // Message
+  $('pet-message').textContent = petMessage();
+
+  updateNavBadge();
+}
+
+function updateNavBadge() {
+  const badge = $('nav-pet-badge');
+  if (!badge) return;
+  if (!state.pet) { badge.classList.add('hidden'); return; }
+  if (state.pet.hunger < 25 || state.pet.happiness < 30) badge.classList.remove('hidden');
+  else badge.classList.add('hidden');
+}
+
+function petMessage() {
+  const p = state.pet;
+  if (p.hunger < 15)     return '¡' + p.name + ' tiene mucha hambre! Aprende palabras para alimentarlo.';
+  if (p.happiness < 25)  return p.name + ' está triste. ¡Acarícialo y juega un rato!';
+  if (p.streak >= 7)     return '🔥 ¡Racha de ' + p.streak + ' días! ' + p.name + ' está orgulloso de ti.';
+  if (p.level >= 10)     return '¡' + p.name + ' es todo un experto en español!';
+  if (p.hunger > 85 && p.happiness > 85) return '¡' + p.name + ' está feliz y satisfecho! ✨';
+  return '¡Hola! Aprende palabras para que ' + p.name + ' crezca.';
+}
+
+function applyPetVisuals() {
+  if (!state.pet) return;
+  const svg = $('axolotl-svg');
+  if (!svg) return;
+  const c = PET_COLORS.find(x => x.id === state.pet.color) || PET_COLORS[0];
+  svg.style.setProperty('--ax-body',  c.body);
+  svg.style.setProperty('--ax-belly', c.belly);
+  svg.style.setProperty('--ax-gill',  c.gill);
+  svg.style.setProperty('--ax-cheek', c.cheek);
+
+  // Hat — render via foreignObject
+  const hatGroup = $('ax-hat');
+  hatGroup.innerHTML = '';
+  if (state.pet.hat) {
+    const hat = PET_HATS.find(h => h.id === state.pet.hat);
+    if (hat && hat.id) {
+      // Use SVG <text> for emoji hat
+      const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      text.setAttribute('x', '135');
+      text.setAttribute('y', '40');
+      text.setAttribute('text-anchor', 'middle');
+      text.setAttribute('font-size', '42');
+      text.textContent = hat.emoji;
+      hatGroup.appendChild(text);
+    }
+  }
+}
+
+// ── Pet screen interactions ─────────────────────────────
+function spawnHearts(count = 4) {
+  const wrap = $('heart-particles');
+  for (let i = 0; i < count; i++) {
+    const h = document.createElement('div');
+    h.className = 'heart-p';
+    h.textContent = '💖';
+    h.style.left = (30 + Math.random() * 60) + '%';
+    h.style.top  = (30 + Math.random() * 30) + '%';
+    h.style.animationDelay = (i * 0.08) + 's';
+    wrap.appendChild(h);
+    setTimeout(() => h.remove(), 1600);
+  }
+}
+
+function spawnXpParticle(label) {
+  const wrap = $('xp-particles');
+  if (!wrap) return;
+  const p = document.createElement('div');
+  p.className = 'xp-p';
+  p.textContent = label + ' XP';
+  p.style.left = (35 + Math.random() * 30) + '%';
+  p.style.top  = '50%';
+  wrap.appendChild(p);
+  setTimeout(() => p.remove(), 1800);
+}
+
+// "Acariciar" — give happiness
+$('pet-action-pet')?.addEventListener('click', () => {
+  if (!state.pet) return;
+  haptic.light();
+  state.pet.happiness = Math.min(100, state.pet.happiness + 5);
+  spawnHearts(3);
+  const wrap = $('axolotl-wrap');
+  const svg = $('axolotl-svg');
+  wrap.classList.add('is-petting');
+  svg.classList.remove('is-happy');
+  void svg.offsetWidth;
+  svg.classList.add('is-happy');
+  setTimeout(() => {
+    svg.classList.remove('is-happy');
+    wrap.classList.remove('is-petting');
+  }, 700);
+  savePet();
+  refreshPetUI();
+});
+
+// "Alimentar" — small free feed (limited — costs from a daily allowance)
+$('pet-action-feed')?.addEventListener('click', () => {
+  if (!state.pet) return;
+  if (state.pet.hunger >= 95) {
+    haptic.error();
+    flashMessage('¡Ya está lleno! Aprende palabras para darle más comida.');
+    return;
+  }
+  haptic.light();
+  state.pet.hunger    = Math.min(100, state.pet.hunger + 12);
+  state.pet.happiness = Math.min(100, state.pet.happiness + 3);
+  spawnHearts(2);
+  savePet();
+  refreshPetUI();
+});
+
+// Click axolotl directly = pet it
+$('axolotl-wrap')?.addEventListener('click', () => {
+  $('pet-action-pet').click();
+});
+
+function flashMessage(msg) {
+  const el = $('pet-message');
+  const original = el.textContent;
+  el.textContent = msg;
+  setTimeout(() => { if (state.currentNav === 'pet') el.textContent = petMessage(); }, 1800);
+}
+
+// ── Rename pet ──────────────────────────────────────────
+$('rename-pet-btn')?.addEventListener('click', () => {
+  if (!state.pet) return;
+  const next = prompt('Nombre de tu axolote:', state.pet.name);
+  if (next && next.trim()) {
+    state.pet.name = next.trim().slice(0, 16);
+    savePet();
+    refreshPetUI();
+  }
+});
+
+// ── Customize modal ─────────────────────────────────────
+$('pet-action-customize')?.addEventListener('click', () => {
+  buildColorPicker();
+  buildHatPicker();
+  $('customize-modal').classList.remove('hidden');
+});
+$('customize-close')?.addEventListener('click', () => {
+  $('customize-modal').classList.add('hidden');
+});
+
+function buildColorPicker() {
+  const wrap = $('color-picker');
+  wrap.innerHTML = '';
+  PET_COLORS.forEach(c => {
+    const sw = document.createElement('div');
+    sw.className = 'color-swatch';
+    sw.style.background = `radial-gradient(circle at 30% 30%, ${c.belly}, ${c.body} 60%, ${c.gill})`;
+    sw.title = c.name + (state.pet.level < c.requires ? ` (Nv. ${c.requires})` : '');
+    if (state.pet.level < c.requires) sw.classList.add('locked');
+    if (state.pet.color === c.id) sw.classList.add('selected');
+    sw.addEventListener('click', () => {
+      if (state.pet.level < c.requires) { haptic.error(); return; }
+      haptic.light();
+      state.pet.color = c.id;
+      savePet();
+      buildColorPicker();
+      applyPetVisuals();
+    });
+    wrap.appendChild(sw);
+  });
+}
+
+function buildHatPicker() {
+  const wrap = $('hat-picker');
+  wrap.innerHTML = '';
+  PET_HATS.forEach(h => {
+    const op = document.createElement('div');
+    op.className = 'hat-option';
+    if (h.id === null) {
+      const span = document.createElement('span');
+      span.className = 'hat-none';
+      span.textContent = 'Sin';
+      op.appendChild(span);
+    } else {
+      op.textContent = h.emoji;
+    }
+    if (h.requires > 0 && state.pet.level < h.requires) {
+      op.classList.add('locked');
+      op.dataset.req = 'Nv. ' + h.requires;
+    }
+    if (state.pet.hat === h.id) op.classList.add('selected');
+    op.addEventListener('click', () => {
+      if (h.requires > 0 && state.pet.level < h.requires) { haptic.error(); return; }
+      haptic.light();
+      state.pet.hat = h.id;
+      savePet();
+      buildHatPicker();
+      applyPetVisuals();
+    });
+    wrap.appendChild(op);
+  });
+}
+
+// ── Bottom navigation ───────────────────────────────────
+function setNav(name) {
+  state.currentNav = name;
+  document.querySelectorAll('#bottom-nav .nav-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.nav === name);
+  });
+}
+
+document.querySelectorAll('#bottom-nav .nav-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    haptic.light();
+    const target = btn.dataset.nav;
+    if (target === 'home') {
+      clearCountdown();
+      renderHome();
+    } else if (target === 'pet') {
+      setNav('pet');
+      showScreen('pet');
+      refreshPetUI();
+      applyPetVisuals();
+    }
+  });
+});
+
+// ── Topbar stats refresh ────────────────────────────────
+function updateTopbarStats() {
+  if (!state.pet) return;
+  const sn = $('topbar-streak-num'); if (sn) sn.textContent = state.pet.streak;
+  const xn = $('topbar-xp-num');     if (xn) xn.textContent = state.pet.totalXp;
+}
+
 // ── INIT ──────────────────────────────────────────────────
 (async () => {
   state.users = await loadUsers();
@@ -701,6 +1192,7 @@ $('logout-btn')?.addEventListener('click', () => {
   if (stillValid) {
     loginAs(savedUser);
   } else {
+    $('bottom-nav').classList.add('hidden');
     showScreen('login');
   }
 })();

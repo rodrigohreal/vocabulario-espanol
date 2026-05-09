@@ -292,7 +292,7 @@ html, body {
 /* Word zones (interactive drop targets) — opaque so they COVER the image labels */
 .word-zone {
   position: absolute;
-  background: rgba(12, 12, 32, 0.96);
+  background: rgba(12, 12, 32, 0.98);
   border: 2px dashed rgba(124, 77, 255, 0.75);
   border-radius: 4px;
   display: flex;
@@ -303,6 +303,7 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
   overflow: hidden;
+  z-index: 2;
 }
 .word-zone:active { transform: scale(0.97); }
 .word-zone.accepting {

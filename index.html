@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
   <div id="app">
@@ -27,7 +27,7 @@
     </div>
 
     <!-- ── HOME SCREEN ── -->
-    <div id="home-screen" class="screen">
+    <div id="home-screen" class="screen" data-view="lessons">
       <div class="home-topbar">
         <div class="user-pill">
           <span class="user-icon">👤</span>
@@ -40,13 +40,13 @@
         <button id="logout-btn" class="logout-btn" aria-label="Cerrar sesión">↪</button>
       </div>
       <div class="home-header">
-        <div class="home-logo">🇪🇸</div>
-        <h1 class="home-title">Vocabulario</h1>
-        <p class="home-subtitle">Elige un tema para practicar</p>
+        <div class="home-logo" id="home-logo">🎓</div>
+        <h1 class="home-title" id="home-title">Lecciones</h1>
+        <p class="home-subtitle" id="home-subtitle">Aprende paso a paso</p>
         <div class="progress-summary">
           <div class="prog-text">
             <strong id="progress-count">0</strong>
-            <span> / <span id="progress-total">0</span> ejercicios completados</span>
+            <span> / <span id="progress-total">0</span> <span id="progress-label">ejercicios completados</span></span>
           </div>
           <div class="mini-progress"><div id="mini-progress-bar" class="mini-progress-bar"></div></div>
         </div>
@@ -100,48 +100,48 @@
 
         <div id="axolotl-wrap" class="axolotl-wrap">
           <svg id="axolotl-svg" class="axolotl" viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
-            <!-- Tail -->
-            <path class="ax-tail" d="M40 95 Q15 90 8 75 Q22 95 18 110 Q30 100 40 105 Z" />
-            <!-- Body -->
-            <ellipse class="ax-body" cx="110" cy="105" rx="65" ry="42"/>
+            <!-- Tail (long & flowy) -->
+            <path class="ax-tail" d="M48 110 Q22 108 6 92 Q14 110 8 128 Q24 116 48 120 Z" />
+            <!-- Body (slim, elongated) -->
+            <ellipse class="ax-body" cx="112" cy="115" rx="60" ry="26"/>
             <!-- Belly -->
-            <ellipse class="ax-belly" cx="115" cy="118" rx="48" ry="22"/>
-            <!-- Front legs -->
-            <ellipse class="ax-leg" cx="78" cy="148" rx="10" ry="8"/>
-            <ellipse class="ax-leg" cx="148" cy="148" rx="10" ry="8"/>
-            <!-- Head -->
-            <circle class="ax-head" cx="135" cy="80" r="48"/>
+            <ellipse class="ax-belly" cx="118" cy="122" rx="44" ry="11"/>
+            <!-- Front legs (smaller, tucked closer) -->
+            <ellipse class="ax-leg" cx="86" cy="138" rx="8" ry="6"/>
+            <ellipse class="ax-leg" cx="146" cy="138" rx="8" ry="6"/>
+            <!-- Head (smaller, more proportional) -->
+            <circle class="ax-head" cx="140" cy="88" r="40"/>
             <!-- Gills LEFT -->
             <g class="ax-gills ax-gills-left">
-              <path d="M95 55 Q70 35 60 50 Q72 50 80 60 Z"/>
-              <path d="M95 65 Q65 55 58 70 Q72 68 82 75 Z"/>
-              <path d="M97 78 Q70 80 62 95 Q75 88 88 88 Z"/>
+              <path d="M104 64 Q80 46 70 60 Q82 60 90 70 Z"/>
+              <path d="M104 74 Q76 64 70 80 Q82 76 92 84 Z"/>
+              <path d="M106 86 Q82 88 74 102 Q86 96 100 96 Z"/>
             </g>
             <!-- Gills RIGHT -->
             <g class="ax-gills ax-gills-right">
-              <path d="M175 55 Q200 35 210 50 Q198 50 190 60 Z"/>
-              <path d="M175 65 Q205 55 212 70 Q198 68 188 75 Z"/>
-              <path d="M173 78 Q200 80 208 95 Q195 88 182 88 Z"/>
+              <path d="M176 64 Q200 46 210 60 Q198 60 190 70 Z"/>
+              <path d="M176 74 Q204 64 210 80 Q198 76 188 84 Z"/>
+              <path d="M174 86 Q198 88 206 102 Q194 96 180 96 Z"/>
             </g>
             <!-- Cheeks -->
-            <circle class="ax-cheek" cx="108" cy="92" r="7"/>
-            <circle class="ax-cheek" cx="160" cy="92" r="7"/>
+            <circle class="ax-cheek" cx="118" cy="98" r="5.5"/>
+            <circle class="ax-cheek" cx="162" cy="98" r="5.5"/>
             <!-- Eyes -->
             <g id="ax-eyes" class="ax-eyes">
-              <circle class="ax-eye" cx="120" cy="78" r="5"/>
-              <circle class="ax-eye" cx="150" cy="78" r="5"/>
-              <circle class="ax-eye-shine" cx="121.5" cy="76" r="1.5"/>
-              <circle class="ax-eye-shine" cx="151.5" cy="76" r="1.5"/>
+              <circle class="ax-eye" cx="128" cy="86" r="4.2"/>
+              <circle class="ax-eye" cx="152" cy="86" r="4.2"/>
+              <circle class="ax-eye-shine" cx="129.3" cy="84.7" r="1.3"/>
+              <circle class="ax-eye-shine" cx="153.3" cy="84.7" r="1.3"/>
             </g>
             <!-- Sleepy eyes (hidden by default) -->
             <g id="ax-eyes-sleep" class="ax-eyes-sleep">
-              <path d="M115 78 Q120 82 125 78" />
-              <path d="M145 78 Q150 82 155 78" />
+              <path d="M124 86 Q128 90 132 86" />
+              <path d="M148 86 Q152 90 156 86" />
             </g>
             <!-- Mouth (happy by default) -->
-            <path class="ax-mouth ax-mouth-happy" d="M128 100 Q135 106 142 100" />
+            <path class="ax-mouth ax-mouth-happy" d="M134 104 Q140 109 146 104" />
             <!-- Mouth (sad — hidden unless .is-sad) -->
-            <path class="ax-mouth ax-mouth-sad" d="M128 104 Q135 96 142 104" />
+            <path class="ax-mouth ax-mouth-sad" d="M134 108 Q140 100 146 108" />
             <!-- Accessory anchor (hat) -->
             <g id="ax-hat" class="ax-hat"></g>
           </svg>
@@ -221,13 +221,12 @@
         <div id="lesson-exercise" class="lesson-exercise"></div>
       </div>
 
-      <!-- Feedback footer (slides up when checking answer) -->
+      <!-- Feedback panel (slides up when checking answer; uses morphing Verificar→Continuar button below) -->
       <div id="lesson-feedback" class="lesson-feedback hidden">
         <div class="feedback-inner">
           <div class="feedback-title" id="feedback-title"></div>
           <div class="feedback-detail" id="feedback-detail"></div>
         </div>
-        <button id="feedback-continue" class="act-btn feedback-continue-btn">Continuar</button>
       </div>
 
       <!-- Check button -->
@@ -323,18 +322,22 @@
 
     <!-- ── BOTTOM NAV ── -->
     <nav id="bottom-nav" class="bottom-nav hidden">
-      <button class="nav-btn active" data-nav="home">
-        <span class="nav-ico">📚</span>
-        <span class="nav-lbl">Aprender</span>
+      <button class="nav-btn active" data-nav="lessons">
+        <span class="nav-ico">🎓</span>
+        <span class="nav-lbl">Lecciones</span>
+      </button>
+      <button class="nav-btn" data-nav="vocab">
+        <span class="nav-ico">🖼️</span>
+        <span class="nav-lbl">Vocabulario</span>
       </button>
       <button class="nav-btn" data-nav="pet">
         <span class="nav-ico">🦎</span>
-        <span class="nav-lbl">Axolito</span>
+        <span class="nav-lbl">Axolote</span>
         <span id="nav-pet-badge" class="nav-pet-badge hidden">!</span>
       </button>
     </nav>
 
   </div>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

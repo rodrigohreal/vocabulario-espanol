@@ -1451,6 +1451,10 @@ html, body {
    DUOLINGO-STYLE LESSONS
 ════════════════════════════════════════════════════════════ */
 
+/* Toggle visibility of the two home views */
+#home-screen[data-view="lessons"] #category-list { display: none; }
+#home-screen[data-view="vocab"]   #lessons-path  { display: none; }
+
 /* Lessons path on home screen */
 .lessons-path {
   padding: 8px 14px 4px;
@@ -1913,7 +1917,7 @@ html, body {
 .lesson-feedback {
   background: var(--surface);
   border-top: 1px solid var(--border);
-  padding: 14px 16px 12px;
+  padding: 12px 16px 4px;
   flex-shrink: 0;
   animation: feedback-slide 0.3s ease;
 }
@@ -1924,7 +1928,7 @@ html, body {
   from { transform: translateY(60px); opacity: 0; }
   to   { transform: translateY(0); opacity: 1; }
 }
-.feedback-inner { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+.feedback-inner { display: flex; flex-direction: column; gap: 4px; }
 .feedback-title {
   font-size: 17px;
   font-weight: 900;
@@ -1937,18 +1941,26 @@ html, body {
   font-weight: 600;
 }
 .feedback-detail strong { color: var(--text); font-weight: 800; }
-.feedback-continue-btn {
-  width: 100%;
+
+/* Verificar→Continuar morphing button colors */
+#lesson-check-btn.continue-correct {
   background: var(--correct);
   color: white;
   box-shadow: 0 4px 0 #00a050;
 }
-.lesson-feedback.wrong .feedback-continue-btn {
+#lesson-check-btn.continue-correct:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #00a050;
+}
+#lesson-check-btn.continue-wrong {
   background: var(--wrong);
+  color: white;
   box-shadow: 0 4px 0 #b80038;
 }
-.feedback-continue-btn:active { transform: translateY(2px); box-shadow: 0 2px 0 #00a050; }
-.lesson-feedback.wrong .feedback-continue-btn:active { box-shadow: 0 2px 0 #b80038; }
+#lesson-check-btn.continue-wrong:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #b80038;
+}
 
 /* Lesson results */
 #lesson-results-screen,

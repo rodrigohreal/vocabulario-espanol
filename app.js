@@ -191,17 +191,48 @@ function showScreen(name) {
 }
 
 // ── HOME ──────────────────────────────────────────────────
-function renderHome() {
+function renderHome(view) {
+  // Default to lessons if no view specified, or use last selected
+  view = view || state.homeView || 'lessons';
+  state.homeView = view;
   showScreen('home');
-  setNav('home');
+  setNav(view);
   updateTopbarStats();
   updateNavBadge();
 
-  // User pill + progress summary
+  // Apply view to home-screen so CSS can hide the inactive panel
+  const homeScreen = $('home-screen');
+  if (homeScreen) homeScreen.dataset.view = view;
+
+  // Update header title/subtitle/logo per view
+  const logo  = $('home-logo');
+  const title = $('home-title');
+  const sub   = $('home-subtitle');
+  const lbl   = $('progress-label');
+  if (view === 'vocab') {
+    if (logo)  logo.textContent  = '🖼️';
+    if (title) title.textContent = 'Vocabulario';
+    if (sub)   sub.textContent   = 'Imágenes con vocabulario';
+    if (lbl)   lbl.textContent   = 'imágenes completadas';
+  } else {
+    if (logo)  logo.textContent  = '🎓';
+    if (title) title.textContent = 'Lecciones';
+    if (sub)   sub.textContent   = 'Aprende paso a paso';
+    if (lbl)   lbl.textContent   = 'lecciones completadas';
+  }
+
+  // User pill + progress summary — use the right counter for the active view
   const userNameEl = $('user-name');
   if (userNameEl) userNameEl.textContent = state.user || '';
-  const total = EXERCISES.length;
-  const done  = state.completed.size;
+  let total, done;
+  if (view === 'lessons') {
+    const prog = getLessonProgress();
+    total = LESSONS.length;
+    done  = LESSONS.filter(l => prog[l.id]?.completed).length;
+  } else {
+    total = EXERCISES.length;
+    done  = state.completed.size;
+  }
   const cnt = $('progress-count');     if (cnt) cnt.textContent = done;
   const tot = $('progress-total');     if (tot) tot.textContent = total;
   const bar = $('mini-progress-bar');  if (bar) bar.style.width = total ? ((done / total) * 100) + '%' : '0%';
@@ -727,8 +758,7 @@ function loginAs(username) {
   petCheckDailyStreak();
   startPetDecayTimer();
   $('bottom-nav').classList.remove('hidden');
-  setNav('home');
-  renderHome();
+  renderHome('lessons');
   applyPetVisuals();
   updateTopbarStats();
 }
@@ -994,10 +1024,10 @@ function applyPetVisuals() {
     if (hat && hat.id) {
       // Use SVG <text> for emoji hat
       const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-      text.setAttribute('x', '135');
-      text.setAttribute('y', '40');
+      text.setAttribute('x', '140');
+      text.setAttribute('y', '54');
       text.setAttribute('text-anchor', 'middle');
-      text.setAttribute('font-size', '42');
+      text.setAttribute('font-size', '38');
       text.textContent = hat.emoji;
       hatGroup.appendChild(text);
     }
@@ -1165,9 +1195,9 @@ document.querySelectorAll('#bottom-nav .nav-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     haptic.light();
     const target = btn.dataset.nav;
-    if (target === 'home') {
+    if (target === 'lessons' || target === 'vocab') {
       clearCountdown();
-      renderHome();
+      renderHome(target);
     } else if (target === 'pet') {
       setNav('pet');
       showScreen('pet');
@@ -1749,11 +1779,12 @@ function renderCurrentExercise() {
   // Reset feedback
   $('lesson-feedback').classList.add('hidden');
   $('lesson-feedback').classList.remove('correct', 'wrong');
-  // Reset check button
+  // Reset check button (back to "Verificar" mode)
   const checkBtn = $('lesson-check-btn');
   checkBtn.disabled = true;
   checkBtn.textContent = 'Verificar';
-  // Show actions, hide feedback initially handled above
+  checkBtn.dataset.mode = 'check';
+  checkBtn.classList.remove('continue-correct', 'continue-wrong');
 
   // Reset per-exercise state
   lessonState.pickChoice = null;
@@ -1909,8 +1940,7 @@ function renderMatchExercise(root, ex) {
     grid.appendChild(tile);
   });
 
-  // For match, the "Verificar" button doesn't apply — auto-completes
-  $('lesson-check-btn').textContent = 'Continuar';
+  // For match, the button stays disabled until all pairs are matched, then we auto-check.
   $('lesson-check-btn').disabled = true;
 }
 
@@ -2033,8 +2063,12 @@ function drawFillSentence(el, ex) {
 }
 
 // ── Check / continue ─────────────────────────────────────
-$('lesson-check-btn')?.addEventListener('click', onCheckPressed);
-$('feedback-continue')?.addEventListener('click', onContinuePressed);
+// Single button morphs between "Verificar" (check answer) and "Continuar" (advance).
+$('lesson-check-btn')?.addEventListener('click', () => {
+  const btn = $('lesson-check-btn');
+  if (btn.dataset.mode === 'continue') return onContinuePressed();
+  onCheckPressed();
+});
 
 function onCheckPressed() {
   const ex = lessonState.exercises[lessonState.current];
@@ -2083,7 +2117,13 @@ function showFeedback(correct, correctText) {
   $('feedback-detail').innerHTML = correct
     ? '¡Bien hecho! 🎉'
     : (correctText ? `Respuesta: <strong>${correctText}</strong>` : 'Inténtalo de nuevo en la próxima.');
-  $('feedback-continue').textContent = 'Continuar';
+  // Morph the check button into a "Continuar" button colored by result
+  const btn = $('lesson-check-btn');
+  btn.textContent = 'Continuar';
+  btn.dataset.mode = 'continue';
+  btn.disabled = false;
+  btn.classList.toggle('continue-correct', correct);
+  btn.classList.toggle('continue-wrong', !correct);
   lessonState.pendingOk = correct;
   if (correct) haptic.success(); else haptic.error();
 }
@@ -2178,8 +2218,8 @@ screens['lesson-fail']   = $('lesson-fail-screen');
 
 // Hook into renderHome so the lessons path is rendered/refreshed
 const _origRenderHomeLessons = renderHome;
-renderHome = function() {
-  _origRenderHomeLessons();
+renderHome = function(...args) {
+  _origRenderHomeLessons(...args);
   renderLessonsPath();
 };
 

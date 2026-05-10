@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
   <div id="app">
@@ -61,32 +61,37 @@
     <!-- ── PET SCREEN ── -->
     <div id="pet-screen" class="screen">
       <div class="pet-header">
-        <div class="pet-name-line">
-          <span id="pet-name" class="pet-name">Axolito</span>
-          <button id="rename-pet-btn" class="rename-btn" aria-label="Renombrar">✎</button>
-        </div>
-        <div class="pet-level-line">
-          <span class="pet-level-badge">Nv. <span id="pet-level">1</span></span>
-          <span class="pet-stage" id="pet-stage">Bebé</span>
+        <div class="pet-name-block">
+          <div class="pet-name-line">
+            <span id="pet-name" class="pet-name">Axolito</span>
+            <button id="rename-pet-btn" class="rename-btn" aria-label="Renombrar">✎</button>
+          </div>
+          <div class="pet-level-line">
+            <span class="pet-level-badge">Nv. <span id="pet-level">1</span></span>
+            <span class="pet-stage" id="pet-stage">Bebé</span>
+          </div>
         </div>
       </div>
 
       <div class="pet-stats">
         <div class="pet-stat" title="Felicidad">
-          <span class="ps-ico">💖</span>
+          <div class="ps-row"><span class="ps-ico">💖</span><span class="ps-lbl">Felicidad</span></div>
           <div class="ps-bar"><div id="pet-happy-bar" class="ps-bar-fill happy"></div></div>
         </div>
         <div class="pet-stat" title="Hambre">
-          <span class="ps-ico">🍤</span>
+          <div class="ps-row"><span class="ps-ico">🍤</span><span class="ps-lbl">Saciedad</span></div>
           <div class="ps-bar"><div id="pet-hunger-bar" class="ps-bar-fill hunger"></div></div>
         </div>
-        <div class="pet-stat" title="Racha">
-          <span class="ps-ico">🔥</span>
-          <span class="ps-streak"><span id="pet-streak-num">0</span> días</span>
+        <div class="pet-stat streak-stat" title="Racha">
+          <div class="ps-row"><span class="ps-ico">🔥</span><span class="ps-lbl">Racha</span></div>
+          <div class="ps-streak-val"><span id="pet-streak-num">0</span><span class="ps-streak-unit">días</span></div>
         </div>
       </div>
 
       <div class="pet-tank">
+        <div class="tank-rays"></div>
+        <div class="tank-plant tp-left">🌿</div>
+        <div class="tank-plant tp-right">🌱</div>
         <div class="bubble b1"></div>
         <div class="bubble b2"></div>
         <div class="bubble b3"></div>
@@ -227,7 +232,6 @@
 
       <!-- Check button -->
       <div class="lesson-actions">
-        <button id="lesson-skip-btn" class="act-btn ghost-btn">Saltar</button>
         <button id="lesson-check-btn" class="act-btn primary-btn" disabled>Verificar</button>
       </div>
     </div>
@@ -331,6 +335,6 @@
     </nav>
 
   </div>
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

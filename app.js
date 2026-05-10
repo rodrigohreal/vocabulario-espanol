@@ -1665,27 +1665,34 @@ function showLessonPreview(lesson, completed, opts = {}) {
   // Build a transient preview overlay
   const prev = document.createElement('div');
   prev.className = 'lesson-preview';
+  const ctaLabel = opts.locked
+    ? 'Entendido'
+    : (completed ? 'Practicar de nuevo' : '¡Empezar!');
   prev.innerHTML = `
     <div class="lesson-preview-card">
+      <button class="lesson-preview-close" id="lp-close" aria-label="Cerrar">×</button>
       <div class="lesson-preview-emoji">${opts.locked ? '🔒' : lesson.emoji}</div>
       <div class="lesson-preview-name">${lesson.name}</div>
       <div class="lesson-preview-desc">${
         opts.locked
           ? 'Completa "' + (opts.prevName || '...') + '" primero'
-          : (completed ? '¡Ya completaste esta lección! ¿Practicar de nuevo?' : lesson.desc)
+          : (completed ? '¡Ya completaste esta lección!' : lesson.desc)
       }</div>
-      ${opts.locked ? '' : '<button class="act-btn" id="lp-start">¡Empezar!</button>'}
-      <button class="act-btn lesson-preview-skip" id="lp-cancel">${opts.locked ? 'Entendido' : 'Cancelar'}</button>
+      <button class="act-btn" id="lp-cta">${ctaLabel}</button>
     </div>
   `;
   document.body.appendChild(prev);
-  prev.querySelector('#lp-cancel').addEventListener('click', () => prev.remove());
-  if (!opts.locked) {
-    prev.querySelector('#lp-start').addEventListener('click', () => {
-      prev.remove();
-      startLesson(lesson.id);
-    });
-  }
+  // Close handlers: X button, backdrop click, Escape key
+  const close = () => prev.remove();
+  prev.querySelector('#lp-close').addEventListener('click', close);
+  prev.addEventListener('click', e => { if (e.target === prev) close(); });
+  const onKey = e => { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onKey); } };
+  document.addEventListener('keydown', onKey);
+  // CTA: start lesson if unlocked, otherwise just close
+  prev.querySelector('#lp-cta').addEventListener('click', () => {
+    close();
+    if (!opts.locked) startLesson(lesson.id);
+  });
 }
 
 // ── Start / restart lesson ───────────────────────────────
@@ -2146,18 +2153,6 @@ $('lesson-quit-btn')?.addEventListener('click', () => {
   haptic.light();
   if (confirm('¿Salir de la lección? Perderás tu progreso actual.')) {
     renderHome();
-  }
-});
-
-$('lesson-skip-btn')?.addEventListener('click', () => {
-  haptic.light();
-  // Treat skip as wrong but advance
-  lessonState.wrong++;
-  loseHeart();
-  if (lessonState.hearts > 0) {
-    lessonState.current++;
-    if (lessonState.current >= lessonState.exercises.length) completeLesson();
-    else renderCurrentExercise();
   }
 });
 

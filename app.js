@@ -1990,6 +1990,433 @@ const LESSONS = [
       { t: 'fill', sentence: ['El', null, 'es azul.'], target: 'mar', opts: ['mar', 'árbol', 'flor'], hint: 'Море синее' },
     ],
   },
+
+  // ── 21. Verbos II ─────────────────────────────────────
+  // Reinforces ser/estar/tener from L9 + introduces querer, poder, ir
+  {
+    id: 'l21', name: 'Verbos II', emoji: '💪', desc: 'Más verbos esenciales',
+    exercises: [
+      { t: 'pick', q: '«Хотеть»', opts: [
+        { txt: 'querer', em: '💖' },
+        { txt: 'poder',  em: '💪' },
+        { txt: 'saber',  em: '🧠' },
+        { txt: 'venir',  em: '⬅️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Идти»', opts: [
+        { txt: 'venir', em: '⬅️' },
+        { txt: 'ir',    em: '🚶' },
+        { txt: 'ver',   em: '👀' },
+        { txt: 'estar', em: '📍' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Иметь»', opts: [
+        { txt: 'ser',    em: '🧬' },
+        { txt: 'estar',  em: '📍' },
+        { txt: 'tener',  em: '✋' },
+        { txt: 'hacer',  em: '🔨' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['querer', 'хотеть'],
+        ['poder',  'мочь'],
+        ['saber',  'знать'],
+        ['ver',    'видеть'],
+      ]},
+      { t: 'match', pairs: [
+        ['hacer',  'делать'],
+        ['decir',  'говорить (сказать)'],
+        ['venir',  'приходить'],
+        ['dar',    'давать'],
+      ]},
+      // Reuse: «yo como pan» pattern from L9
+      { t: 'translate', from: 'Я хочу воду', tiles: ['quiero', 'agua', 'yo', 'como'], answer: ['yo', 'quiero', 'agua'], answers: [['yo', 'quiero', 'agua'], ['quiero', 'agua']] },
+      { t: 'fill', sentence: ['No', null, 'hablar inglés.'], target: 'puedo', opts: ['puedo', 'tengo', 'soy'], hint: 'Я не могу говорить по-английски' },
+    ],
+  },
+
+  // ── 22. Adjetivos ─────────────────────────────────────
+  {
+    id: 'l22', name: 'Adjetivos', emoji: '📏', desc: 'Grande, pequeño, alto…',
+    exercises: [
+      { t: 'pick', q: '«Большой»', opts: [
+        { txt: 'grande',   em: '⬛' },
+        { txt: 'pequeño',  em: '◽' },
+        { txt: 'alto',     em: '🔼' },
+        { txt: 'bajo',     em: '🔽' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Маленький»', opts: [
+        { txt: 'gordo',    em: '🐖' },
+        { txt: 'pequeño',  em: '◽' },
+        { txt: 'largo',    em: '➡️' },
+        { txt: 'corto',    em: '↔️' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Новый»', opts: [
+        { txt: 'viejo',    em: '👴' },
+        { txt: 'feo',      em: '🤢' },
+        { txt: 'nuevo',    em: '✨' },
+        { txt: 'malo',     em: '👎' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['grande',  'большой'],
+        ['pequeño', 'маленький'],
+        ['alto',    'высокий'],
+        ['bajo',    'низкий'],
+      ]},
+      { t: 'match', pairs: [
+        ['bonito',  'красивый'],
+        ['feo',     'некрасивый'],
+        ['nuevo',   'новый'],
+        ['viejo',   'старый'],
+      ]},
+      // Reuse: rosa roja (L5)
+      { t: 'translate', from: 'Большой дом', tiles: ['una', 'casa', 'grande', 'pequeña'], answer: ['una', 'casa', 'grande'], answers: [['una', 'casa', 'grande'], ['casa', 'grande']] },
+      { t: 'fill', sentence: ['El elefante es muy', null, '.'], target: 'grande', opts: ['grande', 'pequeño', 'corto'], hint: 'Слон очень большой' },
+    ],
+  },
+
+  // ── 23. Repaso 1 (revisión de L1-L5) ──────────────────
+  // REVIEW LESSON: mixes Saludos / Yo soy / Familia / Números / Colores
+  {
+    id: 'l23', name: 'Repaso 1', emoji: '🔁', desc: 'Repasa lo aprendido (1-5)',
+    exercises: [
+      // From L1
+      { t: 'pick', q: '«Привет»', opts: [
+        { txt: 'hola',    em: '👋' },
+        { txt: 'gracias', em: '🙏' },
+        { txt: 'adiós',   em: '🙋' },
+        { txt: 'perdón',  em: '🙇' },
+      ], correct: 0 },
+      // From L4
+      { t: 'pick', q: '«7» (семь)', opts: [
+        { txt: 'cinco',  em: '5️⃣' },
+        { txt: 'seis',   em: '6️⃣' },
+        { txt: 'siete',  em: '7️⃣' },
+        { txt: 'ocho',   em: '8️⃣' },
+      ], correct: 2 },
+      // From L5
+      { t: 'pick', q: '«Зелёный»', opts: [
+        { txt: 'azul',  em: '🔵' },
+        { txt: 'verde', em: '🟢' },
+        { txt: 'rojo',  em: '🔴' },
+        { txt: 'negro', em: '⚫' },
+      ], correct: 1 },
+      // Mix family + colors
+      { t: 'match', pairs: [
+        ['madre',  'мама'],
+        ['padre',  'папа'],
+        ['rojo',   'красный'],
+        ['azul',   'синий'],
+      ]},
+      // Mix numbers + greetings
+      { t: 'match', pairs: [
+        ['hola',   'привет'],
+        ['adiós',  'пока'],
+        ['uno',    'один'],
+        ['dos',    'два'],
+      ]},
+      // From L2 (with multi-answer)
+      { t: 'translate', from: 'Я Денис', tiles: ['yo', 'soy', 'Denis', 'eres'], answer: ['yo', 'soy', 'Denis'], answers: [['yo', 'soy', 'Denis'], ['soy', 'Denis']] },
+      // From L1
+      { t: 'fill', sentence: ['Buenos', null, '.'], target: 'días', opts: ['días', 'tardes', 'noches'], hint: 'Доброе утро' },
+    ],
+  },
+
+  // ── 24. Preguntas ─────────────────────────────────────
+  {
+    id: 'l24', name: 'Preguntas', emoji: '❓', desc: 'Qué, quién, dónde, cuándo',
+    exercises: [
+      { t: 'pick', q: '«Что?»', opts: [
+        { txt: '¿qué?',     em: '❓' },
+        { txt: '¿quién?',   em: '👤' },
+        { txt: '¿dónde?',   em: '📍' },
+        { txt: '¿cuándo?',  em: '⏰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Где?»', opts: [
+        { txt: '¿cómo?',   em: '🤔' },
+        { txt: '¿dónde?',  em: '📍' },
+        { txt: '¿por qué?',em: '🧐' },
+        { txt: '¿cuánto?', em: '🔢' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Кто?»', opts: [
+        { txt: '¿qué?',   em: '❓' },
+        { txt: '¿cuál?',  em: '🔀' },
+        { txt: '¿quién?', em: '👤' },
+        { txt: '¿cómo?',  em: '🤔' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['qué',     'что'],
+        ['quién',   'кто'],
+        ['dónde',   'где'],
+        ['cuándo',  'когда'],
+      ]},
+      { t: 'match', pairs: [
+        ['cómo',    'как'],
+        ['por qué', 'почему'],
+        ['cuánto',  'сколько'],
+        ['cuál',    'какой'],
+      ]},
+      // Reuse "¿Cómo te llamas?" pattern (L2)
+      { t: 'translate', from: 'Где ты?', tiles: ['dónde', 'estás', 'tú', 'cómo'], answer: ['dónde', 'estás'], answers: [['dónde', 'estás'], ['dónde', 'estás', 'tú']] },
+      { t: 'fill', sentence: ['¿', null, 'te llamas?'], target: 'cómo', opts: ['cómo', 'qué', 'dónde'], hint: 'Как тебя зовут?' },
+    ],
+  },
+
+  // ── 25. Frutas ────────────────────────────────────────
+  // Reuses manzana from L6
+  {
+    id: 'l25', name: 'Frutas', emoji: '🍎', desc: 'Frutas comunes',
+    exercises: [
+      // Reuse from L6
+      { t: 'pick', q: '«Яблоко»', opts: [
+        { txt: 'manzana',  em: '🍎' },
+        { txt: 'plátano',  em: '🍌' },
+        { txt: 'naranja',  em: '🍊' },
+        { txt: 'uva',      em: '🍇' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Банан»', opts: [
+        { txt: 'pera',     em: '🍐' },
+        { txt: 'plátano',  em: '🍌' },
+        { txt: 'fresa',    em: '🍓' },
+        { txt: 'sandía',   em: '🍉' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Апельсин»', opts: [
+        { txt: 'limón',    em: '🍋' },
+        { txt: 'piña',     em: '🍍' },
+        { txt: 'naranja',  em: '🍊' },
+        { txt: 'cereza',   em: '🍒' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['manzana', 'яблоко'],
+        ['plátano', 'банан'],
+        ['naranja', 'апельсин'],
+        ['uva',     'виноград'],
+      ]},
+      { t: 'match', pairs: [
+        ['fresa',   'клубника'],
+        ['limón',   'лимон'],
+        ['sandía',  'арбуз'],
+        ['piña',    'ананас'],
+      ]},
+      // Reuse "Como una manzana" pattern (L6)
+      { t: 'translate', from: 'Я ем банан', tiles: ['yo', 'como', 'un', 'plátano', 'manzana'], answer: ['como', 'un', 'plátano'], answers: [['como', 'un', 'plátano'], ['yo', 'como', 'un', 'plátano']] },
+      { t: 'fill', sentence: ['La', null, 'es roja.'], target: 'manzana', opts: ['manzana', 'plátano', 'limón'], hint: 'Яблоко красное' },
+    ],
+  },
+
+  // ── 26. Transporte ────────────────────────────────────
+  {
+    id: 'l26', name: 'Transporte', emoji: '🚗', desc: 'Vehículos y viajes',
+    exercises: [
+      { t: 'pick', q: '«Машина»', opts: [
+        { txt: 'coche',    em: '🚗' },
+        { txt: 'autobús',  em: '🚌' },
+        { txt: 'tren',     em: '🚆' },
+        { txt: 'avión',    em: '✈️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Самолёт»', opts: [
+        { txt: 'barco',  em: '🚢' },
+        { txt: 'avión',  em: '✈️' },
+        { txt: 'moto',   em: '🏍️' },
+        { txt: 'taxi',   em: '🚕' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Велосипед»', opts: [
+        { txt: 'tren',     em: '🚆' },
+        { txt: 'autobús',  em: '🚌' },
+        { txt: 'bicicleta',em: '🚲' },
+        { txt: 'metro',    em: '🚇' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['coche',    'машина'],
+        ['autobús',  'автобус'],
+        ['tren',     'поезд'],
+        ['avión',    'самолёт'],
+      ]},
+      { t: 'match', pairs: [
+        ['bicicleta','велосипед'],
+        ['barco',    'корабль'],
+        ['moto',     'мотоцикл'],
+        ['taxi',     'такси'],
+      ]},
+      // Reuse "voy a la escuela" (L17)
+      { t: 'translate', from: 'Я еду на машине', tiles: ['voy', 'en', 'coche', 'a'], answer: ['voy', 'en', 'coche'] },
+      { t: 'fill', sentence: ['El', null, 'es rápido.'], target: 'tren', opts: ['tren', 'casa', 'pan'], hint: 'Поезд быстрый' },
+    ],
+  },
+
+  // ── 27. Repaso 2 (revisión de L6-L10) ─────────────────
+  // REVIEW LESSON
+  {
+    id: 'l27', name: 'Repaso 2', emoji: '🔁', desc: 'Repasa lo aprendido (6-10)',
+    exercises: [
+      // From L6
+      { t: 'pick', q: '«Вода»', opts: [
+        { txt: 'leche', em: '🥛' },
+        { txt: 'agua',  em: '💧' },
+        { txt: 'café',  em: '☕' },
+        { txt: 'té',    em: '🍵' },
+      ], correct: 1 },
+      // From L7
+      { t: 'pick', q: '«Кот»', opts: [
+        { txt: 'perro', em: '🐶' },
+        { txt: 'pez',   em: '🐟' },
+        { txt: 'gato',  em: '🐱' },
+        { txt: 'vaca',  em: '🐮' },
+      ], correct: 2 },
+      // From L8
+      { t: 'pick', q: '«Пятница»', opts: [
+        { txt: 'viernes',  em: '5️⃣' },
+        { txt: 'sábado',   em: '6️⃣' },
+        { txt: 'lunes',    em: '1️⃣' },
+        { txt: 'jueves',   em: '4️⃣' },
+      ], correct: 0 },
+      // Mix verbs + food
+      { t: 'match', pairs: [
+        ['comer',  'есть'],
+        ['beber',  'пить'],
+        ['pan',    'хлеб'],
+        ['agua',   'вода'],
+      ]},
+      // Mix days + phrases
+      { t: 'match', pairs: [
+        ['gracias',   'спасибо'],
+        ['por favor', 'пожалуйста'],
+        ['hoy',       'сегодня'],
+        ['lunes',     'понедельник'],
+      ]},
+      // Reuse from L6 (with multi-answer)
+      { t: 'translate', from: 'Я пью воду', tiles: ['yo', 'bebo', 'agua', 'como'], answer: ['yo', 'bebo', 'agua'], answers: [['yo', 'bebo', 'agua'], ['bebo', 'agua']] },
+      // From L7
+      { t: 'fill', sentence: ['Tengo un', null, '.'], target: 'perro', opts: ['perro', 'lunes', 'pan'], hint: 'У меня собака' },
+    ],
+  },
+
+  // ── 28. Posiciones ────────────────────────────────────
+  // Where things are: en/sobre/debajo/al lado
+  {
+    id: 'l28', name: 'Posiciones', emoji: '📍', desc: 'Dónde está…',
+    exercises: [
+      { t: 'pick', q: '«В / внутри»', opts: [
+        { txt: 'en',     em: '📦' },
+        { txt: 'sobre',  em: '⬆️' },
+        { txt: 'debajo', em: '⬇️' },
+        { txt: 'cerca',  em: '↔️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Под»', opts: [
+        { txt: 'sobre',   em: '⬆️' },
+        { txt: 'debajo',  em: '⬇️' },
+        { txt: 'detrás',  em: '🔙' },
+        { txt: 'delante', em: '🔜' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Между»', opts: [
+        { txt: 'lejos',  em: '🌍' },
+        { txt: 'cerca',  em: '↔️' },
+        { txt: 'entre',  em: '↔️' },
+        { txt: 'aquí',   em: '📍' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['en',     'в'],
+        ['sobre',  'на'],
+        ['debajo', 'под'],
+        ['entre',  'между'],
+      ]},
+      { t: 'match', pairs: [
+        ['cerca',   'близко'],
+        ['lejos',   'далеко'],
+        ['aquí',    'здесь'],
+        ['allí',    'там'],
+      ]},
+      // Reuse: cocina from L11
+      { t: 'translate', from: 'Кот в кухне', tiles: ['el', 'gato', 'está', 'en', 'la', 'cocina'], answer: ['el', 'gato', 'está', 'en', 'la', 'cocina'] },
+      { t: 'fill', sentence: ['El libro está', null, 'la mesa.'], target: 'sobre', opts: ['sobre', 'aquí', 'lejos'], hint: 'Книга на столе' },
+    ],
+  },
+
+  // ── 29. Conversación ──────────────────────────────────
+  // Reuses L1 (saludos), L2 (yo soy), L3 (familia)
+  {
+    id: 'l29', name: 'Conversación', emoji: '💬', desc: 'Frases para conocer gente',
+    exercises: [
+      // Reuse from L10
+      { t: 'pick', q: '«Приятно познакомиться»', opts: [
+        { txt: 'mucho gusto',  em: '🤝' },
+        { txt: 'lo siento',    em: '😔' },
+        { txt: 'salud',        em: '🥂' },
+        { txt: 'hasta luego',  em: '👋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Откуда ты?»', opts: [
+        { txt: '¿adónde vas?',  em: '➡️' },
+        { txt: '¿de dónde eres?',em: '🌍' },
+        { txt: '¿qué haces?',   em: '🤔' },
+        { txt: '¿cómo estás?',  em: '😊' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Сколько тебе лет?»', opts: [
+        { txt: '¿qué hora es?',         em: '⏰' },
+        { txt: '¿cómo te llamas?',      em: '👤' },
+        { txt: '¿cuántos años tienes?', em: '🎂' },
+        { txt: '¿dónde vives?',         em: '🏠' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['mucho gusto',     'приятно познакомиться'],
+        ['¿de dónde eres?', 'откуда ты?'],
+        ['¿cómo estás?',    'как дела?'],
+        ['hasta luego',     'до свидания'],
+      ]},
+      { t: 'match', pairs: [
+        ['¿cómo te llamas?', 'как тебя зовут?'],
+        ['me llamo',         'меня зовут'],
+        ['soy de',           'я из'],
+        ['vivo en',          'я живу в'],
+      ]},
+      // Reuse: «Меня зовут Ана» (L2) — now also accepts "Soy Ana"
+      { t: 'translate', from: 'Меня зовут Ана', tiles: ['me', 'llamo', 'Ana', 'soy', 'tú'], answer: ['me', 'llamo', 'Ana'], answers: [['me', 'llamo', 'Ana'], ['soy', 'Ana']] },
+      { t: 'fill', sentence: ['Soy', null, 'Rusia.'], target: 'de', opts: ['de', 'en', 'a'], hint: 'Я из России' },
+    ],
+  },
+
+  // ── 30. Repaso final (L11-L20) ────────────────────────
+  // REVIEW LESSON: mixes Casa, Cuerpo, Ropa, Tiempo, Meses, Hora, Lugares, Profesiones, Sentimientos, Naturaleza
+  {
+    id: 'l30', name: 'Repaso final', emoji: '🏆', desc: 'Repasa lecciones 11-20',
+    exercises: [
+      // From L11
+      { t: 'pick', q: '«Кухня»', opts: [
+        { txt: 'cocina',     em: '🍳' },
+        { txt: 'baño',       em: '🚿' },
+        { txt: 'sala',       em: '🛋️' },
+        { txt: 'jardín',     em: '🌳' },
+      ], correct: 0 },
+      // From L14
+      { t: 'pick', q: '«Дождь»', opts: [
+        { txt: 'sol',     em: '☀️' },
+        { txt: 'lluvia',  em: '🌧️' },
+        { txt: 'nieve',   em: '❄️' },
+        { txt: 'viento',  em: '💨' },
+      ], correct: 1 },
+      // From L18
+      { t: 'pick', q: '«Учитель»', opts: [
+        { txt: 'cocinero', em: '👨‍🍳' },
+        { txt: 'médico',   em: '👨‍⚕️' },
+        { txt: 'profesor', em: '👩‍🏫' },
+        { txt: 'piloto',   em: '✈️' },
+      ], correct: 2 },
+      // Mix house + clothes
+      { t: 'match', pairs: [
+        ['casa',     'дом'],
+        ['cocina',   'кухня'],
+        ['camisa',   'рубашка'],
+        ['zapatos',  'туфли'],
+      ]},
+      // Mix nature + body
+      { t: 'match', pairs: [
+        ['árbol',  'дерево'],
+        ['flor',   'цветок'],
+        ['cabeza', 'голова'],
+        ['mano',   'рука'],
+      ]},
+      // Reuse from L19
+      { t: 'translate', from: 'Я счастлив', tiles: ['estoy', 'feliz', 'triste', 'soy'], answer: ['estoy', 'feliz'] },
+      // From L16
+      { t: 'fill', sentence: ['¿Qué', null, 'es?'], target: 'hora', opts: ['hora', 'casa', 'mar'], hint: 'Который час?' },
+    ],
+  },
 ];
 
 // ── Lesson runtime state ─────────────────────────────────

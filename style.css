@@ -906,72 +906,234 @@ html, body {
   letter-spacing: 0.5px;
 }
 
-/* Tank */
+/* ── Aquarium Tank ───────────────────────────────────── */
 .pet-tank {
   margin: 0 14px 12px;
   border-radius: var(--radius);
   height: 300px;
   position: relative;
   overflow: hidden;
-  background: #0e0e0e;
-  border: 1px solid var(--border);
+  /* Deep water gradient: light teal at surface → deep navy at bottom */
+  background:
+    linear-gradient(180deg,
+      #4ec3df 0%,
+      #2a8fc4 18%,
+      #1a5d9c 45%,
+      #0e3a73 78%,
+      #061d44 100%);
+  border: 2px solid rgba(140, 220, 255, 0.18);
+  box-shadow:
+    inset 0 0 60px rgba(0, 30, 80, 0.55),
+    inset 0 6px 22px rgba(180, 240, 255, 0.12),
+    0 4px 18px rgba(0, 0, 0, 0.45);
   flex-shrink: 0;
 }
+
+/* Glass shine on top edge */
 .pet-tank::before {
-  /* subtle top gradient */
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; height: 60px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent);
+  top: 0; left: 0; right: 0; height: 26px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.08) 60%, transparent);
   pointer-events: none;
+  z-index: 6;
 }
+/* Vignette */
 .pet-tank::after {
-  /* subtle bottom shading */
   content: '';
   position: absolute;
-  left: 0; right: 0; bottom: 0; height: 50px;
-  background: linear-gradient(0deg, rgba(255,255,255,0.02), transparent);
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0,15,40,0.4) 100%);
   pointer-events: none;
+  z-index: 5;
 }
+
+/* Surface ripple SVG */
+.water-surface {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 18px;
+  z-index: 4;
+  pointer-events: none;
+  animation: surface-shift 6s ease-in-out infinite;
+}
+.water-surface svg { width: 200%; height: 100%; display: block; }
+@keyframes surface-shift {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(-12px); }
+}
+
+/* Light rays slanting down from the surface */
+.water-rays {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+.water-rays .ray {
+  position: absolute;
+  top: -10%;
+  width: 60px;
+  height: 130%;
+  background: linear-gradient(180deg, rgba(220, 245, 255, 0.22), rgba(220, 245, 255, 0));
+  transform-origin: top center;
+  filter: blur(6px);
+  mix-blend-mode: screen;
+  animation: ray-shimmer 9s ease-in-out infinite;
+}
+.water-rays .ray.r1 { left: 8%;  transform: rotate(-10deg); animation-delay: 0s;   width: 50px; opacity: 0.85; }
+.water-rays .ray.r2 { left: 32%; transform: rotate(-4deg);  animation-delay: 2s;   width: 80px; opacity: 0.6;  }
+.water-rays .ray.r3 { left: 58%; transform: rotate(6deg);   animation-delay: 4s;   width: 70px; opacity: 0.7;  }
+.water-rays .ray.r4 { left: 80%; transform: rotate(12deg);  animation-delay: 1s;   width: 55px; opacity: 0.75; }
+@keyframes ray-shimmer {
+  0%, 100% { opacity: 0.55; transform: translateX(0)  rotate(var(--rot, 0deg)) scaleY(1); }
+  50%      { opacity: 0.95; transform: translateX(8px) rotate(var(--rot, 0deg)) scaleY(1.05); }
+}
+
+/* Caustic light pattern (animated) */
+.water-caustics {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+  background-image:
+    radial-gradient(ellipse 60px 18px at 20% 30%, rgba(220,250,255,0.5), transparent 70%),
+    radial-gradient(ellipse 70px 14px at 70% 50%, rgba(220,250,255,0.45), transparent 70%),
+    radial-gradient(ellipse 50px 16px at 45% 70%, rgba(220,250,255,0.4),  transparent 70%),
+    radial-gradient(ellipse 80px 20px at 85% 20%, rgba(220,250,255,0.5),  transparent 70%);
+  background-size: 200% 200%;
+  animation: caustics-drift 12s ease-in-out infinite alternate;
+}
+@keyframes caustics-drift {
+  0%   { background-position: 0% 0%,   0% 0%,   0% 0%,   0% 0%; }
+  100% { background-position: 30% 20%, -20% 15%, 25% -10%, -15% 25%; }
+}
+
+/* Sand / gravel substrate */
+.tank-substrate {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 36px;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse at 20% 30%, #d4b88a 0%, transparent 28%),
+    radial-gradient(ellipse at 60% 50%, #c8a878 0%, transparent 30%),
+    radial-gradient(ellipse at 85% 35%, #d8c094 0%, transparent 28%),
+    linear-gradient(180deg, #b89766, #8c6e3e);
+  border-top: 1px solid rgba(255, 220, 160, 0.25);
+  box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+.pebble {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 4px;
+  background: #f0d8a8;
+  box-shadow: inset -1px -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.4);
+}
+.pebble.p1 { left: 12%; width: 9px; height: 6px; background: #e8cd96; }
+.pebble.p2 { left: 36%; width: 12px; height: 8px; background: #d4b274; bottom: 6px; }
+.pebble.p3 { left: 62%; width: 8px;  height: 6px; background: #efd9a4; bottom: 5px;}
+.pebble.p4 { left: 84%; width: 10px; height: 7px; background: #c9a868; }
 
 .tank-rays { display: none; }
 
 .tank-plant {
   position: absolute;
-  bottom: 12px;
-  font-size: 26px;
+  bottom: 26px;
+  font-size: 30px;
   pointer-events: none;
   transform-origin: bottom center;
   animation: plant-sway 5s ease-in-out infinite;
-  opacity: 0.45;
-  filter: grayscale(0.5);
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 3px rgba(0, 30, 60, 0.5)) saturate(1.1);
+  z-index: 2;
 }
 .tank-plant.tp-left  { left: 14px; animation-delay: 0s; }
-.tank-plant.tp-right { right: 18px; font-size: 20px; animation-delay: 1.5s; }
+.tank-plant.tp-right { right: 18px; font-size: 24px; animation-delay: 1.5s; }
+.tank-plant.tp-mid   { left: 50%; transform: translateX(-50%); bottom: 24px; font-size: 22px; animation-delay: 0.7s; opacity: 0.75; }
 @keyframes plant-sway {
-  0%, 100% { transform: rotate(-3deg); }
-  50%      { transform: rotate(3deg); }
+  0%, 100% { transform: rotate(-4deg); }
+  50%      { transform: rotate(4deg); }
+}
+.tank-plant.tp-mid {
+  /* override translateX in sway */
+  animation-name: plant-sway-mid;
+}
+@keyframes plant-sway-mid {
+  0%, 100% { transform: translateX(-50%) rotate(-4deg); }
+  50%      { transform: translateX(-50%) rotate(4deg); }
 }
 
+/* Decorative little fish swimming past the axolotl */
+.tank-fish {
+  position: absolute;
+  font-size: 16px;
+  pointer-events: none;
+  z-index: 3;
+  filter: drop-shadow(0 1px 2px rgba(0, 30, 60, 0.6));
+  opacity: 0.85;
+}
+.tank-fish.tf1 {
+  top: 28%;
+  animation: fish-swim-r 14s linear infinite;
+}
+.tank-fish.tf2 {
+  top: 62%;
+  font-size: 13px;
+  animation: fish-swim-l 18s linear infinite;
+  animation-delay: 4s;
+  opacity: 0.7;
+}
+@keyframes fish-swim-r {
+  0%   { left: -10%; transform: scaleX(1) translateY(0); }
+  50%  { transform: scaleX(1) translateY(-6px); }
+  100% { left: 110%; transform: scaleX(1) translateY(0); }
+}
+@keyframes fish-swim-l {
+  0%   { right: -10%; transform: scaleX(-1) translateY(0); }
+  50%  { transform: scaleX(-1) translateY(6px); }
+  100% { right: 110%; transform: scaleX(-1) translateY(0); }
+}
+
+/* Bubbles — wobbly rise */
 .bubble {
   position: absolute;
   bottom: -20px;
-  background: rgba(255,255,255,0.18);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.1) 80%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 0;
   animation: bubble-up linear infinite;
+  z-index: 3;
+  box-shadow: 0 0 4px rgba(255,255,255,0.3);
 }
-.bubble.b1 { left: 12%; width: 6px; height: 6px; animation-duration: 7s; animation-delay: 0s; }
-.bubble.b2 { left: 32%; width: 8px; height: 8px; animation-duration: 9s; animation-delay: 2s; }
-.bubble.b3 { left: 55%; width: 5px; height: 5px; animation-duration: 6s; animation-delay: 1s; }
-.bubble.b4 { left: 75%; width: 7px; height: 7px; animation-duration: 8s; animation-delay: 3s; }
-.bubble.b5 { left: 88%; width: 5px; height: 5px; animation-duration: 7.5s; animation-delay: 0.5s; }
+.bubble.b1 { left: 10%; width: 6px;  height: 6px;  animation-duration: 7s;   animation-delay: 0s;   }
+.bubble.b2 { left: 24%; width: 10px; height: 10px; animation-duration: 9s;   animation-delay: 2s;   }
+.bubble.b3 { left: 42%; width: 5px;  height: 5px;  animation-duration: 6s;   animation-delay: 1s;   }
+.bubble.b4 { left: 58%; width: 8px;  height: 8px;  animation-duration: 8s;   animation-delay: 3s;   }
+.bubble.b5 { left: 72%; width: 6px;  height: 6px;  animation-duration: 7.5s; animation-delay: 0.5s; }
+.bubble.b6 { left: 86%; width: 9px;  height: 9px;  animation-duration: 10s;  animation-delay: 4s;   }
+.bubble.b7 { left: 16%; width: 4px;  height: 4px;  animation-duration: 5.5s; animation-delay: 2.5s; }
+.bubble.b8 { left: 64%; width: 4px;  height: 4px;  animation-duration: 6.5s; animation-delay: 0.8s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .water-rays .ray, .water-caustics, .water-surface,
+  .tank-fish, .bubble, .axolotl-wrap, .ax-tail,
+  .ax-gills-left, .ax-gills-right, .tank-plant {
+    animation: none !important;
+  }
+}
 @keyframes bubble-up {
-  0%   { transform: translateY(0); opacity: 0; }
-  15%  { opacity: 0.5; }
-  90%  { opacity: 0.3; }
-  100% { transform: translateY(-320px); opacity: 0; }
+  0%   { transform: translate(0, 0) scale(0.6); opacity: 0; }
+  10%  { opacity: 0.8; }
+  35%  { transform: translate(6px, -90px) scale(0.95); }
+  60%  { transform: translate(-5px, -180px) scale(1); opacity: 0.85; }
+  85%  { transform: translate(4px, -260px) scale(1.05); opacity: 0.5; }
+  100% { transform: translate(0, -320px) scale(0.4); opacity: 0; }
 }
 
 .axolotl-wrap {
@@ -983,18 +1145,27 @@ html, body {
   margin-left: -110px;
   margin-top: -90px;
   cursor: grab;
-  animation: ax-swim 7s ease-in-out infinite;
+  animation: ax-swim 11s ease-in-out infinite;
   transform-origin: center;
+  z-index: 4;
+  /* Soft underwater shadow */
+  filter: drop-shadow(0 6px 10px rgba(0, 20, 50, 0.45));
 }
 .axolotl-wrap.is-petting { animation-play-state: paused; }
 .axolotl-wrap:active { cursor: grabbing; }
+/* Figure-8 swim path with gentle bobbing */
 @keyframes ax-swim {
-  0%   { transform: translate(0,    0)   rotate(-2deg); }
-  25%  { transform: translate(16px, -8px) rotate(2deg);  }
-  50%  { transform: translate(0,    -14px) rotate(-2deg); }
-  75%  { transform: translate(-16px,-8px) rotate(2deg);  }
-  100% { transform: translate(0,    0)   rotate(-2deg); }
+  0%    { transform: translate(0,    0)    rotate(-3deg); }
+  12%   { transform: translate(28px, -10px) rotate(4deg);  }
+  25%   { transform: translate(40px, -2px) rotate(8deg);   }
+  38%   { transform: translate(22px, 8px)  rotate(2deg);   }
+  50%   { transform: translate(0,    -6px) rotate(-3deg);  }
+  62%   { transform: translate(-22px, 8px) rotate(-2deg);  }
+  75%   { transform: translate(-40px,-2px) rotate(-8deg);  }
+  88%   { transform: translate(-28px,-10px) rotate(-4deg); }
+  100%  { transform: translate(0,    0)    rotate(-3deg);  }
 }
+
 
 .axolotl {
   width: 100%;
@@ -1006,7 +1177,16 @@ html, body {
   --ax-eye:    #1a1a2a;
 }
 
-.ax-tail   { fill: var(--ax-body); }
+.ax-tail   {
+  fill: var(--ax-body);
+  transform-box: fill-box;
+  transform-origin: 100% 50%;
+  animation: tail-wag 1.6s ease-in-out infinite;
+}
+@keyframes tail-wag {
+  0%, 100% { transform: rotate(-8deg); }
+  50%      { transform: rotate(10deg); }
+}
 .ax-body   { fill: var(--ax-body); }
 .ax-belly  { fill: var(--ax-belly); }
 .ax-leg    { fill: var(--ax-body); }

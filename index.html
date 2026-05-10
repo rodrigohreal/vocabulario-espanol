@@ -89,14 +89,45 @@
       </div>
 
       <div class="pet-tank">
-        <div class="tank-rays"></div>
+        <!-- Water depth gradient handled by .pet-tank itself -->
+        <!-- Animated light rays from above -->
+        <div class="water-rays">
+          <span class="ray r1"></span>
+          <span class="ray r2"></span>
+          <span class="ray r3"></span>
+          <span class="ray r4"></span>
+        </div>
+        <!-- Caustic light pattern dancing on surfaces -->
+        <div class="water-caustics"></div>
+        <!-- Sand / gravel floor -->
+        <div class="tank-substrate">
+          <span class="pebble p1"></span>
+          <span class="pebble p2"></span>
+          <span class="pebble p3"></span>
+          <span class="pebble p4"></span>
+        </div>
+        <!-- Surface ripple at very top -->
+        <div class="water-surface">
+          <svg viewBox="0 0 400 16" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8 Q 25 0, 50 8 T 100 8 T 150 8 T 200 8 T 250 8 T 300 8 T 350 8 T 400 8 V16 H0 Z" fill="rgba(180,230,255,0.18)"/>
+          </svg>
+        </div>
+        <!-- Plants -->
         <div class="tank-plant tp-left">🌿</div>
         <div class="tank-plant tp-right">🌱</div>
+        <div class="tank-plant tp-mid">🪸</div>
+        <!-- Decorative little fish swimming past -->
+        <div class="tank-fish tf1">🐠</div>
+        <div class="tank-fish tf2">🐟</div>
+        <!-- Bubbles -->
         <div class="bubble b1"></div>
         <div class="bubble b2"></div>
         <div class="bubble b3"></div>
         <div class="bubble b4"></div>
         <div class="bubble b5"></div>
+        <div class="bubble b6"></div>
+        <div class="bubble b7"></div>
+        <div class="bubble b8"></div>
 
         <div id="axolotl-wrap" class="axolotl-wrap">
           <svg id="axolotl-svg" class="axolotl" viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">

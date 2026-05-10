@@ -932,6 +932,14 @@ function showLevelUp() {
   $('levelup-reward').textContent = rewards.join('  ·  ');
   modal.classList.remove('hidden');
   spawnConfetti();
+  // Big celebration animation on the axolotl itself
+  const svg = $('axolotl-svg');
+  const wrap = $('axolotl-wrap');
+  if (svg && wrap) {
+    wrap.classList.add('is-celebrating');
+    pulseClass(svg, 'is-celebrate', 2200);
+    setTimeout(() => wrap.classList.remove('is-celebrating'), 2200);
+  }
 }
 
 $('levelup-close')?.addEventListener('click', () => {
@@ -1061,7 +1069,16 @@ function spawnXpParticle(label) {
   setTimeout(() => p.remove(), 1800);
 }
 
-// "Acariciar" — give happiness
+// Helper: trigger a one-shot animation class on an element
+function pulseClass(el, className, duration) {
+  if (!el) return;
+  el.classList.remove(className);
+  void el.offsetWidth; // force reflow so the animation restarts
+  el.classList.add(className);
+  setTimeout(() => el.classList.remove(className), duration);
+}
+
+// "Acariciar" — give happiness, trigger wiggle reaction
 $('pet-action-pet')?.addEventListener('click', () => {
   if (!state.pet) return;
   haptic.light();
@@ -1070,18 +1087,13 @@ $('pet-action-pet')?.addEventListener('click', () => {
   const wrap = $('axolotl-wrap');
   const svg = $('axolotl-svg');
   wrap.classList.add('is-petting');
-  svg.classList.remove('is-happy');
-  void svg.offsetWidth;
-  svg.classList.add('is-happy');
-  setTimeout(() => {
-    svg.classList.remove('is-happy');
-    wrap.classList.remove('is-petting');
-  }, 700);
+  pulseClass(svg, 'is-happy', 850);
+  setTimeout(() => wrap.classList.remove('is-petting'), 850);
   savePet();
   refreshPetUI();
 });
 
-// "Alimentar" — small free feed (limited — costs from a daily allowance)
+// "Alimentar" — feed: spin + chomp animation
 $('pet-action-feed')?.addEventListener('click', () => {
   if (!state.pet) return;
   if (state.pet.hunger >= 95) {
@@ -1093,13 +1105,89 @@ $('pet-action-feed')?.addEventListener('click', () => {
   state.pet.hunger    = Math.min(100, state.pet.hunger + 12);
   state.pet.happiness = Math.min(100, state.pet.happiness + 3);
   spawnHearts(2);
+  spawnFoodFlakes(6);
+  const svg = $('axolotl-svg');
+  pulseClass(svg, 'is-spin',   1150);
+  pulseClass(svg, 'is-eating', 900);
   savePet();
   refreshPetUI();
 });
 
+// Sprinkle little food flakes that drift down past the axolotl when fed
+function spawnFoodFlakes(count = 6) {
+  const tank = document.querySelector('.pet-tank');
+  if (!tank) return;
+  const foods = ['🦐', '🐟', '✨'];
+  for (let i = 0; i < count; i++) {
+    const f = document.createElement('div');
+    f.className = 'food-flake';
+    f.textContent = foods[Math.floor(Math.random() * foods.length)];
+    f.style.left = (20 + Math.random() * 60) + '%';
+    f.style.animationDelay = (i * 0.08) + 's';
+    tank.appendChild(f);
+    setTimeout(() => f.remove(), 2200);
+  }
+}
+
 // Click axolotl directly = pet it
 $('axolotl-wrap')?.addEventListener('click', () => {
   $('pet-action-pet').click();
+});
+
+// ── Random dash scheduler — axolotl darts around occasionally ──
+function scheduleNextDash() {
+  // Random delay between 8s and 22s
+  const delay = 8000 + Math.random() * 14000;
+  setTimeout(() => {
+    const wrap = $('axolotl-wrap');
+    const svg = $('axolotl-svg');
+    // Only dash when visible, awake, and not mid-reaction
+    if (
+      wrap && svg && state.currentNav === 'pet' &&
+      !svg.classList.contains('is-sleepy') &&
+      !svg.classList.contains('is-spin') &&
+      !svg.classList.contains('is-celebrate') &&
+      !wrap.classList.contains('is-petting')
+    ) {
+      pulseClass(wrap, 'is-dashing', 1200);
+      // Spawn a tiny bubble trail behind it
+      spawnDashBubbles(5);
+    }
+    scheduleNextDash();
+  }, delay);
+}
+scheduleNextDash();
+
+function spawnDashBubbles(count = 5) {
+  const wrap = $('axolotl-wrap');
+  const tank = document.querySelector('.pet-tank');
+  if (!wrap || !tank) return;
+  for (let i = 0; i < count; i++) {
+    const b = document.createElement('div');
+    b.className = 'dash-bubble';
+    const size = 3 + Math.random() * 5;
+    b.style.width = size + 'px';
+    b.style.height = size + 'px';
+    b.style.left = (40 + Math.random() * 30) + '%';
+    b.style.top  = (45 + Math.random() * 20) + '%';
+    b.style.animationDelay = (i * 0.06) + 's';
+    tank.appendChild(b);
+    setTimeout(() => b.remove(), 1100);
+  }
+}
+
+// ── Tank water-ripple on click anywhere ──
+document.querySelector('.pet-tank')?.addEventListener('click', (e) => {
+  const tank = e.currentTarget;
+  const rect = tank.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  const r = document.createElement('div');
+  r.className = 'tank-ripple';
+  r.style.left = x + 'px';
+  r.style.top = y + 'px';
+  tank.appendChild(r);
+  setTimeout(() => r.remove(), 850);
 });
 
 function flashMessage(msg) {

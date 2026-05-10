@@ -1285,7 +1285,7 @@ const LESSONS = [
       { t: 'translate', from: 'Меня зовут Ана', tiles: ['me', 'llamo', 'Ana', 'soy', 'tú'], answer: ['me', 'llamo', 'Ana'] },
       { t: 'fill', sentence: ['Yo', null, 'María.'], target: 'soy', opts: ['soy', 'eres', 'es'], hint: '«Я» Мария' },
       { t: 'fill', sentence: ['¿Cómo te', null, '?'], target: 'llamas', opts: ['llamas', 'llamo', 'llama'], hint: 'Как тебя зовут?' },
-      { t: 'translate', from: 'Я Денис', tiles: ['yo', 'soy', 'Denis', 'eres'], answer: ['yo', 'soy', 'Denis'] },
+      { t: 'translate', from: 'Я Денис', tiles: ['yo', 'soy', 'Denis', 'eres'], answer: ['yo', 'soy', 'Denis'], answers: [['yo', 'soy', 'Denis'], ['soy', 'Denis']] },
     ],
   },
 
@@ -1401,7 +1401,7 @@ const LESSONS = [
         ['rosa',    'розовый'],
         ['naranja', 'оранжевый'],
       ]},
-      { t: 'translate', from: 'Красная роза', tiles: ['una', 'rosa', 'roja', 'azul'], answer: ['una', 'rosa', 'roja'] },
+      { t: 'translate', from: 'Красная роза', tiles: ['una', 'rosa', 'roja', 'azul'], answer: ['una', 'rosa', 'roja'], answers: [['una', 'rosa', 'roja'], ['rosa', 'roja']] },
       { t: 'fill', sentence: ['El cielo es', null, '.'], target: 'azul', opts: ['azul', 'verde', 'rojo'], hint: 'Небо синее' },
     ],
   },
@@ -1440,7 +1440,7 @@ const LESSONS = [
         ['huevo',   'яйцо'],
         ['manzana', 'яблоко'],
       ]},
-      { t: 'translate', from: 'Я пью воду', tiles: ['yo', 'bebo', 'agua', 'como'], answer: ['yo', 'bebo', 'agua'] },
+      { t: 'translate', from: 'Я пью воду', tiles: ['yo', 'bebo', 'agua', 'como'], answer: ['yo', 'bebo', 'agua'], answers: [['yo', 'bebo', 'agua'], ['bebo', 'agua']] },
       { t: 'fill', sentence: ['Como una', null, '.'], target: 'manzana', opts: ['manzana', 'agua', 'leche'], hint: 'Я ем яблоко' },
     ],
   },
@@ -1557,7 +1557,7 @@ const LESSONS = [
         ['vivir',  'жить'],
         ['estar',  'находиться'],
       ]},
-      { t: 'translate', from: 'Я ем хлеб', tiles: ['yo', 'como', 'pan', 'bebo'], answer: ['yo', 'como', 'pan'] },
+      { t: 'translate', from: 'Я ем хлеб', tiles: ['yo', 'como', 'pan', 'bebo'], answer: ['yo', 'como', 'pan'], answers: [['yo', 'como', 'pan'], ['como', 'pan']] },
       { t: 'fill', sentence: ['Yo', null, 'español.'], target: 'hablo', opts: ['hablo', 'como', 'tengo'], hint: 'Я говорю по-испански' },
     ],
   },
@@ -1598,6 +1598,396 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Большое спасибо', tiles: ['muchas', 'gracias', 'por', 'favor'], answer: ['muchas', 'gracias'] },
       { t: 'fill', sentence: ['Mucho', null, '.'], target: 'gusto', opts: ['gusto', 'gracias', 'favor'], hint: 'Приятно познакомиться' },
+    ],
+  },
+
+  // ── 11. La Casa ───────────────────────────────────────
+  {
+    id: 'l11', name: 'La Casa', emoji: '🏠', desc: 'Habitaciones de la casa',
+    exercises: [
+      { t: 'pick', q: '«Кухня»', opts: [
+        { txt: 'cocina',     em: '🍳' },
+        { txt: 'baño',       em: '🚿' },
+        { txt: 'sala',       em: '🛋️' },
+        { txt: 'dormitorio', em: '🛏️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Спальня»', opts: [
+        { txt: 'comedor',    em: '🍽️' },
+        { txt: 'cocina',     em: '🍳' },
+        { txt: 'dormitorio', em: '🛏️' },
+        { txt: 'jardín',     em: '🌳' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Ванная»', opts: [
+        { txt: 'sala',  em: '🛋️' },
+        { txt: 'baño',  em: '🚿' },
+        { txt: 'casa',  em: '🏠' },
+        { txt: 'puerta',em: '🚪' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['casa',       'дом'],
+        ['cocina',     'кухня'],
+        ['baño',       'ванная'],
+        ['dormitorio', 'спальня'],
+      ]},
+      { t: 'match', pairs: [
+        ['sala',     'гостиная'],
+        ['comedor',  'столовая'],
+        ['puerta',   'дверь'],
+        ['ventana',  'окно'],
+      ]},
+      { t: 'translate', from: 'Моя кухня', tiles: ['mi', 'cocina', 'tu', 'baño'], answer: ['mi', 'cocina'] },
+      { t: 'fill', sentence: ['Duermo en el', null, '.'], target: 'dormitorio', opts: ['dormitorio', 'baño', 'comedor'], hint: 'Я сплю в спальне' },
+    ],
+  },
+
+  // ── 12. El Cuerpo ─────────────────────────────────────
+  {
+    id: 'l12', name: 'El Cuerpo', emoji: '🧍', desc: 'Partes del cuerpo',
+    exercises: [
+      { t: 'pick', q: '«Голова»', opts: [
+        { txt: 'cabeza', em: '👤' },
+        { txt: 'mano',   em: '✋' },
+        { txt: 'pie',    em: '🦶' },
+        { txt: 'brazo',  em: '💪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Глаз»', opts: [
+        { txt: 'boca',  em: '👄' },
+        { txt: 'nariz', em: '👃' },
+        { txt: 'ojo',   em: '👁️' },
+        { txt: 'oreja', em: '👂' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Рука» (кисть)', opts: [
+        { txt: 'pierna', em: '🦵' },
+        { txt: 'mano',   em: '✋' },
+        { txt: 'pelo',   em: '💇' },
+        { txt: 'diente', em: '🦷' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['cabeza', 'голова'],
+        ['ojo',    'глаз'],
+        ['boca',   'рот'],
+        ['nariz',  'нос'],
+      ]},
+      { t: 'match', pairs: [
+        ['mano',    'рука'],
+        ['pie',     'нога/стопа'],
+        ['brazo',   'рука (плечо)'],
+        ['pierna',  'нога'],
+      ]},
+      { t: 'translate', from: 'Мои глаза', tiles: ['mis', 'ojos', 'mi', 'ojo'], answer: ['mis', 'ojos'] },
+      { t: 'fill', sentence: ['Tengo dos', null, '.'], target: 'manos', opts: ['manos', 'mano', 'cabeza'], hint: 'У меня две руки' },
+    ],
+  },
+
+  // ── 13. La Ropa ───────────────────────────────────────
+  {
+    id: 'l13', name: 'La Ropa', emoji: '👕', desc: 'Prendas de vestir',
+    exercises: [
+      { t: 'pick', q: '«Рубашка»', opts: [
+        { txt: 'camisa',    em: '👔' },
+        { txt: 'pantalón',  em: '👖' },
+        { txt: 'zapatos',   em: '👟' },
+        { txt: 'sombrero',  em: '🎩' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Брюки»', opts: [
+        { txt: 'falda',     em: '👗' },
+        { txt: 'pantalón',  em: '👖' },
+        { txt: 'calcetín',  em: '🧦' },
+        { txt: 'abrigo',    em: '🧥' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Туфли/обувь»', opts: [
+        { txt: 'gorra',     em: '🧢' },
+        { txt: 'guantes',   em: '🧤' },
+        { txt: 'zapatos',   em: '👟' },
+        { txt: 'bufanda',   em: '🧣' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['camisa',    'рубашка'],
+        ['pantalón',  'брюки'],
+        ['vestido',   'платье'],
+        ['falda',     'юбка'],
+      ]},
+      { t: 'match', pairs: [
+        ['zapatos',   'туфли'],
+        ['calcetines','носки'],
+        ['abrigo',    'пальто'],
+        ['gorra',     'кепка'],
+      ]},
+      { t: 'translate', from: 'Чёрная рубашка', tiles: ['una', 'camisa', 'negra', 'roja'], answer: ['una', 'camisa', 'negra'], answers: [['una', 'camisa', 'negra'], ['camisa', 'negra']] },
+      { t: 'fill', sentence: ['Llevo', null, 'azules.'], target: 'pantalones', opts: ['pantalones', 'camisa', 'falda'], hint: 'Я ношу синие брюки' },
+    ],
+  },
+
+  // ── 14. El Tiempo ─────────────────────────────────────
+  {
+    id: 'l14', name: 'El Tiempo', emoji: '🌤️', desc: 'Clima y estaciones',
+    exercises: [
+      { t: 'pick', q: '«Солнце»', opts: [
+        { txt: 'sol',    em: '☀️' },
+        { txt: 'luna',   em: '🌙' },
+        { txt: 'lluvia', em: '🌧️' },
+        { txt: 'viento', em: '💨' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Дождь»', opts: [
+        { txt: 'nieve',  em: '❄️' },
+        { txt: 'lluvia', em: '🌧️' },
+        { txt: 'nube',   em: '☁️' },
+        { txt: 'calor',  em: '🥵' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Холодно»', opts: [
+        { txt: 'calor',  em: '🥵' },
+        { txt: 'sol',    em: '☀️' },
+        { txt: 'frío',   em: '🥶' },
+        { txt: 'lluvia', em: '🌧️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['sol',     'солнце'],
+        ['lluvia',  'дождь'],
+        ['nieve',   'снег'],
+        ['viento',  'ветер'],
+      ]},
+      { t: 'match', pairs: [
+        ['verano',    'лето'],
+        ['invierno',  'зима'],
+        ['primavera', 'весна'],
+        ['otoño',     'осень'],
+      ]},
+      { t: 'translate', from: 'Сегодня жарко', tiles: ['hoy', 'hace', 'calor', 'frío'], answer: ['hoy', 'hace', 'calor'] },
+      { t: 'fill', sentence: ['En invierno hace', null, '.'], target: 'frío', opts: ['frío', 'calor', 'sol'], hint: 'Зимой холодно' },
+    ],
+  },
+
+  // ── 15. Los Meses ─────────────────────────────────────
+  {
+    id: 'l15', name: 'Meses', emoji: '📆', desc: 'Meses del año',
+    exercises: [
+      { t: 'pick', q: '«Январь»', opts: [
+        { txt: 'enero',   em: '1️⃣' },
+        { txt: 'febrero', em: '2️⃣' },
+        { txt: 'marzo',   em: '3️⃣' },
+        { txt: 'abril',   em: '4️⃣' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Май»', opts: [
+        { txt: 'marzo', em: '3️⃣' },
+        { txt: 'abril', em: '4️⃣' },
+        { txt: 'mayo',  em: '5️⃣' },
+        { txt: 'junio', em: '6️⃣' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Декабрь»', opts: [
+        { txt: 'octubre',   em: '🎃' },
+        { txt: 'noviembre', em: '🍂' },
+        { txt: 'diciembre', em: '🎄' },
+        { txt: 'septiembre',em: '📚' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['enero',   'январь'],
+        ['febrero', 'февраль'],
+        ['marzo',   'март'],
+        ['abril',   'апрель'],
+      ]},
+      { t: 'match', pairs: [
+        ['julio',     'июль'],
+        ['agosto',    'август'],
+        ['septiembre','сентябрь'],
+        ['octubre',   'октябрь'],
+      ]},
+      { t: 'translate', from: 'В июне', tiles: ['en', 'junio', 'julio', 'enero'], answer: ['en', 'junio'] },
+      { t: 'fill', sentence: ['Mi cumpleaños es en', null, '.'], target: 'mayo', opts: ['mayo', 'lunes', 'rojo'], hint: 'Мой день рождения в мае' },
+    ],
+  },
+
+  // ── 16. La Hora ───────────────────────────────────────
+  {
+    id: 'l16', name: 'La Hora', emoji: '🕐', desc: 'Decir la hora',
+    exercises: [
+      { t: 'pick', q: '«Час»', opts: [
+        { txt: 'hora',    em: '⏰' },
+        { txt: 'minuto',  em: '⏱️' },
+        { txt: 'día',     em: '☀️' },
+        { txt: 'noche',   em: '🌙' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Сейчас»', opts: [
+        { txt: 'después', em: '➡️' },
+        { txt: 'ahora',   em: '⏰' },
+        { txt: 'antes',   em: '⬅️' },
+        { txt: 'tarde',   em: '🌆' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Утро»', opts: [
+        { txt: 'noche',   em: '🌙' },
+        { txt: 'tarde',   em: '🌆' },
+        { txt: 'mañana',  em: '🌅' },
+        { txt: 'medio',   em: '🕛' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['hora',    'час'],
+        ['minuto',  'минута'],
+        ['mañana',  'утро'],
+        ['noche',   'ночь'],
+      ]},
+      { t: 'match', pairs: [
+        ['ahora',     'сейчас'],
+        ['después',   'потом'],
+        ['temprano',  'рано'],
+        ['tarde',     'поздно/вечер'],
+      ]},
+      { t: 'translate', from: 'Который час?', tiles: ['qué', 'hora', 'es', 'son'], answer: ['qué', 'hora', 'es'] },
+      { t: 'fill', sentence: ['Son las', null, '.'], target: 'tres', opts: ['tres', 'tarde', 'lunes'], hint: 'Сейчас три часа' },
+    ],
+  },
+
+  // ── 17. Lugares ───────────────────────────────────────
+  {
+    id: 'l17', name: 'Lugares', emoji: '🏙️', desc: 'Lugares de la ciudad',
+    exercises: [
+      { t: 'pick', q: '«Школа»', opts: [
+        { txt: 'escuela',  em: '🏫' },
+        { txt: 'tienda',   em: '🏪' },
+        { txt: 'hospital', em: '🏥' },
+        { txt: 'parque',   em: '🌳' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Больница»', opts: [
+        { txt: 'banco',    em: '🏦' },
+        { txt: 'hospital', em: '🏥' },
+        { txt: 'iglesia',  em: '⛪' },
+        { txt: 'mercado',  em: '🛒' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Магазин»', opts: [
+        { txt: 'parque',  em: '🌳' },
+        { txt: 'museo',   em: '🏛️' },
+        { txt: 'tienda',  em: '🏪' },
+        { txt: 'estación',em: '🚉' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['escuela',  'школа'],
+        ['hospital', 'больница'],
+        ['tienda',   'магазин'],
+        ['parque',   'парк'],
+      ]},
+      { t: 'match', pairs: [
+        ['banco',    'банк'],
+        ['iglesia',  'церковь'],
+        ['museo',    'музей'],
+        ['estación', 'станция'],
+      ]},
+      { t: 'translate', from: 'Я иду в школу', tiles: ['voy', 'a', 'la', 'escuela', 'casa'], answer: ['voy', 'a', 'la', 'escuela'] },
+      { t: 'fill', sentence: ['El médico trabaja en el', null, '.'], target: 'hospital', opts: ['hospital', 'parque', 'banco'], hint: 'Врач работает в больнице' },
+    ],
+  },
+
+  // ── 18. Profesiones ───────────────────────────────────
+  {
+    id: 'l18', name: 'Profesiones', emoji: '👷', desc: 'Trabajos y oficios',
+    exercises: [
+      { t: 'pick', q: '«Учитель»', opts: [
+        { txt: 'profesor', em: '👩‍🏫' },
+        { txt: 'médico',   em: '👨‍⚕️' },
+        { txt: 'cocinero', em: '👨‍🍳' },
+        { txt: 'policía',  em: '👮' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Врач»', opts: [
+        { txt: 'cocinero', em: '👨‍🍳' },
+        { txt: 'médico',   em: '👨‍⚕️' },
+        { txt: 'bombero',  em: '🧑‍🚒' },
+        { txt: 'piloto',   em: '✈️' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Повар»', opts: [
+        { txt: 'pintor',   em: '🎨' },
+        { txt: 'músico',   em: '🎵' },
+        { txt: 'cocinero', em: '👨‍🍳' },
+        { txt: 'escritor', em: '📝' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['profesor', 'учитель'],
+        ['médico',   'врач'],
+        ['policía',  'полицейский'],
+        ['bombero',  'пожарный'],
+      ]},
+      { t: 'match', pairs: [
+        ['cocinero', 'повар'],
+        ['piloto',   'пилот'],
+        ['músico',   'музыкант'],
+        ['pintor',   'художник'],
+      ]},
+      { t: 'translate', from: 'Я учитель', tiles: ['soy', 'profesor', 'yo', 'eres'], answer: ['soy', 'profesor'], answers: [['soy', 'profesor'], ['yo', 'soy', 'profesor']] },
+      { t: 'fill', sentence: ['El', null, 'cura a los enfermos.'], target: 'médico', opts: ['médico', 'piloto', 'pintor'], hint: 'Врач лечит больных' },
+    ],
+  },
+
+  // ── 19. Sentimientos ──────────────────────────────────
+  {
+    id: 'l19', name: 'Sentimientos', emoji: '😊', desc: 'Cómo te sientes',
+    exercises: [
+      { t: 'pick', q: '«Счастливый»', opts: [
+        { txt: 'feliz',   em: '😊' },
+        { txt: 'triste',  em: '😢' },
+        { txt: 'enojado', em: '😠' },
+        { txt: 'cansado', em: '😴' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Грустный»', opts: [
+        { txt: 'enfermo', em: '🤒' },
+        { txt: 'triste',  em: '😢' },
+        { txt: 'feliz',   em: '😊' },
+        { txt: 'asustado',em: '😨' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Уставший»', opts: [
+        { txt: 'feliz',   em: '😊' },
+        { txt: 'enojado', em: '😠' },
+        { txt: 'cansado', em: '😴' },
+        { txt: 'enfermo', em: '🤒' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['feliz',    'счастливый'],
+        ['triste',   'грустный'],
+        ['enojado',  'злой'],
+        ['cansado',  'уставший'],
+      ]},
+      { t: 'match', pairs: [
+        ['enfermo',   'больной'],
+        ['asustado',  'испуганный'],
+        ['aburrido',  'скучающий'],
+        ['emocionado','взволнованный'],
+      ]},
+      { t: 'translate', from: 'Я счастлив', tiles: ['estoy', 'feliz', 'triste', 'soy'], answer: ['estoy', 'feliz'] },
+      { t: 'fill', sentence: ['Estoy muy', null, '.'], target: 'cansado', opts: ['cansado', 'lunes', 'mesa'], hint: 'Я очень устал' },
+    ],
+  },
+
+  // ── 20. Naturaleza ────────────────────────────────────
+  {
+    id: 'l20', name: 'Naturaleza', emoji: '🌳', desc: 'Naturaleza y paisajes',
+    exercises: [
+      { t: 'pick', q: '«Дерево»', opts: [
+        { txt: 'árbol',   em: '🌳' },
+        { txt: 'flor',    em: '🌸' },
+        { txt: 'piedra',  em: '🪨' },
+        { txt: 'río',     em: '🏞️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Цветок»', opts: [
+        { txt: 'hoja',  em: '🍃' },
+        { txt: 'flor',  em: '🌸' },
+        { txt: 'sol',   em: '☀️' },
+        { txt: 'mar',   em: '🌊' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Гора»', opts: [
+        { txt: 'lago',    em: '🏞️' },
+        { txt: 'bosque',  em: '🌲' },
+        { txt: 'montaña', em: '⛰️' },
+        { txt: 'playa',   em: '🏖️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['árbol', 'дерево'],
+        ['flor',  'цветок'],
+        ['hoja',  'лист'],
+        ['hierba','трава'],
+      ]},
+      { t: 'match', pairs: [
+        ['mar',     'море'],
+        ['río',     'река'],
+        ['montaña', 'гора'],
+        ['bosque',  'лес'],
+      ]},
+      { t: 'translate', from: 'Зелёное дерево', tiles: ['un', 'árbol', 'verde', 'rojo'], answer: ['un', 'árbol', 'verde'], answers: [['un', 'árbol', 'verde'], ['árbol', 'verde']] },
+      { t: 'fill', sentence: ['El', null, 'es azul.'], target: 'mar', opts: ['mar', 'árbol', 'flor'], hint: 'Море синее' },
     ],
   },
 ];
@@ -2083,16 +2473,18 @@ function onCheckPressed() {
     correctText = ex.opts[ex.correct].txt;
   } else if (ex.t === 'translate') {
     const userWords = lessonState.buildAnswer.map(i => lessonState.buildBank[i].word);
-    correct = arraysEqual(userWords, ex.answer);
+    const validAnswers = ex.answers || [ex.answer];
+    correct = validAnswers.some(a => arraysEqual(userWords, a));
     userAnswerText = userWords.join(' ');
-    correctText = ex.answer.join(' ');
+    correctText = (ex.answer || validAnswers[0]).join(' ');
   } else if (ex.t === 'match') {
     correct = lessonState.matchPairs === ex.pairs.length;
     correctText = ''; // no detail needed
   } else if (ex.t === 'fill') {
-    correct = lessonState.fillChoice === ex.target;
+    const validTargets = ex.targets || [ex.target];
+    correct = validTargets.includes(lessonState.fillChoice);
     userAnswerText = lessonState.fillChoice || '';
-    correctText = ex.target;
+    correctText = ex.target || validTargets[0];
   }
 
   showFeedback(correct, correctText);

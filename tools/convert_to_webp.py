@@ -7,18 +7,22 @@ import os
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path(__file__).parent
+REPO = Path(__file__).resolve().parent.parent
+PNG_DIR = REPO / "originals"
+WEBP_DIR = REPO / "images"
+JSON_DIR = REPO / "data"
 QUALITY = 85
 
 def main():
-    pngs = sorted([p for p in ROOT.iterdir() if p.suffix.lower() == ".png"])
+    WEBP_DIR.mkdir(exist_ok=True)
+    pngs = sorted([p for p in PNG_DIR.iterdir() if p.suffix.lower() == ".png"])
     total_png = 0
     total_webp = 0
     converted = 0
     skipped = 0
 
     for png in pngs:
-        webp = png.with_suffix(".webp")
+        webp = WEBP_DIR / (png.stem + ".webp")
         png_size = png.stat().st_size
         total_png += png_size
 
@@ -53,7 +57,7 @@ def main():
     print()
     print("Updating JSON references...")
     updated_jsons = 0
-    for jpath in sorted(ROOT.glob("*.json")):
+    for jpath in sorted(JSON_DIR.glob("*.json")):
         try:
             data = json.loads(jpath.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, UnicodeDecodeError):
@@ -63,7 +67,7 @@ def main():
         img = data["image_file"]
         if isinstance(img, str) and img.lower().endswith(".png"):
             new_img = img[:-4] + ".webp"
-            if (ROOT / new_img).exists():
+            if (WEBP_DIR / new_img).exists():
                 data["image_file"] = new_img
                 jpath.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
                 updated_jsons += 1

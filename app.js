@@ -2914,6 +2914,623 @@ const LESSONS = [
       { t: 'fill', sentence: ['Soy de', null, '.'], target: 'Rusia', opts: ['Rusia', 'mesa', 'tres'], hint: 'Я из России' },
     ],
   },
+
+  // ── 41. Posesivos ─────────────────────────────────────
+  {
+    id: 'l41', name: 'Posesivos', emoji: '🔑', desc: 'Mi, tu, su, nuestro…',
+    exercises: [
+      { t: 'pick', q: '«Мой»', opts: [
+        { txt: 'mi',       em: '👤' },
+        { txt: 'tu',       em: '👉' },
+        { txt: 'su',       em: '👨' },
+        { txt: 'nuestro',  em: '👥' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Твой»', opts: [
+        { txt: 'mi',       em: '👤' },
+        { txt: 'tu',       em: '👉' },
+        { txt: 'su',       em: '👨' },
+        { txt: 'vuestro',  em: '👥' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Наш»', opts: [
+        { txt: 'mi',       em: '👤' },
+        { txt: 'su',       em: '👨' },
+        { txt: 'nuestro',  em: '👥' },
+        { txt: 'vuestro',  em: '👥' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['mi',       'мой'],
+        ['tu',       'твой'],
+        ['su',       'его/её'],
+        ['nuestro',  'наш'],
+      ]},
+      // Reuse familia from L3
+      { t: 'match', pairs: [
+        ['mi madre',    'моя мама'],
+        ['mi padre',    'мой папа'],
+        ['mi hermano',  'мой брат'],
+        ['mi hermana',  'моя сестра'],
+      ]},
+      { t: 'translate', from: 'Моя мама', tiles: ['mi', 'madre', 'padre', 'tu'], answer: ['mi', 'madre'] },
+      { t: 'fill', sentence: ['Esta es', null, 'casa.'], target: 'mi', opts: ['mi', 'tu', 'su'], hint: 'Это мой дом' },
+    ],
+  },
+
+  // ── 42. Bebidas ───────────────────────────────────────
+  {
+    id: 'l42', name: 'Bebidas', emoji: '🥤', desc: 'Agua, café, leche, té…',
+    exercises: [
+      { t: 'pick', q: '«Вода»', opts: [
+        { txt: 'agua',    em: '💧' },
+        { txt: 'leche',   em: '🥛' },
+        { txt: 'café',    em: '☕' },
+        { txt: 'té',      em: '🍵' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Кофе»', opts: [
+        { txt: 'agua',    em: '💧' },
+        { txt: 'café',    em: '☕' },
+        { txt: 'té',      em: '🍵' },
+        { txt: 'jugo',    em: '🧃' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Молоко»', opts: [
+        { txt: 'cerveza', em: '🍺' },
+        { txt: 'vino',    em: '🍷' },
+        { txt: 'leche',   em: '🥛' },
+        { txt: 'té',      em: '🍵' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['agua',   'вода'],
+        ['leche',  'молоко'],
+        ['café',   'кофе'],
+        ['té',     'чай'],
+      ]},
+      { t: 'match', pairs: [
+        ['jugo',     'сок'],
+        ['vino',     'вино'],
+        ['cerveza',  'пиво'],
+        ['refresco', 'газировка'],
+      ]},
+      // Reuse «beber» from L9
+      { t: 'translate', from: 'Я пью воду', tiles: ['yo', 'bebo', 'agua', 'como'], answer: ['yo', 'bebo', 'agua'], answers: [['yo', 'bebo', 'agua'], ['bebo', 'agua']] },
+      { t: 'fill', sentence: ['Tomo un', null, 'con leche.'], target: 'café', opts: ['café', 'pan', 'gato'], hint: 'Я пью кофе с молоком' },
+    ],
+  },
+
+  // ── 43. Negación ──────────────────────────────────────
+  {
+    id: 'l43', name: 'Negación', emoji: '🚫', desc: 'No, nada, nunca, nadie',
+    exercises: [
+      { t: 'pick', q: '«Нет»', opts: [
+        { txt: 'no',      em: '❌' },
+        { txt: 'sí',      em: '✅' },
+        { txt: 'nada',    em: '🚫' },
+        { txt: 'nunca',   em: '🚷' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ничего»', opts: [
+        { txt: 'nada',    em: '🚫' },
+        { txt: 'nadie',   em: '🙅' },
+        { txt: 'nunca',   em: '🚷' },
+        { txt: 'no',      em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Никогда»', opts: [
+        { txt: 'nadie',   em: '🙅' },
+        { txt: 'nada',    em: '🚫' },
+        { txt: 'nunca',   em: '🚷' },
+        { txt: 'tampoco', em: '⛔' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['no',     'нет'],
+        ['nada',   'ничего'],
+        ['nadie',  'никто'],
+        ['nunca',  'никогда'],
+      ]},
+      { t: 'match', pairs: [
+        ['tampoco', 'тоже не'],
+        ['jamás',   'никогда'],
+        ['ninguno', 'никакой'],
+        ['ni…ni',   'ни…ни'],
+      ]},
+      { t: 'translate', from: 'Я ничего не хочу', tiles: ['no', 'quiero', 'nada', 'algo'], answer: ['no', 'quiero', 'nada'] },
+      { t: 'fill', sentence: ['Hoy no como', null, '.'], target: 'nada', opts: ['nada', 'nadie', 'nunca'], hint: 'Сегодня я ничего не ем' },
+    ],
+  },
+
+  // ── 44. Me gusta ──────────────────────────────────────
+  {
+    id: 'l44', name: 'Me gusta', emoji: '❤️', desc: 'El verbo gustar',
+    exercises: [
+      { t: 'pick', q: '«Мне нравится»', opts: [
+        { txt: 'me gusta',  em: '❤️' },
+        { txt: 'te gusta',  em: '💛' },
+        { txt: 'le gusta',  em: '💚' },
+        { txt: 'me llamo',  em: '👤' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Тебе нравится»', opts: [
+        { txt: 'me gusta',   em: '❤️' },
+        { txt: 'te gusta',   em: '💛' },
+        { txt: 'le gusta',   em: '💚' },
+        { txt: 'te llamas',  em: '👉' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Мне нравятся (мн.ч.)»', opts: [
+        { txt: 'me gusta',   em: '❤️' },
+        { txt: 'me gustan',  em: '💖' },
+        { txt: 'te gusta',   em: '💛' },
+        { txt: 'te gustan',  em: '💕' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['me gusta',  'мне нравится'],
+        ['te gusta',  'тебе нравится'],
+        ['le gusta',  'ему/ей нравится'],
+        ['nos gusta', 'нам нравится'],
+      ]},
+      { t: 'match', pairs: [
+        ['me gusta el café',     'мне нравится кофе'],
+        ['me gustan los gatos',  'мне нравятся коты'],
+        ['te gusta la música',   'тебе нравится музыка'],
+        ['le gustan los libros', 'ему нравятся книги'],
+      ]},
+      { t: 'translate', from: 'Мне нравится кофе', tiles: ['me', 'gusta', 'el', 'café', 'gustan'], answer: ['me', 'gusta', 'el', 'café'] },
+      { t: 'fill', sentence: ['Me', null, 'los gatos.'], target: 'gustan', opts: ['gustan', 'gusta', 'gustas'], hint: 'Мне нравятся коты (мн.ч.)' },
+    ],
+  },
+
+  // ── 45. Repaso 6 (revisión de L41-L44) ────────────────
+  // REVIEW LESSON: mixes Posesivos, Bebidas, Negación, Gustar
+  {
+    id: 'l45', name: 'Repaso 6', emoji: '🔁', desc: 'Repasa lecciones 41-44',
+    exercises: [
+      // From L41
+      { t: 'pick', q: '«Мой»', opts: [
+        { txt: 'mi',       em: '👤' },
+        { txt: 'tu',       em: '👉' },
+        { txt: 'su',       em: '👨' },
+        { txt: 'nuestro',  em: '👥' },
+      ], correct: 0 },
+      // From L42
+      { t: 'pick', q: '«Чай»', opts: [
+        { txt: 'agua',    em: '💧' },
+        { txt: 'leche',   em: '🥛' },
+        { txt: 'té',      em: '🍵' },
+        { txt: 'café',    em: '☕' },
+      ], correct: 2 },
+      // From L43
+      { t: 'pick', q: '«Никогда»', opts: [
+        { txt: 'nadie',   em: '🙅' },
+        { txt: 'nada',    em: '🚫' },
+        { txt: 'nunca',   em: '🚷' },
+        { txt: 'no',      em: '❌' },
+      ], correct: 2 },
+      // Mix L41 + L42
+      { t: 'match', pairs: [
+        ['mi',     'мой'],
+        ['tu',     'твой'],
+        ['agua',   'вода'],
+        ['café',   'кофе'],
+      ]},
+      // Mix L43 + L44
+      { t: 'match', pairs: [
+        ['nada',     'ничего'],
+        ['nadie',    'никто'],
+        ['me gusta', 'мне нравится'],
+        ['te gusta', 'тебе нравится'],
+      ]},
+      // From L44
+      { t: 'translate', from: 'Мне нравится кофе', tiles: ['me', 'gusta', 'el', 'café', 'gustan'], answer: ['me', 'gusta', 'el', 'café'] },
+      // From L43
+      { t: 'fill', sentence: ['Hoy no como', null, '.'], target: 'nada', opts: ['nada', 'mesa', 'siete'], hint: 'Сегодня я ничего не ем' },
+    ],
+  },
+
+  // ── 46. Demostrativos ─────────────────────────────────
+  {
+    id: 'l46', name: 'Demostrativos', emoji: '👉', desc: 'Este, ese, aquel',
+    exercises: [
+      { t: 'pick', q: '«Этот»', opts: [
+        { txt: 'este',     em: '👉' },
+        { txt: 'ese',      em: '👈' },
+        { txt: 'aquel',    em: '🫵' },
+        { txt: 'mi',       em: '👤' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Та» (близко к тебе)', opts: [
+        { txt: 'esta',    em: '👉' },
+        { txt: 'esa',     em: '👈' },
+        { txt: 'aquella', em: '🫵' },
+        { txt: 'ese',     em: '👈' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Эти»', opts: [
+        { txt: 'estos',     em: '👉' },
+        { txt: 'esos',      em: '👈' },
+        { txt: 'aquellos',  em: '🫵' },
+        { txt: 'este',      em: '👉' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['este',   'этот'],
+        ['esta',   'эта'],
+        ['ese',    'тот'],
+        ['esa',    'та'],
+      ]},
+      { t: 'match', pairs: [
+        ['estos',     'эти'],
+        ['aquellos',  'те (там)'],
+        ['esto',      'это'],
+        ['eso',       'то'],
+      ]},
+      { t: 'translate', from: 'Этот кот', tiles: ['este', 'gato', 'esta', 'perro'], answer: ['este', 'gato'] },
+      { t: 'fill', sentence: ['Quiero', null, 'gato.'], target: 'este', opts: ['este', 'esa', 'aquellos'], hint: 'Я хочу этого кота' },
+    ],
+  },
+
+  // ── 47. Números 21-100 ────────────────────────────────
+  {
+    id: 'l47', name: 'Números 21-100', emoji: '💯', desc: 'Veinte, treinta… cien',
+    exercises: [
+      { t: 'pick', q: '«21»', opts: [
+        { txt: 'veintiuno', em: '2️⃣1️⃣' },
+        { txt: 'veinte',    em: '2️⃣0️⃣' },
+        { txt: 'treinta',   em: '3️⃣0️⃣' },
+        { txt: 'doce',      em: '1️⃣2️⃣' },
+      ], correct: 0 },
+      { t: 'pick', q: '«50»', opts: [
+        { txt: 'cuarenta',   em: '4️⃣0️⃣' },
+        { txt: 'cincuenta',  em: '5️⃣0️⃣' },
+        { txt: 'sesenta',    em: '6️⃣0️⃣' },
+        { txt: 'quince',     em: '1️⃣5️⃣' },
+      ], correct: 1 },
+      { t: 'pick', q: '«100»', opts: [
+        { txt: 'mil',     em: '🔢' },
+        { txt: 'diez',    em: '🔟' },
+        { txt: 'cien',    em: '💯' },
+        { txt: 'ciento',  em: '💯' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['veinte',     '20'],
+        ['treinta',    '30'],
+        ['cuarenta',   '40'],
+        ['cincuenta',  '50'],
+      ]},
+      { t: 'match', pairs: [
+        ['sesenta',    '60'],
+        ['setenta',    '70'],
+        ['ochenta',    '80'],
+        ['noventa',    '90'],
+      ]},
+      // Reuse «tengo … años» from L4
+      { t: 'translate', from: 'Мне тридцать лет', tiles: ['tengo', 'treinta', 'años', 'veinte'], answer: ['tengo', 'treinta', 'años'] },
+      { t: 'fill', sentence: ['Mi abuela tiene', null, 'años.'], target: 'ochenta', opts: ['ochenta', 'cinco', 'doce'], hint: 'Бабушке 80 лет' },
+    ],
+  },
+
+  // ── 48. Dinero ────────────────────────────────────────
+  {
+    id: 'l48', name: 'Dinero', emoji: '💰', desc: 'Comprar, precio, caro, barato',
+    exercises: [
+      { t: 'pick', q: '«Покупать»', opts: [
+        { txt: 'comprar', em: '🛒' },
+        { txt: 'vender',  em: '💵' },
+        { txt: 'pagar',   em: '💳' },
+        { txt: 'vivir',   em: '🏠' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Дорого»', opts: [
+        { txt: 'caro',     em: '💸' },
+        { txt: 'barato',   em: '🪙' },
+        { txt: 'nuevo',    em: '✨' },
+        { txt: 'viejo',    em: '👴' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Сколько стоит?»', opts: [
+        { txt: '¿qué es?',          em: '❓' },
+        { txt: '¿dónde está?',      em: '📍' },
+        { txt: '¿cuánto cuesta?',   em: '💰' },
+        { txt: '¿cómo estás?',      em: '🤔' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['comprar',  'покупать'],
+        ['vender',   'продавать'],
+        ['pagar',    'платить'],
+        ['dinero',   'деньги'],
+      ]},
+      { t: 'match', pairs: [
+        ['caro',     'дорогой'],
+        ['barato',   'дешёвый'],
+        ['euro',     'евро'],
+        ['tarjeta',  'карта'],
+      ]},
+      { t: 'translate', from: 'Сколько стоит хлеб?', tiles: ['cuánto', 'cuesta', 'el', 'pan', 'dónde'], answer: ['cuánto', 'cuesta', 'el', 'pan'] },
+      { t: 'fill', sentence: ['Este coche es muy', null, '.'], target: 'caro', opts: ['caro', 'barato', 'nuevo'], hint: 'Эта машина очень дорогая' },
+    ],
+  },
+
+  // ── 49. Restaurante ───────────────────────────────────
+  {
+    id: 'l49', name: 'Restaurante', emoji: '🍴', desc: 'Pedir comida y la cuenta',
+    exercises: [
+      { t: 'pick', q: '«Меню»', opts: [
+        { txt: 'menú',     em: '📜' },
+        { txt: 'plato',    em: '🍽️' },
+        { txt: 'cuenta',   em: '🧾' },
+        { txt: 'mesa',     em: '🪑' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Счёт»', opts: [
+        { txt: 'cuenta',   em: '🧾' },
+        { txt: 'plato',    em: '🍽️' },
+        { txt: 'menú',     em: '📜' },
+        { txt: 'mesa',     em: '🪑' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Официант»', opts: [
+        { txt: 'camarero',  em: '🤵' },
+        { txt: 'cocinero',  em: '👨‍🍳' },
+        { txt: 'médico',    em: '🩺' },
+        { txt: 'profesor',  em: '👨‍🏫' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['camarero', 'официант'],
+        ['menú',     'меню'],
+        ['plato',    'блюдо'],
+        ['cuenta',   'счёт'],
+      ]},
+      { t: 'match', pairs: [
+        ['pedir',    'заказывать'],
+        ['beber',    'пить'],
+        ['mesa',     'стол'],
+        ['propina',  'чаевые'],
+      ]},
+      // Reuse «por favor» from L10
+      { t: 'translate', from: 'Воду, пожалуйста', tiles: ['agua', 'por', 'favor', 'gracias'], answer: ['agua', 'por', 'favor'] },
+      { t: 'fill', sentence: ['La', null, ', por favor.'], target: 'cuenta', opts: ['cuenta', 'mesa', 'menú'], hint: 'Счёт, пожалуйста' },
+    ],
+  },
+
+  // ── 50. Repaso 7 (revisión de L46-L49) ────────────────
+  // REVIEW LESSON: mixes Demostrativos, Números 21-100, Dinero, Restaurante
+  {
+    id: 'l50', name: 'Repaso 7', emoji: '🔁', desc: 'Repasa lecciones 46-49',
+    exercises: [
+      // From L46
+      { t: 'pick', q: '«Этот»', opts: [
+        { txt: 'este',   em: '👉' },
+        { txt: 'ese',    em: '👈' },
+        { txt: 'aquel',  em: '🫵' },
+        { txt: 'mi',     em: '👤' },
+      ], correct: 0 },
+      // From L47
+      { t: 'pick', q: '«50»', opts: [
+        { txt: 'cuarenta',   em: '4️⃣0️⃣' },
+        { txt: 'cincuenta',  em: '5️⃣0️⃣' },
+        { txt: 'sesenta',    em: '6️⃣0️⃣' },
+        { txt: 'cien',       em: '💯' },
+      ], correct: 1 },
+      // From L49
+      { t: 'pick', q: '«Официант»', opts: [
+        { txt: 'camarero',  em: '🤵' },
+        { txt: 'cocinero',  em: '👨‍🍳' },
+        { txt: 'médico',    em: '🩺' },
+        { txt: 'profesor',  em: '👨‍🏫' },
+      ], correct: 0 },
+      // Mix L46 + L48
+      { t: 'match', pairs: [
+        ['este',    'этот'],
+        ['ese',     'тот'],
+        ['comprar', 'покупать'],
+        ['vender',  'продавать'],
+      ]},
+      // Mix L47 + L49
+      { t: 'match', pairs: [
+        ['treinta',    '30'],
+        ['cincuenta',  '50'],
+        ['menú',       'меню'],
+        ['cuenta',     'счёт'],
+      ]},
+      // From L48
+      { t: 'translate', from: 'Сколько стоит хлеб?', tiles: ['cuánto', 'cuesta', 'el', 'pan', 'dónde'], answer: ['cuánto', 'cuesta', 'el', 'pan'] },
+      // From L49
+      { t: 'fill', sentence: ['La', null, ', por favor.'], target: 'cuenta', opts: ['cuenta', 'noche', 'mesa'], hint: 'Счёт, пожалуйста' },
+    ],
+  },
+
+  // ── 51. Direcciones ───────────────────────────────────
+  {
+    id: 'l51', name: 'Direcciones', emoji: '🧭', desc: 'Izquierda, derecha, recto',
+    exercises: [
+      { t: 'pick', q: '«Налево»', opts: [
+        { txt: 'a la izquierda', em: '⬅️' },
+        { txt: 'a la derecha',   em: '➡️' },
+        { txt: 'recto',          em: '⬆️' },
+        { txt: 'atrás',          em: '⬇️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Направо»', opts: [
+        { txt: 'a la izquierda', em: '⬅️' },
+        { txt: 'a la derecha',   em: '➡️' },
+        { txt: 'cerca',          em: '📍' },
+        { txt: 'lejos',          em: '🛫' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Прямо»', opts: [
+        { txt: 'recto',     em: '⬆️' },
+        { txt: 'lejos',     em: '🛫' },
+        { txt: 'derecha',   em: '➡️' },
+        { txt: 'esquina',   em: '📐' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['izquierda', 'налево'],
+        ['derecha',   'направо'],
+        ['recto',     'прямо'],
+        ['atrás',     'назад'],
+      ]},
+      { t: 'match', pairs: [
+        ['cerca',    'близко'],
+        ['lejos',    'далеко'],
+        ['esquina',  'угол'],
+        ['calle',    'улица'],
+      ]},
+      { t: 'translate', from: 'Поверни направо', tiles: ['gira', 'a', 'la', 'derecha', 'izquierda'], answer: ['gira', 'a', 'la', 'derecha'] },
+      { t: 'fill', sentence: ['Sigue', null, 'por la calle.'], target: 'recto', opts: ['recto', 'cerca', 'lejos'], hint: 'Иди прямо по улице' },
+    ],
+  },
+
+  // ── 52. Verbos modales ────────────────────────────────
+  // Reinforces poder/querer (L21) + introduces deber, tener que + infinitive
+  {
+    id: 'l52', name: 'Verbos modales', emoji: '🎯', desc: 'Poder, querer, deber, tener que',
+    exercises: [
+      { t: 'pick', q: '«Я могу плавать»', opts: [
+        { txt: 'puedo nadar',  em: '💪' },
+        { txt: 'quiero nadar', em: '💖' },
+        { txt: 'debo nadar',   em: '☝️' },
+        { txt: 'soy nadar',    em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я хочу есть»', opts: [
+        { txt: 'puedo comer',  em: '💪' },
+        { txt: 'quiero comer', em: '💖' },
+        { txt: 'voy comer',    em: '❌' },
+        { txt: 'soy comer',    em: '❌' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я должен учиться»', opts: [
+        { txt: 'debo estudiar',    em: '☝️' },
+        { txt: 'puedo estudiar',   em: '💪' },
+        { txt: 'quiero estudiar',  em: '💖' },
+        { txt: 'soy estudiar',     em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['poder',     'мочь'],
+        ['querer',    'хотеть'],
+        ['deber',     'быть должным'],
+        ['tener que', 'надо / нужно'],
+      ]},
+      { t: 'match', pairs: [
+        ['puedo',     'я могу'],
+        ['quiero',    'я хочу'],
+        ['debo',      'я должен'],
+        ['tengo que', 'я должен (обязан)'],
+      ]},
+      // Reuse «agua» from L42, «beber» from L9
+      { t: 'translate', from: 'Я хочу пить воду', tiles: ['quiero', 'beber', 'agua', 'puedo'], answer: ['quiero', 'beber', 'agua'] },
+      { t: 'fill', sentence: ['Tengo', null, 'trabajar.'], target: 'que', opts: ['que', 'a', 'de'], hint: 'Я должен работать (tengo que…)' },
+    ],
+  },
+
+  // ── 53. Futuro: ir a + infinitivo ─────────────────────
+  {
+    id: 'l53', name: 'Futuro: ir a', emoji: '🗓️', desc: 'Voy a + infinitivo',
+    exercises: [
+      { t: 'pick', q: '«Я собираюсь есть»', opts: [
+        { txt: 'voy a comer', em: '⏩' },
+        { txt: 'voy comer',   em: '❌' },
+        { txt: 'como',        em: '🍽️' },
+        { txt: 'comí',        em: '⏪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ты будешь читать»', opts: [
+        { txt: 'voy a leer',   em: '⏩' },
+        { txt: 'vas a leer',   em: '⏩' },
+        { txt: 'va a leer',    em: '⏩' },
+        { txt: 'vamos a leer', em: '⏩' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Мы будем гулять»', opts: [
+        { txt: 'voy a pasear',    em: '⏩' },
+        { txt: 'vais a pasear',   em: '⏩' },
+        { txt: 'vamos a pasear',  em: '⏩' },
+        { txt: 'van a pasear',    em: '⏩' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['voy a',   'я собираюсь'],
+        ['vas a',   'ты собираешься'],
+        ['va a',    'он/она собирается'],
+        ['vamos a', 'мы собираемся'],
+      ]},
+      { t: 'match', pairs: [
+        ['voy a comer',   'я буду есть'],
+        ['voy a beber',   'я буду пить'],
+        ['voy a dormir',  'я буду спать'],
+        ['voy a leer',    'я буду читать'],
+      ]},
+      { t: 'translate', from: 'Завтра я буду учиться', tiles: ['mañana', 'voy', 'a', 'estudiar', 'ayer'], answer: ['mañana', 'voy', 'a', 'estudiar'] },
+      { t: 'fill', sentence: ['Esta noche', null, 'a dormir temprano.'], target: 'voy', opts: ['voy', 'vas', 'va'], hint: 'Сегодня вечером я буду спать рано' },
+    ],
+  },
+
+  // ── 54. Reflexivos ────────────────────────────────────
+  // Anchors on «me llamo» from L2, then expands to daily routine
+  {
+    id: 'l54', name: 'Reflexivos', emoji: '🪞', desc: 'Me llamo, me levanto, me ducho',
+    exercises: [
+      { t: 'pick', q: '«Меня зовут»', opts: [
+        { txt: 'me llamo',     em: '👤' },
+        { txt: 'te llamas',    em: '👉' },
+        { txt: 'se llama',     em: '👨' },
+        { txt: 'nos llamamos', em: '👥' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я встаю»', opts: [
+        { txt: 'me levanto', em: '⏰' },
+        { txt: 'me ducho',   em: '🚿' },
+        { txt: 'me lavo',    em: '🧼' },
+        { txt: 'me acuesto', em: '🛏️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я ложусь спать»', opts: [
+        { txt: 'me levanto', em: '⏰' },
+        { txt: 'me acuesto', em: '🛏️' },
+        { txt: 'me ducho',   em: '🚿' },
+        { txt: 'me lavo',    em: '🧼' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['me llamo',   'меня зовут'],
+        ['me levanto', 'я встаю'],
+        ['me ducho',   'я принимаю душ'],
+        ['me acuesto', 'я ложусь спать'],
+      ]},
+      { t: 'match', pairs: [
+        ['me lavo',  'я моюсь'],
+        ['me visto', 'я одеваюсь'],
+        ['me peino', 'я причёсываюсь'],
+        ['me siento','я сажусь'],
+      ]},
+      // Reuse «me llamo Ana» from L2
+      { t: 'translate', from: 'Меня зовут Ана', tiles: ['me', 'llamo', 'Ana', 'te'], answer: ['me', 'llamo', 'Ana'] },
+      { t: 'fill', sentence: ['Por la mañana', null, 'levanto.'], target: 'me', opts: ['me', 'te', 'se'], hint: 'Утром я встаю' },
+    ],
+  },
+
+  // ── 55. Repaso 8 Final (revisión de L51-L54) ──────────
+  // REVIEW LESSON: mixes Direcciones, Modales, Futuro ir a, Reflexivos
+  {
+    id: 'l55', name: 'Repaso 8', emoji: '🏆', desc: 'Repaso final (51-54)',
+    exercises: [
+      // From L51
+      { t: 'pick', q: '«Налево»', opts: [
+        { txt: 'a la izquierda', em: '⬅️' },
+        { txt: 'a la derecha',   em: '➡️' },
+        { txt: 'recto',          em: '⬆️' },
+        { txt: 'cerca',          em: '📍' },
+      ], correct: 0 },
+      // From L52
+      { t: 'pick', q: '«Я хочу есть»', opts: [
+        { txt: 'puedo comer',    em: '💪' },
+        { txt: 'quiero comer',   em: '💖' },
+        { txt: 'debo comer',     em: '☝️' },
+        { txt: 'voy a comer',    em: '⏩' },
+      ], correct: 1 },
+      // From L53
+      { t: 'pick', q: '«Я буду читать»', opts: [
+        { txt: 'voy a leer',    em: '⏩' },
+        { txt: 'leo',           em: '📖' },
+        { txt: 'leí',           em: '⏪' },
+        { txt: 'vamos a leer',  em: '⏩' },
+      ], correct: 0 },
+      // Mix L51 + L52
+      { t: 'match', pairs: [
+        ['izquierda', 'налево'],
+        ['derecha',   'направо'],
+        ['puedo',     'я могу'],
+        ['quiero',    'я хочу'],
+      ]},
+      // Mix L53 + L54
+      { t: 'match', pairs: [
+        ['voy a',      'я собираюсь'],
+        ['vamos a',    'мы собираемся'],
+        ['me llamo',   'меня зовут'],
+        ['me levanto', 'я встаю'],
+      ]},
+      // From L53
+      { t: 'translate', from: 'Завтра я буду спать', tiles: ['mañana', 'voy', 'a', 'dormir', 'ayer'], answer: ['mañana', 'voy', 'a', 'dormir'] },
+      // From L51
+      { t: 'fill', sentence: ['Sigue', null, 'por la calle.'], target: 'recto', opts: ['recto', 'casa', 'noche'], hint: 'Иди прямо по улице' },
+    ],
+  },
 ];
 
 // ── Lesson runtime state ─────────────────────────────────

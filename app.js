@@ -938,6 +938,10 @@ function showLevelUp() {
   if (svg && wrap) {
     wrap.classList.add('is-celebrating');
     pulseClass(svg, 'is-celebrate', 2200);
+    pulseClass(svg, 'is-star-eyes', 2200);
+    spawnSparkleBurst(14);
+    setTimeout(() => spawnSparkleBurst(10), 700);
+    setTimeout(() => spawnSparkleBurst(8),  1300);
     setTimeout(() => wrap.classList.remove('is-celebrating'), 2200);
   }
 }
@@ -1078,22 +1082,43 @@ function pulseClass(el, className, duration) {
   setTimeout(() => el.classList.remove(className), duration);
 }
 
-// "Acariciar" — give happiness, trigger wiggle reaction
+// "Acariciar" — give happiness, trigger wiggle reaction.
+// Track quick repeat-clicks to escalate into a heart-eyed bounce.
+let _petClickCount = 0;
+let _petClickTimer = null;
 $('pet-action-pet')?.addEventListener('click', () => {
   if (!state.pet) return;
   haptic.light();
   state.pet.happiness = Math.min(100, state.pet.happiness + 5);
-  spawnHearts(3);
   const wrap = $('axolotl-wrap');
   const svg = $('axolotl-svg');
   wrap.classList.add('is-petting');
-  pulseClass(svg, 'is-happy', 850);
-  setTimeout(() => wrap.classList.remove('is-petting'), 850);
+
+  // Escalating affection: 1st click → wiggle, 2nd → bounce, 3+ → heart-eyes & sparkles
+  _petClickCount++;
+  clearTimeout(_petClickTimer);
+  _petClickTimer = setTimeout(() => { _petClickCount = 0; }, 1500);
+
+  if (_petClickCount >= 3) {
+    spawnHearts(6);
+    spawnSparkleBurst(8);
+    pulseClass(svg, 'is-heart-eyes', 1500);
+    pulseClass(svg, 'is-bounce', 900);
+    setTimeout(() => wrap.classList.remove('is-petting'), 1500);
+  } else if (_petClickCount === 2) {
+    spawnHearts(4);
+    pulseClass(svg, 'is-bounce', 900);
+    setTimeout(() => wrap.classList.remove('is-petting'), 900);
+  } else {
+    spawnHearts(3);
+    pulseClass(svg, 'is-happy', 850);
+    setTimeout(() => wrap.classList.remove('is-petting'), 850);
+  }
   savePet();
   refreshPetUI();
 });
 
-// "Alimentar" — feed: spin + chomp animation
+// "Alimentar" — feed: spin + chomp animation, with a star-eyed flourish
 $('pet-action-feed')?.addEventListener('click', () => {
   if (!state.pet) return;
   if (state.pet.hunger >= 95) {
@@ -1109,6 +1134,8 @@ $('pet-action-feed')?.addEventListener('click', () => {
   const svg = $('axolotl-svg');
   pulseClass(svg, 'is-spin',   1150);
   pulseClass(svg, 'is-eating', 900);
+  // Brief star-eyes after the spin lands
+  setTimeout(() => pulseClass(svg, 'is-star-eyes', 900), 1100);
   savePet();
   refreshPetUI();
 });
@@ -1175,6 +1202,128 @@ function spawnDashBubbles(count = 5) {
     setTimeout(() => b.remove(), 1100);
   }
 }
+
+// ── Mini axolotl renderer (used inside lesson speech bubbles) ──
+function renderMiniAxolotlSVG() {
+  const pet  = state.pet;
+  const c    = (pet && PET_COLORS.find(x => x.id === pet.color)) || PET_COLORS[0];
+  const hat  = pet && pet.hat ? PET_HATS.find(h => h.id === pet.hat) : null;
+  const vars = `--ax-body:${c.body};--ax-belly:${c.belly};--ax-gill:${c.gill};--ax-cheek:${c.cheek}`;
+  const hatMarkup = (hat && hat.id) ? `<text x="140" y="56" text-anchor="middle" font-size="42">${hat.emoji}</text>` : '';
+  return `
+    <svg class="mini-axolotl axolotl" viewBox="0 0 220 180" style="${vars}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path class="ax-tail" d="M48 110 Q22 108 6 92 Q14 110 8 128 Q24 116 48 120 Z"/>
+      <ellipse class="ax-body" cx="112" cy="115" rx="60" ry="26"/>
+      <ellipse class="ax-belly" cx="118" cy="122" rx="44" ry="11"/>
+      <ellipse class="ax-leg" cx="86" cy="138" rx="8" ry="6"/>
+      <ellipse class="ax-leg" cx="146" cy="138" rx="8" ry="6"/>
+      <circle class="ax-head" cx="140" cy="88" r="40"/>
+      <g class="ax-gills ax-gills-left">
+        <path d="M104 64 Q80 46 70 60 Q82 60 90 70 Z"/>
+        <path d="M104 74 Q76 64 70 80 Q82 76 92 84 Z"/>
+        <path d="M106 86 Q82 88 74 102 Q86 96 100 96 Z"/>
+      </g>
+      <g class="ax-gills ax-gills-right">
+        <path d="M176 64 Q200 46 210 60 Q198 60 190 70 Z"/>
+        <path d="M176 74 Q204 64 210 80 Q198 76 188 84 Z"/>
+        <path d="M174 86 Q198 88 206 102 Q194 96 180 96 Z"/>
+      </g>
+      <circle class="ax-cheek" cx="118" cy="98" r="5.5"/>
+      <circle class="ax-cheek" cx="162" cy="98" r="5.5"/>
+      <g class="ax-eyes">
+        <circle class="ax-eye" cx="128" cy="86" r="4.2"/>
+        <circle class="ax-eye" cx="152" cy="86" r="4.2"/>
+        <circle class="ax-eye-shine" cx="129.3" cy="84.7" r="1.3"/>
+        <circle class="ax-eye-shine" cx="153.3" cy="84.7" r="1.3"/>
+      </g>
+      <g class="ax-eyes-heart">
+        <path d="M128 90.5 C124.4 87 121 86.5 121 83 C121 80 124 79 128 82.5 C132 79 135 80 135 83 C135 86.5 131.6 87 128 90.5 Z"/>
+        <path d="M152 90.5 C148.4 87 145 86.5 145 83 C145 80 148 79 152 82.5 C156 79 159 80 159 83 C159 86.5 155.6 87 152 90.5 Z"/>
+      </g>
+      <path class="ax-mouth ax-mouth-happy" d="M134 104 Q140 109 146 104"/>
+      <path class="ax-mouth ax-mouth-sad" d="M134 108 Q140 100 146 108"/>
+      ${hatMarkup}
+    </svg>`;
+}
+
+// ── Spawn a single floating bubble from the axolotl's mouth area ──
+function spawnBlowBubble() {
+  const wrap = $('axolotl-wrap');
+  const tank = document.querySelector('.pet-tank');
+  if (!wrap || !tank) return;
+  const rect = wrap.getBoundingClientRect();
+  const tankRect = tank.getBoundingClientRect();
+  // Mouth is at ~x=140/220, y=106/180 of the wrap — roughly 64%, 59%
+  const left = (rect.left - tankRect.left) + rect.width  * 0.64;
+  const top  = (rect.top  - tankRect.top)  + rect.height * 0.55;
+  const b = document.createElement('div');
+  b.className = 'ax-blow-bubble';
+  b.style.left = left + 'px';
+  b.style.top  = top  + 'px';
+  tank.appendChild(b);
+  setTimeout(() => b.remove(), 1700);
+}
+
+// ── Spawn a quick burst of sparkles from the axolotl (celebrations) ──
+function spawnSparkleBurst(count = 10) {
+  const wrap = $('axolotl-wrap');
+  if (!wrap) return;
+  for (let i = 0; i < count; i++) {
+    const s = document.createElement('div');
+    s.className = 'spark-burst';
+    const angle = (Math.PI * 2 * i) / count + Math.random() * 0.6;
+    const dist  = 50 + Math.random() * 50;
+    const dx = Math.cos(angle) * dist;
+    const dy = Math.sin(angle) * dist;
+    s.style.left = '50%';
+    s.style.top  = '45%';
+    s.style.setProperty('--spark-end', `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px)`);
+    s.style.animationDelay = (i * 0.04) + 's';
+    wrap.appendChild(s);
+    setTimeout(() => s.remove(), 1000);
+  }
+}
+
+// ── Random idle scheduler — picks fun behaviors when the axolotl is awake ──
+function scheduleNextIdleQuirk() {
+  const delay = 6000 + Math.random() * 10000;
+  setTimeout(() => {
+    const wrap = $('axolotl-wrap');
+    const svg = $('axolotl-svg');
+    if (
+      wrap && svg && state.currentNav === 'pet' &&
+      !svg.classList.contains('is-sleepy') &&
+      !svg.classList.contains('is-spin') &&
+      !svg.classList.contains('is-celebrate') &&
+      !svg.classList.contains('is-flip') &&
+      !svg.classList.contains('is-bounce') &&
+      !svg.classList.contains('is-bubble') &&
+      !svg.classList.contains('is-yawn') &&
+      !wrap.classList.contains('is-petting') &&
+      !wrap.classList.contains('is-dashing')
+    ) {
+      // Weighted choice: bubble most often, flip/peek/yawn occasionally
+      const r = Math.random();
+      if (r < 0.40) {
+        // Blow a bubble
+        pulseClass(svg, 'is-bubble', 1400);
+        setTimeout(() => spawnBlowBubble(), 350);
+      } else if (r < 0.65) {
+        // Peek (curious head tilt)
+        pulseClass(svg, 'is-peek', 1600);
+      } else if (r < 0.85) {
+        // Quick flip
+        pulseClass(svg, 'is-flip', 950);
+        spawnDashBubbles(3);
+      } else {
+        // Yawn
+        pulseClass(svg, 'is-yawn', 1400);
+      }
+    }
+    scheduleNextIdleQuirk();
+  }, delay);
+}
+scheduleNextIdleQuirk();
 
 // ── Tank water-ripple on click anywhere ──
 document.querySelector('.pet-tank')?.addEventListener('click', (e) => {
@@ -3778,10 +3927,11 @@ function renderTranslateExercise(root, ex) {
   const bubble = document.createElement('div');
   bubble.className = 'lex-bubble';
   bubble.innerHTML = `
-    <div class="lex-bubble-avatar">🦎</div>
+    <div class="lex-bubble-avatar is-entering">${renderMiniAxolotlSVG()}</div>
     <div class="lex-bubble-text">${ex.from}</div>
   `;
   root.appendChild(bubble);
+  setTimeout(() => bubble.querySelector('.lex-bubble-avatar')?.classList.remove('is-entering'), 600);
 
   const ans = document.createElement('div');
   ans.className = 'lex-answer-area';
@@ -3945,10 +4095,11 @@ function renderFillExercise(root, ex) {
     const hint = document.createElement('div');
     hint.className = 'lex-bubble';
     hint.innerHTML = `
-      <div class="lex-bubble-avatar">🦎</div>
+      <div class="lex-bubble-avatar is-entering">${renderMiniAxolotlSVG()}</div>
       <div class="lex-bubble-text">${ex.hint}</div>
     `;
     root.appendChild(hint);
+    setTimeout(() => hint.querySelector('.lex-bubble-avatar')?.classList.remove('is-entering'), 600);
   }
 
   const sentence = document.createElement('div');
@@ -4059,6 +4210,24 @@ function showFeedback(correct, correctText) {
   btn.classList.toggle('continue-wrong', !correct);
   lessonState.pendingOk = correct;
   if (correct) haptic.success(); else haptic.error();
+  // React with the lesson's mini axolotl in the speech bubble
+  reactLessonMiniAxolotl(correct);
+}
+
+// Make the mini axolotl in the active lesson bubble react to a check
+function reactLessonMiniAxolotl(correct) {
+  const avatar = document.querySelector('#lesson-exercise .lex-bubble-avatar');
+  if (!avatar) return;
+  const svg = avatar.querySelector('.mini-axolotl');
+  pulseClass(avatar, correct ? 'is-bounce' : 'is-shake', correct ? 700 : 600);
+  if (svg) {
+    if (correct) {
+      pulseClass(svg, 'is-heart-eyes', 1000);
+      pulseClass(svg, 'is-happy', 850);
+    } else {
+      pulseClass(svg, 'is-sad', 1200);
+    }
+  }
 }
 
 function onContinuePressed() {

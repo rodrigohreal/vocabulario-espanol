@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
   <div id="app">
@@ -179,10 +179,22 @@
               <path d="M124 86 Q128 90 132 86" />
               <path d="M148 86 Q152 90 156 86" />
             </g>
+            <!-- Heart eyes (hidden by default — shown on .is-heart-eyes) -->
+            <g class="ax-eyes-heart">
+              <path d="M128 90.5 C124.4 87 121 86.5 121 83 C121 80 124 79 128 82.5 C132 79 135 80 135 83 C135 86.5 131.6 87 128 90.5 Z"/>
+              <path d="M152 90.5 C148.4 87 145 86.5 145 83 C145 80 148 79 152 82.5 C156 79 159 80 159 83 C159 86.5 155.6 87 152 90.5 Z"/>
+            </g>
+            <!-- Star eyes (hidden by default — shown on .is-star-eyes) -->
+            <g class="ax-eyes-star">
+              <path d="M128 80 L130 84.5 L135 85 L131 88 L132 93 L128 90.5 L124 93 L125 88 L121 85 L126 84.5 Z"/>
+              <path d="M152 80 L154 84.5 L159 85 L155 88 L156 93 L152 90.5 L148 93 L149 88 L145 85 L150 84.5 Z"/>
+            </g>
             <!-- Mouth (happy by default) -->
             <path class="ax-mouth ax-mouth-happy" d="M134 104 Q140 109 146 104" />
             <!-- Mouth (sad — hidden unless .is-sad) -->
             <path class="ax-mouth ax-mouth-sad" d="M134 108 Q140 100 146 108" />
+            <!-- Mouth (puckered O — hidden unless .is-bubble) -->
+            <ellipse class="ax-mouth-bubble" cx="140" cy="106" rx="3.2" ry="3.2"/>
             <!-- Accessory anchor (hat) -->
             <g id="ax-hat" class="ax-hat"></g>
           </svg>
@@ -379,6 +391,6 @@
     </nav>
 
   </div>
-  <script src="app.js?v=10"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>

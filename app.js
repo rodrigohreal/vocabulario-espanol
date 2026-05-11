@@ -1203,6 +1203,17 @@ function spawnDashBubbles(count = 5) {
   }
 }
 
+// ── Tiny aquarium bubbles to scatter inside a mini-axolotl frame ──
+function renderLexBubbleParticles() {
+  return `
+    <span class="lex-mini-bubble" style="width:4px;height:4px;left:14%;animation-duration:3.2s;animation-delay:0.2s;"></span>
+    <span class="lex-mini-bubble" style="width:3px;height:3px;left:34%;animation-duration:4.1s;animation-delay:1.4s;"></span>
+    <span class="lex-mini-bubble" style="width:5px;height:5px;left:60%;animation-duration:3.5s;animation-delay:0.7s;"></span>
+    <span class="lex-mini-bubble" style="width:3px;height:3px;left:82%;animation-duration:4.6s;animation-delay:2.1s;"></span>
+    <span class="lex-mini-bubble" style="width:2px;height:2px;left:48%;animation-duration:3s;  animation-delay:2.6s;"></span>
+  `;
+}
+
 // ── Mini axolotl renderer (used inside lesson speech bubbles) ──
 function renderMiniAxolotlSVG() {
   const pet  = state.pet;
@@ -3680,6 +3691,792 @@ const LESSONS = [
       { t: 'fill', sentence: ['Sigue', null, 'por la calle.'], target: 'recto', opts: ['recto', 'casa', 'noche'], hint: 'Иди прямо по улице' },
     ],
   },
+
+  // ── 56. Vacaciones ────────────────────────────────────
+  {
+    id: 'l56', name: 'Vacaciones', emoji: '🏖️', desc: 'Viajes y descanso',
+    exercises: [
+      { t: 'pick', q: '«Море»', opts: [
+        { txt: 'mar',     em: '🌊' },
+        { txt: 'lago',    em: '🏞️' },
+        { txt: 'río',     em: '🌊' },
+        { txt: 'arena',   em: '🏖️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Чемодан»', opts: [
+        { txt: 'mochila', em: '🎒' },
+        { txt: 'maleta',  em: '🧳' },
+        { txt: 'bolso',   em: '👜' },
+        { txt: 'caja',    em: '📦' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Отпуск»', opts: [
+        { txt: 'trabajo',    em: '💼' },
+        { txt: 'estudio',    em: '📚' },
+        { txt: 'vacaciones', em: '🏖️' },
+        { txt: 'lunes',      em: '📅' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['playa',   'пляж'],
+        ['mar',     'море'],
+        ['montaña', 'гора'],
+        ['hotel',   'отель'],
+      ]},
+      { t: 'match', pairs: [
+        ['maleta',    'чемодан'],
+        ['pasaporte', 'паспорт'],
+        ['viaje',     'путешествие'],
+        ['mapa',      'карта'],
+      ]},
+      { t: 'translate', from: 'Я еду в отпуск', tiles: ['voy', 'de', 'vacaciones', 'a', 'casa'], answer: ['voy', 'de', 'vacaciones'] },
+      { t: 'fill', sentence: ['La', null, 'es muy bonita.'], target: 'playa', opts: ['playa', 'mar', 'hotel'], hint: 'Пляж очень красивый' },
+    ],
+  },
+
+  // ── 57. Aeropuerto ────────────────────────────────────
+  {
+    id: 'l57', name: 'Aeropuerto', emoji: '✈️', desc: 'Vocabulario del aeropuerto',
+    exercises: [
+      { t: 'pick', q: '«Самолёт»', opts: [
+        { txt: 'avión',  em: '✈️' },
+        { txt: 'tren',   em: '🚆' },
+        { txt: 'coche',  em: '🚗' },
+        { txt: 'barco',  em: '🚢' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Билет»', opts: [
+        { txt: 'maleta',     em: '🧳' },
+        { txt: 'pasaporte',  em: '🛂' },
+        { txt: 'billete',    em: '🎟️' },
+        { txt: 'asiento',    em: '💺' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Рейс»', opts: [
+        { txt: 'vuelo',    em: '🛫' },
+        { txt: 'puerta',   em: '🚪' },
+        { txt: 'maleta',   em: '🧳' },
+        { txt: 'pasajero', em: '🧑' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['avión',     'самолёт'],
+        ['vuelo',     'рейс'],
+        ['billete',   'билет'],
+        ['equipaje',  'багаж'],
+      ]},
+      { t: 'match', pairs: [
+        ['salida',    'вылет'],
+        ['llegada',   'прибытие'],
+        ['pasajero',  'пассажир'],
+        ['puerta',    'выход'],
+      ]},
+      { t: 'translate', from: 'Где мой багаж?', tiles: ['dónde', 'está', 'mi', 'equipaje', 'tu'], answer: ['dónde', 'está', 'mi', 'equipaje'] },
+      { t: 'fill', sentence: ['El', null, 'sale a las diez.'], target: 'vuelo', opts: ['vuelo', 'tren', 'mar'], hint: 'Рейс вылетает в 10' },
+    ],
+  },
+
+  // ── 58. Comparativos ──────────────────────────────────
+  {
+    id: 'l58', name: 'Comparativos', emoji: '⚖️', desc: 'más que, menos que, tan como',
+    exercises: [
+      { t: 'pick', q: '«Больше чем»', opts: [
+        { txt: 'más que',    em: '➕' },
+        { txt: 'menos que',  em: '➖' },
+        { txt: 'tan como',   em: '🟰' },
+        { txt: 'muy',        em: '❗' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Меньше чем»', opts: [
+        { txt: 'más que',    em: '➕' },
+        { txt: 'menos que',  em: '➖' },
+        { txt: 'igual que',  em: '🟰' },
+        { txt: 'bien',       em: '👍' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Такой же как»', opts: [
+        { txt: 'más que',    em: '➕' },
+        { txt: 'menos que',  em: '➖' },
+        { txt: 'tan como',   em: '🟰' },
+        { txt: 'muy',        em: '❗' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['más',   'больше'],
+        ['menos', 'меньше'],
+        ['tan',   'такой'],
+        ['que',   'чем'],
+      ]},
+      { t: 'translate', from: 'Хуан выше Педро', tiles: ['Juan', 'es', 'más', 'alto', 'que', 'Pedro'], answer: ['Juan', 'es', 'más', 'alto', 'que', 'Pedro'] },
+      { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'menos', 'mayor', 'que', 'tú', 'él'], answer: ['soy', 'menos', 'mayor', 'que', 'tú'] },
+      { t: 'fill', sentence: ['Ana es', null, 'alta que María.'], target: 'más', opts: ['más', 'menos', 'tan'], hint: 'Ана выше Марии' },
+    ],
+  },
+
+  // ── 59. Superlativos ──────────────────────────────────
+  {
+    id: 'l59', name: 'Superlativos', emoji: '🏆', desc: 'el más, mejor, peor',
+    exercises: [
+      { t: 'pick', q: '«Лучший»', opts: [
+        { txt: 'mejor',  em: '🥇' },
+        { txt: 'peor',   em: '👎' },
+        { txt: 'mayor',  em: '⬆️' },
+        { txt: 'menor',  em: '⬇️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Худший»', opts: [
+        { txt: 'mejor',  em: '🥇' },
+        { txt: 'peor',   em: '👎' },
+        { txt: 'grande', em: '🔠' },
+        { txt: 'malo',   em: '😞' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Самый высокий»', opts: [
+        { txt: 'el más alto',  em: '📈' },
+        { txt: 'el menos alto',em: '📉' },
+        { txt: 'tan alto',     em: '🟰' },
+        { txt: 'muy alto',     em: '❗' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['el mejor', 'лучший'],
+        ['el peor',  'худший'],
+        ['el mayor', 'старший'],
+        ['el menor', 'младший'],
+      ]},
+      { t: 'translate', from: 'Это самая красивая книга', tiles: ['es', 'el', 'la', 'libro', 'más', 'bonito', 'bonita'], answer: ['es', 'el', 'libro', 'más', 'bonito'] },
+      { t: 'fill', sentence: ['Es el', null, 'jugador del mundo.'], target: 'mejor', opts: ['mejor', 'peor', 'más'], hint: 'Лучший игрок мира' },
+      { t: 'fill', sentence: ['Hoy es el día', null, 'frío del año.'], target: 'más', opts: ['más', 'menos', 'mejor'], hint: 'Самый холодный день года' },
+    ],
+  },
+
+  // ── 60. Repaso 9 (revisión de L56-L59) ────────────────
+  // REVIEW LESSON: mixes Vacaciones, Aeropuerto, Comparativos, Superlativos
+  {
+    id: 'l60', name: 'Repaso 9', emoji: '🔁', desc: 'Repasa lecciones 56-59',
+    exercises: [
+      // From L56
+      { t: 'pick', q: '«Море»', opts: [
+        { txt: 'mar',   em: '🌊' },
+        { txt: 'lago',  em: '🏞️' },
+        { txt: 'playa', em: '🏖️' },
+        { txt: 'hotel', em: '🏨' },
+      ], correct: 0 },
+      // From L57
+      { t: 'pick', q: '«Самолёт»', opts: [
+        { txt: 'tren',   em: '🚆' },
+        { txt: 'avión',  em: '✈️' },
+        { txt: 'coche',  em: '🚗' },
+        { txt: 'barco',  em: '🚢' },
+      ], correct: 1 },
+      // From L58
+      { t: 'pick', q: '«Больше чем»', opts: [
+        { txt: 'menos que', em: '➖' },
+        { txt: 'tan como',  em: '🟰' },
+        { txt: 'más que',   em: '➕' },
+        { txt: 'muy',       em: '❗' },
+      ], correct: 2 },
+      // Mix L56 + L57
+      { t: 'match', pairs: [
+        ['playa',   'пляж'],
+        ['maleta',  'чемодан'],
+        ['vuelo',   'рейс'],
+        ['billete', 'билет'],
+      ]},
+      // Mix L58 + L59
+      { t: 'match', pairs: [
+        ['más',   'больше'],
+        ['menos', 'меньше'],
+        ['mejor', 'лучший'],
+        ['peor',  'худший'],
+      ]},
+      // From L58
+      { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'menos', 'mayor', 'que', 'tú'], answer: ['soy', 'menos', 'mayor', 'que', 'tú'] },
+      // From L59
+      { t: 'fill', sentence: ['Es el', null, 'libro del año.'], target: 'mejor', opts: ['mejor', 'peor', 'más'], hint: 'Лучшая книга года' },
+    ],
+  },
+
+  // ── 61. Ropa de invierno ──────────────────────────────
+  {
+    id: 'l61', name: 'Ropa invierno', emoji: '🧥', desc: 'Abrigo, bufanda, guantes',
+    exercises: [
+      { t: 'pick', q: '«Пальто»', opts: [
+        { txt: 'abrigo',   em: '🧥' },
+        { txt: 'camisa',   em: '👔' },
+        { txt: 'falda',    em: '👗' },
+        { txt: 'zapato',   em: '👞' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Шарф»', opts: [
+        { txt: 'gorro',    em: '🧢' },
+        { txt: 'guantes',  em: '🧤' },
+        { txt: 'bufanda',  em: '🧣' },
+        { txt: 'botas',    em: '👢' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Перчатки»', opts: [
+        { txt: 'guantes',  em: '🧤' },
+        { txt: 'calcetines',em: '🧦' },
+        { txt: 'gorro',    em: '🧢' },
+        { txt: 'cinturón', em: '👖' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['abrigo',  'пальто'],
+        ['bufanda', 'шарф'],
+        ['guantes', 'перчатки'],
+        ['gorro',   'шапка'],
+      ]},
+      { t: 'match', pairs: [
+        ['botas',      'сапоги'],
+        ['calcetines', 'носки'],
+        ['chaqueta',   'куртка'],
+        ['suéter',     'свитер'],
+      ]},
+      { t: 'translate', from: 'Мне нужны перчатки', tiles: ['necesito', 'guantes', 'una', 'bufanda', 'unos'], answer: ['necesito', 'unos', 'guantes'] },
+      { t: 'fill', sentence: ['Hace frío, ponte el', null, '.'], target: 'abrigo', opts: ['abrigo', 'verano', 'sol'], hint: 'Холодно, надень пальто' },
+    ],
+  },
+
+  // ── 62. Cocina ────────────────────────────────────────
+  {
+    id: 'l62', name: 'Cocina', emoji: '🍳', desc: 'Utensilios y platos',
+    exercises: [
+      { t: 'pick', q: '«Ложка»', opts: [
+        { txt: 'cuchara',  em: '🥄' },
+        { txt: 'tenedor',  em: '🍴' },
+        { txt: 'cuchillo', em: '🔪' },
+        { txt: 'plato',    em: '🍽️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Вилка»', opts: [
+        { txt: 'cuchara',  em: '🥄' },
+        { txt: 'tenedor',  em: '🍴' },
+        { txt: 'cuchillo', em: '🔪' },
+        { txt: 'taza',     em: '☕' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Нож»', opts: [
+        { txt: 'cuchara',  em: '🥄' },
+        { txt: 'tenedor',  em: '🍴' },
+        { txt: 'cuchillo', em: '🔪' },
+        { txt: 'vaso',     em: '🥛' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['cuchara',  'ложка'],
+        ['tenedor',  'вилка'],
+        ['cuchillo', 'нож'],
+        ['plato',    'тарелка'],
+      ]},
+      { t: 'match', pairs: [
+        ['vaso',    'стакан'],
+        ['taza',    'чашка'],
+        ['olla',    'кастрюля'],
+        ['sartén',  'сковорода'],
+      ]},
+      { t: 'translate', from: 'Дай мне ложку', tiles: ['dame', 'una', 'un', 'cuchara', 'tenedor'], answer: ['dame', 'una', 'cuchara'] },
+      { t: 'fill', sentence: ['Necesito un', null, 'para cortar el pan.'], target: 'cuchillo', opts: ['cuchillo', 'tenedor', 'plato'], hint: 'Нож, чтобы резать хлеб' },
+    ],
+  },
+
+  // ── 63. En el hotel ───────────────────────────────────
+  {
+    id: 'l63', name: 'Hotel', emoji: '🏨', desc: 'Habitación, llave, reserva',
+    exercises: [
+      { t: 'pick', q: '«Номер (в отеле)»', opts: [
+        { txt: 'habitación', em: '🛏️' },
+        { txt: 'cocina',     em: '🍳' },
+        { txt: 'balcón',     em: '🪟' },
+        { txt: 'piscina',    em: '🏊' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ключ»', opts: [
+        { txt: 'puerta',     em: '🚪' },
+        { txt: 'llave',      em: '🔑' },
+        { txt: 'mesa',       em: '🪑' },
+        { txt: 'cama',       em: '🛏️' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Бронь»', opts: [
+        { txt: 'recepción', em: '🛎️' },
+        { txt: 'piso',      em: '🏢' },
+        { txt: 'reserva',   em: '📋' },
+        { txt: 'ducha',     em: '🚿' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['habitación', 'номер'],
+        ['llave',      'ключ'],
+        ['recepción',  'ресепшен'],
+        ['reserva',    'бронь'],
+      ]},
+      { t: 'match', pairs: [
+        ['piso',     'этаж'],
+        ['ascensor', 'лифт'],
+        ['ducha',    'душ'],
+        ['cama',     'кровать'],
+      ]},
+      { t: 'translate', from: 'У меня есть бронь', tiles: ['tengo', 'una', 'reserva', 'un', 'piso'], answer: ['tengo', 'una', 'reserva'] },
+      { t: 'fill', sentence: ['¿Cuál es el número de la', null, '?'], target: 'habitación', opts: ['habitación', 'llave', 'ducha'], hint: 'Какой номер комнаты?' },
+    ],
+  },
+
+  // ── 64. Imperfecto ────────────────────────────────────
+  {
+    id: 'l64', name: 'Imperfecto', emoji: '⏳', desc: 'Прошедшее (длительное) время',
+    exercises: [
+      { t: 'pick', q: '«Я говорил»', opts: [
+        { txt: 'hablaba',  em: '🗣️' },
+        { txt: 'hablo',    em: '⏺️' },
+        { txt: 'hablaré',  em: '⏩' },
+        { txt: 'habla',    em: '👉' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я ел»', opts: [
+        { txt: 'como',    em: '⏺️' },
+        { txt: 'comía',   em: '⏪' },
+        { txt: 'comeré',  em: '⏩' },
+        { txt: 'comer',   em: '🍴' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я жил (в Москве)»', opts: [
+        { txt: 'vivo',    em: '⏺️' },
+        { txt: 'viviré',  em: '⏩' },
+        { txt: 'vivía',   em: '⏪' },
+        { txt: 'vivir',   em: '🏠' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['hablaba', 'я говорил'],
+        ['comía',   'я ел'],
+        ['vivía',   'я жил'],
+        ['era',     'я был (ser)'],
+      ]},
+      { t: 'match', pairs: [
+        ['estaba',  'я был (estar)'],
+        ['iba',     'я шёл'],
+        ['tenía',   'у меня было'],
+        ['veía',    'я видел'],
+      ]},
+      { t: 'translate', from: 'Раньше я жил в Мадриде', tiles: ['antes', 'vivía', 'en', 'Madrid', 'vivo'], answer: ['antes', 'vivía', 'en', 'Madrid'] },
+      { t: 'fill', sentence: ['Cuando era niño,', null, 'mucho.'], target: 'jugaba', opts: ['jugaba', 'juego', 'jugar'], hint: 'Когда я был ребёнком, я много играл' },
+    ],
+  },
+
+  // ── 65. Repaso 10 (revisión de L61-L64) ───────────────
+  // REVIEW LESSON: mixes Ropa invierno, Cocina, Hotel, Imperfecto
+  {
+    id: 'l65', name: 'Repaso 10', emoji: '🔁', desc: 'Repasa lecciones 61-64',
+    exercises: [
+      // From L61
+      { t: 'pick', q: '«Шарф»', opts: [
+        { txt: 'gorro',    em: '🧢' },
+        { txt: 'bufanda',  em: '🧣' },
+        { txt: 'guantes',  em: '🧤' },
+        { txt: 'botas',    em: '👢' },
+      ], correct: 1 },
+      // From L62
+      { t: 'pick', q: '«Вилка»', opts: [
+        { txt: 'cuchara',  em: '🥄' },
+        { txt: 'tenedor',  em: '🍴' },
+        { txt: 'cuchillo', em: '🔪' },
+        { txt: 'taza',     em: '☕' },
+      ], correct: 1 },
+      // From L64
+      { t: 'pick', q: '«Я ел»', opts: [
+        { txt: 'como',    em: '⏺️' },
+        { txt: 'comía',   em: '⏪' },
+        { txt: 'comeré',  em: '⏩' },
+        { txt: 'comer',   em: '🍴' },
+      ], correct: 1 },
+      // Mix L61 + L62
+      { t: 'match', pairs: [
+        ['abrigo',  'пальто'],
+        ['guantes', 'перчатки'],
+        ['cuchara', 'ложка'],
+        ['plato',   'тарелка'],
+      ]},
+      // Mix L63 + L64
+      { t: 'match', pairs: [
+        ['llave',      'ключ'],
+        ['habitación', 'номер'],
+        ['hablaba',    'я говорил'],
+        ['vivía',      'я жил'],
+      ]},
+      // From L63
+      { t: 'translate', from: 'У меня есть бронь', tiles: ['tengo', 'una', 'reserva', 'piso'], answer: ['tengo', 'una', 'reserva'] },
+      // From L64
+      { t: 'fill', sentence: ['Antes', null, 'en Madrid.'], target: 'vivía', opts: ['vivía', 'vivo', 'viviré'], hint: 'Раньше я жил в Мадриде' },
+    ],
+  },
+
+  // ── 66. Animales del campo ────────────────────────────
+  {
+    id: 'l66', name: 'Animales II', emoji: '🐮', desc: 'Animales de la granja',
+    exercises: [
+      { t: 'pick', q: '«Лошадь»', opts: [
+        { txt: 'caballo', em: '🐴' },
+        { txt: 'vaca',    em: '🐮' },
+        { txt: 'oveja',   em: '🐑' },
+        { txt: 'cerdo',   em: '🐷' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Корова»', opts: [
+        { txt: 'caballo', em: '🐴' },
+        { txt: 'vaca',    em: '🐮' },
+        { txt: 'pato',    em: '🦆' },
+        { txt: 'oveja',   em: '🐑' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Овца»', opts: [
+        { txt: 'gallina', em: '🐔' },
+        { txt: 'conejo',  em: '🐰' },
+        { txt: 'oveja',   em: '🐑' },
+        { txt: 'cerdo',   em: '🐷' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['caballo', 'лошадь'],
+        ['vaca',    'корова'],
+        ['oveja',   'овца'],
+        ['cerdo',   'свинья'],
+      ]},
+      { t: 'match', pairs: [
+        ['conejo',  'кролик'],
+        ['gallina', 'курица'],
+        ['pato',    'утка'],
+        ['pájaro',  'птица'],
+      ]},
+      { t: 'translate', from: 'У меня есть лошадь', tiles: ['tengo', 'un', 'una', 'caballo', 'vaca'], answer: ['tengo', 'un', 'caballo'] },
+      { t: 'fill', sentence: ['La', null, 'da leche.'], target: 'vaca', opts: ['vaca', 'oveja', 'gallina'], hint: 'Корова даёт молоко' },
+    ],
+  },
+
+  // ── 67. Verduras ──────────────────────────────────────
+  {
+    id: 'l67', name: 'Verduras', emoji: '🥦', desc: 'Verduras y hortalizas',
+    exercises: [
+      { t: 'pick', q: '«Помидор»', opts: [
+        { txt: 'tomate',    em: '🍅' },
+        { txt: 'cebolla',   em: '🧅' },
+        { txt: 'pepino',    em: '🥒' },
+        { txt: 'lechuga',   em: '🥬' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Морковь»', opts: [
+        { txt: 'patata',     em: '🥔' },
+        { txt: 'zanahoria',  em: '🥕' },
+        { txt: 'pimiento',   em: '🌶️' },
+        { txt: 'ajo',        em: '🧄' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Лук»', opts: [
+        { txt: 'ajo',     em: '🧄' },
+        { txt: 'lechuga', em: '🥬' },
+        { txt: 'cebolla', em: '🧅' },
+        { txt: 'maíz',    em: '🌽' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['tomate',     'помидор'],
+        ['zanahoria',  'морковь'],
+        ['cebolla',    'лук'],
+        ['lechuga',    'салат'],
+      ]},
+      { t: 'match', pairs: [
+        ['patata',   'картофель'],
+        ['pepino',   'огурец'],
+        ['pimiento', 'перец'],
+        ['ajo',      'чеснок'],
+      ]},
+      { t: 'translate', from: 'Я хочу салат с помидором', tiles: ['quiero', 'una', 'ensalada', 'con', 'tomate', 'pan'], answer: ['quiero', 'una', 'ensalada', 'con', 'tomate'] },
+      { t: 'fill', sentence: ['Compro', null, 'en el mercado.'], target: 'verduras', opts: ['verduras', 'casas', 'libros'], hint: 'Я покупаю овощи на рынке' },
+    ],
+  },
+
+  // ── 68. Supermercado ──────────────────────────────────
+  {
+    id: 'l68', name: 'Supermercado', emoji: '🛒', desc: 'De compras',
+    exercises: [
+      { t: 'pick', q: '«Тележка»', opts: [
+        { txt: 'carrito',  em: '🛒' },
+        { txt: 'bolsa',    em: '👜' },
+        { txt: 'caja',     em: '📦' },
+        { txt: 'lista',    em: '📝' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Список»', opts: [
+        { txt: 'carrito',  em: '🛒' },
+        { txt: 'lista',    em: '📝' },
+        { txt: 'precio',   em: '💲' },
+        { txt: 'bolsa',    em: '🛍️' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Цена»', opts: [
+        { txt: 'caja',    em: '📦' },
+        { txt: 'oferta',  em: '🏷️' },
+        { txt: 'precio',  em: '💲' },
+        { txt: 'bolsa',   em: '🛍️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['carrito',  'тележка'],
+        ['lista',    'список'],
+        ['precio',   'цена'],
+        ['bolsa',    'сумка'],
+      ]},
+      { t: 'match', pairs: [
+        ['caja',      'касса'],
+        ['oferta',    'акция'],
+        ['producto',  'товар'],
+        ['mercado',   'рынок'],
+      ]},
+      { t: 'translate', from: 'Мне нужен пакет', tiles: ['necesito', 'una', 'un', 'bolsa', 'carrito'], answer: ['necesito', 'una', 'bolsa'] },
+      { t: 'fill', sentence: ['¿Cuál es el', null, 'del pan?'], target: 'precio', opts: ['precio', 'carrito', 'mapa'], hint: 'Какая цена у хлеба?' },
+    ],
+  },
+
+  // ── 69. Adverbios ─────────────────────────────────────
+  {
+    id: 'l69', name: 'Adverbios', emoji: '🕰️', desc: 'Siempre, nunca, a veces',
+    exercises: [
+      { t: 'pick', q: '«Всегда»', opts: [
+        { txt: 'siempre',  em: '♾️' },
+        { txt: 'nunca',    em: '🚫' },
+        { txt: 'a veces',  em: '🕰️' },
+        { txt: 'casi',     em: '≈' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Никогда»', opts: [
+        { txt: 'siempre',  em: '♾️' },
+        { txt: 'nunca',    em: '🚫' },
+        { txt: 'también',  em: '➕' },
+        { txt: 'mucho',    em: '🔝' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Иногда»', opts: [
+        { txt: 'siempre',  em: '♾️' },
+        { txt: 'nunca',    em: '🚫' },
+        { txt: 'a veces',  em: '🕰️' },
+        { txt: 'muy',      em: '❗' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['siempre',  'всегда'],
+        ['nunca',    'никогда'],
+        ['a veces',  'иногда'],
+        ['casi',     'почти'],
+      ]},
+      { t: 'match', pairs: [
+        ['también',  'тоже'],
+        ['tampoco',  'тоже не'],
+        ['mucho',    'много'],
+        ['poco',     'мало'],
+      ]},
+      { t: 'translate', from: 'Я никогда не курю', tiles: ['yo', 'nunca', 'fumo', 'siempre', 'no'], answer: ['yo', 'nunca', 'fumo'] },
+      { t: 'fill', sentence: [null, 'tomo café por la mañana.'], target: 'Siempre', opts: ['Siempre', 'Nunca', 'Tampoco'], hint: 'Я всегда пью кофе утром' },
+    ],
+  },
+
+  // ── 70. Repaso 11 (revisión de L66-L69) ───────────────
+  // REVIEW LESSON: mixes Animales II, Verduras, Supermercado, Adverbios
+  {
+    id: 'l70', name: 'Repaso 11', emoji: '🔁', desc: 'Repasa lecciones 66-69',
+    exercises: [
+      // From L66
+      { t: 'pick', q: '«Корова»', opts: [
+        { txt: 'caballo', em: '🐴' },
+        { txt: 'vaca',    em: '🐮' },
+        { txt: 'pato',    em: '🦆' },
+        { txt: 'oveja',   em: '🐑' },
+      ], correct: 1 },
+      // From L67
+      { t: 'pick', q: '«Помидор»', opts: [
+        { txt: 'tomate',   em: '🍅' },
+        { txt: 'cebolla',  em: '🧅' },
+        { txt: 'lechuga',  em: '🥬' },
+        { txt: 'pepino',   em: '🥒' },
+      ], correct: 0 },
+      // From L69
+      { t: 'pick', q: '«Никогда»', opts: [
+        { txt: 'siempre', em: '♾️' },
+        { txt: 'nunca',   em: '🚫' },
+        { txt: 'a veces', em: '🕰️' },
+        { txt: 'también', em: '➕' },
+      ], correct: 1 },
+      // Mix L66 + L67
+      { t: 'match', pairs: [
+        ['caballo',   'лошадь'],
+        ['oveja',     'овца'],
+        ['zanahoria', 'морковь'],
+        ['cebolla',   'лук'],
+      ]},
+      // Mix L68 + L69
+      { t: 'match', pairs: [
+        ['carrito', 'тележка'],
+        ['precio',  'цена'],
+        ['siempre', 'всегда'],
+        ['a veces', 'иногда'],
+      ]},
+      // From L68
+      { t: 'translate', from: 'Мне нужен пакет', tiles: ['necesito', 'una', 'bolsa', 'caja'], answer: ['necesito', 'una', 'bolsa'] },
+      // From L69
+      { t: 'fill', sentence: ['Yo', null, 'fumo.'], target: 'nunca', opts: ['nunca', 'siempre', 'también'], hint: 'Я никогда не курю' },
+    ],
+  },
+
+  // ── 71. Verbos irregulares ────────────────────────────
+  {
+    id: 'l71', name: 'Verbos irreg.', emoji: '🔀', desc: 'Tener, venir, hacer, decir',
+    exercises: [
+      { t: 'pick', q: '«У меня есть» (1 л. ед.ч.)', opts: [
+        { txt: 'tengo',  em: '🙋' },
+        { txt: 'tienes', em: '👉' },
+        { txt: 'tiene',  em: '👤' },
+        { txt: 'tenéis', em: '👥' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я делаю»', opts: [
+        { txt: 'hago',   em: '🔨' },
+        { txt: 'haces',  em: '👉' },
+        { txt: 'hace',   em: '👤' },
+        { txt: 'hacer',  em: '➡️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я говорю» (decir)', opts: [
+        { txt: 'hablo',  em: '🗣️' },
+        { txt: 'dice',   em: '👤' },
+        { txt: 'digo',   em: '💬' },
+        { txt: 'decir',  em: '➡️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['tengo',  'у меня есть'],
+        ['vengo',  'я прихожу'],
+        ['hago',   'я делаю'],
+        ['digo',   'я говорю'],
+      ]},
+      { t: 'match', pairs: [
+        ['salgo',  'я выхожу'],
+        ['pongo',  'я кладу'],
+        ['traigo', 'я приношу'],
+        ['veo',    'я вижу'],
+      ]},
+      { t: 'translate', from: 'У меня есть собака', tiles: ['tengo', 'un', 'una', 'perro', 'gato'], answer: ['tengo', 'un', 'perro'] },
+      { t: 'fill', sentence: ['Yo', null, 'la verdad.'], target: 'digo', opts: ['digo', 'dice', 'decir'], hint: 'Я говорю правду' },
+    ],
+  },
+
+  // ── 72. Condicional ───────────────────────────────────
+  {
+    id: 'l72', name: 'Condicional', emoji: '🤔', desc: 'Yo haría, gustaría, podría',
+    exercises: [
+      { t: 'pick', q: '«Я бы хотел»', opts: [
+        { txt: 'me gusta',     em: '👍' },
+        { txt: 'me gustaba',   em: '⏪' },
+        { txt: 'me gustaría',  em: '🤔' },
+        { txt: 'me gustará',   em: '⏩' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Я бы мог»', opts: [
+        { txt: 'puedo',    em: '💪' },
+        { txt: 'podría',   em: '🤔' },
+        { txt: 'podía',    em: '⏪' },
+        { txt: 'podré',    em: '⏩' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я бы сделал»', opts: [
+        { txt: 'hago',    em: '⏺️' },
+        { txt: 'hice',    em: '⏪' },
+        { txt: 'haría',   em: '🤔' },
+        { txt: 'haré',    em: '⏩' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['hablaría',  'я бы говорил'],
+        ['comería',   'я бы ел'],
+        ['viviría',   'я бы жил'],
+        ['iría',      'я бы пошёл'],
+      ]},
+      { t: 'match', pairs: [
+        ['querría',    'я бы хотел'],
+        ['podría',     'я бы смог'],
+        ['tendría',    'у меня бы было'],
+        ['sería',      'я был бы'],
+      ]},
+      { t: 'translate', from: 'Я бы хотел кофе', tiles: ['me', 'gustaría', 'un', 'café', 'gusta'], answer: ['me', 'gustaría', 'un', 'café'] },
+      { t: 'fill', sentence: ['¿', null, 'ayudarme, por favor?'], target: 'Podría', opts: ['Podría', 'Puedo', 'Podía'], hint: 'Не мог бы ты мне помочь?' },
+    ],
+  },
+
+  // ── 73. Por vs Para ───────────────────────────────────
+  {
+    id: 'l73', name: 'Por vs Para', emoji: '🔁', desc: 'Cuándo usar por o para',
+    exercises: [
+      { t: 'pick', q: '«Спасибо за всё» — por или para?', opts: [
+        { txt: 'por',  em: '⏪' },
+        { txt: 'para', em: '🎯' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Это для тебя» — por или para?', opts: [
+        { txt: 'por',  em: '⏪' },
+        { txt: 'para', em: '🎯' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я иду в парк» — por или para?', opts: [
+        { txt: 'por (через)', em: '🚶' },
+        { txt: 'para (цель)', em: '🎯' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['por',          'причина / через'],
+        ['para',         'цель / для'],
+        ['gracias por',  'спасибо за'],
+        ['para ti',      'для тебя'],
+      ]},
+      { t: 'translate', from: 'Это для моей мамы', tiles: ['es', 'para', 'por', 'mi', 'madre'], answer: ['es', 'para', 'mi', 'madre'] },
+      { t: 'fill', sentence: ['Gracias', null, 'el regalo.'], target: 'por', opts: ['por', 'para', 'a'], hint: 'Спасибо за подарок' },
+      { t: 'fill', sentence: ['Estudio español', null, 'viajar.'], target: 'para', opts: ['para', 'por', 'con'], hint: 'Я учу испанский, чтобы путешествовать' },
+    ],
+  },
+
+  // ── 74. Subjuntivo básico ─────────────────────────────
+  {
+    id: 'l74', name: 'Subjuntivo', emoji: '🌠', desc: 'Espero que, ojalá, quiero que',
+    exercises: [
+      { t: 'pick', q: '«Хоть бы...» / «Дай Бог»', opts: [
+        { txt: 'quizás',  em: '🤷' },
+        { txt: 'ojalá',   em: '🌠' },
+        { txt: 'porque',  em: '➡️' },
+        { txt: 'aunque',  em: '🔀' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я надеюсь, что...»', opts: [
+        { txt: 'espero que',  em: '🌠' },
+        { txt: 'creo que',    em: '💭' },
+        { txt: 'sé que',      em: '✅' },
+        { txt: 'digo que',    em: '💬' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я хочу, чтобы ты пришёл»', opts: [
+        { txt: 'quiero que vienes',  em: '❌' },
+        { txt: 'quiero que vengas',  em: '✅' },
+        { txt: 'quiero que vendrás', em: '❌' },
+        { txt: 'quiero venir',       em: '❓' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['ojalá',       'дай бог'],
+        ['espero que',  'надеюсь, что'],
+        ['quiero que',  'хочу, чтобы'],
+        ['es bueno que','хорошо, что'],
+      ]},
+      { t: 'translate', from: 'Я надеюсь, что ты придёшь', tiles: ['espero', 'que', 'vengas', 'vienes', 'tú'], answer: ['espero', 'que', 'vengas'] },
+      { t: 'fill', sentence: ['Ojalá', null, 'sol mañana.'], target: 'haga', opts: ['haga', 'hace', 'hizo'], hint: 'Хоть бы завтра было солнце' },
+      { t: 'fill', sentence: ['Quiero que', null, 'feliz.'], target: 'seas', opts: ['seas', 'eres', 'eras'], hint: 'Я хочу, чтобы ты был счастлив' },
+    ],
+  },
+
+  // ── 75. Repaso Final (revisión de L71-L74) ────────────
+  // REVIEW LESSON: mixes Irregulares, Condicional, Por/Para, Subjuntivo
+  {
+    id: 'l75', name: 'Repaso Final', emoji: '🎓', desc: 'Repasa lecciones 71-74',
+    exercises: [
+      // From L71
+      { t: 'pick', q: '«Я делаю»', opts: [
+        { txt: 'hago',    em: '🔨' },
+        { txt: 'haces',   em: '👉' },
+        { txt: 'hace',    em: '👤' },
+        { txt: 'haré',    em: '⏩' },
+      ], correct: 0 },
+      // From L72
+      { t: 'pick', q: '«Я бы хотел»', opts: [
+        { txt: 'me gusta',     em: '👍' },
+        { txt: 'me gustaría',  em: '🤔' },
+        { txt: 'me gustaba',   em: '⏪' },
+        { txt: 'me gustará',   em: '⏩' },
+      ], correct: 1 },
+      // From L74
+      { t: 'pick', q: '«Хоть бы...»', opts: [
+        { txt: 'quizás',  em: '🤷' },
+        { txt: 'ojalá',   em: '🌠' },
+        { txt: 'porque',  em: '➡️' },
+        { txt: 'también', em: '➕' },
+      ], correct: 1 },
+      // Mix L71 + L72
+      { t: 'match', pairs: [
+        ['tengo',     'у меня есть'],
+        ['digo',      'я говорю'],
+        ['gustaría',  'я бы хотел'],
+        ['podría',    'я бы смог'],
+      ]},
+      // Mix L73 + L74
+      { t: 'match', pairs: [
+        ['por',         'за / через'],
+        ['para',        'для / чтобы'],
+        ['ojalá',       'дай бог'],
+        ['espero que',  'надеюсь, что'],
+      ]},
+      // From L72
+      { t: 'translate', from: 'Я бы хотел кофе', tiles: ['me', 'gustaría', 'un', 'café', 'gusta'], answer: ['me', 'gustaría', 'un', 'café'] },
+      // From L73
+      { t: 'fill', sentence: ['Gracias', null, 'todo.'], target: 'por', opts: ['por', 'para', 'a'], hint: 'Спасибо за всё' },
+    ],
+  },
 ];
 
 // ── Lesson runtime state ─────────────────────────────────
@@ -3971,6 +4768,7 @@ function renderCurrentExercise() {
 
 // ── Exercise: pick (multiple choice) ─────────────────────
 function renderPickExercise(root, ex) {
+  prependLessonTutor(root);
   const inst = document.createElement('p');
   inst.className = 'lex-instruction';
   inst.textContent = '¿Cuál de estos es...?';
@@ -4013,7 +4811,7 @@ function renderTranslateExercise(root, ex) {
   const bubble = document.createElement('div');
   bubble.className = 'lex-bubble';
   bubble.innerHTML = `
-    <div class="lex-bubble-avatar is-entering">${renderMiniAxolotlSVG()}</div>
+    <div class="lex-bubble-avatar is-entering">${renderLexBubbleParticles()}${renderMiniAxolotlSVG()}</div>
     <div class="lex-bubble-text">${ex.from}</div>
   `;
   root.appendChild(bubble);
@@ -4076,6 +4874,7 @@ function drawTranslateAnswer() {
 
 // ── Exercise: match pairs ────────────────────────────────
 function renderMatchExercise(root, ex) {
+  prependLessonTutor(root);
   const inst = document.createElement('p');
   inst.className = 'lex-instruction';
   inst.textContent = 'Empareja las palabras';
@@ -4181,7 +4980,7 @@ function renderFillExercise(root, ex) {
     const hint = document.createElement('div');
     hint.className = 'lex-bubble';
     hint.innerHTML = `
-      <div class="lex-bubble-avatar is-entering">${renderMiniAxolotlSVG()}</div>
+      <div class="lex-bubble-avatar is-entering">${renderLexBubbleParticles()}${renderMiniAxolotlSVG()}</div>
       <div class="lex-bubble-text">${ex.hint}</div>
     `;
     root.appendChild(hint);
@@ -4300,20 +5099,60 @@ function showFeedback(correct, correctText) {
   reactLessonMiniAxolotl(correct);
 }
 
-// Make the mini axolotl in the active lesson bubble react to a check
+// Make every mini axolotl in the active lesson react to a check
 function reactLessonMiniAxolotl(correct) {
-  const avatar = document.querySelector('#lesson-exercise .lex-bubble-avatar');
-  if (!avatar) return;
-  const svg = avatar.querySelector('.mini-axolotl');
-  pulseClass(avatar, correct ? 'is-bounce' : 'is-shake', correct ? 700 : 600);
-  if (svg) {
-    if (correct) {
-      pulseClass(svg, 'is-heart-eyes', 1000);
-      pulseClass(svg, 'is-happy', 850);
-    } else {
-      pulseClass(svg, 'is-sad', 1200);
+  const avatars = document.querySelectorAll('#lesson-exercise .lex-bubble-avatar, #lesson-exercise .lesson-tutor-inline');
+  avatars.forEach(avatar => {
+    const svg = avatar.querySelector('.mini-axolotl');
+    pulseClass(avatar, correct ? 'is-bounce' : 'is-shake', correct ? 700 : 600);
+    if (svg) {
+      if (correct) {
+        pulseClass(svg, 'is-heart-eyes', 1000);
+        pulseClass(svg, 'is-happy', 850);
+        spawnLexSparkles(avatar, 8);
+      } else {
+        pulseClass(svg, 'is-sad', 1200);
+        spawnTearDrop(avatar);
+      }
     }
+  });
+}
+
+// Inject a persistent mini axolotl "tutor" at the top of pick/match exercises
+function prependLessonTutor(root) {
+  const tutor = document.createElement('div');
+  tutor.className = 'lesson-tutor-inline is-entering';
+  tutor.innerHTML = `${renderLexBubbleParticles()}${renderMiniAxolotlSVG()}`;
+  root.appendChild(tutor);
+  setTimeout(() => tutor.classList.remove('is-entering'), 600);
+}
+
+// Spawn a radial sparkle burst from a host element (lesson avatar/tutor)
+function spawnLexSparkles(host, count = 8) {
+  if (!host) return;
+  for (let i = 0; i < count; i++) {
+    const s = document.createElement('div');
+    s.className = 'spark-burst';
+    const angle = (Math.PI * 2 * i) / count + Math.random() * 0.5;
+    const dist  = 28 + Math.random() * 28;
+    const dx = Math.cos(angle) * dist;
+    const dy = Math.sin(angle) * dist;
+    s.style.left = '50%';
+    s.style.top  = '50%';
+    s.style.setProperty('--spark-end', `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px)`);
+    s.style.animationDelay = (i * 0.03) + 's';
+    host.appendChild(s);
+    setTimeout(() => s.remove(), 1000);
   }
+}
+
+// Spawn a single tear drop on a host element
+function spawnTearDrop(host) {
+  if (!host) return;
+  const t = document.createElement('div');
+  t.className = 'lex-tear';
+  host.appendChild(t);
+  setTimeout(() => t.remove(), 1150);
 }
 
 function onContinuePressed() {

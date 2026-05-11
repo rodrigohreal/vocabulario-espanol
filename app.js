@@ -3718,18 +3718,21 @@ function lessonIsUnlocked(idx, prog) {
 // ── Render lessons path on home (Duolingo-style) ─────────
 // Each "unit" is 5 lessons. Units cycle through a palette so the path
 // visually breaks into chapters.
+// Cool, desaturated jewel-tones tuned for the dark theme.
+// Each unit has: `color` (face top), `accent` (3D base / darker rim),
+// `glow` (subtle aura — same hue, lower opacity).
 const UNIT_PALETTE = [
-  { name: 'Unidad 1', color: '#58cc02', accent: '#46a302' }, // Duo green
-  { name: 'Unidad 2', color: '#1cb0f6', accent: '#0f8fce' }, // sky blue
-  { name: 'Unidad 3', color: '#ce82ff', accent: '#a865d8' }, // purple
-  { name: 'Unidad 4', color: '#ff9600', accent: '#d97c00' }, // orange
-  { name: 'Unidad 5', color: '#ff4b4b', accent: '#d63a3a' }, // red
-  { name: 'Unidad 6', color: '#ffc800', accent: '#d9aa00' }, // gold
-  { name: 'Unidad 7', color: '#00cd9c', accent: '#00a37c' }, // teal
-  { name: 'Unidad 8', color: '#ec5cce', accent: '#c349a8' }, // pink
-  { name: 'Unidad 9', color: '#7b61ff', accent: '#5e47d6' }, // indigo
-  { name: 'Unidad 10', color: '#58cc02', accent: '#46a302' },
-  { name: 'Unidad 11', color: '#1cb0f6', accent: '#0f8fce' },
+  { name: 'Unidad 1',  color: '#7c9eb2', accent: '#3d5566', glow: 'rgba(124,158,178,0.35)' }, // steel blue
+  { name: 'Unidad 2',  color: '#8b7fb8', accent: '#4b416b', glow: 'rgba(139,127,184,0.35)' }, // lavender
+  { name: 'Unidad 3',  color: '#7aa896', accent: '#3d5a4c', glow: 'rgba(122,168,150,0.35)' }, // sage
+  { name: 'Unidad 4',  color: '#b89478', accent: '#6b513d', glow: 'rgba(184,148,120,0.35)' }, // warm sand
+  { name: 'Unidad 5',  color: '#a37fb8', accent: '#5a426b', glow: 'rgba(163,127,184,0.35)' }, // mauve
+  { name: 'Unidad 6',  color: '#6fa8a3', accent: '#385c59', glow: 'rgba(111,168,163,0.35)' }, // muted teal
+  { name: 'Unidad 7',  color: '#b88a8a', accent: '#6b4848', glow: 'rgba(184,138,138,0.35)' }, // dusty rose
+  { name: 'Unidad 8',  color: '#8c95c9', accent: '#4a527a', glow: 'rgba(140,149,201,0.35)' }, // periwinkle
+  { name: 'Unidad 9',  color: '#b8a36d', accent: '#6b5d3d', glow: 'rgba(184,163,109,0.35)' }, // antique gold
+  { name: 'Unidad 10', color: '#7c9eb2', accent: '#3d5566', glow: 'rgba(124,158,178,0.35)' },
+  { name: 'Unidad 11', color: '#8b7fb8', accent: '#4b416b', glow: 'rgba(139,127,184,0.35)' },
 ];
 
 const UNIT_SIZE = 5;
@@ -3758,6 +3761,7 @@ function renderLessonsPath() {
       banner.className = 'unit-banner';
       banner.style.setProperty('--unit-color', palette.color);
       banner.style.setProperty('--unit-accent', palette.accent);
+      banner.style.setProperty('--unit-glow', palette.glow);
       const fromIdx = unitIdx * UNIT_SIZE + 1;
       const toIdx = Math.min((unitIdx + 1) * UNIT_SIZE, LESSONS.length);
       banner.innerHTML = `
@@ -3775,6 +3779,7 @@ function renderLessonsPath() {
       unitWrap.className = 'unit-path';
       unitWrap.style.setProperty('--unit-color', palette.color);
       unitWrap.style.setProperty('--unit-accent', palette.accent);
+      unitWrap.style.setProperty('--unit-glow', palette.glow);
       wrap.appendChild(unitWrap);
     }
 

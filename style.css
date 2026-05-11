@@ -1835,25 +1835,36 @@ html, body {
   gap: 4px;
 }
 
-/* ── Unit banner ─────────────────────────────────────────── */
+/* ── Unit banner: dark glass card with a coloured accent stripe ── */
 .unit-banner {
-  margin: 18px 14px 6px;
-  padding: 14px 16px;
+  margin: 22px 14px 4px;
+  padding: 14px 16px 14px 18px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--unit-color), var(--unit-accent));
-  color: #fff;
-  box-shadow: 0 4px 0 rgba(0,0,0,0.25), 0 8px 20px rgba(0,0,0,0.35);
+  background:
+    linear-gradient(135deg, var(--unit-glow, rgba(255,255,255,0.04)), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+  border: 1px solid var(--border);
+  color: var(--text);
   position: relative;
   overflow: hidden;
 }
+/* Coloured accent stripe down the left edge */
 .unit-banner::before {
   content: '';
   position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--unit-color);
+  box-shadow: 0 0 12px var(--unit-glow);
+}
+/* Subtle radial sheen */
+.unit-banner::after {
+  content: '';
+  position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 85% 30%, rgba(255,255,255,0.18), transparent 45%),
-    radial-gradient(circle at 15% 80%, rgba(0,0,0,0.15), transparent 50%);
+  background: radial-gradient(circle at 88% 10%, var(--unit-glow), transparent 55%);
   pointer-events: none;
+  opacity: 0.6;
 }
 .unit-banner-inner {
   display: flex;
@@ -1861,28 +1872,31 @@ html, body {
   justify-content: space-between;
   gap: 12px;
   position: relative;
+  z-index: 1;
 }
-.unit-banner-meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.unit-banner-meta { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .unit-banner-kicker {
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
-  opacity: 0.85;
+  color: var(--unit-color);
 }
 .unit-banner-title {
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.18);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  color: var(--text);
 }
 .unit-banner-icon {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1;
   padding: 8px 10px;
-  border-radius: 12px;
-  background: rgba(0,0,0,0.22);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
   flex-shrink: 0;
+  opacity: 0.85;
 }
 
 /* ── Path container ──────────────────────────────────────── */
@@ -1951,110 +1965,141 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--unit-color, #58cc02);
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,255,255,0.18), transparent 55%),
+    linear-gradient(180deg, var(--unit-color), color-mix(in srgb, var(--unit-color) 75%, #000));
   box-shadow:
-    0 6px 0 var(--unit-accent, #46a302),
-    inset 0 -2px 0 rgba(0,0,0,0.08),
-    inset 0 2px 0 rgba(255,255,255,0.15);
+    0 5px 0 var(--unit-accent),
+    0 8px 18px rgba(0,0,0,0.45),
+    inset 0 -2px 0 rgba(0,0,0,0.12),
+    inset 0 1.5px 0 rgba(255,255,255,0.18);
   transition: box-shadow 0.08s ease, transform 0.08s ease;
 }
 .lesson-node:active .lesson-node-face {
   box-shadow:
-    0 2px 0 var(--unit-accent, #46a302),
-    inset 0 -1px 0 rgba(0,0,0,0.08),
-    inset 0 1px 0 rgba(255,255,255,0.15);
+    0 1px 0 var(--unit-accent),
+    0 4px 10px rgba(0,0,0,0.45),
+    inset 0 -1px 0 rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.18);
 }
 
 .lesson-node-emoji {
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1;
-  filter: drop-shadow(0 2px 1px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
 }
 .lesson-node .lock-ico {
-  font-size: 26px;
-  opacity: 0.6;
-  filter: grayscale(0.8);
+  font-size: 24px;
+  opacity: 0.45;
+  filter: grayscale(1);
 }
 
-/* Locked: muted grey, flat */
+/* Locked: muted dark, flat */
 .lesson-node.locked { cursor: not-allowed; }
 .lesson-node.locked .lesson-node-face {
-  background: #2a2a2a;
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,255,255,0.04), transparent 55%),
+    linear-gradient(180deg, #232328, #181820);
   box-shadow:
-    0 5px 0 #1a1a1a,
-    inset 0 -2px 0 rgba(0,0,0,0.2);
+    0 4px 0 #0a0a0c,
+    0 6px 12px rgba(0,0,0,0.4),
+    inset 0 -1px 0 rgba(0,0,0,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
-/* Completed: gold treatment with crown */
+/* Completed: deep antique-bronze with a subtle warm sheen + crown */
 .lesson-node.completed .lesson-node-face {
-  background: linear-gradient(180deg, #ffd84a, #e0a72e);
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,235,200,0.25), transparent 55%),
+    linear-gradient(180deg, #b89968, #6b5530);
   box-shadow:
-    0 6px 0 #a87510,
-    inset 0 -2px 0 rgba(0,0,0,0.12),
-    inset 0 2px 0 rgba(255,255,255,0.4);
+    0 5px 0 #3d3018,
+    0 8px 18px rgba(120,90,40,0.25),
+    inset 0 -2px 0 rgba(0,0,0,0.18),
+    inset 0 1.5px 0 rgba(255,235,200,0.25);
 }
 .lesson-crown {
   position: absolute;
-  top: -10px;
-  right: -8px;
-  font-size: 22px;
-  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
+  top: -8px;
+  right: -6px;
+  font-size: 18px;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.6));
   transform: rotate(14deg);
   pointer-events: none;
+  opacity: 0.95;
 }
 
-/* Current lesson: pulsing aura + bobbing animation */
+/* Current lesson: soft glow ring + gentle bob, no harsh outline */
 .lesson-node.current {
-  animation: node-bob 2.2s ease-in-out infinite;
+  animation: node-bob 2.4s ease-in-out infinite;
+}
+.lesson-node.current .lesson-node-face {
+  box-shadow:
+    0 5px 0 var(--unit-accent),
+    0 0 0 4px var(--unit-glow),
+    0 0 24px var(--unit-glow),
+    inset 0 -2px 0 rgba(0,0,0,0.12),
+    inset 0 1.5px 0 rgba(255,255,255,0.22);
 }
 .lesson-node.current .lesson-node-face::after {
   content: '';
   position: absolute;
-  inset: -6px;
+  inset: -8px;
   border-radius: 50%;
-  border: 3px solid var(--unit-color, #58cc02);
-  opacity: 0.55;
-  animation: node-pulse 1.6s ease-out infinite;
+  border: 1.5px solid var(--unit-color);
+  opacity: 0.35;
+  animation: node-pulse 2s ease-out infinite;
   pointer-events: none;
 }
 @keyframes node-bob {
   0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-4px); }
+  50%      { transform: translateY(-3px); }
 }
 @keyframes node-pulse {
-  0%   { transform: scale(1);   opacity: 0.55; }
-  100% { transform: scale(1.35); opacity: 0; }
+  0%   { transform: scale(0.95); opacity: 0.5; }
+  100% { transform: scale(1.4);  opacity: 0; }
 }
 
-/* Review / "Repaso" boss node: bigger, trophy emoji */
+/* Review / "Repaso" boss node: bigger, warmer antique-bronze */
 .lesson-node.review { width: 88px; height: 88px; }
-.lesson-node.review .lesson-node-emoji { font-size: 40px; }
+.lesson-node.review .lesson-node-emoji { font-size: 38px; }
 .lesson-node.review .lesson-node-face {
-  background: linear-gradient(180deg, #ffd84a, #f08a1d);
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,235,200,0.28), transparent 55%),
+    linear-gradient(180deg, #c4a06a, #6b4a22);
   box-shadow:
-    0 7px 0 #a35414,
-    inset 0 -2px 0 rgba(0,0,0,0.12),
-    inset 0 2px 0 rgba(255,255,255,0.35);
+    0 6px 0 #3d2a10,
+    0 10px 22px rgba(140,90,30,0.3),
+    inset 0 -2px 0 rgba(0,0,0,0.18),
+    inset 0 1.5px 0 rgba(255,235,200,0.3);
 }
 .lesson-node.review.locked .lesson-node-face {
-  background: #2a2a2a;
-  box-shadow: 0 6px 0 #1a1a1a, inset 0 -2px 0 rgba(0,0,0,0.2);
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,255,255,0.04), transparent 55%),
+    linear-gradient(180deg, #232328, #181820);
+  box-shadow:
+    0 5px 0 #0a0a0c,
+    0 7px 14px rgba(0,0,0,0.4),
+    inset 0 -1px 0 rgba(0,0,0,0.2);
 }
 
-/* "EMPEZAR" pop-up tooltip above the current node */
+/* "EMPEZAR" pop-up: dark glass chip instead of bright white */
 .lesson-cta-pop {
   position: absolute;
-  bottom: calc(100% + 14px);
+  bottom: calc(100% + 16px);
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
-  color: var(--unit-color, #58cc02);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  padding: 7px 12px;
-  border-radius: 10px;
-  box-shadow: 0 3px 0 rgba(0,0,0,0.18), 0 6px 14px rgba(0,0,0,0.35);
+  background: rgba(20,20,24,0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--unit-color);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  padding: 6px 11px;
+  border-radius: 8px;
+  border: 1px solid var(--unit-color);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5), 0 0 12px var(--unit-glow);
   white-space: nowrap;
   pointer-events: none;
   z-index: 2;
@@ -2065,8 +2110,8 @@ html, body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: #fff;
+  border: 5px solid transparent;
+  border-top-color: var(--unit-color);
 }
 
 /* Label under the node */

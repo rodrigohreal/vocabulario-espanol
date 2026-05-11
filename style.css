@@ -1822,112 +1822,266 @@ html, body {
 }
 
 /* ════════════════════════════════════════════════════════════
-   LESSONS PATH
+   LESSONS PATH — Duolingo-style
 ════════════════════════════════════════════════════════════ */
 
 #home-screen[data-view="lessons"] #category-list { display: none; }
 #home-screen[data-view="vocab"]   #lessons-path  { display: none; }
 
 .lessons-path {
-  padding: 20px 14px 4px;
+  padding: 8px 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-}
-.lessons-path-title {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: var(--text-faint);
-  padding-left: 4px;
-  margin-bottom: -4px;
+  gap: 4px;
 }
 
-.lesson-node {
-  align-self: center;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: var(--card);
-  border: 1px solid var(--border-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ── Unit banner ─────────────────────────────────────────── */
+.unit-banner {
+  margin: 18px 14px 6px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--unit-color), var(--unit-accent));
+  color: #fff;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.25), 0 8px 20px rgba(0,0,0,0.35);
   position: relative;
-  cursor: pointer;
-  transition: background 0.15s, border-color 0.15s, transform 0.12s;
-  -webkit-user-select: none;
-  user-select: none;
+  overflow: hidden;
 }
-.lesson-node:active { transform: scale(0.96); background: var(--card-2); }
-.lesson-node.locked {
-  background: var(--card);
-  border-color: var(--border);
-  cursor: not-allowed;
-  opacity: 0.55;
-}
-.lesson-node.completed {
-  background: var(--card);
-  border-color: var(--text);
-}
-.lesson-node.completed::after {
-  content: '✓';
+.unit-banner::before {
+  content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--text);
-  color: var(--bg);
-  font-size: 12px;
-  font-weight: 700;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 30%, rgba(255,255,255,0.18), transparent 45%),
+    radial-gradient(circle at 15% 80%, rgba(0,0,0,0.15), transparent 50%);
+  pointer-events: none;
+}
+.unit-banner-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
 }
-.lesson-node-emoji {
-  font-size: 30px;
+.unit-banner-meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.unit-banner-kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.unit-banner-title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.18);
+}
+.unit-banner-icon {
+  font-size: 26px;
   line-height: 1;
-  opacity: 0.95;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.22);
+  flex-shrink: 0;
 }
-.lesson-node .lock-ico {
-  font-size: 22px;
-  opacity: 0.5;
-  filter: grayscale(1);
+
+/* ── Path container ──────────────────────────────────────── */
+.unit-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 0 8px;
+  gap: 10px;
+  position: relative;
 }
-.lesson-node .lesson-node-label {
+
+/* Each slot positions one node along a 5-step zig-zag wave */
+.lesson-slot {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0;
+}
+/* Zig-zag wave: 5 positions per unit, curving right then back to centre */
+.unit-path .lesson-slot:nth-child(5n+1) { transform: translateX(0); }
+.unit-path .lesson-slot:nth-child(5n+2) { transform: translateX(58px); }
+.unit-path .lesson-slot:nth-child(5n+3) { transform: translateX(78px); }
+.unit-path .lesson-slot:nth-child(5n+4) { transform: translateX(58px); }
+.unit-path .lesson-slot:nth-child(5n+5) { transform: translateX(0); }
+
+/* Dotted connector line drawn between nodes */
+.lesson-slot::before {
+  content: '';
   position: absolute;
-  bottom: -22px;
+  top: -8px;
   left: 50%;
+  width: 4px;
+  height: 14px;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.18) 1.4px, transparent 1.6px);
+  background-size: 4px 6px;
+  background-repeat: repeat-y;
   transform: translateX(-50%);
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-dim);
-  white-space: nowrap;
+}
+.unit-path > .lesson-slot:first-child::before { display: none; }
+
+/* ── Node (the Duolingo 3D button) ───────────────────────── */
+.lesson-node {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  border: none;
   background: transparent;
   padding: 0;
-  letter-spacing: 0.2px;
+  cursor: pointer;
+  font-family: inherit;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: transform 0.08s ease;
 }
-.lesson-node.start-here::before {
-  content: '•';
+.lesson-node:active { transform: translateY(2px); }
+
+/* The face is the visible coloured disk; the wrapper provides the dark
+   "base" via a box-shadow underneath, creating the 3D pressed look. */
+.lesson-node-face {
   position: absolute;
-  top: -16px;
+  inset: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--unit-color, #58cc02);
+  box-shadow:
+    0 6px 0 var(--unit-accent, #46a302),
+    inset 0 -2px 0 rgba(0,0,0,0.08),
+    inset 0 2px 0 rgba(255,255,255,0.15);
+  transition: box-shadow 0.08s ease, transform 0.08s ease;
+}
+.lesson-node:active .lesson-node-face {
+  box-shadow:
+    0 2px 0 var(--unit-accent, #46a302),
+    inset 0 -1px 0 rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.lesson-node-emoji {
+  font-size: 34px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 1px rgba(0,0,0,0.25));
+}
+.lesson-node .lock-ico {
+  font-size: 26px;
+  opacity: 0.6;
+  filter: grayscale(0.8);
+}
+
+/* Locked: muted grey, flat */
+.lesson-node.locked { cursor: not-allowed; }
+.lesson-node.locked .lesson-node-face {
+  background: #2a2a2a;
+  box-shadow:
+    0 5px 0 #1a1a1a,
+    inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+
+/* Completed: gold treatment with crown */
+.lesson-node.completed .lesson-node-face {
+  background: linear-gradient(180deg, #ffd84a, #e0a72e);
+  box-shadow:
+    0 6px 0 #a87510,
+    inset 0 -2px 0 rgba(0,0,0,0.12),
+    inset 0 2px 0 rgba(255,255,255,0.4);
+}
+.lesson-crown {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  font-size: 22px;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
+  transform: rotate(14deg);
+  pointer-events: none;
+}
+
+/* Current lesson: pulsing aura + bobbing animation */
+.lesson-node.current {
+  animation: node-bob 2.2s ease-in-out infinite;
+}
+.lesson-node.current .lesson-node-face::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 3px solid var(--unit-color, #58cc02);
+  opacity: 0.55;
+  animation: node-pulse 1.6s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes node-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+@keyframes node-pulse {
+  0%   { transform: scale(1);   opacity: 0.55; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+/* Review / "Repaso" boss node: bigger, trophy emoji */
+.lesson-node.review { width: 88px; height: 88px; }
+.lesson-node.review .lesson-node-emoji { font-size: 40px; }
+.lesson-node.review .lesson-node-face {
+  background: linear-gradient(180deg, #ffd84a, #f08a1d);
+  box-shadow:
+    0 7px 0 #a35414,
+    inset 0 -2px 0 rgba(0,0,0,0.12),
+    inset 0 2px 0 rgba(255,255,255,0.35);
+}
+.lesson-node.review.locked .lesson-node-face {
+  background: #2a2a2a;
+  box-shadow: 0 6px 0 #1a1a1a, inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+
+/* "EMPEZAR" pop-up tooltip above the current node */
+.lesson-cta-pop {
+  position: absolute;
+  bottom: calc(100% + 14px);
   left: 50%;
   transform: translateX(-50%);
-  font-size: 18px;
+  background: #fff;
+  color: var(--unit-color, #58cc02);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 7px 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.18), 0 6px 14px rgba(0,0,0,0.35);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2;
+}
+.lesson-cta-pop::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #fff;
+}
+
+/* Label under the node */
+.lesson-node-label {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+.lesson-slot.is-review .lesson-node-label,
+.lesson-slot:has(.lesson-node.current) .lesson-node-label {
   color: var(--text);
-  animation: dot-pulse 1.5s ease-in-out infinite;
 }
-@keyframes dot-pulse {
-  0%, 100% { opacity: 1; }
-  50%      { opacity: 0.3; }
-}
-.lesson-node:nth-child(odd)  { transform: translateX(-36px); }
-.lesson-node:nth-child(even) { transform: translateX(36px); }
-.lesson-node:nth-child(odd):active  { transform: translateX(-36px) scale(0.96); }
-.lesson-node:nth-child(even):active { transform: translateX(36px) scale(0.96); }
 
 /* Lesson preview popover */
 .lesson-preview {

@@ -3715,43 +3715,122 @@ function lessonIsUnlocked(idx, prog) {
   return !!prog[LESSONS[idx - 1].id]?.completed;
 }
 
-// ── Render lessons path on home ──────────────────────────
+// ── Render lessons path on home (Duolingo-style) ─────────
+// Each "unit" is 5 lessons. Units cycle through a palette so the path
+// visually breaks into chapters.
+const UNIT_PALETTE = [
+  { name: 'Unidad 1', color: '#58cc02', accent: '#46a302' }, // Duo green
+  { name: 'Unidad 2', color: '#1cb0f6', accent: '#0f8fce' }, // sky blue
+  { name: 'Unidad 3', color: '#ce82ff', accent: '#a865d8' }, // purple
+  { name: 'Unidad 4', color: '#ff9600', accent: '#d97c00' }, // orange
+  { name: 'Unidad 5', color: '#ff4b4b', accent: '#d63a3a' }, // red
+  { name: 'Unidad 6', color: '#ffc800', accent: '#d9aa00' }, // gold
+  { name: 'Unidad 7', color: '#00cd9c', accent: '#00a37c' }, // teal
+  { name: 'Unidad 8', color: '#ec5cce', accent: '#c349a8' }, // pink
+  { name: 'Unidad 9', color: '#7b61ff', accent: '#5e47d6' }, // indigo
+  { name: 'Unidad 10', color: '#58cc02', accent: '#46a302' },
+  { name: 'Unidad 11', color: '#1cb0f6', accent: '#0f8fce' },
+];
+
+const UNIT_SIZE = 5;
+
 function renderLessonsPath() {
   const wrap = $('lessons-path');
   if (!wrap) return;
   wrap.innerHTML = '';
 
-  const title = document.createElement('div');
-  title.className = 'lessons-path-title';
-  title.textContent = '🎓 Lecciones';
-  wrap.appendChild(title);
-
   const prog = getLessonProgress();
   const firstUnfinished = LESSONS.findIndex((l, i) => lessonIsUnlocked(i, prog) && !prog[l.id]?.completed);
 
+  let currentUnit = -1;
+  let unitWrap = null;
+
   LESSONS.forEach((lesson, idx) => {
-    const node = document.createElement('div');
+    const unitIdx = Math.floor(idx / UNIT_SIZE);
+
+    // New unit → emit a banner and new wrapper
+    if (unitIdx !== currentUnit) {
+      currentUnit = unitIdx;
+      const palette = UNIT_PALETTE[unitIdx % UNIT_PALETTE.length];
+
+      // Unit banner
+      const banner = document.createElement('div');
+      banner.className = 'unit-banner';
+      banner.style.setProperty('--unit-color', palette.color);
+      banner.style.setProperty('--unit-accent', palette.accent);
+      const fromIdx = unitIdx * UNIT_SIZE + 1;
+      const toIdx = Math.min((unitIdx + 1) * UNIT_SIZE, LESSONS.length);
+      banner.innerHTML = `
+        <div class="unit-banner-inner">
+          <div class="unit-banner-meta">
+            <div class="unit-banner-kicker">${palette.name}</div>
+            <div class="unit-banner-title">Lecciones ${fromIdx}–${toIdx}</div>
+          </div>
+          <div class="unit-banner-icon">📘</div>
+        </div>
+      `;
+      wrap.appendChild(banner);
+
+      unitWrap = document.createElement('div');
+      unitWrap.className = 'unit-path';
+      unitWrap.style.setProperty('--unit-color', palette.color);
+      unitWrap.style.setProperty('--unit-accent', palette.accent);
+      wrap.appendChild(unitWrap);
+    }
+
     const unlocked = lessonIsUnlocked(idx, prog);
     const completed = !!prog[lesson.id]?.completed;
-    node.className = 'lesson-node' + (unlocked ? '' : ' locked') + (completed ? ' completed' : '');
-    if (idx === firstUnfinished && !completed) node.classList.add('start-here');
+    const isCurrent = idx === firstUnfinished && !completed;
+    const isReview = /^Repaso/i.test(lesson.name);
 
+    // Outer slot positions the node along the zig-zag path
+    const slot = document.createElement('div');
+    slot.className = 'lesson-slot';
+    if (isReview) slot.classList.add('is-review');
+
+    const node = document.createElement('button');
+    node.type = 'button';
+    node.className = 'lesson-node';
+    if (!unlocked) node.classList.add('locked');
+    if (completed) node.classList.add('completed');
+    if (isCurrent) node.classList.add('current');
+    if (isReview) node.classList.add('review');
+
+    // "EMPEZAR" pop-up tooltip above the current node
+    if (isCurrent) {
+      const cta = document.createElement('div');
+      cta.className = 'lesson-cta-pop';
+      cta.textContent = 'EMPEZAR';
+      node.appendChild(cta);
+    }
+
+    // Inner button (the 3D part: top face on top of darker base)
+    const face = document.createElement('span');
+    face.className = 'lesson-node-face';
     if (unlocked) {
       const em = document.createElement('span');
       em.className = 'lesson-node-emoji';
-      em.textContent = lesson.emoji;
-      node.appendChild(em);
+      em.textContent = isReview ? '🏆' : lesson.emoji;
+      face.appendChild(em);
     } else {
       const lock = document.createElement('span');
       lock.className = 'lock-ico';
       lock.textContent = '🔒';
-      node.appendChild(lock);
+      face.appendChild(lock);
+    }
+    node.appendChild(face);
+
+    // Crown badge on completed lessons
+    if (completed) {
+      const crown = document.createElement('span');
+      crown.className = 'lesson-crown';
+      crown.textContent = '👑';
+      node.appendChild(crown);
     }
 
     const lbl = document.createElement('span');
     lbl.className = 'lesson-node-label';
     lbl.textContent = lesson.name;
-    node.appendChild(lbl);
 
     node.addEventListener('click', () => {
       haptic.light();
@@ -3762,7 +3841,9 @@ function renderLessonsPath() {
       showLessonPreview(lesson, completed);
     });
 
-    wrap.appendChild(node);
+    slot.appendChild(node);
+    slot.appendChild(lbl);
+    unitWrap.appendChild(slot);
   });
 }
 

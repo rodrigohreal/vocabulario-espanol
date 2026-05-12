@@ -3799,7 +3799,7 @@ const LESSONS = [
         ['que',   'чем'],
       ]},
       { t: 'translate', from: 'Хуан выше Педро', tiles: ['Juan', 'es', 'más', 'alto', 'que', 'Pedro'], answer: ['Juan', 'es', 'más', 'alto', 'que', 'Pedro'] },
-      { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'menos', 'mayor', 'que', 'tú', 'él'], answer: ['soy', 'menos', 'mayor', 'que', 'tú'] },
+      { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'más', 'joven', 'que', 'tú', 'él'], answer: ['soy', 'más', 'joven', 'que', 'tú'] },
       { t: 'fill', sentence: ['Ana es', null, 'alta que María.'], target: 'más', opts: ['más', 'menos', 'tan'], hint: 'Ана выше Марии' },
     ],
   },
@@ -3879,7 +3879,7 @@ const LESSONS = [
         ['peor',  'худший'],
       ]},
       // From L58
-      { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'menos', 'mayor', 'que', 'tú'], answer: ['soy', 'menos', 'mayor', 'que', 'tú'] },
+      { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'más', 'joven', 'que', 'tú'], answer: ['soy', 'más', 'joven', 'que', 'tú'] },
       // From L59
       { t: 'fill', sentence: ['Es el', null, 'libro del año.'], target: 'mejor', opts: ['mejor', 'peor', 'más'], hint: 'Лучшая книга года' },
     ],
@@ -4475,6 +4475,982 @@ const LESSONS = [
       { t: 'translate', from: 'Я бы хотел кофе', tiles: ['me', 'gustaría', 'un', 'café', 'gusta'], answer: ['me', 'gustaría', 'un', 'café'] },
       // From L73
       { t: 'fill', sentence: ['Gracias', null, 'todo.'], target: 'por', opts: ['por', 'para', 'a'], hint: 'Спасибо за всё' },
+    ],
+  },
+
+  // ── 76. Saludos formales ──────────────────────────────
+  // Gentle restart after the heavy grammar block: pure vocab.
+  {
+    id: 'l76', name: 'Saludos II', emoji: '🤝', desc: 'Saludos formales',
+    exercises: [
+      { t: 'pick', q: '«Как Вы?» (вежливо)', opts: [
+        { txt: '¿cómo estás?',      em: '👋' },
+        { txt: '¿cómo está usted?', em: '🤝' },
+        { txt: '¿qué tal?',         em: '😊' },
+        { txt: '¿quién eres?',      em: '👤' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Очень приятно»', opts: [
+        { txt: 'mucho gusto',  em: '🤝' },
+        { txt: 'de nada',      em: '🙏' },
+        { txt: 'por favor',    em: '🙏' },
+        { txt: 'adiós',        em: '👋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Очень рад»', opts: [
+        { txt: 'cansado',    em: '😴' },
+        { txt: 'encantado',  em: '🤩' },
+        { txt: 'aburrido',   em: '😑' },
+        { txt: 'enfadado',   em: '😠' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['señor',    'господин'],
+        ['señora',   'госпожа'],
+        ['señorita', 'мисс'],
+        ['usted',    'Вы'],
+      ]},
+      { t: 'match', pairs: [
+        ['mucho gusto',  'очень приятно'],
+        ['encantado',    'очень рад'],
+        ['hasta luego',  'до встречи'],
+        ['hasta pronto', 'до скорого'],
+      ]},
+      { t: 'translate', from: 'Очень приятно', tiles: ['mucho', 'gusto', 'bien', 'gracias'], answer: ['mucho', 'gusto'] },
+      { t: 'fill', sentence: ['Buenos días,', null, '.'], target: 'señor', opts: ['señor', 'casa', 'verde'], hint: 'Доброе утро, господин' },
+    ],
+  },
+
+  // ── 77. En la oficina ─────────────────────────────────
+  {
+    id: 'l77', name: 'Oficina', emoji: '💼', desc: 'En el trabajo',
+    exercises: [
+      { t: 'pick', q: '«Начальник»', opts: [
+        { txt: 'empleado',  em: '🧑‍💼' },
+        { txt: 'cliente',   em: '🤵' },
+        { txt: 'jefe',      em: '👔' },
+        { txt: 'compañero', em: '👥' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Компьютер»', opts: [
+        { txt: 'ordenador',  em: '💻' },
+        { txt: 'teléfono',   em: '☎️' },
+        { txt: 'libro',      em: '📕' },
+        { txt: 'silla',      em: '🪑' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Совещание»', opts: [
+        { txt: 'oficina',  em: '🏢' },
+        { txt: 'reunión',  em: '🗣️' },
+        { txt: 'mesa',     em: '🪑' },
+        { txt: 'puerta',   em: '🚪' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['jefe',      'начальник'],
+        ['empleado',  'сотрудник'],
+        ['oficina',   'офис'],
+        ['reunión',   'совещание'],
+      ]},
+      { t: 'match', pairs: [
+        ['ordenador',  'компьютер'],
+        ['teléfono',   'телефон'],
+        ['papel',      'бумага'],
+        ['mesa',       'стол'],
+      ]},
+      { t: 'translate', from: 'Я работаю в офисе', tiles: ['trabajo', 'en', 'la', 'una', 'oficina'], answer: ['trabajo', 'en', 'la', 'oficina'] },
+      { t: 'fill', sentence: ['El', null, 'está en una reunión.'], target: 'jefe', opts: ['jefe', 'café', 'mar'], hint: 'Начальник на совещании' },
+    ],
+  },
+
+  // ── 78. El colegio ────────────────────────────────────
+  {
+    id: 'l78', name: 'Colegio', emoji: '🎒', desc: 'Vida escolar',
+    exercises: [
+      { t: 'pick', q: '«Школа»', opts: [
+        { txt: 'escuela',  em: '🏫' },
+        { txt: 'casa',     em: '🏠' },
+        { txt: 'parque',   em: '🌳' },
+        { txt: 'tienda',   em: '🏪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ученик»', opts: [
+        { txt: 'profesor', em: '👨‍🏫' },
+        { txt: 'alumno',   em: '🧑‍🎓' },
+        { txt: 'amigo',    em: '🤝' },
+        { txt: 'jefe',     em: '👔' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Карандаш»', opts: [
+        { txt: 'libro',     em: '📕' },
+        { txt: 'cuaderno',  em: '📓' },
+        { txt: 'lápiz',     em: '✏️' },
+        { txt: 'goma',      em: '🧽' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['escuela',  'школа'],
+        ['clase',    'класс'],
+        ['profesor', 'учитель'],
+        ['alumno',   'ученик'],
+      ]},
+      { t: 'match', pairs: [
+        ['libro',    'книга'],
+        ['cuaderno', 'тетрадь'],
+        ['lápiz',    'карандаш'],
+        ['examen',   'экзамен'],
+      ]},
+      { t: 'translate', from: 'У меня есть книга', tiles: ['tengo', 'un', 'una', 'libro', 'cuaderno'], answer: ['tengo', 'un', 'libro'] },
+      { t: 'fill', sentence: ['Mi', null, 'es muy bueno.'], target: 'profesor', opts: ['profesor', 'silla', 'agua'], hint: 'Мой учитель очень хороший' },
+    ],
+  },
+
+  // ── 79. Internet básico ───────────────────────────────
+  {
+    id: 'l79', name: 'Internet', emoji: '🌐', desc: 'Vocabulario web',
+    exercises: [
+      { t: 'pick', q: '«Электронная почта»', opts: [
+        { txt: 'correo',   em: '📧' },
+        { txt: 'teléfono', em: '☎️' },
+        { txt: 'carta',    em: '✉️' },
+        { txt: 'red',      em: '🌐' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Пароль»', opts: [
+        { txt: 'usuario',     em: '👤' },
+        { txt: 'contraseña',  em: '🔒' },
+        { txt: 'cuenta',      em: '🪪' },
+        { txt: 'mensaje',     em: '💬' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Страница»', opts: [
+        { txt: 'red',     em: '🌐' },
+        { txt: 'sitio',   em: '🗺️' },
+        { txt: 'página',  em: '📄' },
+        { txt: 'enlace',  em: '🔗' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['correo',      'почта'],
+        ['contraseña',  'пароль'],
+        ['usuario',     'пользователь'],
+        ['mensaje',     'сообщение'],
+      ]},
+      { t: 'match', pairs: [
+        ['página',  'страница'],
+        ['red',     'сеть'],
+        ['enlace',  'ссылка'],
+        ['archivo', 'файл'],
+      ]},
+      { t: 'translate', from: 'Какой у тебя пароль?', tiles: ['cuál', 'es', 'tu', 'contraseña', 'usuario'], answer: ['cuál', 'es', 'tu', 'contraseña'] },
+      { t: 'fill', sentence: ['Te envío un', null, '.'], target: 'correo', opts: ['correo', 'pan', 'sol'], hint: 'Я отправлю тебе письмо' },
+    ],
+  },
+
+  // ── 80. Repaso 12 (revisión de L76-L79) ───────────────
+  {
+    id: 'l80', name: 'Repaso 12', emoji: '🔁', desc: 'Repasa lecciones 76-79',
+    exercises: [
+      { t: 'pick', q: '«Очень приятно»', opts: [
+        { txt: 'mucho gusto',  em: '🤝' },
+        { txt: 'de nada',      em: '🙏' },
+        { txt: 'por favor',    em: '🙏' },
+        { txt: 'adiós',        em: '👋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Начальник»', opts: [
+        { txt: 'empleado',  em: '🧑‍💼' },
+        { txt: 'jefe',      em: '👔' },
+        { txt: 'amigo',     em: '🤝' },
+        { txt: 'alumno',    em: '🧑‍🎓' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Школа»', opts: [
+        { txt: 'casa',     em: '🏠' },
+        { txt: 'tienda',   em: '🏪' },
+        { txt: 'escuela',  em: '🏫' },
+        { txt: 'oficina',  em: '🏢' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['señor',    'господин'],
+        ['oficina',  'офис'],
+        ['profesor', 'учитель'],
+        ['lápiz',    'карандаш'],
+      ]},
+      { t: 'match', pairs: [
+        ['correo',     'почта'],
+        ['contraseña', 'пароль'],
+        ['página',     'страница'],
+        ['archivo',    'файл'],
+      ]},
+      { t: 'translate', from: 'Я работаю в офисе', tiles: ['trabajo', 'en', 'la', 'oficina'], answer: ['trabajo', 'en', 'la', 'oficina'] },
+      { t: 'fill', sentence: ['Mi', null, 'es muy bueno.'], target: 'profesor', opts: ['profesor', 'mar', 'agua'], hint: 'Мой учитель очень хороший' },
+    ],
+  },
+
+  // ── 81. Verbos de movimiento ──────────────────────────
+  {
+    id: 'l81', name: 'Movimiento', emoji: '🚶', desc: 'Verbos de movimiento',
+    exercises: [
+      { t: 'pick', q: '«Ходить»', opts: [
+        { txt: 'caminar',  em: '🚶' },
+        { txt: 'correr',   em: '🏃' },
+        { txt: 'saltar',   em: '🤾' },
+        { txt: 'nadar',    em: '🏊' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Бежать»', opts: [
+        { txt: 'caminar',  em: '🚶' },
+        { txt: 'correr',   em: '🏃' },
+        { txt: 'volar',    em: '🦅' },
+        { txt: 'bailar',   em: '💃' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Прыгать»', opts: [
+        { txt: 'subir',    em: '⬆️' },
+        { txt: 'bajar',    em: '⬇️' },
+        { txt: 'saltar',   em: '🤾' },
+        { txt: 'parar',    em: '🛑' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['caminar', 'ходить'],
+        ['correr',  'бежать'],
+        ['saltar',  'прыгать'],
+        ['nadar',   'плавать'],
+      ]},
+      { t: 'match', pairs: [
+        ['subir', 'подниматься'],
+        ['bajar', 'спускаться'],
+        ['volar', 'летать'],
+        ['parar', 'останавливаться'],
+      ]},
+      { t: 'translate', from: 'Я иду в школу', tiles: ['camino', 'a', 'la', 'escuela', 'corro'], answer: ['camino', 'a', 'la', 'escuela'] },
+      { t: 'fill', sentence: ['Los pájaros', null, 'alto.'], target: 'vuelan', opts: ['vuelan', 'corren', 'nadan'], hint: 'Птицы летают высоко' },
+    ],
+  },
+
+  // ── 82. En la playa ───────────────────────────────────
+  {
+    id: 'l82', name: 'En la playa', emoji: '🏖️', desc: 'Vocabulario de playa',
+    exercises: [
+      { t: 'pick', q: '«Песок»', opts: [
+        { txt: 'arena',  em: '🏖️' },
+        { txt: 'agua',   em: '💧' },
+        { txt: 'ola',    em: '🌊' },
+        { txt: 'sol',    em: '☀️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Зонт от солнца»', opts: [
+        { txt: 'toalla',     em: '🧺' },
+        { txt: 'sombrilla',  em: '☂️' },
+        { txt: 'arena',      em: '🏖️' },
+        { txt: 'pelota',     em: '⚽' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Волна»', opts: [
+        { txt: 'sol',     em: '☀️' },
+        { txt: 'arena',   em: '🏖️' },
+        { txt: 'ola',     em: '🌊' },
+        { txt: 'concha',  em: '🐚' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['arena',   'песок'],
+        ['sol',     'солнце'],
+        ['ola',     'волна'],
+        ['concha',  'ракушка'],
+      ]},
+      { t: 'match', pairs: [
+        ['toalla',       'полотенце'],
+        ['sombrilla',    'зонт от солнца'],
+        ['bañador',      'купальник'],
+        ['gafas de sol', 'солнечные очки'],
+      ]},
+      { t: 'translate', from: 'Мне нравится пляж', tiles: ['me', 'gusta', 'la', 'playa', 'el'], answer: ['me', 'gusta', 'la', 'playa'] },
+      { t: 'fill', sentence: ['Hace calor, voy a la', null, '.'], target: 'playa', opts: ['playa', 'casa', 'tienda'], hint: 'Жарко, я иду на пляж' },
+    ],
+  },
+
+  // ── 83. Deportes ──────────────────────────────────────
+  {
+    id: 'l83', name: 'Deportes', emoji: '⚽', desc: 'Deportes populares',
+    exercises: [
+      { t: 'pick', q: '«Футбол»', opts: [
+        { txt: 'fútbol',      em: '⚽' },
+        { txt: 'baloncesto',  em: '🏀' },
+        { txt: 'tenis',       em: '🎾' },
+        { txt: 'béisbol',     em: '⚾' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Баскетбол»', opts: [
+        { txt: 'fútbol',      em: '⚽' },
+        { txt: 'baloncesto',  em: '🏀' },
+        { txt: 'natación',    em: '🏊' },
+        { txt: 'voleibol',    em: '🏐' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Плавание»', opts: [
+        { txt: 'correr',     em: '🏃' },
+        { txt: 'esquí',      em: '🎿' },
+        { txt: 'natación',   em: '🏊' },
+        { txt: 'ciclismo',   em: '🚴' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['fútbol',     'футбол'],
+        ['baloncesto', 'баскетбол'],
+        ['tenis',      'теннис'],
+        ['natación',   'плавание'],
+      ]},
+      { t: 'match', pairs: [
+        ['equipo',  'команда'],
+        ['jugador', 'игрок'],
+        ['partido', 'матч'],
+        ['ganar',   'выигрывать'],
+      ]},
+      { t: 'translate', from: 'Я играю в футбол', tiles: ['juego', 'al', 'fútbol', 'tenis'], answer: ['juego', 'al', 'fútbol'] },
+      { t: 'fill', sentence: ['Mi', null, 'favorito es el tenis.'], target: 'deporte', opts: ['deporte', 'mar', 'casa'], hint: 'Мой любимый спорт — теннис' },
+    ],
+  },
+
+  // ── 84. Instrumentos ──────────────────────────────────
+  {
+    id: 'l84', name: 'Instrumentos', emoji: '🎸', desc: 'Instrumentos musicales',
+    exercises: [
+      { t: 'pick', q: '«Гитара»', opts: [
+        { txt: 'guitarra',  em: '🎸' },
+        { txt: 'piano',     em: '🎹' },
+        { txt: 'violín',    em: '🎻' },
+        { txt: 'flauta',    em: '🎼' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Скрипка»', opts: [
+        { txt: 'piano',    em: '🎹' },
+        { txt: 'violín',   em: '🎻' },
+        { txt: 'tambor',   em: '🥁' },
+        { txt: 'trompeta', em: '🎺' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Барабан»', opts: [
+        { txt: 'piano',    em: '🎹' },
+        { txt: 'guitarra', em: '🎸' },
+        { txt: 'tambor',   em: '🥁' },
+        { txt: 'flauta',   em: '🎼' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['guitarra',  'гитара'],
+        ['piano',     'фортепиано'],
+        ['violín',    'скрипка'],
+        ['tambor',    'барабан'],
+      ]},
+      { t: 'match', pairs: [
+        ['flauta',   'флейта'],
+        ['trompeta', 'труба'],
+        ['músico',   'музыкант'],
+        ['canción',  'песня'],
+      ]},
+      { t: 'translate', from: 'Я играю на гитаре', tiles: ['toco', 'la', 'el', 'guitarra', 'piano'], answer: ['toco', 'la', 'guitarra'] },
+      { t: 'fill', sentence: ['Mi hermano toca el', null, '.'], target: 'piano', opts: ['piano', 'mar', 'libro'], hint: 'Мой брат играет на фортепиано' },
+    ],
+  },
+
+  // ── 85. Repaso 13 (revisión de L81-L84) ───────────────
+  {
+    id: 'l85', name: 'Repaso 13', emoji: '🔁', desc: 'Repasa lecciones 81-84',
+    exercises: [
+      { t: 'pick', q: '«Бежать»', opts: [
+        { txt: 'caminar', em: '🚶' },
+        { txt: 'correr',  em: '🏃' },
+        { txt: 'saltar',  em: '🤾' },
+        { txt: 'nadar',   em: '🏊' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Зонт от солнца»', opts: [
+        { txt: 'toalla',    em: '🧺' },
+        { txt: 'sombrilla', em: '☂️' },
+        { txt: 'arena',     em: '🏖️' },
+        { txt: 'ola',       em: '🌊' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Гитара»', opts: [
+        { txt: 'piano',    em: '🎹' },
+        { txt: 'violín',   em: '🎻' },
+        { txt: 'guitarra', em: '🎸' },
+        { txt: 'flauta',   em: '🎼' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['caminar', 'ходить'],
+        ['nadar',   'плавать'],
+        ['arena',   'песок'],
+        ['ola',     'волна'],
+      ]},
+      { t: 'match', pairs: [
+        ['fútbol',   'футбол'],
+        ['natación', 'плавание'],
+        ['guitarra', 'гитара'],
+        ['canción',  'песня'],
+      ]},
+      { t: 'translate', from: 'Я играю в футбол', tiles: ['juego', 'al', 'fútbol', 'tenis'], answer: ['juego', 'al', 'fútbol'] },
+      { t: 'fill', sentence: ['Hace calor, voy a la', null, '.'], target: 'playa', opts: ['playa', 'casa', 'oficina'], hint: 'Жарко, я иду на пляж' },
+    ],
+  },
+
+  // ── 86. Cocinar ───────────────────────────────────────
+  {
+    id: 'l86', name: 'Cocinar', emoji: '👨‍🍳', desc: 'Verbos de cocina',
+    exercises: [
+      { t: 'pick', q: '«Резать»', opts: [
+        { txt: 'cortar',  em: '🔪' },
+        { txt: 'freír',   em: '🍳' },
+        { txt: 'hervir',  em: '♨️' },
+        { txt: 'mezclar', em: '🥣' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Жарить»', opts: [
+        { txt: 'cortar',  em: '🔪' },
+        { txt: 'freír',   em: '🍳' },
+        { txt: 'hornear', em: '🍞' },
+        { txt: 'lavar',   em: '🧼' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Варить»', opts: [
+        { txt: 'cortar',  em: '🔪' },
+        { txt: 'mezclar', em: '🥣' },
+        { txt: 'hervir',  em: '♨️' },
+        { txt: 'comer',   em: '🍴' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['cortar',  'резать'],
+        ['freír',   'жарить'],
+        ['hervir',  'варить'],
+        ['mezclar', 'смешивать'],
+      ]},
+      { t: 'match', pairs: [
+        ['hornear', 'печь'],
+        ['lavar',   'мыть'],
+        ['probar',  'пробовать'],
+        ['servir',  'подавать'],
+      ]},
+      { t: 'translate', from: 'Я режу хлеб', tiles: ['corto', 'el', 'pan', 'la', 'frío'], answer: ['corto', 'el', 'pan'] },
+      { t: 'fill', sentence: ['Voy a', null, 'la sopa.'], target: 'hervir', opts: ['hervir', 'leer', 'jugar'], hint: 'Я буду варить суп' },
+    ],
+  },
+
+  // ── 87. Recetas ───────────────────────────────────────
+  {
+    id: 'l87', name: 'Recetas', emoji: '📖', desc: 'En la cocina',
+    exercises: [
+      { t: 'pick', q: '«Ингредиент»', opts: [
+        { txt: 'ingrediente', em: '🥕' },
+        { txt: 'receta',      em: '📖' },
+        { txt: 'plato',       em: '🍽️' },
+        { txt: 'taza',        em: '☕' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Рецепт»', opts: [
+        { txt: 'libro',   em: '📕' },
+        { txt: 'receta',  em: '📖' },
+        { txt: 'mapa',    em: '🗺️' },
+        { txt: 'cuenta',  em: '🧾' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Грамм»', opts: [
+        { txt: 'litro',   em: '💧' },
+        { txt: 'kilo',    em: '⚖️' },
+        { txt: 'gramo',   em: '⚖️' },
+        { txt: 'taza',    em: '☕' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['receta',      'рецепт'],
+        ['ingrediente', 'ингредиент'],
+        ['plato',       'блюдо'],
+        ['sabor',       'вкус'],
+      ]},
+      { t: 'match', pairs: [
+        ['kilo',      'кило'],
+        ['gramo',     'грамм'],
+        ['litro',     'литр'],
+        ['cucharada', 'ст. ложка'],
+      ]},
+      { t: 'translate', from: 'Это лёгкий рецепт', tiles: ['es', 'una', 'un', 'receta', 'fácil'], answer: ['es', 'una', 'receta', 'fácil'] },
+      { t: 'fill', sentence: ['Necesito un', null, 'de azúcar.'], target: 'kilo', opts: ['kilo', 'plato', 'libro'], hint: 'Мне нужен килограмм сахара' },
+    ],
+  },
+
+  // ── 88. En el bar ─────────────────────────────────────
+  {
+    id: 'l88', name: 'En el bar', emoji: '☕', desc: 'Pedir bebidas',
+    exercises: [
+      { t: 'pick', q: '«Сок»', opts: [
+        { txt: 'jugo',      em: '🧃' },
+        { txt: 'café',      em: '☕' },
+        { txt: 'agua',      em: '💧' },
+        { txt: 'refresco',  em: '🥤' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Газировка»', opts: [
+        { txt: 'jugo',      em: '🧃' },
+        { txt: 'refresco',  em: '🥤' },
+        { txt: 'leche',     em: '🥛' },
+        { txt: 'té',        em: '🍵' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Без сахара»', opts: [
+        { txt: 'con azúcar',  em: '➕' },
+        { txt: 'con leche',   em: '🥛' },
+        { txt: 'sin azúcar',  em: '🚫' },
+        { txt: 'caliente',    em: '🔥' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['jugo',     'сок'],
+        ['refresco', 'газировка'],
+        ['cerveza',  'пиво'],
+        ['vino',     'вино'],
+      ]},
+      { t: 'match', pairs: [
+        ['con',      'с'],
+        ['sin',      'без'],
+        ['hielo',    'лёд'],
+        ['camarero', 'официант'],
+      ]},
+      { t: 'translate', from: 'Кофе, пожалуйста', tiles: ['un', 'café', 'por', 'favor', 'gracias'], answer: ['un', 'café', 'por', 'favor'] },
+      { t: 'fill', sentence: ['Quiero un té', null, 'leche.'], target: 'con', opts: ['con', 'sin', 'a'], hint: 'Я хочу чай с молоком' },
+    ],
+  },
+
+  // ── 89. Postres ───────────────────────────────────────
+  {
+    id: 'l89', name: 'Postres', emoji: '🍰', desc: 'Dulces y postres',
+    exercises: [
+      { t: 'pick', q: '«Мороженое»', opts: [
+        { txt: 'helado',    em: '🍦' },
+        { txt: 'pastel',    em: '🍰' },
+        { txt: 'galleta',   em: '🍪' },
+        { txt: 'chocolate', em: '🍫' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Торт»', opts: [
+        { txt: 'helado',  em: '🍦' },
+        { txt: 'pastel',  em: '🍰' },
+        { txt: 'fruta',   em: '🍓' },
+        { txt: 'pan',     em: '🍞' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Печенье»', opts: [
+        { txt: 'helado',    em: '🍦' },
+        { txt: 'pastel',    em: '🍰' },
+        { txt: 'galleta',   em: '🍪' },
+        { txt: 'chocolate', em: '🍫' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['helado',    'мороженое'],
+        ['pastel',    'торт'],
+        ['galleta',   'печенье'],
+        ['chocolate', 'шоколад'],
+      ]},
+      { t: 'match', pairs: [
+        ['dulce',   'сладкий'],
+        ['azúcar',  'сахар'],
+        ['miel',    'мёд'],
+        ['nata',    'сливки'],
+      ]},
+      { t: 'translate', from: 'Я хочу мороженое', tiles: ['quiero', 'un', 'helado', 'pastel'], answer: ['quiero', 'un', 'helado'] },
+      { t: 'fill', sentence: ['Me gusta el', null, '.'], target: 'chocolate', opts: ['chocolate', 'libro', 'sol'], hint: 'Мне нравится шоколад' },
+    ],
+  },
+
+  // ── 90. Repaso 14 (revisión de L86-L89) ───────────────
+  {
+    id: 'l90', name: 'Repaso 14', emoji: '🔁', desc: 'Repasa lecciones 86-89',
+    exercises: [
+      { t: 'pick', q: '«Резать»', opts: [
+        { txt: 'cortar',  em: '🔪' },
+        { txt: 'freír',   em: '🍳' },
+        { txt: 'mezclar', em: '🥣' },
+        { txt: 'lavar',   em: '🧼' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Рецепт»', opts: [
+        { txt: 'libro',  em: '📕' },
+        { txt: 'receta', em: '📖' },
+        { txt: 'plato',  em: '🍽️' },
+        { txt: 'mapa',   em: '🗺️' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Мороженое»', opts: [
+        { txt: 'pastel',    em: '🍰' },
+        { txt: 'galleta',   em: '🍪' },
+        { txt: 'helado',    em: '🍦' },
+        { txt: 'chocolate', em: '🍫' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['cortar', 'резать'],
+        ['hervir', 'варить'],
+        ['receta', 'рецепт'],
+        ['plato',  'блюдо'],
+      ]},
+      { t: 'match', pairs: [
+        ['jugo',    'сок'],
+        ['café',    'кофе'],
+        ['pastel',  'торт'],
+        ['dulce',   'сладкий'],
+      ]},
+      { t: 'translate', from: 'Кофе, пожалуйста', tiles: ['un', 'café', 'por', 'favor'], answer: ['un', 'café', 'por', 'favor'] },
+      { t: 'fill', sentence: ['Me gusta el', null, '.'], target: 'chocolate', opts: ['chocolate', 'libro', 'mar'], hint: 'Мне нравится шоколад' },
+    ],
+  },
+
+  // ── 91. Mascotas ──────────────────────────────────────
+  {
+    id: 'l91', name: 'Mascotas', emoji: '🐾', desc: 'Cuidar y jugar',
+    exercises: [
+      { t: 'pick', q: '«Собака»', opts: [
+        { txt: 'perro',   em: '🐶' },
+        { txt: 'gato',    em: '🐱' },
+        { txt: 'pez',     em: '🐠' },
+        { txt: 'pájaro',  em: '🐦' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Хомяк»', opts: [
+        { txt: 'tortuga',  em: '🐢' },
+        { txt: 'hámster',  em: '🐹' },
+        { txt: 'conejo',   em: '🐰' },
+        { txt: 'pez',      em: '🐠' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Гулять (с собакой)»', opts: [
+        { txt: 'alimentar', em: '🍽️' },
+        { txt: 'cepillar',  em: '🧴' },
+        { txt: 'pasear',    em: '🚶' },
+        { txt: 'dormir',    em: '😴' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['perro',    'собака'],
+        ['gato',     'кошка'],
+        ['hámster',  'хомяк'],
+        ['tortuga',  'черепаха'],
+      ]},
+      { t: 'match', pairs: [
+        ['alimentar', 'кормить'],
+        ['pasear',    'гулять'],
+        ['jugar',     'играть'],
+        ['cuidar',    'заботиться'],
+      ]},
+      { t: 'translate', from: 'Я гуляю с собакой', tiles: ['paseo', 'al', 'perro', 'el'], answer: ['paseo', 'al', 'perro'] },
+      { t: 'fill', sentence: ['Tengo que', null, 'a mi gato.'], target: 'alimentar', opts: ['alimentar', 'leer', 'pintar'], hint: 'Мне надо покормить кота' },
+    ],
+  },
+
+  // ── 92. Insectos ──────────────────────────────────────
+  {
+    id: 'l92', name: 'Insectos', emoji: '🐝', desc: 'Insectos y bichos',
+    exercises: [
+      { t: 'pick', q: '«Пчела»', opts: [
+        { txt: 'abeja',     em: '🐝' },
+        { txt: 'mosca',     em: '🪰' },
+        { txt: 'hormiga',   em: '🐜' },
+        { txt: 'mariposa',  em: '🦋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Муравей»', opts: [
+        { txt: 'araña',     em: '🕷️' },
+        { txt: 'hormiga',   em: '🐜' },
+        { txt: 'mosca',     em: '🪰' },
+        { txt: 'mosquito',  em: '🦟' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Бабочка»', opts: [
+        { txt: 'abeja',     em: '🐝' },
+        { txt: 'mosca',     em: '🪰' },
+        { txt: 'mariposa',  em: '🦋' },
+        { txt: 'hormiga',   em: '🐜' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['abeja',    'пчела'],
+        ['mariposa', 'бабочка'],
+        ['hormiga',  'муравей'],
+        ['araña',    'паук'],
+      ]},
+      { t: 'match', pairs: [
+        ['mosca',    'муха'],
+        ['mosquito', 'комар'],
+        ['gusano',   'червь'],
+        ['avispa',   'оса'],
+      ]},
+      { t: 'translate', from: 'Я вижу бабочку', tiles: ['veo', 'una', 'un', 'mariposa', 'abeja'], answer: ['veo', 'una', 'mariposa'] },
+      { t: 'fill', sentence: ['Me molesta el', null, '.'], target: 'mosquito', opts: ['mosquito', 'pan', 'libro'], hint: 'Меня раздражает комар' },
+    ],
+  },
+
+  // ── 93. El océano ─────────────────────────────────────
+  {
+    id: 'l93', name: 'El océano', emoji: '🐬', desc: 'Animales del mar',
+    exercises: [
+      { t: 'pick', q: '«Дельфин»', opts: [
+        { txt: 'delfín',   em: '🐬' },
+        { txt: 'tiburón',  em: '🦈' },
+        { txt: 'ballena',  em: '🐳' },
+        { txt: 'pulpo',    em: '🐙' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Акула»', opts: [
+        { txt: 'pez',       em: '🐠' },
+        { txt: 'tiburón',   em: '🦈' },
+        { txt: 'tortuga',   em: '🐢' },
+        { txt: 'cangrejo',  em: '🦀' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Осьминог»', opts: [
+        { txt: 'ballena',   em: '🐳' },
+        { txt: 'delfín',    em: '🐬' },
+        { txt: 'pulpo',     em: '🐙' },
+        { txt: 'cangrejo',  em: '🦀' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['delfín',   'дельфин'],
+        ['ballena',  'кит'],
+        ['tiburón',  'акула'],
+        ['pulpo',    'осьминог'],
+      ]},
+      { t: 'match', pairs: [
+        ['tortuga',         'черепаха'],
+        ['cangrejo',        'краб'],
+        ['estrella de mar', 'морская звезда'],
+        ['medusa',          'медуза'],
+      ]},
+      { t: 'translate', from: 'Я вижу кита', tiles: ['veo', 'una', 'un', 'ballena', 'pulpo'], answer: ['veo', 'una', 'ballena'] },
+      { t: 'fill', sentence: ['El', null, 'es muy rápido.'], target: 'delfín', opts: ['delfín', 'libro', 'pan'], hint: 'Дельфин очень быстрый' },
+    ],
+  },
+
+  // ── 94. Aves ──────────────────────────────────────────
+  {
+    id: 'l94', name: 'Aves', emoji: '🦅', desc: 'Pájaros y aves',
+    exercises: [
+      { t: 'pick', q: '«Орёл»', opts: [
+        { txt: 'águila',   em: '🦅' },
+        { txt: 'paloma',   em: '🕊️' },
+        { txt: 'búho',     em: '🦉' },
+        { txt: 'loro',     em: '🦜' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Голубь»', opts: [
+        { txt: 'águila',    em: '🦅' },
+        { txt: 'paloma',    em: '🕊️' },
+        { txt: 'pingüino',  em: '🐧' },
+        { txt: 'cisne',     em: '🦢' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Сова»', opts: [
+        { txt: 'gallo',    em: '🐓' },
+        { txt: 'loro',     em: '🦜' },
+        { txt: 'búho',     em: '🦉' },
+        { txt: 'paloma',   em: '🕊️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['águila',  'орёл'],
+        ['paloma',  'голубь'],
+        ['búho',    'сова'],
+        ['loro',    'попугай'],
+      ]},
+      { t: 'match', pairs: [
+        ['gallo',     'петух'],
+        ['cisne',     'лебедь'],
+        ['pingüino',  'пингвин'],
+        ['nido',      'гнездо'],
+      ]},
+      { t: 'translate', from: 'Орёл летает высоко', tiles: ['el', 'águila', 'vuela', 'alto', 'corre'], answer: ['el', 'águila', 'vuela', 'alto'] },
+      { t: 'fill', sentence: ['El', null, 'habla mucho.'], target: 'loro', opts: ['loro', 'mar', 'pan'], hint: 'Попугай много говорит' },
+    ],
+  },
+
+  // ── 95. Repaso 15 (revisión de L91-L94) ───────────────
+  {
+    id: 'l95', name: 'Repaso 15', emoji: '🔁', desc: 'Repasa lecciones 91-94',
+    exercises: [
+      { t: 'pick', q: '«Хомяк»', opts: [
+        { txt: 'tortuga',  em: '🐢' },
+        { txt: 'hámster',  em: '🐹' },
+        { txt: 'conejo',   em: '🐰' },
+        { txt: 'pez',      em: '🐠' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Пчела»', opts: [
+        { txt: 'abeja',     em: '🐝' },
+        { txt: 'mosca',     em: '🪰' },
+        { txt: 'hormiga',   em: '🐜' },
+        { txt: 'mariposa',  em: '🦋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Дельфин»', opts: [
+        { txt: 'tiburón', em: '🦈' },
+        { txt: 'delfín',  em: '🐬' },
+        { txt: 'ballena', em: '🐳' },
+        { txt: 'pulpo',   em: '🐙' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['perro',    'собака'],
+        ['hámster',  'хомяк'],
+        ['mariposa', 'бабочка'],
+        ['araña',    'паук'],
+      ]},
+      { t: 'match', pairs: [
+        ['ballena',  'кит'],
+        ['tiburón',  'акула'],
+        ['águila',   'орёл'],
+        ['búho',     'сова'],
+      ]},
+      { t: 'translate', from: 'Я вижу бабочку', tiles: ['veo', 'una', 'mariposa', 'abeja'], answer: ['veo', 'una', 'mariposa'] },
+      { t: 'fill', sentence: ['Tengo que', null, 'a mi gato.'], target: 'alimentar', opts: ['alimentar', 'leer', 'pintar'], hint: 'Мне надо покормить кота' },
+    ],
+  },
+
+  // ── 96. Emociones II ──────────────────────────────────
+  {
+    id: 'l96', name: 'Emociones II', emoji: '😌', desc: 'Más sentimientos',
+    exercises: [
+      { t: 'pick', q: '«Спокойный»', opts: [
+        { txt: 'tranquilo',    em: '😌' },
+        { txt: 'nervioso',     em: '😬' },
+        { txt: 'sorprendido',  em: '😲' },
+        { txt: 'aburrido',     em: '😑' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Нервный»', opts: [
+        { txt: 'tranquilo',  em: '😌' },
+        { txt: 'nervioso',   em: '😬' },
+        { txt: 'feliz',      em: '😊' },
+        { txt: 'cansado',    em: '😴' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Удивлённый»', opts: [
+        { txt: 'feliz',         em: '😊' },
+        { txt: 'aburrido',      em: '😑' },
+        { txt: 'sorprendido',   em: '😲' },
+        { txt: 'enfadado',      em: '😠' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['tranquilo',    'спокойный'],
+        ['nervioso',     'нервный'],
+        ['sorprendido',  'удивлённый'],
+        ['aburrido',     'скучающий'],
+      ]},
+      { t: 'match', pairs: [
+        ['orgulloso',    'гордый'],
+        ['celoso',       'ревнивый'],
+        ['avergonzado',  'смущённый'],
+        ['emocionado',   'взволнованный'],
+      ]},
+      { t: 'translate', from: 'Я очень спокоен', tiles: ['estoy', 'muy', 'tranquilo', 'nervioso'], answer: ['estoy', 'muy', 'tranquilo'] },
+      { t: 'fill', sentence: ['Hoy estoy', null, '.'], target: 'feliz', opts: ['feliz', 'libro', 'mar'], hint: 'Сегодня я счастлив' },
+    ],
+  },
+
+  // ── 97. El cuerpo II ──────────────────────────────────
+  {
+    id: 'l97', name: 'El cuerpo II', emoji: '💪', desc: 'Más partes del cuerpo',
+    exercises: [
+      { t: 'pick', q: '«Сердце»', opts: [
+        { txt: 'corazón',   em: '❤️' },
+        { txt: 'estómago',  em: '🍽️' },
+        { txt: 'pulmón',    em: '🫁' },
+        { txt: 'hígado',    em: '🍖' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Спина»', opts: [
+        { txt: 'pecho',     em: '🫀' },
+        { txt: 'espalda',   em: '🔙' },
+        { txt: 'cuello',    em: '🦒' },
+        { txt: 'rodilla',   em: '🦵' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Колено»', opts: [
+        { txt: 'codo',     em: '💪' },
+        { txt: 'hombro',   em: '💪' },
+        { txt: 'rodilla',  em: '🦵' },
+        { txt: 'tobillo',  em: '🦶' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['corazón',  'сердце'],
+        ['espalda',  'спина'],
+        ['hombro',   'плечо'],
+        ['rodilla',  'колено'],
+      ]},
+      { t: 'match', pairs: [
+        ['codo',      'локоть'],
+        ['cuello',    'шея'],
+        ['pecho',     'грудь'],
+        ['estómago',  'желудок'],
+      ]},
+      { t: 'translate', from: 'У меня болит спина', tiles: ['me', 'duele', 'la', 'espalda', 'el'], answer: ['me', 'duele', 'la', 'espalda'] },
+      { t: 'fill', sentence: ['Tengo dolor de', null, '.'], target: 'cabeza', opts: ['cabeza', 'libro', 'sol'], hint: 'У меня болит голова' },
+    ],
+  },
+
+  // ── 98. Farmacia ──────────────────────────────────────
+  {
+    id: 'l98', name: 'Farmacia', emoji: '💊', desc: 'En la farmacia',
+    exercises: [
+      { t: 'pick', q: '«Таблетка»', opts: [
+        { txt: 'pastilla',  em: '💊' },
+        { txt: 'jarabe',    em: '🍯' },
+        { txt: 'venda',     em: '🩹' },
+        { txt: 'receta',    em: '📋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Сироп»', opts: [
+        { txt: 'agua',     em: '💧' },
+        { txt: 'jarabe',   em: '🍯' },
+        { txt: 'leche',    em: '🥛' },
+        { txt: 'café',     em: '☕' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Температура»', opts: [
+        { txt: 'tos',      em: '🤧' },
+        { txt: 'dolor',    em: '🤕' },
+        { txt: 'fiebre',   em: '🤒' },
+        { txt: 'frío',     em: '🥶' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['pastilla', 'таблетка'],
+        ['jarabe',   'сироп'],
+        ['receta',   'рецепт'],
+        ['venda',    'бинт'],
+      ]},
+      { t: 'match', pairs: [
+        ['dolor',   'боль'],
+        ['fiebre',  'температура'],
+        ['tos',     'кашель'],
+        ['gripe',   'грипп'],
+      ]},
+      { t: 'translate', from: 'Мне нужна таблетка', tiles: ['necesito', 'una', 'pastilla', 'un'], answer: ['necesito', 'una', 'pastilla'] },
+      { t: 'fill', sentence: ['Tengo', null, '.'], target: 'fiebre', opts: ['fiebre', 'mar', 'sol'], hint: 'У меня температура' },
+    ],
+  },
+
+  // ── 99. Emergencias ───────────────────────────────────
+  {
+    id: 'l99', name: 'Emergencias', emoji: '🚨', desc: 'Ayuda y peligro',
+    exercises: [
+      { t: 'pick', q: '«Помощь!»', opts: [
+        { txt: '¡ayuda!',   em: '🆘' },
+        { txt: '¡gracias!', em: '🙏' },
+        { txt: '¡hola!',    em: '👋' },
+        { txt: '¡vamos!',   em: '🚶' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Огонь»', opts: [
+        { txt: 'agua',   em: '💧' },
+        { txt: 'fuego',  em: '🔥' },
+        { txt: 'humo',   em: '💨' },
+        { txt: 'frío',   em: '🥶' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Полиция»', opts: [
+        { txt: 'bombero',  em: '🧑‍🚒' },
+        { txt: 'médico',   em: '🩺' },
+        { txt: 'policía',  em: '👮' },
+        { txt: 'profesor', em: '👨‍🏫' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['ayuda',     'помощь'],
+        ['peligro',   'опасность'],
+        ['fuego',     'огонь'],
+        ['accidente', 'авария'],
+      ]},
+      { t: 'match', pairs: [
+        ['policía',     'полиция'],
+        ['bombero',     'пожарный'],
+        ['hospital',    'больница'],
+        ['ambulancia',  'скорая помощь'],
+      ]},
+      { t: 'translate', from: 'Позвони в полицию', tiles: ['llama', 'a', 'la', 'policía', 'hospital'], answer: ['llama', 'a', 'la', 'policía'] },
+      { t: 'fill', sentence: ['¡Cuidado, hay', null, '!'], target: 'fuego', opts: ['fuego', 'libro', 'sol'], hint: 'Осторожно, огонь!' },
+    ],
+  },
+
+  // ── 100. Repaso Maestro (revisión final de L76-L99) ───
+  {
+    id: 'l100', name: 'Repaso Maestro', emoji: '🏆', desc: 'Repaso final (76-99)',
+    exercises: [
+      { t: 'pick', q: '«Очень приятно»', opts: [
+        { txt: 'mucho gusto',  em: '🤝' },
+        { txt: 'de nada',      em: '🙏' },
+        { txt: 'por favor',    em: '🙏' },
+        { txt: 'adiós',        em: '👋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Бежать»', opts: [
+        { txt: 'caminar',  em: '🚶' },
+        { txt: 'correr',   em: '🏃' },
+        { txt: 'saltar',   em: '🤾' },
+        { txt: 'nadar',    em: '🏊' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Сердце»', opts: [
+        { txt: 'estómago', em: '🍽️' },
+        { txt: 'espalda',  em: '🔙' },
+        { txt: 'corazón',  em: '❤️' },
+        { txt: 'hombro',   em: '💪' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['oficina',   'офис'],
+        ['playa',     'пляж'],
+        ['fútbol',    'футбол'],
+        ['guitarra',  'гитара'],
+      ]},
+      { t: 'match', pairs: [
+        ['delfín',     'дельфин'],
+        ['mariposa',   'бабочка'],
+        ['tranquilo',  'спокойный'],
+        ['pastilla',   'таблетка'],
+      ]},
+      { t: 'translate', from: 'Я играю на гитаре', tiles: ['toco', 'la', 'el', 'guitarra'], answer: ['toco', 'la', 'guitarra'] },
+      { t: 'fill', sentence: ['¡Cuidado, hay', null, '!'], target: 'fuego', opts: ['fuego', 'libro', 'sol'], hint: 'Осторожно, огонь!' },
     ],
   },
 ];

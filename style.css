@@ -2651,6 +2651,67 @@ html, body {
   justify-content: center;
 }
 
+/* Typed exercise — text input with Spanish accent helper row */
+.lex-typed-input {
+  width: 100%;
+  max-width: 420px;
+  margin: 12px auto 0;
+  display: block;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.lex-typed-input:focus {
+  border-color: var(--accent, #7c9eb2);
+  background: var(--card-2, var(--surface));
+}
+.lex-typed-input::placeholder { color: var(--text-dim); opacity: 0.55; }
+
+.lex-typed-hint {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-align: center;
+  margin: 6px 0 0;
+  font-style: italic;
+}
+
+.lex-accent-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px auto 0;
+  max-width: 420px;
+}
+.lex-accent-btn {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.12s ease, transform 0.08s ease;
+}
+.lex-accent-btn:active {
+  background: var(--card-2, var(--surface));
+  transform: scale(0.94);
+}
+
 .lesson-actions {
   display: flex;
   gap: 8px;

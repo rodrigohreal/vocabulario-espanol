@@ -1471,9 +1471,14 @@ function updateTopbarStats() {
 //   t='translate'  — show source sentence, build target with tiles
 //   t='match'      — match 4 Spanish words with their L1 translations
 //   t='fill'       — fill blank in sentence by picking the right word
+//   t='typed'      — type the Spanish answer (no tiles); accepts variants via `answers`
+// Optional flags:
+//   match.swap=true      — flip column orientation (RU left, ES right)
+//   lesson.hearts=N      — override default 3 hearts for this lesson
 
 const LESSONS = [
   // ── 1. Saludos ────────────────────────────────────────
+  // Intro lesson — short on purpose so first-time users get a quick win.
   {
     id: 'l1', name: 'Saludos', emoji: '👋', desc: 'Saluda en español',
     exercises: [
@@ -1483,12 +1488,6 @@ const LESSONS = [
         { txt: 'gracias', em: '🙏' },
         { txt: 'perdón',  em: '🙇' },
       ], correct: 0 },
-      { t: 'pick', q: '«Пока»', opts: [
-        { txt: 'hola',  em: '👋' },
-        { txt: 'adiós', em: '🙋' },
-        { txt: 'sí',    em: '✅' },
-        { txt: 'no',    em: '❌' },
-      ], correct: 1 },
       { t: 'translate', from: 'Доброе утро', tiles: ['buenos', 'días', 'noches', 'tardes'], answer: ['buenos', 'días'] },
       { t: 'translate', from: 'Добрый день',  tiles: ['buenas', 'tardes', 'noches', 'hola'], answer: ['buenas', 'tardes'] },
       { t: 'match', pairs: [
@@ -1504,7 +1503,6 @@ const LESSONS = [
         { txt: 'gracias',       em: '🙏' },
         { txt: 'adiós',         em: '🙋' },
       ], correct: 0 },
-      { t: 'translate', from: 'Я в порядке', tiles: ['estoy', 'bien', 'mal', 'soy'], answer: ['estoy', 'bien'] },
     ],
   },
 
@@ -1774,6 +1772,7 @@ const LESSONS = [
   // ── 9. Verbos básicos ─────────────────────────────────
   {
     id: 'l9', name: 'Verbos', emoji: '🏃', desc: 'Verbos básicos',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Есть/Кушать»', opts: [
         { txt: 'comer',  em: '🍽️' },
@@ -1793,6 +1792,13 @@ const LESSONS = [
         { txt: 'hablar', em: '💬' },
         { txt: 'tener',  em: '✋' },
       ], correct: 2 },
+      // Hard pick — all options are forms of comer; only "como" matches "я ем".
+      { t: 'pick', q: '«Я ем» — какая форма?', opts: [
+        { txt: 'como',   em: '👤' },
+        { txt: 'comes',  em: '👉' },
+        { txt: 'come',   em: '👨' },
+        { txt: 'comer',  em: '➡️' },
+      ], correct: 0 },
       { t: 'match', pairs: [
         ['ser',    'быть'],
         ['tener',  'иметь'],
@@ -1807,6 +1813,8 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Я ем хлеб', tiles: ['yo', 'como', 'pan', 'bebo'], answer: ['yo', 'como', 'pan'], answers: [['yo', 'como', 'pan'], ['como', 'pan']] },
       { t: 'fill', sentence: ['Yo', null, 'español.'], target: 'hablo', opts: ['hablo', 'como', 'tengo'], hint: 'Я говорю по-испански' },
+      { t: 'fill', sentence: ['Tú', null, 'agua.'], target: 'bebes', opts: ['bebes', 'bebo', 'beber'], hint: 'Ты пьёшь воду' },
+      { t: 'typed', from: 'Я говорю по-испански', answer: 'hablo español', answers: ['hablo español', 'yo hablo español'], hint: 'Подсказка: hablar = говорить' },
     ],
   },
 
@@ -2072,7 +2080,7 @@ const LESSONS = [
         ['mañana',  'утро'],
         ['noche',   'ночь'],
       ]},
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['ahora',     'сейчас'],
         ['después',   'потом'],
         ['temprano',  'рано'],
@@ -2243,6 +2251,7 @@ const LESSONS = [
   // Reinforces ser/estar/tener from L9 + introduces querer, poder, ir
   {
     id: 'l21', name: 'Verbos II', emoji: '💪', desc: 'Más verbos esenciales',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Хотеть»', opts: [
         { txt: 'querer', em: '💖' },
@@ -2276,7 +2285,16 @@ const LESSONS = [
       ]},
       // Reuse: «yo como pan» pattern from L9
       { t: 'translate', from: 'Я хочу воду', tiles: ['quiero', 'agua', 'yo', 'como'], answer: ['yo', 'quiero', 'agua'], answers: [['yo', 'quiero', 'agua'], ['quiero', 'agua']] },
+      // Hard pick — all options are forms of querer.
+      { t: 'pick', q: '«Я хочу» — какая форма?', opts: [
+        { txt: 'quiero',    em: '👤' },
+        { txt: 'quieres',   em: '👉' },
+        { txt: 'quiere',    em: '👨' },
+        { txt: 'queremos',  em: '👥' },
+      ], correct: 0 },
       { t: 'fill', sentence: ['No', null, 'hablar inglés.'], target: 'puedo', opts: ['puedo', 'tengo', 'soy'], hint: 'Я не могу говорить по-английски' },
+      { t: 'fill', sentence: ['Ella', null, 'ver la película.'], target: 'quiere', opts: ['quiere', 'quiero', 'quieres'], hint: 'Она хочет посмотреть фильм' },
+      { t: 'typed', from: 'Я могу плавать', answer: 'puedo nadar', answers: ['puedo nadar', 'yo puedo nadar'], hint: 'poder + nadar' },
     ],
   },
 
@@ -2446,6 +2464,7 @@ const LESSONS = [
       // Reuse "Como una manzana" pattern (L6)
       { t: 'translate', from: 'Я ем банан', tiles: ['yo', 'como', 'un', 'plátano', 'manzana'], answer: ['como', 'un', 'plátano'], answers: [['como', 'un', 'plátano'], ['yo', 'como', 'un', 'plátano']] },
       { t: 'fill', sentence: ['La', null, 'es roja.'], target: 'manzana', opts: ['manzana', 'plátano', 'limón'], hint: 'Яблоко красное' },
+      { t: 'typed', from: 'У меня есть яблоко', answer: 'tengo una manzana', answers: ['tengo una manzana', 'yo tengo una manzana'], hint: 'manzana — женский род' },
     ],
   },
 
@@ -2565,7 +2584,7 @@ const LESSONS = [
         ['debajo', 'под'],
         ['entre',  'между'],
       ]},
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['cerca',   'близко'],
         ['lejos',   'далеко'],
         ['aquí',    'здесь'],
@@ -2616,6 +2635,7 @@ const LESSONS = [
       // Reuse: «Меня зовут Ана» (L2) — now also accepts "Soy Ana"
       { t: 'translate', from: 'Меня зовут Ана', tiles: ['me', 'llamo', 'Ana', 'soy', 'tú'], answer: ['me', 'llamo', 'Ana'], answers: [['me', 'llamo', 'Ana'], ['soy', 'Ana']] },
       { t: 'fill', sentence: ['Soy', null, 'Rusia.'], target: 'de', opts: ['de', 'en', 'a'], hint: 'Я из России' },
+      { t: 'typed', from: 'Как тебя зовут?', answer: '¿cómo te llamas?', answers: ['¿cómo te llamas?', 'cómo te llamas', '¿como te llamas?'], hint: 'Используй кнопку ¿ внизу' },
     ],
   },
 
@@ -2733,7 +2753,7 @@ const LESSONS = [
         ['escribir', 'писать'],
         ['ver',      'видеть'],
       ]},
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['correr',  'бежать'],
         ['caminar', 'ходить'],
         ['saltar',  'прыгать'],
@@ -2947,6 +2967,7 @@ const LESSONS = [
       // Reuse «nuevo» from L22
       { t: 'translate', from: 'У меня новый телефон', tiles: ['tengo', 'un', 'teléfono', 'nuevo', 'viejo'], answer: ['tengo', 'un', 'teléfono', 'nuevo'] },
       { t: 'fill', sentence: ['Mando un', null, '.'], target: 'mensaje', opts: ['mensaje', 'árbol', 'queso'], hint: 'Я отправляю сообщение' },
+      { t: 'typed', from: 'У меня компьютер', answer: 'tengo un ordenador', answers: ['tengo un ordenador', 'tengo una computadora', 'yo tengo un ordenador'], hint: 'ordenador (Spain) / computadora (LatAm)' },
     ],
   },
 
@@ -3158,6 +3179,7 @@ const LESSONS = [
   // ── 43. Negación ──────────────────────────────────────
   {
     id: 'l43', name: 'Negación', emoji: '🚫', desc: 'No, nada, nunca, nadie',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Нет»', opts: [
         { txt: 'no',      em: '❌' },
@@ -3190,13 +3212,23 @@ const LESSONS = [
         ['ni…ni',   'ни…ни'],
       ]},
       { t: 'translate', from: 'Я ничего не хочу', tiles: ['no', 'quiero', 'nada', 'algo'], answer: ['no', 'quiero', 'nada'] },
+      // Hard pick — Spanish needs DOUBLE negation: "no ... nada" not just "nada".
+      { t: 'pick', q: '«Я ничего не вижу» — как правильно?', opts: [
+        { txt: 'no veo nada',  em: '✅' },
+        { txt: 'veo nada',     em: '❌' },
+        { txt: 'no veo',       em: '❌' },
+        { txt: 'nada veo',     em: '❌' },
+      ], correct: 0 },
       { t: 'fill', sentence: ['Hoy no como', null, '.'], target: 'nada', opts: ['nada', 'nadie', 'nunca'], hint: 'Сегодня я ничего не ем' },
+      { t: 'fill', sentence: ['No conozco a', null, 'aquí.'], target: 'nadie', opts: ['nadie', 'nada', 'nunca'], hint: 'Я никого здесь не знаю' },
+      { t: 'typed', from: 'Я никогда не курю', answer: 'no fumo nunca', answers: ['no fumo nunca', 'nunca fumo', 'yo nunca fumo', 'yo no fumo nunca'], hint: 'fumar = курить' },
     ],
   },
 
   // ── 44. Me gusta ──────────────────────────────────────
   {
     id: 'l44', name: 'Me gusta', emoji: '❤️', desc: 'El verbo gustar',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Мне нравится»', opts: [
         { txt: 'me gusta',  em: '❤️' },
@@ -3230,6 +3262,15 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Мне нравится кофе', tiles: ['me', 'gusta', 'el', 'café', 'gustan'], answer: ['me', 'gusta', 'el', 'café'] },
       { t: 'fill', sentence: ['Me', null, 'los gatos.'], target: 'gustan', opts: ['gustan', 'gusta', 'gustas'], hint: 'Мне нравятся коты (мн.ч.)' },
+      // Hard pick — singular vs plural agreement is the whole point of gustar.
+      { t: 'pick', q: '«Мне нравятся кошки» — как правильно?', opts: [
+        { txt: 'me gustan los gatos',  em: '✅' },
+        { txt: 'me gusta los gatos',   em: '❌' },
+        { txt: 'me gustan gatos',      em: '❌' },
+        { txt: 'yo gusto los gatos',   em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['¿Te', null, 'los libros?'], target: 'gustan', opts: ['gustan', 'gusta', 'gustas'], hint: 'Тебе нравятся книги? (мн.ч.)' },
+      { t: 'typed', from: 'Мне нравится пицца', answer: 'me gusta la pizza', answers: ['me gusta la pizza', 'me gusta pizza'], hint: 'Не забудь артикль «la»' },
     ],
   },
 
@@ -3283,6 +3324,7 @@ const LESSONS = [
   // ── 46. Demostrativos ─────────────────────────────────
   {
     id: 'l46', name: 'Demostrativos', emoji: '👉', desc: 'Este, ese, aquel',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Этот»', opts: [
         { txt: 'este',     em: '👉' },
@@ -3316,6 +3358,15 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Этот кот', tiles: ['este', 'gato', 'esta', 'perro'], answer: ['este', 'gato'] },
       { t: 'fill', sentence: ['Quiero', null, 'gato.'], target: 'este', opts: ['este', 'esa', 'aquellos'], hint: 'Я хочу этого кота' },
+      // Hard pick — agreement with the Spanish noun (libro = m.) trumps Russian gender.
+      { t: 'pick', q: '«Эта книга мне нравится»', opts: [
+        { txt: 'me gusta este libro',  em: '✅' },
+        { txt: 'me gusta esta libro',  em: '❌' },
+        { txt: 'me gusta esto libro',  em: '❌' },
+        { txt: 'me gusta esos libro',  em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Quiero', null, 'casa, no aquélla.'], target: 'esta', opts: ['esta', 'este', 'esa'], hint: 'Я хочу этот дом, а не тот' },
+      { t: 'typed', from: 'Это мой кот', answer: 'este es mi gato', answers: ['este es mi gato', 'éste es mi gato'], hint: 'esto / este: используем «este» с глаголом ser + муж. род' },
     ],
   },
 
@@ -3395,6 +3446,7 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Сколько стоит хлеб?', tiles: ['cuánto', 'cuesta', 'el', 'pan', 'dónde'], answer: ['cuánto', 'cuesta', 'el', 'pan'] },
       { t: 'fill', sentence: ['Este coche es muy', null, '.'], target: 'caro', opts: ['caro', 'barato', 'nuevo'], hint: 'Эта машина очень дорогая' },
+      { t: 'typed', from: 'Сколько это стоит?', answer: '¿cuánto cuesta?', answers: ['¿cuánto cuesta?', 'cuánto cuesta', 'cuanto cuesta'], hint: 'cuesta = стоит (3-е лицо)' },
     ],
   },
 
@@ -3513,7 +3565,7 @@ const LESSONS = [
         ['recto',     'прямо'],
         ['atrás',     'назад'],
       ]},
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['cerca',    'близко'],
         ['lejos',    'далеко'],
         ['esquina',  'угол'],
@@ -3528,6 +3580,7 @@ const LESSONS = [
   // Reinforces poder/querer (L21) + introduces deber, tener que + infinitive
   {
     id: 'l52', name: 'Verbos modales', emoji: '🎯', desc: 'Poder, querer, deber, tener que',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Я могу плавать»', opts: [
         { txt: 'puedo nadar',  em: '💪' },
@@ -3562,12 +3615,22 @@ const LESSONS = [
       // Reuse «agua» from L42, «beber» from L9
       { t: 'translate', from: 'Я хочу пить воду', tiles: ['quiero', 'beber', 'agua', 'puedo'], answer: ['quiero', 'beber', 'agua'] },
       { t: 'fill', sentence: ['Tengo', null, 'trabajar.'], target: 'que', opts: ['que', 'a', 'de'], hint: 'Я должен работать (tengo que…)' },
+      // Hard pick — all forms of "deber".
+      { t: 'pick', q: '«Ты должен идти»', opts: [
+        { txt: 'debes ir',   em: '👉' },
+        { txt: 'debo ir',    em: '👤' },
+        { txt: 'debe ir',    em: '👨' },
+        { txt: 'deber ir',   em: '➡️' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['No', null, 'hablar inglés.'], target: 'puedo', opts: ['puedo', 'puedes', 'puede'], hint: 'Я не могу говорить по-английски' },
+      { t: 'typed', from: 'Я должен работать', answer: 'tengo que trabajar', answers: ['tengo que trabajar', 'debo trabajar', 'yo tengo que trabajar'], hint: 'Два варианта: tener que ... / deber ...' },
     ],
   },
 
   // ── 53. Futuro: ir a + infinitivo ─────────────────────
   {
     id: 'l53', name: 'Futuro: ir a', emoji: '🗓️', desc: 'Voy a + infinitivo',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Я собираюсь есть»', opts: [
         { txt: 'voy a comer', em: '⏩' },
@@ -3601,6 +3664,15 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Завтра я буду учиться', tiles: ['mañana', 'voy', 'a', 'estudiar', 'ayer'], answer: ['mañana', 'voy', 'a', 'estudiar'] },
       { t: 'fill', sentence: ['Esta noche', null, 'a dormir temprano.'], target: 'voy', opts: ['voy', 'vas', 'va'], hint: 'Сегодня вечером я буду спать рано' },
+      // Hard pick — third-person plural conjugation of ir.
+      { t: 'pick', q: '«Они будут спать»', opts: [
+        { txt: 'van a dormir',    em: '👥' },
+        { txt: 'vamos a dormir',  em: '👫' },
+        { txt: 'vais a dormir',   em: '👉' },
+        { txt: 'voy a dormir',    em: '👤' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Mañana', null, 'a viajar a España.'], target: 'voy', opts: ['voy', 'vas', 'vamos'], hint: 'Завтра я буду путешествовать в Испанию' },
+      { t: 'typed', from: 'Я буду учить испанский', answer: 'voy a estudiar español', answers: ['voy a estudiar español', 'voy a aprender español', 'yo voy a estudiar español'], hint: 'estudiar / aprender — оба годятся' },
     ],
   },
 
@@ -3608,6 +3680,7 @@ const LESSONS = [
   // Anchors on «me llamo» from L2, then expands to daily routine
   {
     id: 'l54', name: 'Reflexivos', emoji: '🪞', desc: 'Me llamo, me levanto, me ducho',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Меня зовут»', opts: [
         { txt: 'me llamo',     em: '👤' },
@@ -3642,6 +3715,15 @@ const LESSONS = [
       // Reuse «me llamo Ana» from L2
       { t: 'translate', from: 'Меня зовут Ана', tiles: ['me', 'llamo', 'Ana', 'te'], answer: ['me', 'llamo', 'Ana'] },
       { t: 'fill', sentence: ['Por la mañana', null, 'levanto.'], target: 'me', opts: ['me', 'te', 'se'], hint: 'Утром я встаю' },
+      // Hard pick — reflexive pronoun must agree with the subject.
+      { t: 'pick', q: '«Он встаёт рано»', opts: [
+        { txt: 'se levanta temprano',  em: '👨' },
+        { txt: 'me levanta temprano',  em: '❌' },
+        { txt: 'te levantas temprano', em: '❌' },
+        { txt: 'nos levantamos temprano', em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Tú', null, 'duchas por la mañana.'], target: 'te', opts: ['te', 'me', 'se'], hint: 'Ты принимаешь душ по утрам' },
+      { t: 'typed', from: 'Я ложусь спать в десять', answer: 'me acuesto a las diez', answers: ['me acuesto a las diez', 'yo me acuesto a las diez'], hint: 'acostarse = ложиться спать' },
     ],
   },
 
@@ -3773,6 +3855,7 @@ const LESSONS = [
   // ── 58. Comparativos ──────────────────────────────────
   {
     id: 'l58', name: 'Comparativos', emoji: '⚖️', desc: 'más que, menos que, tan como',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Больше чем»', opts: [
         { txt: 'más que',    em: '➕' },
@@ -3801,12 +3884,22 @@ const LESSONS = [
       { t: 'translate', from: 'Хуан выше Педро', tiles: ['Juan', 'es', 'más', 'alto', 'que', 'Pedro'], answer: ['Juan', 'es', 'más', 'alto', 'que', 'Pedro'] },
       { t: 'translate', from: 'Я моложе тебя', tiles: ['soy', 'más', 'joven', 'que', 'tú', 'él'], answer: ['soy', 'más', 'joven', 'que', 'tú'] },
       { t: 'fill', sentence: ['Ana es', null, 'alta que María.'], target: 'más', opts: ['más', 'menos', 'tan'], hint: 'Ана выше Марии' },
+      // Hard pick — full sentence with comparative structure.
+      { t: 'pick', q: '«У него больше книг чем у меня»', opts: [
+        { txt: 'tiene más libros que yo',   em: '✅' },
+        { txt: 'tiene más libros como yo',  em: '❌' },
+        { txt: 'tiene tan libros que yo',   em: '❌' },
+        { txt: 'tiene más que libros yo',   em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Mi gato es tan grande', null, 'tu perro.'], target: 'como', opts: ['como', 'que', 'de'], hint: 'Мой кот такой же большой, как твой пёс' },
+      { t: 'typed', from: 'Я выше тебя', answer: 'soy más alto que tú', answers: ['soy más alto que tú', 'soy más alta que tú', 'yo soy más alto que tú', 'yo soy más alta que tú'], hint: 'más + прил. + que' },
     ],
   },
 
   // ── 59. Superlativos ──────────────────────────────────
   {
     id: 'l59', name: 'Superlativos', emoji: '🏆', desc: 'el más, mejor, peor',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Лучший»', opts: [
         { txt: 'mejor',  em: '🥇' },
@@ -3835,6 +3928,14 @@ const LESSONS = [
       { t: 'translate', from: 'Это самая красивая книга', tiles: ['es', 'el', 'la', 'libro', 'más', 'bonito', 'bonita'], answer: ['es', 'el', 'libro', 'más', 'bonito'] },
       { t: 'fill', sentence: ['Es el', null, 'jugador del mundo.'], target: 'mejor', opts: ['mejor', 'peor', 'más'], hint: 'Лучший игрок мира' },
       { t: 'fill', sentence: ['Hoy es el día', null, 'frío del año.'], target: 'más', opts: ['más', 'menos', 'mejor'], hint: 'Самый холодный день года' },
+      // Hard pick — "mejor" is itself the comparative/superlative, so "más mejor" is wrong.
+      { t: 'pick', q: '«Это лучший день»', opts: [
+        { txt: 'es el mejor día',       em: '✅' },
+        { txt: 'es el más mejor día',   em: '❌' },
+        { txt: 'es mejor día',          em: '❌' },
+        { txt: 'es el más bueno día',   em: '❌' },
+      ], correct: 0 },
+      { t: 'typed', from: 'Это самый большой дом', answer: 'es la casa más grande', answers: ['es la casa más grande', 'esta es la casa más grande', 'es la mayor casa'], hint: 'el/la más + прил.' },
     ],
   },
 
@@ -4005,6 +4106,7 @@ const LESSONS = [
   // ── 64. Imperfecto ────────────────────────────────────
   {
     id: 'l64', name: 'Imperfecto', emoji: '⏳', desc: 'Прошедшее (длительное) время',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Я говорил»', opts: [
         { txt: 'hablaba',  em: '🗣️' },
@@ -4038,6 +4140,15 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Раньше я жил в Мадриде', tiles: ['antes', 'vivía', 'en', 'Madrid', 'vivo'], answer: ['antes', 'vivía', 'en', 'Madrid'] },
       { t: 'fill', sentence: ['Cuando era niño,', null, 'mucho.'], target: 'jugaba', opts: ['jugaba', 'juego', 'jugar'], hint: 'Когда я был ребёнком, я много играл' },
+      // Hard pick — all forms of ser; only imperfecto fits the "was-being" context.
+      { t: 'pick', q: '«Когда я был ребёнком...»', opts: [
+        { txt: 'cuando era niño',  em: '⏪' },
+        { txt: 'cuando soy niño',  em: '⏺️' },
+        { txt: 'cuando seré niño', em: '⏩' },
+        { txt: 'cuando fui niño',  em: '⏪' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['De pequeño, yo', null, 'al parque cada día.'], target: 'iba', opts: ['iba', 'voy', 'fui'], hint: 'В детстве я ходил в парк каждый день' },
+      { t: 'typed', from: 'Раньше я жил в Москве', answer: 'antes vivía en moscú', answers: ['antes vivía en moscú', 'antes yo vivía en moscú', 'vivía en moscú antes', 'yo vivía en moscú'], hint: 'imperfecto: vivía' },
     ],
   },
 
@@ -4116,7 +4227,7 @@ const LESSONS = [
         ['oveja',   'овца'],
         ['cerdo',   'свинья'],
       ]},
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['conejo',  'кролик'],
         ['gallina', 'курица'],
         ['pato',    'утка'],
@@ -4124,6 +4235,7 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'У меня есть лошадь', tiles: ['tengo', 'un', 'una', 'caballo', 'vaca'], answer: ['tengo', 'un', 'caballo'] },
       { t: 'fill', sentence: ['La', null, 'da leche.'], target: 'vaca', opts: ['vaca', 'oveja', 'gallina'], hint: 'Корова даёт молоко' },
+      { t: 'typed', from: 'У меня есть корова', answer: 'tengo una vaca', answers: ['tengo una vaca', 'yo tengo una vaca'], hint: 'vaca — женский род → una' },
     ],
   },
 
@@ -4294,6 +4406,7 @@ const LESSONS = [
   // ── 71. Verbos irregulares ────────────────────────────
   {
     id: 'l71', name: 'Verbos irreg.', emoji: '🔀', desc: 'Tener, venir, hacer, decir',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«У меня есть» (1 л. ед.ч.)', opts: [
         { txt: 'tengo',  em: '🙋' },
@@ -4327,12 +4440,22 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'У меня есть собака', tiles: ['tengo', 'un', 'una', 'perro', 'gato'], answer: ['tengo', 'un', 'perro'] },
       { t: 'fill', sentence: ['Yo', null, 'la verdad.'], target: 'digo', opts: ['digo', 'dice', 'decir'], hint: 'Я говорю правду' },
+      // Hard pick — all forms of venir.
+      { t: 'pick', q: '«Ты приходишь»', opts: [
+        { txt: 'vienes',  em: '👉' },
+        { txt: 'vengo',   em: '👤' },
+        { txt: 'viene',   em: '👨' },
+        { txt: 'venir',   em: '➡️' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Yo', null, 'la verdad siempre.'], target: 'digo', opts: ['digo', 'dice', 'decir'], hint: 'Я всегда говорю правду' },
+      { t: 'typed', from: 'Я выхожу из дома', answer: 'salgo de casa', answers: ['salgo de casa', 'yo salgo de casa', 'salgo de la casa'], hint: 'salir = выходить' },
     ],
   },
 
   // ── 72. Condicional ───────────────────────────────────
   {
     id: 'l72', name: 'Condicional', emoji: '🤔', desc: 'Yo haría, gustaría, podría',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Я бы хотел»', opts: [
         { txt: 'me gusta',     em: '👍' },
@@ -4366,12 +4489,22 @@ const LESSONS = [
       ]},
       { t: 'translate', from: 'Я бы хотел кофе', tiles: ['me', 'gustaría', 'un', 'café', 'gusta'], answer: ['me', 'gustaría', 'un', 'café'] },
       { t: 'fill', sentence: ['¿', null, 'ayudarme, por favor?'], target: 'Podría', opts: ['Podría', 'Puedo', 'Podía'], hint: 'Не мог бы ты мне помочь?' },
+      // Hard pick — all tenses of ir; only the conditional fits "я бы пошёл".
+      { t: 'pick', q: '«Я бы пошёл с тобой»', opts: [
+        { txt: 'iría contigo',  em: '🤔' },
+        { txt: 'iba contigo',   em: '⏪' },
+        { txt: 'iré contigo',   em: '⏩' },
+        { txt: 'voy contigo',   em: '⏺️' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['¿', null, 'ayudarme, por favor?'], target: 'Podrías', opts: ['Podrías', 'Puedes', 'Podías'], hint: 'Не мог бы ты мне помочь? (ты)' },
+      { t: 'typed', from: 'Я бы хотел кофе', answer: 'me gustaría un café', answers: ['me gustaría un café', 'querría un café', 'me gustaría café', 'yo querría un café'], hint: 'me gustaría / querría — оба корректны' },
     ],
   },
 
   // ── 73. Por vs Para ───────────────────────────────────
   {
     id: 'l73', name: 'Por vs Para', emoji: '🔁', desc: 'Cuándo usar por o para',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Спасибо за всё» — por или para?', opts: [
         { txt: 'por',  em: '⏪' },
@@ -4394,12 +4527,22 @@ const LESSONS = [
       { t: 'translate', from: 'Это для моей мамы', tiles: ['es', 'para', 'por', 'mi', 'madre'], answer: ['es', 'para', 'mi', 'madre'] },
       { t: 'fill', sentence: ['Gracias', null, 'el regalo.'], target: 'por', opts: ['por', 'para', 'a'], hint: 'Спасибо за подарок' },
       { t: 'fill', sentence: ['Estudio español', null, 'viajar.'], target: 'para', opts: ['para', 'por', 'con'], hint: 'Я учу испанский, чтобы путешествовать' },
+      // Hard pick — "para" = recipient/destination, all distractors are wrong prepositions.
+      { t: 'pick', q: '«Этот подарок для тебя»', opts: [
+        { txt: 'este regalo es para ti',  em: '✅' },
+        { txt: 'este regalo es por ti',   em: '❌' },
+        { txt: 'este regalo es a ti',     em: '❌' },
+        { txt: 'este regalo es con ti',   em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Estudio mucho', null, 'aprobar el examen.'], target: 'para', opts: ['para', 'por', 'a'], hint: 'Цель / namerenie → para' },
+      { t: 'typed', from: 'Спасибо за подарок', answer: 'gracias por el regalo', answers: ['gracias por el regalo', 'muchas gracias por el regalo'], hint: 'gracias por (причина)' },
     ],
   },
 
   // ── 74. Subjuntivo básico ─────────────────────────────
   {
     id: 'l74', name: 'Subjuntivo', emoji: '🌠', desc: 'Espero que, ojalá, quiero que',
+    hearts: 4,
     exercises: [
       { t: 'pick', q: '«Хоть бы...» / «Дай Бог»', opts: [
         { txt: 'quizás',  em: '🤷' },
@@ -4428,13 +4571,25 @@ const LESSONS = [
       { t: 'translate', from: 'Я надеюсь, что ты придёшь', tiles: ['espero', 'que', 'vengas', 'vienes', 'tú'], answer: ['espero', 'que', 'vengas'] },
       { t: 'fill', sentence: ['Ojalá', null, 'sol mañana.'], target: 'haga', opts: ['haga', 'hace', 'hizo'], hint: 'Хоть бы завтра было солнце' },
       { t: 'fill', sentence: ['Quiero que', null, 'feliz.'], target: 'seas', opts: ['seas', 'eres', 'eras'], hint: 'Я хочу, чтобы ты был счастлив' },
+      // Hard pick — "dudar que" triggers subjuntivo; all other tenses are wrong.
+      { t: 'pick', q: '«Сомневаюсь, что он придёт»', opts: [
+        { txt: 'dudo que venga',    em: '✅' },
+        { txt: 'dudo que viene',    em: '❌' },
+        { txt: 'dudo que vendrá',   em: '❌' },
+        { txt: 'dudo que vino',     em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Es importante que', null, 'atento.'], target: 'estés', opts: ['estés', 'estás', 'estaba'], hint: 'Важно, чтобы ты был внимателен' },
+      { t: 'typed', from: 'Надеюсь, что ты счастлив', answer: 'espero que seas feliz', answers: ['espero que seas feliz', 'espero que estés feliz', 'yo espero que seas feliz'], hint: 'espero que + subjuntivo' },
     ],
   },
 
   // ── 75. Repaso Final (revisión de L71-L74) ────────────
-  // REVIEW LESSON: mixes Irregulares, Condicional, Por/Para, Subjuntivo
+  // REVIEW LESSON / MILESTONE: mixes Irregulares, Condicional, Por/Para, Subjuntivo.
+  // 15 exercises and only 2 hearts — this is a real "graduation" test for the
+  // hardest grammar block in the curriculum.
   {
     id: 'l75', name: 'Repaso Final', emoji: '🎓', desc: 'Repasa lecciones 71-74',
+    hearts: 2,
     exercises: [
       // From L71
       { t: 'pick', q: '«Я делаю»', opts: [
@@ -4457,6 +4612,27 @@ const LESSONS = [
         { txt: 'porque',  em: '➡️' },
         { txt: 'también', em: '➕' },
       ], correct: 1 },
+      // Hard pick — all forms of decir.
+      { t: 'pick', q: '«Я говорю» (decir)', opts: [
+        { txt: 'digo',   em: '👤' },
+        { txt: 'dices',  em: '👉' },
+        { txt: 'dice',   em: '👨' },
+        { txt: 'decir',  em: '➡️' },
+      ], correct: 0 },
+      // Hard pick — subjuntivo trigger (querer que + …).
+      { t: 'pick', q: '«Хочу, чтобы ты пришёл»', opts: [
+        { txt: 'quiero que vengas',  em: '✅' },
+        { txt: 'quiero que vienes',  em: '❌' },
+        { txt: 'quiero que vendrás', em: '❌' },
+        { txt: 'quiero venir',       em: '❌' },
+      ], correct: 0 },
+      // Hard pick — por vs para test.
+      { t: 'pick', q: '«Я учу испанский, чтобы путешествовать»', opts: [
+        { txt: 'estudio español para viajar',  em: '✅' },
+        { txt: 'estudio español por viajar',   em: '❌' },
+        { txt: 'estudio español a viajar',     em: '❌' },
+        { txt: 'estudio español de viajar',    em: '❌' },
+      ], correct: 0 },
       // Mix L71 + L72
       { t: 'match', pairs: [
         ['tengo',     'у меня есть'],
@@ -4465,16 +4641,31 @@ const LESSONS = [
         ['podría',    'я бы смог'],
       ]},
       // Mix L73 + L74
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['por',         'за / через'],
         ['para',        'для / чтобы'],
         ['ojalá',       'дай бог'],
         ['espero que',  'надеюсь, что'],
       ]},
+      // Imperfecto / past forms from related lessons
+      { t: 'match', pairs: [
+        ['hablaba',  'я говорил'],
+        ['comía',    'я ел'],
+        ['vivía',    'я жил'],
+        ['era',      'я был'],
+      ]},
       // From L72
       { t: 'translate', from: 'Я бы хотел кофе', tiles: ['me', 'gustaría', 'un', 'café', 'gusta'], answer: ['me', 'gustaría', 'un', 'café'] },
+      // From L74
+      { t: 'translate', from: 'Я надеюсь, что ты придёшь', tiles: ['espero', 'que', 'vengas', 'vienes', 'tú'], answer: ['espero', 'que', 'vengas'] },
       // From L73
       { t: 'fill', sentence: ['Gracias', null, 'todo.'], target: 'por', opts: ['por', 'para', 'a'], hint: 'Спасибо за всё' },
+      // From L74 (subjuntivo)
+      { t: 'fill', sentence: ['Quiero que', null, 'feliz.'], target: 'seas', opts: ['seas', 'eres', 'eras'], hint: 'Я хочу, чтобы ты был счастлив' },
+      // From L72 (condicional)
+      { t: 'fill', sentence: ['¿', null, 'ayudarme?'], target: 'Podrías', opts: ['Podrías', 'Puedes', 'Podías'], hint: 'Не мог бы ты мне помочь?' },
+      // Production: typed combining condicional + por
+      { t: 'typed', from: 'Я бы хотел кофе, пожалуйста', answer: 'me gustaría un café, por favor', answers: ['me gustaría un café por favor', 'me gustaría un café, por favor', 'querría un café por favor'], hint: 'me gustaría / querría + por favor' },
     ],
   },
 
@@ -4702,7 +4893,7 @@ const LESSONS = [
         ['saltar',  'прыгать'],
         ['nadar',   'плавать'],
       ]},
-      { t: 'match', pairs: [
+      { t: 'match', swap: true, pairs: [
         ['subir', 'подниматься'],
         ['bajar', 'спускаться'],
         ['volar', 'летать'],
@@ -5416,41 +5607,103 @@ const LESSONS = [
   },
 
   // ── 100. Repaso Maestro (revisión final de L76-L99) ───
+  // FINAL MASTERY TEST — 18 exercises drawn from across the last 24 lessons.
+  // Hearts dropped to 2 so it actually feels like graduation, not another tile-rearrangement.
   {
     id: 'l100', name: 'Repaso Maestro', emoji: '🏆', desc: 'Repaso final (76-99)',
+    hearts: 2,
     exercises: [
+      // — Greetings / etiquette (L76)
       { t: 'pick', q: '«Очень приятно»', opts: [
         { txt: 'mucho gusto',  em: '🤝' },
         { txt: 'de nada',      em: '🙏' },
         { txt: 'por favor',    em: '🙏' },
         { txt: 'adiós',        em: '👋' },
       ], correct: 0 },
+      // — Verbs of motion (L81)
       { t: 'pick', q: '«Бежать»', opts: [
         { txt: 'caminar',  em: '🚶' },
         { txt: 'correr',   em: '🏃' },
         { txt: 'saltar',   em: '🤾' },
         { txt: 'nadar',    em: '🏊' },
       ], correct: 1 },
+      // — Body II (L97)
       { t: 'pick', q: '«Сердце»', opts: [
         { txt: 'estómago', em: '🍽️' },
         { txt: 'espalda',  em: '🔙' },
         { txt: 'corazón',  em: '❤️' },
         { txt: 'hombro',   em: '💪' },
       ], correct: 2 },
+      // — Office (L77) — no emoji crutch on prompt
+      { t: 'pick', q: '«Офис»', opts: [
+        { txt: 'oficina',   em: '🏢' },
+        { txt: 'escuela',   em: '🏫' },
+        { txt: 'tienda',    em: '🏪' },
+        { txt: 'farmacia',  em: '💊' },
+      ], correct: 0 },
+      // — Beach (L82)
+      { t: 'pick', q: '«Песок»', opts: [
+        { txt: 'agua',  em: '💧' },
+        { txt: 'arena', em: '🏖️' },
+        { txt: 'mar',   em: '🌊' },
+        { txt: 'sol',   em: '☀️' },
+      ], correct: 1 },
+      // — Cooking (L86)
+      { t: 'pick', q: '«Жарить»', opts: [
+        { txt: 'hervir', em: '♨️' },
+        { txt: 'cortar', em: '🔪' },
+        { txt: 'freír',  em: '🍳' },
+        { txt: 'mezclar',em: '🥣' },
+      ], correct: 2 },
+      // — Emergencies (L99)
+      { t: 'pick', q: '«Скорая помощь»', opts: [
+        { txt: 'ambulancia', em: '🚑' },
+        { txt: 'policía',    em: '👮' },
+        { txt: 'bombero',    em: '🧑‍🚒' },
+        { txt: 'farmacia',   em: '💊' },
+      ], correct: 0 },
+      // — Office/beach/sports/music mix
       { t: 'match', pairs: [
         ['oficina',   'офис'],
         ['playa',     'пляж'],
         ['fútbol',    'футбол'],
         ['guitarra',  'гитара'],
       ]},
-      { t: 'match', pairs: [
+      // — Animals/body/health mix (swapped: RU on left)
+      { t: 'match', swap: true, pairs: [
         ['delfín',     'дельфин'],
         ['mariposa',   'бабочка'],
         ['tranquilo',  'спокойный'],
         ['pastilla',   'таблетка'],
       ]},
+      // — Emergencies/pharmacy mix
+      { t: 'match', pairs: [
+        ['ayuda',     'помощь'],
+        ['fuego',     'огонь'],
+        ['policía',   'полиция'],
+        ['hospital',  'больница'],
+      ]},
+      // — Bar/desserts mix
+      { t: 'match', swap: true, pairs: [
+        ['café',      'кофе'],
+        ['cerveza',   'пиво'],
+        ['tarta',     'торт'],
+        ['helado',    'мороженое'],
+      ]},
+      // — Music
       { t: 'translate', from: 'Я играю на гитаре', tiles: ['toco', 'la', 'el', 'guitarra'], answer: ['toco', 'la', 'guitarra'] },
+      // — Sports
+      { t: 'translate', from: 'Мне нравится футбол', tiles: ['me', 'gusta', 'gustan', 'el', 'fútbol'], answer: ['me', 'gusta', 'el', 'fútbol'] },
+      // — Beach
+      { t: 'translate', from: 'Я хочу пойти на пляж', tiles: ['quiero', 'ir', 'a', 'la', 'playa', 'el'], answer: ['quiero', 'ir', 'a', 'la', 'playa'] },
+      // — Emergencies
       { t: 'fill', sentence: ['¡Cuidado, hay', null, '!'], target: 'fuego', opts: ['fuego', 'libro', 'sol'], hint: 'Осторожно, огонь!' },
+      // — Cooking — recall a specific verb
+      { t: 'fill', sentence: ['Voy a', null, 'la cena.'], target: 'cocinar', opts: ['cocinar', 'comer', 'limpiar'], hint: 'Я буду готовить ужин' },
+      // — Production: typed
+      { t: 'typed', from: 'Помоги мне, пожалуйста', answer: 'ayúdame por favor', answers: ['ayúdame por favor', 'ayúdame, por favor', 'ayudame por favor'], hint: 'imperativo: ayúdame' },
+      // — Production: typed (mastery)
+      { t: 'typed', from: 'Мне нравится играть на гитаре', answer: 'me gusta tocar la guitarra', answers: ['me gusta tocar la guitarra', 'me gusta tocar guitarra'], hint: 'gustar + инфинитив' },
     ],
   },
 ];
@@ -5461,6 +5714,7 @@ const lessonState = {
   exercises:   [],   // copy of current lesson exercises
   current:     0,    // index of current exercise
   hearts:      3,
+  maxHearts:   3,    // capacity (depends on lesson)
   wrong:       0,    // mistakes counter (for accuracy)
   pendingOk:   false,// last check was correct
   // Per-exercise inputs:
@@ -5470,7 +5724,22 @@ const lessonState = {
   matchPicks:  [],      // 'match' — currently selected tile { side, idx }
   matchPairs:  0,       // count solved
   fillChoice:  null,    // 'fill'
+  typedAnswer: '',      // 'typed'
 };
+
+// Normalize a Spanish answer for typed-exercise comparison:
+// lowercase, strip diacritics, collapse whitespace, strip terminal punctuation.
+function normalizeAnswer(s) {
+  if (s == null) return '';
+  // Strip combining diacritics (U+0300–U+036F) so "manana" matches "mañana".
+  return String(s)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[¿?¡!.,;]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 function getLessonProgress() {
   if (!state.user) return {};
@@ -5669,10 +5938,12 @@ function startLesson(lessonId) {
   const lesson = LESSONS.find(l => l.id === lessonId);
   if (!lesson) return;
   haptic.medium();
+  const hearts = (typeof lesson.hearts === 'number' && lesson.hearts > 0) ? lesson.hearts : 3;
   lessonState.lessonId = lessonId;
   lessonState.exercises = shuffleExercises(lesson.exercises);
   lessonState.current = 0;
-  lessonState.hearts = 3;
+  lessonState.hearts = hearts;
+  lessonState.maxHearts = hearts;
   lessonState.wrong = 0;
   lessonState.pendingOk = false;
   showScreen('lesson');
@@ -5696,7 +5967,8 @@ function shuffleExercises(list) {
 function renderHearts() {
   const el = $('lesson-hearts');
   el.innerHTML = '';
-  for (let i = 0; i < 3; i++) {
+  const cap = lessonState.maxHearts || 3;
+  for (let i = 0; i < cap; i++) {
     const h = document.createElement('span');
     h.className = 'heart' + (i >= lessonState.hearts ? ' lost' : '');
     h.textContent = '❤️';
@@ -5732,14 +6004,16 @@ function renderCurrentExercise() {
   lessonState.matchPicks = [];
   lessonState.matchPairs = 0;
   lessonState.fillChoice = null;
+  lessonState.typedAnswer = '';
 
   const root = $('lesson-exercise');
   root.innerHTML = '';
 
-  if (ex.t === 'pick')        renderPickExercise(root, ex);
+  if (ex.t === 'pick')           renderPickExercise(root, ex);
   else if (ex.t === 'translate') renderTranslateExercise(root, ex);
   else if (ex.t === 'match')     renderMatchExercise(root, ex);
   else if (ex.t === 'fill')      renderFillExercise(root, ex);
+  else if (ex.t === 'typed')     renderTypedExercise(root, ex);
 }
 
 // ── Exercise: pick (multiple choice) ─────────────────────
@@ -5860,9 +6134,10 @@ function renderMatchExercise(root, ex) {
   grid.className = 'lex-match-grid';
   root.appendChild(grid);
 
-  // Build two columns of tiles
-  const left  = ex.pairs.map((p, i) => ({ side: 'L', idx: i, text: p[0] }));
-  const right = ex.pairs.map((p, i) => ({ side: 'R', idx: i, text: p[1] }));
+  // Build two columns of tiles. When ex.swap is set, RU appears on the left
+  // and ES on the right — an "inverse" pairing for visual variety.
+  const left  = ex.pairs.map((p, i) => ({ side: 'L', idx: i, text: ex.swap ? p[1] : p[0] }));
+  const right = ex.pairs.map((p, i) => ({ side: 'R', idx: i, text: ex.swap ? p[0] : p[1] }));
   shuffleArray(left);
   shuffleArray(right);
 
@@ -6005,6 +6280,78 @@ function drawFillSentence(el, ex) {
   });
 }
 
+// ── Exercise: typed (no tiles — user types Spanish) ──────
+function renderTypedExercise(root, ex) {
+  const inst = document.createElement('p');
+  inst.className = 'lex-instruction';
+  inst.textContent = 'Escribe en español';
+  root.appendChild(inst);
+
+  const bubble = document.createElement('div');
+  bubble.className = 'lex-bubble';
+  bubble.innerHTML = `
+    <div class="lex-bubble-avatar is-entering">${renderLexBubbleParticles()}${renderMiniAxolotlSVG()}</div>
+    <div class="lex-bubble-text">${ex.from}</div>
+  `;
+  root.appendChild(bubble);
+  setTimeout(() => bubble.querySelector('.lex-bubble-avatar')?.classList.remove('is-entering'), 600);
+
+  if (ex.hint) {
+    const hint = document.createElement('div');
+    hint.className = 'lex-typed-hint';
+    hint.textContent = ex.hint;
+    root.appendChild(hint);
+  }
+
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.className = 'lex-typed-input';
+  input.id = 'lex-typed-input';
+  input.autocomplete = 'off';
+  input.autocapitalize = 'none';
+  input.spellcheck = false;
+  input.placeholder = 'Escribe aquí…';
+  input.addEventListener('input', () => {
+    lessonState.typedAnswer = input.value;
+    $('lesson-check-btn').disabled = input.value.trim().length === 0;
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && input.value.trim()) {
+      e.preventDefault();
+      const btn = $('lesson-check-btn');
+      if (btn.dataset.mode === 'continue') onContinuePressed();
+      else onCheckPressed();
+    }
+  });
+  root.appendChild(input);
+
+  // Spanish-keyboard helper: tap to insert an accented char at the caret.
+  const accents = document.createElement('div');
+  accents.className = 'lex-accent-row';
+  ['á','é','í','ó','ú','ñ','ü','¿','¡'].forEach(ch => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'lex-accent-btn';
+    b.textContent = ch;
+    b.addEventListener('mousedown', (e) => e.preventDefault()); // keep input focus
+    b.addEventListener('click', () => {
+      haptic.light();
+      const start = input.selectionStart ?? input.value.length;
+      const end   = input.selectionEnd   ?? input.value.length;
+      input.value = input.value.slice(0, start) + ch + input.value.slice(end);
+      const caret = start + ch.length;
+      lessonState.typedAnswer = input.value;
+      $('lesson-check-btn').disabled = input.value.trim().length === 0;
+      input.focus();
+      try { input.setSelectionRange(caret, caret); } catch {}
+    });
+    accents.appendChild(b);
+  });
+  root.appendChild(accents);
+
+  setTimeout(() => input.focus(), 120);
+}
+
 // ── Check / continue ─────────────────────────────────────
 // Single button morphs between "Verificar" (check answer) and "Continuar" (advance).
 $('lesson-check-btn')?.addEventListener('click', () => {
@@ -6038,6 +6385,12 @@ function onCheckPressed() {
     correct = validTargets.includes(lessonState.fillChoice);
     userAnswerText = lessonState.fillChoice || '';
     correctText = ex.target || validTargets[0];
+  } else if (ex.t === 'typed') {
+    const validAnswers = ex.answers || [ex.answer];
+    const userNorm = normalizeAnswer(lessonState.typedAnswer);
+    correct = userNorm.length > 0 && validAnswers.some(a => normalizeAnswer(a) === userNorm);
+    userAnswerText = lessonState.typedAnswer || '';
+    correctText = ex.answer || validAnswers[0];
   }
 
   showFeedback(correct, correctText);

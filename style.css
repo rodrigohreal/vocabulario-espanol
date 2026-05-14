@@ -3120,3 +3120,417 @@ html, body {
   60%  { opacity: 0.9; transform: translate(-50%, -50%) rotate(var(--bolt-rot, 0deg)) scaleY(1); }
   100% { opacity: 0;   transform: translate(-50%, -50%) rotate(var(--bolt-rot, 0deg)) scaleY(0.4); }
 }
+
+/* ════════════════════════════════════════════════════════════
+   New mega-combo moves — extra body animations cycled by the
+   MEGA_MOVES roster in app.js. Each one feels distinct so back-
+   to-back combos never repeat the same dance.
+════════════════════════════════════════════════════════════ */
+
+/* Tornado — fast asymmetric spin with horizontal stretch */
+@keyframes mini-tornado {
+  0%   { transform: rotate(0)        scaleX(1) scaleY(1); }
+  20%  { transform: rotate(-220deg)  scaleX(0.75) scaleY(1.15); }
+  40%  { transform: rotate(-460deg)  scaleX(1.18) scaleY(0.82); }
+  60%  { transform: rotate(-680deg)  scaleX(0.78) scaleY(1.12); }
+  80%  { transform: rotate(-840deg)  scaleX(1.10) scaleY(0.92); }
+  100% { transform: rotate(-900deg)  scaleX(1) scaleY(1); }
+}
+.mini-axolotl.is-tornado { animation: mini-tornado 1.15s cubic-bezier(.5,0,.2,1); }
+
+/* Disco — left-right shimmy with hip pivot */
+@keyframes mini-disco {
+  0%, 100% { transform: rotate(0) translateX(0); }
+  10%  { transform: rotate(-9deg) translateX(-6px) scale(1.04); }
+  25%  { transform: rotate(8deg)  translateX(6px)  scale(1.04); }
+  40%  { transform: rotate(-7deg) translateX(-5px) scale(1.05); }
+  55%  { transform: rotate(7deg)  translateX(5px)  scale(1.05); }
+  70%  { transform: rotate(-5deg) translateX(-3px) scale(1.03); }
+  85%  { transform: rotate(5deg)  translateX(3px)  scale(1.03); }
+}
+.mini-axolotl.is-disco { animation: mini-disco 1.15s ease-in-out; }
+
+/* Jump-spin — leap into the air, full spin midair, land */
+@keyframes mini-jump-spin {
+  0%   { transform: translateY(0)   rotate(0)     scale(1, 1); }
+  18%  { transform: translateY(4px) rotate(0)     scale(1.10, 0.85); }
+  35%  { transform: translateY(-30px) rotate(-180deg) scale(0.95, 1.08); }
+  60%  { transform: translateY(-22px) rotate(-360deg) scale(1, 1); }
+  82%  { transform: translateY(0)   rotate(-360deg) scale(1.10, 0.90); }
+  100% { transform: translateY(0)   rotate(-360deg) scale(1, 1); }
+}
+.mini-axolotl.is-jump-spin { animation: mini-jump-spin 1.1s cubic-bezier(.34,1.56,.64,1); }
+
+/* Shimmy — rapid horizontal wiggle, no rotation */
+@keyframes mini-shimmy {
+  0%, 100% { transform: translateX(0)  scale(1); }
+  10%  { transform: translateX(-7px) scale(1.02); }
+  20%  { transform: translateX(7px)  scale(1.02); }
+  30%  { transform: translateX(-6px) scale(1.04); }
+  40%  { transform: translateX(6px)  scale(1.04); }
+  50%  { transform: translateX(-5px) scale(1.05); }
+  60%  { transform: translateX(5px)  scale(1.05); }
+  70%  { transform: translateX(-4px) scale(1.04); }
+  80%  { transform: translateX(4px)  scale(1.02); }
+  90%  { transform: translateX(-2px) scale(1.01); }
+}
+.mini-axolotl.is-shimmy { animation: mini-shimmy 1s linear; }
+
+/* Cartwheel — sideways rolling motion */
+@keyframes mini-cartwheel {
+  0%   { transform: translateX(0)   rotate(0)     scale(1); }
+  25%  { transform: translateX(20px) rotate(180deg) scale(0.92); }
+  50%  { transform: translateX(0)   rotate(360deg) scale(1); }
+  75%  { transform: translateX(-20px) rotate(540deg) scale(0.92); }
+  100% { transform: translateX(0)   rotate(720deg) scale(1); }
+}
+.mini-axolotl.is-cartwheel { animation: mini-cartwheel 1.15s cubic-bezier(.4,0,.2,1); }
+
+/* Big wave — a smooth sinusoidal swim wave */
+@keyframes mini-bigwave {
+  0%, 100% { transform: translate(0, 0)     rotate(0)     skewX(0); }
+  20%      { transform: translate(8px, -6px) rotate(8deg)  skewX(-6deg); }
+  40%      { transform: translate(-6px, -2px) rotate(-7deg) skewX(5deg); }
+  60%      { transform: translate(6px, -4px) rotate(6deg)  skewX(-4deg); }
+  80%      { transform: translate(-4px, 2px) rotate(-4deg) skewX(3deg); }
+}
+.mini-axolotl.is-bigwave { animation: mini-bigwave 1.2s cubic-bezier(.36,1.5,.64,1); }
+
+/* Pop-pop — quickly disappear and reappear with a bounce */
+@keyframes mini-popup {
+  0%   { transform: scale(1); opacity: 1; }
+  18%  { transform: scale(0.4) translateY(-6px); opacity: 0.2; }
+  30%  { transform: scale(1.18); opacity: 1; }
+  50%  { transform: scale(0.5) translateY(-4px); opacity: 0.25; }
+  62%  { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.mini-axolotl.is-popup { animation: mini-popup 1s ease-out; }
+
+/* ════════════════════════════════════════════════════════════
+   Tiered mega frames — escalating ambience for streak 5/7+.
+════════════════════════════════════════════════════════════ */
+
+/* Epic — adds a wider warm/cool double aura */
+.lex-bubble-avatar.is-epic,
+.lesson-tutor-inline.is-epic { overflow: visible; }
+.lex-bubble-avatar.is-epic::after,
+.lesson-tutor-inline.is-epic::after {
+  content: '';
+  position: absolute;
+  inset: -22px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  background: conic-gradient(from 0deg,
+    rgba(255, 220, 120, 0.55),
+    rgba(255, 130, 200, 0.45),
+    rgba(140, 220, 255, 0.5),
+    rgba(180, 255, 160, 0.45),
+    rgba(255, 220, 120, 0.55));
+  filter: blur(14px);
+  animation: lex-epic-spin 1.5s linear;
+  mix-blend-mode: screen;
+}
+@keyframes lex-epic-spin {
+  0%   { transform: rotate(0deg)   scale(0.7); opacity: 0; }
+  20%  { opacity: 1; }
+  60%  { transform: rotate(360deg) scale(1.25); opacity: 1; }
+  100% { transform: rotate(540deg) scale(1.4);  opacity: 0; }
+}
+
+/* Legendary — adds a pulsing golden ring + brighter glow */
+.lex-bubble-avatar.is-legendary,
+.lesson-tutor-inline.is-legendary {
+  filter: drop-shadow(0 0 18px rgba(255, 220, 120, 0.85))
+          drop-shadow(0 0 36px rgba(255, 160, 230, 0.55));
+  animation: lex-legendary-pulse 1.7s ease-in-out !important;
+}
+@keyframes lex-legendary-pulse {
+  0%   { transform: scale(1)    rotate(0deg); }
+  20%  { transform: scale(1.18) rotate(-6deg); }
+  40%  { transform: scale(1.32) rotate(4deg); }
+  60%  { transform: scale(1.22) rotate(-3deg); }
+  80%  { transform: scale(1.28) rotate(2deg); }
+  100% { transform: scale(1)    rotate(0deg); }
+}
+
+/* ════════════════════════════════════════════════════════════
+   New combo FX spawns
+════════════════════════════════════════════════════════════ */
+
+/* Firework rocket trail */
+.lex-firework-trail {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff8d0, #ffd86b 60%, transparent 80%);
+  box-shadow: 0 0 10px rgba(255, 220, 120, 0.9);
+  pointer-events: none;
+  z-index: 9;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: lex-firework-trail 0.55s ease-out forwards;
+}
+@keyframes lex-firework-trail {
+  0%   { opacity: 0; transform: translate(-50%, -50%); }
+  15%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--fx, 0px)),
+                                          calc(-50% + var(--fy, -60px))); }
+}
+
+/* Firework explosion spark */
+.lex-firework-spark {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: lex-firework-spark 0.9s cubic-bezier(.25,.6,.4,1) forwards;
+}
+@keyframes lex-firework-spark {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.4); }
+  15%  { opacity: 1; }
+  100% { opacity: 0;
+         transform: translate(calc(-50% + var(--sdx, 30px)),
+                              calc(-50% + var(--sdy, 30px))) scale(0.6); }
+}
+
+/* Galaxy swirl ring (legendary) */
+.lex-galaxy-swirl {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(from 0deg,
+    rgba(160, 100, 255, 0.55),
+    rgba(255, 130, 200, 0.45),
+    rgba(80, 180, 255, 0.55),
+    rgba(255, 220, 120, 0.45),
+    rgba(160, 100, 255, 0.55));
+  filter: blur(12px);
+  mix-blend-mode: screen;
+  animation: lex-galaxy-swirl 1.45s ease-out forwards;
+}
+@keyframes lex-galaxy-swirl {
+  0%   { opacity: 0;    transform: translate(-50%, -50%) rotate(0deg)   scale(0.4); }
+  30%  { opacity: 0.85; }
+  100% { opacity: 0;    transform: translate(-50%, -50%) rotate(360deg) scale(1.4); }
+}
+
+/* Halo ring (legendary) */
+.lex-halo-ring {
+  position: absolute;
+  width: 56px;
+  height: 14px;
+  border: 3px solid #ffd86b;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 12;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 14px rgba(255, 220, 120, 0.95),
+              inset 0 0 8px rgba(255, 240, 180, 0.6);
+  animation: lex-halo-ring 1.55s ease-out forwards;
+}
+@keyframes lex-halo-ring {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  20%  { opacity: 1; transform: translate(-50%, -54px) scale(1); }
+  60%  { opacity: 1; transform: translate(-50%, -58px) scale(1.05); }
+  100% { opacity: 0; transform: translate(-50%, -68px) scale(0.95); }
+}
+
+/* ════════════════════════════════════════════════════════════
+   Animated skin patterns — pick once and the colour shifts
+   forever. Driven by .has-galaxy / .has-sunset / .has-rainbow
+   / .has-aurora on the SVG (set by applyPetVisuals).
+════════════════════════════════════════════════════════════ */
+@keyframes skin-rainbow-shift {
+  0%   { filter: hue-rotate(0deg)   saturate(1.0); }
+  100% { filter: hue-rotate(360deg) saturate(1.2); }
+}
+.axolotl.has-rainbow { animation: skin-rainbow-shift 6s linear infinite; }
+
+@keyframes skin-galaxy-shift {
+  0%, 100% { filter: hue-rotate(0deg)  saturate(1.25) drop-shadow(0 0 4px rgba(170, 100, 255, 0.6)); }
+  50%      { filter: hue-rotate(80deg) saturate(1.45) drop-shadow(0 0 9px rgba(255, 150, 220, 0.7)); }
+}
+.axolotl.has-galaxy { animation: skin-galaxy-shift 4.5s ease-in-out infinite; }
+
+@keyframes skin-sunset-shift {
+  0%, 100% { filter: hue-rotate(-12deg) saturate(1.2) drop-shadow(0 0 5px rgba(255, 140, 80, 0.55)); }
+  50%      { filter: hue-rotate(18deg)  saturate(1.35) drop-shadow(0 0 7px rgba(255, 100, 160, 0.55)); }
+}
+.axolotl.has-sunset { animation: skin-sunset-shift 5s ease-in-out infinite; }
+
+@keyframes skin-aurora-shift {
+  0%, 100% { filter: hue-rotate(-30deg) saturate(1.2) drop-shadow(0 0 6px rgba(120, 200, 255, 0.6)); }
+  33%      { filter: hue-rotate(40deg)  saturate(1.3) drop-shadow(0 0 8px rgba(140, 255, 200, 0.55)); }
+  66%      { filter: hue-rotate(140deg) saturate(1.4) drop-shadow(0 0 8px rgba(180, 140, 255, 0.55)); }
+}
+.axolotl.has-aurora { animation: skin-aurora-shift 6s ease-in-out infinite; }
+
+/* Color picker swatches inherit the same pattern shimmer for preview */
+.color-swatch.is-pattern.has-rainbow { animation: skin-rainbow-shift 6s linear infinite; }
+.color-swatch.is-pattern.has-galaxy  { animation: skin-galaxy-shift 4.5s ease-in-out infinite; }
+.color-swatch.is-pattern.has-sunset  { animation: skin-sunset-shift 5s ease-in-out infinite; }
+.color-swatch.is-pattern.has-aurora  { animation: skin-aurora-shift 6s ease-in-out infinite; }
+.color-swatch.locked::after {
+  /* show required level rather than just a lock when data-req is set */
+  content: attr(data-req);
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ════════════════════════════════════════════════════════════
+   Customize modal — tabs + background picker
+════════════════════════════════════════════════════════════ */
+.customize-card {
+  max-width: 400px;
+}
+.customize-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--card);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  margin-bottom: 6px;
+}
+.cust-tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-faint);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.cust-tab.active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.cust-panel { min-height: 110px; }
+.cust-panel.hidden { display: none; }
+
+.bg-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.bg-option {
+  position: relative;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: transform 0.12s, border-color 0.15s;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.bg-option:active { transform: scale(0.97); }
+.bg-option.selected { border-color: var(--text); }
+.bg-option.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.bg-option.locked::before {
+  content: attr(data-req);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 8px;
+  z-index: 2;
+}
+.bg-option-label {
+  position: absolute;
+  bottom: 4px;
+  left: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.3px;
+}
+
+/* Accessory text inside the SVG — slight float so it sits naturally */
+.ax-accessory {
+  pointer-events: none;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
+}
+
+/* ════════════════════════════════════════════════════════════
+   New idle moves on the FULL pet-screen axolotl
+   (these were already defined for .mini-axolotl above — mirror
+   the keyframes here onto the larger .axolotl element).
+════════════════════════════════════════════════════════════ */
+.axolotl.is-wink .ax-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.axolotl.is-wink .ax-eye:nth-of-type(1) {
+  animation: mini-wink-eye 1.2s ease-in-out;
+}
+.axolotl.is-nod   { animation: mini-nod 0.9s ease-in-out; }
+.axolotl.is-disco { animation: mini-disco 1.15s ease-in-out; }
+
+/* ════════════════════════════════════════════════════════════
+   Play action — tennis ball bouncing across the tank
+════════════════════════════════════════════════════════════ */
+.play-ball {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 35%, #fff8c0, #d4e85d 55%, #8aae00 100%);
+  box-shadow:
+    inset -3px -3px 4px rgba(80, 100, 0, 0.55),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.55),
+    0 4px 10px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: 8;
+  animation: play-ball-fly 1.75s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+.play-ball::after {
+  /* faint curve line like a real tennis ball */
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 30%,
+    transparent 36%,
+    rgba(255, 255, 255, 0.55) 38%,
+    transparent 42%);
+}
+@keyframes play-ball-fly {
+  0%   { left: -10%; top: 55%;  transform: rotate(0)    scale(0.8); opacity: 0; }
+  10%  { opacity: 1; }
+  25%  { left: 28%;  top: 30%;  transform: rotate(360deg) scale(1); }
+  45%  { left: 55%;  top: 55%;  transform: rotate(720deg) scale(1); }
+  65%  { left: 75%;  top: 32%;  transform: rotate(1080deg) scale(1); }
+  85%  { left: 95%;  top: 55%;  transform: rotate(1440deg) scale(0.95); opacity: 1; }
+  100% { left: 110%; top: 55%;  transform: rotate(1620deg) scale(0.8); opacity: 0; }
+}
+
+/* 4-button action layout: shrink labels a touch so they fit */
+.pet-actions { gap: 6px; }
+.pet-act-btn .pa-lbl { font-size: 10.5px; }

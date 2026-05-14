@@ -94,6 +94,8 @@ const PET_DEFAULT = {
   name:        'Axolito',
   color:       'pink',
   hat:         null,
+  accessory:   null,
+  background:  'ocean',
   level:       1,
   xp:          0,
   happiness:   80,
@@ -105,21 +107,62 @@ const PET_DEFAULT = {
 };
 
 const PET_COLORS = [
-  { id: 'pink',    name: 'Rosa',       body: '#ffb6cf', belly: '#ffd5e3', gill: '#ff7aa1', cheek: '#ff5e8e', requires: 0  },
-  { id: 'gold',    name: 'Dorado',     body: '#ffd86b', belly: '#fff1b8', gill: '#ff9a00', cheek: '#e07a00', requires: 3  },
-  { id: 'mint',    name: 'Menta',      body: '#a3f0d3', belly: '#d5f9ec', gill: '#3ec9a1', cheek: '#1da882', requires: 5  },
-  { id: 'blue',    name: 'Azul',       body: '#8fc8ff', belly: '#cee4ff', gill: '#3a8de0', cheek: '#1d6bc0', requires: 8  },
-  { id: 'lilac',   name: 'Lila',       body: '#cfaaff', belly: '#e7d4ff', gill: '#9a6cff', cheek: '#6b3fc7', requires: 12 },
-  { id: 'shadow',  name: 'Sombra',     body: '#3a3550', belly: '#5a5478', gill: '#9a8ad9', cheek: '#c0a8ff', requires: 18 },
+  // ── Classics ─────────────────────────────────────────────
+  { id: 'pink',     name: 'Rosa',       body: '#ffb6cf', belly: '#ffd5e3', gill: '#ff7aa1', cheek: '#ff5e8e', requires: 0  },
+  { id: 'gold',     name: 'Dorado',     body: '#ffd86b', belly: '#fff1b8', gill: '#ff9a00', cheek: '#e07a00', requires: 3  },
+  { id: 'mint',     name: 'Menta',      body: '#a3f0d3', belly: '#d5f9ec', gill: '#3ec9a1', cheek: '#1da882', requires: 5  },
+  { id: 'blue',     name: 'Azul',       body: '#8fc8ff', belly: '#cee4ff', gill: '#3a8de0', cheek: '#1d6bc0', requires: 8  },
+  { id: 'lilac',    name: 'Lila',       body: '#cfaaff', belly: '#e7d4ff', gill: '#9a6cff', cheek: '#6b3fc7', requires: 12 },
+  { id: 'shadow',   name: 'Sombra',     body: '#3a3550', belly: '#5a5478', gill: '#9a8ad9', cheek: '#c0a8ff', requires: 18 },
+  // ── New flat colors ──────────────────────────────────────
+  { id: 'coral',    name: 'Coral',      body: '#ff8a72', belly: '#ffc6b3', gill: '#ff5a3f', cheek: '#c93b1f', requires: 2  },
+  { id: 'lemon',    name: 'Limón',      body: '#f4f08c', belly: '#fffabf', gill: '#bdb524', cheek: '#8a8210', requires: 4  },
+  { id: 'sky',      name: 'Cielo',      body: '#bfe6ff', belly: '#e3f2ff', gill: '#6fb6f2', cheek: '#3a8bcc', requires: 6  },
+  { id: 'cherry',   name: 'Cereza',     body: '#ff6b9a', belly: '#ffb1c8', gill: '#e02d72', cheek: '#a40e4d', requires: 7  },
+  { id: 'jade',     name: 'Jade',       body: '#5fd9a7', belly: '#b8f2d8', gill: '#1ea76a', cheek: '#0a663e', requires: 9  },
+  { id: 'amethyst', name: 'Amatista',   body: '#a78bff', belly: '#d6c8ff', gill: '#6c45d6', cheek: '#3f1eaa', requires: 10 },
+  { id: 'snow',     name: 'Nieve',      body: '#f5f9ff', belly: '#ffffff', gill: '#bcd1e8', cheek: '#7a96b3', requires: 11 },
+  { id: 'obsidian', name: 'Obsidiana',  body: '#1c1830', belly: '#322a52', gill: '#7563c4', cheek: '#b09cff', requires: 15 },
+  // ── Premium animated patterns (use CSS animation, marked with `pattern`) ──
+  { id: 'galaxy',   name: 'Galaxia',    body: '#5a3aa8', belly: '#a47cff', gill: '#ff9ad0', cheek: '#ffd86b', pattern: 'galaxy',  requires: 16 },
+  { id: 'sunset',   name: 'Atardecer',  body: '#ff8a5b', belly: '#ffc89e', gill: '#ff4d8d', cheek: '#7c2bff', pattern: 'sunset',  requires: 13 },
+  { id: 'rainbow',  name: 'Arcoíris',   body: '#ffb6cf', belly: '#ffd5e3', gill: '#ff7aa1', cheek: '#ff5e8e', pattern: 'rainbow', requires: 20 },
+  { id: 'aurora',   name: 'Aurora',     body: '#5be0bf', belly: '#bff5e8', gill: '#80b9ff', cheek: '#c08bff', pattern: 'aurora',  requires: 17 },
 ];
 
 const PET_HATS = [
-  { id: null,        emoji: '—',   name: 'Sin sombrero', requires: 0  },
-  { id: 'graduate',  emoji: '🎓', name: 'Graduación',   requires: 3  },
-  { id: 'wizard',    emoji: '🧙', name: 'Mago',         requires: 7  },
-  { id: 'crown',     emoji: '👑', name: 'Corona',       requires: 14 },
-  { id: 'party',     emoji: '🎉', name: 'Fiesta',       requires: 5  },
-  { id: 'flower',    emoji: '🌸', name: 'Flor',         requires: 2  },
+  { id: null,         emoji: '—',   name: 'Sin sombrero', requires: 0  },
+  { id: 'flower',     emoji: '🌸', name: 'Flor',         requires: 2  },
+  { id: 'graduate',   emoji: '🎓', name: 'Graduación',   requires: 3  },
+  { id: 'party',      emoji: '🎉', name: 'Fiesta',       requires: 5  },
+  { id: 'wizard',     emoji: '🧙', name: 'Mago',         requires: 7  },
+  { id: 'cap',        emoji: '🧢', name: 'Gorra',        requires: 4  },
+  { id: 'tophat',     emoji: '🎩', name: 'Sombrero',     requires: 9  },
+  { id: 'sombrero',   emoji: '🪖', name: 'Casco',        requires: 6  },
+  { id: 'crown',      emoji: '👑', name: 'Corona',       requires: 14 },
+  { id: 'leaves',     emoji: '🍃', name: 'Hojas',        requires: 8  },
+  { id: 'star',       emoji: '⭐', name: 'Estrella',     requires: 11 },
+  { id: 'halo',       emoji: '😇', name: 'Aureola',      requires: 16 },
+];
+
+const PET_ACCESSORIES = [
+  { id: null,         emoji: '—',   name: 'Ninguno',      requires: 0  },
+  { id: 'shades',     emoji: '🕶️', name: 'Gafas',        requires: 2  },
+  { id: 'glasses',    emoji: '👓', name: 'Lentes',       requires: 3  },
+  { id: 'bowtie',     emoji: '🎀', name: 'Lazo',         requires: 5  },
+  { id: 'medal',      emoji: '🏅', name: 'Medalla',      requires: 6  },
+  { id: 'scarf',      emoji: '🧣', name: 'Bufanda',      requires: 8  },
+  { id: 'headphones', emoji: '🎧', name: 'Auriculares',  requires: 10 },
+  { id: 'mustache',   emoji: '〰️', name: 'Bigote',       requires: 12 },
+];
+
+const PET_BACKGROUNDS = [
+  { id: 'ocean',    name: 'Océano',      grad: ['#4ec3df 0%', '#2a8fc4 18%', '#1a5d9c 45%', '#0e3a73 78%', '#061d44 100%'],  requires: 0  },
+  { id: 'sunset',   name: 'Atardecer',   grad: ['#ffb47a 0%', '#ff7d8a 25%', '#a85ec2 60%', '#3b2370 100%'],                  requires: 4  },
+  { id: 'reef',     name: 'Arrecife',    grad: ['#86f0d4 0%', '#3bd1c2 25%', '#1f8eb5 60%', '#0d3a6e 100%'],                  requires: 7  },
+  { id: 'volcano',  name: 'Volcán',      grad: ['#ffb37a 0%', '#ff5b3a 30%', '#8a1a4a 65%', '#28091f 100%'],                  requires: 10 },
+  { id: 'aurora',   name: 'Aurora',      grad: ['#5be0bf 0%', '#5a8df0 30%', '#7c4dd1 60%', '#1a0e3d 100%'],                  requires: 13 },
+  { id: 'night',    name: 'Noche',       grad: ['#22335e 0%', '#11214a 30%', '#091433 65%', '#02061d 100%'],                  requires: 16 },
 ];
 
 const STAGE_FOR_LEVEL = (lvl) => {
@@ -1028,13 +1071,16 @@ function applyPetVisuals() {
   svg.style.setProperty('--ax-gill',  c.gill);
   svg.style.setProperty('--ax-cheek', c.cheek);
 
-  // Hat — render via foreignObject
+  // Pattern: clear all then add the active one (animated skin)
+  ['has-galaxy','has-sunset','has-rainbow','has-aurora'].forEach(cls => svg.classList.remove(cls));
+  if (c.pattern) svg.classList.add('has-' + c.pattern);
+
+  // Hat — render via SVG text
   const hatGroup = $('ax-hat');
   hatGroup.innerHTML = '';
   if (state.pet.hat) {
     const hat = PET_HATS.find(h => h.id === state.pet.hat);
     if (hat && hat.id) {
-      // Use SVG <text> for emoji hat
       const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       text.setAttribute('x', '140');
       text.setAttribute('y', '54');
@@ -1044,7 +1090,49 @@ function applyPetVisuals() {
       hatGroup.appendChild(text);
     }
   }
+
+  // Accessory (glasses/scarves/etc.) — render as SVG text overlay
+  let accGroup = svg.querySelector('#ax-accessory');
+  if (!accGroup) {
+    accGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    accGroup.setAttribute('id', 'ax-accessory');
+    accGroup.setAttribute('class', 'ax-accessory');
+    svg.appendChild(accGroup);
+  }
+  accGroup.innerHTML = '';
+  if (state.pet.accessory) {
+    const acc = PET_ACCESSORIES.find(a => a.id === state.pet.accessory);
+    if (acc && acc.id) {
+      const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      // Position varies by accessory type
+      const pos = ACCESSORY_POS[acc.id] || { x: 140, y: 92, size: 22 };
+      text.setAttribute('x', pos.x);
+      text.setAttribute('y', pos.y);
+      text.setAttribute('text-anchor', 'middle');
+      text.setAttribute('font-size', pos.size);
+      text.textContent = acc.emoji;
+      accGroup.appendChild(text);
+    }
+  }
+
+  // Tank background theme
+  const tank = document.querySelector('.pet-tank');
+  if (tank) {
+    const bg = PET_BACKGROUNDS.find(b => b.id === state.pet.background) || PET_BACKGROUNDS[0];
+    tank.style.background = 'linear-gradient(180deg, ' + bg.grad.join(', ') + ')';
+  }
 }
+
+// Where each accessory sits relative to the axolotl head (viewBox 0 0 220 180)
+const ACCESSORY_POS = {
+  shades:     { x: 140, y: 94, size: 26 },
+  glasses:    { x: 140, y: 94, size: 26 },
+  bowtie:     { x: 112, y: 134, size: 22 },
+  medal:      { x: 112, y: 134, size: 22 },
+  scarf:      { x: 112, y: 132, size: 26 },
+  headphones: { x: 140, y: 74, size: 32 },
+  mustache:   { x: 140, y: 112, size: 22 },
+};
 
 // ── Pet screen interactions ─────────────────────────────
 function spawnHearts(count = 4) {
@@ -1140,6 +1228,35 @@ $('pet-action-feed')?.addEventListener('click', () => {
   refreshPetUI();
 });
 
+// "Jugar" — toss a ball that the axolotl chases, giving happiness
+$('pet-action-play')?.addEventListener('click', () => {
+  if (!state.pet) return;
+  haptic.light();
+  state.pet.happiness = Math.min(100, state.pet.happiness + 6);
+  spawnPlayBall();
+  const svg = $('axolotl-svg');
+  // Chase the ball: dash, then bounce in happiness
+  pulseClass($('axolotl-wrap'), 'is-dashing', 1200);
+  pulseClass(svg, 'is-star-eyes', 1400);
+  setTimeout(() => {
+    pulseClass(svg, 'is-bounce', 900);
+    spawnHearts(3);
+    spawnSparkleBurst(6);
+  }, 1100);
+  savePet();
+  refreshPetUI();
+});
+
+// Bounce a tennis ball across the tank — the axolotl "chases" it via is-dashing
+function spawnPlayBall() {
+  const tank = document.querySelector('.pet-tank');
+  if (!tank) return;
+  const ball = document.createElement('div');
+  ball.className = 'play-ball';
+  tank.appendChild(ball);
+  setTimeout(() => ball.remove(), 1800);
+}
+
 // Sprinkle little food flakes that drift down past the axolotl when fed
 function spawnFoodFlakes(count = 6) {
   const tank = document.querySelector('.pet-tank');
@@ -1219,10 +1336,17 @@ function renderMiniAxolotlSVG() {
   const pet  = state.pet;
   const c    = (pet && PET_COLORS.find(x => x.id === pet.color)) || PET_COLORS[0];
   const hat  = pet && pet.hat ? PET_HATS.find(h => h.id === pet.hat) : null;
+  const acc  = pet && pet.accessory ? PET_ACCESSORIES.find(a => a.id === pet.accessory) : null;
   const vars = `--ax-body:${c.body};--ax-belly:${c.belly};--ax-gill:${c.gill};--ax-cheek:${c.cheek}`;
+  const patternCls = c.pattern ? ' has-' + c.pattern : '';
   const hatMarkup = (hat && hat.id) ? `<text x="140" y="56" text-anchor="middle" font-size="42">${hat.emoji}</text>` : '';
+  let accMarkup = '';
+  if (acc && acc.id) {
+    const p = ACCESSORY_POS[acc.id] || { x: 140, y: 92, size: 22 };
+    accMarkup = `<text class="ax-accessory" x="${p.x}" y="${p.y}" text-anchor="middle" font-size="${p.size}">${acc.emoji}</text>`;
+  }
   return `
-    <svg class="mini-axolotl axolotl" viewBox="0 0 220 180" style="${vars}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <svg class="mini-axolotl axolotl${patternCls}" viewBox="0 0 220 180" style="${vars}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path class="ax-tail" d="M48 110 Q22 108 6 92 Q14 110 8 128 Q24 116 48 120 Z"/>
       <ellipse class="ax-body" cx="112" cy="115" rx="60" ry="26"/>
       <ellipse class="ax-belly" cx="118" cy="122" rx="44" ry="11"/>
@@ -1251,9 +1375,14 @@ function renderMiniAxolotlSVG() {
         <path d="M128 90.5 C124.4 87 121 86.5 121 83 C121 80 124 79 128 82.5 C132 79 135 80 135 83 C135 86.5 131.6 87 128 90.5 Z"/>
         <path d="M152 90.5 C148.4 87 145 86.5 145 83 C145 80 148 79 152 82.5 C156 79 159 80 159 83 C159 86.5 155.6 87 152 90.5 Z"/>
       </g>
+      <g class="ax-eyes-star">
+        <path d="M128 80 L130 84.5 L135 85 L131 88 L132 93 L128 90.5 L124 93 L125 88 L121 85 L126 84.5 Z"/>
+        <path d="M152 80 L154 84.5 L159 85 L155 88 L156 93 L152 90.5 L148 93 L149 88 L145 85 L150 84.5 Z"/>
+      </g>
       <path class="ax-mouth ax-mouth-happy" d="M134 104 Q140 109 146 104"/>
       <path class="ax-mouth ax-mouth-sad" d="M134 108 Q140 100 146 108"/>
       ${hatMarkup}
+      ${accMarkup}
     </svg>`;
 }
 
@@ -1310,25 +1439,38 @@ function scheduleNextIdleQuirk() {
       !svg.classList.contains('is-bounce') &&
       !svg.classList.contains('is-bubble') &&
       !svg.classList.contains('is-yawn') &&
+      !svg.classList.contains('is-wink') &&
+      !svg.classList.contains('is-nod') &&
+      !svg.classList.contains('is-disco') &&
       !wrap.classList.contains('is-petting') &&
       !wrap.classList.contains('is-dashing')
     ) {
-      // Weighted choice: bubble most often, flip/peek/yawn occasionally
+      // Weighted picker — wider variety than before, with the more striking
+      // moves kept rare so the tank still feels calm.
       const r = Math.random();
-      if (r < 0.40) {
-        // Blow a bubble
+      if (r < 0.28) {
         pulseClass(svg, 'is-bubble', 1400);
         setTimeout(() => spawnBlowBubble(), 350);
-      } else if (r < 0.65) {
-        // Peek (curious head tilt)
+      } else if (r < 0.45) {
         pulseClass(svg, 'is-peek', 1600);
-      } else if (r < 0.85) {
-        // Quick flip
+      } else if (r < 0.58) {
         pulseClass(svg, 'is-flip', 950);
         spawnDashBubbles(3);
-      } else {
-        // Yawn
+      } else if (r < 0.70) {
         pulseClass(svg, 'is-yawn', 1400);
+      } else if (r < 0.80) {
+        // Quick wink at the player
+        pulseClass(svg, 'is-wink', 1200);
+      } else if (r < 0.88) {
+        // Excited nod
+        pulseClass(svg, 'is-nod', 900);
+      } else if (r < 0.94) {
+        // Little disco shimmy
+        pulseClass(svg, 'is-disco', 1150);
+      } else {
+        // Rare: chase its tail with a small dash
+        pulseClass(wrap, 'is-dashing', 1200);
+        spawnDashBubbles(5);
       }
     }
     scheduleNextIdleQuirk();
@@ -1372,21 +1514,39 @@ $('rename-pet-btn')?.addEventListener('click', () => {
 $('pet-action-customize')?.addEventListener('click', () => {
   buildColorPicker();
   buildHatPicker();
+  buildAccessoryPicker();
+  buildBackgroundPicker();
+  setCustomizeTab('color');
   $('customize-modal').classList.remove('hidden');
 });
 $('customize-close')?.addEventListener('click', () => {
   $('customize-modal').classList.add('hidden');
 });
 
+// Customize tabs
+document.querySelectorAll('.cust-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    haptic.light();
+    setCustomizeTab(tab.dataset.tab);
+  });
+});
+function setCustomizeTab(name) {
+  document.querySelectorAll('.cust-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+  document.querySelectorAll('.cust-panel').forEach(p => p.classList.toggle('hidden', p.dataset.panel !== name));
+}
+
 function buildColorPicker() {
   const wrap = $('color-picker');
   wrap.innerHTML = '';
   PET_COLORS.forEach(c => {
     const sw = document.createElement('div');
-    sw.className = 'color-swatch';
+    sw.className = 'color-swatch' + (c.pattern ? ' is-pattern has-' + c.pattern : '');
     sw.style.background = `radial-gradient(circle at 30% 30%, ${c.belly}, ${c.body} 60%, ${c.gill})`;
     sw.title = c.name + (state.pet.level < c.requires ? ` (Nv. ${c.requires})` : '');
-    if (state.pet.level < c.requires) sw.classList.add('locked');
+    if (state.pet.level < c.requires) {
+      sw.classList.add('locked');
+      sw.dataset.req = 'Nv.' + c.requires;
+    }
     if (state.pet.color === c.id) sw.classList.add('selected');
     sw.addEventListener('click', () => {
       if (state.pet.level < c.requires) { haptic.error(); return; }
@@ -1425,6 +1585,68 @@ function buildHatPicker() {
       state.pet.hat = h.id;
       savePet();
       buildHatPicker();
+      applyPetVisuals();
+    });
+    wrap.appendChild(op);
+  });
+}
+
+function buildAccessoryPicker() {
+  const wrap = $('accessory-picker');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+  PET_ACCESSORIES.forEach(a => {
+    const op = document.createElement('div');
+    op.className = 'hat-option';
+    if (a.id === null) {
+      const span = document.createElement('span');
+      span.className = 'hat-none';
+      span.textContent = 'Sin';
+      op.appendChild(span);
+    } else {
+      op.textContent = a.emoji;
+    }
+    if (a.requires > 0 && state.pet.level < a.requires) {
+      op.classList.add('locked');
+      op.dataset.req = 'Nv. ' + a.requires;
+    }
+    if (state.pet.accessory === a.id) op.classList.add('selected');
+    op.addEventListener('click', () => {
+      if (a.requires > 0 && state.pet.level < a.requires) { haptic.error(); return; }
+      haptic.light();
+      state.pet.accessory = a.id;
+      savePet();
+      buildAccessoryPicker();
+      applyPetVisuals();
+    });
+    wrap.appendChild(op);
+  });
+}
+
+function buildBackgroundPicker() {
+  const wrap = $('bg-picker');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+  PET_BACKGROUNDS.forEach(b => {
+    const op = document.createElement('div');
+    op.className = 'bg-option';
+    op.style.background = 'linear-gradient(180deg, ' + b.grad.join(', ') + ')';
+    op.title = b.name;
+    const label = document.createElement('span');
+    label.className = 'bg-option-label';
+    label.textContent = b.name;
+    op.appendChild(label);
+    if (b.requires > 0 && state.pet.level < b.requires) {
+      op.classList.add('locked');
+      op.dataset.req = 'Nv. ' + b.requires;
+    }
+    if ((state.pet.background || 'ocean') === b.id) op.classList.add('selected');
+    op.addEventListener('click', () => {
+      if (b.requires > 0 && state.pet.level < b.requires) { haptic.error(); return; }
+      haptic.light();
+      state.pet.background = b.id;
+      savePet();
+      buildBackgroundPicker();
       applyPetVisuals();
     });
     wrap.appendChild(op);
@@ -7636,6 +7858,20 @@ function showFeedback(correct, correctText) {
   reactLessonMiniAxolotl(correct);
 }
 
+// Roster of mega-celebration "moves" — cycles through these once the streak
+// hits 3 so every combo feels different. Each entry says which body class
+// to apply to the SVG, plus which extra FX to spawn around the avatar.
+const MEGA_MOVES = [
+  { body: 'is-backflip',  eyes: 'is-star-eyes',  fx: ['confetti', 'lightning', 'aura'] },
+  { body: 'is-tornado',   eyes: 'is-heart-eyes', fx: ['confetti', 'shockwave-cool', 'galaxy'] },
+  { body: 'is-disco',     eyes: 'is-star-eyes',  fx: ['confetti', 'shockwave-warm', 'fireworks'] },
+  { body: 'is-jump-spin', eyes: 'is-heart-eyes', fx: ['confetti', 'aura', 'lightning'] },
+  { body: 'is-shimmy',    eyes: 'is-star-eyes',  fx: ['confetti', 'fireworks', 'shockwave-warm'] },
+  { body: 'is-cartwheel', eyes: 'is-heart-eyes', fx: ['confetti', 'galaxy', 'shockwave-cool'] },
+  { body: 'is-bigwave',   eyes: 'is-star-eyes',  fx: ['confetti', 'shockwave-warm', 'shockwave-cool', 'lightning'] },
+  { body: 'is-popup',     eyes: 'is-heart-eyes', fx: ['confetti', 'fireworks', 'aura'] },
+];
+
 // Make every mini axolotl in the active lesson react to a check
 function reactLessonMiniAxolotl(correct) {
   const avatars = document.querySelectorAll('#lesson-exercise .lex-bubble-avatar, #lesson-exercise .lesson-tutor-inline');
@@ -7650,27 +7886,45 @@ function reactLessonMiniAxolotl(correct) {
   }
   const streak = lessonState.streak || 0;
   const isMega = correct && streak >= 3;
+  // Tier: 1 = standard mega (3-4), 2 = epic (5-6), 3 = legendary (7+)
+  const tier = streak >= 7 ? 3 : streak >= 5 ? 2 : 1;
 
   avatars.forEach(avatar => {
     const svg = avatar.querySelector('.mini-axolotl');
     if (correct) {
       if (isMega) {
-        // ── MEGA combo celebration ────────────────────
-        pulseClass(avatar, 'is-mega', 1300);
+        // ── MEGA combo celebration (varied!) ──────────
+        // Pick a move from the roster — for streak 3,4,5,6,7,8… we step through
+        // the list so the first few combos are all unique. Then randomize.
+        const moveIdx = streak < (3 + MEGA_MOVES.length)
+          ? (streak - 3)
+          : Math.floor(Math.random() * MEGA_MOVES.length);
+        const move = MEGA_MOVES[moveIdx % MEGA_MOVES.length];
+
+        pulseClass(avatar, 'is-mega', 1400);
+        if (tier >= 2) pulseClass(avatar, 'is-epic',      1500);
+        if (tier >= 3) pulseClass(avatar, 'is-legendary', 1700);
         if (svg) {
-          pulseClass(svg, 'is-rainbow', 1400);
-          pulseClass(svg, 'is-star-eyes', 1200);
-          // Alternate backflip / wiggle so consecutive combos vary
-          if (streak % 2 === 0) pulseClass(svg, 'is-backflip', 1000);
-          else                  pulseClass(svg, 'is-happy', 900);
+          pulseClass(svg, 'is-rainbow', tier >= 3 ? 1800 : 1400);
+          pulseClass(svg, move.eyes,    1300);
+          pulseClass(svg, move.body,    1200);
         }
-        spawnConfetti(avatar, 26);
-        spawnFloatingEmojis(avatar, ['⭐','✨','💫','🎉','🌟','🔥'], 8);
-        spawnShockwave(avatar, 'warm');
-        spawnShockwave(avatar, 'cool', 180);
-        spawnLightningBolts(avatar, 4);
+        // Spawn the FX set for the chosen move
+        move.fx.forEach(name => spawnComboFx(name, avatar));
+        // Tier upgrades stack additional ambience on top
+        const confettiCount = tier === 3 ? 44 : tier === 2 ? 34 : 26;
+        spawnConfetti(avatar, confettiCount);
+        spawnFloatingEmojis(avatar, pickMegaEmojis(tier), tier === 3 ? 12 : tier === 2 ? 9 : 6);
         spawnStreakAura(avatar);
-        spawnComboText(avatar, streak >= 5 ? '¡INCREÍBLE x' + streak + '!' : '¡COMBO x' + streak + '!');
+        if (tier >= 2) spawnFireworks(avatar, tier === 3 ? 5 : 3);
+        if (tier >= 3) {
+          spawnHalo(avatar);
+          spawnGalaxySwirl(avatar);
+        }
+        const label = tier === 3 ? '¡LEGENDARIO x' + streak + '!'
+                    : tier === 2 ? '¡INCREÍBLE x' + streak + '!'
+                    :              '¡COMBO x' + streak + '!';
+        spawnComboText(avatar, label);
       } else {
         // ── Standard correct reaction ─────────────────
         pulseClass(avatar, 'is-bounce', 720);
@@ -7701,6 +7955,27 @@ function reactLessonMiniAxolotl(correct) {
       spawnSweat(avatar);
     }
   });
+}
+
+// Dispatch helper used by the MEGA_MOVES roster
+function spawnComboFx(kind, host) {
+  if (!host) return;
+  switch (kind) {
+    case 'confetti':       spawnConfetti(host, 16);                  break;
+    case 'lightning':      spawnLightningBolts(host, 4);             break;
+    case 'shockwave-warm': spawnShockwave(host, 'warm');             break;
+    case 'shockwave-cool': spawnShockwave(host, 'cool', 180);        break;
+    case 'aura':           spawnStreakAura(host);                    break;
+    case 'fireworks':      spawnFireworks(host, 2);                  break;
+    case 'galaxy':         spawnGalaxySwirl(host);                   break;
+    case 'halo':           spawnHalo(host);                          break;
+  }
+}
+
+function pickMegaEmojis(tier) {
+  if (tier === 3) return ['👑','🌟','💎','🔥','✨','⚡','🎆','🏆'];
+  if (tier === 2) return ['🔥','⭐','✨','💫','🎉','🌟','⚡'];
+  return ['⭐','✨','💫','🎉','🌟','🔥'];
 }
 
 // Word pools for floating text
@@ -7862,6 +8137,79 @@ function spawnLightningBolts(host, count = 3) {
     parent.appendChild(b);
     setTimeout(() => b.remove(), 700);
   }
+}
+
+// Fireworks burst — multiple rocket trails that explode into sparks
+function spawnFireworks(host, count = 3) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, cy, w } = fxCenterIn(host, parent);
+  const COLORS = ['#ffd86b','#ff8edc','#80e3ff','#c0ff90','#ff8a8a','#b388ff'];
+  for (let r = 0; r < count; r++) {
+    const angle = -Math.PI/2 + (Math.random() - 0.5) * Math.PI * 0.9;
+    const dist  = w * 0.6 + Math.random() * w * 0.4;
+    const x = cx + Math.cos(angle) * dist;
+    const y = cy + Math.sin(angle) * dist - 18;
+    const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    // Rocket trail
+    const trail = document.createElement('div');
+    trail.className = 'lex-firework-trail';
+    trail.style.left = cx + 'px';
+    trail.style.top  = cy + 'px';
+    trail.style.setProperty('--fx', (x - cx).toFixed(1) + 'px');
+    trail.style.setProperty('--fy', (y - cy).toFixed(1) + 'px');
+    trail.style.animationDelay = (r * 0.12).toFixed(2) + 's';
+    parent.appendChild(trail);
+    setTimeout(() => trail.remove(), 900);
+    // Explosion at target
+    const delayMs = 400 + r * 120;
+    setTimeout(() => {
+      const SPARK_COUNT = 10;
+      for (let i = 0; i < SPARK_COUNT; i++) {
+        const a  = (Math.PI * 2 * i) / SPARK_COUNT + Math.random() * 0.3;
+        const dx = Math.cos(a) * (32 + Math.random() * 18);
+        const dy = Math.sin(a) * (32 + Math.random() * 18);
+        const s = document.createElement('div');
+        s.className = 'lex-firework-spark';
+        s.style.left = x + 'px';
+        s.style.top  = y + 'px';
+        s.style.background = color;
+        s.style.boxShadow = '0 0 8px ' + color;
+        s.style.setProperty('--sdx', dx.toFixed(1) + 'px');
+        s.style.setProperty('--sdy', dy.toFixed(1) + 'px');
+        parent.appendChild(s);
+        setTimeout(() => s.remove(), 1100);
+      }
+    }, delayMs);
+  }
+}
+
+// Galaxy swirl — radial galaxy gradient that scales up & spins
+function spawnGalaxySwirl(host) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, cy, w } = fxCenterIn(host, parent);
+  const g = document.createElement('div');
+  g.className = 'lex-galaxy-swirl';
+  g.style.left = cx + 'px';
+  g.style.top  = cy + 'px';
+  g.style.width  = (w * 1.8) + 'px';
+  g.style.height = (w * 1.8) + 'px';
+  parent.appendChild(g);
+  setTimeout(() => g.remove(), 1500);
+}
+
+// Halo ring — drops a glowing crown ring above the avatar (legendary)
+function spawnHalo(host) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, top } = fxCenterIn(host, parent);
+  const h = document.createElement('div');
+  h.className = 'lex-halo-ring';
+  h.style.left = cx + 'px';
+  h.style.top  = (top - 6) + 'px';
+  parent.appendChild(h);
+  setTimeout(() => h.remove(), 1600);
 }
 
 // Inject a persistent mini axolotl "tutor" at the top of pick/match exercises

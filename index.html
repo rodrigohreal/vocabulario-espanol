@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=17">
+  <link rel="stylesheet" href="style.css?v=18">
 </head>
 <body>
   <div id="app">
@@ -225,8 +225,11 @@
         <button id="pet-action-pet" class="pet-act-btn" aria-label="Acariciar">
           <span class="pa-ico">🤗</span><span class="pa-lbl">Acariciar</span>
         </button>
+        <button id="pet-action-play" class="pet-act-btn" aria-label="Jugar">
+          <span class="pa-ico">🎾</span><span class="pa-lbl">Jugar</span>
+        </button>
         <button id="pet-action-customize" class="pet-act-btn" aria-label="Personalizar">
-          <span class="pa-ico">🎨</span><span class="pa-lbl">Color</span>
+          <span class="pa-ico">🎨</span><span class="pa-lbl">Vestir</span>
         </button>
       </div>
 
@@ -235,12 +238,26 @@
 
     <!-- ── CUSTOMIZE MODAL ── -->
     <div id="customize-modal" class="modal hidden">
-      <div class="modal-card">
+      <div class="modal-card customize-card">
         <h3 class="modal-title">Personaliza a tu axolote</h3>
-        <p class="modal-sub">Color</p>
-        <div id="color-picker" class="color-picker"></div>
-        <p class="modal-sub">Sombrero</p>
-        <div id="hat-picker" class="hat-picker"></div>
+        <div class="customize-tabs">
+          <button class="cust-tab active" data-tab="color">🎨 Color</button>
+          <button class="cust-tab" data-tab="hat">🎩 Sombrero</button>
+          <button class="cust-tab" data-tab="acc">🕶️ Accesorio</button>
+          <button class="cust-tab" data-tab="bg">🌊 Fondo</button>
+        </div>
+        <div class="cust-panel" data-panel="color">
+          <div id="color-picker" class="color-picker"></div>
+        </div>
+        <div class="cust-panel hidden" data-panel="hat">
+          <div id="hat-picker" class="hat-picker"></div>
+        </div>
+        <div class="cust-panel hidden" data-panel="acc">
+          <div id="accessory-picker" class="hat-picker"></div>
+        </div>
+        <div class="cust-panel hidden" data-panel="bg">
+          <div id="bg-picker" class="bg-picker"></div>
+        </div>
         <button id="customize-close" class="act-btn primary-btn">Listo</button>
       </div>
     </div>
@@ -391,6 +408,6 @@
     </nav>
 
   </div>
-  <script src="app.js?v=17"></script>
+  <script src="app.js?v=18"></script>
 </body>
 </html>

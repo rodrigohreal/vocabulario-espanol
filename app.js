@@ -5706,6 +5706,1178 @@ const LESSONS = [
       { t: 'typed', from: 'Мне нравится играть на гитаре', answer: 'me gusta tocar la guitarra', answers: ['me gusta tocar la guitarra', 'me gusta tocar guitarra'], hint: 'gustar + инфинитив' },
     ],
   },
+
+  // ════════════════════════════════════════════════════════
+  // BLOCK A (L101-L105): Body & health deep dive
+  // ════════════════════════════════════════════════════════
+
+  // ── 101. El cuerpo III ────────────────────────────────
+  // Internal organs — builds on L12 (cuerpo) and L97 (cuerpo II)
+  {
+    id: 'l101', name: 'Cuerpo III', emoji: '🫀', desc: 'Órganos internos',
+    exercises: [
+      { t: 'pick', q: '«Сердце»', opts: [
+        { txt: 'corazón',  em: '❤️' },
+        { txt: 'pulmón',   em: '🫁' },
+        { txt: 'estómago', em: '🫃' },
+        { txt: 'cerebro',  em: '🧠' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Лёгкие»', opts: [
+        { txt: 'hígado',   em: '🫘' },
+        { txt: 'pulmones', em: '🫁' },
+        { txt: 'riñón',    em: '🫘' },
+        { txt: 'sangre',   em: '🩸' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Мозг»', opts: [
+        { txt: 'corazón',  em: '❤️' },
+        { txt: 'hueso',    em: '🦴' },
+        { txt: 'cerebro',  em: '🧠' },
+        { txt: 'piel',     em: '✋' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['corazón',  'сердце'],
+        ['cerebro',  'мозг'],
+        ['estómago', 'желудок'],
+        ['pulmón',   'лёгкое'],
+      ]},
+      { t: 'match', pairs: [
+        ['hueso',  'кость'],
+        ['sangre', 'кровь'],
+        ['piel',   'кожа'],
+        ['hígado', 'печень'],
+      ]},
+      // Reuse «me duele» from L33
+      { t: 'translate', from: 'У меня болит сердце', tiles: ['me', 'duele', 'el', 'corazón', 'la'], answer: ['me', 'duele', 'el', 'corazón'] },
+      { t: 'fill', sentence: ['El', null, 'piensa.'], target: 'cerebro', opts: ['cerebro', 'hueso', 'piel'], hint: 'Мозг думает' },
+    ],
+  },
+
+  // ── 102. Mente y memoria ──────────────────────────────
+  {
+    id: 'l102', name: 'Mente', emoji: '💭', desc: 'Pensar, recordar, soñar',
+    exercises: [
+      { t: 'pick', q: '«Думать»', opts: [
+        { txt: 'pensar',   em: '🤔' },
+        { txt: 'recordar', em: '🧠' },
+        { txt: 'olvidar',  em: '🤷' },
+        { txt: 'soñar',    em: '💭' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Помнить»', opts: [
+        { txt: 'olvidar',  em: '🤷' },
+        { txt: 'recordar', em: '🧠' },
+        { txt: 'sentir',   em: '💖' },
+        { txt: 'creer',    em: '🙏' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Забывать»', opts: [
+        { txt: 'pensar',   em: '🤔' },
+        { txt: 'recordar', em: '🧠' },
+        { txt: 'olvidar',  em: '🤷' },
+        { txt: 'saber',    em: '💡' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['pensar',   'думать'],
+        ['recordar', 'помнить'],
+        ['olvidar',  'забывать'],
+        ['soñar',    'мечтать/спать'],
+      ]},
+      { t: 'match', pairs: [
+        ['creer',    'верить'],
+        ['saber',    'знать'],
+        ['entender', 'понимать'],
+        ['imaginar', 'представлять'],
+      ]},
+      // Reuse «no» negation from L43
+      { t: 'translate', from: 'Я не помню', tiles: ['no', 'recuerdo', 'olvido', 'me'], answer: ['no', 'recuerdo'] },
+      { t: 'fill', sentence: ['Ahora', null, 'en ti.'], target: 'pienso', opts: ['pienso', 'olvido', 'sé'], hint: 'Сейчас я думаю о тебе' },
+    ],
+  },
+
+  // ── 103. Dormir y descansar ───────────────────────────
+  // Builds on L32 (dormir) and L54 (me acuesto)
+  {
+    id: 'l103', name: 'Dormir', emoji: '😴', desc: 'Sueño y descanso',
+    exercises: [
+      { t: 'pick', q: '«Просыпаться»', opts: [
+        { txt: 'despertarse', em: '⏰' },
+        { txt: 'acostarse',   em: '🛏️' },
+        { txt: 'soñar',       em: '💭' },
+        { txt: 'roncar',      em: '😪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Подушка»', opts: [
+        { txt: 'cama',     em: '🛏️' },
+        { txt: 'almohada', em: '🛌' },
+        { txt: 'manta',    em: '🧣' },
+        { txt: 'sábana',   em: '📜' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Одеяло»', opts: [
+        { txt: 'sábana',  em: '📜' },
+        { txt: 'almohada',em: '🛌' },
+        { txt: 'manta',   em: '🧣' },
+        { txt: 'cama',    em: '🛏️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['cama',         'кровать'],
+        ['almohada',     'подушка'],
+        ['manta',        'одеяло'],
+        ['sábana',       'простыня'],
+      ]},
+      { t: 'match', swap: true, pairs: [
+        ['dormirse',    'засыпать'],
+        ['despertarse', 'просыпаться'],
+        ['descansar',   'отдыхать'],
+        ['soñar',       'видеть сон'],
+      ]},
+      // Reuse «me acuesto a las diez» from L54
+      { t: 'translate', from: 'Я хочу спать', tiles: ['tengo', 'sueño', 'quiero', 'dormir', 'comer'], answer: ['tengo', 'sueño'], answers: [['tengo', 'sueño'], ['quiero', 'dormir']] },
+      { t: 'fill', sentence: ['Por la noche', null, 'en mi cama.'], target: 'duermo', opts: ['duermo', 'corro', 'leo'], hint: 'Ночью я сплю в своей кровати' },
+    ],
+  },
+
+  // ── 104. Ejercicio y forma ────────────────────────────
+  {
+    id: 'l104', name: 'Ejercicio', emoji: '🏋️', desc: 'Gimnasio y fitness',
+    exercises: [
+      { t: 'pick', q: '«Спортзал»', opts: [
+        { txt: 'gimnasio',   em: '🏋️' },
+        { txt: 'parque',     em: '🌳' },
+        { txt: 'piscina',    em: '🏊' },
+        { txt: 'estadio',    em: '🏟️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Сильный»', opts: [
+        { txt: 'débil',  em: '🥱' },
+        { txt: 'fuerte', em: '💪' },
+        { txt: 'rápido', em: '⚡' },
+        { txt: 'lento',  em: '🐢' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Мускул»', opts: [
+        { txt: 'hueso',   em: '🦴' },
+        { txt: 'sangre',  em: '🩸' },
+        { txt: 'músculo', em: '💪' },
+        { txt: 'piel',    em: '✋' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['gimnasio',  'спортзал'],
+        ['músculo',   'мускул'],
+        ['fuerte',    'сильный'],
+        ['débil',     'слабый'],
+      ]},
+      { t: 'match', swap: true, pairs: [
+        ['entrenar',   'тренироваться'],
+        ['levantar',   'поднимать'],
+        ['estirarse',  'растягиваться'],
+        ['sudar',      'потеть'],
+      ]},
+      // Reuse correr/saltar/nadar from L32
+      { t: 'translate', from: 'Я бегаю в парке', tiles: ['corro', 'en', 'el', 'parque', 'gimnasio'], answer: ['corro', 'en', 'el', 'parque'] },
+      { t: 'fill', sentence: ['Voy al', null, 'tres veces por semana.'], target: 'gimnasio', opts: ['gimnasio', 'cama', 'cielo'], hint: 'Я хожу в спортзал три раза в неделю' },
+    ],
+  },
+
+  // ── 105. Repaso 16 (101-104) ──────────────────────────
+  {
+    id: 'l105', name: 'Repaso 16', emoji: '🔁', desc: 'Repasa lecciones 101-104',
+    exercises: [
+      // From L101
+      { t: 'pick', q: '«Сердце»', opts: [
+        { txt: 'pulmón',   em: '🫁' },
+        { txt: 'corazón',  em: '❤️' },
+        { txt: 'estómago', em: '🫃' },
+        { txt: 'cerebro',  em: '🧠' },
+      ], correct: 1 },
+      // From L102
+      { t: 'pick', q: '«Помнить»', opts: [
+        { txt: 'olvidar',  em: '🤷' },
+        { txt: 'pensar',   em: '🤔' },
+        { txt: 'recordar', em: '🧠' },
+        { txt: 'soñar',    em: '💭' },
+      ], correct: 2 },
+      // From L104
+      { t: 'pick', q: '«Сильный»', opts: [
+        { txt: 'fuerte', em: '💪' },
+        { txt: 'débil',  em: '🥱' },
+        { txt: 'lento',  em: '🐢' },
+        { txt: 'rápido', em: '⚡' },
+      ], correct: 0 },
+      // Mix L101 + L103
+      { t: 'match', pairs: [
+        ['corazón',  'сердце'],
+        ['cerebro',  'мозг'],
+        ['cama',     'кровать'],
+        ['almohada', 'подушка'],
+      ]},
+      // Mix L102 + L104
+      { t: 'match', pairs: [
+        ['pensar',   'думать'],
+        ['recordar', 'помнить'],
+        ['gimnasio', 'спортзал'],
+        ['músculo',  'мускул'],
+      ]},
+      // From L102
+      { t: 'translate', from: 'Я не помню', tiles: ['no', 'recuerdo', 'olvido', 'me'], answer: ['no', 'recuerdo'] },
+      // From L103
+      { t: 'fill', sentence: ['Por la noche', null, 'en mi cama.'], target: 'duermo', opts: ['duermo', 'corro', 'leo'], hint: 'Ночью я сплю в кровати' },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // BLOCK B (L106-L110): Grammar polish
+  // ════════════════════════════════════════════════════════
+
+  // ── 106. Imperativo ───────────────────────────────────
+  {
+    id: 'l106', name: 'Imperativo', emoji: '📢', desc: 'Mandatos: ¡come!, ¡ven!',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Ешь!»', opts: [
+        { txt: '¡come!',  em: '🍽️' },
+        { txt: '¡bebe!',  em: '🥤' },
+        { txt: '¡habla!', em: '💬' },
+        { txt: '¡mira!',  em: '👀' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Иди!»', opts: [
+        { txt: '¡ven!', em: '⬅️' },
+        { txt: '¡ve!',  em: '🚶' },
+        { txt: '¡di!',  em: '💬' },
+        { txt: '¡haz!', em: '🔨' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Приходи!»', opts: [
+        { txt: '¡ve!',     em: '🚶' },
+        { txt: '¡mira!',   em: '👀' },
+        { txt: '¡ven!',    em: '⬅️' },
+        { txt: '¡corre!',  em: '🏃' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['¡come!',  'ешь!'],
+        ['¡bebe!',  'пей!'],
+        ['¡habla!', 'говори!'],
+        ['¡mira!',  'смотри!'],
+      ]},
+      { t: 'match', pairs: [
+        ['¡ven!',     'приходи!'],
+        ['¡escucha!', 'слушай!'],
+        ['¡espera!',  'жди!'],
+        ['¡ayúdame!', 'помоги мне!'],
+      ]},
+      // Reuse «agua» from L42
+      { t: 'translate', from: 'Пей воду!', tiles: ['bebe', 'agua', 'come', 'pan'], answer: ['bebe', 'agua'] },
+      // Hard pick — negative imperative uses subjunctive form, not -es ending of indicative.
+      { t: 'pick', q: '«Не ешь это!»', opts: [
+        { txt: '¡no comas eso!',  em: '✅' },
+        { txt: '¡no comes eso!',  em: '❌' },
+        { txt: '¡no come eso!',   em: '❌' },
+        { txt: '¡no comer eso!',  em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['¡', null, 'la puerta, por favor!'], target: 'abre', opts: ['abre', 'cierra', 'mira'], hint: 'Открой дверь, пожалуйста!' },
+      { t: 'fill', sentence: ['¡No', null, 'eso!'], target: 'hagas', opts: ['hagas', 'haces', 'hago'], hint: 'Не делай этого! (отриц. imperativo)' },
+      { t: 'typed', from: 'Помоги мне!', answer: '¡ayúdame!', answers: ['¡ayúdame!', 'ayúdame', 'ayudame'], hint: 'ayudar + me' },
+    ],
+  },
+
+  // ── 107. Adjetivos II ─────────────────────────────────
+  {
+    id: 'l107', name: 'Adjetivos II', emoji: '🎨', desc: 'Rápido, lento, fácil…',
+    exercises: [
+      { t: 'pick', q: '«Быстрый»', opts: [
+        { txt: 'rápido', em: '⚡' },
+        { txt: 'lento',  em: '🐢' },
+        { txt: 'fácil',  em: '👍' },
+        { txt: 'difícil',em: '🤯' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Лёгкий (простой)»', opts: [
+        { txt: 'difícil', em: '🤯' },
+        { txt: 'fácil',   em: '👍' },
+        { txt: 'lento',   em: '🐢' },
+        { txt: 'fuerte',  em: '💪' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Важный»', opts: [
+        { txt: 'libre',     em: '🕊️' },
+        { txt: 'ocupado',   em: '⏳' },
+        { txt: 'importante',em: '⭐' },
+        { txt: 'aburrido',  em: '😐' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['rápido',  'быстрый'],
+        ['lento',   'медленный'],
+        ['fácil',   'лёгкий'],
+        ['difícil', 'трудный'],
+      ]},
+      { t: 'match', pairs: [
+        ['libre',      'свободный'],
+        ['ocupado',    'занятый'],
+        ['importante', 'важный'],
+        ['interesante','интересный'],
+      ]},
+      // Reuse «coche» from L26
+      { t: 'translate', from: 'Быстрая машина', tiles: ['un', 'coche', 'rápido', 'lento'], answer: ['un', 'coche', 'rápido'] },
+      { t: 'fill', sentence: ['Este libro es muy', null, '.'], target: 'interesante', opts: ['interesante', 'lunes', 'pan'], hint: 'Эта книга очень интересная' },
+    ],
+  },
+
+  // ── 108. Adverbios II ─────────────────────────────────
+  // Builds on L69 (siempre, nunca) and L1 (bien, mal)
+  {
+    id: 'l108', name: 'Adverbios II', emoji: '🎚️', desc: 'Bien, mal, muy, mucho…',
+    exercises: [
+      { t: 'pick', q: '«Очень»', opts: [
+        { txt: 'muy',    em: '❗' },
+        { txt: 'poco',   em: '🤏' },
+        { txt: 'mucho',  em: '💯' },
+        { txt: 'tanto',  em: '🟰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Много»', opts: [
+        { txt: 'poco',   em: '🤏' },
+        { txt: 'mucho',  em: '💯' },
+        { txt: 'casi',   em: '⏳' },
+        { txt: 'apenas', em: '🪶' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Быстро»', opts: [
+        { txt: 'bien',          em: '👍' },
+        { txt: 'mal',           em: '👎' },
+        { txt: 'rápidamente',   em: '⚡' },
+        { txt: 'lentamente',    em: '🐢' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['muy',     'очень'],
+        ['mucho',   'много'],
+        ['poco',    'мало'],
+        ['demasiado','слишком'],
+      ]},
+      { t: 'match', pairs: [
+        ['rápidamente', 'быстро'],
+        ['lentamente',  'медленно'],
+        ['fácilmente',  'легко'],
+        ['claramente',  'ясно'],
+      ]},
+      // Reuse «bien» / «mal» from L1
+      { t: 'translate', from: 'Я очень хорошо', tiles: ['estoy', 'muy', 'bien', 'mal'], answer: ['estoy', 'muy', 'bien'] },
+      // Hard pick — "muy mucho" is a common L1-RU error.
+      { t: 'pick', q: '«У меня очень много друзей»', opts: [
+        { txt: 'tengo muchos amigos',     em: '✅' },
+        { txt: 'tengo muy muchos amigos', em: '❌' },
+        { txt: 'tengo muy amigos',        em: '❌' },
+        { txt: 'tengo mucho amigos',      em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Hablas español', null, '.'], target: 'bien', opts: ['bien', 'mucho', 'muy'], hint: 'Ты говоришь по-испански хорошо' },
+    ],
+  },
+
+  // ── 109. Conjunciones ─────────────────────────────────
+  {
+    id: 'l109', name: 'Conjunciones', emoji: '🔗', desc: 'Pero, porque, aunque…',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Но»', opts: [
+        { txt: 'pero',    em: '↔️' },
+        { txt: 'porque',  em: '❓' },
+        { txt: 'aunque',  em: '🤷' },
+        { txt: 'y',       em: '➕' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Потому что»', opts: [
+        { txt: 'aunque', em: '🤷' },
+        { txt: 'porque', em: '❓' },
+        { txt: 'pero',   em: '↔️' },
+        { txt: 'si',     em: '🔀' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Хотя»', opts: [
+        { txt: 'porque',  em: '❓' },
+        { txt: 'pero',    em: '↔️' },
+        { txt: 'aunque',  em: '🤷' },
+        { txt: 'también', em: '➕' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['y',      'и'],
+        ['o',      'или'],
+        ['pero',   'но'],
+        ['porque', 'потому что'],
+      ]},
+      { t: 'match', pairs: [
+        ['aunque',       'хотя'],
+        ['también',      'тоже'],
+        ['además',       'кроме того'],
+        ['sin embargo',  'однако'],
+      ]},
+      // Reuse food + verbs
+      { t: 'translate', from: 'Я хочу пить, но не голоден', tiles: ['tengo', 'sed', 'pero', 'no', 'hambre'], answer: ['tengo', 'sed', 'pero', 'no', 'hambre'] },
+      { t: 'fill', sentence: ['No voy', null, 'estoy cansado.'], target: 'porque', opts: ['porque', 'aunque', 'pero'], hint: 'Я не иду, потому что устал' },
+      // Hard pick — "y" becomes "e" before /i/ sound (igual → e igual).
+      { t: 'pick', q: '«Отец и сын» — как правильно?', opts: [
+        { txt: 'padre e hijo',  em: '✅' },
+        { txt: 'padre y hijo',  em: '⚠️' },
+        { txt: 'padre o hijo',  em: '❌' },
+        { txt: 'padre pero hijo',em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Es caro', null, 'lo compro.'], target: 'pero', opts: ['pero', 'porque', 'y'], hint: 'Это дорого, но я это куплю' },
+      { t: 'typed', from: 'Я устал, но счастлив', answer: 'estoy cansado pero feliz', answers: ['estoy cansado pero feliz', 'estoy cansada pero feliz'], hint: 'pero = но' },
+    ],
+  },
+
+  // ── 110. Repaso 17 (106-109) ──────────────────────────
+  {
+    id: 'l110', name: 'Repaso 17', emoji: '🔁', desc: 'Repasa lecciones 106-109',
+    exercises: [
+      // From L106
+      { t: 'pick', q: '«Ешь!»', opts: [
+        { txt: '¡come!',  em: '🍽️' },
+        { txt: '¡bebe!',  em: '🥤' },
+        { txt: '¡habla!', em: '💬' },
+        { txt: '¡mira!',  em: '👀' },
+      ], correct: 0 },
+      // From L107
+      { t: 'pick', q: '«Быстрый»', opts: [
+        { txt: 'lento',  em: '🐢' },
+        { txt: 'fácil',  em: '👍' },
+        { txt: 'rápido', em: '⚡' },
+        { txt: 'difícil',em: '🤯' },
+      ], correct: 2 },
+      // From L109
+      { t: 'pick', q: '«Но»', opts: [
+        { txt: 'pero',    em: '↔️' },
+        { txt: 'porque',  em: '❓' },
+        { txt: 'aunque',  em: '🤷' },
+        { txt: 'y',       em: '➕' },
+      ], correct: 0 },
+      // Mix L106 + L107
+      { t: 'match', pairs: [
+        ['¡ven!',   'приходи!'],
+        ['¡mira!',  'смотри!'],
+        ['rápido',  'быстрый'],
+        ['fácil',   'лёгкий'],
+      ]},
+      // Mix L108 + L109
+      { t: 'match', pairs: [
+        ['muy',     'очень'],
+        ['mucho',   'много'],
+        ['porque',  'потому что'],
+        ['aunque',  'хотя'],
+      ]},
+      // From L109
+      { t: 'translate', from: 'Я хочу пить, но не голоден', tiles: ['tengo', 'sed', 'pero', 'no', 'hambre'], answer: ['tengo', 'sed', 'pero', 'no', 'hambre'] },
+      // From L108
+      { t: 'fill', sentence: ['Hablas español', null, '.'], target: 'bien', opts: ['bien', 'mucho', 'muy'], hint: 'Ты говоришь хорошо' },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // BLOCK C (L111-L115): Family & life events
+  // ════════════════════════════════════════════════════════
+
+  // ── 111. Familia II ───────────────────────────────────
+  // Extended family — builds on L3
+  {
+    id: 'l111', name: 'Familia II', emoji: '👨‍👩‍👧‍👦', desc: 'Tíos, primos, sobrinos',
+    exercises: [
+      { t: 'pick', q: '«Дядя»', opts: [
+        { txt: 'tío',     em: '👨' },
+        { txt: 'tía',     em: '👩' },
+        { txt: 'primo',   em: '👦' },
+        { txt: 'sobrino', em: '🧒' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Двоюродная сестра»', opts: [
+        { txt: 'hermana', em: '👧' },
+        { txt: 'prima',   em: '👧' },
+        { txt: 'sobrina', em: '🧒' },
+        { txt: 'abuela',  em: '👵' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Племянник»', opts: [
+        { txt: 'tío',     em: '👨' },
+        { txt: 'primo',   em: '👦' },
+        { txt: 'sobrino', em: '🧒' },
+        { txt: 'nieto',   em: '👶' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['tío',     'дядя'],
+        ['tía',     'тётя'],
+        ['primo',   'двоюр. брат'],
+        ['prima',   'двоюр. сестра'],
+      ]},
+      { t: 'match', pairs: [
+        ['sobrino', 'племянник'],
+        ['sobrina', 'племянница'],
+        ['nieto',   'внук'],
+        ['nieta',   'внучка'],
+      ]},
+      // Reuse «mi» from L41
+      { t: 'translate', from: 'Мой дядя', tiles: ['mi', 'tío', 'tía', 'tu'], answer: ['mi', 'tío'] },
+      { t: 'fill', sentence: ['Mi', null, 'tiene tres hijos.'], target: 'tía', opts: ['tía', 'sobrino', 'casa'], hint: 'У моей тёти трое детей' },
+    ],
+  },
+
+  // ── 112. Bodas y fiestas ──────────────────────────────
+  {
+    id: 'l112', name: 'Celebraciones', emoji: '🎉', desc: 'Bodas y fiestas',
+    exercises: [
+      { t: 'pick', q: '«Свадьба»', opts: [
+        { txt: 'boda',      em: '💒' },
+        { txt: 'fiesta',    em: '🎉' },
+        { txt: 'regalo',    em: '🎁' },
+        { txt: 'invitado',  em: '🙋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Подарок»', opts: [
+        { txt: 'fiesta',  em: '🎉' },
+        { txt: 'regalo',  em: '🎁' },
+        { txt: 'pastel',  em: '🎂' },
+        { txt: 'baile',   em: '💃' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Гость»', opts: [
+        { txt: 'novio',    em: '🤵' },
+        { txt: 'novia',    em: '👰' },
+        { txt: 'invitado', em: '🙋' },
+        { txt: 'amigo',    em: '🙂' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['boda',     'свадьба'],
+        ['novio',    'жених'],
+        ['novia',    'невеста'],
+        ['anillo',   'кольцо'],
+      ]},
+      { t: 'match', pairs: [
+        ['fiesta',   'вечеринка'],
+        ['regalo',   'подарок'],
+        ['invitado', 'гость'],
+        ['pastel',   'торт'],
+      ]},
+      // Reuse «cumpleaños» / «mayo» pattern from L15
+      { t: 'translate', from: 'С днём рождения!', tiles: ['feliz', 'cumpleaños', 'navidad', 'año'], answer: ['feliz', 'cumpleaños'] },
+      { t: 'fill', sentence: ['La', null, 'es en junio.'], target: 'boda', opts: ['boda', 'lunes', 'mar'], hint: 'Свадьба в июне' },
+    ],
+  },
+
+  // ── 113. Bebés y crianza ──────────────────────────────
+  {
+    id: 'l113', name: 'Bebés', emoji: '👶', desc: 'Niños y crianza',
+    exercises: [
+      { t: 'pick', q: '«Малыш»', opts: [
+        { txt: 'bebé',    em: '👶' },
+        { txt: 'niño',    em: '🧒' },
+        { txt: 'joven',   em: '🧑' },
+        { txt: 'adulto',  em: '👨' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Игрушка»', opts: [
+        { txt: 'cuna',    em: '🛏️' },
+        { txt: 'juguete', em: '🧸' },
+        { txt: 'biberón', em: '🍼' },
+        { txt: 'pañal',   em: '🩲' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Плакать»', opts: [
+        { txt: 'reír',  em: '😄' },
+        { txt: 'jugar', em: '🎮' },
+        { txt: 'llorar',em: '😭' },
+        { txt: 'dormir',em: '😴' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['bebé',    'малыш'],
+        ['cuna',    'колыбель'],
+        ['biberón', 'бутылочка'],
+        ['pañal',   'подгузник'],
+      ]},
+      { t: 'match', swap: true, pairs: [
+        ['llorar', 'плакать'],
+        ['reír',   'смеяться'],
+        ['jugar',  'играть'],
+        ['gatear', 'ползать'],
+      ]},
+      // Reuse «juguete» / «jugar» from L38
+      { t: 'translate', from: 'Малыш играет', tiles: ['el', 'bebé', 'juega', 'llora'], answer: ['el', 'bebé', 'juega'] },
+      { t: 'fill', sentence: ['El bebé', null, 'porque tiene hambre.'], target: 'llora', opts: ['llora', 'come', 'duerme'], hint: 'Малыш плачет, потому что голоден' },
+    ],
+  },
+
+  // ── 114. Edades y etapas ──────────────────────────────
+  {
+    id: 'l114', name: 'Edades', emoji: '🌱', desc: 'Etapas de la vida',
+    exercises: [
+      { t: 'pick', q: '«Молодой»', opts: [
+        { txt: 'joven',    em: '🧑' },
+        { txt: 'viejo',    em: '👴' },
+        { txt: 'niño',     em: '🧒' },
+        { txt: 'adulto',   em: '👨' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Подросток»', opts: [
+        { txt: 'bebé',         em: '👶' },
+        { txt: 'adolescente',  em: '🧑' },
+        { txt: 'adulto',       em: '👨' },
+        { txt: 'anciano',      em: '👴' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Старик»', opts: [
+        { txt: 'adulto',  em: '👨' },
+        { txt: 'joven',   em: '🧑' },
+        { txt: 'anciano', em: '👴' },
+        { txt: 'niño',    em: '🧒' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['bebé',        'малыш'],
+        ['niño',        'ребёнок'],
+        ['adolescente', 'подросток'],
+        ['adulto',      'взрослый'],
+      ]},
+      { t: 'match', pairs: [
+        ['joven',     'молодой'],
+        ['viejo',     'старый'],
+        ['anciano',   'старик'],
+        ['edad',      'возраст'],
+      ]},
+      // Reuse «tengo … años» from L4 + L47
+      { t: 'translate', from: 'Моей бабушке семьдесят лет', tiles: ['mi', 'abuela', 'tiene', 'setenta', 'años', 'siete'], answer: ['mi', 'abuela', 'tiene', 'setenta', 'años'] },
+      { t: 'fill', sentence: ['Soy todavía', null, '.'], target: 'joven', opts: ['joven', 'azul', 'mesa'], hint: 'Я ещё молод' },
+    ],
+  },
+
+  // ── 115. Repaso 18 (111-114) ──────────────────────────
+  {
+    id: 'l115', name: 'Repaso 18', emoji: '🔁', desc: 'Repasa lecciones 111-114',
+    exercises: [
+      // From L111
+      { t: 'pick', q: '«Дядя»', opts: [
+        { txt: 'tío',     em: '👨' },
+        { txt: 'tía',     em: '👩' },
+        { txt: 'primo',   em: '👦' },
+        { txt: 'sobrino', em: '🧒' },
+      ], correct: 0 },
+      // From L112
+      { t: 'pick', q: '«Подарок»', opts: [
+        { txt: 'fiesta',  em: '🎉' },
+        { txt: 'regalo',  em: '🎁' },
+        { txt: 'invitado',em: '🙋' },
+        { txt: 'baile',   em: '💃' },
+      ], correct: 1 },
+      // From L114
+      { t: 'pick', q: '«Старик»', opts: [
+        { txt: 'adulto',  em: '👨' },
+        { txt: 'joven',   em: '🧑' },
+        { txt: 'anciano', em: '👴' },
+        { txt: 'niño',    em: '🧒' },
+      ], correct: 2 },
+      // Mix L111 + L113
+      { t: 'match', pairs: [
+        ['tío',     'дядя'],
+        ['sobrino', 'племянник'],
+        ['bebé',    'малыш'],
+        ['juguete', 'игрушка'],
+      ]},
+      // Mix L112 + L114
+      { t: 'match', pairs: [
+        ['boda',     'свадьба'],
+        ['regalo',   'подарок'],
+        ['joven',    'молодой'],
+        ['viejo',    'старый'],
+      ]},
+      // From L114
+      { t: 'translate', from: 'Моей бабушке семьдесят лет', tiles: ['mi', 'abuela', 'tiene', 'setenta', 'años'], answer: ['mi', 'abuela', 'tiene', 'setenta', 'años'] },
+      // From L113
+      { t: 'fill', sentence: ['El bebé', null, 'porque tiene hambre.'], target: 'llora', opts: ['llora', 'come', 'duerme'], hint: 'Малыш плачет' },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // BLOCK D (L116-L120): Advanced pronouns & perfect tense
+  // ════════════════════════════════════════════════════════
+
+  // ── 116. Pretérito perfecto ───────────────────────────
+  // Builds on L39 (pasado) and L64 (imperfecto)
+  {
+    id: 'l116', name: 'Pretérito perfecto', emoji: '✅', desc: 'He comido, has visto…',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я (только что) ел»', opts: [
+        { txt: 'he comido',   em: '✅' },
+        { txt: 'comí',        em: '⏪' },
+        { txt: 'comía',       em: '⏳' },
+        { txt: 'voy a comer', em: '⏩' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ты видел?»', opts: [
+        { txt: '¿viste?',      em: '⏪' },
+        { txt: '¿has visto?',  em: '✅' },
+        { txt: '¿veías?',      em: '⏳' },
+        { txt: '¿ves?',        em: '⏺️' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Мы пошли»', opts: [
+        { txt: 'fuimos',      em: '⏪' },
+        { txt: 'íbamos',      em: '⏳' },
+        { txt: 'hemos ido',   em: '✅' },
+        { txt: 'vamos',       em: '⏺️' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['he',     'я (вспом.)'],
+        ['has',    'ты (вспом.)'],
+        ['ha',     'он/она (вспом.)'],
+        ['hemos',  'мы (вспом.)'],
+      ]},
+      { t: 'match', pairs: [
+        ['comido',   'ел/съел'],
+        ['bebido',   'пил/выпил'],
+        ['visto',    'видел'],
+        ['hecho',    'сделал'],
+      ]},
+      // Reuse «hoy» from L8
+      { t: 'translate', from: 'Сегодня я не ел', tiles: ['hoy', 'no', 'he', 'comido', 'comí'], answer: ['hoy', 'no', 'he', 'comido'] },
+      { t: 'fill', sentence: ['Esta mañana', null, 'bebido café.'], target: 'he', opts: ['he', 'has', 'ha'], hint: 'Этим утром я пил кофе' },
+      // Hard pick — "ido" is irregular participle of ir.
+      { t: 'pick', q: '«Они пошли в кино»', opts: [
+        { txt: 'han ido al cine',   em: '✅' },
+        { txt: 'han id al cine',    em: '❌' },
+        { txt: 'han voy al cine',   em: '❌' },
+        { txt: 'han iendo al cine', em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['¿', null, 'visto mi llave?'], target: 'has', opts: ['has', 'he', 'ha'], hint: 'Ты видел мой ключ?' },
+      { t: 'typed', from: 'Я никогда не был в Испании', answer: 'nunca he estado en españa', answers: ['nunca he estado en españa', 'no he estado nunca en españa'], hint: 'estar → estado' },
+    ],
+  },
+
+  // ── 117. Pronombres OD ────────────────────────────────
+  {
+    id: 'l117', name: 'Pronombres OD', emoji: '🎯', desc: 'Lo, la, los, las',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я его вижу» (el libro)', opts: [
+        { txt: 'lo veo',  em: '👀' },
+        { txt: 'la veo',  em: '👀' },
+        { txt: 'le veo',  em: '👀' },
+        { txt: 'veo lo',  em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я её покупаю» (la casa)', opts: [
+        { txt: 'lo compro', em: '🛒' },
+        { txt: 'la compro', em: '🛒' },
+        { txt: 'les compro',em: '❌' },
+        { txt: 'compro la', em: '❌' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я их (м.р., мн.ч.) знаю»', opts: [
+        { txt: 'las conozco', em: '👥' },
+        { txt: 'la conozco',  em: '👤' },
+        { txt: 'los conozco', em: '👥' },
+        { txt: 'le conozco',  em: '👤' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['lo',  'его (м.р.)'],
+        ['la',  'её (ж.р.)'],
+        ['los', 'их (м.р.)'],
+        ['las', 'их (ж.р.)'],
+      ]},
+      { t: 'match', pairs: [
+        ['te veo',     'я тебя вижу'],
+        ['me ves',     'ты меня видишь'],
+        ['nos vemos',  'мы видимся'],
+        ['os veo',     'я вас вижу (Spain)'],
+      ]},
+      // Reuse «¿lo ves?» context
+      { t: 'translate', from: 'Я её знаю', tiles: ['la', 'lo', 'conozco', 'sé'], answer: ['la', 'conozco'] },
+      { t: 'fill', sentence: ['¿Tienes el libro? Sí,', null, 'tengo.'], target: 'lo', opts: ['lo', 'la', 'le'], hint: 'Книга = м.р. → lo' },
+      // Hard pick — OD pronoun goes BEFORE conjugated verb (no postposing).
+      { t: 'pick', q: '«Я её вижу» — порядок слов?', opts: [
+        { txt: 'la veo',   em: '✅' },
+        { txt: 'veo la',   em: '❌' },
+        { txt: 'la yo veo',em: '❌' },
+        { txt: 'yo la la veo', em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Las flores son bonitas, las', null, '.'], target: 'compro', opts: ['compro', 'compra', 'compran'], hint: 'Цветы красивые, я их покупаю' },
+      { t: 'typed', from: 'Я его не вижу', answer: 'no lo veo', answers: ['no lo veo', 'yo no lo veo'], hint: 'lo стоит перед глаголом' },
+    ],
+  },
+
+  // ── 118. Pronombres OI ────────────────────────────────
+  {
+    id: 'l118', name: 'Pronombres OI', emoji: '➡️', desc: 'Me, te, le, nos, les',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я ему пишу»', opts: [
+        { txt: 'le escribo',  em: '✉️' },
+        { txt: 'lo escribo',  em: '❌' },
+        { txt: 'me escribo',  em: '❌' },
+        { txt: 'escribo le',  em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я тебе говорю»', opts: [
+        { txt: 'le digo',  em: '💬' },
+        { txt: 'te digo',  em: '💬' },
+        { txt: 'me digo',  em: '💬' },
+        { txt: 'os digo',  em: '💬' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я им даю»', opts: [
+        { txt: 'le doy',  em: '🎁' },
+        { txt: 'lo doy',  em: '🎁' },
+        { txt: 'les doy', em: '🎁' },
+        { txt: 'me doy',  em: '❌' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['me',  'мне'],
+        ['te',  'тебе'],
+        ['le',  'ему/ей'],
+        ['les', 'им'],
+      ]},
+      { t: 'match', pairs: [
+        ['me das',     'ты мне даёшь'],
+        ['te doy',     'я тебе даю'],
+        ['le digo',    'я ему говорю'],
+        ['nos hablan', 'они нам говорят'],
+      ]},
+      // Reuse «¿me oyes?» pattern
+      { t: 'translate', from: 'Я ему говорю правду', tiles: ['le', 'digo', 'la', 'verdad', 'lo'], answer: ['le', 'digo', 'la', 'verdad'] },
+      { t: 'fill', sentence: ['Mi madre', null, 'da dinero.'], target: 'me', opts: ['me', 'te', 'le'], hint: 'Моя мама мне даёт деньги' },
+      // Hard pick — gustar always uses OI, not subject pronoun.
+      { t: 'pick', q: '«Ему нравится футбол»', opts: [
+        { txt: 'le gusta el fútbol',  em: '✅' },
+        { txt: 'lo gusta el fútbol',  em: '❌' },
+        { txt: 'él gusta el fútbol',  em: '❌' },
+        { txt: 'se gusta el fútbol',  em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['¿', null, 'gusta el café? Sí, mucho.'], target: 'te', opts: ['te', 'le', 'me'], hint: 'Тебе нравится кофе?' },
+      { t: 'typed', from: 'Я им пишу письмо', answer: 'les escribo una carta', answers: ['les escribo una carta', 'yo les escribo una carta'], hint: 'OI: les' },
+    ],
+  },
+
+  // ── 119. Pronombres juntos ────────────────────────────
+  {
+    id: 'l119', name: 'Pronombres juntos', emoji: '🔗', desc: 'Me lo, te la, se lo',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я тебе это даю» (порядок?)', opts: [
+        { txt: 'te lo doy',  em: '✅' },
+        { txt: 'lo te doy',  em: '❌' },
+        { txt: 'te doy lo',  em: '❌' },
+        { txt: 'doy te lo',  em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я ему это говорю»', opts: [
+        { txt: 'le lo digo',  em: '❌' },
+        { txt: 'se lo digo',  em: '✅' },
+        { txt: 'lo le digo',  em: '❌' },
+        { txt: 'lo se digo',  em: '❌' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Я ей её (карту) показываю»', opts: [
+        { txt: 'le la muestro',  em: '❌' },
+        { txt: 'la le muestro',  em: '❌' },
+        { txt: 'se la muestro',  em: '✅' },
+        { txt: 'muestro le la',  em: '❌' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['me lo',  'мне это (м.р.)'],
+        ['te la',  'тебе это (ж.р.)'],
+        ['se lo',  'ему/ей это (м.р.)'],
+        ['nos las','нам их (ж.р.)'],
+      ]},
+      // Hard match — order is always OI before OD.
+      { t: 'match', pairs: [
+        ['me lo das',    'ты мне это даёшь'],
+        ['te la doy',    'я тебе её даю'],
+        ['se lo digo',   'я ему/ей это говорю'],
+        ['nos lo dicen', 'нам это говорят'],
+      ]},
+      // Hard translate — reflect le+lo → se+lo transformation
+      { t: 'translate', from: 'Я ей это даю', tiles: ['se', 'le', 'lo', 'la', 'doy'], answer: ['se', 'lo', 'doy'] },
+      { t: 'fill', sentence: ['Mi madre', null, 'lo regaló.'], target: 'me', opts: ['me', 'te', 'se'], hint: 'Моя мама мне это подарила → me lo' },
+      // Hard pick — "le lo" never appears; always becomes "se lo".
+      { t: 'pick', q: '«Я ему её рассказываю» — как правильно?', opts: [
+        { txt: 'se la cuento',  em: '✅' },
+        { txt: 'le la cuento',  em: '❌' },
+        { txt: 'la le cuento',  em: '❌' },
+        { txt: 'le cuento la',  em: '❌' },
+      ], correct: 0 },
+      { t: 'fill', sentence: ['Tu coche está sucio,', null, 'lo lavo.'], target: 'te', opts: ['te', 'me', 'se'], hint: 'Твоя машина грязная, я её тебе помою → te lo' },
+      { t: 'typed', from: 'Я тебе её дам', answer: 'te la doy', answers: ['te la doy', 'te la voy a dar', 'yo te la doy'], hint: 'OI (te) + OD (la) + verbo' },
+    ],
+  },
+
+  // ── 120. Repaso 19 (116-119) ──────────────────────────
+  {
+    id: 'l120', name: 'Repaso 19', emoji: '🔁', desc: 'Repasa lecciones 116-119',
+    exercises: [
+      // From L116
+      { t: 'pick', q: '«Я (только что) ел»', opts: [
+        { txt: 'he comido', em: '✅' },
+        { txt: 'comí',      em: '⏪' },
+        { txt: 'comía',     em: '⏳' },
+        { txt: 'como',      em: '⏺️' },
+      ], correct: 0 },
+      // From L117
+      { t: 'pick', q: '«Я её вижу» (la casa)', opts: [
+        { txt: 'lo veo', em: '❌' },
+        { txt: 'la veo', em: '👀' },
+        { txt: 'le veo', em: '❌' },
+        { txt: 'veo la', em: '❌' },
+      ], correct: 1 },
+      // From L119
+      { t: 'pick', q: '«Я ему это говорю»', opts: [
+        { txt: 'le lo digo', em: '❌' },
+        { txt: 'lo le digo', em: '❌' },
+        { txt: 'se lo digo', em: '✅' },
+        { txt: 'digo se lo', em: '❌' },
+      ], correct: 2 },
+      // Mix L116 + L117
+      { t: 'match', pairs: [
+        ['he comido', 'я ел (только что)'],
+        ['hemos ido', 'мы пошли'],
+        ['lo',        'его (м.р.)'],
+        ['la',        'её (ж.р.)'],
+      ]},
+      // Mix L118 + L119
+      { t: 'match', pairs: [
+        ['le',     'ему/ей'],
+        ['les',    'им'],
+        ['se lo',  'ему/ей это'],
+        ['te la',  'тебе её'],
+      ]},
+      // From L116
+      { t: 'translate', from: 'Сегодня я не ел', tiles: ['hoy', 'no', 'he', 'comido'], answer: ['hoy', 'no', 'he', 'comido'] },
+      // From L117
+      { t: 'fill', sentence: ['¿Tienes el libro? Sí,', null, 'tengo.'], target: 'lo', opts: ['lo', 'la', 'le'], hint: 'Книга = м.р. → lo' },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // BLOCK E (L121-L125): Modern life & master review
+  // ════════════════════════════════════════════════════════
+
+  // ── 121. Banco y finanzas ─────────────────────────────
+  {
+    id: 'l121', name: 'Banco', emoji: '🏦', desc: 'Cajero, cuenta, ahorrar',
+    exercises: [
+      { t: 'pick', q: '«Банк»', opts: [
+        { txt: 'banco',   em: '🏦' },
+        { txt: 'cajero',  em: '🏧' },
+        { txt: 'tarjeta', em: '💳' },
+        { txt: 'cuenta',  em: '📋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Банкомат»', opts: [
+        { txt: 'banco',    em: '🏦' },
+        { txt: 'cajero',   em: '🏧' },
+        { txt: 'efectivo', em: '💵' },
+        { txt: 'cambio',   em: '🔄' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Сберегать»', opts: [
+        { txt: 'gastar',   em: '💸' },
+        { txt: 'cobrar',   em: '💰' },
+        { txt: 'ahorrar',  em: '🐷' },
+        { txt: 'prestar',  em: '🤝' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['banco',     'банк'],
+        ['cajero',    'банкомат'],
+        ['cuenta',    'счёт'],
+        ['tarjeta',   'карта'],
+      ]},
+      { t: 'match', swap: true, pairs: [
+        ['ahorrar',  'сберегать'],
+        ['gastar',   'тратить'],
+        ['prestar',  'одолжить'],
+        ['deber',    'быть должным'],
+      ]},
+      // Reuse dinero from L48
+      { t: 'translate', from: 'Я хочу снять деньги', tiles: ['quiero', 'sacar', 'dinero', 'meter'], answer: ['quiero', 'sacar', 'dinero'] },
+      { t: 'fill', sentence: ['Necesito una', null, 'nueva.'], target: 'tarjeta', opts: ['tarjeta', 'casa', 'flor'], hint: 'Мне нужна новая карта' },
+    ],
+  },
+
+  // ── 122. Coches y conducir ────────────────────────────
+  {
+    id: 'l122', name: 'Conducir', emoji: '🚗', desc: 'Gasolina, semáforo, multa',
+    exercises: [
+      { t: 'pick', q: '«Водить»', opts: [
+        { txt: 'conducir', em: '🚗' },
+        { txt: 'caminar',  em: '🚶' },
+        { txt: 'volar',    em: '✈️' },
+        { txt: 'nadar',    em: '🏊' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Бензин»', opts: [
+        { txt: 'aceite',   em: '🛢️' },
+        { txt: 'gasolina', em: '⛽' },
+        { txt: 'agua',     em: '💧' },
+        { txt: 'aire',     em: '💨' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Светофор»', opts: [
+        { txt: 'calle',    em: '🛣️' },
+        { txt: 'señal',    em: '🚸' },
+        { txt: 'semáforo', em: '🚦' },
+        { txt: 'esquina',  em: '📐' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['conducir', 'водить'],
+        ['gasolina', 'бензин'],
+        ['semáforo', 'светофор'],
+        ['multa',    'штраф'],
+      ]},
+      { t: 'match', pairs: [
+        ['carnet',   'права'],
+        ['rueda',    'колесо'],
+        ['volante',  'руль'],
+        ['aparcar',  'парковаться'],
+      ]},
+      // Reuse coche from L26
+      { t: 'translate', from: 'Я не умею водить', tiles: ['no', 'sé', 'conducir', 'puedo'], answer: ['no', 'sé', 'conducir'] },
+      { t: 'fill', sentence: ['El', null, 'está en rojo.'], target: 'semáforo', opts: ['semáforo', 'banco', 'pan'], hint: 'Светофор красный' },
+    ],
+  },
+
+  // ── 123. Medio ambiente ───────────────────────────────
+  {
+    id: 'l123', name: 'Medio ambiente', emoji: '🌍', desc: 'Planeta, reciclar, basura',
+    exercises: [
+      { t: 'pick', q: '«Планета»', opts: [
+        { txt: 'planeta',   em: '🌍' },
+        { txt: 'estrella',  em: '⭐' },
+        { txt: 'luna',      em: '🌙' },
+        { txt: 'sol',       em: '☀️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Мусор»', opts: [
+        { txt: 'agua',    em: '💧' },
+        { txt: 'basura',  em: '🗑️' },
+        { txt: 'aire',    em: '💨' },
+        { txt: 'tierra',  em: '🌱' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Перерабатывать»', opts: [
+        { txt: 'tirar',     em: '🗑️' },
+        { txt: 'comprar',   em: '🛒' },
+        { txt: 'reciclar',  em: '♻️' },
+        { txt: 'limpiar',   em: '🧹' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['planeta',  'планета'],
+        ['Tierra',   'Земля'],
+        ['basura',   'мусор'],
+        ['reciclar', 'перерабатывать'],
+      ]},
+      { t: 'match', pairs: [
+        ['aire',           'воздух'],
+        ['agua',           'вода'],
+        ['contaminación',  'загрязнение'],
+        ['naturaleza',     'природа'],
+      ]},
+      // Reuse «mar» / «árbol» from L20
+      { t: 'translate', from: 'Мы должны беречь планету', tiles: ['debemos', 'cuidar', 'el', 'planeta', 'comer'], answer: ['debemos', 'cuidar', 'el', 'planeta'] },
+      { t: 'fill', sentence: ['Hay que', null, 'el plástico.'], target: 'reciclar', opts: ['reciclar', 'comer', 'beber'], hint: 'Надо перерабатывать пластик' },
+    ],
+  },
+
+  // ── 124. Tecnología II ────────────────────────────────
+  // Builds on L37
+  {
+    id: 'l124', name: 'Tecnología II', emoji: '📲', desc: 'Apps, redes, descargar',
+    exercises: [
+      { t: 'pick', q: '«Приложение»', opts: [
+        { txt: 'aplicación', em: '📲' },
+        { txt: 'pantalla',   em: '🖥️' },
+        { txt: 'teclado',    em: '⌨️' },
+        { txt: 'ratón',      em: '🖱️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Скачать»', opts: [
+        { txt: 'subir',     em: '⬆️' },
+        { txt: 'descargar', em: '⬇️' },
+        { txt: 'borrar',    em: '🗑️' },
+        { txt: 'guardar',   em: '💾' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Социальные сети»', opts: [
+        { txt: 'correo',         em: '📧' },
+        { txt: 'video',          em: '📹' },
+        { txt: 'redes sociales', em: '🌐' },
+        { txt: 'archivo',        em: '📁' },
+      ], correct: 2 },
+      { t: 'match', pairs: [
+        ['aplicación',     'приложение'],
+        ['descargar',      'скачать'],
+        ['subir',          'загружать'],
+        ['redes sociales', 'соцсети'],
+      ]},
+      { t: 'match', pairs: [
+        ['enviar',     'отправлять'],
+        ['recibir',    'получать'],
+        ['compartir',  'делиться'],
+        ['comentar',   'комментировать'],
+      ]},
+      // Reuse mensaje / contraseña from L37
+      { t: 'translate', from: 'Я скачиваю приложение', tiles: ['descargo', 'una', 'aplicación', 'subo'], answer: ['descargo', 'una', 'aplicación'] },
+      { t: 'fill', sentence: ['Voy a', null, 'una foto en internet.'], target: 'subir', opts: ['subir', 'comer', 'dormir'], hint: 'Я загружу фото в интернет' },
+      { t: 'typed', from: 'Я отправляю сообщение', answer: 'envío un mensaje', answers: ['envío un mensaje', 'mando un mensaje', 'yo envío un mensaje'], hint: 'enviar / mandar' },
+    ],
+  },
+
+  // ── 125. Repaso Maestro II ────────────────────────────
+  // Final review — mixes broadly across L101-L124
+  {
+    id: 'l125', name: 'Repaso Maestro II', emoji: '🎓', desc: 'Repaso final (101-124)',
+    hearts: 2,
+    exercises: [
+      // — Body III (L101)
+      { t: 'pick', q: '«Сердце»', opts: [
+        { txt: 'corazón', em: '❤️' },
+        { txt: 'cerebro', em: '🧠' },
+        { txt: 'pulmón',  em: '🫁' },
+        { txt: 'hueso',   em: '🦴' },
+      ], correct: 0 },
+      // — Imperativo (L106)
+      { t: 'pick', q: '«Иди!»', opts: [
+        { txt: '¡ven!', em: '⬅️' },
+        { txt: '¡ve!',  em: '🚶' },
+        { txt: '¡di!',  em: '💬' },
+        { txt: '¡haz!', em: '🔨' },
+      ], correct: 1 },
+      // — Familia II (L111)
+      { t: 'pick', q: '«Племянник»', opts: [
+        { txt: 'tío',     em: '👨' },
+        { txt: 'primo',   em: '👦' },
+        { txt: 'sobrino', em: '🧒' },
+        { txt: 'nieto',   em: '👶' },
+      ], correct: 2 },
+      // — Pretérito perfecto (L116)
+      { t: 'pick', q: '«Я (только что) ел»', opts: [
+        { txt: 'he comido', em: '✅' },
+        { txt: 'comí',      em: '⏪' },
+        { txt: 'comía',     em: '⏳' },
+        { txt: 'voy a comer',em: '⏩' },
+      ], correct: 0 },
+      // — Tecnología II (L124)
+      { t: 'pick', q: '«Скачать»', opts: [
+        { txt: 'subir',     em: '⬆️' },
+        { txt: 'descargar', em: '⬇️' },
+        { txt: 'borrar',    em: '🗑️' },
+        { txt: 'enviar',    em: '📤' },
+      ], correct: 1 },
+      // — Mix body + sleep
+      { t: 'match', pairs: [
+        ['corazón',  'сердце'],
+        ['cerebro',  'мозг'],
+        ['cama',     'кровать'],
+        ['almohada', 'подушка'],
+      ]},
+      // — Mix grammar (imperativo + adv + conj)
+      { t: 'match', pairs: [
+        ['¡ven!',  'приходи!'],
+        ['rápido', 'быстрый'],
+        ['pero',   'но'],
+        ['porque', 'потому что'],
+      ]},
+      // — Mix family + life events
+      { t: 'match', pairs: [
+        ['tío',     'дядя'],
+        ['sobrino', 'племянник'],
+        ['boda',    'свадьба'],
+        ['regalo',  'подарок'],
+      ]},
+      // — Mix pronouns (OD + OI + juntos)
+      { t: 'match', pairs: [
+        ['lo',    'его (м.р.)'],
+        ['la',    'её (ж.р.)'],
+        ['le',    'ему/ей'],
+        ['se lo', 'ему/ей это'],
+      ]},
+      // — Mix modern life
+      { t: 'match', pairs: [
+        ['banco',          'банк'],
+        ['conducir',       'водить'],
+        ['reciclar',       'перерабатывать'],
+        ['redes sociales', 'соцсети'],
+      ]},
+      // — Translation: perfect tense
+      { t: 'translate', from: 'Сегодня я не ел', tiles: ['hoy', 'no', 'he', 'comido', 'como'], answer: ['hoy', 'no', 'he', 'comido'] },
+      // — Translation: OD + OI together
+      { t: 'translate', from: 'Я тебе её даю', tiles: ['te', 'le', 'la', 'lo', 'doy'], answer: ['te', 'la', 'doy'] },
+      // — Translation: imperative
+      { t: 'translate', from: 'Пей воду!', tiles: ['bebe', 'agua', 'come', 'pan'], answer: ['bebe', 'agua'] },
+      // — Fill: environment
+      { t: 'fill', sentence: ['Hay que', null, 'el plástico.'], target: 'reciclar', opts: ['reciclar', 'comer', 'dormir'], hint: 'Нужно перерабатывать' },
+      // — Fill: imperative
+      { t: 'fill', sentence: ['¡', null, 'la puerta!'], target: 'abre', opts: ['abre', 'cierra', 'come'], hint: 'Открой дверь!' },
+      // — Typed: perfect tense (production)
+      { t: 'typed', from: 'Я никогда не был в Испании', answer: 'nunca he estado en españa', answers: ['nunca he estado en españa', 'no he estado nunca en españa'], hint: 'pretérito perfecto: he estado' },
+      // — Typed: OD + OI (mastery)
+      { t: 'typed', from: 'Я ему это даю', answer: 'se lo doy', answers: ['se lo doy', 'yo se lo doy'], hint: 'le + lo → se lo' },
+    ],
+  },
 ];
 
 // ── Lesson runtime state ─────────────────────────────────
@@ -5946,9 +7118,45 @@ function startLesson(lessonId) {
   lessonState.maxHearts = hearts;
   lessonState.wrong = 0;
   lessonState.pendingOk = false;
+  lessonState.streak = 0;
+  lessonState.bestStreak = 0;
   showScreen('lesson');
   renderHearts();
   renderCurrentExercise();
+  startLessonTutorQuirks();
+}
+
+// ── Random fun idle behaviors for the lesson axolotl ──
+function startLessonTutorQuirks() {
+  stopLessonTutorQuirks();
+  const tick = () => {
+    const tutors = document.querySelectorAll('#lesson-exercise .lesson-tutor-inline, #lesson-exercise .lex-bubble-avatar');
+    if (!tutors.length || !screens.lesson?.classList.contains('active')) {
+      stopLessonTutorQuirks();
+      return;
+    }
+    const host = tutors[Math.floor(Math.random() * tutors.length)];
+    const svg  = host.querySelector('.mini-axolotl');
+    const quirks = [
+      () => svg && pulseClass(svg, 'is-wink',       1200),
+      () => svg && pulseClass(svg, 'is-bubble',     1400),
+      () => svg && pulseClass(svg, 'is-nod',         900),
+      () => svg && pulseClass(svg, 'is-star-eyes', 1100),
+      () => svg && pulseClass(svg, 'is-heart-eyes',1000),
+      () => spawnLexSparkles(host, 4),
+      () => spawnFloatingEmojis(host, ['✨','💭'], 1),
+    ];
+    quirks[Math.floor(Math.random() * quirks.length)]();
+    lessonState._quirkTimer = setTimeout(tick, 3200 + Math.random() * 2800);
+  };
+  lessonState._quirkTimer = setTimeout(tick, 1800 + Math.random() * 1600);
+}
+
+function stopLessonTutorQuirks() {
+  if (lessonState._quirkTimer) {
+    clearTimeout(lessonState._quirkTimer);
+    lessonState._quirkTimer = null;
+  }
 }
 
 function shuffleExercises(list) {
@@ -6431,20 +7639,229 @@ function showFeedback(correct, correctText) {
 // Make every mini axolotl in the active lesson react to a check
 function reactLessonMiniAxolotl(correct) {
   const avatars = document.querySelectorAll('#lesson-exercise .lex-bubble-avatar, #lesson-exercise .lesson-tutor-inline');
+  // Track streak (consecutive correct answers within a lesson)
+  if (correct) {
+    lessonState.streak = (lessonState.streak || 0) + 1;
+    if (lessonState.streak > (lessonState.bestStreak || 0)) {
+      lessonState.bestStreak = lessonState.streak;
+    }
+  } else {
+    lessonState.streak = 0;
+  }
+  const streak = lessonState.streak || 0;
+  const isMega = correct && streak >= 3;
+
   avatars.forEach(avatar => {
     const svg = avatar.querySelector('.mini-axolotl');
-    pulseClass(avatar, correct ? 'is-bounce' : 'is-shake', correct ? 700 : 600);
-    if (svg) {
-      if (correct) {
-        pulseClass(svg, 'is-heart-eyes', 1000);
-        pulseClass(svg, 'is-happy', 850);
-        spawnLexSparkles(avatar, 8);
+    if (correct) {
+      if (isMega) {
+        // ── MEGA combo celebration ────────────────────
+        pulseClass(avatar, 'is-mega', 1300);
+        if (svg) {
+          pulseClass(svg, 'is-rainbow', 1400);
+          pulseClass(svg, 'is-star-eyes', 1200);
+          // Alternate backflip / wiggle so consecutive combos vary
+          if (streak % 2 === 0) pulseClass(svg, 'is-backflip', 1000);
+          else                  pulseClass(svg, 'is-happy', 900);
+        }
+        spawnConfetti(avatar, 26);
+        spawnFloatingEmojis(avatar, ['⭐','✨','💫','🎉','🌟','🔥'], 8);
+        spawnShockwave(avatar, 'warm');
+        spawnShockwave(avatar, 'cool', 180);
+        spawnLightningBolts(avatar, 4);
+        spawnStreakAura(avatar);
+        spawnComboText(avatar, streak >= 5 ? '¡INCREÍBLE x' + streak + '!' : '¡COMBO x' + streak + '!');
       } else {
-        pulseClass(svg, 'is-sad', 1200);
-        spawnTearDrop(avatar);
+        // ── Standard correct reaction ─────────────────
+        pulseClass(avatar, 'is-bounce', 720);
+        if (svg) {
+          // Eye reaction (heart or star)
+          const eyeFx = Math.random() < 0.5 ? 'is-heart-eyes' : 'is-star-eyes';
+          pulseClass(svg, eyeFx, 1100);
+          // Body reaction — either a quick wiggle or a backflip
+          if (Math.random() < 0.3) pulseClass(svg, 'is-backflip', 1000);
+          else                     pulseClass(svg, 'is-happy', 880);
+        }
+        spawnLexSparkles(avatar, 10);
+        spawnConfetti(avatar, 12);
+        spawnFloatingEmojis(avatar, pickEncouragingEmojis(), 3);
+        spawnShockwave(avatar, 'warm');
+        if (streak === 2) spawnComboText(avatar, '¡Dos seguidas!', 'small');
+        else if (Math.random() < 0.55) spawnComboText(avatar, pickCorrectWord(), 'small');
       }
+    } else {
+      // ── Wrong answer ────────────────────────────────
+      pulseClass(avatar, 'is-shake', 620);
+      if (svg) {
+        pulseClass(svg, 'is-sad', 1200);
+        pulseClass(svg, 'is-dizzy', 1100);
+      }
+      spawnTearDrop(avatar);
+      spawnDizzyStars(avatar, 4);
+      spawnSweat(avatar);
     }
   });
+}
+
+// Word pools for floating text
+function pickEncouragingEmojis() {
+  const pool = [['⭐','✨'], ['🎉','✨'], ['💫','⭐'], ['🌟','✨'], ['💖','✨']];
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+function pickCorrectWord() {
+  const pool = ['¡Bien!','¡Sí!','¡Genial!','¡Olé!','¡Excelente!','¡Perfecto!','¡Wow!','¡Súper!'];
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+// Helper: get the (x,y) center of `host` inside its offset parent for FX positioning.
+function fxCenterIn(host, parent) {
+  const hr = host.getBoundingClientRect();
+  const pr = parent.getBoundingClientRect();
+  return {
+    cx: hr.left - pr.left + hr.width  / 2,
+    cy: hr.top  - pr.top  + hr.height / 2,
+    w:  hr.width,
+    h:  hr.height,
+    top: hr.top - pr.top,
+  };
+}
+
+// Confetti burst that scatters from the avatar
+function spawnConfetti(host, count = 14) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, cy } = fxCenterIn(host, parent);
+  const COLORS = ['#ffd86b','#ff8edc','#80e3ff','#c0ff90','#ff8a8a','#ffffff','#b388ff'];
+  for (let i = 0; i < count; i++) {
+    const c = document.createElement('span');
+    c.className = 'lex-confetti';
+    const angle = -Math.PI/2 + (Math.random() - 0.5) * Math.PI * 1.6;
+    const power = 55 + Math.random() * 90;
+    const dx = Math.cos(angle) * power;
+    const dy = Math.sin(angle) * power + 35 + Math.random() * 60;
+    c.style.left = cx + 'px';
+    c.style.top  = cy + 'px';
+    c.style.background = COLORS[Math.floor(Math.random() * COLORS.length)];
+    c.style.setProperty('--dx',  dx.toFixed(1) + 'px');
+    c.style.setProperty('--dy',  dy.toFixed(1) + 'px');
+    c.style.setProperty('--rot', (Math.random() * 900 - 450).toFixed(0) + 'deg');
+    c.style.setProperty('--dur', (1.0 + Math.random() * 0.9).toFixed(2) + 's');
+    c.style.animationDelay = (Math.random() * 0.12).toFixed(2) + 's';
+    parent.appendChild(c);
+    setTimeout(() => c.remove(), 2200);
+  }
+}
+
+// Floating combo / encouragement text
+function spawnComboText(host, text, size) {
+  if (!host || !text) return;
+  const parent = host.parentElement || host;
+  const { cx, top } = fxCenterIn(host, parent);
+  const t = document.createElement('div');
+  t.className = 'lex-combo-text' + (size === 'small' ? ' small' : '');
+  t.textContent = text;
+  t.style.left = cx + 'px';
+  t.style.top  = (top + 6) + 'px';
+  parent.appendChild(t);
+  setTimeout(() => t.remove(), 1500);
+}
+
+// Expanding shockwave ring
+function spawnShockwave(host, tone, delay) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, cy, w } = fxCenterIn(host, parent);
+  const r = w * 0.7;
+  const ring = document.createElement('div');
+  ring.className = 'lex-shockwave' + (tone === 'cool' ? ' cool' : '');
+  ring.style.left = cx + 'px';
+  ring.style.top  = cy + 'px';
+  ring.style.width  = r + 'px';
+  ring.style.height = r + 'px';
+  if (delay) ring.style.animationDelay = (delay / 1000).toFixed(2) + 's';
+  parent.appendChild(ring);
+  setTimeout(() => ring.remove(), 1100 + (delay || 0));
+}
+
+// Floating emojis that drift up and fade
+function spawnFloatingEmojis(host, emojis, count = 4) {
+  if (!host || !emojis || !emojis.length) return;
+  const parent = host.parentElement || host;
+  const { cx, cy } = fxCenterIn(host, parent);
+  for (let i = 0; i < count; i++) {
+    const e = document.createElement('div');
+    e.className = 'lex-float-emoji';
+    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    e.style.left = cx + 'px';
+    e.style.top  = cy + 'px';
+    e.style.animationDelay = (i * 0.07).toFixed(2) + 's';
+    const ex  = (Math.random() - 0.5) * 90;
+    const ey  = -65 - Math.random() * 55;
+    const rot = (Math.random() - 0.5) * 50;
+    e.style.setProperty('--ex',  ex.toFixed(1) + 'px');
+    e.style.setProperty('--ey',  ey.toFixed(1) + 'px');
+    e.style.setProperty('--rot', rot.toFixed(0) + 'deg');
+    parent.appendChild(e);
+    setTimeout(() => e.remove(), 1700);
+  }
+}
+
+// Stars orbiting the avatar (dizzy)
+function spawnDizzyStars(host, count = 3) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, cy } = fxCenterIn(host, parent);
+  for (let i = 0; i < count; i++) {
+    const s = document.createElement('div');
+    s.className = 'lex-dizzy-star';
+    s.textContent = '⭐';
+    s.style.left = cx + 'px';
+    s.style.top  = (cy - 6) + 'px';
+    s.style.setProperty('--start', (i * 360 / count).toFixed(0) + 'deg');
+    s.style.animationDelay = (i * 0.05).toFixed(2) + 's';
+    parent.appendChild(s);
+    setTimeout(() => s.remove(), 1300);
+  }
+}
+
+// Sweat drop (small panicked anime sweat)
+function spawnSweat(host) {
+  if (!host) return;
+  const s = document.createElement('div');
+  s.className = 'lex-sweat';
+  host.appendChild(s);
+  setTimeout(() => s.remove(), 1150);
+}
+
+// Fire aura around the avatar (streak)
+function spawnStreakAura(host) {
+  if (!host) return;
+  const aura = document.createElement('div');
+  aura.className = 'lex-streak-fire';
+  host.appendChild(aura);
+  setTimeout(() => aura.remove(), 1800);
+}
+
+// Quick lightning bolt flashes around the avatar
+function spawnLightningBolts(host, count = 3) {
+  if (!host) return;
+  const parent = host.parentElement || host;
+  const { cx, cy, w } = fxCenterIn(host, parent);
+  const radius = w * 0.55;
+  for (let i = 0; i < count; i++) {
+    const angle = (Math.PI * 2 * i) / count + Math.random() * 0.4;
+    const x = cx + Math.cos(angle) * radius;
+    const y = cy + Math.sin(angle) * radius;
+    const rot = (angle * 180 / Math.PI) + 90 + (Math.random() - 0.5) * 18;
+    const b = document.createElement('div');
+    b.className = 'lex-bolt';
+    b.style.left = x + 'px';
+    b.style.top  = y + 'px';
+    b.style.setProperty('--bolt-rot', rot.toFixed(0) + 'deg');
+    b.style.animationDelay = (i * 0.06).toFixed(2) + 's';
+    parent.appendChild(b);
+    setTimeout(() => b.remove(), 700);
+  }
 }
 
 // Inject a persistent mini axolotl "tutor" at the top of pick/match exercises
@@ -6506,6 +7923,7 @@ function loseHeart() {
 
 // ── Lesson result ────────────────────────────────────────
 function completeLesson() {
+  stopLessonTutorQuirks();
   const lesson = LESSONS.find(l => l.id === lessonState.lessonId);
   if (!lesson) return renderHome();
 
@@ -6541,6 +7959,7 @@ function completeLesson() {
 }
 
 function failLesson() {
+  stopLessonTutorQuirks();
   showScreen('lesson-fail');
 }
 
@@ -6548,6 +7967,7 @@ function failLesson() {
 $('lesson-quit-btn')?.addEventListener('click', () => {
   haptic.light();
   if (confirm('¿Salir de la lección? Perderás tu progreso actual.')) {
+    stopLessonTutorQuirks();
     renderHome();
   }
 });

@@ -2163,6 +2163,8 @@ class VocabularyTrainerApp(QMainWindow):
                 config = json.load(f)
             img_path = Path(path).parent / config['image_file']
             if not img_path.exists():
+                img_path = Path(path).parent.parent / "images" / config['image_file']
+            if not img_path.exists():
                 QMessageBox.critical(self, "Error", f"Image not found:\n{img_path}")
                 return
             pixmap = QPixmap(str(img_path))

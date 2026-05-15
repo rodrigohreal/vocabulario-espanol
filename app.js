@@ -8208,6 +8208,1143 @@ const LESSONS = [
       { t: 'typed', from: 'Лучше поздно, чем никогда', answer: 'más vale tarde que nunca', answers: ['más vale tarde que nunca'], hint: 'más vale tarde que nunca' },
     ],
   },
+
+  // ── 151. Entrevista de trabajo ────────────────────────
+  {
+    id: 'l151', name: 'Entrevista', emoji: '💼', desc: 'Trabajo, jefe, sueldo',
+    exercises: [
+      { t: 'pick', q: '«Собеседование»', opts: [
+        { txt: 'entrevista',  em: '🗣️' },
+        { txt: 'entrada',     em: '🚪' },
+        { txt: 'entrega',     em: '📦' },
+        { txt: 'entrenador',  em: '🏋️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Начальник / босс»', opts: [
+        { txt: 'jefe',     em: '👔' },
+        { txt: 'jamón',    em: '🍖' },
+        { txt: 'jardín',   em: '🌳' },
+        { txt: 'juego',    em: '🎮' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Зарплата»', opts: [
+        { txt: 'sueldo',   em: '💰' },
+        { txt: 'sueño',    em: '😴' },
+        { txt: 'sumo',     em: '🤼' },
+        { txt: 'sur',      em: '🧭' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['entrevista',  'собеседование'],
+        ['jefe',        'начальник'],
+        ['empleado',    'работник'],
+        ['contrato',    'контракт'],
+      ]},
+      { t: 'match', pairs: [
+        ['sueldo',      'зарплата'],
+        ['horario',     'график'],
+        ['experiencia', 'опыт'],
+        ['vacaciones',  'отпуск'],
+      ]},
+      { t: 'translate', from: 'У меня собеседование завтра', tiles: ['tengo', 'una', 'entrevista', 'mañana', 'hoy'], answer: ['tengo', 'una', 'entrevista', 'mañana'] },
+      { t: 'fill', sentence: ['Mi', null, 'es muy amable.'], target: 'jefe', opts: ['jefe', 'juego', 'jamón'], hint: 'мой начальник очень добрый' },
+      { t: 'typed', from: 'Какая твоя зарплата?', answer: '¿cuál es tu sueldo?', answers: ['¿cuál es tu sueldo?', 'cuál es tu sueldo', '¿cuánto es tu sueldo?'], hint: 'cuál / cuánto + tu sueldo' },
+    ],
+  },
+
+  // ── 152. Currículum y carrera ─────────────────────────
+  {
+    id: 'l152', name: 'Carrera', emoji: '📄', desc: 'CV, profesión, formación',
+    exercises: [
+      { t: 'pick', q: '«Резюме / CV»', opts: [
+        { txt: 'currículum',  em: '📄' },
+        { txt: 'cumbre',      em: '⛰️' },
+        { txt: 'cumpleaños',  em: '🎂' },
+        { txt: 'cura',        em: '⛪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Опыт работы»', opts: [
+        { txt: 'experiencia laboral', em: '💼' },
+        { txt: 'experiencia mortal',  em: '⚠️' },
+        { txt: 'experiencia social',  em: '👥' },
+        { txt: 'experiencia rara',    em: '❓' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Образование»', opts: [
+        { txt: 'edificio',   em: '🏢' },
+        { txt: 'educación',  em: '🎓' },
+        { txt: 'editorial',  em: '📚' },
+        { txt: 'efecto',     em: '✨' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['currículum',   'резюме'],
+        ['educación',    'образование'],
+        ['experiencia',  'опыт'],
+        ['habilidad',    'навык'],
+      ]},
+      { t: 'match', pairs: [
+        ['carrera',     'карьера / специальность'],
+        ['título',      'диплом / звание'],
+        ['idioma',      'язык'],
+        ['referencia',  'рекомендация'],
+      ]},
+      { t: 'translate', from: 'Я говорю на трёх языках', tiles: ['hablo', 'tres', 'idiomas', 'lengua'], answer: ['hablo', 'tres', 'idiomas'] },
+      { t: 'fill', sentence: ['Tengo cinco años de', null, '.'], target: 'experiencia', opts: ['experiencia', 'educación', 'salario'], hint: 'у меня пять лет опыта' },
+      { t: 'typed', from: 'Я отправляю своё резюме', answer: 'envío mi currículum', answers: ['envío mi currículum', 'mando mi currículum', 'yo envío mi currículum'], hint: 'enviar / mandar + mi currículum' },
+    ],
+  },
+
+  // ── 153. Reuniones de trabajo ─────────────────────────
+  {
+    id: 'l153', name: 'Reuniones', emoji: '🤝', desc: 'Junta, agenda, presentación',
+    exercises: [
+      { t: 'pick', q: '«Совещание / встреча»', opts: [
+        { txt: 'reunión',   em: '🤝' },
+        { txt: 'recepción', em: '🛎️' },
+        { txt: 'reciclar',  em: '♻️' },
+        { txt: 'regalo',    em: '🎁' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Повестка дня»', opts: [
+        { txt: 'agenda',    em: '📋' },
+        { txt: 'arena',     em: '🏖️' },
+        { txt: 'avión',     em: '✈️' },
+        { txt: 'almacén',   em: '🏬' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Презентация»', opts: [
+        { txt: 'presentación',  em: '📊' },
+        { txt: 'presión',       em: '⏲️' },
+        { txt: 'préstamo',      em: '💵' },
+        { txt: 'presencia',     em: '👤' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['reunión',       'встреча'],
+        ['agenda',        'повестка дня'],
+        ['presentación',  'презентация'],
+        ['proyecto',      'проект'],
+      ]},
+      { t: 'match', pairs: [
+        ['proponer',  'предлагать'],
+        ['decidir',   'решать'],
+        ['discutir',  'обсуждать'],
+        ['acordar',   'договариваться'],
+      ]},
+      { t: 'translate', from: 'У нас есть встреча в три', tiles: ['tenemos', 'una', 'reunión', 'a', 'las', 'tres'], answer: ['tenemos', 'una', 'reunión', 'a', 'las', 'tres'] },
+      { t: 'fill', sentence: ['Vamos a', null, 'el proyecto.'], target: 'discutir', opts: ['discutir', 'dormir', 'desayunar'], hint: 'мы обсудим проект' },
+      { t: 'typed', from: 'Я делаю презентацию завтра', answer: 'hago una presentación mañana', answers: ['hago una presentación mañana', 'mañana hago una presentación', 'doy una presentación mañana'], hint: 'hago / doy + una presentación' },
+    ],
+  },
+
+  // ── 154. Email profesional ────────────────────────────
+  {
+    id: 'l154', name: 'Email pro', emoji: '✉️', desc: 'Asunto, adjunto, saludo formal',
+    exercises: [
+      { t: 'pick', q: '«Тема (письма)»', opts: [
+        { txt: 'asunto',    em: '📝' },
+        { txt: 'asiento',   em: '🪑' },
+        { txt: 'asado',     em: '🍖' },
+        { txt: 'asilo',     em: '🏠' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Вложение / приложение к письму»', opts: [
+        { txt: 'adjunto',  em: '📎' },
+        { txt: 'adulto',   em: '👨' },
+        { txt: 'adverbio', em: '🔤' },
+        { txt: 'adiós',    em: '👋' },
+      ], correct: 0 },
+      { t: 'pick', q: '«С уважением» (formal)', opts: [
+        { txt: 'atentamente',   em: '🤝' },
+        { txt: 'atentamente',   em: '🤝' },
+        { txt: 'urgentemente',  em: '⚡' },
+        { txt: 'felizmente',    em: '😊' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['asunto',       'тема'],
+        ['adjunto',      'вложение'],
+        ['destinatario', 'получатель'],
+        ['remitente',    'отправитель'],
+      ]},
+      { t: 'match', pairs: [
+        ['estimado/a',     'уважаемый/ая'],
+        ['atentamente',    'с уважением'],
+        ['un cordial saludo','с сердечным приветом'],
+        ['quedo a la espera', 'жду ответа'],
+      ]},
+      { t: 'translate', from: 'Я прикрепляю документ', tiles: ['adjunto', 'el', 'documento', 'adjuntar', 'la'], answer: ['adjunto', 'el', 'documento'] },
+      { t: 'fill', sentence: [null, 'señor Pérez, le escribo para...'], target: 'Estimado', opts: ['Estimado', 'Hola', 'Querido'], hint: 'Уважаемый господин Перес (формально)' },
+      { t: 'typed', from: 'Жду вашего ответа', answer: 'quedo a la espera de su respuesta', answers: ['quedo a la espera de su respuesta', 'espero su respuesta'], hint: 'quedo a la espera / espero su respuesta' },
+    ],
+  },
+
+  // ── 155. Repaso 25 (revisión de L151-L154) ────────────
+  {
+    id: 'l155', name: 'Repaso 25', emoji: '💼', desc: 'Repaso L151-L154',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Собеседование»', opts: [
+        { txt: 'entrevista',  em: '🗣️' },
+        { txt: 'entrega',     em: '📦' },
+        { txt: 'entrada',     em: '🚪' },
+        { txt: 'entierro',    em: '⚰️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Резюме»', opts: [
+        { txt: 'currículum',  em: '📄' },
+        { txt: 'curiosidad',  em: '🤔' },
+        { txt: 'cura',        em: '⛪' },
+        { txt: 'cumbre',      em: '⛰️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Встреча»', opts: [
+        { txt: 'reunión',   em: '🤝' },
+        { txt: 'recepción', em: '🛎️' },
+        { txt: 'regalo',    em: '🎁' },
+        { txt: 'reportaje', em: '📰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Тема (письма)»', opts: [
+        { txt: 'asunto',    em: '📝' },
+        { txt: 'asiento',   em: '🪑' },
+        { txt: 'asilo',     em: '🏠' },
+        { txt: 'asado',     em: '🍖' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['jefe',       'начальник'],
+        ['empleado',   'работник'],
+        ['sueldo',     'зарплата'],
+        ['contrato',   'контракт'],
+      ]},
+      { t: 'match', pairs: [
+        ['carrera',     'специальность'],
+        ['título',      'диплом'],
+        ['idioma',      'язык'],
+        ['habilidad',   'навык'],
+      ]},
+      { t: 'match', pairs: [
+        ['agenda',       'повестка'],
+        ['presentación', 'презентация'],
+        ['adjunto',      'вложение'],
+        ['estimado',     'уважаемый'],
+      ]},
+      { t: 'translate', from: 'У меня собеседование завтра', tiles: ['tengo', 'una', 'entrevista', 'mañana'], answer: ['tengo', 'una', 'entrevista', 'mañana'] },
+      { t: 'translate', from: 'Я отправляю своё резюме', tiles: ['envío', 'mi', 'currículum', 'tu'], answer: ['envío', 'mi', 'currículum'] },
+      { t: 'fill', sentence: ['Vamos a', null, 'el proyecto.'], target: 'discutir', opts: ['discutir', 'dormir', 'desayunar'], hint: 'мы обсудим проект' },
+      { t: 'fill', sentence: [null, 'señor Pérez, le escribo para...'], target: 'Estimado', opts: ['Estimado', 'Querido', 'Hola'], hint: 'Уважаемый господин Перес' },
+      { t: 'typed', from: 'У меня пять лет опыта', answer: 'tengo cinco años de experiencia', answers: ['tengo cinco años de experiencia'], hint: 'tengo X años de experiencia' },
+    ],
+  },
+
+  // ── 156. La ciencia ───────────────────────────────────
+  {
+    id: 'l156', name: 'Ciencia', emoji: '🔬', desc: 'Investigar, descubrir, experimentar',
+    exercises: [
+      { t: 'pick', q: '«Наука»', opts: [
+        { txt: 'ciencia',  em: '🔬' },
+        { txt: 'cielo',    em: '☁️' },
+        { txt: 'cien',     em: '💯' },
+        { txt: 'cierto',   em: '✅' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Эксперимент / опыт»', opts: [
+        { txt: 'experimento',  em: '🧪' },
+        { txt: 'expresión',    em: '😀' },
+        { txt: 'experto',      em: '👨‍🔬' },
+        { txt: 'explosión',    em: '💥' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Учёный»', opts: [
+        { txt: 'cocinero',   em: '👨‍🍳' },
+        { txt: 'científico', em: '👨‍🔬' },
+        { txt: 'capitán',    em: '👨‍✈️' },
+        { txt: 'cantante',   em: '🎤' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['ciencia',      'наука'],
+        ['científico',   'учёный'],
+        ['experimento',  'эксперимент'],
+        ['teoría',       'теория'],
+      ]},
+      { t: 'match', pairs: [
+        ['investigar',   'исследовать'],
+        ['descubrir',    'открывать'],
+        ['probar',       'доказывать'],
+        ['comprobar',    'проверять'],
+      ]},
+      { t: 'translate', from: 'Учёные проводят эксперимент', tiles: ['los', 'científicos', 'hacen', 'un', 'experimento'], answer: ['los', 'científicos', 'hacen', 'un', 'experimento'] },
+      { t: 'fill', sentence: ['Es una', null, 'muy interesante.'], target: 'teoría', opts: ['teoría', 'tienda', 'tarjeta'], hint: 'это очень интересная теория' },
+      { t: 'typed', from: 'Наука изменяет мир', answer: 'la ciencia cambia el mundo', answers: ['la ciencia cambia el mundo'], hint: 'la ciencia + cambiar + el mundo' },
+    ],
+  },
+
+  // ── 157. Espacio y astronomía ─────────────────────────
+  {
+    id: 'l157', name: 'Espacio', emoji: '🚀', desc: 'Estrellas, planetas, cohetes',
+    exercises: [
+      { t: 'pick', q: '«Звезда»', opts: [
+        { txt: 'estrella', em: '⭐' },
+        { txt: 'escuela',  em: '🏫' },
+        { txt: 'esquí',    em: '⛷️' },
+        { txt: 'esposa',   em: '👰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Планета»', opts: [
+        { txt: 'planeta',  em: '🪐' },
+        { txt: 'plata',    em: '🥈' },
+        { txt: 'plato',    em: '🍽️' },
+        { txt: 'playa',    em: '🏖️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ракета»', opts: [
+        { txt: 'cohete',   em: '🚀' },
+        { txt: 'coche',    em: '🚗' },
+        { txt: 'cocina',   em: '🍳' },
+        { txt: 'colina',   em: '⛰️' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['estrella',  'звезда'],
+        ['planeta',   'планета'],
+        ['galaxia',   'галактика'],
+        ['universo',  'вселенная'],
+      ]},
+      { t: 'match', pairs: [
+        ['cohete',     'ракета'],
+        ['astronauta', 'космонавт'],
+        ['Tierra',     'Земля'],
+        ['Luna',       'Луна'],
+      ]},
+      { t: 'translate', from: 'Космонавт идёт на Луну', tiles: ['el', 'astronauta', 'va', 'a', 'la', 'Luna'], answer: ['el', 'astronauta', 'va', 'a', 'la', 'Luna'] },
+      { t: 'fill', sentence: ['La Tierra es un', null, '.'], target: 'planeta', opts: ['planeta', 'pueblo', 'plato'], hint: 'Земля — это планета' },
+      { t: 'typed', from: 'Я хочу путешествовать в космос', answer: 'quiero viajar al espacio', answers: ['quiero viajar al espacio'], hint: 'viajar al espacio' },
+    ],
+  },
+
+  // ── 158. Inteligencia artificial ──────────────────────
+  {
+    id: 'l158', name: 'IA', emoji: '🤖', desc: 'Robot, algoritmo, datos',
+    exercises: [
+      { t: 'pick', q: '«Робот»', opts: [
+        { txt: 'robot',   em: '🤖' },
+        { txt: 'ropa',    em: '👕' },
+        { txt: 'rosa',    em: '🌹' },
+        { txt: 'ratón',   em: '🐭' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Искусственный интеллект»', opts: [
+        { txt: 'inteligencia artificial', em: '🤖' },
+        { txt: 'inteligencia natural',     em: '🧠' },
+        { txt: 'intención antigua',        em: '📜' },
+        { txt: 'industria activa',         em: '🏭' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Данные»', opts: [
+        { txt: 'datos',    em: '📊' },
+        { txt: 'dados',    em: '🎲' },
+        { txt: 'dedos',    em: '🖐️' },
+        { txt: 'días',     em: '📅' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['robot',       'робот'],
+        ['algoritmo',   'алгоритм'],
+        ['datos',       'данные'],
+        ['modelo',      'модель'],
+      ]},
+      { t: 'match', pairs: [
+        ['aprender',    'обучаться'],
+        ['entrenar',    'тренировать'],
+        ['predecir',    'предсказывать'],
+        ['automático',  'автоматический'],
+      ]},
+      { t: 'translate', from: 'Робот понимает голос', tiles: ['el', 'robot', 'entiende', 'la', 'voz', 'oír'], answer: ['el', 'robot', 'entiende', 'la', 'voz'] },
+      { t: 'fill', sentence: ['Necesitamos más', null, '.'], target: 'datos', opts: ['datos', 'días', 'dedos'], hint: 'нам нужно больше данных' },
+      { t: 'typed', from: 'Искусственный интеллект изменяет всё', answer: 'la inteligencia artificial cambia todo', answers: ['la inteligencia artificial cambia todo', 'la ia cambia todo'], hint: 'la inteligencia artificial / la IA' },
+    ],
+  },
+
+  // ── 159. Ingeniería e invenciones ─────────────────────
+  {
+    id: 'l159', name: 'Invenciones', emoji: '⚙️', desc: 'Construir, diseñar, máquinas',
+    exercises: [
+      { t: 'pick', q: '«Изобретение»', opts: [
+        { txt: 'invención',  em: '💡' },
+        { txt: 'invierno',   em: '❄️' },
+        { txt: 'inicio',     em: '🚀' },
+        { txt: 'isla',       em: '🏝️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Машина / станок»', opts: [
+        { txt: 'máquina',  em: '⚙️' },
+        { txt: 'mañana',   em: '🌅' },
+        { txt: 'manzana',  em: '🍎' },
+        { txt: 'maleta',   em: '🧳' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Изобретать»', opts: [
+        { txt: 'inventar', em: '💡' },
+        { txt: 'inventar', em: '💡' },
+        { txt: 'imprimir', em: '🖨️' },
+        { txt: 'instalar', em: '🔧' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['invención',   'изобретение'],
+        ['máquina',     'машина'],
+        ['ingeniero',   'инженер'],
+        ['diseño',      'дизайн'],
+      ]},
+      { t: 'match', pairs: [
+        ['inventar',     'изобретать'],
+        ['construir',    'строить'],
+        ['diseñar',      'проектировать'],
+        ['funcionar',    'работать (о приборе)'],
+      ]},
+      { t: 'translate', from: 'Эта машина не работает', tiles: ['esta', 'máquina', 'no', 'funciona', 'trabajar'], answer: ['esta', 'máquina', 'no', 'funciona'] },
+      { t: 'fill', sentence: ['Edison', null, 'la bombilla.'], target: 'inventó', opts: ['inventó', 'imprimió', 'instaló'], hint: 'Эдисон изобрёл лампочку' },
+      { t: 'typed', from: 'Инженеры строят мост', answer: 'los ingenieros construyen un puente', answers: ['los ingenieros construyen un puente', 'los ingenieros construyen el puente'], hint: 'construir un / el puente' },
+    ],
+  },
+
+  // ── 160. Repaso 26 (revisión de L156-L159) ────────────
+  {
+    id: 'l160', name: 'Repaso 26', emoji: '🔬', desc: 'Repaso L156-L159',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Наука»', opts: [
+        { txt: 'ciencia',  em: '🔬' },
+        { txt: 'cielo',    em: '☁️' },
+        { txt: 'cierto',   em: '✅' },
+        { txt: 'cien',     em: '💯' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Планета»', opts: [
+        { txt: 'planeta',  em: '🪐' },
+        { txt: 'plato',    em: '🍽️' },
+        { txt: 'playa',    em: '🏖️' },
+        { txt: 'plata',    em: '🥈' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Робот»', opts: [
+        { txt: 'robot',   em: '🤖' },
+        { txt: 'ratón',   em: '🐭' },
+        { txt: 'rosa',    em: '🌹' },
+        { txt: 'rico',    em: '💰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Изобретение»', opts: [
+        { txt: 'invención',  em: '💡' },
+        { txt: 'invierno',   em: '❄️' },
+        { txt: 'invitación', em: '✉️' },
+        { txt: 'invalidez',  em: '♿' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['científico',  'учёный'],
+        ['experimento', 'эксперимент'],
+        ['teoría',      'теория'],
+        ['investigar',  'исследовать'],
+      ]},
+      { t: 'match', pairs: [
+        ['estrella',  'звезда'],
+        ['galaxia',   'галактика'],
+        ['cohete',    'ракета'],
+        ['astronauta','космонавт'],
+      ]},
+      { t: 'match', pairs: [
+        ['algoritmo', 'алгоритм'],
+        ['datos',     'данные'],
+        ['máquina',   'машина'],
+        ['ingeniero', 'инженер'],
+      ]},
+      { t: 'translate', from: 'Учёные открыли новую планету', tiles: ['los', 'científicos', 'descubrieron', 'un', 'nuevo', 'planeta'], answer: ['los', 'científicos', 'descubrieron', 'un', 'nuevo', 'planeta'] },
+      { t: 'translate', from: 'Эта машина не работает', tiles: ['esta', 'máquina', 'no', 'funciona'], answer: ['esta', 'máquina', 'no', 'funciona'] },
+      { t: 'fill', sentence: ['La Tierra es un', null, '.'], target: 'planeta', opts: ['planeta', 'plato', 'pueblo'], hint: 'Земля — это планета' },
+      { t: 'fill', sentence: ['Necesitamos más', null, '.'], target: 'datos', opts: ['datos', 'dedos', 'días'], hint: 'нам нужно больше данных' },
+      { t: 'typed', from: 'Я хочу быть учёным', answer: 'quiero ser científico', answers: ['quiero ser científico', 'quiero ser científica'], hint: 'quiero ser + científico/a' },
+    ],
+  },
+
+  // ── 161. Dentista ─────────────────────────────────────
+  {
+    id: 'l161', name: 'Dentista', emoji: '🦷', desc: 'Dientes, caries, dolor',
+    exercises: [
+      { t: 'pick', q: '«Зуб»', opts: [
+        { txt: 'diente',   em: '🦷' },
+        { txt: 'dedo',     em: '🖐️' },
+        { txt: 'día',      em: '☀️' },
+        { txt: 'dios',     em: '⛪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Стоматолог»', opts: [
+        { txt: 'dentista', em: '🦷' },
+        { txt: 'doctor',   em: '👨‍⚕️' },
+        { txt: 'director', em: '👔' },
+        { txt: 'discípulo',em: '👨‍🎓' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Зубная щётка»', opts: [
+        { txt: 'cepillo de dientes', em: '🪥' },
+        { txt: 'cuchillo',           em: '🔪' },
+        { txt: 'cuchara',            em: '🥄' },
+        { txt: 'cuello',             em: '👔' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['diente',    'зуб'],
+        ['dentista',  'стоматолог'],
+        ['caries',    'кариес'],
+        ['encía',     'десна'],
+      ]},
+      { t: 'match', pairs: [
+        ['cepillo de dientes', 'зубная щётка'],
+        ['pasta de dientes',   'зубная паста'],
+        ['hilo dental',        'зубная нить'],
+        ['boca',               'рот'],
+      ]},
+      { t: 'translate', from: 'У меня болит зуб', tiles: ['me', 'duele', 'un', 'diente', 'la', 'dolor'], answer: ['me', 'duele', 'un', 'diente'] },
+      { t: 'fill', sentence: ['Voy al', null, 'mañana.'], target: 'dentista', opts: ['dentista', 'director', 'doctor'], hint: 'я иду к стоматологу завтра' },
+      { t: 'typed', from: 'Я чищу зубы каждый день', answer: 'me cepillo los dientes cada día', answers: ['me cepillo los dientes cada día', 'me cepillo los dientes todos los días', 'me lavo los dientes cada día'], hint: 'me cepillo / me lavo los dientes' },
+    ],
+  },
+
+  // ── 162. Cirugía y operaciones ────────────────────────
+  {
+    id: 'l162', name: 'Cirugía', emoji: '🩺', desc: 'Operación, hospital, recuperación',
+    exercises: [
+      { t: 'pick', q: '«Операция»', opts: [
+        { txt: 'operación',  em: '🩺' },
+        { txt: 'opinión',    em: '💭' },
+        { txt: 'oportunidad',em: '🍀' },
+        { txt: 'orquesta',   em: '🎻' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Хирург»', opts: [
+        { txt: 'cirujano',    em: '🩺' },
+        { txt: 'cocinero',    em: '👨‍🍳' },
+        { txt: 'conductor',   em: '🚗' },
+        { txt: 'cantante',    em: '🎤' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Анестезия / наркоз»', opts: [
+        { txt: 'anestesia',  em: '💉' },
+        { txt: 'amistad',    em: '👬' },
+        { txt: 'apertura',   em: '🔓' },
+        { txt: 'aldea',      em: '🏘️' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['operación',  'операция'],
+        ['cirujano',   'хирург'],
+        ['anestesia',  'наркоз'],
+        ['quirófano',  'операционная'],
+      ]},
+      { t: 'match', pairs: [
+        ['recuperación','восстановление'],
+        ['herida',      'рана'],
+        ['cicatriz',    'шрам'],
+        ['punto',       'шов'],
+      ]},
+      { t: 'translate', from: 'Хирург делает операцию', tiles: ['el', 'cirujano', 'hace', 'una', 'operación', 'pero'], answer: ['el', 'cirujano', 'hace', 'una', 'operación'] },
+      { t: 'fill', sentence: ['La', null, 'fue exitosa.'], target: 'operación', opts: ['operación', 'opinión', 'oportunidad'], hint: 'операция была успешной' },
+      { t: 'typed', from: 'Мне нужна операция', answer: 'necesito una operación', answers: ['necesito una operación', 'necesito una cirugía'], hint: 'necesito una operación / cirugía' },
+    ],
+  },
+
+  // ── 163. Embarazo ─────────────────────────────────────
+  {
+    id: 'l163', name: 'Embarazo', emoji: '🤰', desc: 'Bebé, parto, esperar',
+    exercises: [
+      { t: 'pick', q: '«Беременная»', opts: [
+        { txt: 'embarazada', em: '🤰' },
+        { txt: 'enojada',    em: '😠' },
+        { txt: 'enferma',    em: '🤒' },
+        { txt: 'enamorada',  em: '😍' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Роды»', opts: [
+        { txt: 'parto',    em: '👶' },
+        { txt: 'parque',   em: '🌳' },
+        { txt: 'partido',  em: '⚽' },
+        { txt: 'pared',    em: '🧱' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Беременность»', opts: [
+        { txt: 'embarazo',  em: '🤰' },
+        { txt: 'embarque',  em: '🛬' },
+        { txt: 'embajada',  em: '🏛️' },
+        { txt: 'emoción',   em: '😊' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['embarazo',   'беременность'],
+        ['embarazada', 'беременная'],
+        ['bebé',       'малыш'],
+        ['parto',      'роды'],
+      ]},
+      { t: 'match', pairs: [
+        ['esperar un bebé', 'ждать ребёнка'],
+        ['mes',             'месяц'],
+        ['recién nacido',   'новорождённый'],
+        ['guardería',       'детский сад'],
+      ]},
+      { t: 'translate', from: 'Она беременна 8 месяцев', tiles: ['ella', 'está', 'embarazada', 'de', 'ocho', 'meses'], answer: ['ella', 'está', 'embarazada', 'de', 'ocho', 'meses'] },
+      { t: 'fill', sentence: ['Mi hermana está', null, '.'], target: 'embarazada', opts: ['embarazada', 'enferma', 'enojada'], hint: 'моя сестра беременна' },
+      { t: 'typed', from: 'Мы ждём ребёнка', answer: 'esperamos un bebé', answers: ['esperamos un bebé', 'estamos esperando un bebé'], hint: 'esperar un bebé' },
+    ],
+  },
+
+  // ── 164. Salud mental ─────────────────────────────────
+  {
+    id: 'l164', name: 'Salud mental', emoji: '🧠', desc: 'Estrés, terapia, ansiedad',
+    exercises: [
+      { t: 'pick', q: '«Стресс»', opts: [
+        { txt: 'estrés',   em: '😫' },
+        { txt: 'estreno',  em: '🎬' },
+        { txt: 'estación', em: '🚉' },
+        { txt: 'estilo',   em: '👗' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Тревога»', opts: [
+        { txt: 'ansiedad',  em: '😰' },
+        { txt: 'amistad',   em: '👬' },
+        { txt: 'aldea',     em: '🏘️' },
+        { txt: 'antigüedad',em: '⏳' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Терапия»', opts: [
+        { txt: 'terapia',   em: '💬' },
+        { txt: 'tarea',     em: '📝' },
+        { txt: 'tijera',    em: '✂️' },
+        { txt: 'tortilla',  em: '🌯' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['estrés',     'стресс'],
+        ['ansiedad',   'тревога'],
+        ['depresión',  'депрессия'],
+        ['terapia',    'терапия'],
+      ]},
+      { t: 'match', pairs: [
+        ['relajarse',   'расслабляться'],
+        ['respirar',    'дышать'],
+        ['descansar',   'отдыхать'],
+        ['meditar',     'медитировать'],
+      ]},
+      { t: 'translate', from: 'Мне нужно расслабиться', tiles: ['necesito', 'relajarme', 'descansar', 'me'], answer: ['necesito', 'relajarme'] },
+      { t: 'fill', sentence: ['Tengo mucho', null, 'en el trabajo.'], target: 'estrés', opts: ['estrés', 'estilo', 'estreno'], hint: 'у меня много стресса на работе' },
+      { t: 'typed', from: 'Я хожу к психологу', answer: 'voy al psicólogo', answers: ['voy al psicólogo', 'voy a la psicóloga', 'voy a terapia'], hint: 'ir al psicólogo / a terapia' },
+    ],
+  },
+
+  // ── 165. Repaso 27 (revisión de L161-L164) ────────────
+  {
+    id: 'l165', name: 'Repaso 27', emoji: '🩺', desc: 'Repaso L161-L164',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Зуб»', opts: [
+        { txt: 'diente', em: '🦷' },
+        { txt: 'dedo',   em: '🖐️' },
+        { txt: 'día',    em: '☀️' },
+        { txt: 'duele',  em: '🤕' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Хирург»', opts: [
+        { txt: 'cirujano', em: '🩺' },
+        { txt: 'cocinero', em: '👨‍🍳' },
+        { txt: 'cantante', em: '🎤' },
+        { txt: 'conductor',em: '🚗' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Беременная»', opts: [
+        { txt: 'embarazada', em: '🤰' },
+        { txt: 'enojada',    em: '😠' },
+        { txt: 'enamorada',  em: '😍' },
+        { txt: 'enferma',    em: '🤒' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Стресс»', opts: [
+        { txt: 'estrés',   em: '😫' },
+        { txt: 'estilo',   em: '👗' },
+        { txt: 'estreno',  em: '🎬' },
+        { txt: 'estación', em: '🚉' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['dentista',         'стоматолог'],
+        ['cepillo de dientes','зубная щётка'],
+        ['caries',           'кариес'],
+        ['boca',             'рот'],
+      ]},
+      { t: 'match', pairs: [
+        ['operación',  'операция'],
+        ['anestesia',  'наркоз'],
+        ['herida',     'рана'],
+        ['cicatriz',   'шрам'],
+      ]},
+      { t: 'match', pairs: [
+        ['parto',     'роды'],
+        ['bebé',      'малыш'],
+        ['ansiedad',  'тревога'],
+        ['terapia',   'терапия'],
+      ]},
+      { t: 'translate', from: 'У меня болит зуб', tiles: ['me', 'duele', 'un', 'diente'], answer: ['me', 'duele', 'un', 'diente'] },
+      { t: 'translate', from: 'Мы ждём ребёнка', tiles: ['esperamos', 'un', 'bebé', 'a'], answer: ['esperamos', 'un', 'bebé'] },
+      { t: 'fill', sentence: ['Voy al', null, 'mañana.'], target: 'dentista', opts: ['dentista', 'director', 'doctor'], hint: 'я иду к стоматологу завтра' },
+      { t: 'fill', sentence: ['Tengo mucho', null, '.'], target: 'estrés', opts: ['estrés', 'estilo', 'estación'], hint: 'у меня много стресса' },
+      { t: 'typed', from: 'Мне нужна операция', answer: 'necesito una operación', answers: ['necesito una operación', 'necesito una cirugía'], hint: 'necesito una operación / cirugía' },
+    ],
+  },
+
+  // ── 166. Inversiones ──────────────────────────────────
+  {
+    id: 'l166', name: 'Inversiones', emoji: '📈', desc: 'Bolsa, acciones, ahorrar',
+    exercises: [
+      { t: 'pick', q: '«Биржа»', opts: [
+        { txt: 'bolsa',   em: '📈' },
+        { txt: 'banda',   em: '🎸' },
+        { txt: 'botella', em: '🍾' },
+        { txt: 'bombilla',em: '💡' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Акция (на бирже)»', opts: [
+        { txt: 'acción',   em: '📊' },
+        { txt: 'acento',   em: '🔤' },
+        { txt: 'aceite',   em: '🛢️' },
+        { txt: 'acera',    em: '🚶' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Инвестировать»', opts: [
+        { txt: 'invertir',  em: '💸' },
+        { txt: 'invitar',   em: '🎉' },
+        { txt: 'inventar',  em: '💡' },
+        { txt: 'investigar',em: '🔍' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['bolsa',      'биржа'],
+        ['acción',     'акция'],
+        ['inversión',  'инвестиция'],
+        ['interés',    'процент'],
+      ]},
+      { t: 'match', pairs: [
+        ['invertir',  'инвестировать'],
+        ['ganar',     'выигрывать / зарабатывать'],
+        ['perder',    'терять'],
+        ['ahorrar',   'копить'],
+      ]},
+      { t: 'translate', from: 'Я инвестирую в акции', tiles: ['invierto', 'en', 'acciones', 'invertir'], answer: ['invierto', 'en', 'acciones'] },
+      { t: 'fill', sentence: ['Tengo que', null, 'más dinero.'], target: 'ahorrar', opts: ['ahorrar', 'comer', 'dormir'], hint: 'мне нужно копить больше денег' },
+      { t: 'typed', from: 'Я потерял деньги на бирже', answer: 'perdí dinero en la bolsa', answers: ['perdí dinero en la bolsa', 'he perdido dinero en la bolsa'], hint: 'perder en la bolsa' },
+    ],
+  },
+
+  // ── 167. Impuestos ────────────────────────────────────
+  {
+    id: 'l167', name: 'Impuestos', emoji: '🧾', desc: 'Hacienda, declarar, pagar',
+    exercises: [
+      { t: 'pick', q: '«Налог»', opts: [
+        { txt: 'impuesto', em: '🧾' },
+        { txt: 'impreso',  em: '🖨️' },
+        { txt: 'impulso',  em: '⚡' },
+        { txt: 'imán',     em: '🧲' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Декларация»', opts: [
+        { txt: 'declaración', em: '📄' },
+        { txt: 'decoración',  em: '🎀' },
+        { txt: 'dedicación',  em: '🎯' },
+        { txt: 'devolución',  em: '↩️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Налоговая инспекция»', opts: [
+        { txt: 'Hacienda',   em: '🏛️' },
+        { txt: 'farmacia',   em: '💊' },
+        { txt: 'fábrica',    em: '🏭' },
+        { txt: 'familia',    em: '👨‍👩‍👧' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['impuesto',    'налог'],
+        ['declaración', 'декларация'],
+        ['Hacienda',    'налоговая'],
+        ['factura',     'счёт-фактура'],
+      ]},
+      { t: 'match', pairs: [
+        ['pagar',      'платить'],
+        ['declarar',   'декларировать'],
+        ['cobrar',     'получать (деньги)'],
+        ['devolver',   'возвращать'],
+      ]},
+      { t: 'translate', from: 'Я плачу налоги каждый год', tiles: ['pago', 'impuestos', 'cada', 'año', 'meses'], answer: ['pago', 'impuestos', 'cada', 'año'] },
+      { t: 'fill', sentence: ['Tengo que hacer la', null, '.'], target: 'declaración', opts: ['declaración', 'decoración', 'dedicación'], hint: 'я должен сделать декларацию' },
+      { t: 'typed', from: 'Налоги очень высокие здесь', answer: 'los impuestos son muy altos aquí', answers: ['los impuestos son muy altos aquí', 'aquí los impuestos son muy altos'], hint: 'los impuestos son altos' },
+    ],
+  },
+
+  // ── 168. Seguros ──────────────────────────────────────
+  {
+    id: 'l168', name: 'Seguros', emoji: '🛡️', desc: 'Póliza, accidente, cobertura',
+    exercises: [
+      { t: 'pick', q: '«Страховка»', opts: [
+        { txt: 'seguro',   em: '🛡️' },
+        { txt: 'sello',    em: '📮' },
+        { txt: 'sentido',  em: '🧭' },
+        { txt: 'silencio', em: '🤫' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Полис»', opts: [
+        { txt: 'póliza',   em: '📄' },
+        { txt: 'policía',  em: '👮' },
+        { txt: 'político', em: '🏛️' },
+        { txt: 'polvo',    em: '💨' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Авария»', opts: [
+        { txt: 'accidente', em: '💥' },
+        { txt: 'acceso',    em: '🚪' },
+        { txt: 'aceite',    em: '🛢️' },
+        { txt: 'acción',    em: '⚡' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['seguro',     'страховка'],
+        ['póliza',     'полис'],
+        ['accidente',  'авария'],
+        ['cobertura',  'покрытие'],
+      ]},
+      { t: 'match', pairs: [
+        ['asegurar',   'страховать'],
+        ['cubrir',     'покрывать'],
+        ['reclamar',   'требовать'],
+        ['compensar',  'возмещать'],
+      ]},
+      { t: 'translate', from: 'У меня есть страховка', tiles: ['tengo', 'un', 'seguro', 'segura', 'sin'], answer: ['tengo', 'un', 'seguro'] },
+      { t: 'fill', sentence: ['Tuve un', null, 'de coche.'], target: 'accidente', opts: ['accidente', 'acceso', 'aceite'], hint: 'у меня была автоавария' },
+      { t: 'typed', from: 'Этот полис не покрывает всё', answer: 'esta póliza no cubre todo', answers: ['esta póliza no cubre todo', 'la póliza no cubre todo'], hint: 'esta póliza no cubre' },
+    ],
+  },
+
+  // ── 169. Inmobiliaria ─────────────────────────────────
+  {
+    id: 'l169', name: 'Inmobiliaria', emoji: '🏘️', desc: 'Alquilar, comprar piso, hipoteca',
+    exercises: [
+      { t: 'pick', q: '«Снимать (квартиру)»', opts: [
+        { txt: 'alquilar',  em: '🔑' },
+        { txt: 'almorzar',  em: '🍽️' },
+        { txt: 'almohada',  em: '🛏️' },
+        { txt: 'alma',      em: '👻' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Квартира (Испания)»', opts: [
+        { txt: 'piso',    em: '🏢' },
+        { txt: 'peso',    em: '⚖️' },
+        { txt: 'paso',    em: '🚶' },
+        { txt: 'plato',   em: '🍽️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ипотека»', opts: [
+        { txt: 'hipoteca',  em: '🏦' },
+        { txt: 'hospital',  em: '🏥' },
+        { txt: 'historia',  em: '📜' },
+        { txt: 'hierba',    em: '🌿' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['piso',       'квартира'],
+        ['alquilar',   'снимать'],
+        ['hipoteca',   'ипотека'],
+        ['inmueble',   'недвижимость'],
+      ]},
+      { t: 'match', pairs: [
+        ['propietario', 'владелец'],
+        ['inquilino',   'арендатор'],
+        ['contrato',    'договор'],
+        ['fianza',      'залог'],
+      ]},
+      { t: 'translate', from: 'Я снимаю квартиру в центре', tiles: ['alquilo', 'un', 'piso', 'en', 'el', 'centro'], answer: ['alquilo', 'un', 'piso', 'en', 'el', 'centro'] },
+      { t: 'fill', sentence: ['Necesito una', null, 'para comprar la casa.'], target: 'hipoteca', opts: ['hipoteca', 'historia', 'hospital'], hint: 'мне нужна ипотека, чтобы купить дом' },
+      { t: 'typed', from: 'Хозяин квартиры очень добрый', answer: 'el propietario del piso es muy amable', answers: ['el propietario del piso es muy amable', 'el dueño del piso es muy amable'], hint: 'propietario / dueño' },
+    ],
+  },
+
+  // ── 170. Repaso 28 (revisión de L166-L169) ────────────
+  {
+    id: 'l170', name: 'Repaso 28', emoji: '💰', desc: 'Repaso L166-L169',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Биржа»', opts: [
+        { txt: 'bolsa',   em: '📈' },
+        { txt: 'botella', em: '🍾' },
+        { txt: 'banda',   em: '🎸' },
+        { txt: 'bombilla',em: '💡' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Налог»', opts: [
+        { txt: 'impuesto', em: '🧾' },
+        { txt: 'impulso',  em: '⚡' },
+        { txt: 'impreso',  em: '🖨️' },
+        { txt: 'imagen',   em: '🖼️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Страховка»', opts: [
+        { txt: 'seguro',   em: '🛡️' },
+        { txt: 'sello',    em: '📮' },
+        { txt: 'sentido',  em: '🧭' },
+        { txt: 'siglo',    em: '📜' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Ипотека»', opts: [
+        { txt: 'hipoteca',  em: '🏦' },
+        { txt: 'historia',  em: '📜' },
+        { txt: 'hospital',  em: '🏥' },
+        { txt: 'horario',   em: '⏰' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['acción',    'акция'],
+        ['interés',   'процент'],
+        ['invertir',  'инвестировать'],
+        ['ahorrar',   'копить'],
+      ]},
+      { t: 'match', pairs: [
+        ['Hacienda',     'налоговая'],
+        ['declaración',  'декларация'],
+        ['póliza',       'полис'],
+        ['accidente',    'авария'],
+      ]},
+      { t: 'match', pairs: [
+        ['piso',         'квартира'],
+        ['alquilar',     'снимать'],
+        ['propietario',  'владелец'],
+        ['contrato',     'договор'],
+      ]},
+      { t: 'translate', from: 'Я инвестирую в акции', tiles: ['invierto', 'en', 'acciones', 'compro'], answer: ['invierto', 'en', 'acciones'] },
+      { t: 'translate', from: 'У меня есть страховка', tiles: ['tengo', 'un', 'seguro', 'segura'], answer: ['tengo', 'un', 'seguro'] },
+      { t: 'fill', sentence: ['Tengo que', null, 'más dinero.'], target: 'ahorrar', opts: ['ahorrar', 'invertir', 'gastar'], hint: 'мне нужно копить больше' },
+      { t: 'fill', sentence: ['Pago muchos', null, '.'], target: 'impuestos', opts: ['impuestos', 'impulsos', 'impresos'], hint: 'я плачу много налогов' },
+      { t: 'typed', from: 'Я снимаю квартиру в центре', answer: 'alquilo un piso en el centro', answers: ['alquilo un piso en el centro', 'rento un piso en el centro'], hint: 'alquilar / rentar un piso' },
+    ],
+  },
+
+  // ── 171. Subjuntivo pluscuamperfecto ──────────────────
+  {
+    id: 'l171', name: 'Si hubiera...', emoji: '🌀', desc: 'Si hubiera sabido, habría...',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Если бы я знал...»', opts: [
+        { txt: 'si hubiera sabido',  em: '✅' },
+        { txt: 'si sabía',           em: '⚠️' },
+        { txt: 'si supe',            em: '❌' },
+        { txt: 'si sabré',           em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Если бы ты пришёл, я бы поел»', opts: [
+        { txt: 'si hubieras venido, habría comido',   em: '✅' },
+        { txt: 'si vienes, comería',                  em: '❌' },
+        { txt: 'si vendrías, comía',                  em: '❌' },
+        { txt: 'si has venido, he comido',            em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Если бы он был дома, он бы услышал»', opts: [
+        { txt: 'si hubiera estado en casa, habría oído', em: '✅' },
+        { txt: 'si está en casa, oye',                   em: '❌' },
+        { txt: 'si estaba en casa, oía',                 em: '❌' },
+        { txt: 'si estará en casa, oirá',                em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['hubiera sabido',   'я бы знал'],
+        ['hubieras venido',  'ты бы пришёл'],
+        ['hubiera podido',   'я бы смог'],
+        ['hubiéramos visto', 'мы бы увидели'],
+      ]},
+      { t: 'match', pairs: [
+        ['si hubiera + part.',  'если бы + глагол'],
+        ['habría + part.',      'я бы + глагол'],
+        ['ojalá hubiera...',    'жаль, что не...'],
+        ['como si',             'как будто'],
+      ]},
+      { t: 'translate', from: 'Если бы я знал, я бы пришёл', tiles: ['si', 'hubiera', 'sabido', 'habría', 'venido'], answer: ['si', 'hubiera', 'sabido', 'habría', 'venido'] },
+      { t: 'fill', sentence: ['Si', null, 'tiempo, te habría llamado.'], target: 'hubiera', opts: ['hubiera', 'había', 'tengo'], hint: 'если бы у меня было время' },
+      { t: 'fill', sentence: ['Ojalá', null, 'estudiado más.'], target: 'hubiera', opts: ['hubiera', 'había', 'haya'], hint: 'жаль, что я не учился больше' },
+      { t: 'typed', from: 'Если бы ты сказал мне, я бы помог', answer: 'si me hubieras dicho, te habría ayudado', answers: ['si me hubieras dicho, te habría ayudado', 'si me hubieras dicho te habría ayudado', 'si me hubieses dicho te habría ayudado'], hint: 'si + hubieras + ..., + habría' },
+    ],
+  },
+
+  // ── 172. Periphrastic futures ─────────────────────────
+  {
+    id: 'l172', name: 'Acabo de / Voy a', emoji: '⏳', desc: 'Perífrasis verbales: acabar, ir, estar',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я только что поел»', opts: [
+        { txt: 'acabo de comer',  em: '✅' },
+        { txt: 'voy a comer',     em: '⏩' },
+        { txt: 'estoy comiendo',  em: '🍽️' },
+        { txt: 'he comido',       em: '⏳' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я собираюсь поесть»', opts: [
+        { txt: 'voy a comer',     em: '✅' },
+        { txt: 'acabo de comer',  em: '❌' },
+        { txt: 'estoy comiendo',  em: '❌' },
+        { txt: 'tengo que comer', em: '⚠️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я вот-вот ухожу»', opts: [
+        { txt: 'estoy a punto de salir', em: '✅' },
+        { txt: 'salgo a punto',          em: '❌' },
+        { txt: 'voy salir',              em: '❌' },
+        { txt: 'salí',                   em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['acabar de + inf.',   'только что'],
+        ['ir a + inf.',        'собираться'],
+        ['estar a punto de',   'вот-вот'],
+        ['volver a + inf.',    'снова делать'],
+      ]},
+      { t: 'match', pairs: [
+        ['tener que + inf.',   'должен'],
+        ['hay que + inf.',     'нужно (вообще)'],
+        ['deber + inf.',       'следует'],
+        ['poder + inf.',       'мочь'],
+      ]},
+      { t: 'translate', from: 'Я только что приехал', tiles: ['acabo', 'de', 'llegar', 'llego', 'voy'], answer: ['acabo', 'de', 'llegar'] },
+      { t: 'fill', sentence: ['Estoy', null, 'punto de salir.'], target: 'a', opts: ['a', 'de', 'en'], hint: 'я вот-вот ухожу' },
+      { t: 'fill', sentence: [null, 'que estudiar más.'], target: 'Tengo', opts: ['Tengo', 'Hay', 'Soy'], hint: 'я должен учиться больше' },
+      { t: 'typed', from: 'Мы собираемся открыть магазин', answer: 'vamos a abrir una tienda', answers: ['vamos a abrir una tienda', 'vamos a abrir la tienda'], hint: 'ir a + inf.' },
+    ],
+  },
+
+  // ── 173. Conectores avanzados ─────────────────────────
+  {
+    id: 'l173', name: 'Conectores', emoji: '🔗', desc: 'A pesar de, por lo tanto, mientras',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Несмотря на...»', opts: [
+        { txt: 'a pesar de',  em: '🔀' },
+        { txt: 'a propósito', em: '💡' },
+        { txt: 'a menudo',    em: '⏰' },
+        { txt: 'a veces',     em: '🕓' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Поэтому / следовательно»', opts: [
+        { txt: 'por lo tanto',  em: '➡️' },
+        { txt: 'por supuesto',  em: '✅' },
+        { txt: 'por favor',     em: '🙏' },
+        { txt: 'por ejemplo',   em: '💡' },
+      ], correct: 0 },
+      { t: 'pick', q: '«В то время как»', opts: [
+        { txt: 'mientras',  em: '⏳' },
+        { txt: 'siempre',   em: '♾️' },
+        { txt: 'cuando',    em: '⌚' },
+        { txt: 'porque',    em: '❓' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['a pesar de',     'несмотря на'],
+        ['por lo tanto',   'поэтому'],
+        ['mientras',       'в то время как'],
+        ['de hecho',       'на самом деле'],
+      ]},
+      { t: 'match', pairs: [
+        ['no obstante',  'тем не менее'],
+        ['en cambio',    'наоборот'],
+        ['así que',      'так что'],
+        ['ya que',       'поскольку'],
+      ]},
+      { t: 'translate', from: 'Несмотря на дождь, я вышел', tiles: ['a', 'pesar', 'de', 'la', 'lluvia', 'salí'], answer: ['a', 'pesar', 'de', 'la', 'lluvia', 'salí'] },
+      { t: 'fill', sentence: ['Llueve,', null, 'lo tanto, no salgo.'], target: 'por', opts: ['por', 'para', 'en'], hint: 'дождь, поэтому я не выйду' },
+      { t: 'fill', sentence: ['Yo trabajo, ', null, 'él descansa.'], target: 'mientras', opts: ['mientras', 'aunque', 'porque'], hint: 'я работаю, в то время как он отдыхает' },
+      { t: 'typed', from: 'На самом деле я не знаю', answer: 'de hecho no lo sé', answers: ['de hecho no lo sé', 'de hecho, no lo sé', 'en realidad no lo sé'], hint: 'de hecho / en realidad' },
+    ],
+  },
+
+  // ── 174. Estilo indirecto ─────────────────────────────
+  {
+    id: 'l174', name: 'Estilo indirecto', emoji: '💬', desc: 'Reported speech: dijo que...',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Он сказал, что устал»', opts: [
+        { txt: 'dijo que estaba cansado',  em: '✅' },
+        { txt: 'dijo "estoy cansado"',     em: '⚠️' },
+        { txt: 'dice que está cansado',    em: '⚠️' },
+        { txt: 'decía que estaría cansado',em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Она спросила, где я живу»', opts: [
+        { txt: 'preguntó dónde vivía',    em: '✅' },
+        { txt: 'preguntó dónde vivo',     em: '⚠️' },
+        { txt: 'pregunta dónde vivía',    em: '❌' },
+        { txt: 'pregunta "dónde vives"',  em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Он попросил меня прийти»', opts: [
+        { txt: 'me pidió que viniera',   em: '✅' },
+        { txt: 'me pidió que vengo',     em: '❌' },
+        { txt: 'me pidió que vendré',    em: '❌' },
+        { txt: 'me pidió que vine',      em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['dijo que...',     'сказал, что'],
+        ['preguntó si...',  'спросил, если'],
+        ['contestó que...', 'ответил, что'],
+        ['pidió que...',    'попросил, чтобы'],
+      ]},
+      { t: 'match', pairs: [
+        ['"estoy" → estaba',    'презенс → имперфект'],
+        ['"iré" → iría',        'будущее → условное'],
+        ['"he ido" → había ido','перфект → плюсквамперф.'],
+        ['"ven" → que viniera', 'императив → субъюнк.'],
+      ]},
+      { t: 'translate', from: 'Он сказал, что придёт', tiles: ['dijo', 'que', 'vendría', 'viene', 'vendrá'], answer: ['dijo', 'que', 'vendría'] },
+      { t: 'fill', sentence: ['Ella dijo que', null, 'enferma.'], target: 'estaba', opts: ['estaba', 'está', 'estuvo'], hint: 'она сказала, что больна (репорт.)' },
+      { t: 'fill', sentence: ['Me preguntó', null, 'quería café.'], target: 'si', opts: ['si', 'que', 'cuando'], hint: 'он спросил, хочу ли я кофе' },
+      { t: 'typed', from: 'Она сказала мне, что не знает', answer: 'me dijo que no sabía', answers: ['me dijo que no sabía', 'ella me dijo que no sabía'], hint: 'me dijo que no sabía' },
+    ],
+  },
+
+  // ── 175. Repaso Maestro IV (revisión final L151-L174) ─
+  // FINAL FINAL MILESTONE — graduation cap on the curriculum.
+  {
+    id: 'l175', name: 'Repaso Maestro IV', emoji: '🎓', desc: 'Repaso final (151-174)',
+    hearts: 2,
+    exercises: [
+      // — Professional
+      { t: 'pick', q: '«Собеседование»', opts: [
+        { txt: 'entrevista',  em: '🗣️' },
+        { txt: 'entrega',     em: '📦' },
+        { txt: 'entrada',     em: '🚪' },
+        { txt: 'entrenador',  em: '🏋️' },
+      ], correct: 0 },
+      // — Science
+      { t: 'pick', q: '«Учёный»', opts: [
+        { txt: 'científico', em: '👨‍🔬' },
+        { txt: 'cocinero',   em: '👨‍🍳' },
+        { txt: 'capitán',    em: '👨‍✈️' },
+        { txt: 'cantante',   em: '🎤' },
+      ], correct: 0 },
+      // — Health
+      { t: 'pick', q: '«Хирург»', opts: [
+        { txt: 'cirujano', em: '🩺' },
+        { txt: 'cocinero', em: '👨‍🍳' },
+        { txt: 'conductor',em: '🚗' },
+        { txt: 'cantante', em: '🎤' },
+      ], correct: 0 },
+      // — Finance
+      { t: 'pick', q: '«Налог»', opts: [
+        { txt: 'impuesto', em: '🧾' },
+        { txt: 'impulso',  em: '⚡' },
+        { txt: 'impreso',  em: '🖨️' },
+        { txt: 'imagen',   em: '🖼️' },
+      ], correct: 0 },
+      // — Advanced grammar: si hubiera
+      { t: 'pick', q: '«Если бы я знал»', opts: [
+        { txt: 'si hubiera sabido',  em: '✅' },
+        { txt: 'si sabía',           em: '⚠️' },
+        { txt: 'si supe',            em: '❌' },
+        { txt: 'si sabré',           em: '❌' },
+      ], correct: 0 },
+      // — Periphrasis
+      { t: 'pick', q: '«Я только что поел»', opts: [
+        { txt: 'acabo de comer',  em: '✅' },
+        { txt: 'voy a comer',     em: '⏩' },
+        { txt: 'estoy comiendo',  em: '❌' },
+        { txt: 'he comido',       em: '⏳' },
+      ], correct: 0 },
+      // — Reported speech
+      { t: 'pick', q: '«Он сказал, что устал»', opts: [
+        { txt: 'dijo que estaba cansado',  em: '✅' },
+        { txt: 'dice que está cansado',    em: '⚠️' },
+        { txt: 'dijo "estoy cansado"',     em: '⚠️' },
+        { txt: 'decía que estaría cansado',em: '❌' },
+      ], correct: 0 },
+      // — Mix professional
+      { t: 'match', pairs: [
+        ['jefe',         'начальник'],
+        ['sueldo',       'зарплата'],
+        ['currículum',   'резюме'],
+        ['reunión',      'встреча'],
+      ]},
+      // — Mix science / space / AI
+      { t: 'match', pairs: [
+        ['ciencia',    'наука'],
+        ['estrella',   'звезда'],
+        ['robot',      'робот'],
+        ['máquina',    'машина'],
+      ]},
+      // — Mix health
+      { t: 'match', pairs: [
+        ['dentista',   'стоматолог'],
+        ['operación',  'операция'],
+        ['embarazo',   'беременность'],
+        ['estrés',     'стресс'],
+      ]},
+      // — Mix money
+      { t: 'match', pairs: [
+        ['bolsa',     'биржа'],
+        ['Hacienda',  'налоговая'],
+        ['seguro',    'страховка'],
+        ['hipoteca',  'ипотека'],
+      ]},
+      // — Mix advanced grammar
+      { t: 'match', pairs: [
+        ['hubiera sabido',  'я бы знал'],
+        ['acabo de',        'только что'],
+        ['a pesar de',      'несмотря на'],
+        ['dijo que',        'сказал, что'],
+      ]},
+      // — Translation: subjuntivo pluscuamperfecto
+      { t: 'translate', from: 'Если бы я знал, я бы пришёл', tiles: ['si', 'hubiera', 'sabido', 'habría', 'venido'], answer: ['si', 'hubiera', 'sabido', 'habría', 'venido'] },
+      // — Translation: periphrasis
+      { t: 'translate', from: 'Я только что приехал', tiles: ['acabo', 'de', 'llegar', 'llego', 'voy'], answer: ['acabo', 'de', 'llegar'] },
+      // — Translation: connector + reported
+      { t: 'translate', from: 'Он сказал, что придёт', tiles: ['dijo', 'que', 'vendría', 'viene'], answer: ['dijo', 'que', 'vendría'] },
+      // — Fill: connector
+      { t: 'fill', sentence: ['Llueve,', null, 'lo tanto, no salgo.'], target: 'por', opts: ['por', 'para', 'en'], hint: 'дождь, поэтому я не выйду' },
+      // — Fill: reported
+      { t: 'fill', sentence: ['Me preguntó', null, 'quería café.'], target: 'si', opts: ['si', 'que', 'cuando'], hint: 'спросил, если я хочу кофе' },
+      // — Fill: real estate
+      { t: 'fill', sentence: ['Alquilo un', null, 'en el centro.'], target: 'piso', opts: ['piso', 'plato', 'peso'], hint: 'я снимаю квартиру в центре' },
+      // — Typed: si + hubiera (mastery)
+      { t: 'typed', from: 'Если бы ты сказал мне, я бы помог', answer: 'si me hubieras dicho, te habría ayudado', answers: ['si me hubieras dicho, te habría ayudado', 'si me hubieras dicho te habría ayudado', 'si me hubieses dicho te habría ayudado'], hint: 'si + hubieras + ..., + habría' },
+      // — Typed: periphrasis (mastery)
+      { t: 'typed', from: 'Мы собираемся открыть магазин', answer: 'vamos a abrir una tienda', answers: ['vamos a abrir una tienda', 'vamos a abrir la tienda'], hint: 'ir a + inf.' },
+    ],
+  },
 ];
 
 // ── Lesson runtime state ─────────────────────────────────

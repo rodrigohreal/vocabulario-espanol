@@ -1899,6 +1899,112 @@ html, body {
   opacity: 0.85;
 }
 
+/* ── Unit "test-out" button on the unit banner ───────────── */
+.unit-test-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--unit-color, rgba(255,255,255,0.18));
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01)),
+    radial-gradient(circle at 30% 30%, var(--unit-glow, rgba(255,255,255,0.04)), transparent 70%);
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0 0 0 0 var(--unit-glow);
+  transition: transform 0.08s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.unit-test-btn:hover  { box-shadow: 0 0 14px var(--unit-glow); }
+.unit-test-btn:active { transform: translateY(1px); }
+.unit-test-btn .utb-ico { font-size: 16px; line-height: 1; }
+.unit-test-btn .utb-lbl { font-size: 12px; }
+/* Subtle pulse to draw the eye on units the user could skip. */
+.unit-test-btn::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  border: 1px solid var(--unit-color);
+  opacity: 0;
+  animation: utb-pulse 2.6s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes utb-pulse {
+  0%   { opacity: 0;    transform: scale(0.92); }
+  40%  { opacity: 0.55; transform: scale(1); }
+  100% { opacity: 0;    transform: scale(1.12); }
+}
+
+/* ── Unit-test confirmation modal (reuses .lesson-preview backdrop) ── */
+.unit-test-card {
+  text-align: center;
+  position: relative;
+  padding-top: 8px;
+}
+.unit-test-trophy {
+  font-size: 56px;
+  line-height: 1;
+  margin: 4px 0 2px;
+  filter: drop-shadow(0 0 14px rgba(255, 200, 120, 0.45));
+  animation: utc-trophy-bob 2.4s ease-in-out infinite;
+}
+@keyframes utc-trophy-bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-4px) rotate(2deg); }
+}
+.unit-test-kicker {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.unit-test-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  text-align: left;
+}
+.utm-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text);
+}
+.utm-row b { font-weight: 600; }
+.utm-ico {
+  font-size: 16px;
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+/* Two stacked buttons inside the unit-test card. Override the
+   blanket white styling that .lesson-preview-card .act-btn applies. */
+.unit-test-card .act-btn { display: block; width: 100%; margin-top: 8px; flex: none; }
+.unit-test-card .act-btn.ghost-btn {
+  background: transparent;
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+.unit-test-card .act-btn.ghost-btn:active {
+  background: var(--card);
+  border-color: var(--border-2);
+  color: var(--text);
+}
+
 /* ── Path container ──────────────────────────────────────── */
 .unit-path {
   display: flex;

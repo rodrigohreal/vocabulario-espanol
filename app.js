@@ -7100,6 +7100,1114 @@ const LESSONS = [
       { t: 'typed', from: 'Я ему это даю', answer: 'se lo doy', answers: ['se lo doy', 'yo se lo doy'], hint: 'le + lo → se lo' },
     ],
   },
+
+  // ── 126. Voz pasiva ───────────────────────────────────
+  {
+    id: 'l126', name: 'Voz pasiva', emoji: '🔄', desc: 'La casa fue construida',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Дом был построен»', opts: [
+        { txt: 'la casa fue construida', em: '🏠' },
+        { txt: 'la casa construye',       em: '🔨' },
+        { txt: 'la casa es bonita',       em: '✨' },
+        { txt: 'la casa está lejos',      em: '🛣️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Книга была написана Борхесом»', opts: [
+        { txt: 'el libro fue escrito por Borges', em: '📕' },
+        { txt: 'el libro escribió a Borges',      em: '✍️' },
+        { txt: 'Borges es un libro',              em: '👤' },
+        { txt: 'el libro está de Borges',         em: '📚' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['fue escrito',    'был написан'],
+        ['fue construida', 'была построена'],
+        ['fue vendido',    'был продан'],
+        ['fue creado',     'был создан'],
+      ]},
+      { t: 'match', pairs: [
+        ['por',          'кем (агент)'],
+        ['ser + part.',  'быть + причастие'],
+        ['estar + part.','состояние'],
+        ['se vende',     'продаётся'],
+      ]},
+      { t: 'translate', from: 'Картина была написана', tiles: ['el', 'cuadro', 'fue', 'pintado', 'pinta'], answer: ['el', 'cuadro', 'fue', 'pintado'] },
+      { t: 'fill', sentence: ['La carta', null, 'enviada ayer.'], target: 'fue', opts: ['fue', 'es', 'está'], hint: 'была отправлена' },
+      { t: 'fill', sentence: ['Aquí', null, 'venden libros.'], target: 'se', opts: ['se', 'son', 'es'], hint: 'Здесь продаются книги' },
+      { t: 'typed', from: 'Дом был продан в 2020 году', answer: 'la casa fue vendida en 2020', answers: ['la casa fue vendida en 2020', 'la casa se vendió en 2020'], hint: 'fue / se vendió' },
+    ],
+  },
+
+  // ── 127. Subjuntivo presente ──────────────────────────
+  {
+    id: 'l127', name: 'Subjuntivo II', emoji: '🌟', desc: 'Subjuntivo presente avanzado',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Возможно, он придёт» (presente subj.)', opts: [
+        { txt: 'quizás venga',   em: '✅' },
+        { txt: 'quizás viene',   em: '❌' },
+        { txt: 'quizás vendrá',  em: '❌' },
+        { txt: 'quizás vino',    em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Когда увидишь его...»', opts: [
+        { txt: 'cuando lo veas',    em: '✅' },
+        { txt: 'cuando lo ves',     em: '❌' },
+        { txt: 'cuando lo verás',   em: '❌' },
+        { txt: 'cuando lo viste',   em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я не думаю, что это правда»', opts: [
+        { txt: 'no creo que sea verdad',  em: '✅' },
+        { txt: 'no creo que es verdad',   em: '❌' },
+        { txt: 'no creo es verdad',       em: '❌' },
+        { txt: 'no creo que era verdad',  em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['quizás',        'возможно'],
+        ['tal vez',       'может быть'],
+        ['aunque',        'хотя'],
+        ['antes de que',  'прежде чем'],
+      ]},
+      { t: 'match', pairs: [
+        ['sea',    'будь / есть (subj)'],
+        ['tenga',  'у меня было бы (subj)'],
+        ['vaya',   'я пошёл бы (subj)'],
+        ['venga',  'он пришёл бы (subj)'],
+      ]},
+      { t: 'translate', from: 'Когда придёшь, позвони', tiles: ['cuando', 'vengas', 'vienes', 'llama'], answer: ['cuando', 'vengas', 'llama'] },
+      { t: 'fill', sentence: ['No creo que', null, 'fácil.'], target: 'sea', opts: ['sea', 'es', 'era'], hint: 'Не думаю, что это легко' },
+      { t: 'typed', from: 'Возможно, завтра пойдёт дождь', answer: 'quizás llueva mañana', answers: ['quizás llueva mañana', 'tal vez llueva mañana', 'quizá llueva mañana'], hint: 'quizás / tal vez + subjuntivo' },
+    ],
+  },
+
+  // ── 128. Pluscuamperfecto ─────────────────────────────
+  {
+    id: 'l128', name: 'Pluscuamperfecto', emoji: '⏪', desc: 'Había comido / I had eaten',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я уже поел (до того как)»', opts: [
+        { txt: 'había comido',  em: '✅' },
+        { txt: 'he comido',     em: '⏳' },
+        { txt: 'comí',          em: '⏪' },
+        { txt: 'voy a comer',   em: '⏩' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Когда ты пришёл, я уже ушёл»', opts: [
+        { txt: 'cuando llegaste, ya me había ido',   em: '✅' },
+        { txt: 'cuando llegaste, ya me he ido',      em: '❌' },
+        { txt: 'cuando llegaste, ya me fui',         em: '❌' },
+        { txt: 'cuando llegabas, ya me iría',        em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['había comido',   'я уже поел'],
+        ['habías visto',   'ты уже видел'],
+        ['había salido',   'он уже вышел'],
+        ['habíamos hecho', 'мы уже сделали'],
+      ]},
+      { t: 'match', pairs: [
+        ['ya',            'уже'],
+        ['todavía no',    'ещё не'],
+        ['antes de que',  'до того как'],
+        ['cuando',        'когда'],
+      ]},
+      { t: 'translate', from: 'Я никогда не видел такого', tiles: ['nunca', 'había', 'visto', 'algo', 'así', 've'], answer: ['nunca', 'había', 'visto', 'algo', 'así'] },
+      { t: 'fill', sentence: ['Cuando llegué, ellos ya', null, 'cenado.'], target: 'habían', opts: ['habían', 'han', 'habrán'], hint: 'они уже поужинали' },
+      { t: 'fill', sentence: ['Yo nunca', null, 'estado allí antes.'], target: 'había', opts: ['había', 'he', 'estaba'], hint: 'я никогда не был там раньше' },
+      { t: 'typed', from: 'Я уже ел, когда ты позвонил', answer: 'ya había comido cuando llamaste', answers: ['ya había comido cuando llamaste', 'yo ya había comido cuando llamaste'], hint: 'había + participio' },
+    ],
+  },
+
+  // ── 129. Condicional perfecto ─────────────────────────
+  {
+    id: 'l129', name: 'Cond. perfecto', emoji: '💫', desc: 'Habría hecho — I would have done',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Я бы поел (но не поел)»', opts: [
+        { txt: 'habría comido',  em: '✅' },
+        { txt: 'había comido',   em: '⏪' },
+        { txt: 'he comido',      em: '⏳' },
+        { txt: 'comería',        em: '🔂' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я бы пришёл, но не мог»', opts: [
+        { txt: 'habría venido, pero no pude',  em: '✅' },
+        { txt: 'vendría, pero no pude',        em: '⚠️' },
+        { txt: 'vine, pero no pude',           em: '❌' },
+        { txt: 'venía, pero no pude',          em: '❌' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['habría hecho',    'я бы сделал'],
+        ['habrías ido',     'ты бы пошёл'],
+        ['habría dicho',    'он бы сказал'],
+        ['habríamos sido',  'мы бы были'],
+      ]},
+      { t: 'match', pairs: [
+        ['si hubiera...',     'если бы...'],
+        ['habría + part.',    'я бы + сделал'],
+        ['pero no pudo',      'но не смог'],
+        ['en tu lugar',       'на твоём месте'],
+      ]},
+      { t: 'translate', from: 'Я бы помог тебе', tiles: ['te', 'habría', 'ayudado', 'ayudo', 'ayudaría'], answer: ['te', 'habría', 'ayudado'] },
+      { t: 'fill', sentence: ['Yo', null, 'ido, pero no tuve tiempo.'], target: 'habría', opts: ['habría', 'había', 'he'], hint: 'я бы пошёл, но не было времени' },
+      { t: 'fill', sentence: ['En tu lugar, lo', null, 'comprado.'], target: 'habría', opts: ['habría', 'había', 'compré'], hint: 'на твоём месте я бы это купил' },
+      { t: 'typed', from: 'Я бы сказал тебе правду', answer: 'te habría dicho la verdad', answers: ['te habría dicho la verdad', 'te hubiera dicho la verdad'], hint: 'habría dicho / hubiera dicho' },
+    ],
+  },
+
+  // ── 130. Repaso 21 (revisión de L126-L129) ────────────
+  // REVIEW LESSON — grammar block: pasiva, subjuntivo II, plusc., cond. perfecto.
+  {
+    id: 'l130', name: 'Repaso 21', emoji: '🎓', desc: 'Repaso L126-L129',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Книга была написана»', opts: [
+        { txt: 'el libro fue escrito',  em: '✅' },
+        { txt: 'el libro escribió',     em: '❌' },
+        { txt: 'el libro está escrito', em: '⚠️' },
+        { txt: 'el libro se escribe',   em: '⚠️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Возможно, он придёт»', opts: [
+        { txt: 'quizás venga',  em: '✅' },
+        { txt: 'quizás viene',  em: '❌' },
+        { txt: 'quizás vendrá', em: '❌' },
+        { txt: 'quizás vino',   em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я уже поел, когда ты пришёл»', opts: [
+        { txt: 'ya había comido cuando llegaste', em: '✅' },
+        { txt: 'ya he comido cuando llegaste',    em: '❌' },
+        { txt: 'ya comí cuando llegaste',         em: '⚠️' },
+        { txt: 'ya comía cuando llegaste',        em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я бы сделал это»', opts: [
+        { txt: 'lo habría hecho',  em: '✅' },
+        { txt: 'lo había hecho',   em: '❌' },
+        { txt: 'lo he hecho',      em: '❌' },
+        { txt: 'lo haría',         em: '⚠️' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['fue escrito',  'был написан'],
+        ['se vende',     'продаётся'],
+        ['sea',          'будь (subj)'],
+        ['venga',        'пусть придёт'],
+      ]},
+      { t: 'match', pairs: [
+        ['había comido',   'я уже поел'],
+        ['habría comido',  'я бы поел'],
+        ['ya',             'уже'],
+        ['todavía no',     'ещё не'],
+      ]},
+      { t: 'translate', from: 'Я бы помог тебе, но не мог', tiles: ['te', 'habría', 'ayudado', 'pero', 'no', 'pude'], answer: ['te', 'habría', 'ayudado', 'pero', 'no', 'pude'] },
+      { t: 'translate', from: 'Когда придёшь, позвони', tiles: ['cuando', 'vengas', 'vienes', 'llama', 'me'], answer: ['cuando', 'vengas', 'llama'] },
+      { t: 'fill', sentence: ['Cuando llegué, ya', null, 'salido.'], target: 'habían', opts: ['habían', 'han', 'habrán'], hint: 'когда я пришёл, они уже ушли' },
+      { t: 'fill', sentence: ['No creo que', null, 'verdad.'], target: 'sea', opts: ['sea', 'es', 'era'], hint: 'не думаю, что это правда' },
+      { t: 'fill', sentence: ['Aquí', null, 'venden flores.'], target: 'se', opts: ['se', 'son', 'es'], hint: 'здесь продаются цветы' },
+      { t: 'typed', from: 'Я бы сказал тебе раньше', answer: 'te habría dicho antes', answers: ['te habría dicho antes', 'te hubiera dicho antes'], hint: 'habría / hubiera + part.' },
+    ],
+  },
+
+  // ── 131. En el cine ───────────────────────────────────
+  {
+    id: 'l131', name: 'Cine', emoji: '🎬', desc: 'Películas, butacas y palomitas',
+    exercises: [
+      { t: 'pick', q: '«Кино / фильм»', opts: [
+        { txt: 'película',  em: '🎞️' },
+        { txt: 'pintura',   em: '🖼️' },
+        { txt: 'piscina',   em: '🏊' },
+        { txt: 'pelota',    em: '⚽' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Попкорн»', opts: [
+        { txt: 'pan',         em: '🍞' },
+        { txt: 'palomitas',   em: '🍿' },
+        { txt: 'pasteles',    em: '🍰' },
+        { txt: 'patatas',     em: '🥔' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Билет»', opts: [
+        { txt: 'entrada',  em: '🎟️' },
+        { txt: 'salida',   em: '🚪' },
+        { txt: 'pantalla', em: '🖥️' },
+        { txt: 'silla',    em: '🪑' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['película',   'фильм'],
+        ['cine',       'кинотеатр'],
+        ['entrada',    'билет'],
+        ['butaca',     'кресло'],
+      ]},
+      { t: 'match', pairs: [
+        ['palomitas',  'попкорн'],
+        ['pantalla',   'экран'],
+        ['director',   'режиссёр'],
+        ['actor',      'актёр'],
+      ]},
+      { t: 'translate', from: 'Я хочу посмотреть фильм', tiles: ['quiero', 'ver', 'una', 'película', 'veo'], answer: ['quiero', 'ver', 'una', 'película'] },
+      { t: 'fill', sentence: ['Compré dos', null, 'para el cine.'], target: 'entradas', opts: ['entradas', 'salidas', 'sillas'], hint: 'я купил два билета' },
+      { t: 'typed', from: 'Этот фильм очень интересный', answer: 'esta película es muy interesante', answers: ['esta película es muy interesante', 'la película es muy interesante'], hint: 'esta película es...' },
+    ],
+  },
+
+  // ── 132. Música y conciertos ──────────────────────────
+  {
+    id: 'l132', name: 'Conciertos', emoji: '🎤', desc: 'Bandas, canciones y conciertos',
+    exercises: [
+      { t: 'pick', q: '«Песня»', opts: [
+        { txt: 'canción',  em: '🎶' },
+        { txt: 'baile',    em: '💃' },
+        { txt: 'libro',    em: '📖' },
+        { txt: 'fiesta',   em: '🎉' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Группа / рок-группа»', opts: [
+        { txt: 'banda',    em: '🎸' },
+        { txt: 'banco',    em: '🏦' },
+        { txt: 'cantante', em: '🎤' },
+        { txt: 'novia',    em: '👰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Сцена»', opts: [
+        { txt: 'escena',   em: '🎭' },
+        { txt: 'escenario',em: '🎪' },
+        { txt: 'butaca',   em: '🪑' },
+        { txt: 'puerta',   em: '🚪' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['canción',    'песня'],
+        ['cantante',   'певец'],
+        ['banda',      'группа'],
+        ['concierto',  'концерт'],
+      ]},
+      { t: 'match', pairs: [
+        ['escenario',  'сцена'],
+        ['micrófono',  'микрофон'],
+        ['letra',      'текст песни'],
+        ['ritmo',      'ритм'],
+      ]},
+      { t: 'translate', from: 'Мне нравится эта песня', tiles: ['me', 'gusta', 'esta', 'canción', 'eso'], answer: ['me', 'gusta', 'esta', 'canción'] },
+      { t: 'fill', sentence: ['Vamos al', null, 'esta noche.'], target: 'concierto', opts: ['concierto', 'cuento', 'consejo'], hint: 'идём на концерт сегодня вечером' },
+      { t: 'typed', from: 'Этот певец очень знаменит', answer: 'este cantante es muy famoso', answers: ['este cantante es muy famoso', 'el cantante es muy famoso'], hint: 'este cantante es...' },
+    ],
+  },
+
+  // ── 133. Libros y literatura ──────────────────────────
+  {
+    id: 'l133', name: 'Literatura', emoji: '📚', desc: 'Novelas, autores y poesía',
+    exercises: [
+      { t: 'pick', q: '«Роман»', opts: [
+        { txt: 'novela',    em: '📕' },
+        { txt: 'cuento',    em: '📖' },
+        { txt: 'poema',     em: '📜' },
+        { txt: 'periódico', em: '📰' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Автор / писатель»', opts: [
+        { txt: 'lector',    em: '👓' },
+        { txt: 'autor',     em: '✍️' },
+        { txt: 'cantante',  em: '🎤' },
+        { txt: 'pintor',    em: '🎨' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Стихотворение»', opts: [
+        { txt: 'poema',     em: '📜' },
+        { txt: 'novela',    em: '📕' },
+        { txt: 'capítulo',  em: '📄' },
+        { txt: 'biblioteca',em: '🏛️' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['novela',    'роман'],
+        ['cuento',    'рассказ'],
+        ['poema',     'стихотворение'],
+        ['ensayo',    'эссе'],
+      ]},
+      { t: 'match', pairs: [
+        ['autor',      'автор'],
+        ['lector',     'читатель'],
+        ['biblioteca', 'библиотека'],
+        ['página',     'страница'],
+      ]},
+      { t: 'translate', from: 'Я читаю интересную книгу', tiles: ['leo', 'un', 'libro', 'interesante', 'libros'], answer: ['leo', 'un', 'libro', 'interesante'] },
+      { t: 'fill', sentence: ['Cervantes es un gran', null, '.'], target: 'autor', opts: ['autor', 'lector', 'actor'], hint: 'Сервантес — великий автор' },
+      { t: 'typed', from: 'Я только что закончил роман', answer: 'acabo de terminar una novela', answers: ['acabo de terminar una novela', 'acabo de terminar la novela'], hint: 'acabar de + infinitivo' },
+    ],
+  },
+
+  // ── 134. Teatro y arte ────────────────────────────────
+  {
+    id: 'l134', name: 'Teatro y arte', emoji: '🎭', desc: 'Obras, pinturas y museos',
+    exercises: [
+      { t: 'pick', q: '«Театр»', opts: [
+        { txt: 'teatro',    em: '🎭' },
+        { txt: 'cine',      em: '🎬' },
+        { txt: 'museo',     em: '🏛️' },
+        { txt: 'escuela',   em: '🏫' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Картина»', opts: [
+        { txt: 'cuadro',    em: '🖼️' },
+        { txt: 'cuento',    em: '📖' },
+        { txt: 'cuerda',    em: '🪢' },
+        { txt: 'cuello',    em: '👔' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Музей»', opts: [
+        { txt: 'mercado',   em: '🛒' },
+        { txt: 'museo',     em: '🏛️' },
+        { txt: 'mesón',     em: '🍽️' },
+        { txt: 'metro',     em: '🚇' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['teatro',    'театр'],
+        ['obra',      'пьеса / произведение'],
+        ['actor',     'актёр'],
+        ['actriz',    'актриса'],
+      ]},
+      { t: 'match', pairs: [
+        ['museo',     'музей'],
+        ['cuadro',    'картина'],
+        ['escultura', 'скульптура'],
+        ['pintor',    'художник'],
+      ]},
+      { t: 'translate', from: 'Я иду в музей', tiles: ['voy', 'al', 'museo', 'casa', 'a'], answer: ['voy', 'al', 'museo'] },
+      { t: 'fill', sentence: ['Esta', null, 'es de Picasso.'], target: 'pintura', opts: ['pintura', 'puerta', 'pelota'], hint: 'эта картина — Пикассо' },
+      { t: 'typed', from: 'Вчера я был в театре', answer: 'ayer estuve en el teatro', answers: ['ayer estuve en el teatro', 'ayer fui al teatro'], hint: 'estuve / fui al teatro' },
+    ],
+  },
+
+  // ── 135. Repaso 22 (revisión de L131-L134) ────────────
+  {
+    id: 'l135', name: 'Repaso 22', emoji: '🎬', desc: 'Repaso L131-L134',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Фильм»', opts: [
+        { txt: 'película', em: '🎞️' },
+        { txt: 'pintura',  em: '🖼️' },
+        { txt: 'palomitas',em: '🍿' },
+        { txt: 'pelota',   em: '⚽' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Концерт»', opts: [
+        { txt: 'concierto', em: '🎤' },
+        { txt: 'consejo',   em: '💡' },
+        { txt: 'cuento',    em: '📖' },
+        { txt: 'comedor',   em: '🍽️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Автор»', opts: [
+        { txt: 'autor',    em: '✍️' },
+        { txt: 'actor',    em: '🎭' },
+        { txt: 'lector',   em: '👓' },
+        { txt: 'pintor',   em: '🎨' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Музей»', opts: [
+        { txt: 'museo',    em: '🏛️' },
+        { txt: 'teatro',   em: '🎭' },
+        { txt: 'cine',     em: '🎬' },
+        { txt: 'mercado',  em: '🛒' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['película',  'фильм'],
+        ['canción',   'песня'],
+        ['novela',    'роман'],
+        ['cuadro',    'картина'],
+      ]},
+      { t: 'match', pairs: [
+        ['cine',     'кинотеатр'],
+        ['concierto','концерт'],
+        ['biblioteca','библиотека'],
+        ['teatro',   'театр'],
+      ]},
+      { t: 'match', pairs: [
+        ['palomitas', 'попкорн'],
+        ['entrada',   'билет'],
+        ['poema',     'стихотворение'],
+        ['actriz',    'актриса'],
+      ]},
+      { t: 'translate', from: 'Мне нравится эта песня', tiles: ['me', 'gusta', 'esta', 'canción'], answer: ['me', 'gusta', 'esta', 'canción'] },
+      { t: 'translate', from: 'Я иду в кино', tiles: ['voy', 'al', 'cine', 'museo'], answer: ['voy', 'al', 'cine'] },
+      { t: 'fill', sentence: ['Compré dos', null, 'para el teatro.'], target: 'entradas', opts: ['entradas', 'salidas', 'palomitas'], hint: 'я купил два билета' },
+      { t: 'fill', sentence: ['Cervantes escribió esta', null, '.'], target: 'novela', opts: ['novela', 'película', 'canción'], hint: 'Сервантес написал этот роман' },
+      { t: 'typed', from: 'Вчера я ходил в музей', answer: 'ayer fui al museo', answers: ['ayer fui al museo', 'ayer estuve en el museo'], hint: 'fui al / estuve en el museo' },
+    ],
+  },
+
+  // ── 136. Cultura española ─────────────────────────────
+  {
+    id: 'l136', name: 'España', emoji: '🇪🇸', desc: 'Flamenco, paella y fiestas',
+    exercises: [
+      { t: 'pick', q: '«Фламенко»', opts: [
+        { txt: 'flamenco',  em: '💃' },
+        { txt: 'fútbol',    em: '⚽' },
+        { txt: 'flamingo',  em: '🦩' },
+        { txt: 'falda',     em: '👗' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Паэлья»', opts: [
+        { txt: 'paella',    em: '🥘' },
+        { txt: 'patata',    em: '🥔' },
+        { txt: 'palabra',   em: '💬' },
+        { txt: 'paloma',    em: '🕊️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Сиеста (дневной сон)»', opts: [
+        { txt: 'fiesta',  em: '🎉' },
+        { txt: 'siesta',  em: '😴' },
+        { txt: 'silla',   em: '🪑' },
+        { txt: 'sopa',    em: '🍲' },
+      ], correct: 1 },
+      { t: 'match', pairs: [
+        ['flamenco',  'фламенко'],
+        ['toros',     'корриды (быки)'],
+        ['paella',    'паэлья'],
+        ['tapas',     'тапас (закуски)'],
+      ]},
+      { t: 'match', pairs: [
+        ['siesta',    'дневной сон'],
+        ['fiesta',    'праздник'],
+        ['plaza',     'площадь'],
+        ['guitarra',  'гитара'],
+      ]},
+      { t: 'translate', from: 'Мне нравится испанская кухня', tiles: ['me', 'gusta', 'la', 'cocina', 'española', 'pero'], answer: ['me', 'gusta', 'la', 'cocina', 'española'] },
+      { t: 'fill', sentence: ['Después de comer hago una', null, '.'], target: 'siesta', opts: ['siesta', 'fiesta', 'silla'], hint: 'после еды я устраиваю сиесту' },
+      { t: 'typed', from: 'Паэлья типичное испанское блюдо', answer: 'la paella es un plato típico español', answers: ['la paella es un plato típico español', 'la paella es un plato típico de españa'], hint: 'un plato típico...' },
+    ],
+  },
+
+  // ── 137. Cultura latinoamericana ──────────────────────
+  {
+    id: 'l137', name: 'Latinoamérica', emoji: '🌎', desc: 'Tango, mate y mariachi',
+    exercises: [
+      { t: 'pick', q: '«Танго»', opts: [
+        { txt: 'tango',    em: '💃' },
+        { txt: 'mango',    em: '🥭' },
+        { txt: 'banco',    em: '🏦' },
+        { txt: 'taco',     em: '🌮' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Тако (мексик. блюдо)»', opts: [
+        { txt: 'tapas', em: '🍢' },
+        { txt: 'taza',  em: '☕' },
+        { txt: 'taco',  em: '🌮' },
+        { txt: 'tango', em: '💃' },
+      ], correct: 2 },
+      { t: 'pick', q: '«Мариачи»', opts: [
+        { txt: 'mariachi',  em: '🎺' },
+        { txt: 'martillo',  em: '🔨' },
+        { txt: 'maíz',      em: '🌽' },
+        { txt: 'manzana',   em: '🍎' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['tango',    'танго'],
+        ['mate',     'мате (напиток)'],
+        ['mariachi', 'мариачи'],
+        ['taco',     'тако'],
+      ]},
+      { t: 'match', pairs: [
+        ['Argentina',  'Аргентина'],
+        ['México',     'Мексика'],
+        ['Perú',       'Перу'],
+        ['Cuba',       'Куба'],
+      ]},
+      { t: 'translate', from: 'Я люблю мексиканскую еду', tiles: ['me', 'encanta', 'la', 'comida', 'mexicana', 'gusta'], answer: ['me', 'encanta', 'la', 'comida', 'mexicana'] },
+      { t: 'fill', sentence: ['En Argentina bailan', null, '.'], target: 'tango', opts: ['tango', 'salsa', 'rap'], hint: 'в Аргентине танцуют танго' },
+      { t: 'typed', from: 'Мате типичный аргентинский напиток', answer: 'el mate es una bebida típica argentina', answers: ['el mate es una bebida típica argentina', 'el mate es una bebida típica de argentina'], hint: 'una bebida típica...' },
+    ],
+  },
+
+  // ── 138. Comida regional ──────────────────────────────
+  {
+    id: 'l138', name: 'Comida regional', emoji: '🌮', desc: 'Sabores del mundo hispano',
+    exercises: [
+      { t: 'pick', q: '«Гаспачо (холодный суп)»', opts: [
+        { txt: 'gazpacho',  em: '🥣' },
+        { txt: 'guisado',   em: '🥘' },
+        { txt: 'galleta',   em: '🍪' },
+        { txt: 'gambas',    em: '🦐' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Тортилья»', opts: [
+        { txt: 'tortilla',  em: '🌯' },
+        { txt: 'tarta',     em: '🎂' },
+        { txt: 'tomate',    em: '🍅' },
+        { txt: 'tostada',   em: '🍞' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Чурро»', opts: [
+        { txt: 'churros',   em: '🥖' },
+        { txt: 'chocolate', em: '🍫' },
+        { txt: 'chuleta',   em: '🥩' },
+        { txt: 'cheese',    em: '🧀' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['gazpacho',  'гаспачо'],
+        ['tortilla',  'тортилья'],
+        ['churros',   'чурро'],
+        ['empanada',  'эмпанада'],
+      ]},
+      { t: 'match', pairs: [
+        ['picante',  'острый'],
+        ['salado',   'солёный'],
+        ['dulce',    'сладкий'],
+        ['amargo',   'горький'],
+      ]},
+      { t: 'translate', from: 'Я хочу тако с курицей', tiles: ['quiero', 'un', 'taco', 'de', 'pollo'], answer: ['quiero', 'un', 'taco', 'de', 'pollo'] },
+      { t: 'fill', sentence: ['Esta comida está muy', null, '.'], target: 'picante', opts: ['picante', 'frío', 'lento'], hint: 'эта еда очень острая' },
+      { t: 'typed', from: 'Я никогда не пробовал паэлью', answer: 'nunca he probado la paella', answers: ['nunca he probado la paella', 'no he probado nunca la paella'], hint: 'nunca he + part.' },
+    ],
+  },
+
+  // ── 139. Tradiciones y fiestas ────────────────────────
+  {
+    id: 'l139', name: 'Tradiciones', emoji: '🎉', desc: 'Navidad, Año Nuevo, fiestas',
+    exercises: [
+      { t: 'pick', q: '«Рождество»', opts: [
+        { txt: 'Navidad',     em: '🎄' },
+        { txt: 'cumpleaños',  em: '🎂' },
+        { txt: 'verano',      em: '☀️' },
+        { txt: 'boda',        em: '💍' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Новый Год»', opts: [
+        { txt: 'Año Nuevo',   em: '🎆' },
+        { txt: 'mañana',      em: '🌅' },
+        { txt: 'medianoche',  em: '🕛' },
+        { txt: 'fin de semana',em: '📅' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Подарок»', opts: [
+        { txt: 'regalo',     em: '🎁' },
+        { txt: 'recuerdo',   em: '📷' },
+        { txt: 'reloj',      em: '⌚' },
+        { txt: 'regla',      em: '📏' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['Navidad',     'Рождество'],
+        ['Año Nuevo',   'Новый Год'],
+        ['cumpleaños',  'день рождения'],
+        ['Semana Santa','Страстная неделя'],
+      ]},
+      { t: 'match', pairs: [
+        ['regalo',     'подарок'],
+        ['fuegos artificiales', 'фейерверк'],
+        ['celebrar',   'праздновать'],
+        ['brindis',    'тост'],
+      ]},
+      { t: 'translate', from: 'Поздравляю с Рождеством!', tiles: ['¡', 'feliz', 'Navidad', '!', 'cumpleaños'], answer: ['¡', 'feliz', 'Navidad', '!'] },
+      { t: 'fill', sentence: ['Vamos a', null, 'el cumpleaños.'], target: 'celebrar', opts: ['celebrar', 'comer', 'comprar'], hint: 'мы празднуем день рождения' },
+      { t: 'typed', from: 'Я хочу подарить тебе подарок', answer: 'quiero darte un regalo', answers: ['quiero darte un regalo', 'te quiero dar un regalo'], hint: 'darte un regalo / te quiero dar' },
+    ],
+  },
+
+  // ── 140. Repaso 23 (revisión de L136-L139) ────────────
+  {
+    id: 'l140', name: 'Repaso 23', emoji: '🌍', desc: 'Repaso L136-L139',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Паэлья»', opts: [
+        { txt: 'paella',  em: '🥘' },
+        { txt: 'pasta',   em: '🍝' },
+        { txt: 'pizza',   em: '🍕' },
+        { txt: 'pollo',   em: '🍗' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Танго»', opts: [
+        { txt: 'tango',    em: '💃' },
+        { txt: 'salsa',    em: '🌶️' },
+        { txt: 'flamenco', em: '👗' },
+        { txt: 'mariachi', em: '🎺' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Тако»', opts: [
+        { txt: 'taco',     em: '🌮' },
+        { txt: 'tapas',    em: '🍢' },
+        { txt: 'tarta',    em: '🎂' },
+        { txt: 'tortilla', em: '🌯' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Рождество»', opts: [
+        { txt: 'Navidad',     em: '🎄' },
+        { txt: 'cumpleaños',  em: '🎂' },
+        { txt: 'Año Nuevo',   em: '🎆' },
+        { txt: 'Semana Santa',em: '⛪' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['flamenco', 'фламенко'],
+        ['siesta',   'сиеста'],
+        ['mate',     'мате'],
+        ['mariachi', 'мариачи'],
+      ]},
+      { t: 'match', pairs: [
+        ['gazpacho',  'гаспачо'],
+        ['tortilla',  'тортилья'],
+        ['churros',   'чурро'],
+        ['empanada',  'эмпанада'],
+      ]},
+      { t: 'match', pairs: [
+        ['regalo',    'подарок'],
+        ['celebrar',  'праздновать'],
+        ['picante',   'острый'],
+        ['dulce',     'сладкий'],
+      ]},
+      { t: 'translate', from: 'Я люблю мексиканскую еду', tiles: ['me', 'encanta', 'la', 'comida', 'mexicana'], answer: ['me', 'encanta', 'la', 'comida', 'mexicana'] },
+      { t: 'translate', from: 'С Новым Годом!', tiles: ['¡', 'feliz', 'Año', 'Nuevo', '!'], answer: ['¡', 'feliz', 'Año', 'Nuevo', '!'] },
+      { t: 'fill', sentence: ['En Argentina bailan', null, '.'], target: 'tango', opts: ['tango', 'salsa', 'rap'], hint: 'в Аргентине танцуют танго' },
+      { t: 'fill', sentence: ['Esta sopa está muy', null, '.'], target: 'picante', opts: ['picante', 'frío', 'rápido'], hint: 'этот суп очень острый' },
+      { t: 'typed', from: 'Я хочу попробовать паэлью', answer: 'quiero probar la paella', answers: ['quiero probar la paella', 'quiero probar paella'], hint: 'probar la paella' },
+    ],
+  },
+
+  // ── 141. Periódico y noticias ─────────────────────────
+  {
+    id: 'l141', name: 'Noticias', emoji: '📰', desc: 'Prensa, titulares y reportajes',
+    exercises: [
+      { t: 'pick', q: '«Газета»', opts: [
+        { txt: 'periódico',  em: '📰' },
+        { txt: 'libro',      em: '📖' },
+        { txt: 'pintura',    em: '🖼️' },
+        { txt: 'paquete',    em: '📦' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Новости»', opts: [
+        { txt: 'noticias',  em: '📢' },
+        { txt: 'novelas',   em: '📕' },
+        { txt: 'noches',    em: '🌙' },
+        { txt: 'nubes',     em: '☁️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Заголовок»', opts: [
+        { txt: 'titular',   em: '📰' },
+        { txt: 'tijeras',   em: '✂️' },
+        { txt: 'tigre',     em: '🐯' },
+        { txt: 'tinta',     em: '🖋️' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['periódico',  'газета'],
+        ['revista',    'журнал'],
+        ['noticia',    'новость'],
+        ['titular',    'заголовок'],
+      ]},
+      { t: 'match', pairs: [
+        ['periodista',  'журналист'],
+        ['reportaje',   'репортаж'],
+        ['anuncio',     'объявление'],
+        ['artículo',    'статья'],
+      ]},
+      { t: 'translate', from: 'Я читаю газету по утрам', tiles: ['leo', 'el', 'periódico', 'por', 'la', 'mañana'], answer: ['leo', 'el', 'periódico', 'por', 'la', 'mañana'] },
+      { t: 'fill', sentence: ['Las', null, 'son interesantes hoy.'], target: 'noticias', opts: ['noticias', 'palabras', 'puertas'], hint: 'новости сегодня интересные' },
+      { t: 'typed', from: 'Этот журналист пишет хорошо', answer: 'este periodista escribe bien', answers: ['este periodista escribe bien', 'el periodista escribe bien'], hint: 'periodista + escribir' },
+    ],
+  },
+
+  // ── 142. Política básica ──────────────────────────────
+  {
+    id: 'l142', name: 'Política', emoji: '🏛️', desc: 'Gobierno, voto y elecciones',
+    exercises: [
+      { t: 'pick', q: '«Правительство»', opts: [
+        { txt: 'gobierno',   em: '🏛️' },
+        { txt: 'goloso',     em: '🍬' },
+        { txt: 'golpe',      em: '💥' },
+        { txt: 'gorra',      em: '🧢' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Выборы»', opts: [
+        { txt: 'eleciones',     em: '❓' },
+        { txt: 'elecciones',    em: '🗳️' },
+        { txt: 'edificios',     em: '🏢' },
+        { txt: 'estaciones',    em: '🚉' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Президент»', opts: [
+        { txt: 'presidente',  em: '👨‍💼' },
+        { txt: 'profesor',    em: '👨‍🏫' },
+        { txt: 'paciente',    em: '🤒' },
+        { txt: 'periodista',  em: '📰' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['gobierno',     'правительство'],
+        ['presidente',   'президент'],
+        ['elecciones',   'выборы'],
+        ['ministro',     'министр'],
+      ]},
+      { t: 'match', pairs: [
+        ['votar',       'голосовать'],
+        ['ley',         'закон'],
+        ['partido',     'партия'],
+        ['ciudadano',   'гражданин'],
+      ]},
+      { t: 'translate', from: 'Я голосую завтра', tiles: ['voto', 'mañana', 'hoy', 'votaré'], answer: ['voto', 'mañana'] },
+      { t: 'fill', sentence: ['Hay', null, 'el domingo.'], target: 'elecciones', opts: ['elecciones', 'estaciones', 'edificios'], hint: 'в воскресенье выборы' },
+      { t: 'typed', from: 'Президент говорит сегодня', answer: 'el presidente habla hoy', answers: ['el presidente habla hoy', 'hoy habla el presidente'], hint: 'el presidente habla...' },
+    ],
+  },
+
+  // ── 143. Historia y eventos ───────────────────────────
+  {
+    id: 'l143', name: 'Historia', emoji: '📜', desc: 'Siglos, guerras y descubrimientos',
+    exercises: [
+      { t: 'pick', q: '«История»', opts: [
+        { txt: 'historia',   em: '📜' },
+        { txt: 'horario',    em: '⏰' },
+        { txt: 'hotel',      em: '🏨' },
+        { txt: 'hospital',   em: '🏥' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Век (столетие)»', opts: [
+        { txt: 'siglo',  em: '📜' },
+        { txt: 'sigla',  em: '🔤' },
+        { txt: 'silla',  em: '🪑' },
+        { txt: 'sigue',  em: '➡️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Война»', opts: [
+        { txt: 'guerra',  em: '⚔️' },
+        { txt: 'guapa',   em: '😍' },
+        { txt: 'guante',  em: '🧤' },
+        { txt: 'guisado', em: '🥘' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['historia',   'история'],
+        ['siglo',      'век'],
+        ['guerra',     'война'],
+        ['paz',        'мир'],
+      ]},
+      { t: 'match', pairs: [
+        ['descubrir',     'открывать'],
+        ['descubrimiento','открытие'],
+        ['rey',           'король'],
+        ['reina',         'королева'],
+      ]},
+      { t: 'translate', from: 'Колумб открыл Америку', tiles: ['Colón', 'descubrió', 'América', 'descubre'], answer: ['Colón', 'descubrió', 'América'] },
+      { t: 'fill', sentence: ['Estamos en el', null, 'XXI.'], target: 'siglo', opts: ['siglo', 'sigla', 'sigue'], hint: 'мы в XXI веке' },
+      { t: 'typed', from: 'История этой страны очень богатая', answer: 'la historia de este país es muy rica', answers: ['la historia de este país es muy rica', 'la historia de este país es muy variada'], hint: 'la historia es muy rica' },
+    ],
+  },
+
+  // ── 144. Geografía ────────────────────────────────────
+  {
+    id: 'l144', name: 'Geografía', emoji: '🗺️', desc: 'Continentes, ríos y montañas',
+    exercises: [
+      { t: 'pick', q: '«Гора»', opts: [
+        { txt: 'montaña',  em: '⛰️' },
+        { txt: 'mantel',   em: '🍽️' },
+        { txt: 'manzana',  em: '🍎' },
+        { txt: 'mañana',   em: '🌅' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Река»', opts: [
+        { txt: 'río',     em: '🏞️' },
+        { txt: 'ropa',    em: '👕' },
+        { txt: 'rico',    em: '💰' },
+        { txt: 'rosa',    em: '🌹' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Океан»', opts: [
+        { txt: 'océano',   em: '🌊' },
+        { txt: 'oso',      em: '🐻' },
+        { txt: 'orquídea', em: '🌺' },
+        { txt: 'oreja',    em: '👂' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['montaña',   'гора'],
+        ['río',       'река'],
+        ['mar',       'море'],
+        ['océano',    'океан'],
+      ]},
+      { t: 'match', pairs: [
+        ['continente',  'континент'],
+        ['país',        'страна'],
+        ['ciudad',      'город'],
+        ['frontera',    'граница'],
+      ]},
+      { t: 'translate', from: 'Эта гора очень высокая', tiles: ['esta', 'montaña', 'es', 'muy', 'alta', 'alto'], answer: ['esta', 'montaña', 'es', 'muy', 'alta'] },
+      { t: 'fill', sentence: ['El Amazonas es un', null, '.'], target: 'río', opts: ['río', 'lago', 'mar'], hint: 'Амазонка — река' },
+      { t: 'typed', from: 'Испания находится в Европе', answer: 'españa está en europa', answers: ['españa está en europa', 'españa se encuentra en europa'], hint: 'está en / se encuentra en' },
+    ],
+  },
+
+  // ── 145. Repaso 24 (revisión de L141-L144) ────────────
+  {
+    id: 'l145', name: 'Repaso 24', emoji: '🌐', desc: 'Repaso L141-L144',
+    hearts: 2,
+    exercises: [
+      { t: 'pick', q: '«Газета»', opts: [
+        { txt: 'periódico', em: '📰' },
+        { txt: 'pintura',   em: '🖼️' },
+        { txt: 'paquete',   em: '📦' },
+        { txt: 'palabra',   em: '💬' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Правительство»', opts: [
+        { txt: 'gobierno',  em: '🏛️' },
+        { txt: 'gusto',     em: '😋' },
+        { txt: 'gente',     em: '👥' },
+        { txt: 'gato',      em: '🐈' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Век»', opts: [
+        { txt: 'siglo',  em: '📜' },
+        { txt: 'silla',  em: '🪑' },
+        { txt: 'sigla',  em: '🔤' },
+        { txt: 'sien',   em: '🤕' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Гора»', opts: [
+        { txt: 'montaña',  em: '⛰️' },
+        { txt: 'mañana',   em: '🌅' },
+        { txt: 'mantel',   em: '🍽️' },
+        { txt: 'manzana',  em: '🍎' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['noticia',   'новость'],
+        ['revista',   'журнал'],
+        ['artículo',  'статья'],
+        ['titular',   'заголовок'],
+      ]},
+      { t: 'match', pairs: [
+        ['elecciones',  'выборы'],
+        ['votar',       'голосовать'],
+        ['ley',         'закон'],
+        ['ministro',    'министр'],
+      ]},
+      { t: 'match', pairs: [
+        ['guerra',  'война'],
+        ['paz',     'мир'],
+        ['río',     'река'],
+        ['mar',     'море'],
+      ]},
+      { t: 'translate', from: 'Я читаю газету каждый день', tiles: ['leo', 'el', 'periódico', 'cada', 'día'], answer: ['leo', 'el', 'periódico', 'cada', 'día'] },
+      { t: 'translate', from: 'Эта страна очень большая', tiles: ['este', 'país', 'es', 'muy', 'grande', 'esta'], answer: ['este', 'país', 'es', 'muy', 'grande'] },
+      { t: 'fill', sentence: ['Hay', null, 'el domingo.'], target: 'elecciones', opts: ['elecciones', 'estaciones', 'lecciones'], hint: 'в воскресенье выборы' },
+      { t: 'fill', sentence: ['Estamos en el', null, 'XXI.'], target: 'siglo', opts: ['siglo', 'silla', 'sigla'], hint: 'мы в XXI веке' },
+      { t: 'typed', from: 'Россия находится в Европе и Азии', answer: 'rusia está en europa y asia', answers: ['rusia está en europa y asia', 'rusia se encuentra en europa y asia'], hint: 'está en / se encuentra' },
+    ],
+  },
+
+  // ── 146. Conversación avanzada ────────────────────────
+  {
+    id: 'l146', name: 'Conversación', emoji: '🗣️', desc: 'Expresar opiniones, acuerdos',
+    exercises: [
+      { t: 'pick', q: '«По-моему / на мой взгляд»', opts: [
+        { txt: 'en mi opinión',  em: '💭' },
+        { txt: 'en realidad',    em: '⚡' },
+        { txt: 'por supuesto',   em: '✅' },
+        { txt: 'sin embargo',    em: '🔀' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Согласен / я согласен»', opts: [
+        { txt: 'estoy de acuerdo', em: '👍' },
+        { txt: 'estoy enfermo',    em: '🤒' },
+        { txt: 'estoy en casa',    em: '🏠' },
+        { txt: 'estoy seguro',     em: '💪' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Однако / тем не менее»', opts: [
+        { txt: 'sin embargo',  em: '🔀' },
+        { txt: 'por supuesto', em: '✅' },
+        { txt: 'a propósito',  em: '💡' },
+        { txt: 'a menudo',     em: '⏰' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['en mi opinión',     'по-моему'],
+        ['estoy de acuerdo',  'я согласен'],
+        ['no estoy de acuerdo','я не согласен'],
+        ['por supuesto',      'конечно'],
+      ]},
+      { t: 'match', pairs: [
+        ['sin embargo',  'однако'],
+        ['además',       'кроме того'],
+        ['por ejemplo',  'например'],
+        ['en realidad',  'на самом деле'],
+      ]},
+      { t: 'translate', from: 'По-моему, это правда', tiles: ['en', 'mi', 'opinión', 'es', 'verdad', 'soy'], answer: ['en', 'mi', 'opinión', 'es', 'verdad'] },
+      { t: 'fill', sentence: ['No', null, 'de acuerdo contigo.'], target: 'estoy', opts: ['estoy', 'soy', 'sé'], hint: 'я не согласен с тобой' },
+      { t: 'typed', from: 'Например, мне нравится кофе', answer: 'por ejemplo, me gusta el café', answers: ['por ejemplo, me gusta el café', 'por ejemplo me gusta el café'], hint: 'por ejemplo + me gusta' },
+    ],
+  },
+
+  // ── 147. Negociar y argumentar ────────────────────────
+  {
+    id: 'l147', name: 'Argumentar', emoji: '⚖️', desc: 'Discutir, convencer, persuadir',
+    exercises: [
+      { t: 'pick', q: '«Я думаю, что...»', opts: [
+        { txt: 'creo que',    em: '💭' },
+        { txt: 'sé que',      em: '✅' },
+        { txt: 'digo que',    em: '💬' },
+        { txt: 'veo que',     em: '👀' },
+      ], correct: 0 },
+      { t: 'pick', q: '«С другой стороны»', opts: [
+        { txt: 'por otro lado',   em: '⚖️' },
+        { txt: 'por el camino',   em: '🛣️' },
+        { txt: 'por el momento',  em: '⏳' },
+        { txt: 'por la noche',    em: '🌙' },
+      ], correct: 0 },
+      { t: 'pick', q: '«В заключение»', opts: [
+        { txt: 'en conclusión',   em: '🏁' },
+        { txt: 'en realidad',     em: '⚡' },
+        { txt: 'en general',      em: '📊' },
+        { txt: 'en privado',      em: '🤫' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['creo que',      'я думаю, что'],
+        ['por otro lado', 'с другой стороны'],
+        ['en conclusión', 'в заключение'],
+        ['en primer lugar','во-первых'],
+      ]},
+      { t: 'match', pairs: [
+        ['convencer',  'убеждать'],
+        ['discutir',   'спорить'],
+        ['argumento',  'аргумент'],
+        ['razón',      'причина / разум'],
+      ]},
+      { t: 'translate', from: 'С одной стороны, это хорошо', tiles: ['por', 'un', 'lado', 'es', 'bueno', 'una'], answer: ['por', 'un', 'lado', 'es', 'bueno'] },
+      { t: 'fill', sentence: ['En', null, 'lugar, no me gusta.'], target: 'primer', opts: ['primer', 'segunda', 'tercer'], hint: 'во-первых, мне не нравится' },
+      { t: 'typed', from: 'Я думаю, что ты прав', answer: 'creo que tienes razón', answers: ['creo que tienes razón', 'pienso que tienes razón'], hint: 'creo / pienso que + tener razón' },
+    ],
+  },
+
+  // ── 148. Expresiones idiomáticas ──────────────────────
+  {
+    id: 'l148', name: 'Modismos', emoji: '💡', desc: 'Frases hechas del español',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Стоить руки и ноги» (очень дорого)', opts: [
+        { txt: 'costar un ojo de la cara', em: '👁️' },
+        { txt: 'costar mucho dinero',      em: '💰' },
+        { txt: 'comer mucho pan',          em: '🍞' },
+        { txt: 'caer bien',                em: '😊' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Лить как из ведра» (cats and dogs)', opts: [
+        { txt: 'estar como un pez en el agua', em: '🐟' },
+        { txt: 'llover a cántaros',            em: '☔' },
+        { txt: 'estar en las nubes',           em: '☁️' },
+        { txt: 'comer como un pájaro',         em: '🐦' },
+      ], correct: 1 },
+      { t: 'pick', q: '«Витать в облаках»', opts: [
+        { txt: 'estar en las nubes',      em: '☁️' },
+        { txt: 'estar en el cielo',       em: '☀️' },
+        { txt: 'estar en la luna',        em: '🌙' },
+        { txt: 'estar en el agua',        em: '💧' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['costar un ojo de la cara', 'очень дорого'],
+        ['llover a cántaros',         'лить как из ведра'],
+        ['estar en las nubes',        'витать в облаках'],
+        ['caer bien',                 'нравиться (о человеке)'],
+      ]},
+      { t: 'match', pairs: [
+        ['tomar el pelo',          'дразнить'],
+        ['no tener pelos en la lengua','прямо говорить'],
+        ['ser pan comido',         'легче лёгкого'],
+        ['hablar por los codos',   'болтать без умолку'],
+      ]},
+      { t: 'translate', from: 'Это очень легко (=хлеб с маслом)', tiles: ['es', 'pan', 'comido', 'come'], answer: ['es', 'pan', 'comido'] },
+      { t: 'fill', sentence: ['Hoy', null, 'a cántaros.'], target: 'llueve', opts: ['llueve', 'llora', 'lleva'], hint: 'сегодня льёт как из ведра' },
+      { t: 'fill', sentence: ['No me tomes el', null, '.'], target: 'pelo', opts: ['pelo', 'café', 'pan'], hint: 'не дразни меня' },
+      { t: 'typed', from: 'Ты всегда витаешь в облаках', answer: 'siempre estás en las nubes', answers: ['siempre estás en las nubes', 'tú siempre estás en las nubes'], hint: 'estar en las nubes' },
+    ],
+  },
+
+  // ── 149. Refranes y dichos ────────────────────────────
+  {
+    id: 'l149', name: 'Refranes', emoji: '📜', desc: 'Proverbios populares',
+    hearts: 4,
+    exercises: [
+      { t: 'pick', q: '«Тише едешь — дальше будешь»', opts: [
+        { txt: 'no por mucho madrugar amanece más temprano', em: '🌅' },
+        { txt: 'a quien madruga, Dios le ayuda',             em: '☀️' },
+        { txt: 'más vale tarde que nunca',                   em: '⏰' },
+        { txt: 'al mal tiempo, buena cara',                  em: '😊' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Лучше поздно, чем никогда»', opts: [
+        { txt: 'más vale tarde que nunca',       em: '⏰' },
+        { txt: 'más vale pájaro en mano',        em: '🐦' },
+        { txt: 'más vale prevenir que curar',    em: '🛡️' },
+        { txt: 'más vale solo que mal acompañado',em: '👤' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Кто рано встаёт, тому Бог подаёт»', opts: [
+        { txt: 'a quien madruga, Dios le ayuda', em: '🌅' },
+        { txt: 'a caballo regalado',             em: '🐎' },
+        { txt: 'en boca cerrada',                em: '🤐' },
+        { txt: 'ojos que no ven',                em: '👀' },
+      ], correct: 0 },
+      { t: 'match', pairs: [
+        ['más vale tarde que nunca',     'лучше поздно, чем никогда'],
+        ['a quien madruga, Dios le ayuda','кто рано встаёт...'],
+        ['en boca cerrada no entran moscas','молчание — золото'],
+        ['ojos que no ven, corazón que no siente','с глаз долой — из сердца вон'],
+      ]},
+      { t: 'match', pairs: [
+        ['más vale prevenir que curar',  'лучше предупредить, чем лечить'],
+        ['no hay mal que por bien no venga','нет худа без добра'],
+        ['cada loco con su tema',         'у каждого свой пунктик'],
+        ['dime con quién andas',          'скажи мне, кто твой друг'],
+      ]},
+      { t: 'translate', from: 'Лучше поздно, чем никогда', tiles: ['más', 'vale', 'tarde', 'que', 'nunca', 'siempre'], answer: ['más', 'vale', 'tarde', 'que', 'nunca'] },
+      { t: 'fill', sentence: ['Más vale', null, 'que curar.'], target: 'prevenir', opts: ['prevenir', 'comer', 'dormir'], hint: 'лучше предупредить, чем лечить' },
+      { t: 'fill', sentence: ['A quien', null, ', Dios le ayuda.'], target: 'madruga', opts: ['madruga', 'duerme', 'come'], hint: 'кто рано встаёт' },
+      { t: 'typed', from: 'Нет худа без добра', answer: 'no hay mal que por bien no venga', answers: ['no hay mal que por bien no venga'], hint: 'no hay mal que por bien no venga' },
+    ],
+  },
+
+  // ── 150. Repaso Maestro III (revisión final L126-L149) ─
+  // FINAL MILESTONE — graduation. Mixes grammar (L126-L130), culture (L131-L145),
+  // and conversation/idiomatic (L146-L149). Only 2 hearts.
+  {
+    id: 'l150', name: 'Repaso Maestro III', emoji: '🎓', desc: 'Repaso final (126-149)',
+    hearts: 2,
+    exercises: [
+      // — Grammar block
+      { t: 'pick', q: '«Дом был построен»', opts: [
+        { txt: 'la casa fue construida', em: '✅' },
+        { txt: 'la casa construye',      em: '❌' },
+        { txt: 'la casa es construida',  em: '⚠️' },
+        { txt: 'la casa se construye',   em: '⚠️' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Возможно, он придёт»', opts: [
+        { txt: 'quizás venga',  em: '✅' },
+        { txt: 'quizás viene',  em: '❌' },
+        { txt: 'quizás vendrá', em: '❌' },
+        { txt: 'quizás vino',   em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я уже поел, когда ты пришёл»', opts: [
+        { txt: 'ya había comido cuando llegaste', em: '✅' },
+        { txt: 'ya he comido cuando llegaste',    em: '❌' },
+        { txt: 'ya comí cuando llegaste',         em: '⚠️' },
+        { txt: 'ya como cuando llegaste',         em: '❌' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Я бы помог тебе»', opts: [
+        { txt: 'te habría ayudado', em: '✅' },
+        { txt: 'te había ayudado',  em: '❌' },
+        { txt: 'te he ayudado',     em: '❌' },
+        { txt: 'te ayudaría',       em: '⚠️' },
+      ], correct: 0 },
+      // — Culture block
+      { t: 'pick', q: '«Танго (откуда?)»', opts: [
+        { txt: 'Argentina',  em: '🇦🇷' },
+        { txt: 'México',     em: '🇲🇽' },
+        { txt: 'España',     em: '🇪🇸' },
+        { txt: 'Cuba',       em: '🇨🇺' },
+      ], correct: 0 },
+      { t: 'pick', q: '«Паэлья (откуда?)»', opts: [
+        { txt: 'España',     em: '🇪🇸' },
+        { txt: 'Argentina',  em: '🇦🇷' },
+        { txt: 'México',     em: '🇲🇽' },
+        { txt: 'Perú',       em: '🇵🇪' },
+      ], correct: 0 },
+      // — Conversation block
+      { t: 'pick', q: '«По-моему»', opts: [
+        { txt: 'en mi opinión',  em: '💭' },
+        { txt: 'sin embargo',    em: '🔀' },
+        { txt: 'por supuesto',   em: '✅' },
+        { txt: 'en realidad',    em: '⚡' },
+      ], correct: 0 },
+      // — Mix grammar
+      { t: 'match', pairs: [
+        ['fue escrito',   'был написан'],
+        ['había comido',  'я уже поел'],
+        ['habría dicho',  'я бы сказал'],
+        ['sea',           'будь (subj)'],
+      ]},
+      // — Mix culture
+      { t: 'match', pairs: [
+        ['flamenco',  'фламенко'],
+        ['mariachi',  'мариачи'],
+        ['gazpacho',  'гаспачо'],
+        ['paella',    'паэлья'],
+      ]},
+      // — Mix conversation/idiom
+      { t: 'match', pairs: [
+        ['estoy de acuerdo', 'я согласен'],
+        ['sin embargo',      'однако'],
+        ['en conclusión',    'в заключение'],
+        ['por ejemplo',      'например'],
+      ]},
+      // — Mix news/politics/geography
+      { t: 'match', pairs: [
+        ['periódico',   'газета'],
+        ['gobierno',    'правительство'],
+        ['siglo',       'век'],
+        ['montaña',     'гора'],
+      ]},
+      // — Translation: pasiva
+      { t: 'translate', from: 'Картина была написана', tiles: ['el', 'cuadro', 'fue', 'pintado', 'pinta'], answer: ['el', 'cuadro', 'fue', 'pintado'] },
+      // — Translation: cond. perfecto
+      { t: 'translate', from: 'Я бы сказал тебе', tiles: ['te', 'habría', 'dicho', 'dije', 'diría'], answer: ['te', 'habría', 'dicho'] },
+      // — Translation: opinión
+      { t: 'translate', from: 'По-моему, это правда', tiles: ['en', 'mi', 'opinión', 'es', 'verdad', 'soy'], answer: ['en', 'mi', 'opinión', 'es', 'verdad'] },
+      // — Fill: subjuntivo
+      { t: 'fill', sentence: ['No creo que', null, 'verdad.'], target: 'sea', opts: ['sea', 'es', 'era'], hint: 'не думаю, что это правда' },
+      // — Fill: idiom
+      { t: 'fill', sentence: ['Hoy', null, 'a cántaros.'], target: 'llueve', opts: ['llueve', 'llora', 'lleva'], hint: 'сегодня льёт как из ведра' },
+      // — Fill: pasiva
+      { t: 'fill', sentence: ['El libro', null, 'escrito por Cervantes.'], target: 'fue', opts: ['fue', 'es', 'está'], hint: 'книга была написана Сервантесом' },
+      // — Typed: cond. perfecto mastery
+      { t: 'typed', from: 'Я бы сказал тебе правду', answer: 'te habría dicho la verdad', answers: ['te habría dicho la verdad', 'te hubiera dicho la verdad'], hint: 'habría / hubiera + part.' },
+      // — Typed: idiom mastery
+      { t: 'typed', from: 'Лучше поздно, чем никогда', answer: 'más vale tarde que nunca', answers: ['más vale tarde que nunca'], hint: 'más vale tarde que nunca' },
+    ],
+  },
 ];
 
 // ── Lesson runtime state ─────────────────────────────────
@@ -7200,15 +8308,37 @@ function renderLessonsPath() {
       banner.style.setProperty('--unit-glow', palette.glow);
       const fromIdx = unitIdx * UNIT_SIZE + 1;
       const toIdx = Math.min((unitIdx + 1) * UNIT_SIZE, LESSONS.length);
+
+      // "Test-out" eligibility: first lesson is reachable AND at least one
+      // lesson in the unit is still pending AND unit has >1 lesson to skip.
+      const firstLessonIdx = unitIdx * UNIT_SIZE;
+      const unitLessons    = LESSONS.slice(firstLessonIdx, firstLessonIdx + UNIT_SIZE);
+      const unitFirstUnlocked = lessonIsUnlocked(firstLessonIdx, prog);
+      const unitPending = unitLessons.some(l => !prog[l.id]?.completed);
+      const unitCanTest = unitFirstUnlocked && unitPending && unitLessons.length >= 2;
+
+      const rightSlot = unitCanTest
+        ? `<button class="unit-test-btn" type="button" aria-label="Saltar bloque con un examen">
+             <span class="utb-ico">🏆</span><span class="utb-lbl">Examen</span>
+           </button>`
+        : `<div class="unit-banner-icon">${!unitPending ? '👑' : (unitFirstUnlocked ? '📘' : '🔒')}</div>`;
+
       banner.innerHTML = `
         <div class="unit-banner-inner">
           <div class="unit-banner-meta">
             <div class="unit-banner-kicker">${palette.name}</div>
             <div class="unit-banner-title">Lecciones ${fromIdx}–${toIdx}</div>
           </div>
-          <div class="unit-banner-icon">📘</div>
+          ${rightSlot}
         </div>
       `;
+      if (unitCanTest) {
+        banner.querySelector('.unit-test-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          haptic.medium();
+          showUnitTestPreview(unitIdx);
+        });
+      }
       wrap.appendChild(banner);
 
       unitWrap = document.createElement('div');
@@ -7334,6 +8464,9 @@ function startLesson(lessonId) {
   haptic.medium();
   const hearts = (typeof lesson.hearts === 'number' && lesson.hearts > 0) ? lesson.hearts : 3;
   lessonState.lessonId = lessonId;
+  lessonState.isUnitTest = false;
+  lessonState.unitTestIdx = null;
+  lessonState.virtualLesson = null;
   lessonState.exercises = shuffleExercises(lesson.exercises);
   lessonState.current = 0;
   lessonState.hearts = hearts;
@@ -7342,6 +8475,102 @@ function startLesson(lessonId) {
   lessonState.pendingOk = false;
   lessonState.streak = 0;
   lessonState.bestStreak = 0;
+  showScreen('lesson');
+  renderHearts();
+  renderCurrentExercise();
+  startLessonTutorQuirks();
+}
+
+// ── Unit "test-out" — skip a 5-lesson block by passing a mixed exam ──
+// Picks 12 random exercises across all lessons in the unit. 2 hearts only.
+// On pass: every lesson in the unit is marked completed with testedOut:true
+// and the user gets a bigger XP reward. On fail: no penalty, no progress saved.
+const UNIT_TEST_EX_COUNT = 12;
+const UNIT_TEST_HEARTS   = 2;
+
+function buildUnitTestLesson(unitIdx) {
+  const start = unitIdx * UNIT_SIZE;
+  const end   = Math.min(start + UNIT_SIZE, LESSONS.length);
+  const unitLessons = LESSONS.slice(start, end);
+
+  // Pool every exercise from every lesson in the unit, then shuffle and trim.
+  const pool = [];
+  unitLessons.forEach(l => l.exercises.forEach(ex => pool.push(ex)));
+  const shuffled = pool.slice().sort(() => Math.random() - 0.5);
+  const count = Math.min(UNIT_TEST_EX_COUNT, shuffled.length);
+
+  return {
+    id:       'unitTest_' + unitIdx,
+    name:     'Examen Unidad ' + (unitIdx + 1),
+    emoji:    '🏆',
+    desc:     'Examen de las lecciones ' + (start + 1) + '–' + end,
+    hearts:   UNIT_TEST_HEARTS,
+    exercises: shuffled.slice(0, count),
+    isUnitTest: true,
+    unitIdx,
+    fromIdx: start + 1,
+    toIdx: end,
+  };
+}
+
+function showUnitTestPreview(unitIdx) {
+  const palette = UNIT_PALETTE[unitIdx % UNIT_PALETTE.length];
+  const start = unitIdx * UNIT_SIZE;
+  const end   = Math.min(start + UNIT_SIZE, LESSONS.length);
+  const blockSize = end - start;
+
+  // Count how many of this unit's lessons are still pending (just for the message).
+  const prog = getLessonProgress();
+  const pending = LESSONS.slice(start, end).filter(l => !prog[l.id]?.completed).length;
+
+  const prev = document.createElement('div');
+  prev.className = 'lesson-preview unit-test-preview';
+  prev.innerHTML = `
+    <div class="lesson-preview-card unit-test-card">
+      <button class="lesson-preview-close" id="ut-close" aria-label="Cerrar">×</button>
+      <div class="unit-test-trophy">🏆</div>
+      <div class="unit-test-kicker" style="color:${palette.color}">${palette.name} · EXAMEN</div>
+      <div class="lesson-preview-name">Saltar lecciones ${start + 1}–${end}</div>
+      <div class="lesson-preview-desc">Si apruebas este examen, las <b>${blockSize} lecciones</b> de la unidad se marcarán como completadas. ${pending < blockSize ? '(' + (blockSize - pending) + ' ya están listas)' : ''}</div>
+      <div class="unit-test-meta">
+        <div class="utm-row"><span class="utm-ico">❤️</span><span>Solo <b>${UNIT_TEST_HEARTS} vidas</b></span></div>
+        <div class="utm-row"><span class="utm-ico">📚</span><span><b>${UNIT_TEST_EX_COUNT} ejercicios</b> mezclados</span></div>
+        <div class="utm-row"><span class="utm-ico">🎁</span><span>+150 XP si apruebas</span></div>
+      </div>
+      <button class="act-btn primary-btn" id="ut-start">¡Empezar examen!</button>
+      <button class="act-btn ghost-btn" id="ut-cancel">Cancelar</button>
+    </div>
+  `;
+  document.body.appendChild(prev);
+
+  const close = () => prev.remove();
+  prev.querySelector('#ut-close').addEventListener('click', close);
+  prev.querySelector('#ut-cancel').addEventListener('click', close);
+  prev.addEventListener('click', e => { if (e.target === prev) close(); });
+  const onKey = e => { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onKey); } };
+  document.addEventListener('keydown', onKey);
+  prev.querySelector('#ut-start').addEventListener('click', () => {
+    close();
+    startUnitTest(unitIdx);
+  });
+}
+
+function startUnitTest(unitIdx) {
+  const virtual = buildUnitTestLesson(unitIdx);
+  if (!virtual.exercises.length) return;
+  haptic.medium();
+  lessonState.lessonId       = virtual.id;
+  lessonState.virtualLesson  = virtual;
+  lessonState.isUnitTest     = true;
+  lessonState.unitTestIdx    = unitIdx;
+  lessonState.exercises      = shuffleExercises(virtual.exercises);
+  lessonState.current        = 0;
+  lessonState.hearts         = virtual.hearts;
+  lessonState.maxHearts      = virtual.hearts;
+  lessonState.wrong          = 0;
+  lessonState.pendingOk      = false;
+  lessonState.streak         = 0;
+  lessonState.bestStreak     = 0;
   showScreen('lesson');
   renderHearts();
   renderCurrentExercise();
@@ -8358,6 +9587,51 @@ function loseHeart() {
 // ── Lesson result ────────────────────────────────────────
 function completeLesson() {
   stopLessonTutorQuirks();
+
+  // Unit "test-out" path — mark every lesson in the unit complete.
+  if (lessonState.isUnitTest) {
+    const unitIdx = lessonState.unitTestIdx;
+    const start = unitIdx * UNIT_SIZE;
+    const end   = Math.min(start + UNIT_SIZE, LESSONS.length);
+
+    const prog = getLessonProgress();
+    for (let i = start; i < end; i++) {
+      const l = LESSONS[i];
+      const prev = prog[l.id] || {};
+      prog[l.id] = {
+        completed: true,
+        bestHearts: Math.max(prev.bestHearts || 0, lessonState.hearts),
+        plays: (prev.plays || 0) + 1,
+        // Mark only lessons that weren't already finished as "tested out".
+        testedOut: prev.completed ? !!prev.testedOut : true,
+      };
+    }
+    saveLessonProgress(prog);
+
+    const baseXp  = 150;
+    const heartXp = lessonState.hearts * 25;
+    const earned  = baseXp + heartXp;
+
+    if (state.pet) {
+      petTouchActivity();
+      state.pet.hunger    = Math.min(100, state.pet.hunger + 30);
+      state.pet.happiness = Math.min(100, state.pet.happiness + 20);
+      petAddXp(earned);
+    }
+
+    const total = lessonState.exercises.length;
+    const acc   = Math.round(((total - lessonState.wrong) / total) * 100);
+    $('lesson-result-xp').textContent     = '+' + earned;
+    $('lesson-result-hearts').textContent = lessonState.hearts;
+    $('lesson-result-acc').textContent    = acc + '%';
+    const titleEl = $('lesson-result-title'); if (titleEl) titleEl.textContent = '¡Examen aprobado!';
+    const iconEl  = $('lesson-result-icon');  if (iconEl)  iconEl.textContent  = '🏆';
+    showScreen('lesson-results');
+    spawnConfetti();
+    return;
+  }
+
+  // Regular lesson path
   const lesson = LESSONS.find(l => l.id === lessonState.lessonId);
   if (!lesson) return renderHome();
 
@@ -8388,6 +9662,10 @@ function completeLesson() {
   $('lesson-result-xp').textContent     = '+' + earned;
   $('lesson-result-hearts').textContent = lessonState.hearts;
   $('lesson-result-acc').textContent    = acc + '%';
+  // Reset the title/icon back to the standard lesson copy (in case the
+  // previous result was a unit-test pass).
+  const titleEl = $('lesson-result-title'); if (titleEl) titleEl.textContent = '¡Lección completada!';
+  const iconEl  = $('lesson-result-icon');  if (iconEl)  iconEl.textContent  = '🎉';
   showScreen('lesson-results');
   spawnConfetti();
 }
@@ -8413,7 +9691,11 @@ $('lesson-results-continue')?.addEventListener('click', () => {
 
 $('lesson-retry-btn')?.addEventListener('click', () => {
   haptic.light();
-  startLesson(lessonState.lessonId);
+  if (lessonState.isUnitTest && lessonState.unitTestIdx != null) {
+    startUnitTest(lessonState.unitTestIdx);
+  } else {
+    startLesson(lessonState.lessonId);
+  }
 });
 
 $('lesson-fail-home-btn')?.addEventListener('click', () => {

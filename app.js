@@ -7496,6 +7496,7 @@ function renderTranslateExercise(root, ex) {
   `;
   root.appendChild(bubble);
   setTimeout(() => bubble.querySelector('.lex-bubble-avatar')?.classList.remove('is-entering'), 600);
+  pulseClass(bubble.querySelector('.mini-axolotl'), 'is-swim-in', 800);
 
   const ans = document.createElement('div');
   ans.className = 'lex-answer-area';
@@ -7666,6 +7667,7 @@ function renderFillExercise(root, ex) {
     `;
     root.appendChild(hint);
     setTimeout(() => hint.querySelector('.lex-bubble-avatar')?.classList.remove('is-entering'), 600);
+    pulseClass(hint.querySelector('.mini-axolotl'), 'is-swim-in', 800);
   }
 
   const sentence = document.createElement('div');
@@ -7725,6 +7727,7 @@ function renderTypedExercise(root, ex) {
   `;
   root.appendChild(bubble);
   setTimeout(() => bubble.querySelector('.lex-bubble-avatar')?.classList.remove('is-entering'), 600);
+  pulseClass(bubble.querySelector('.mini-axolotl'), 'is-swim-in', 800);
 
   if (ex.hint) {
     const hint = document.createElement('div');
@@ -7862,6 +7865,7 @@ function showFeedback(correct, correctText) {
 // hits 3 so every combo feels different. Each entry says which body class
 // to apply to the SVG, plus which extra FX to spawn around the avatar.
 const MEGA_MOVES = [
+  { body: 'is-approach',  eyes: 'is-heart-eyes', fx: ['confetti', 'shockwave-warm', 'aura'] },
   { body: 'is-backflip',  eyes: 'is-star-eyes',  fx: ['confetti', 'lightning', 'aura'] },
   { body: 'is-tornado',   eyes: 'is-heart-eyes', fx: ['confetti', 'shockwave-cool', 'galaxy'] },
   { body: 'is-disco',     eyes: 'is-star-eyes',  fx: ['confetti', 'shockwave-warm', 'fireworks'] },
@@ -7932,9 +7936,12 @@ function reactLessonMiniAxolotl(correct) {
           // Eye reaction (heart or star)
           const eyeFx = Math.random() < 0.5 ? 'is-heart-eyes' : 'is-star-eyes';
           pulseClass(svg, eyeFx, 1100);
-          // Body reaction — either a quick wiggle or a backflip
-          if (Math.random() < 0.3) pulseClass(svg, 'is-backflip', 1000);
-          else                     pulseClass(svg, 'is-happy', 880);
+          // Body reaction — wider variety: wiggle / backflip / approach / lean-in
+          const pick = Math.random();
+          if      (pick < 0.30) pulseClass(svg, 'is-approach', 1250);
+          else if (pick < 0.50) pulseClass(svg, 'is-backflip', 1000);
+          else if (pick < 0.65) pulseClass(svg, 'is-lean-in', 1500);
+          else                  pulseClass(svg, 'is-happy', 880);
         }
         spawnLexSparkles(avatar, 10);
         spawnConfetti(avatar, 12);
@@ -8219,7 +8226,86 @@ function prependLessonTutor(root) {
   tutor.innerHTML = `${renderLexBubbleParticles()}${renderMiniAxolotlSVG()}`;
   root.appendChild(tutor);
   setTimeout(() => tutor.classList.remove('is-entering'), 600);
+  // The inner axolotl swims in from off-frame for extra life
+  const inner = tutor.querySelector('.mini-axolotl');
+  if (inner) pulseClass(inner, 'is-swim-in', 800);
 }
+
+// ── Lesson axolotl idle scheduler ───────────────────────────
+// During an exercise the mini-axolotl is the only thing the user sees
+// move, so we keep him alive: he turns around, leans toward the
+// answer area, sometimes bumps the glass, and occasionally swims
+// closer to the camera. The scheduler queries the lesson DOM each
+// tick so it finds whichever axolotls the current exercise rendered
+// (speech-bubble avatars AND inline tutors).
+let _lessonIdleTimer = null;
+function liveLessonAxolotls() {
+  return Array.from(document.querySelectorAll(
+    '#lesson-exercise .lex-bubble-avatar, #lesson-exercise .lesson-tutor-inline'
+  ));
+}
+
+function scheduleLessonAxolotlIdle() {
+  clearTimeout(_lessonIdleTimer);
+  const delay = 5500 + Math.random() * 4500;
+  _lessonIdleTimer = setTimeout(() => {
+    const hosts = liveLessonAxolotls();
+    // Only run idle quirks while the lesson screen is actually visible
+    const lessonScreen = document.getElementById('lesson-screen');
+    const visible = lessonScreen && lessonScreen.classList.contains('active');
+    if (visible && hosts.length) {
+      hosts.forEach(host => {
+        const svg = host.querySelector('.mini-axolotl');
+        if (!svg) return;
+        // Don't interrupt a celebration / mega state
+        if (host.classList.contains('is-mega') ||
+            host.classList.contains('is-epic') ||
+            host.classList.contains('is-legendary') ||
+            host.classList.contains('is-bounce') ||
+            host.classList.contains('is-shake')) return;
+        triggerLessonIdleQuirk(svg);
+      });
+    }
+    scheduleLessonAxolotlIdle();
+  }, delay);
+}
+
+function triggerLessonIdleQuirk(svg) {
+  const r = Math.random();
+  // Whether he's currently facing left — affects which quirks make sense
+  const facingLeft = svg.classList.contains('is-look-left');
+
+  if (r < 0.22) {
+    // Turn around — flip his facing direction with a snappy animation
+    if (facingLeft) {
+      // Turning back to face right
+      pulseClass(svg, 'is-turn-back', 560);
+      setTimeout(() => svg.classList.remove('is-look-left'), 540);
+    } else {
+      pulseClass(svg, 'is-turn', 560);
+      setTimeout(() => svg.classList.add('is-look-left'), 540);
+    }
+  } else if (r < 0.40) {
+    // Approach the viewer — scale up close to the camera
+    pulseClass(svg, 'is-approach', 1300);
+  } else if (r < 0.55) {
+    // Lean toward the answer area
+    pulseClass(svg, 'is-lean-in', 1650);
+  } else if (r < 0.68) {
+    // Bonk the glass like a curious fish
+    pulseClass(svg, 'is-bonk', 1000);
+  } else if (r < 0.80) {
+    // Curious peek
+    pulseClass(svg, 'is-peek', 1600);
+  } else if (r < 0.90) {
+    // Quick wink at the player
+    pulseClass(svg, 'is-wink', 1200);
+  } else {
+    // Excited nod — like he's saying "you've got this"
+    pulseClass(svg, 'is-nod', 900);
+  }
+}
+scheduleLessonAxolotlIdle();
 
 // Spawn a radial sparkle burst from a host element (lesson avatar/tutor)
 function spawnLexSparkles(host, count = 8) {

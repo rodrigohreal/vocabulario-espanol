@@ -1,0 +1,754 @@
+{
+  "unit": 19,
+  "lessons": [
+    {
+      "id": "l91",
+      "name": "Mascotas",
+      "emoji": "🐾",
+      "desc": "Cuidar y jugar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Собака»",
+          "opts": [
+            {
+              "txt": "perro",
+              "em": "🐶"
+            },
+            {
+              "txt": "gato",
+              "em": "🐱"
+            },
+            {
+              "txt": "pez",
+              "em": "🐠"
+            },
+            {
+              "txt": "pájaro",
+              "em": "🐦"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Хомяк»",
+          "opts": [
+            {
+              "txt": "tortuga",
+              "em": "🐢"
+            },
+            {
+              "txt": "hámster",
+              "em": "🐹"
+            },
+            {
+              "txt": "conejo",
+              "em": "🐰"
+            },
+            {
+              "txt": "pez",
+              "em": "🐠"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Гулять (с собакой)»",
+          "opts": [
+            {
+              "txt": "alimentar",
+              "em": "🍽️"
+            },
+            {
+              "txt": "cepillar",
+              "em": "🧴"
+            },
+            {
+              "txt": "pasear",
+              "em": "🚶"
+            },
+            {
+              "txt": "dormir",
+              "em": "😴"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "perro",
+              "собака"
+            ],
+            [
+              "gato",
+              "кошка"
+            ],
+            [
+              "hámster",
+              "хомяк"
+            ],
+            [
+              "tortuga",
+              "черепаха"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "alimentar",
+              "кормить"
+            ],
+            [
+              "pasear",
+              "гулять"
+            ],
+            [
+              "jugar",
+              "играть"
+            ],
+            [
+              "cuidar",
+              "заботиться"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я гуляю с собакой",
+          "tiles": [
+            "paseo",
+            "al",
+            "perro",
+            "el"
+          ],
+          "answer": [
+            "paseo",
+            "al",
+            "perro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo que",
+            null,
+            "a mi gato."
+          ],
+          "target": "alimentar",
+          "opts": [
+            "alimentar",
+            "leer",
+            "pintar"
+          ],
+          "hint": "Мне надо покормить кота"
+        }
+      ]
+    },
+    {
+      "id": "l92",
+      "name": "Insectos",
+      "emoji": "🐝",
+      "desc": "Insectos y bichos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Пчела»",
+          "opts": [
+            {
+              "txt": "abeja",
+              "em": "🐝"
+            },
+            {
+              "txt": "mosca",
+              "em": "🪰"
+            },
+            {
+              "txt": "hormiga",
+              "em": "🐜"
+            },
+            {
+              "txt": "mariposa",
+              "em": "🦋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Муравей»",
+          "opts": [
+            {
+              "txt": "araña",
+              "em": "🕷️"
+            },
+            {
+              "txt": "hormiga",
+              "em": "🐜"
+            },
+            {
+              "txt": "mosca",
+              "em": "🪰"
+            },
+            {
+              "txt": "mosquito",
+              "em": "🦟"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Бабочка»",
+          "opts": [
+            {
+              "txt": "abeja",
+              "em": "🐝"
+            },
+            {
+              "txt": "mosca",
+              "em": "🪰"
+            },
+            {
+              "txt": "mariposa",
+              "em": "🦋"
+            },
+            {
+              "txt": "hormiga",
+              "em": "🐜"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "abeja",
+              "пчела"
+            ],
+            [
+              "mariposa",
+              "бабочка"
+            ],
+            [
+              "hormiga",
+              "муравей"
+            ],
+            [
+              "araña",
+              "паук"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mosca",
+              "муха"
+            ],
+            [
+              "mosquito",
+              "комар"
+            ],
+            [
+              "gusano",
+              "червь"
+            ],
+            [
+              "avispa",
+              "оса"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я вижу бабочку",
+          "tiles": [
+            "veo",
+            "una",
+            "un",
+            "mariposa",
+            "abeja"
+          ],
+          "answer": [
+            "veo",
+            "una",
+            "mariposa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me molesta el",
+            null,
+            "."
+          ],
+          "target": "mosquito",
+          "opts": [
+            "mosquito",
+            "pan",
+            "libro"
+          ],
+          "hint": "Меня раздражает комар"
+        }
+      ]
+    },
+    {
+      "id": "l93",
+      "name": "El océano",
+      "emoji": "🐬",
+      "desc": "Animales del mar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Дельфин»",
+          "opts": [
+            {
+              "txt": "delfín",
+              "em": "🐬"
+            },
+            {
+              "txt": "tiburón",
+              "em": "🦈"
+            },
+            {
+              "txt": "ballena",
+              "em": "🐳"
+            },
+            {
+              "txt": "pulpo",
+              "em": "🐙"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Акула»",
+          "opts": [
+            {
+              "txt": "pez",
+              "em": "🐠"
+            },
+            {
+              "txt": "tiburón",
+              "em": "🦈"
+            },
+            {
+              "txt": "tortuga",
+              "em": "🐢"
+            },
+            {
+              "txt": "cangrejo",
+              "em": "🦀"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Осьминог»",
+          "opts": [
+            {
+              "txt": "ballena",
+              "em": "🐳"
+            },
+            {
+              "txt": "delfín",
+              "em": "🐬"
+            },
+            {
+              "txt": "pulpo",
+              "em": "🐙"
+            },
+            {
+              "txt": "cangrejo",
+              "em": "🦀"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "delfín",
+              "дельфин"
+            ],
+            [
+              "ballena",
+              "кит"
+            ],
+            [
+              "tiburón",
+              "акула"
+            ],
+            [
+              "pulpo",
+              "осьминог"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tortuga",
+              "черепаха"
+            ],
+            [
+              "cangrejo",
+              "краб"
+            ],
+            [
+              "estrella de mar",
+              "морская звезда"
+            ],
+            [
+              "medusa",
+              "медуза"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я вижу кита",
+          "tiles": [
+            "veo",
+            "una",
+            "un",
+            "ballena",
+            "pulpo"
+          ],
+          "answer": [
+            "veo",
+            "una",
+            "ballena"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "es muy rápido."
+          ],
+          "target": "delfín",
+          "opts": [
+            "delfín",
+            "libro",
+            "pan"
+          ],
+          "hint": "Дельфин очень быстрый"
+        }
+      ]
+    },
+    {
+      "id": "l94",
+      "name": "Aves",
+      "emoji": "🦅",
+      "desc": "Pájaros y aves",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Орёл»",
+          "opts": [
+            {
+              "txt": "águila",
+              "em": "🦅"
+            },
+            {
+              "txt": "paloma",
+              "em": "🕊️"
+            },
+            {
+              "txt": "búho",
+              "em": "🦉"
+            },
+            {
+              "txt": "loro",
+              "em": "🦜"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Голубь»",
+          "opts": [
+            {
+              "txt": "águila",
+              "em": "🦅"
+            },
+            {
+              "txt": "paloma",
+              "em": "🕊️"
+            },
+            {
+              "txt": "pingüino",
+              "em": "🐧"
+            },
+            {
+              "txt": "cisne",
+              "em": "🦢"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Сова»",
+          "opts": [
+            {
+              "txt": "gallo",
+              "em": "🐓"
+            },
+            {
+              "txt": "loro",
+              "em": "🦜"
+            },
+            {
+              "txt": "búho",
+              "em": "🦉"
+            },
+            {
+              "txt": "paloma",
+              "em": "🕊️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "águila",
+              "орёл"
+            ],
+            [
+              "paloma",
+              "голубь"
+            ],
+            [
+              "búho",
+              "сова"
+            ],
+            [
+              "loro",
+              "попугай"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gallo",
+              "петух"
+            ],
+            [
+              "cisne",
+              "лебедь"
+            ],
+            [
+              "pingüino",
+              "пингвин"
+            ],
+            [
+              "nido",
+              "гнездо"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Орёл летает высоко",
+          "tiles": [
+            "el",
+            "águila",
+            "vuela",
+            "alto",
+            "corre"
+          ],
+          "answer": [
+            "el",
+            "águila",
+            "vuela",
+            "alto"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "habla mucho."
+          ],
+          "target": "loro",
+          "opts": [
+            "loro",
+            "mar",
+            "pan"
+          ],
+          "hint": "Попугай много говорит"
+        }
+      ]
+    },
+    {
+      "id": "l95",
+      "name": "Repaso 15",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 91-94",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Хомяк»",
+          "opts": [
+            {
+              "txt": "tortuga",
+              "em": "🐢"
+            },
+            {
+              "txt": "hámster",
+              "em": "🐹"
+            },
+            {
+              "txt": "conejo",
+              "em": "🐰"
+            },
+            {
+              "txt": "pez",
+              "em": "🐠"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Пчела»",
+          "opts": [
+            {
+              "txt": "abeja",
+              "em": "🐝"
+            },
+            {
+              "txt": "mosca",
+              "em": "🪰"
+            },
+            {
+              "txt": "hormiga",
+              "em": "🐜"
+            },
+            {
+              "txt": "mariposa",
+              "em": "🦋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Дельфин»",
+          "opts": [
+            {
+              "txt": "tiburón",
+              "em": "🦈"
+            },
+            {
+              "txt": "delfín",
+              "em": "🐬"
+            },
+            {
+              "txt": "ballena",
+              "em": "🐳"
+            },
+            {
+              "txt": "pulpo",
+              "em": "🐙"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "perro",
+              "собака"
+            ],
+            [
+              "hámster",
+              "хомяк"
+            ],
+            [
+              "mariposa",
+              "бабочка"
+            ],
+            [
+              "araña",
+              "паук"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ballena",
+              "кит"
+            ],
+            [
+              "tiburón",
+              "акула"
+            ],
+            [
+              "águila",
+              "орёл"
+            ],
+            [
+              "búho",
+              "сова"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я вижу бабочку",
+          "tiles": [
+            "veo",
+            "una",
+            "mariposa",
+            "abeja"
+          ],
+          "answer": [
+            "veo",
+            "una",
+            "mariposa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo que",
+            null,
+            "a mi gato."
+          ],
+          "target": "alimentar",
+          "opts": [
+            "alimentar",
+            "leer",
+            "pintar"
+          ],
+          "hint": "Мне надо покормить кота"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "unit": 17,
+  "lessons": [
+    {
+      "id": "l81",
+      "name": "Movimiento",
+      "emoji": "🚶",
+      "desc": "Verbos de movimiento",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Ходить»",
+          "opts": [
+            {
+              "txt": "caminar",
+              "em": "🚶"
+            },
+            {
+              "txt": "correr",
+              "em": "🏃"
+            },
+            {
+              "txt": "saltar",
+              "em": "🤾"
+            },
+            {
+              "txt": "nadar",
+              "em": "🏊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Бежать»",
+          "opts": [
+            {
+              "txt": "caminar",
+              "em": "🚶"
+            },
+            {
+              "txt": "correr",
+              "em": "🏃"
+            },
+            {
+              "txt": "volar",
+              "em": "🦅"
+            },
+            {
+              "txt": "bailar",
+              "em": "💃"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Прыгать»",
+          "opts": [
+            {
+              "txt": "subir",
+              "em": "⬆️"
+            },
+            {
+              "txt": "bajar",
+              "em": "⬇️"
+            },
+            {
+              "txt": "saltar",
+              "em": "🤾"
+            },
+            {
+              "txt": "parar",
+              "em": "🛑"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caminar",
+              "ходить"
+            ],
+            [
+              "correr",
+              "бежать"
+            ],
+            [
+              "saltar",
+              "прыгать"
+            ],
+            [
+              "nadar",
+              "плавать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "subir",
+              "подниматься"
+            ],
+            [
+              "bajar",
+              "спускаться"
+            ],
+            [
+              "volar",
+              "летать"
+            ],
+            [
+              "parar",
+              "останавливаться"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я иду в школу",
+          "tiles": [
+            "camino",
+            "a",
+            "la",
+            "escuela",
+            "corro"
+          ],
+          "answer": [
+            "camino",
+            "a",
+            "la",
+            "escuela"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Los pájaros",
+            null,
+            "alto."
+          ],
+          "target": "vuelan",
+          "opts": [
+            "vuelan",
+            "corren",
+            "nadan"
+          ],
+          "hint": "Птицы летают высоко"
+        }
+      ]
+    },
+    {
+      "id": "l82",
+      "name": "En la playa",
+      "emoji": "🏖️",
+      "desc": "Vocabulario de playa",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Песок»",
+          "opts": [
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "ola",
+              "em": "🌊"
+            },
+            {
+              "txt": "sol",
+              "em": "☀️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Зонт от солнца»",
+          "opts": [
+            {
+              "txt": "toalla",
+              "em": "🧺"
+            },
+            {
+              "txt": "sombrilla",
+              "em": "☂️"
+            },
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            },
+            {
+              "txt": "pelota",
+              "em": "⚽"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Волна»",
+          "opts": [
+            {
+              "txt": "sol",
+              "em": "☀️"
+            },
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            },
+            {
+              "txt": "ola",
+              "em": "🌊"
+            },
+            {
+              "txt": "concha",
+              "em": "🐚"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "arena",
+              "песок"
+            ],
+            [
+              "sol",
+              "солнце"
+            ],
+            [
+              "ola",
+              "волна"
+            ],
+            [
+              "concha",
+              "ракушка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "toalla",
+              "полотенце"
+            ],
+            [
+              "sombrilla",
+              "зонт от солнца"
+            ],
+            [
+              "bañador",
+              "купальник"
+            ],
+            [
+              "gafas de sol",
+              "солнечные очки"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится пляж",
+          "tiles": [
+            "me",
+            "gusta",
+            "la",
+            "playa",
+            "el"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "la",
+            "playa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hace calor, voy a la",
+            null,
+            "."
+          ],
+          "target": "playa",
+          "opts": [
+            "playa",
+            "casa",
+            "tienda"
+          ],
+          "hint": "Жарко, я иду на пляж"
+        }
+      ]
+    },
+    {
+      "id": "l83",
+      "name": "Deportes",
+      "emoji": "⚽",
+      "desc": "Deportes populares",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Футбол»",
+          "opts": [
+            {
+              "txt": "fútbol",
+              "em": "⚽"
+            },
+            {
+              "txt": "baloncesto",
+              "em": "🏀"
+            },
+            {
+              "txt": "tenis",
+              "em": "🎾"
+            },
+            {
+              "txt": "béisbol",
+              "em": "⚾"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Баскетбол»",
+          "opts": [
+            {
+              "txt": "fútbol",
+              "em": "⚽"
+            },
+            {
+              "txt": "baloncesto",
+              "em": "🏀"
+            },
+            {
+              "txt": "natación",
+              "em": "🏊"
+            },
+            {
+              "txt": "voleibol",
+              "em": "🏐"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Плавание»",
+          "opts": [
+            {
+              "txt": "correr",
+              "em": "🏃"
+            },
+            {
+              "txt": "esquí",
+              "em": "🎿"
+            },
+            {
+              "txt": "natación",
+              "em": "🏊"
+            },
+            {
+              "txt": "ciclismo",
+              "em": "🚴"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fútbol",
+              "футбол"
+            ],
+            [
+              "baloncesto",
+              "баскетбол"
+            ],
+            [
+              "tenis",
+              "теннис"
+            ],
+            [
+              "natación",
+              "плавание"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "equipo",
+              "команда"
+            ],
+            [
+              "jugador",
+              "игрок"
+            ],
+            [
+              "partido",
+              "матч"
+            ],
+            [
+              "ganar",
+              "выигрывать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я играю в футбол",
+          "tiles": [
+            "juego",
+            "al",
+            "fútbol",
+            "tenis"
+          ],
+          "answer": [
+            "juego",
+            "al",
+            "fútbol"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "favorito es el tenis."
+          ],
+          "target": "deporte",
+          "opts": [
+            "deporte",
+            "mar",
+            "casa"
+          ],
+          "hint": "Мой любимый спорт — теннис"
+        }
+      ]
+    },
+    {
+      "id": "l84",
+      "name": "Instrumentos",
+      "emoji": "🎸",
+      "desc": "Instrumentos musicales",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Гитара»",
+          "opts": [
+            {
+              "txt": "guitarra",
+              "em": "🎸"
+            },
+            {
+              "txt": "piano",
+              "em": "🎹"
+            },
+            {
+              "txt": "violín",
+              "em": "🎻"
+            },
+            {
+              "txt": "flauta",
+              "em": "🎼"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Скрипка»",
+          "opts": [
+            {
+              "txt": "piano",
+              "em": "🎹"
+            },
+            {
+              "txt": "violín",
+              "em": "🎻"
+            },
+            {
+              "txt": "tambor",
+              "em": "🥁"
+            },
+            {
+              "txt": "trompeta",
+              "em": "🎺"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Барабан»",
+          "opts": [
+            {
+              "txt": "piano",
+              "em": "🎹"
+            },
+            {
+              "txt": "guitarra",
+              "em": "🎸"
+            },
+            {
+              "txt": "tambor",
+              "em": "🥁"
+            },
+            {
+              "txt": "flauta",
+              "em": "🎼"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "guitarra",
+              "гитара"
+            ],
+            [
+              "piano",
+              "фортепиано"
+            ],
+            [
+              "violín",
+              "скрипка"
+            ],
+            [
+              "tambor",
+              "барабан"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "flauta",
+              "флейта"
+            ],
+            [
+              "trompeta",
+              "труба"
+            ],
+            [
+              "músico",
+              "музыкант"
+            ],
+            [
+              "canción",
+              "песня"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я играю на гитаре",
+          "tiles": [
+            "toco",
+            "la",
+            "el",
+            "guitarra",
+            "piano"
+          ],
+          "answer": [
+            "toco",
+            "la",
+            "guitarra"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi hermano toca el",
+            null,
+            "."
+          ],
+          "target": "piano",
+          "opts": [
+            "piano",
+            "mar",
+            "libro"
+          ],
+          "hint": "Мой брат играет на фортепиано"
+        }
+      ]
+    },
+    {
+      "id": "l85",
+      "name": "Repaso 13",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 81-84",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Бежать»",
+          "opts": [
+            {
+              "txt": "caminar",
+              "em": "🚶"
+            },
+            {
+              "txt": "correr",
+              "em": "🏃"
+            },
+            {
+              "txt": "saltar",
+              "em": "🤾"
+            },
+            {
+              "txt": "nadar",
+              "em": "🏊"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Зонт от солнца»",
+          "opts": [
+            {
+              "txt": "toalla",
+              "em": "🧺"
+            },
+            {
+              "txt": "sombrilla",
+              "em": "☂️"
+            },
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            },
+            {
+              "txt": "ola",
+              "em": "🌊"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Гитара»",
+          "opts": [
+            {
+              "txt": "piano",
+              "em": "🎹"
+            },
+            {
+              "txt": "violín",
+              "em": "🎻"
+            },
+            {
+              "txt": "guitarra",
+              "em": "🎸"
+            },
+            {
+              "txt": "flauta",
+              "em": "🎼"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caminar",
+              "ходить"
+            ],
+            [
+              "nadar",
+              "плавать"
+            ],
+            [
+              "arena",
+              "песок"
+            ],
+            [
+              "ola",
+              "волна"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fútbol",
+              "футбол"
+            ],
+            [
+              "natación",
+              "плавание"
+            ],
+            [
+              "guitarra",
+              "гитара"
+            ],
+            [
+              "canción",
+              "песня"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я играю в футбол",
+          "tiles": [
+            "juego",
+            "al",
+            "fútbol",
+            "tenis"
+          ],
+          "answer": [
+            "juego",
+            "al",
+            "fútbol"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hace calor, voy a la",
+            null,
+            "."
+          ],
+          "target": "playa",
+          "opts": [
+            "playa",
+            "casa",
+            "oficina"
+          ],
+          "hint": "Жарко, я иду на пляж"
+        }
+      ]
+    }
+  ]
+}

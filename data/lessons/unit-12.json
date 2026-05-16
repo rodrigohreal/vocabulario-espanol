@@ -1,0 +1,844 @@
+{
+  "unit": 12,
+  "lessons": [
+    {
+      "id": "l56",
+      "name": "Vacaciones",
+      "emoji": "🏖️",
+      "desc": "Viajes y descanso",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Море»",
+          "opts": [
+            {
+              "txt": "mar",
+              "em": "🌊"
+            },
+            {
+              "txt": "lago",
+              "em": "🏞️"
+            },
+            {
+              "txt": "río",
+              "em": "🌊"
+            },
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Чемодан»",
+          "opts": [
+            {
+              "txt": "mochila",
+              "em": "🎒"
+            },
+            {
+              "txt": "maleta",
+              "em": "🧳"
+            },
+            {
+              "txt": "bolso",
+              "em": "👜"
+            },
+            {
+              "txt": "caja",
+              "em": "📦"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Отпуск»",
+          "opts": [
+            {
+              "txt": "trabajo",
+              "em": "💼"
+            },
+            {
+              "txt": "estudio",
+              "em": "📚"
+            },
+            {
+              "txt": "vacaciones",
+              "em": "🏖️"
+            },
+            {
+              "txt": "lunes",
+              "em": "📅"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "playa",
+              "пляж"
+            ],
+            [
+              "mar",
+              "море"
+            ],
+            [
+              "montaña",
+              "гора"
+            ],
+            [
+              "hotel",
+              "отель"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "maleta",
+              "чемодан"
+            ],
+            [
+              "pasaporte",
+              "паспорт"
+            ],
+            [
+              "viaje",
+              "путешествие"
+            ],
+            [
+              "mapa",
+              "карта"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я еду в отпуск",
+          "tiles": [
+            "voy",
+            "de",
+            "vacaciones",
+            "a",
+            "casa"
+          ],
+          "answer": [
+            "voy",
+            "de",
+            "vacaciones"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            "es muy bonita."
+          ],
+          "target": "playa",
+          "opts": [
+            "playa",
+            "mar",
+            "hotel"
+          ],
+          "hint": "Пляж очень красивый"
+        }
+      ]
+    },
+    {
+      "id": "l57",
+      "name": "Aeropuerto",
+      "emoji": "✈️",
+      "desc": "Vocabulario del aeropuerto",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Самолёт»",
+          "opts": [
+            {
+              "txt": "avión",
+              "em": "✈️"
+            },
+            {
+              "txt": "tren",
+              "em": "🚆"
+            },
+            {
+              "txt": "coche",
+              "em": "🚗"
+            },
+            {
+              "txt": "barco",
+              "em": "🚢"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Билет»",
+          "opts": [
+            {
+              "txt": "maleta",
+              "em": "🧳"
+            },
+            {
+              "txt": "pasaporte",
+              "em": "🛂"
+            },
+            {
+              "txt": "billete",
+              "em": "🎟️"
+            },
+            {
+              "txt": "asiento",
+              "em": "💺"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Рейс»",
+          "opts": [
+            {
+              "txt": "vuelo",
+              "em": "🛫"
+            },
+            {
+              "txt": "puerta",
+              "em": "🚪"
+            },
+            {
+              "txt": "maleta",
+              "em": "🧳"
+            },
+            {
+              "txt": "pasajero",
+              "em": "🧑"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "avión",
+              "самолёт"
+            ],
+            [
+              "vuelo",
+              "рейс"
+            ],
+            [
+              "billete",
+              "билет"
+            ],
+            [
+              "equipaje",
+              "багаж"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "salida",
+              "вылет"
+            ],
+            [
+              "llegada",
+              "прибытие"
+            ],
+            [
+              "pasajero",
+              "пассажир"
+            ],
+            [
+              "puerta",
+              "выход"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Где мой багаж?",
+          "tiles": [
+            "dónde",
+            "está",
+            "mi",
+            "equipaje",
+            "tu"
+          ],
+          "answer": [
+            "dónde",
+            "está",
+            "mi",
+            "equipaje"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "sale a las diez."
+          ],
+          "target": "vuelo",
+          "opts": [
+            "vuelo",
+            "tren",
+            "mar"
+          ],
+          "hint": "Рейс вылетает в 10"
+        }
+      ]
+    },
+    {
+      "id": "l58",
+      "name": "Comparativos",
+      "emoji": "⚖️",
+      "desc": "más que, menos que, tan como",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Больше чем»",
+          "opts": [
+            {
+              "txt": "más que",
+              "em": "➕"
+            },
+            {
+              "txt": "menos que",
+              "em": "➖"
+            },
+            {
+              "txt": "tan como",
+              "em": "🟰"
+            },
+            {
+              "txt": "muy",
+              "em": "❗"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Меньше чем»",
+          "opts": [
+            {
+              "txt": "más que",
+              "em": "➕"
+            },
+            {
+              "txt": "menos que",
+              "em": "➖"
+            },
+            {
+              "txt": "igual que",
+              "em": "🟰"
+            },
+            {
+              "txt": "bien",
+              "em": "👍"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Такой же как»",
+          "opts": [
+            {
+              "txt": "más que",
+              "em": "➕"
+            },
+            {
+              "txt": "menos que",
+              "em": "➖"
+            },
+            {
+              "txt": "tan como",
+              "em": "🟰"
+            },
+            {
+              "txt": "muy",
+              "em": "❗"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "más",
+              "больше"
+            ],
+            [
+              "menos",
+              "меньше"
+            ],
+            [
+              "tan",
+              "такой"
+            ],
+            [
+              "que",
+              "чем"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Хуан выше Педро",
+          "tiles": [
+            "Juan",
+            "es",
+            "más",
+            "alto",
+            "que",
+            "Pedro"
+          ],
+          "answer": [
+            "Juan",
+            "es",
+            "más",
+            "alto",
+            "que",
+            "Pedro"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я моложе тебя",
+          "tiles": [
+            "soy",
+            "más",
+            "joven",
+            "que",
+            "tú",
+            "él"
+          ],
+          "answer": [
+            "soy",
+            "más",
+            "joven",
+            "que",
+            "tú"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ana es",
+            null,
+            "alta que María."
+          ],
+          "target": "más",
+          "opts": [
+            "más",
+            "menos",
+            "tan"
+          ],
+          "hint": "Ана выше Марии"
+        },
+        {
+          "t": "pick",
+          "q": "«У него больше книг чем у меня»",
+          "opts": [
+            {
+              "txt": "tiene más libros que yo",
+              "em": "✅"
+            },
+            {
+              "txt": "tiene más libros como yo",
+              "em": "❌"
+            },
+            {
+              "txt": "tiene tan libros que yo",
+              "em": "❌"
+            },
+            {
+              "txt": "tiene más que libros yo",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi gato es tan grande",
+            null,
+            "tu perro."
+          ],
+          "target": "como",
+          "opts": [
+            "como",
+            "que",
+            "de"
+          ],
+          "hint": "Мой кот такой же большой, как твой пёс"
+        },
+        {
+          "t": "typed",
+          "from": "Я выше тебя",
+          "answer": "soy más alto que tú",
+          "answers": [
+            "soy más alto que tú",
+            "soy más alta que tú",
+            "yo soy más alto que tú",
+            "yo soy más alta que tú"
+          ],
+          "hint": "más + прил. + que"
+        }
+      ]
+    },
+    {
+      "id": "l59",
+      "name": "Superlativos",
+      "emoji": "🏆",
+      "desc": "el más, mejor, peor",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Лучший»",
+          "opts": [
+            {
+              "txt": "mejor",
+              "em": "🥇"
+            },
+            {
+              "txt": "peor",
+              "em": "👎"
+            },
+            {
+              "txt": "mayor",
+              "em": "⬆️"
+            },
+            {
+              "txt": "menor",
+              "em": "⬇️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Худший»",
+          "opts": [
+            {
+              "txt": "mejor",
+              "em": "🥇"
+            },
+            {
+              "txt": "peor",
+              "em": "👎"
+            },
+            {
+              "txt": "grande",
+              "em": "🔠"
+            },
+            {
+              "txt": "malo",
+              "em": "😞"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Самый высокий»",
+          "opts": [
+            {
+              "txt": "el más alto",
+              "em": "📈"
+            },
+            {
+              "txt": "el menos alto",
+              "em": "📉"
+            },
+            {
+              "txt": "tan alto",
+              "em": "🟰"
+            },
+            {
+              "txt": "muy alto",
+              "em": "❗"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "el mejor",
+              "лучший"
+            ],
+            [
+              "el peor",
+              "худший"
+            ],
+            [
+              "el mayor",
+              "старший"
+            ],
+            [
+              "el menor",
+              "младший"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Это самая красивая книга",
+          "tiles": [
+            "es",
+            "el",
+            "la",
+            "libro",
+            "más",
+            "bonito",
+            "bonita"
+          ],
+          "answer": [
+            "es",
+            "el",
+            "libro",
+            "más",
+            "bonito"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Es el",
+            null,
+            "jugador del mundo."
+          ],
+          "target": "mejor",
+          "opts": [
+            "mejor",
+            "peor",
+            "más"
+          ],
+          "hint": "Лучший игрок мира"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hoy es el día",
+            null,
+            "frío del año."
+          ],
+          "target": "más",
+          "opts": [
+            "más",
+            "menos",
+            "mejor"
+          ],
+          "hint": "Самый холодный день года"
+        },
+        {
+          "t": "pick",
+          "q": "«Это лучший день»",
+          "opts": [
+            {
+              "txt": "es el mejor día",
+              "em": "✅"
+            },
+            {
+              "txt": "es el más mejor día",
+              "em": "❌"
+            },
+            {
+              "txt": "es mejor día",
+              "em": "❌"
+            },
+            {
+              "txt": "es el más bueno día",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "typed",
+          "from": "Это самый большой дом",
+          "answer": "es la casa más grande",
+          "answers": [
+            "es la casa más grande",
+            "esta es la casa más grande",
+            "es la mayor casa"
+          ],
+          "hint": "el/la más + прил."
+        }
+      ]
+    },
+    {
+      "id": "l60",
+      "name": "Repaso 9",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 56-59",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Море»",
+          "opts": [
+            {
+              "txt": "mar",
+              "em": "🌊"
+            },
+            {
+              "txt": "lago",
+              "em": "🏞️"
+            },
+            {
+              "txt": "playa",
+              "em": "🏖️"
+            },
+            {
+              "txt": "hotel",
+              "em": "🏨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Самолёт»",
+          "opts": [
+            {
+              "txt": "tren",
+              "em": "🚆"
+            },
+            {
+              "txt": "avión",
+              "em": "✈️"
+            },
+            {
+              "txt": "coche",
+              "em": "🚗"
+            },
+            {
+              "txt": "barco",
+              "em": "🚢"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Больше чем»",
+          "opts": [
+            {
+              "txt": "menos que",
+              "em": "➖"
+            },
+            {
+              "txt": "tan como",
+              "em": "🟰"
+            },
+            {
+              "txt": "más que",
+              "em": "➕"
+            },
+            {
+              "txt": "muy",
+              "em": "❗"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "playa",
+              "пляж"
+            ],
+            [
+              "maleta",
+              "чемодан"
+            ],
+            [
+              "vuelo",
+              "рейс"
+            ],
+            [
+              "billete",
+              "билет"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "más",
+              "больше"
+            ],
+            [
+              "menos",
+              "меньше"
+            ],
+            [
+              "mejor",
+              "лучший"
+            ],
+            [
+              "peor",
+              "худший"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я моложе тебя",
+          "tiles": [
+            "soy",
+            "más",
+            "joven",
+            "que",
+            "tú"
+          ],
+          "answer": [
+            "soy",
+            "más",
+            "joven",
+            "que",
+            "tú"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Es el",
+            null,
+            "libro del año."
+          ],
+          "target": "mejor",
+          "opts": [
+            "mejor",
+            "peor",
+            "más"
+          ],
+          "hint": "Лучшая книга года"
+        }
+      ]
+    }
+  ]
+}

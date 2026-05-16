@@ -1,0 +1,180 @@
+{
+  "unit": 54,
+  "lessons": [
+    {
+      "id": "l266",
+      "name": "Vestuario deportivo",
+      "emoji": "🎽",
+      "desc": "Chándal, zapatillas, sudadera",
+      "exercises": [
+        { "t": "pick", "q": "«Спортивный костюм»", "opts": [
+          { "txt": "chándal",  "em": "🎽" },
+          { "txt": "traje",    "em": "❌" },
+          { "txt": "vestido",  "em": "❌" },
+          { "txt": "abrigo",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Кроссовки»", "opts": [
+          { "txt": "zapatillas","em": "👟" },
+          { "txt": "botas",     "em": "❌" },
+          { "txt": "tacones",   "em": "❌" },
+          { "txt": "sandalias", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["chándal",   "спорт. костюм"],
+          ["sudadera",  "толстовка"],
+          ["zapatillas","кроссовки"],
+          ["bañador",   "купальник"]
+        ]},
+        { "t": "match", "pairs": [
+          ["camiseta de fútbol","футболка футб."],
+          ["mallas",            "леггинсы"],
+          ["pantalón corto",    "шорты"],
+          ["gorra",             "кепка"]
+        ]},
+        { "t": "translate", "from": "Я ношу толстовку и кроссовки", "tiles": ["llevo", "una", "sudadera", "y", "zapatillas", "vestido"], "answer": ["llevo", "una", "sudadera", "y", "zapatillas"] },
+        { "t": "fill", "sentence": ["En el gimnasio uso", null, "."], "target": "mallas", "opts": ["mallas", "vino", "platos"], "hint": "В зале — леггинсы" },
+        { "t": "typed", "from": "Где мой купальник?", "answer": "dónde está mi bañador", "answers": ["dónde está mi bañador", "donde está mi traje de baño"], "hint": "bañador = купальник" }
+      ]
+    },
+    {
+      "id": "l267",
+      "name": "Joyería",
+      "emoji": "💍",
+      "desc": "Anillo, collar, pendientes",
+      "exercises": [
+        { "t": "pick", "q": "«Кольцо»", "opts": [
+          { "txt": "anillo",   "em": "💍" },
+          { "txt": "collar",   "em": "📿" },
+          { "txt": "pulsera",  "em": "❌" },
+          { "txt": "pendiente","em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Серьги»", "opts": [
+          { "txt": "pendientes","em": "💎" },
+          { "txt": "collar",    "em": "❌" },
+          { "txt": "anillo",    "em": "❌" },
+          { "txt": "reloj",     "em": "⌚" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["anillo",   "кольцо"],
+          ["collar",   "колье"],
+          ["pulsera",  "браслет"],
+          ["pendientes","серьги"]
+        ]},
+        { "t": "match", "pairs": [
+          ["oro",      "золото"],
+          ["plata",    "серебро"],
+          ["diamante", "бриллиант"],
+          ["perla",    "жемчуг"]
+        ]},
+        { "t": "translate", "from": "Это золотое кольцо", "tiles": ["es", "un", "anillo", "de", "oro", "plata"], "answer": ["es", "un", "anillo", "de", "oro"] },
+        { "t": "fill", "sentence": ["Le regalé un", null, "para su cumpleaños."], "target": "collar", "opts": ["collar", "tomate", "café"], "hint": "Подарил колье" },
+        { "t": "typed", "from": "Серебряный браслет", "answer": "una pulsera de plata", "answers": ["una pulsera de plata", "pulsera de plata"], "hint": "pulsera de plata" }
+      ]
+    },
+    {
+      "id": "l268",
+      "name": "Calzado",
+      "emoji": "👠",
+      "desc": "Botas, sandalias, tacones",
+      "exercises": [
+        { "t": "pick", "q": "«Сапоги»", "opts": [
+          { "txt": "botas",    "em": "👢" },
+          { "txt": "sandalias","em": "❌" },
+          { "txt": "tacones",  "em": "❌" },
+          { "txt": "zapatos",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Каблуки»", "opts": [
+          { "txt": "tacones",  "em": "👠" },
+          { "txt": "zapatillas","em": "❌" },
+          { "txt": "botines",  "em": "❌" },
+          { "txt": "chanclas", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["botas",     "сапоги"],
+          ["sandalias", "сандалии"],
+          ["tacones",   "каблуки"],
+          ["chanclas",  "вьетнамки"]
+        ]},
+        { "t": "match", "pairs": [
+          ["número (de zapato)","размер обуви"],
+          ["plantilla",         "стелька"],
+          ["cordones",          "шнурки"],
+          ["suela",             "подошва"]
+        ]},
+        { "t": "translate", "from": "Какой у тебя размер обуви?", "tiles": ["qué", "número", "de", "zapato", "tienes", "tipo"], "answer": ["qué", "número", "de", "zapato", "tienes"] },
+        { "t": "fill", "sentence": ["Estos", null, "me aprietan."], "target": "zapatos", "opts": ["zapatos", "libros", "pájaros"], "hint": "Эти туфли жмут" },
+        { "t": "typed", "from": "Шнурки развязались", "answer": "se desataron los cordones", "answers": ["se desataron los cordones", "se me desataron los cordones"], "hint": "desatarse" }
+      ]
+    },
+    {
+      "id": "l269",
+      "name": "Cosmética",
+      "emoji": "💄",
+      "desc": "Rímel, labial, base",
+      "exercises": [
+        { "t": "pick", "q": "«Помада»", "opts": [
+          { "txt": "labial / pintalabios","em": "💄" },
+          { "txt": "rímel",               "em": "❌" },
+          { "txt": "base",                "em": "❌" },
+          { "txt": "sombra",              "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Тушь»", "opts": [
+          { "txt": "rímel",    "em": "👁️" },
+          { "txt": "labial",   "em": "❌" },
+          { "txt": "perfume",  "em": "❌" },
+          { "txt": "esmalte",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["base",          "тональник"],
+          ["sombra",        "тени"],
+          ["rímel",         "тушь"],
+          ["labial",        "помада"]
+        ]},
+        { "t": "match", "pairs": [
+          ["perfume",       "духи"],
+          ["desmaquillante","смывка"],
+          ["polvos",        "пудра"],
+          ["colorete",      "румяна"]
+        ]},
+        { "t": "translate", "from": "Накрашу глаза и помаду", "tiles": ["me", "maquillo", "los", "ojos", "y", "los", "labios"], "answer": ["me", "maquillo", "los", "ojos", "y", "los", "labios"] },
+        { "t": "fill", "sentence": ["No salgo sin", null, "."], "target": "rímel", "opts": ["rímel", "espuma", "harina"], "hint": "Не выхожу без туши" },
+        { "t": "typed", "from": "Сними макияж перед сном", "answer": "desmaquíllate antes de dormir", "answers": ["desmaquíllate antes de dormir", "quítate el maquillaje antes de dormir"], "hint": "desmaquillarse" }
+      ]
+    },
+    {
+      "id": "l270",
+      "name": "Telas",
+      "emoji": "🧶",
+      "desc": "Algodón, lana, seda, lino",
+      "exercises": [
+        { "t": "pick", "q": "«Хлопок»", "opts": [
+          { "txt": "algodón", "em": "🌿" },
+          { "txt": "lana",    "em": "🧶" },
+          { "txt": "seda",    "em": "❌" },
+          { "txt": "lino",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Шерсть»", "opts": [
+          { "txt": "lana",    "em": "🐑" },
+          { "txt": "seda",    "em": "❌" },
+          { "txt": "cuero",   "em": "❌" },
+          { "txt": "plástico","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["algodón", "хлопок"],
+          ["lana",    "шерсть"],
+          ["seda",    "шёлк"],
+          ["lino",    "лён"]
+        ]},
+        { "t": "match", "pairs": [
+          ["cuero",      "кожа (материал)"],
+          ["poliéster",  "полиэстер"],
+          ["sintético",  "синтетический"],
+          ["transpirable","дышащий"]
+        ]},
+        { "t": "translate", "from": "Эта рубашка из хлопка", "tiles": ["esta", "camisa", "es", "de", "algodón", "lino"], "answer": ["esta", "camisa", "es", "de", "algodón"] },
+        { "t": "fill", "sentence": ["Prefiero ropa de", null, "."], "target": "algodón", "opts": ["algodón", "futuro", "metro"], "hint": "Предпочитаю хлопок" },
+        { "t": "typed", "from": "Кожаная куртка", "answer": "una chaqueta de cuero", "answers": ["una chaqueta de cuero", "chaqueta de cuero"], "hint": "cuero = кожа" }
+      ]
+    }
+  ]
+}

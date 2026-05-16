@@ -1,0 +1,197 @@
+{
+  "unit": 46,
+  "lessons": [
+    {
+      "id": "l226",
+      "name": "Relativas I",
+      "emoji": "🔗",
+      "desc": "Que, quien",
+      "exercises": [
+        { "t": "pick", "q": "«Книга, которую я читаю»", "opts": [
+          { "txt": "el libro que leo",      "em": "📖" },
+          { "txt": "el libro cual leo",     "em": "❌" },
+          { "txt": "el libro quien leo",    "em": "❌" },
+          { "txt": "el libro lo que leo",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Человек, с которым я говорю» (с person → con quien)", "opts": [
+          { "txt": "la persona que hablo",     "em": "❌" },
+          { "txt": "la persona con quien hablo","em": "🗣️" },
+          { "txt": "la persona cual hablo",    "em": "❌" },
+          { "txt": "la persona la que hablo",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«То, что важно»", "opts": [
+          { "txt": "lo que es importante",  "em": "💡" },
+          { "txt": "que es importante",     "em": "❌" },
+          { "txt": "el que es importante",  "em": "❌" },
+          { "txt": "cual es importante",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["que",          "который (универс.)"],
+          ["quien / quienes","кто (только о людях, с предлогом)"],
+          ["lo que",       "то, что"],
+          ["el que / la que","тот, кто / та, которая"]
+        ]},
+        { "t": "translate", "from": "Девушка, с которой я работаю, очень умная", "tiles": ["la", "chica", "con", "quien", "trabajo", "es", "muy", "inteligente", "que"], "answer": ["la", "chica", "con", "quien", "trabajo", "es", "muy", "inteligente"] },
+        { "t": "fill", "sentence": ["El profesor", null, "enseña español es bueno."], "target": "que", "opts": ["que", "quien", "cual"], "hint": "Учитель, который..." },
+        { "t": "fill", "sentence": [null, "dijiste me sorprende."], "target": "Lo que", "opts": ["Lo que", "Que", "El que"], "hint": "То, что ты сказал, меня удивляет" },
+        { "t": "typed", "from": "Это девушка, которую я люблю", "answer": "es la chica que quiero", "answers": ["es la chica que quiero", "es la chica a la que quiero", "es la chica que amo"], "hint": "que для предметов и людей-объектов" }
+      ]
+    },
+    {
+      "id": "l227",
+      "name": "Relativas II",
+      "emoji": "🪢",
+      "desc": "Cuyo, el cual, donde",
+      "exercises": [
+        { "t": "pick", "q": "«Друг, чья сестра живёт здесь»", "opts": [
+          { "txt": "el amigo que hermana vive aquí",   "em": "❌" },
+          { "txt": "el amigo cuya hermana vive aquí",  "em": "👫" },
+          { "txt": "el amigo cuyo hermana vive aquí",  "em": "❌" },
+          { "txt": "el amigo de quien hermana vive aquí","em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Город, где я родился»", "opts": [
+          { "txt": "la ciudad donde nací",  "em": "🏙️" },
+          { "txt": "la ciudad que nací",    "em": "❌" },
+          { "txt": "la ciudad qual nací",   "em": "❌" },
+          { "txt": "la ciudad cuya nací",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Книга, об авторе которой» (формально)", "opts": [
+          { "txt": "el libro cuyo autor",      "em": "📚" },
+          { "txt": "el libro que autor",       "em": "❌" },
+          { "txt": "el libro de cuyo autor",   "em": "❌" },
+          { "txt": "el libro del cual autor",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["cuyo / cuya",     "чей (согласуется с СУЩ. после!)"],
+          ["donde",           "где (место)"],
+          ["el cual / la cual","формальный «который»"],
+          ["los cuales",      "формальный мн.ч."]
+        ]},
+        { "t": "translate", "from": "Дом, в котором я вырос, был большим", "tiles": ["la", "casa", "donde", "crecí", "era", "grande", "que"], "answer": ["la", "casa", "donde", "crecí", "era", "grande"] },
+        { "t": "fill", "sentence": ["El escritor", null, "novela ganó el premio."], "target": "cuya", "opts": ["cuya", "cuyo", "que"], "hint": "Писатель, чей роман выиграл премию (novela ж.)" },
+        { "t": "fill", "sentence": ["El parque", null, "jugábamos ya no existe."], "target": "donde", "opts": ["donde", "que", "cuyo"], "hint": "Парк, где мы играли" },
+        { "t": "typed", "from": "Деревня, в которой жил мой дед", "answer": "el pueblo donde vivía mi abuelo", "answers": ["el pueblo donde vivía mi abuelo", "el pueblo en el que vivía mi abuelo"], "hint": "donde = в котором (место)" }
+      ]
+    },
+    {
+      "id": "l228",
+      "name": "Estar + gerundio",
+      "emoji": "🔄",
+      "desc": "Прогрессив: estoy comiendo",
+      "exercises": [
+        { "t": "pick", "q": "«Я сейчас ем»", "opts": [
+          { "txt": "como ahora",           "em": "❌" },
+          { "txt": "estoy comiendo ahora", "em": "🍽️" },
+          { "txt": "soy comiendo ahora",   "em": "❌" },
+          { "txt": "estoy come ahora",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Они работают сейчас»", "opts": [
+          { "txt": "están trabajando", "em": "💼" },
+          { "txt": "son trabajando",   "em": "❌" },
+          { "txt": "están trabajan",   "em": "❌" },
+          { "txt": "trabajan están",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "Герундий от «leer»", "opts": [
+          { "txt": "leendo",  "em": "❌" },
+          { "txt": "leyendo", "em": "📖" },
+          { "txt": "leando",  "em": "❌" },
+          { "txt": "leído",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["hablando",     "(от hablar)"],
+          ["comiendo",     "(от comer)"],
+          ["viviendo",     "(от vivir)"],
+          ["leyendo",      "(от leer — y!)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["estoy comiendo",  "я сейчас ем"],
+          ["estaba comiendo", "я ел (в тот момент)"],
+          ["estaré comiendo", "буду есть (в тот момент)"],
+          ["estuve comiendo", "я ел (закончил)"]
+        ]},
+        { "t": "translate", "from": "Мария спит сейчас", "tiles": ["María", "está", "durmiendo", "ahora", "duerme"], "answer": ["María", "está", "durmiendo", "ahora"] },
+        { "t": "fill", "sentence": ["Los niños", null, "en el parque."], "target": "están jugando", "opts": ["están jugando", "están juegan", "son jugando"], "hint": "Дети сейчас играют" },
+        { "t": "fill", "sentence": ["¿Qué", null, "?"], "target": "estás haciendo", "opts": ["estás haciendo", "haces hacer", "estás hacer"], "hint": "Что ты делаешь? (сейчас)" },
+        { "t": "typed", "from": "Я пишу письмо сейчас", "answer": "estoy escribiendo una carta", "answers": ["estoy escribiendo una carta", "estoy escribiendo una carta ahora"], "hint": "escribir → escribiendo" }
+      ]
+    },
+    {
+      "id": "l229",
+      "name": "Hace / Llevo",
+      "emoji": "⏱️",
+      "desc": "Прошедшее время + длительность",
+      "exercises": [
+        { "t": "pick", "q": "«Я учу испанский два года» (всё ещё учу)", "opts": [
+          { "txt": "estudio español por dos años",          "em": "❌" },
+          { "txt": "llevo dos años estudiando español",     "em": "📚" },
+          { "txt": "tengo dos años estudio español",        "em": "❌" },
+          { "txt": "soy dos años estudiando",               "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Три дня назад я приехал»", "opts": [
+          { "txt": "hace tres días llegué",   "em": "✅" },
+          { "txt": "tres días hace llegué",   "em": "❌" },
+          { "txt": "llevo tres días llegué",  "em": "❌" },
+          { "txt": "desde tres días llegué",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Сколько времени ты ждёшь?»", "opts": [
+          { "txt": "¿hace cuánto tiempo esperas?",       "em": "❌" },
+          { "txt": "¿cuánto tiempo llevas esperando?",   "em": "⏳" },
+          { "txt": "¿llevo cuánto tiempo esperar?",      "em": "❌" },
+          { "txt": "¿cuánto haces esperar?",             "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["hace + tiempo + pret.",       "X времени назад (закончено)"],
+          ["llevo + tiempo + gerundio",   "я уже X времени делаю (продолжается)"],
+          ["desde hace + tiempo",         "уже X времени"],
+          ["hace + tiempo + que + presente","уже X времени как"]
+        ]},
+        { "t": "translate", "from": "Я живу здесь пять лет", "tiles": ["llevo", "cinco", "años", "viviendo", "aquí", "vivo"], "answer": ["llevo", "cinco", "años", "viviendo", "aquí"] },
+        { "t": "fill", "sentence": [null, "dos horas que te espero."], "target": "Hace", "opts": ["Hace", "Llevo", "Desde"], "hint": "Уже 2 часа жду тебя" },
+        { "t": "fill", "sentence": ["Estudio español desde", null, "tres años."], "target": "hace", "opts": ["hace", "llevo", "desde"], "hint": "Изучаю уже 3 года" },
+        { "t": "typed", "from": "Я работаю здесь десять лет", "answer": "llevo diez años trabajando aquí", "answers": ["llevo diez años trabajando aquí", "hace diez años que trabajo aquí"], "hint": "длительность сейчас → llevo + герундий" }
+      ]
+    },
+    {
+      "id": "l230",
+      "name": "Pronominales",
+      "emoji": "🪞",
+      "desc": "Ponerse, irse, dormirse — смена смысла",
+      "exercises": [
+        { "t": "pick", "q": "«Я надеваю шляпу» (надеть = поставить НА СЕБЯ)", "opts": [
+          { "txt": "pongo un sombrero",      "em": "❌" },
+          { "txt": "me pongo un sombrero",   "em": "🎩" },
+          { "txt": "se pongo un sombrero",   "em": "❌" },
+          { "txt": "ponese un sombrero",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Я ухожу»", "opts": [
+          { "txt": "voy",     "em": "❌" },
+          { "txt": "me voy",  "em": "🚪" },
+          { "txt": "se voy",  "em": "❌" },
+          { "txt": "soy",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Засыпаю»", "opts": [
+          { "txt": "duermo",    "em": "❌" },
+          { "txt": "me duermo", "em": "😴" },
+          { "txt": "estoy durmiendo","em": "❌" },
+          { "txt": "se duermo", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["poner",      "класть"],
+          ["ponerse",    "надевать / становиться"],
+          ["ir",         "идти"],
+          ["irse",       "уходить"]
+        ]},
+        { "t": "match", "pairs": [
+          ["dormir",     "спать"],
+          ["dormirse",   "засыпать"],
+          ["llamar",     "звать"],
+          ["llamarse",   "называться"]
+        ]},
+        { "t": "translate", "from": "Я ухожу домой сейчас", "tiles": ["me", "voy", "a", "casa", "ahora", "voy"], "answer": ["me", "voy", "a", "casa", "ahora"] },
+        { "t": "fill", "sentence": ["María", null, "triste con la noticia."], "target": "se puso", "opts": ["se puso", "puso", "fue"], "hint": "Мария стала грустной (стать = ponerse)" },
+        { "t": "fill", "sentence": ["¡Vámonos!", null, " tarde."], "target": "Es", "opts": ["Es", "Está", "Hace"], "hint": "Пошли! Уже поздно" },
+        { "t": "typed", "from": "Я засыпаю в 11", "answer": "me duermo a las once", "answers": ["me duermo a las once", "me duermo a las 11"], "hint": "засыпать = dormirse" }
+      ]
+    }
+  ]
+}

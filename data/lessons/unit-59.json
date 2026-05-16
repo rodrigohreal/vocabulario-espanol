@@ -1,0 +1,180 @@
+{
+  "unit": 59,
+  "lessons": [
+    {
+      "id": "l291",
+      "name": "Construcción",
+      "emoji": "🏗️",
+      "desc": "Obra, andamio, ladrillo",
+      "exercises": [
+        { "t": "pick", "q": "«Стройка»", "opts": [
+          { "txt": "obra",      "em": "🏗️" },
+          { "txt": "tienda",    "em": "❌" },
+          { "txt": "fábrica",   "em": "❌" },
+          { "txt": "oficina",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Кирпич»", "opts": [
+          { "txt": "ladrillo","em": "🧱" },
+          { "txt": "cemento", "em": "❌" },
+          { "txt": "arena",   "em": "❌" },
+          { "txt": "piedra",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["obra",      "стройка"],
+          ["ladrillo",  "кирпич"],
+          ["cemento",   "цемент"],
+          ["andamio",   "леса"]
+        ]},
+        { "t": "match", "pairs": [
+          ["albañil",   "каменщик"],
+          ["arquitecto","архитектор"],
+          ["plano",     "чертёж"],
+          ["grúa",      "кран"]
+        ]},
+        { "t": "translate", "from": "Они строят новый дом", "tiles": ["están", "construyendo", "una", "casa", "nueva", "destruyen"], "answer": ["están", "construyendo", "una", "casa", "nueva"] },
+        { "t": "fill", "sentence": ["El", null, "preparó el plano."], "target": "arquitecto", "opts": ["arquitecto", "panadero", "tigre"], "hint": "Архитектор подготовил чертёж" },
+        { "t": "typed", "from": "Сколько этажей в здании?", "answer": "cuántas plantas tiene el edificio", "answers": ["cuántas plantas tiene el edificio", "cuántos pisos tiene el edificio"], "hint": "planta / piso" }
+      ]
+    },
+    {
+      "id": "l292",
+      "name": "Agricultura",
+      "emoji": "🌾",
+      "desc": "Cosecha, semilla, granja",
+      "exercises": [
+        { "t": "pick", "q": "«Урожай»", "opts": [
+          { "txt": "cosecha",  "em": "🌾" },
+          { "txt": "semilla",  "em": "❌" },
+          { "txt": "tierra",   "em": "❌" },
+          { "txt": "lluvia",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Ферма»", "opts": [
+          { "txt": "granja",   "em": "🚜" },
+          { "txt": "fábrica",  "em": "❌" },
+          { "txt": "molino",   "em": "❌" },
+          { "txt": "establo",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["cosecha",   "урожай"],
+          ["semilla",   "семя"],
+          ["granja",    "ферма"],
+          ["agricultor","фермер / агроном"]
+        ]},
+        { "t": "match", "pairs": [
+          ["cultivar",  "выращивать"],
+          ["regar",     "поливать"],
+          ["arar",      "пахать"],
+          ["tractor",   "трактор"]
+        ]},
+        { "t": "translate", "from": "Они выращивают пшеницу", "tiles": ["cultivan", "trigo", "maíz", "comen"], "answer": ["cultivan", "trigo"] },
+        { "t": "fill", "sentence": ["Este año la", null, "fue buena."], "target": "cosecha", "opts": ["cosecha", "fiesta", "casa"], "hint": "Урожай в этом году" },
+        { "t": "typed", "from": "У моего дедушки была ферма", "answer": "mi abuelo tenía una granja", "answers": ["mi abuelo tenía una granja", "mi abuelo tuvo una granja"], "hint": "imperfecto для описания прошлого" }
+      ]
+    },
+    {
+      "id": "l293",
+      "name": "Ganadería",
+      "emoji": "🐄",
+      "desc": "Vaca, ordeñar, pastor",
+      "exercises": [
+        { "t": "pick", "q": "«Скот»", "opts": [
+          { "txt": "ganado",   "em": "🐄" },
+          { "txt": "carne",    "em": "❌" },
+          { "txt": "granja",   "em": "❌" },
+          { "txt": "establo",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Доить»", "opts": [
+          { "txt": "ordeñar",   "em": "🥛" },
+          { "txt": "cocinar",   "em": "❌" },
+          { "txt": "esquilar",  "em": "❌" },
+          { "txt": "alimentar", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["ganado",    "скот"],
+          ["vaca",      "корова"],
+          ["oveja",     "овца"],
+          ["pastor",    "пастух"]
+        ]},
+        { "t": "match", "pairs": [
+          ["ordeñar",   "доить"],
+          ["esquilar",  "стричь (овец)"],
+          ["establo",   "хлев"],
+          ["pasto",     "пастбище"]
+        ]},
+        { "t": "translate", "from": "Пастух ведёт овец на пастбище", "tiles": ["el", "pastor", "lleva", "las", "ovejas", "al", "pasto", "monte"], "answer": ["el", "pastor", "lleva", "las", "ovejas", "al", "pasto"] },
+        { "t": "fill", "sentence": ["Tenemos veinte", null, "."], "target": "vacas", "opts": ["vacas", "ruedas", "ventanas"], "hint": "20 коров" },
+        { "t": "typed", "from": "Доим коров на рассвете", "answer": "ordeñamos las vacas al amanecer", "answers": ["ordeñamos las vacas al amanecer", "ordeñamos a las vacas al amanecer"], "hint": "ordeñar las vacas" }
+      ]
+    },
+    {
+      "id": "l294",
+      "name": "Pesca",
+      "emoji": "🎣",
+      "desc": "Red, anzuelo, pescador",
+      "exercises": [
+        { "t": "pick", "q": "«Рыбак»", "opts": [
+          { "txt": "pescador","em": "🎣" },
+          { "txt": "agricultor","em": "❌" },
+          { "txt": "pastor", "em": "❌" },
+          { "txt": "cazador","em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Сеть»", "opts": [
+          { "txt": "red",      "em": "🕸️" },
+          { "txt": "anzuelo",  "em": "❌" },
+          { "txt": "barco",    "em": "⛵" },
+          { "txt": "caña",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["pescador",  "рыбак"],
+          ["red",       "сеть"],
+          ["anzuelo",   "крючок"],
+          ["caña",      "удочка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["barco",       "лодка / судно"],
+          ["puerto",      "порт"],
+          ["captura",     "улов"],
+          ["mar",         "море"]
+        ]},
+        { "t": "translate", "from": "Мы поймали много рыбы", "tiles": ["pescamos", "muchos", "peces", "perdimos"], "answer": ["pescamos", "muchos", "peces"] },
+        { "t": "fill", "sentence": ["Mi padre tiene una", null, "."], "target": "caña", "opts": ["caña", "música", "fiesta"], "hint": "У отца удочка" },
+        { "t": "typed", "from": "Пойдём ловить рыбу в субботу", "answer": "vamos a pescar el sábado", "answers": ["vamos a pescar el sábado", "iremos a pescar el sábado"], "hint": "ir a pescar" }
+      ]
+    },
+    {
+      "id": "l295",
+      "name": "Política internac.",
+      "emoji": "🏛️",
+      "desc": "Cumbre, acuerdo, embajador",
+      "exercises": [
+        { "t": "pick", "q": "«Саммит»", "opts": [
+          { "txt": "cumbre",    "em": "🏔️" },
+          { "txt": "fiesta",    "em": "❌" },
+          { "txt": "reunión",   "em": "❌" },
+          { "txt": "concierto", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Посол»", "opts": [
+          { "txt": "embajador","em": "🤝" },
+          { "txt": "diputado", "em": "❌" },
+          { "txt": "rey",      "em": "❌" },
+          { "txt": "alcalde",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["cumbre",    "саммит"],
+          ["acuerdo",   "соглашение"],
+          ["embajador", "посол"],
+          ["embajada",  "посольство"]
+        ]},
+        { "t": "match", "pairs": [
+          ["tratado",    "договор"],
+          ["sanción",    "санкция"],
+          ["aliado",     "союзник"],
+          ["enemigo",    "враг"]
+        ]},
+        { "t": "translate", "from": "Подписали важное соглашение", "tiles": ["firmaron", "un", "acuerdo", "importante", "compraron"], "answer": ["firmaron", "un", "acuerdo", "importante"] },
+        { "t": "fill", "sentence": ["El", null, "habló con el presidente."], "target": "embajador", "opts": ["embajador", "perro", "pez"], "hint": "Посол говорил с президентом" },
+        { "t": "typed", "from": "В среду саммит в Мадриде", "answer": "el miércoles hay cumbre en Madrid", "answers": ["el miércoles hay cumbre en madrid", "el miércoles es la cumbre en madrid"], "hint": "miércoles" }
+      ]
+    }
+  ]
+}

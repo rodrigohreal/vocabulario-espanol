@@ -1,0 +1,180 @@
+{
+  "unit": 48,
+  "lessons": [
+    {
+      "id": "l236",
+      "name": "Pasta y arroz",
+      "emoji": "🍝",
+      "desc": "Espaguetis, paella, lasaña",
+      "exercises": [
+        { "t": "pick", "q": "«Спагетти»", "opts": [
+          { "txt": "espaguetis", "em": "🍝" },
+          { "txt": "fideos",     "em": "❌" },
+          { "txt": "lasaña",     "em": "❌" },
+          { "txt": "arroz",      "em": "🍚" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Паэлья»", "opts": [
+          { "txt": "paella",   "em": "🥘" },
+          { "txt": "risotto",  "em": "❌" },
+          { "txt": "tortilla", "em": "❌" },
+          { "txt": "sopa",     "em": "🍲" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["espaguetis", "спагетти"],
+          ["macarrones", "макароны"],
+          ["lasaña",     "лазанья"],
+          ["fideos",     "лапша"]
+        ]},
+        { "t": "match", "pairs": [
+          ["paella",  "паэлья"],
+          ["risotto", "ризотто"],
+          ["arroz blanco","белый рис"],
+          ["arroz integral","бурый рис"]
+        ]},
+        { "t": "translate", "from": "Хочу паэлью с морепродуктами", "tiles": ["quiero", "paella", "de", "mariscos", "carne"], "answer": ["quiero", "paella", "de", "mariscos"] },
+        { "t": "fill", "sentence": ["Italia es famosa por la", null, "."], "target": "pasta", "opts": ["pasta", "paella", "arroz"], "hint": "Италия знаменита пастой" },
+        { "t": "typed", "from": "Лазанья с мясом", "answer": "lasaña de carne", "answers": ["lasaña de carne", "lasaña con carne"], "hint": "de = из, с" }
+      ]
+    },
+    {
+      "id": "l237",
+      "name": "Vinos y bebidas",
+      "emoji": "🍷",
+      "desc": "Tinto, blanco, sangría",
+      "exercises": [
+        { "t": "pick", "q": "«Красное вино»", "opts": [
+          { "txt": "vino tinto",   "em": "🍷" },
+          { "txt": "vino blanco",  "em": "🥂" },
+          { "txt": "vino rosado",  "em": "❌" },
+          { "txt": "vino verde",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Сангрия»", "opts": [
+          { "txt": "sangría",  "em": "🍹" },
+          { "txt": "cerveza",  "em": "🍺" },
+          { "txt": "whisky",   "em": "🥃" },
+          { "txt": "ron",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["tinto",   "красное (вино)"],
+          ["blanco",  "белое"],
+          ["rosado",  "розовое"],
+          ["espumoso / cava","игристое"]
+        ]},
+        { "t": "match", "pairs": [
+          ["cerveza", "пиво"],
+          ["whisky",  "виски"],
+          ["ron",     "ром"],
+          ["sidra",   "сидр"]
+        ]},
+        { "t": "translate", "from": "Бокал красного вина, пожалуйста", "tiles": ["una", "copa", "de", "vino", "tinto", "por", "favor"], "answer": ["una", "copa", "de", "vino", "tinto", "por", "favor"] },
+        { "t": "fill", "sentence": ["Para celebrar, abrimos un", null, "."], "target": "cava", "opts": ["cava", "agua", "té"], "hint": "Чтобы отпраздновать — кава (игристое)" },
+        { "t": "typed", "from": "Я не пью алкоголь", "answer": "no bebo alcohol", "answers": ["no bebo alcohol", "yo no bebo alcohol"], "hint": "beber = пить" }
+      ]
+    },
+    {
+      "id": "l238",
+      "name": "Alergias",
+      "emoji": "⚠️",
+      "desc": "Gluten, lactosa, frutos secos",
+      "exercises": [
+        { "t": "pick", "q": "«У меня аллергия»", "opts": [
+          { "txt": "tengo alergia", "em": "⚠️" },
+          { "txt": "soy alergia",   "em": "❌" },
+          { "txt": "estoy alergia", "em": "❌" },
+          { "txt": "doy alergia",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Без глютена»", "opts": [
+          { "txt": "sin gluten",    "em": "🌾" },
+          { "txt": "con gluten",    "em": "❌" },
+          { "txt": "sin lactosa",   "em": "❌" },
+          { "txt": "sin azúcar",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["alergia",  "аллергия"],
+          ["gluten",   "глютен"],
+          ["lactosa",  "лактоза"],
+          ["intolerante","непереносимый"]
+        ]},
+        { "t": "match", "pairs": [
+          ["frutos secos","орехи"],
+          ["cacahuete",   "арахис"],
+          ["soja",        "соя"],
+          ["mariscos",    "морепродукты"]
+        ]},
+        { "t": "translate", "from": "У меня аллергия на орехи", "tiles": ["tengo", "alergia", "a", "los", "frutos", "secos", "soy"], "answer": ["tengo", "alergia", "a", "los", "frutos", "secos"] },
+        { "t": "fill", "sentence": ["¿Tiene este plato", null, "?"], "target": "lactosa", "opts": ["lactosa", "música", "viento"], "hint": "В этом блюде есть лактоза?" },
+        { "t": "typed", "from": "Я не переношу глютен", "answer": "soy intolerante al gluten", "answers": ["soy intolerante al gluten", "no tolero el gluten"], "hint": "intolerante al" }
+      ]
+    },
+    {
+      "id": "l239",
+      "name": "Vegetarianismo",
+      "emoji": "🥗",
+      "desc": "Vegano, vegetariano, plant-based",
+      "exercises": [
+        { "t": "pick", "q": "«Я вегетарианец»", "opts": [
+          { "txt": "soy vegetariano",  "em": "🥗" },
+          { "txt": "estoy vegetariano","em": "❌" },
+          { "txt": "como vegetariano", "em": "❌" },
+          { "txt": "soy vegan",        "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я веган»", "opts": [
+          { "txt": "soy vegetariano", "em": "❌" },
+          { "txt": "soy vegano",      "em": "🌱" },
+          { "txt": "estoy vegano",    "em": "❌" },
+          { "txt": "veo vegano",      "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["vegetariano",  "вегетарианец"],
+          ["vegano",       "веган"],
+          ["pescetariano", "пескетарианец"],
+          ["omnívoro",     "всеядный"]
+        ]},
+        { "t": "match", "pairs": [
+          ["sin carne",     "без мяса"],
+          ["sin pescado",   "без рыбы"],
+          ["sin lácteos",   "без молочного"],
+          ["100 % vegetal", "полностью растит."]
+        ]},
+        { "t": "translate", "from": "У вас есть веганские блюда?", "tiles": ["tienen", "platos", "veganos", "carne"], "answer": ["tienen", "platos", "veganos"] },
+        { "t": "fill", "sentence": ["No como", null, "."], "target": "carne", "opts": ["carne", "verduras", "agua"], "hint": "Я не ем мясо" },
+        { "t": "typed", "from": "Ищу веганский ресторан", "answer": "busco un restaurante vegano", "answers": ["busco un restaurante vegano", "estoy buscando un restaurante vegano"], "hint": "buscar = искать" }
+      ]
+    },
+    {
+      "id": "l240",
+      "name": "Dieta y nutrición",
+      "emoji": "📊",
+      "desc": "Calorías, proteína, ayuno",
+      "exercises": [
+        { "t": "pick", "q": "«Калории»", "opts": [
+          { "txt": "calorías",   "em": "🔥" },
+          { "txt": "vitaminas",  "em": "💊" },
+          { "txt": "minerales",  "em": "🧂" },
+          { "txt": "azúcares",   "em": "🍬" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я на диете»", "opts": [
+          { "txt": "estoy a dieta",  "em": "🥗" },
+          { "txt": "soy a dieta",    "em": "❌" },
+          { "txt": "hago a dieta",   "em": "❌" },
+          { "txt": "tengo dieta",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["proteína",     "белок"],
+          ["carbohidratos","углеводы"],
+          ["grasa",        "жир"],
+          ["fibra",        "клетчатка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["dieta",         "диета"],
+          ["ayuno",         "пост / голодание"],
+          ["adelgazar",     "худеть"],
+          ["engordar",      "поправляться"]
+        ]},
+        { "t": "translate", "from": "Я хочу похудеть", "tiles": ["quiero", "adelgazar", "engordar"], "answer": ["quiero", "adelgazar"] },
+        { "t": "fill", "sentence": ["Esta dieta es alta en", null, "."], "target": "proteína", "opts": ["proteína", "gasolina", "música"], "hint": "Эта диета высокобелковая" },
+        { "t": "typed", "from": "Сколько калорий в этом?", "answer": "cuántas calorías tiene esto", "answers": ["cuántas calorías tiene esto", "cuántas calorías hay en esto"], "hint": "calorías ж.р. мн." }
+      ]
+    }
+  ]
+}

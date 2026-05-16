@@ -1,0 +1,806 @@
+{
+  "unit": 13,
+  "lessons": [
+    {
+      "id": "l61",
+      "name": "Ropa invierno",
+      "emoji": "🧥",
+      "desc": "Abrigo, bufanda, guantes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Пальто»",
+          "opts": [
+            {
+              "txt": "abrigo",
+              "em": "🧥"
+            },
+            {
+              "txt": "camisa",
+              "em": "👔"
+            },
+            {
+              "txt": "falda",
+              "em": "👗"
+            },
+            {
+              "txt": "zapato",
+              "em": "👞"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Шарф»",
+          "opts": [
+            {
+              "txt": "gorro",
+              "em": "🧢"
+            },
+            {
+              "txt": "guantes",
+              "em": "🧤"
+            },
+            {
+              "txt": "bufanda",
+              "em": "🧣"
+            },
+            {
+              "txt": "botas",
+              "em": "👢"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Перчатки»",
+          "opts": [
+            {
+              "txt": "guantes",
+              "em": "🧤"
+            },
+            {
+              "txt": "calcetines",
+              "em": "🧦"
+            },
+            {
+              "txt": "gorro",
+              "em": "🧢"
+            },
+            {
+              "txt": "cinturón",
+              "em": "👖"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "abrigo",
+              "пальто"
+            ],
+            [
+              "bufanda",
+              "шарф"
+            ],
+            [
+              "guantes",
+              "перчатки"
+            ],
+            [
+              "gorro",
+              "шапка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "botas",
+              "сапоги"
+            ],
+            [
+              "calcetines",
+              "носки"
+            ],
+            [
+              "chaqueta",
+              "куртка"
+            ],
+            [
+              "suéter",
+              "свитер"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужны перчатки",
+          "tiles": [
+            "necesito",
+            "guantes",
+            "una",
+            "bufanda",
+            "unos"
+          ],
+          "answer": [
+            "necesito",
+            "unos",
+            "guantes"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hace frío, ponte el",
+            null,
+            "."
+          ],
+          "target": "abrigo",
+          "opts": [
+            "abrigo",
+            "verano",
+            "sol"
+          ],
+          "hint": "Холодно, надень пальто"
+        }
+      ]
+    },
+    {
+      "id": "l62",
+      "name": "Cocina",
+      "emoji": "🍳",
+      "desc": "Utensilios y platos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Ложка»",
+          "opts": [
+            {
+              "txt": "cuchara",
+              "em": "🥄"
+            },
+            {
+              "txt": "tenedor",
+              "em": "🍴"
+            },
+            {
+              "txt": "cuchillo",
+              "em": "🔪"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Вилка»",
+          "opts": [
+            {
+              "txt": "cuchara",
+              "em": "🥄"
+            },
+            {
+              "txt": "tenedor",
+              "em": "🍴"
+            },
+            {
+              "txt": "cuchillo",
+              "em": "🔪"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Нож»",
+          "opts": [
+            {
+              "txt": "cuchara",
+              "em": "🥄"
+            },
+            {
+              "txt": "tenedor",
+              "em": "🍴"
+            },
+            {
+              "txt": "cuchillo",
+              "em": "🔪"
+            },
+            {
+              "txt": "vaso",
+              "em": "🥛"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cuchara",
+              "ложка"
+            ],
+            [
+              "tenedor",
+              "вилка"
+            ],
+            [
+              "cuchillo",
+              "нож"
+            ],
+            [
+              "plato",
+              "тарелка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "vaso",
+              "стакан"
+            ],
+            [
+              "taza",
+              "чашка"
+            ],
+            [
+              "olla",
+              "кастрюля"
+            ],
+            [
+              "sartén",
+              "сковорода"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Дай мне ложку",
+          "tiles": [
+            "dame",
+            "una",
+            "un",
+            "cuchara",
+            "tenedor"
+          ],
+          "answer": [
+            "dame",
+            "una",
+            "cuchara"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesito un",
+            null,
+            "para cortar el pan."
+          ],
+          "target": "cuchillo",
+          "opts": [
+            "cuchillo",
+            "tenedor",
+            "plato"
+          ],
+          "hint": "Нож, чтобы резать хлеб"
+        }
+      ]
+    },
+    {
+      "id": "l63",
+      "name": "Hotel",
+      "emoji": "🏨",
+      "desc": "Habitación, llave, reserva",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Номер (в отеле)»",
+          "opts": [
+            {
+              "txt": "habitación",
+              "em": "🛏️"
+            },
+            {
+              "txt": "cocina",
+              "em": "🍳"
+            },
+            {
+              "txt": "balcón",
+              "em": "🪟"
+            },
+            {
+              "txt": "piscina",
+              "em": "🏊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ключ»",
+          "opts": [
+            {
+              "txt": "puerta",
+              "em": "🚪"
+            },
+            {
+              "txt": "llave",
+              "em": "🔑"
+            },
+            {
+              "txt": "mesa",
+              "em": "🪑"
+            },
+            {
+              "txt": "cama",
+              "em": "🛏️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Бронь»",
+          "opts": [
+            {
+              "txt": "recepción",
+              "em": "🛎️"
+            },
+            {
+              "txt": "piso",
+              "em": "🏢"
+            },
+            {
+              "txt": "reserva",
+              "em": "📋"
+            },
+            {
+              "txt": "ducha",
+              "em": "🚿"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "habitación",
+              "номер"
+            ],
+            [
+              "llave",
+              "ключ"
+            ],
+            [
+              "recepción",
+              "ресепшен"
+            ],
+            [
+              "reserva",
+              "бронь"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "piso",
+              "этаж"
+            ],
+            [
+              "ascensor",
+              "лифт"
+            ],
+            [
+              "ducha",
+              "душ"
+            ],
+            [
+              "cama",
+              "кровать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть бронь",
+          "tiles": [
+            "tengo",
+            "una",
+            "reserva",
+            "un",
+            "piso"
+          ],
+          "answer": [
+            "tengo",
+            "una",
+            "reserva"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Cuál es el número de la",
+            null,
+            "?"
+          ],
+          "target": "habitación",
+          "opts": [
+            "habitación",
+            "llave",
+            "ducha"
+          ],
+          "hint": "Какой номер комнаты?"
+        }
+      ]
+    },
+    {
+      "id": "l64",
+      "name": "Imperfecto",
+      "emoji": "⏳",
+      "desc": "Прошедшее (длительное) время",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я говорил»",
+          "opts": [
+            {
+              "txt": "hablaba",
+              "em": "🗣️"
+            },
+            {
+              "txt": "hablo",
+              "em": "⏺️"
+            },
+            {
+              "txt": "hablaré",
+              "em": "⏩"
+            },
+            {
+              "txt": "habla",
+              "em": "👉"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я ел»",
+          "opts": [
+            {
+              "txt": "como",
+              "em": "⏺️"
+            },
+            {
+              "txt": "comía",
+              "em": "⏪"
+            },
+            {
+              "txt": "comeré",
+              "em": "⏩"
+            },
+            {
+              "txt": "comer",
+              "em": "🍴"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я жил (в Москве)»",
+          "opts": [
+            {
+              "txt": "vivo",
+              "em": "⏺️"
+            },
+            {
+              "txt": "viviré",
+              "em": "⏩"
+            },
+            {
+              "txt": "vivía",
+              "em": "⏪"
+            },
+            {
+              "txt": "vivir",
+              "em": "🏠"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hablaba",
+              "я говорил"
+            ],
+            [
+              "comía",
+              "я ел"
+            ],
+            [
+              "vivía",
+              "я жил"
+            ],
+            [
+              "era",
+              "я был (ser)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estaba",
+              "я был (estar)"
+            ],
+            [
+              "iba",
+              "я шёл"
+            ],
+            [
+              "tenía",
+              "у меня было"
+            ],
+            [
+              "veía",
+              "я видел"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Раньше я жил в Мадриде",
+          "tiles": [
+            "antes",
+            "vivía",
+            "en",
+            "Madrid",
+            "vivo"
+          ],
+          "answer": [
+            "antes",
+            "vivía",
+            "en",
+            "Madrid"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Cuando era niño,",
+            null,
+            "mucho."
+          ],
+          "target": "jugaba",
+          "opts": [
+            "jugaba",
+            "juego",
+            "jugar"
+          ],
+          "hint": "Когда я был ребёнком, я много играл"
+        },
+        {
+          "t": "pick",
+          "q": "«Когда я был ребёнком...»",
+          "opts": [
+            {
+              "txt": "cuando era niño",
+              "em": "⏪"
+            },
+            {
+              "txt": "cuando soy niño",
+              "em": "⏺️"
+            },
+            {
+              "txt": "cuando seré niño",
+              "em": "⏩"
+            },
+            {
+              "txt": "cuando fui niño",
+              "em": "⏪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "De pequeño, yo",
+            null,
+            "al parque cada día."
+          ],
+          "target": "iba",
+          "opts": [
+            "iba",
+            "voy",
+            "fui"
+          ],
+          "hint": "В детстве я ходил в парк каждый день"
+        },
+        {
+          "t": "typed",
+          "from": "Раньше я жил в Москве",
+          "answer": "antes vivía en moscú",
+          "answers": [
+            "antes vivía en moscú",
+            "antes yo vivía en moscú",
+            "vivía en moscú antes",
+            "yo vivía en moscú"
+          ],
+          "hint": "imperfecto: vivía"
+        }
+      ]
+    },
+    {
+      "id": "l65",
+      "name": "Repaso 10",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 61-64",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Шарф»",
+          "opts": [
+            {
+              "txt": "gorro",
+              "em": "🧢"
+            },
+            {
+              "txt": "bufanda",
+              "em": "🧣"
+            },
+            {
+              "txt": "guantes",
+              "em": "🧤"
+            },
+            {
+              "txt": "botas",
+              "em": "👢"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Вилка»",
+          "opts": [
+            {
+              "txt": "cuchara",
+              "em": "🥄"
+            },
+            {
+              "txt": "tenedor",
+              "em": "🍴"
+            },
+            {
+              "txt": "cuchillo",
+              "em": "🔪"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я ел»",
+          "opts": [
+            {
+              "txt": "como",
+              "em": "⏺️"
+            },
+            {
+              "txt": "comía",
+              "em": "⏪"
+            },
+            {
+              "txt": "comeré",
+              "em": "⏩"
+            },
+            {
+              "txt": "comer",
+              "em": "🍴"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "abrigo",
+              "пальто"
+            ],
+            [
+              "guantes",
+              "перчатки"
+            ],
+            [
+              "cuchara",
+              "ложка"
+            ],
+            [
+              "plato",
+              "тарелка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "llave",
+              "ключ"
+            ],
+            [
+              "habitación",
+              "номер"
+            ],
+            [
+              "hablaba",
+              "я говорил"
+            ],
+            [
+              "vivía",
+              "я жил"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть бронь",
+          "tiles": [
+            "tengo",
+            "una",
+            "reserva",
+            "piso"
+          ],
+          "answer": [
+            "tengo",
+            "una",
+            "reserva"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Antes",
+            null,
+            "en Madrid."
+          ],
+          "target": "vivía",
+          "opts": [
+            "vivía",
+            "vivo",
+            "viviré"
+          ],
+          "hint": "Раньше я жил в Мадриде"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1072 @@
+{
+  "unit": 40,
+  "lessons": [
+    {
+      "id": "l196",
+      "name": "Diminutivos",
+      "emoji": "🤏",
+      "desc": "-ito, -azo, -ón",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Малыш / маленький брат» (от hermano)",
+          "opts": [
+            {
+              "txt": "hermanito",
+              "em": "🧒"
+            },
+            {
+              "txt": "hermanote",
+              "em": "🧔"
+            },
+            {
+              "txt": "hermanón",
+              "em": "👨"
+            },
+            {
+              "txt": "hermanazo",
+              "em": "💪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Большой удар» (от puerta = дверь)",
+          "opts": [
+            {
+              "txt": "portazo",
+              "em": "🚪"
+            },
+            {
+              "txt": "portita",
+              "em": "🤏"
+            },
+            {
+              "txt": "portico",
+              "em": "🏛️"
+            },
+            {
+              "txt": "puertilla",
+              "em": "🪟"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Котик / котёночек» (от gato)",
+          "opts": [
+            {
+              "txt": "gatito",
+              "em": "🐱"
+            },
+            {
+              "txt": "gatazo",
+              "em": "🐆"
+            },
+            {
+              "txt": "gatón",
+              "em": "🦁"
+            },
+            {
+              "txt": "gatote",
+              "em": "🐯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "-ito / -ita",
+              "уменьш. (милый)"
+            ],
+            [
+              "-illo / -illa",
+              "уменьш."
+            ],
+            [
+              "-azo",
+              "удар / большой"
+            ],
+            [
+              "-ón / -ona",
+              "увеличит."
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "perrito",
+              "щенок"
+            ],
+            [
+              "casita",
+              "домик"
+            ],
+            [
+              "amigazo",
+              "большой друг"
+            ],
+            [
+              "preguntón",
+              "любопытный"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня маленькая собачка",
+          "tiles": [
+            "tengo",
+            "un",
+            "perrito",
+            "pequeño",
+            "el"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "perrito"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¡Qué",
+            null,
+            "tan bonita!"
+          ],
+          "target": "casita",
+          "opts": [
+            "casita",
+            "casaza",
+            "casona"
+          ],
+          "hint": "какой милый домик!"
+        },
+        {
+          "t": "typed",
+          "from": "Маленький котёнок очень милый",
+          "answer": "el gatito es muy bonito",
+          "answers": [
+            "el gatito es muy bonito",
+            "el gatito es muy lindo",
+            "el gatito es muy mono"
+          ],
+          "hint": "gatito + bonito / lindo / mono"
+        }
+      ]
+    },
+    {
+      "id": "l197",
+      "name": "Falsos amigos",
+      "emoji": "⚠️",
+      "desc": "Trampas: embarazada ≠ embarrassed",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«embarazada» означает...",
+          "opts": [
+            {
+              "txt": "беременная",
+              "em": "🤰"
+            },
+            {
+              "txt": "смущённая",
+              "em": "😳"
+            },
+            {
+              "txt": "занятая",
+              "em": "⏰"
+            },
+            {
+              "txt": "усталая",
+              "em": "😴"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«éxito» означает...",
+          "opts": [
+            {
+              "txt": "успех",
+              "em": "🏆"
+            },
+            {
+              "txt": "выход",
+              "em": "🚪"
+            },
+            {
+              "txt": "налог",
+              "em": "🧾"
+            },
+            {
+              "txt": "опыт",
+              "em": "💼"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«ropa» означает...",
+          "opts": [
+            {
+              "txt": "одежда",
+              "em": "👕"
+            },
+            {
+              "txt": "верёвка",
+              "em": "🪢"
+            },
+            {
+              "txt": "роза",
+              "em": "🌹"
+            },
+            {
+              "txt": "еда",
+              "em": "🍽️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "carpeta",
+              "папка (не ковёр!)"
+            ],
+            [
+              "librería",
+              "книжный (не библиотека!)"
+            ],
+            [
+              "molestar",
+              "беспокоить (не приставать!)"
+            ],
+            [
+              "actualmente",
+              "сейчас (не «на самом деле»!)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "constipado",
+              "простужен (не запор!)"
+            ],
+            [
+              "sensible",
+              "чувствительный (не разумный!)"
+            ],
+            [
+              "largo",
+              "длинный (не большой!)"
+            ],
+            [
+              "fábrica",
+              "завод (не ткань!)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Эта книга очень длинная",
+          "tiles": [
+            "este",
+            "libro",
+            "es",
+            "muy",
+            "largo",
+            "grande"
+          ],
+          "answer": [
+            "este",
+            "libro",
+            "es",
+            "muy",
+            "largo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a la",
+            null,
+            "a comprar un libro."
+          ],
+          "target": "librería",
+          "opts": [
+            "librería",
+            "biblioteca",
+            "fábrica"
+          ],
+          "hint": "я иду в книжный (магазин)"
+        },
+        {
+          "t": "typed",
+          "from": "Сейчас я живу в Мадриде",
+          "answer": "actualmente vivo en madrid",
+          "answers": [
+            "actualmente vivo en madrid",
+            "actualmente vivo en Madrid"
+          ],
+          "hint": "actualmente = сейчас (не \"на самом деле\")"
+        }
+      ]
+    },
+    {
+      "id": "l198",
+      "name": "Slang",
+      "emoji": "😎",
+      "desc": "Tío, guay, vale (España)",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Чувак / дружище» (Испания)",
+          "opts": [
+            {
+              "txt": "tío",
+              "em": "👨"
+            },
+            {
+              "txt": "tía",
+              "em": "👩"
+            },
+            {
+              "txt": "tito",
+              "em": "🧒"
+            },
+            {
+              "txt": "tonto",
+              "em": "🤡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Круто! / Класс!» (Испания)",
+          "opts": [
+            {
+              "txt": "¡qué guay!",
+              "em": "😎"
+            },
+            {
+              "txt": "¡qué horror!",
+              "em": "😱"
+            },
+            {
+              "txt": "¡qué pena!",
+              "em": "😢"
+            },
+            {
+              "txt": "¡qué asco!",
+              "em": "🤢"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«ОК / ладно»",
+          "opts": [
+            {
+              "txt": "vale",
+              "em": "👌"
+            },
+            {
+              "txt": "valor",
+              "em": "💪"
+            },
+            {
+              "txt": "valle",
+              "em": "⛰️"
+            },
+            {
+              "txt": "valija",
+              "em": "🧳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tío/tía",
+              "чувак / подруга"
+            ],
+            [
+              "guay",
+              "круто"
+            ],
+            [
+              "vale",
+              "ок"
+            ],
+            [
+              "chulo",
+              "клёво"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "molar",
+              "нравиться (молодёжное)"
+            ],
+            [
+              "flipar",
+              "офигевать"
+            ],
+            [
+              "currar",
+              "работать (разг.)"
+            ],
+            [
+              "pasta",
+              "деньги (разг.)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Чувак, это очень круто!",
+          "tiles": [
+            "tío",
+            "¡",
+            "qué",
+            "guay",
+            "eso",
+            "!"
+          ],
+          "answer": [
+            "tío",
+            "¡",
+            "qué",
+            "guay",
+            "!"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Vamos al cine? —",
+            null,
+            "."
+          ],
+          "target": "Vale",
+          "opts": [
+            "Vale",
+            "Valor",
+            "Vacío"
+          ],
+          "hint": "Идём в кино? — Ладно!"
+        },
+        {
+          "t": "typed",
+          "from": "Это мне очень нравится (молодёжное)",
+          "answer": "esto me mola mucho",
+          "answers": [
+            "esto me mola mucho",
+            "me mola mucho esto",
+            "me mola un montón"
+          ],
+          "hint": "me mola (= me gusta) mucho / un montón"
+        }
+      ]
+    },
+    {
+      "id": "l199",
+      "name": "Variantes",
+      "emoji": "🌎",
+      "desc": "España vs LatAm: coche/carro, ordenador/computadora",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Машина»: Испания / Лат. Америка",
+          "opts": [
+            {
+              "txt": "coche / carro",
+              "em": "🚗"
+            },
+            {
+              "txt": "autobús / autobús",
+              "em": "🚌"
+            },
+            {
+              "txt": "bici / bici",
+              "em": "🚲"
+            },
+            {
+              "txt": "moto / moto",
+              "em": "🏍️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Компьютер»: Испания",
+          "opts": [
+            {
+              "txt": "ordenador",
+              "em": "💻"
+            },
+            {
+              "txt": "computadora",
+              "em": "💻"
+            },
+            {
+              "txt": "computador",
+              "em": "💻"
+            },
+            {
+              "txt": "ordenanza",
+              "em": "⚖️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сок»: Мексика",
+          "opts": [
+            {
+              "txt": "jugo",
+              "em": "🧃"
+            },
+            {
+              "txt": "zumo",
+              "em": "🧃"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "refresco",
+              "em": "🥤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "coche (Esp.)",
+              "carro (LatAm)"
+            ],
+            [
+              "ordenador (Esp.)",
+              "computadora (LatAm)"
+            ],
+            [
+              "zumo (Esp.)",
+              "jugo (LatAm)"
+            ],
+            [
+              "móvil (Esp.)",
+              "celular (LatAm)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "piso (Esp.)",
+              "departamento (LatAm)"
+            ],
+            [
+              "conducir (Esp.)",
+              "manejar (LatAm)"
+            ],
+            [
+              "gafas (Esp.)",
+              "anteojos / lentes (LatAm)"
+            ],
+            [
+              "patatas (Esp.)",
+              "papas (LatAm)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я веду машину (Лат. Америка)",
+          "tiles": [
+            "manejo",
+            "el",
+            "carro",
+            "el",
+            "coche",
+            "conduzco"
+          ],
+          "answer": [
+            "manejo",
+            "el",
+            "carro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "En España, las patatas; en México, las",
+            null,
+            "."
+          ],
+          "target": "papas",
+          "opts": [
+            "papas",
+            "pipas",
+            "piezas"
+          ],
+          "hint": "испанский = patatas, мекс. = papas"
+        },
+        {
+          "t": "typed",
+          "from": "Мой мобильник (Лат. Америка)",
+          "answer": "mi celular",
+          "answers": [
+            "mi celular"
+          ],
+          "hint": "мобильник: España = móvil, LatAm = celular"
+        }
+      ]
+    },
+    {
+      "id": "l200",
+      "name": "Repaso Maestro V",
+      "emoji": "🏆",
+      "desc": "¡Lección 200! Repaso final (176-199)",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Свидание»",
+          "opts": [
+            {
+              "txt": "cita",
+              "em": "💘"
+            },
+            {
+              "txt": "casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "cara",
+              "em": "😊"
+            },
+            {
+              "txt": "cama",
+              "em": "🛏️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Волонтёр»",
+          "opts": [
+            {
+              "txt": "voluntario",
+              "em": "🙋"
+            },
+            {
+              "txt": "vendedor",
+              "em": "🛒"
+            },
+            {
+              "txt": "visitante",
+              "em": "🚶"
+            },
+            {
+              "txt": "vecino",
+              "em": "🏘️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Палатка»",
+          "opts": [
+            {
+              "txt": "tienda",
+              "em": "⛺"
+            },
+            {
+              "txt": "tarjeta",
+              "em": "💳"
+            },
+            {
+              "txt": "tortilla",
+              "em": "🌯"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Адвокат»",
+          "opts": [
+            {
+              "txt": "abogado",
+              "em": "👨‍💼"
+            },
+            {
+              "txt": "abuelo",
+              "em": "👴"
+            },
+            {
+              "txt": "abrazo",
+              "em": "🤗"
+            },
+            {
+              "txt": "abeja",
+              "em": "🐝"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Стипендия»",
+          "opts": [
+            {
+              "txt": "beca",
+              "em": "💰"
+            },
+            {
+              "txt": "boca",
+              "em": "👄"
+            },
+            {
+              "txt": "bolsa",
+              "em": "👜"
+            },
+            {
+              "txt": "boda",
+              "em": "💒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Котёночек» (gato + -ito)",
+          "opts": [
+            {
+              "txt": "gatito",
+              "em": "🐱"
+            },
+            {
+              "txt": "gatazo",
+              "em": "🐆"
+            },
+            {
+              "txt": "gatón",
+              "em": "🦁"
+            },
+            {
+              "txt": "gatote",
+              "em": "🐯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«embarazada» = ...",
+          "opts": [
+            {
+              "txt": "беременная",
+              "em": "🤰"
+            },
+            {
+              "txt": "смущённая",
+              "em": "😳"
+            },
+            {
+              "txt": "занятая",
+              "em": "⏰"
+            },
+            {
+              "txt": "усталая",
+              "em": "😴"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«ОК / ладно» (Испания)",
+          "opts": [
+            {
+              "txt": "vale",
+              "em": "👌"
+            },
+            {
+              "txt": "valor",
+              "em": "💪"
+            },
+            {
+              "txt": "valle",
+              "em": "⛰️"
+            },
+            {
+              "txt": "valija",
+              "em": "🧳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "novio",
+              "парень"
+            ],
+            [
+              "enamorarse",
+              "влюбиться"
+            ],
+            [
+              "problema",
+              "проблема"
+            ],
+            [
+              "solución",
+              "решение"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mochila",
+              "рюкзак"
+            ],
+            [
+              "fogata",
+              "костёр"
+            ],
+            [
+              "luz",
+              "свет"
+            ],
+            [
+              "factura",
+              "счёт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ladrón",
+              "вор"
+            ],
+            [
+              "juez",
+              "судья"
+            ],
+            [
+              "policía",
+              "полицейский"
+            ],
+            [
+              "multa",
+              "штраф"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "universidad",
+              "университет"
+            ],
+            [
+              "examen",
+              "экзамен"
+            ],
+            [
+              "nota",
+              "оценка"
+            ],
+            [
+              "tesis",
+              "диссертация"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "coche / carro",
+              "машина (Esp/LatAm)"
+            ],
+            [
+              "ordenador / computadora",
+              "компьютер"
+            ],
+            [
+              "móvil / celular",
+              "мобильник"
+            ],
+            [
+              "zumo / jugo",
+              "сок"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мы должны защищать планету",
+          "tiles": [
+            "tenemos",
+            "que",
+            "proteger",
+            "el",
+            "planeta"
+          ],
+          "answer": [
+            "tenemos",
+            "que",
+            "proteger",
+            "el",
+            "planeta"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Позвони в полицию!",
+          "tiles": [
+            "¡",
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "!"
+          ],
+          "answer": [
+            "¡",
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "!"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я сдал экзамен",
+          "tiles": [
+            "aprobé",
+            "el",
+            "examen",
+            "suspendí"
+          ],
+          "answer": [
+            "aprobé",
+            "el",
+            "examen"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos a montar la",
+            null,
+            "."
+          ],
+          "target": "tienda",
+          "opts": [
+            "tienda",
+            "tarjeta",
+            "tortilla"
+          ],
+          "hint": "установим палатку"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No hay",
+            null,
+            "en mi casa."
+          ],
+          "target": "agua",
+          "opts": [
+            "agua",
+            "aire",
+            "arena"
+          ],
+          "hint": "в моём доме нет воды"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a",
+            null,
+            "una beca."
+          ],
+          "target": "solicitar",
+          "opts": [
+            "solicitar",
+            "subir",
+            "soñar"
+          ],
+          "hint": "подам заявление на стипендию"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу выйти с тобой",
+          "answer": "quiero salir contigo",
+          "answers": [
+            "quiero salir contigo",
+            "me gustaría salir contigo"
+          ],
+          "hint": "salir contigo"
+        },
+        {
+          "t": "typed",
+          "from": "Мой мобильник (Лат. Америка)",
+          "answer": "mi celular",
+          "answers": [
+            "mi celular"
+          ],
+          "hint": "celular (LatAm) / móvil (Esp.)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "unit": 31,
+  "lessons": [
+    {
+      "id": "l151",
+      "name": "Entrevista",
+      "emoji": "💼",
+      "desc": "Trabajo, jefe, sueldo",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Собеседование»",
+          "opts": [
+            {
+              "txt": "entrevista",
+              "em": "🗣️"
+            },
+            {
+              "txt": "entrada",
+              "em": "🚪"
+            },
+            {
+              "txt": "entrega",
+              "em": "📦"
+            },
+            {
+              "txt": "entrenador",
+              "em": "🏋️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Начальник / босс»",
+          "opts": [
+            {
+              "txt": "jefe",
+              "em": "👔"
+            },
+            {
+              "txt": "jamón",
+              "em": "🍖"
+            },
+            {
+              "txt": "jardín",
+              "em": "🌳"
+            },
+            {
+              "txt": "juego",
+              "em": "🎮"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Зарплата»",
+          "opts": [
+            {
+              "txt": "sueldo",
+              "em": "💰"
+            },
+            {
+              "txt": "sueño",
+              "em": "😴"
+            },
+            {
+              "txt": "sumo",
+              "em": "🤼"
+            },
+            {
+              "txt": "sur",
+              "em": "🧭"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "entrevista",
+              "собеседование"
+            ],
+            [
+              "jefe",
+              "начальник"
+            ],
+            [
+              "empleado",
+              "работник"
+            ],
+            [
+              "contrato",
+              "контракт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sueldo",
+              "зарплата"
+            ],
+            [
+              "horario",
+              "график"
+            ],
+            [
+              "experiencia",
+              "опыт"
+            ],
+            [
+              "vacaciones",
+              "отпуск"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня собеседование завтра",
+          "tiles": [
+            "tengo",
+            "una",
+            "entrevista",
+            "mañana",
+            "hoy"
+          ],
+          "answer": [
+            "tengo",
+            "una",
+            "entrevista",
+            "mañana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "es muy amable."
+          ],
+          "target": "jefe",
+          "opts": [
+            "jefe",
+            "juego",
+            "jamón"
+          ],
+          "hint": "мой начальник очень добрый"
+        },
+        {
+          "t": "typed",
+          "from": "Какая твоя зарплата?",
+          "answer": "¿cuál es tu sueldo?",
+          "answers": [
+            "¿cuál es tu sueldo?",
+            "cuál es tu sueldo",
+            "¿cuánto es tu sueldo?"
+          ],
+          "hint": "cuál / cuánto + tu sueldo"
+        }
+      ]
+    },
+    {
+      "id": "l152",
+      "name": "Carrera",
+      "emoji": "📄",
+      "desc": "CV, profesión, formación",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Резюме / CV»",
+          "opts": [
+            {
+              "txt": "currículum",
+              "em": "📄"
+            },
+            {
+              "txt": "cumbre",
+              "em": "⛰️"
+            },
+            {
+              "txt": "cumpleaños",
+              "em": "🎂"
+            },
+            {
+              "txt": "cura",
+              "em": "⛪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Опыт работы»",
+          "opts": [
+            {
+              "txt": "experiencia laboral",
+              "em": "💼"
+            },
+            {
+              "txt": "experiencia mortal",
+              "em": "⚠️"
+            },
+            {
+              "txt": "experiencia social",
+              "em": "👥"
+            },
+            {
+              "txt": "experiencia rara",
+              "em": "❓"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Образование»",
+          "opts": [
+            {
+              "txt": "edificio",
+              "em": "🏢"
+            },
+            {
+              "txt": "educación",
+              "em": "🎓"
+            },
+            {
+              "txt": "editorial",
+              "em": "📚"
+            },
+            {
+              "txt": "efecto",
+              "em": "✨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "currículum",
+              "резюме"
+            ],
+            [
+              "educación",
+              "образование"
+            ],
+            [
+              "experiencia",
+              "опыт"
+            ],
+            [
+              "habilidad",
+              "навык"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "carrera",
+              "карьера / специальность"
+            ],
+            [
+              "título",
+              "диплом / звание"
+            ],
+            [
+              "idioma",
+              "язык"
+            ],
+            [
+              "referencia",
+              "рекомендация"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я говорю на трёх языках",
+          "tiles": [
+            "hablo",
+            "tres",
+            "idiomas",
+            "lengua"
+          ],
+          "answer": [
+            "hablo",
+            "tres",
+            "idiomas"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo cinco años de",
+            null,
+            "."
+          ],
+          "target": "experiencia",
+          "opts": [
+            "experiencia",
+            "educación",
+            "salario"
+          ],
+          "hint": "у меня пять лет опыта"
+        },
+        {
+          "t": "typed",
+          "from": "Я отправляю своё резюме",
+          "answer": "envío mi currículum",
+          "answers": [
+            "envío mi currículum",
+            "mando mi currículum",
+            "yo envío mi currículum"
+          ],
+          "hint": "enviar / mandar + mi currículum"
+        }
+      ]
+    },
+    {
+      "id": "l153",
+      "name": "Reuniones",
+      "emoji": "🤝",
+      "desc": "Junta, agenda, presentación",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Совещание / встреча»",
+          "opts": [
+            {
+              "txt": "reunión",
+              "em": "🤝"
+            },
+            {
+              "txt": "recepción",
+              "em": "🛎️"
+            },
+            {
+              "txt": "reciclar",
+              "em": "♻️"
+            },
+            {
+              "txt": "regalo",
+              "em": "🎁"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Повестка дня»",
+          "opts": [
+            {
+              "txt": "agenda",
+              "em": "📋"
+            },
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            },
+            {
+              "txt": "avión",
+              "em": "✈️"
+            },
+            {
+              "txt": "almacén",
+              "em": "🏬"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Презентация»",
+          "opts": [
+            {
+              "txt": "presentación",
+              "em": "📊"
+            },
+            {
+              "txt": "presión",
+              "em": "⏲️"
+            },
+            {
+              "txt": "préstamo",
+              "em": "💵"
+            },
+            {
+              "txt": "presencia",
+              "em": "👤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "reunión",
+              "встреча"
+            ],
+            [
+              "agenda",
+              "повестка дня"
+            ],
+            [
+              "presentación",
+              "презентация"
+            ],
+            [
+              "proyecto",
+              "проект"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "proponer",
+              "предлагать"
+            ],
+            [
+              "decidir",
+              "решать"
+            ],
+            [
+              "discutir",
+              "обсуждать"
+            ],
+            [
+              "acordar",
+              "договариваться"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У нас есть встреча в три",
+          "tiles": [
+            "tenemos",
+            "una",
+            "reunión",
+            "a",
+            "las",
+            "tres"
+          ],
+          "answer": [
+            "tenemos",
+            "una",
+            "reunión",
+            "a",
+            "las",
+            "tres"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos a",
+            null,
+            "el proyecto."
+          ],
+          "target": "discutir",
+          "opts": [
+            "discutir",
+            "dormir",
+            "desayunar"
+          ],
+          "hint": "мы обсудим проект"
+        },
+        {
+          "t": "typed",
+          "from": "Я делаю презентацию завтра",
+          "answer": "hago una presentación mañana",
+          "answers": [
+            "hago una presentación mañana",
+            "mañana hago una presentación",
+            "doy una presentación mañana"
+          ],
+          "hint": "hago / doy + una presentación"
+        }
+      ]
+    },
+    {
+      "id": "l154",
+      "name": "Email pro",
+      "emoji": "✉️",
+      "desc": "Asunto, adjunto, saludo formal",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Тема (письма)»",
+          "opts": [
+            {
+              "txt": "asunto",
+              "em": "📝"
+            },
+            {
+              "txt": "asiento",
+              "em": "🪑"
+            },
+            {
+              "txt": "asado",
+              "em": "🍖"
+            },
+            {
+              "txt": "asilo",
+              "em": "🏠"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Вложение / приложение к письму»",
+          "opts": [
+            {
+              "txt": "adjunto",
+              "em": "📎"
+            },
+            {
+              "txt": "adulto",
+              "em": "👨"
+            },
+            {
+              "txt": "adverbio",
+              "em": "🔤"
+            },
+            {
+              "txt": "adiós",
+              "em": "👋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«С уважением» (formal)",
+          "opts": [
+            {
+              "txt": "atentamente",
+              "em": "🤝"
+            },
+            {
+              "txt": "atentamente",
+              "em": "🤝"
+            },
+            {
+              "txt": "urgentemente",
+              "em": "⚡"
+            },
+            {
+              "txt": "felizmente",
+              "em": "😊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "asunto",
+              "тема"
+            ],
+            [
+              "adjunto",
+              "вложение"
+            ],
+            [
+              "destinatario",
+              "получатель"
+            ],
+            [
+              "remitente",
+              "отправитель"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estimado/a",
+              "уважаемый/ая"
+            ],
+            [
+              "atentamente",
+              "с уважением"
+            ],
+            [
+              "un cordial saludo",
+              "с сердечным приветом"
+            ],
+            [
+              "quedo a la espera",
+              "жду ответа"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я прикрепляю документ",
+          "tiles": [
+            "adjunto",
+            "el",
+            "documento",
+            "adjuntar",
+            "la"
+          ],
+          "answer": [
+            "adjunto",
+            "el",
+            "documento"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            null,
+            "señor Pérez, le escribo para..."
+          ],
+          "target": "Estimado",
+          "opts": [
+            "Estimado",
+            "Hola",
+            "Querido"
+          ],
+          "hint": "Уважаемый господин Перес (формально)"
+        },
+        {
+          "t": "typed",
+          "from": "Жду вашего ответа",
+          "answer": "quedo a la espera de su respuesta",
+          "answers": [
+            "quedo a la espera de su respuesta",
+            "espero su respuesta"
+          ],
+          "hint": "quedo a la espera / espero su respuesta"
+        }
+      ]
+    },
+    {
+      "id": "l155",
+      "name": "Repaso 25",
+      "emoji": "💼",
+      "desc": "Repaso L151-L154",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Собеседование»",
+          "opts": [
+            {
+              "txt": "entrevista",
+              "em": "🗣️"
+            },
+            {
+              "txt": "entrega",
+              "em": "📦"
+            },
+            {
+              "txt": "entrada",
+              "em": "🚪"
+            },
+            {
+              "txt": "entierro",
+              "em": "⚰️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Резюме»",
+          "opts": [
+            {
+              "txt": "currículum",
+              "em": "📄"
+            },
+            {
+              "txt": "curiosidad",
+              "em": "🤔"
+            },
+            {
+              "txt": "cura",
+              "em": "⛪"
+            },
+            {
+              "txt": "cumbre",
+              "em": "⛰️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Встреча»",
+          "opts": [
+            {
+              "txt": "reunión",
+              "em": "🤝"
+            },
+            {
+              "txt": "recepción",
+              "em": "🛎️"
+            },
+            {
+              "txt": "regalo",
+              "em": "🎁"
+            },
+            {
+              "txt": "reportaje",
+              "em": "📰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Тема (письма)»",
+          "opts": [
+            {
+              "txt": "asunto",
+              "em": "📝"
+            },
+            {
+              "txt": "asiento",
+              "em": "🪑"
+            },
+            {
+              "txt": "asilo",
+              "em": "🏠"
+            },
+            {
+              "txt": "asado",
+              "em": "🍖"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jefe",
+              "начальник"
+            ],
+            [
+              "empleado",
+              "работник"
+            ],
+            [
+              "sueldo",
+              "зарплата"
+            ],
+            [
+              "contrato",
+              "контракт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "carrera",
+              "специальность"
+            ],
+            [
+              "título",
+              "диплом"
+            ],
+            [
+              "idioma",
+              "язык"
+            ],
+            [
+              "habilidad",
+              "навык"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "agenda",
+              "повестка"
+            ],
+            [
+              "presentación",
+              "презентация"
+            ],
+            [
+              "adjunto",
+              "вложение"
+            ],
+            [
+              "estimado",
+              "уважаемый"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня собеседование завтра",
+          "tiles": [
+            "tengo",
+            "una",
+            "entrevista",
+            "mañana"
+          ],
+          "answer": [
+            "tengo",
+            "una",
+            "entrevista",
+            "mañana"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я отправляю своё резюме",
+          "tiles": [
+            "envío",
+            "mi",
+            "currículum",
+            "tu"
+          ],
+          "answer": [
+            "envío",
+            "mi",
+            "currículum"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos a",
+            null,
+            "el proyecto."
+          ],
+          "target": "discutir",
+          "opts": [
+            "discutir",
+            "dormir",
+            "desayunar"
+          ],
+          "hint": "мы обсудим проект"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            null,
+            "señor Pérez, le escribo para..."
+          ],
+          "target": "Estimado",
+          "opts": [
+            "Estimado",
+            "Querido",
+            "Hola"
+          ],
+          "hint": "Уважаемый господин Перес"
+        },
+        {
+          "t": "typed",
+          "from": "У меня пять лет опыта",
+          "answer": "tengo cinco años de experiencia",
+          "answers": [
+            "tengo cinco años de experiencia"
+          ],
+          "hint": "tengo X años de experiencia"
+        }
+      ]
+    }
+  ]
+}

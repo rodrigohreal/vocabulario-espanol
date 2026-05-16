@@ -1,0 +1,864 @@
+{
+  "unit": 9,
+  "lessons": [
+    {
+      "id": "l41",
+      "name": "Posesivos",
+      "emoji": "🔑",
+      "desc": "Mi, tu, su, nuestro…",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Мой»",
+          "opts": [
+            {
+              "txt": "mi",
+              "em": "👤"
+            },
+            {
+              "txt": "tu",
+              "em": "👉"
+            },
+            {
+              "txt": "su",
+              "em": "👨"
+            },
+            {
+              "txt": "nuestro",
+              "em": "👥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Твой»",
+          "opts": [
+            {
+              "txt": "mi",
+              "em": "👤"
+            },
+            {
+              "txt": "tu",
+              "em": "👉"
+            },
+            {
+              "txt": "su",
+              "em": "👨"
+            },
+            {
+              "txt": "vuestro",
+              "em": "👥"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Наш»",
+          "opts": [
+            {
+              "txt": "mi",
+              "em": "👤"
+            },
+            {
+              "txt": "su",
+              "em": "👨"
+            },
+            {
+              "txt": "nuestro",
+              "em": "👥"
+            },
+            {
+              "txt": "vuestro",
+              "em": "👥"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mi",
+              "мой"
+            ],
+            [
+              "tu",
+              "твой"
+            ],
+            [
+              "su",
+              "его/её"
+            ],
+            [
+              "nuestro",
+              "наш"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mi madre",
+              "моя мама"
+            ],
+            [
+              "mi padre",
+              "мой папа"
+            ],
+            [
+              "mi hermano",
+              "мой брат"
+            ],
+            [
+              "mi hermana",
+              "моя сестра"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Моя мама",
+          "tiles": [
+            "mi",
+            "madre",
+            "padre",
+            "tu"
+          ],
+          "answer": [
+            "mi",
+            "madre"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Esta es",
+            null,
+            "casa."
+          ],
+          "target": "mi",
+          "opts": [
+            "mi",
+            "tu",
+            "su"
+          ],
+          "hint": "Это мой дом"
+        }
+      ]
+    },
+    {
+      "id": "l42",
+      "name": "Bebidas",
+      "emoji": "🥤",
+      "desc": "Agua, café, leche, té…",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Вода»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Кофе»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            },
+            {
+              "txt": "jugo",
+              "em": "🧃"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Молоко»",
+          "opts": [
+            {
+              "txt": "cerveza",
+              "em": "🍺"
+            },
+            {
+              "txt": "vino",
+              "em": "🍷"
+            },
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "agua",
+              "вода"
+            ],
+            [
+              "leche",
+              "молоко"
+            ],
+            [
+              "café",
+              "кофе"
+            ],
+            [
+              "té",
+              "чай"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jugo",
+              "сок"
+            ],
+            [
+              "vino",
+              "вино"
+            ],
+            [
+              "cerveza",
+              "пиво"
+            ],
+            [
+              "refresco",
+              "газировка"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я пью воду",
+          "tiles": [
+            "yo",
+            "bebo",
+            "agua",
+            "como"
+          ],
+          "answer": [
+            "yo",
+            "bebo",
+            "agua"
+          ],
+          "answers": [
+            [
+              "yo",
+              "bebo",
+              "agua"
+            ],
+            [
+              "bebo",
+              "agua"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tomo un",
+            null,
+            "con leche."
+          ],
+          "target": "café",
+          "opts": [
+            "café",
+            "pan",
+            "gato"
+          ],
+          "hint": "Я пью кофе с молоком"
+        }
+      ]
+    },
+    {
+      "id": "l43",
+      "name": "Negación",
+      "emoji": "🚫",
+      "desc": "No, nada, nunca, nadie",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Нет»",
+          "opts": [
+            {
+              "txt": "no",
+              "em": "❌"
+            },
+            {
+              "txt": "sí",
+              "em": "✅"
+            },
+            {
+              "txt": "nada",
+              "em": "🚫"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚷"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ничего»",
+          "opts": [
+            {
+              "txt": "nada",
+              "em": "🚫"
+            },
+            {
+              "txt": "nadie",
+              "em": "🙅"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚷"
+            },
+            {
+              "txt": "no",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Никогда»",
+          "opts": [
+            {
+              "txt": "nadie",
+              "em": "🙅"
+            },
+            {
+              "txt": "nada",
+              "em": "🚫"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚷"
+            },
+            {
+              "txt": "tampoco",
+              "em": "⛔"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "no",
+              "нет"
+            ],
+            [
+              "nada",
+              "ничего"
+            ],
+            [
+              "nadie",
+              "никто"
+            ],
+            [
+              "nunca",
+              "никогда"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tampoco",
+              "тоже не"
+            ],
+            [
+              "jamás",
+              "никогда"
+            ],
+            [
+              "ninguno",
+              "никакой"
+            ],
+            [
+              "ni…ni",
+              "ни…ни"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я ничего не хочу",
+          "tiles": [
+            "no",
+            "quiero",
+            "nada",
+            "algo"
+          ],
+          "answer": [
+            "no",
+            "quiero",
+            "nada"
+          ]
+        },
+        {
+          "t": "pick",
+          "q": "«Я ничего не вижу» — как правильно?",
+          "opts": [
+            {
+              "txt": "no veo nada",
+              "em": "✅"
+            },
+            {
+              "txt": "veo nada",
+              "em": "❌"
+            },
+            {
+              "txt": "no veo",
+              "em": "❌"
+            },
+            {
+              "txt": "nada veo",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hoy no como",
+            null,
+            "."
+          ],
+          "target": "nada",
+          "opts": [
+            "nada",
+            "nadie",
+            "nunca"
+          ],
+          "hint": "Сегодня я ничего не ем"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No conozco a",
+            null,
+            "aquí."
+          ],
+          "target": "nadie",
+          "opts": [
+            "nadie",
+            "nada",
+            "nunca"
+          ],
+          "hint": "Я никого здесь не знаю"
+        },
+        {
+          "t": "typed",
+          "from": "Я никогда не курю",
+          "answer": "no fumo nunca",
+          "answers": [
+            "no fumo nunca",
+            "nunca fumo",
+            "yo nunca fumo",
+            "yo no fumo nunca"
+          ],
+          "hint": "fumar = курить"
+        }
+      ]
+    },
+    {
+      "id": "l44",
+      "name": "Me gusta",
+      "emoji": "❤️",
+      "desc": "El verbo gustar",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Мне нравится»",
+          "opts": [
+            {
+              "txt": "me gusta",
+              "em": "❤️"
+            },
+            {
+              "txt": "te gusta",
+              "em": "💛"
+            },
+            {
+              "txt": "le gusta",
+              "em": "💚"
+            },
+            {
+              "txt": "me llamo",
+              "em": "👤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Тебе нравится»",
+          "opts": [
+            {
+              "txt": "me gusta",
+              "em": "❤️"
+            },
+            {
+              "txt": "te gusta",
+              "em": "💛"
+            },
+            {
+              "txt": "le gusta",
+              "em": "💚"
+            },
+            {
+              "txt": "te llamas",
+              "em": "👉"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Мне нравятся (мн.ч.)»",
+          "opts": [
+            {
+              "txt": "me gusta",
+              "em": "❤️"
+            },
+            {
+              "txt": "me gustan",
+              "em": "💖"
+            },
+            {
+              "txt": "te gusta",
+              "em": "💛"
+            },
+            {
+              "txt": "te gustan",
+              "em": "💕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me gusta",
+              "мне нравится"
+            ],
+            [
+              "te gusta",
+              "тебе нравится"
+            ],
+            [
+              "le gusta",
+              "ему/ей нравится"
+            ],
+            [
+              "nos gusta",
+              "нам нравится"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me gusta el café",
+              "мне нравится кофе"
+            ],
+            [
+              "me gustan los gatos",
+              "мне нравятся коты"
+            ],
+            [
+              "te gusta la música",
+              "тебе нравится музыка"
+            ],
+            [
+              "le gustan los libros",
+              "ему нравятся книги"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится кофе",
+          "tiles": [
+            "me",
+            "gusta",
+            "el",
+            "café",
+            "gustan"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "el",
+            "café"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me",
+            null,
+            "los gatos."
+          ],
+          "target": "gustan",
+          "opts": [
+            "gustan",
+            "gusta",
+            "gustas"
+          ],
+          "hint": "Мне нравятся коты (мн.ч.)"
+        },
+        {
+          "t": "pick",
+          "q": "«Мне нравятся кошки» — как правильно?",
+          "opts": [
+            {
+              "txt": "me gustan los gatos",
+              "em": "✅"
+            },
+            {
+              "txt": "me gusta los gatos",
+              "em": "❌"
+            },
+            {
+              "txt": "me gustan gatos",
+              "em": "❌"
+            },
+            {
+              "txt": "yo gusto los gatos",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Te",
+            null,
+            "los libros?"
+          ],
+          "target": "gustan",
+          "opts": [
+            "gustan",
+            "gusta",
+            "gustas"
+          ],
+          "hint": "Тебе нравятся книги? (мн.ч.)"
+        },
+        {
+          "t": "typed",
+          "from": "Мне нравится пицца",
+          "answer": "me gusta la pizza",
+          "answers": [
+            "me gusta la pizza",
+            "me gusta pizza"
+          ],
+          "hint": "Не забудь артикль «la»"
+        }
+      ]
+    },
+    {
+      "id": "l45",
+      "name": "Repaso 6",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 41-44",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Мой»",
+          "opts": [
+            {
+              "txt": "mi",
+              "em": "👤"
+            },
+            {
+              "txt": "tu",
+              "em": "👉"
+            },
+            {
+              "txt": "su",
+              "em": "👨"
+            },
+            {
+              "txt": "nuestro",
+              "em": "👥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Чай»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Никогда»",
+          "opts": [
+            {
+              "txt": "nadie",
+              "em": "🙅"
+            },
+            {
+              "txt": "nada",
+              "em": "🚫"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚷"
+            },
+            {
+              "txt": "no",
+              "em": "❌"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mi",
+              "мой"
+            ],
+            [
+              "tu",
+              "твой"
+            ],
+            [
+              "agua",
+              "вода"
+            ],
+            [
+              "café",
+              "кофе"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "nada",
+              "ничего"
+            ],
+            [
+              "nadie",
+              "никто"
+            ],
+            [
+              "me gusta",
+              "мне нравится"
+            ],
+            [
+              "te gusta",
+              "тебе нравится"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится кофе",
+          "tiles": [
+            "me",
+            "gusta",
+            "el",
+            "café",
+            "gustan"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "el",
+            "café"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hoy no como",
+            null,
+            "."
+          ],
+          "target": "nada",
+          "opts": [
+            "nada",
+            "mesa",
+            "siete"
+          ],
+          "hint": "Сегодня я ничего не ем"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "unit": 60,
+  "lessons": [
+    {
+      "id": "l296",
+      "name": "ONU / UE",
+      "emoji": "🇺🇳",
+      "desc": "Organizaciones internacionales",
+      "exercises": [
+        { "t": "pick", "q": "«ООН»", "opts": [
+          { "txt": "ONU",  "em": "🇺🇳" },
+          { "txt": "UE",   "em": "🇪🇺" },
+          { "txt": "OTAN", "em": "❌" },
+          { "txt": "BCE",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«ЕС»", "opts": [
+          { "txt": "Unión Europea / UE", "em": "🇪🇺" },
+          { "txt": "ONU",                "em": "❌" },
+          { "txt": "OMC",                "em": "❌" },
+          { "txt": "FMI",                "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["ONU",          "ООН"],
+          ["UE",           "ЕС"],
+          ["OTAN",         "НАТО"],
+          ["FMI",          "МВФ"]
+        ]},
+        { "t": "match", "pairs": [
+          ["estado miembro","государство-член"],
+          ["tratado",       "договор"],
+          ["resolución",    "резолюция"],
+          ["asamblea",      "ассамблея"]
+        ]},
+        { "t": "translate", "from": "У ООН есть резолюция", "tiles": ["la", "ONU", "tiene", "una", "resolución", "casa"], "answer": ["la", "ONU", "tiene", "una", "resolución"] },
+        { "t": "fill", "sentence": ["España es", null, "de la UE."], "target": "miembro", "opts": ["miembro", "menú", "fiesta"], "hint": "Испания — член ЕС" },
+        { "t": "typed", "from": "Сессия Ассамблеи начинается завтра", "answer": "la asamblea empieza mañana", "answers": ["la asamblea empieza mañana", "la sesión de la asamblea empieza mañana"], "hint": "asamblea" }
+      ]
+    },
+    {
+      "id": "l297",
+      "name": "Derechos humanos",
+      "emoji": "⚖️",
+      "desc": "Libertad, igualdad, justicia",
+      "exercises": [
+        { "t": "pick", "q": "«Свобода»", "opts": [
+          { "txt": "libertad", "em": "🗽" },
+          { "txt": "igualdad", "em": "❌" },
+          { "txt": "justicia", "em": "❌" },
+          { "txt": "paz",      "em": "🕊️" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Справедливость»", "opts": [
+          { "txt": "justicia",  "em": "⚖️" },
+          { "txt": "libertad",  "em": "❌" },
+          { "txt": "igualdad",  "em": "❌" },
+          { "txt": "fraternidad","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["libertad", "свобода"],
+          ["igualdad", "равенство"],
+          ["justicia", "справедливость"],
+          ["dignidad", "достоинство"]
+        ]},
+        { "t": "match", "pairs": [
+          ["derecho",    "право"],
+          ["deber",      "обязанность"],
+          ["constitución","конституция"],
+          ["ciudadano",  "гражданин"]
+        ]},
+        { "t": "translate", "from": "У каждого есть право говорить", "tiles": ["todos", "tienen", "derecho", "a", "hablar", "deber"], "answer": ["todos", "tienen", "derecho", "a", "hablar"] },
+        { "t": "fill", "sentence": ["La", null, "es la base de la democracia."], "target": "libertad", "opts": ["libertad", "música", "comida"], "hint": "Свобода — основа демократии" },
+        { "t": "typed", "from": "Все равны перед законом", "answer": "todos son iguales ante la ley", "answers": ["todos son iguales ante la ley", "todos somos iguales ante la ley"], "hint": "ante la ley" }
+      ]
+    },
+    {
+      "id": "l298",
+      "name": "Migración",
+      "emoji": "🛂",
+      "desc": "Migrante, refugiado, visado",
+      "exercises": [
+        { "t": "pick", "q": "«Мигрант»", "opts": [
+          { "txt": "migrante",  "em": "🛂" },
+          { "txt": "turista",   "em": "❌" },
+          { "txt": "estudiante","em": "❌" },
+          { "txt": "ciudadano", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Беженец»", "opts": [
+          { "txt": "refugiado","em": "🆘" },
+          { "txt": "viajero",  "em": "❌" },
+          { "txt": "diplomático","em": "❌" },
+          { "txt": "extranjero","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["migrante",  "мигрант"],
+          ["refugiado", "беженец"],
+          ["visado",    "виза"],
+          ["frontera",  "граница"]
+        ]},
+        { "t": "match", "pairs": [
+          ["pasaporte",  "паспорт"],
+          ["residencia", "ВНЖ"],
+          ["asilo",      "убежище"],
+          ["expulsar",   "высылать"]
+        ]},
+        { "t": "translate", "from": "Им нужна виза, чтобы въехать", "tiles": ["necesitan", "visado", "para", "entrar", "salir"], "answer": ["necesitan", "visado", "para", "entrar"] },
+        { "t": "fill", "sentence": ["Pidió", null, "político."], "target": "asilo", "opts": ["asilo", "fiesta", "lápiz"], "hint": "Попросил полит. убежище" },
+        { "t": "typed", "from": "Мой паспорт скоро истечёт", "answer": "mi pasaporte caduca pronto", "answers": ["mi pasaporte caduca pronto", "mi pasaporte vence pronto"], "hint": "caducar / vencer" }
+      ]
+    },
+    {
+      "id": "l299",
+      "name": "Igualdad de género",
+      "emoji": "⚧️",
+      "desc": "Feminismo, brecha salarial",
+      "exercises": [
+        { "t": "pick", "q": "«Равенство»", "opts": [
+          { "txt": "igualdad","em": "⚖️" },
+          { "txt": "libertad","em": "❌" },
+          { "txt": "justicia","em": "❌" },
+          { "txt": "paz",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Феминизм»", "opts": [
+          { "txt": "feminismo","em": "♀️" },
+          { "txt": "machismo", "em": "❌" },
+          { "txt": "racismo",  "em": "❌" },
+          { "txt": "clasismo", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["igualdad",       "равенство"],
+          ["feminismo",      "феминизм"],
+          ["machismo",       "мачизм"],
+          ["brecha salarial","зарплатный разрыв"]
+        ]},
+        { "t": "match", "pairs": [
+          ["discriminación","дискриминация"],
+          ["acoso",         "домогательство"],
+          ["lucha",         "борьба"],
+          ["derecho",       "право"]
+        ]},
+        { "t": "translate", "from": "Мы боремся за равенство", "tiles": ["luchamos", "por", "la", "igualdad", "diferencia"], "answer": ["luchamos", "por", "la", "igualdad"] },
+        { "t": "fill", "sentence": ["Hay una", null, "salarial entre hombres y mujeres."], "target": "brecha", "opts": ["brecha", "cocina", "mesa"], "hint": "Зарплатный разрыв" },
+        { "t": "typed", "from": "Это дискриминация", "answer": "esto es discriminación", "answers": ["esto es discriminación", "es discriminación"], "hint": "esto = это" }
+      ]
+    },
+    {
+      "id": "l300",
+      "name": "Voluntariado",
+      "emoji": "🤲",
+      "desc": "ONG, donación, causa",
+      "exercises": [
+        { "t": "pick", "q": "«Доброволец»", "opts": [
+          { "txt": "voluntario","em": "🙋" },
+          { "txt": "donante",   "em": "❌" },
+          { "txt": "empleado",  "em": "❌" },
+          { "txt": "alumno",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«НКО / НГО»", "opts": [
+          { "txt": "ONG",       "em": "🤝" },
+          { "txt": "ONU",       "em": "❌" },
+          { "txt": "UE",        "em": "❌" },
+          { "txt": "FMI",       "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["voluntario","доброволец"],
+          ["ONG",       "НКО"],
+          ["donación",  "пожертвование"],
+          ["causa",     "дело / цель"]
+        ]},
+        { "t": "match", "pairs": [
+          ["donar",      "жертвовать"],
+          ["ayudar",     "помогать"],
+          ["recaudar",   "собирать (средства)"],
+          ["solidaridad","солидарность"]
+        ]},
+        { "t": "translate", "from": "Я работаю добровольцем по выходным", "tiles": ["soy", "voluntario", "los", "fines", "de", "semana", "días"], "answer": ["soy", "voluntario", "los", "fines", "de", "semana"] },
+        { "t": "fill", "sentence": ["La ONG ayuda a los", null, "."], "target": "refugiados", "opts": ["refugiados", "platos", "libros"], "hint": "НКО помогает беженцам" },
+        { "t": "typed", "from": "Я хочу пожертвовать одежду", "answer": "quiero donar ropa", "answers": ["quiero donar ropa", "quisiera donar ropa"], "hint": "donar = жертвовать" }
+      ]
+    }
+  ]
+}

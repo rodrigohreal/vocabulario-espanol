@@ -1,0 +1,2155 @@
+[
+  {
+    "id": "l1",
+    "name": "Saludos",
+    "emoji": "👋",
+    "desc": "Saluda en español",
+    "unit": 1
+  },
+  {
+    "id": "l2",
+    "name": "Yo soy",
+    "emoji": "🙋",
+    "desc": "Pronombres y verbo ser",
+    "unit": 1
+  },
+  {
+    "id": "l3",
+    "name": "Familia",
+    "emoji": "👨‍👩‍👧",
+    "desc": "Miembros de la familia",
+    "unit": 1
+  },
+  {
+    "id": "l4",
+    "name": "Números",
+    "emoji": "🔢",
+    "desc": "Cuenta del 1 al 10",
+    "unit": 1
+  },
+  {
+    "id": "l5",
+    "name": "Colores",
+    "emoji": "🎨",
+    "desc": "Aprende los colores",
+    "unit": 1
+  },
+  {
+    "id": "l6",
+    "name": "Comida",
+    "emoji": "🍎",
+    "desc": "Comida básica",
+    "unit": 2
+  },
+  {
+    "id": "l7",
+    "name": "Animales",
+    "emoji": "🐶",
+    "desc": "Animales comunes",
+    "unit": 2
+  },
+  {
+    "id": "l8",
+    "name": "Días",
+    "emoji": "📅",
+    "desc": "Días de la semana",
+    "unit": 2
+  },
+  {
+    "id": "l9",
+    "name": "Verbos",
+    "emoji": "🏃",
+    "desc": "Verbos básicos",
+    "hearts": 4,
+    "unit": 2
+  },
+  {
+    "id": "l10",
+    "name": "Frases útiles",
+    "emoji": "💬",
+    "desc": "Frases del día a día",
+    "unit": 2
+  },
+  {
+    "id": "l11",
+    "name": "La Casa",
+    "emoji": "🏠",
+    "desc": "Habitaciones de la casa",
+    "unit": 3
+  },
+  {
+    "id": "l12",
+    "name": "El Cuerpo",
+    "emoji": "🧍",
+    "desc": "Partes del cuerpo",
+    "unit": 3
+  },
+  {
+    "id": "l13",
+    "name": "La Ropa",
+    "emoji": "👕",
+    "desc": "Prendas de vestir",
+    "unit": 3
+  },
+  {
+    "id": "l14",
+    "name": "El Tiempo",
+    "emoji": "🌤️",
+    "desc": "Clima y estaciones",
+    "unit": 3
+  },
+  {
+    "id": "l15",
+    "name": "Meses",
+    "emoji": "📆",
+    "desc": "Meses del año",
+    "unit": 3
+  },
+  {
+    "id": "l16",
+    "name": "La Hora",
+    "emoji": "🕐",
+    "desc": "Decir la hora",
+    "unit": 4
+  },
+  {
+    "id": "l17",
+    "name": "Lugares",
+    "emoji": "🏙️",
+    "desc": "Lugares de la ciudad",
+    "unit": 4
+  },
+  {
+    "id": "l18",
+    "name": "Profesiones",
+    "emoji": "👷",
+    "desc": "Trabajos y oficios",
+    "unit": 4
+  },
+  {
+    "id": "l19",
+    "name": "Sentimientos",
+    "emoji": "😊",
+    "desc": "Cómo te sientes",
+    "unit": 4
+  },
+  {
+    "id": "l20",
+    "name": "Naturaleza",
+    "emoji": "🌳",
+    "desc": "Naturaleza y paisajes",
+    "unit": 4
+  },
+  {
+    "id": "l21",
+    "name": "Verbos II",
+    "emoji": "💪",
+    "desc": "Más verbos esenciales",
+    "hearts": 4,
+    "unit": 5
+  },
+  {
+    "id": "l22",
+    "name": "Adjetivos",
+    "emoji": "📏",
+    "desc": "Grande, pequeño, alto…",
+    "unit": 5
+  },
+  {
+    "id": "l23",
+    "name": "Repaso 1",
+    "emoji": "🔁",
+    "desc": "Repasa lo aprendido (1-5)",
+    "unit": 5
+  },
+  {
+    "id": "l24",
+    "name": "Preguntas",
+    "emoji": "❓",
+    "desc": "Qué, quién, dónde, cuándo",
+    "unit": 5
+  },
+  {
+    "id": "l25",
+    "name": "Frutas",
+    "emoji": "🍎",
+    "desc": "Frutas comunes",
+    "unit": 5
+  },
+  {
+    "id": "l26",
+    "name": "Transporte",
+    "emoji": "🚗",
+    "desc": "Vehículos y viajes",
+    "unit": 6
+  },
+  {
+    "id": "l27",
+    "name": "Repaso 2",
+    "emoji": "🔁",
+    "desc": "Repasa lo aprendido (6-10)",
+    "unit": 6
+  },
+  {
+    "id": "l28",
+    "name": "Posiciones",
+    "emoji": "📍",
+    "desc": "Dónde está…",
+    "unit": 6
+  },
+  {
+    "id": "l29",
+    "name": "Conversación",
+    "emoji": "💬",
+    "desc": "Frases para conocer gente",
+    "unit": 6
+  },
+  {
+    "id": "l30",
+    "name": "Repaso 3",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 11-20",
+    "unit": 6
+  },
+  {
+    "id": "l31",
+    "name": "Números 11-20",
+    "emoji": "🔢",
+    "desc": "Cuenta hasta veinte",
+    "unit": 7
+  },
+  {
+    "id": "l32",
+    "name": "Acciones",
+    "emoji": "🏃",
+    "desc": "Acciones del día a día",
+    "unit": 7
+  },
+  {
+    "id": "l33",
+    "name": "Salud",
+    "emoji": "🩺",
+    "desc": "Médico y enfermedades",
+    "unit": 7
+  },
+  {
+    "id": "l34",
+    "name": "Países",
+    "emoji": "🌍",
+    "desc": "Países y nacionalidades",
+    "unit": 7
+  },
+  {
+    "id": "l35",
+    "name": "Repaso 4",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 21-30",
+    "unit": 7
+  },
+  {
+    "id": "l36",
+    "name": "Música y Arte",
+    "emoji": "🎵",
+    "desc": "Música, pintura, instrumentos",
+    "unit": 8
+  },
+  {
+    "id": "l37",
+    "name": "Tecnología",
+    "emoji": "📱",
+    "desc": "Teléfono, internet, redes",
+    "unit": 8
+  },
+  {
+    "id": "l38",
+    "name": "Tiempo libre",
+    "emoji": "🎮",
+    "desc": "Hobbies y diversión",
+    "unit": 8
+  },
+  {
+    "id": "l39",
+    "name": "Pasado",
+    "emoji": "⏪",
+    "desc": "Hablar del ayer",
+    "unit": 8
+  },
+  {
+    "id": "l40",
+    "name": "Repaso 5",
+    "emoji": "🏆",
+    "desc": "Repaso final (31-39)",
+    "unit": 8
+  },
+  {
+    "id": "l41",
+    "name": "Posesivos",
+    "emoji": "🔑",
+    "desc": "Mi, tu, su, nuestro…",
+    "unit": 9
+  },
+  {
+    "id": "l42",
+    "name": "Bebidas",
+    "emoji": "🥤",
+    "desc": "Agua, café, leche, té…",
+    "unit": 9
+  },
+  {
+    "id": "l43",
+    "name": "Negación",
+    "emoji": "🚫",
+    "desc": "No, nada, nunca, nadie",
+    "hearts": 4,
+    "unit": 9
+  },
+  {
+    "id": "l44",
+    "name": "Me gusta",
+    "emoji": "❤️",
+    "desc": "El verbo gustar",
+    "hearts": 4,
+    "unit": 9
+  },
+  {
+    "id": "l45",
+    "name": "Repaso 6",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 41-44",
+    "unit": 9
+  },
+  {
+    "id": "l46",
+    "name": "Demostrativos",
+    "emoji": "👉",
+    "desc": "Este, ese, aquel",
+    "hearts": 4,
+    "unit": 10
+  },
+  {
+    "id": "l47",
+    "name": "Números 21-100",
+    "emoji": "💯",
+    "desc": "Veinte, treinta… cien",
+    "unit": 10
+  },
+  {
+    "id": "l48",
+    "name": "Dinero",
+    "emoji": "💰",
+    "desc": "Comprar, precio, caro, barato",
+    "unit": 10
+  },
+  {
+    "id": "l49",
+    "name": "Restaurante",
+    "emoji": "🍴",
+    "desc": "Pedir comida y la cuenta",
+    "unit": 10
+  },
+  {
+    "id": "l50",
+    "name": "Repaso 7",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 46-49",
+    "unit": 10
+  },
+  {
+    "id": "l51",
+    "name": "Direcciones",
+    "emoji": "🧭",
+    "desc": "Izquierda, derecha, recto",
+    "unit": 11
+  },
+  {
+    "id": "l52",
+    "name": "Verbos modales",
+    "emoji": "🎯",
+    "desc": "Poder, querer, deber, tener que",
+    "hearts": 4,
+    "unit": 11
+  },
+  {
+    "id": "l53",
+    "name": "Futuro: ir a",
+    "emoji": "🗓️",
+    "desc": "Voy a + infinitivo",
+    "hearts": 4,
+    "unit": 11
+  },
+  {
+    "id": "l54",
+    "name": "Reflexivos",
+    "emoji": "🪞",
+    "desc": "Me llamo, me levanto, me ducho",
+    "hearts": 4,
+    "unit": 11
+  },
+  {
+    "id": "l55",
+    "name": "Repaso 8",
+    "emoji": "🏆",
+    "desc": "Repaso final (51-54)",
+    "unit": 11
+  },
+  {
+    "id": "l56",
+    "name": "Vacaciones",
+    "emoji": "🏖️",
+    "desc": "Viajes y descanso",
+    "unit": 12
+  },
+  {
+    "id": "l57",
+    "name": "Aeropuerto",
+    "emoji": "✈️",
+    "desc": "Vocabulario del aeropuerto",
+    "unit": 12
+  },
+  {
+    "id": "l58",
+    "name": "Comparativos",
+    "emoji": "⚖️",
+    "desc": "más que, menos que, tan como",
+    "hearts": 4,
+    "unit": 12
+  },
+  {
+    "id": "l59",
+    "name": "Superlativos",
+    "emoji": "🏆",
+    "desc": "el más, mejor, peor",
+    "hearts": 4,
+    "unit": 12
+  },
+  {
+    "id": "l60",
+    "name": "Repaso 9",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 56-59",
+    "unit": 12
+  },
+  {
+    "id": "l61",
+    "name": "Ropa invierno",
+    "emoji": "🧥",
+    "desc": "Abrigo, bufanda, guantes",
+    "unit": 13
+  },
+  {
+    "id": "l62",
+    "name": "Cocina",
+    "emoji": "🍳",
+    "desc": "Utensilios y platos",
+    "unit": 13
+  },
+  {
+    "id": "l63",
+    "name": "Hotel",
+    "emoji": "🏨",
+    "desc": "Habitación, llave, reserva",
+    "unit": 13
+  },
+  {
+    "id": "l64",
+    "name": "Imperfecto",
+    "emoji": "⏳",
+    "desc": "Прошедшее (длительное) время",
+    "hearts": 4,
+    "unit": 13
+  },
+  {
+    "id": "l65",
+    "name": "Repaso 10",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 61-64",
+    "unit": 13
+  },
+  {
+    "id": "l66",
+    "name": "Animales II",
+    "emoji": "🐮",
+    "desc": "Animales de la granja",
+    "unit": 14
+  },
+  {
+    "id": "l67",
+    "name": "Verduras",
+    "emoji": "🥦",
+    "desc": "Verduras y hortalizas",
+    "unit": 14
+  },
+  {
+    "id": "l68",
+    "name": "Supermercado",
+    "emoji": "🛒",
+    "desc": "De compras",
+    "unit": 14
+  },
+  {
+    "id": "l69",
+    "name": "Adverbios",
+    "emoji": "🕰️",
+    "desc": "Siempre, nunca, a veces",
+    "unit": 14
+  },
+  {
+    "id": "l70",
+    "name": "Repaso 11",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 66-69",
+    "unit": 14
+  },
+  {
+    "id": "l71",
+    "name": "Verbos irreg.",
+    "emoji": "🔀",
+    "desc": "Tener, venir, hacer, decir",
+    "hearts": 4,
+    "unit": 15
+  },
+  {
+    "id": "l72",
+    "name": "Condicional",
+    "emoji": "🤔",
+    "desc": "Yo haría, gustaría, podría",
+    "hearts": 4,
+    "unit": 15
+  },
+  {
+    "id": "l73",
+    "name": "Por vs Para",
+    "emoji": "🔁",
+    "desc": "Cuándo usar por o para",
+    "hearts": 4,
+    "unit": 15
+  },
+  {
+    "id": "l74",
+    "name": "Subjuntivo",
+    "emoji": "🌠",
+    "desc": "Espero que, ojalá, quiero que",
+    "hearts": 4,
+    "unit": 15
+  },
+  {
+    "id": "l75",
+    "name": "Repaso Final",
+    "emoji": "🎓",
+    "desc": "Repasa lecciones 71-74",
+    "hearts": 2,
+    "unit": 15
+  },
+  {
+    "id": "l76",
+    "name": "Saludos II",
+    "emoji": "🤝",
+    "desc": "Saludos formales",
+    "unit": 16
+  },
+  {
+    "id": "l77",
+    "name": "Oficina",
+    "emoji": "💼",
+    "desc": "En el trabajo",
+    "unit": 16
+  },
+  {
+    "id": "l78",
+    "name": "Colegio",
+    "emoji": "🎒",
+    "desc": "Vida escolar",
+    "unit": 16
+  },
+  {
+    "id": "l79",
+    "name": "Internet",
+    "emoji": "🌐",
+    "desc": "Vocabulario web",
+    "unit": 16
+  },
+  {
+    "id": "l80",
+    "name": "Repaso 12",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 76-79",
+    "unit": 16
+  },
+  {
+    "id": "l81",
+    "name": "Movimiento",
+    "emoji": "🚶",
+    "desc": "Verbos de movimiento",
+    "unit": 17
+  },
+  {
+    "id": "l82",
+    "name": "En la playa",
+    "emoji": "🏖️",
+    "desc": "Vocabulario de playa",
+    "unit": 17
+  },
+  {
+    "id": "l83",
+    "name": "Deportes",
+    "emoji": "⚽",
+    "desc": "Deportes populares",
+    "unit": 17
+  },
+  {
+    "id": "l84",
+    "name": "Instrumentos",
+    "emoji": "🎸",
+    "desc": "Instrumentos musicales",
+    "unit": 17
+  },
+  {
+    "id": "l85",
+    "name": "Repaso 13",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 81-84",
+    "unit": 17
+  },
+  {
+    "id": "l86",
+    "name": "Cocinar",
+    "emoji": "👨‍🍳",
+    "desc": "Verbos de cocina",
+    "unit": 18
+  },
+  {
+    "id": "l87",
+    "name": "Recetas",
+    "emoji": "📖",
+    "desc": "En la cocina",
+    "unit": 18
+  },
+  {
+    "id": "l88",
+    "name": "En el bar",
+    "emoji": "☕",
+    "desc": "Pedir bebidas",
+    "unit": 18
+  },
+  {
+    "id": "l89",
+    "name": "Postres",
+    "emoji": "🍰",
+    "desc": "Dulces y postres",
+    "unit": 18
+  },
+  {
+    "id": "l90",
+    "name": "Repaso 14",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 86-89",
+    "unit": 18
+  },
+  {
+    "id": "l91",
+    "name": "Mascotas",
+    "emoji": "🐾",
+    "desc": "Cuidar y jugar",
+    "unit": 19
+  },
+  {
+    "id": "l92",
+    "name": "Insectos",
+    "emoji": "🐝",
+    "desc": "Insectos y bichos",
+    "unit": 19
+  },
+  {
+    "id": "l93",
+    "name": "El océano",
+    "emoji": "🐬",
+    "desc": "Animales del mar",
+    "unit": 19
+  },
+  {
+    "id": "l94",
+    "name": "Aves",
+    "emoji": "🦅",
+    "desc": "Pájaros y aves",
+    "unit": 19
+  },
+  {
+    "id": "l95",
+    "name": "Repaso 15",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 91-94",
+    "unit": 19
+  },
+  {
+    "id": "l96",
+    "name": "Emociones II",
+    "emoji": "😌",
+    "desc": "Más sentimientos",
+    "unit": 20
+  },
+  {
+    "id": "l97",
+    "name": "El cuerpo II",
+    "emoji": "💪",
+    "desc": "Más partes del cuerpo",
+    "unit": 20
+  },
+  {
+    "id": "l98",
+    "name": "Farmacia",
+    "emoji": "💊",
+    "desc": "En la farmacia",
+    "unit": 20
+  },
+  {
+    "id": "l99",
+    "name": "Emergencias",
+    "emoji": "🚨",
+    "desc": "Ayuda y peligro",
+    "unit": 20
+  },
+  {
+    "id": "l100",
+    "name": "Repaso Maestro",
+    "emoji": "🏆",
+    "desc": "Repaso final (76-99)",
+    "hearts": 2,
+    "unit": 20
+  },
+  {
+    "id": "l101",
+    "name": "Cuerpo III",
+    "emoji": "🫀",
+    "desc": "Órganos internos",
+    "unit": 21
+  },
+  {
+    "id": "l102",
+    "name": "Mente",
+    "emoji": "💭",
+    "desc": "Pensar, recordar, soñar",
+    "unit": 21
+  },
+  {
+    "id": "l103",
+    "name": "Dormir",
+    "emoji": "😴",
+    "desc": "Sueño y descanso",
+    "unit": 21
+  },
+  {
+    "id": "l104",
+    "name": "Ejercicio",
+    "emoji": "🏋️",
+    "desc": "Gimnasio y fitness",
+    "unit": 21
+  },
+  {
+    "id": "l105",
+    "name": "Repaso 16",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 101-104",
+    "unit": 21
+  },
+  {
+    "id": "l106",
+    "name": "Imperativo",
+    "emoji": "📢",
+    "desc": "Mandatos: ¡come!, ¡ven!",
+    "hearts": 4,
+    "unit": 22
+  },
+  {
+    "id": "l107",
+    "name": "Adjetivos II",
+    "emoji": "🎨",
+    "desc": "Rápido, lento, fácil…",
+    "unit": 22
+  },
+  {
+    "id": "l108",
+    "name": "Adverbios II",
+    "emoji": "🎚️",
+    "desc": "Bien, mal, muy, mucho…",
+    "unit": 22
+  },
+  {
+    "id": "l109",
+    "name": "Conjunciones",
+    "emoji": "🔗",
+    "desc": "Pero, porque, aunque…",
+    "hearts": 4,
+    "unit": 22
+  },
+  {
+    "id": "l110",
+    "name": "Repaso 17",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 106-109",
+    "unit": 22
+  },
+  {
+    "id": "l111",
+    "name": "Familia II",
+    "emoji": "👨‍👩‍👧‍👦",
+    "desc": "Tíos, primos, sobrinos",
+    "unit": 23
+  },
+  {
+    "id": "l112",
+    "name": "Celebraciones",
+    "emoji": "🎉",
+    "desc": "Bodas y fiestas",
+    "unit": 23
+  },
+  {
+    "id": "l113",
+    "name": "Bebés",
+    "emoji": "👶",
+    "desc": "Niños y crianza",
+    "unit": 23
+  },
+  {
+    "id": "l114",
+    "name": "Edades",
+    "emoji": "🌱",
+    "desc": "Etapas de la vida",
+    "unit": 23
+  },
+  {
+    "id": "l115",
+    "name": "Repaso 18",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 111-114",
+    "unit": 23
+  },
+  {
+    "id": "l116",
+    "name": "Pretérito perfecto",
+    "emoji": "✅",
+    "desc": "He comido, has visto…",
+    "hearts": 4,
+    "unit": 24
+  },
+  {
+    "id": "l117",
+    "name": "Pronombres OD",
+    "emoji": "🎯",
+    "desc": "Lo, la, los, las",
+    "hearts": 4,
+    "unit": 24
+  },
+  {
+    "id": "l118",
+    "name": "Pronombres OI",
+    "emoji": "➡️",
+    "desc": "Me, te, le, nos, les",
+    "hearts": 4,
+    "unit": 24
+  },
+  {
+    "id": "l119",
+    "name": "Pronombres juntos",
+    "emoji": "🔗",
+    "desc": "Me lo, te la, se lo",
+    "hearts": 4,
+    "unit": 24
+  },
+  {
+    "id": "l120",
+    "name": "Repaso 19",
+    "emoji": "🔁",
+    "desc": "Repasa lecciones 116-119",
+    "unit": 24
+  },
+  {
+    "id": "l121",
+    "name": "Banco",
+    "emoji": "🏦",
+    "desc": "Cajero, cuenta, ahorrar",
+    "unit": 25
+  },
+  {
+    "id": "l122",
+    "name": "Conducir",
+    "emoji": "🚗",
+    "desc": "Gasolina, semáforo, multa",
+    "unit": 25
+  },
+  {
+    "id": "l123",
+    "name": "Medio ambiente",
+    "emoji": "🌍",
+    "desc": "Planeta, reciclar, basura",
+    "unit": 25
+  },
+  {
+    "id": "l124",
+    "name": "Tecnología II",
+    "emoji": "📲",
+    "desc": "Apps, redes, descargar",
+    "unit": 25
+  },
+  {
+    "id": "l125",
+    "name": "Repaso Maestro II",
+    "emoji": "🎓",
+    "desc": "Repaso final (101-124)",
+    "hearts": 2,
+    "unit": 25
+  },
+  {
+    "id": "l126",
+    "name": "Voz pasiva",
+    "emoji": "🔄",
+    "desc": "La casa fue construida",
+    "hearts": 4,
+    "unit": 26
+  },
+  {
+    "id": "l127",
+    "name": "Subjuntivo II",
+    "emoji": "🌟",
+    "desc": "Subjuntivo presente avanzado",
+    "hearts": 4,
+    "unit": 26
+  },
+  {
+    "id": "l128",
+    "name": "Pluscuamperfecto",
+    "emoji": "⏪",
+    "desc": "Había comido / I had eaten",
+    "hearts": 4,
+    "unit": 26
+  },
+  {
+    "id": "l129",
+    "name": "Cond. perfecto",
+    "emoji": "💫",
+    "desc": "Habría hecho — I would have done",
+    "hearts": 4,
+    "unit": 26
+  },
+  {
+    "id": "l130",
+    "name": "Repaso 21",
+    "emoji": "🎓",
+    "desc": "Repaso L126-L129",
+    "hearts": 2,
+    "unit": 26
+  },
+  {
+    "id": "l131",
+    "name": "Cine",
+    "emoji": "🎬",
+    "desc": "Películas, butacas y palomitas",
+    "unit": 27
+  },
+  {
+    "id": "l132",
+    "name": "Conciertos",
+    "emoji": "🎤",
+    "desc": "Bandas, canciones y conciertos",
+    "unit": 27
+  },
+  {
+    "id": "l133",
+    "name": "Literatura",
+    "emoji": "📚",
+    "desc": "Novelas, autores y poesía",
+    "unit": 27
+  },
+  {
+    "id": "l134",
+    "name": "Teatro y arte",
+    "emoji": "🎭",
+    "desc": "Obras, pinturas y museos",
+    "unit": 27
+  },
+  {
+    "id": "l135",
+    "name": "Repaso 22",
+    "emoji": "🎬",
+    "desc": "Repaso L131-L134",
+    "hearts": 2,
+    "unit": 27
+  },
+  {
+    "id": "l136",
+    "name": "España",
+    "emoji": "🇪🇸",
+    "desc": "Flamenco, paella y fiestas",
+    "unit": 28
+  },
+  {
+    "id": "l137",
+    "name": "Latinoamérica",
+    "emoji": "🌎",
+    "desc": "Tango, mate y mariachi",
+    "unit": 28
+  },
+  {
+    "id": "l138",
+    "name": "Comida regional",
+    "emoji": "🌮",
+    "desc": "Sabores del mundo hispano",
+    "unit": 28
+  },
+  {
+    "id": "l139",
+    "name": "Tradiciones",
+    "emoji": "🎉",
+    "desc": "Navidad, Año Nuevo, fiestas",
+    "unit": 28
+  },
+  {
+    "id": "l140",
+    "name": "Repaso 23",
+    "emoji": "🌍",
+    "desc": "Repaso L136-L139",
+    "hearts": 2,
+    "unit": 28
+  },
+  {
+    "id": "l141",
+    "name": "Noticias",
+    "emoji": "📰",
+    "desc": "Prensa, titulares y reportajes",
+    "unit": 29
+  },
+  {
+    "id": "l142",
+    "name": "Política",
+    "emoji": "🏛️",
+    "desc": "Gobierno, voto y elecciones",
+    "unit": 29
+  },
+  {
+    "id": "l143",
+    "name": "Historia",
+    "emoji": "📜",
+    "desc": "Siglos, guerras y descubrimientos",
+    "unit": 29
+  },
+  {
+    "id": "l144",
+    "name": "Geografía",
+    "emoji": "🗺️",
+    "desc": "Continentes, ríos y montañas",
+    "unit": 29
+  },
+  {
+    "id": "l145",
+    "name": "Repaso 24",
+    "emoji": "🌐",
+    "desc": "Repaso L141-L144",
+    "hearts": 2,
+    "unit": 29
+  },
+  {
+    "id": "l146",
+    "name": "Conversación",
+    "emoji": "🗣️",
+    "desc": "Expresar opiniones, acuerdos",
+    "unit": 30
+  },
+  {
+    "id": "l147",
+    "name": "Argumentar",
+    "emoji": "⚖️",
+    "desc": "Discutir, convencer, persuadir",
+    "unit": 30
+  },
+  {
+    "id": "l148",
+    "name": "Modismos",
+    "emoji": "💡",
+    "desc": "Frases hechas del español",
+    "hearts": 4,
+    "unit": 30
+  },
+  {
+    "id": "l149",
+    "name": "Refranes",
+    "emoji": "📜",
+    "desc": "Proverbios populares",
+    "hearts": 4,
+    "unit": 30
+  },
+  {
+    "id": "l150",
+    "name": "Repaso Maestro III",
+    "emoji": "🎓",
+    "desc": "Repaso final (126-149)",
+    "hearts": 2,
+    "unit": 30
+  },
+  {
+    "id": "l151",
+    "name": "Entrevista",
+    "emoji": "💼",
+    "desc": "Trabajo, jefe, sueldo",
+    "unit": 31
+  },
+  {
+    "id": "l152",
+    "name": "Carrera",
+    "emoji": "📄",
+    "desc": "CV, profesión, formación",
+    "unit": 31
+  },
+  {
+    "id": "l153",
+    "name": "Reuniones",
+    "emoji": "🤝",
+    "desc": "Junta, agenda, presentación",
+    "unit": 31
+  },
+  {
+    "id": "l154",
+    "name": "Email pro",
+    "emoji": "✉️",
+    "desc": "Asunto, adjunto, saludo formal",
+    "unit": 31
+  },
+  {
+    "id": "l155",
+    "name": "Repaso 25",
+    "emoji": "💼",
+    "desc": "Repaso L151-L154",
+    "hearts": 2,
+    "unit": 31
+  },
+  {
+    "id": "l156",
+    "name": "Ciencia",
+    "emoji": "🔬",
+    "desc": "Investigar, descubrir, experimentar",
+    "unit": 32
+  },
+  {
+    "id": "l157",
+    "name": "Espacio",
+    "emoji": "🚀",
+    "desc": "Estrellas, planetas, cohetes",
+    "unit": 32
+  },
+  {
+    "id": "l158",
+    "name": "IA",
+    "emoji": "🤖",
+    "desc": "Robot, algoritmo, datos",
+    "unit": 32
+  },
+  {
+    "id": "l159",
+    "name": "Invenciones",
+    "emoji": "⚙️",
+    "desc": "Construir, diseñar, máquinas",
+    "unit": 32
+  },
+  {
+    "id": "l160",
+    "name": "Repaso 26",
+    "emoji": "🔬",
+    "desc": "Repaso L156-L159",
+    "hearts": 2,
+    "unit": 32
+  },
+  {
+    "id": "l161",
+    "name": "Dentista",
+    "emoji": "🦷",
+    "desc": "Dientes, caries, dolor",
+    "unit": 33
+  },
+  {
+    "id": "l162",
+    "name": "Cirugía",
+    "emoji": "🩺",
+    "desc": "Operación, hospital, recuperación",
+    "unit": 33
+  },
+  {
+    "id": "l163",
+    "name": "Embarazo",
+    "emoji": "🤰",
+    "desc": "Bebé, parto, esperar",
+    "unit": 33
+  },
+  {
+    "id": "l164",
+    "name": "Salud mental",
+    "emoji": "🧠",
+    "desc": "Estrés, terapia, ansiedad",
+    "unit": 33
+  },
+  {
+    "id": "l165",
+    "name": "Repaso 27",
+    "emoji": "🩺",
+    "desc": "Repaso L161-L164",
+    "hearts": 2,
+    "unit": 33
+  },
+  {
+    "id": "l166",
+    "name": "Inversiones",
+    "emoji": "📈",
+    "desc": "Bolsa, acciones, ahorrar",
+    "unit": 34
+  },
+  {
+    "id": "l167",
+    "name": "Impuestos",
+    "emoji": "🧾",
+    "desc": "Hacienda, declarar, pagar",
+    "unit": 34
+  },
+  {
+    "id": "l168",
+    "name": "Seguros",
+    "emoji": "🛡️",
+    "desc": "Póliza, accidente, cobertura",
+    "unit": 34
+  },
+  {
+    "id": "l169",
+    "name": "Inmobiliaria",
+    "emoji": "🏘️",
+    "desc": "Alquilar, comprar piso, hipoteca",
+    "unit": 34
+  },
+  {
+    "id": "l170",
+    "name": "Repaso 28",
+    "emoji": "💰",
+    "desc": "Repaso L166-L169",
+    "hearts": 2,
+    "unit": 34
+  },
+  {
+    "id": "l171",
+    "name": "Si hubiera...",
+    "emoji": "🌀",
+    "desc": "Si hubiera sabido, habría...",
+    "hearts": 4,
+    "unit": 35
+  },
+  {
+    "id": "l172",
+    "name": "Acabo de / Voy a",
+    "emoji": "⏳",
+    "desc": "Perífrasis verbales: acabar, ir, estar",
+    "hearts": 4,
+    "unit": 35
+  },
+  {
+    "id": "l173",
+    "name": "Conectores",
+    "emoji": "🔗",
+    "desc": "A pesar de, por lo tanto, mientras",
+    "hearts": 4,
+    "unit": 35
+  },
+  {
+    "id": "l174",
+    "name": "Estilo indirecto",
+    "emoji": "💬",
+    "desc": "Reported speech: dijo que...",
+    "hearts": 4,
+    "unit": 35
+  },
+  {
+    "id": "l175",
+    "name": "Repaso Maestro IV",
+    "emoji": "🎓",
+    "desc": "Repaso final (151-174)",
+    "hearts": 2,
+    "unit": 35
+  },
+  {
+    "id": "l176",
+    "name": "Citas",
+    "emoji": "💘",
+    "desc": "Salir, primera cita, gustar",
+    "unit": 36
+  },
+  {
+    "id": "l177",
+    "name": "Problemas",
+    "emoji": "⚠️",
+    "desc": "Crisis, soluciones, ayuda",
+    "unit": 36
+  },
+  {
+    "id": "l178",
+    "name": "Voluntariado",
+    "emoji": "🤲",
+    "desc": "ONG, donar, ayudar",
+    "unit": 36
+  },
+  {
+    "id": "l179",
+    "name": "Clima",
+    "emoji": "🌡️",
+    "desc": "Calentamiento, sequía, plástico",
+    "unit": 36
+  },
+  {
+    "id": "l180",
+    "name": "Repaso 29",
+    "emoji": "🤝",
+    "desc": "Repaso L176-L179",
+    "hearts": 2,
+    "unit": 36
+  },
+  {
+    "id": "l181",
+    "name": "Camping",
+    "emoji": "🏕️",
+    "desc": "Tienda, fogata, mochila",
+    "unit": 37
+  },
+  {
+    "id": "l182",
+    "name": "Peluquería",
+    "emoji": "💇",
+    "desc": "Cortar el pelo, salón, maquillaje",
+    "unit": 37
+  },
+  {
+    "id": "l183",
+    "name": "Herramientas",
+    "emoji": "🔧",
+    "desc": "Martillo, clavo, taladro",
+    "unit": 37
+  },
+  {
+    "id": "l184",
+    "name": "Jardinería",
+    "emoji": "🌱",
+    "desc": "Plantar, regar, semillas",
+    "unit": 37
+  },
+  {
+    "id": "l185",
+    "name": "Repaso 30",
+    "emoji": "🏕️",
+    "desc": "Repaso L181-L184",
+    "hearts": 2,
+    "unit": 37
+  },
+  {
+    "id": "l186",
+    "name": "Crimen",
+    "emoji": "🚔",
+    "desc": "Robar, ladrón, denuncia",
+    "unit": 38
+  },
+  {
+    "id": "l187",
+    "name": "Tribunal",
+    "emoji": "⚖️",
+    "desc": "Juez, abogado, sentencia",
+    "unit": 38
+  },
+  {
+    "id": "l188",
+    "name": "Policía",
+    "emoji": "👮",
+    "desc": "Agentes, comisaría, multa",
+    "unit": 38
+  },
+  {
+    "id": "l189",
+    "name": "Servicios",
+    "emoji": "💡",
+    "desc": "Luz, agua, gas, factura",
+    "unit": 38
+  },
+  {
+    "id": "l190",
+    "name": "Repaso 31",
+    "emoji": "⚖️",
+    "desc": "Repaso L186-L189",
+    "hearts": 2,
+    "unit": 38
+  },
+  {
+    "id": "l191",
+    "name": "Universidad",
+    "emoji": "🎓",
+    "desc": "Facultad, carrera, campus",
+    "unit": 39
+  },
+  {
+    "id": "l192",
+    "name": "Exámenes",
+    "emoji": "📝",
+    "desc": "Aprobar, suspender, nota",
+    "unit": 39
+  },
+  {
+    "id": "l193",
+    "name": "Investigación",
+    "emoji": "🔬",
+    "desc": "Tesis, doctorado, publicación",
+    "unit": 39
+  },
+  {
+    "id": "l194",
+    "name": "Becas",
+    "emoji": "💰",
+    "desc": "Beca, matrícula, solicitar",
+    "unit": 39
+  },
+  {
+    "id": "l195",
+    "name": "Repaso 32",
+    "emoji": "🎓",
+    "desc": "Repaso L191-L194",
+    "hearts": 2,
+    "unit": 39
+  },
+  {
+    "id": "l196",
+    "name": "Diminutivos",
+    "emoji": "🤏",
+    "desc": "-ito, -azo, -ón",
+    "hearts": 4,
+    "unit": 40
+  },
+  {
+    "id": "l197",
+    "name": "Falsos amigos",
+    "emoji": "⚠️",
+    "desc": "Trampas: embarazada ≠ embarrassed",
+    "hearts": 4,
+    "unit": 40
+  },
+  {
+    "id": "l198",
+    "name": "Slang",
+    "emoji": "😎",
+    "desc": "Tío, guay, vale (España)",
+    "hearts": 4,
+    "unit": 40
+  },
+  {
+    "id": "l199",
+    "name": "Variantes",
+    "emoji": "🌎",
+    "desc": "España vs LatAm: coche/carro, ordenador/computadora",
+    "hearts": 4,
+    "unit": 40
+  },
+  {
+    "id": "l200",
+    "name": "Repaso Maestro V",
+    "emoji": "🏆",
+    "desc": "¡Lección 200! Repaso final (176-199)",
+    "hearts": 2,
+    "unit": 40
+  },
+  {
+    "id": "l201",
+    "name": "Ser vs Estar 1",
+    "emoji": "⚖️",
+    "desc": "Identidad vs estado temporal",
+    "unit": 41
+  },
+  {
+    "id": "l202",
+    "name": "Ser vs Estar 2",
+    "emoji": "🌍",
+    "desc": "Origen (ser) vs ubicación (estar)",
+    "unit": 41
+  },
+  {
+    "id": "l203",
+    "name": "Ser vs Estar 3",
+    "emoji": "🔀",
+    "desc": "Cualidades vs sentimientos",
+    "unit": 41
+  },
+  {
+    "id": "l204",
+    "name": "Género",
+    "emoji": "♀️",
+    "desc": "Masculino y femenino: el, la",
+    "unit": 41
+  },
+  {
+    "id": "l205",
+    "name": "Plurales",
+    "emoji": "📚",
+    "desc": "Formar plurales: -s, -es, irregulares",
+    "unit": 41
+  },
+  {
+    "id": "l206",
+    "name": "Artículos",
+    "emoji": "📰",
+    "desc": "el, la, los, las, un, una",
+    "unit": 42
+  },
+  {
+    "id": "l207",
+    "name": "al, del, lo",
+    "emoji": "🔗",
+    "desc": "Contracciones y artículo neutro",
+    "unit": 42
+  },
+  {
+    "id": "l208",
+    "name": "Adjetivos: concordancia",
+    "emoji": "🎯",
+    "desc": "Согласование рода и числа",
+    "unit": 42
+  },
+  {
+    "id": "l209",
+    "name": "Posición de adjetivos",
+    "emoji": "📍",
+    "desc": "Gran hombre ≠ hombre grande",
+    "unit": 42
+  },
+  {
+    "id": "l210",
+    "name": "Apócope",
+    "emoji": "✂️",
+    "desc": "Сокращение прил. перед сущ.",
+    "unit": 42
+  },
+  {
+    "id": "l211",
+    "name": "Pretérito -ar",
+    "emoji": "📜",
+    "desc": "Regulares -ar: hablé, hablaste",
+    "unit": 43
+  },
+  {
+    "id": "l212",
+    "name": "Pretérito -er/-ir",
+    "emoji": "🍽️",
+    "desc": "Regulares -er/-ir: comí, viví",
+    "unit": 43
+  },
+  {
+    "id": "l213",
+    "name": "Pret. irreg. I",
+    "emoji": "🔀",
+    "desc": "Ser/Ir, Dar, Ver (одинаковые формы!)",
+    "unit": 43
+  },
+  {
+    "id": "l214",
+    "name": "Pret. irreg. II",
+    "emoji": "💪",
+    "desc": "Tener, Estar, Poder, Poner, Saber",
+    "unit": 43
+  },
+  {
+    "id": "l215",
+    "name": "Pret. irreg. III",
+    "emoji": "🗣️",
+    "desc": "Decir, Hacer, Venir, Traer",
+    "unit": 43
+  },
+  {
+    "id": "l216",
+    "name": "Pret. vs Imperfecto 1",
+    "emoji": "⏳",
+    "desc": "Acción concreta vs descripción",
+    "unit": 44
+  },
+  {
+    "id": "l217",
+    "name": "Pret. vs Imperfecto 2",
+    "emoji": "🔄",
+    "desc": "Mientras, cuando, dos acciones",
+    "unit": 44
+  },
+  {
+    "id": "l218",
+    "name": "Saber vs Conocer",
+    "emoji": "🧠",
+    "desc": "Знать факты vs знать людей/места",
+    "unit": 44
+  },
+  {
+    "id": "l219",
+    "name": "Adverbios -mente",
+    "emoji": "🎚️",
+    "desc": "Формируем наречия",
+    "unit": 44
+  },
+  {
+    "id": "l220",
+    "name": "Subjuntivo I",
+    "emoji": "🌠",
+    "desc": "Querer/Esperar/Ojalá que + subj.",
+    "unit": 44
+  },
+  {
+    "id": "l221",
+    "name": "Subjuntivo II",
+    "emoji": "🤔",
+    "desc": "Dudar, no creer, cuando + futuro",
+    "unit": 45
+  },
+  {
+    "id": "l222",
+    "name": "Subj. imperfecto",
+    "emoji": "🌀",
+    "desc": "-ara, -iera: hablara, comiera",
+    "unit": 45
+  },
+  {
+    "id": "l223",
+    "name": "Subj. imperf. uso",
+    "emoji": "💫",
+    "desc": "Hipótesis y deseos",
+    "unit": 45
+  },
+  {
+    "id": "l224",
+    "name": "Condicionales I/II",
+    "emoji": "🌦️",
+    "desc": "Реальное и нереальное условие",
+    "unit": 45
+  },
+  {
+    "id": "l225",
+    "name": "Condicional III",
+    "emoji": "⏪",
+    "desc": "Тип 3: si hubiera + habría",
+    "unit": 45
+  },
+  {
+    "id": "l226",
+    "name": "Relativas I",
+    "emoji": "🔗",
+    "desc": "Que, quien",
+    "unit": 46
+  },
+  {
+    "id": "l227",
+    "name": "Relativas II",
+    "emoji": "🪢",
+    "desc": "Cuyo, el cual, donde",
+    "unit": 46
+  },
+  {
+    "id": "l228",
+    "name": "Estar + gerundio",
+    "emoji": "🔄",
+    "desc": "Прогрессив: estoy comiendo",
+    "unit": 46
+  },
+  {
+    "id": "l229",
+    "name": "Hace / Llevo",
+    "emoji": "⏱️",
+    "desc": "Прошедшее время + длительность",
+    "unit": 46
+  },
+  {
+    "id": "l230",
+    "name": "Pronominales",
+    "emoji": "🪞",
+    "desc": "Ponerse, irse, dormirse — смена смысла",
+    "unit": 46
+  },
+  {
+    "id": "l231",
+    "name": "Mariscos",
+    "emoji": "🦐",
+    "desc": "Camarón, pulpo, mejillones…",
+    "unit": 47
+  },
+  {
+    "id": "l232",
+    "name": "Carnes",
+    "emoji": "🥩",
+    "desc": "Res, cerdo, cordero, jamón",
+    "unit": 47
+  },
+  {
+    "id": "l233",
+    "name": "Especias",
+    "emoji": "🧂",
+    "desc": "Sal, pimienta, ajo, comino",
+    "unit": 47
+  },
+  {
+    "id": "l234",
+    "name": "Lácteos",
+    "emoji": "🥛",
+    "desc": "Mantequilla, yogur, queso, crema",
+    "unit": 47
+  },
+  {
+    "id": "l235",
+    "name": "Repostería",
+    "emoji": "🍰",
+    "desc": "Galletas, churros, tartas",
+    "unit": 47
+  },
+  {
+    "id": "l236",
+    "name": "Pasta y arroz",
+    "emoji": "🍝",
+    "desc": "Espaguetis, paella, lasaña",
+    "unit": 48
+  },
+  {
+    "id": "l237",
+    "name": "Vinos y bebidas",
+    "emoji": "🍷",
+    "desc": "Tinto, blanco, sangría",
+    "unit": 48
+  },
+  {
+    "id": "l238",
+    "name": "Alergias",
+    "emoji": "⚠️",
+    "desc": "Gluten, lactosa, frutos secos",
+    "unit": 48
+  },
+  {
+    "id": "l239",
+    "name": "Vegetarianismo",
+    "emoji": "🥗",
+    "desc": "Vegano, vegetariano, plant-based",
+    "unit": 48
+  },
+  {
+    "id": "l240",
+    "name": "Dieta y nutrición",
+    "emoji": "📊",
+    "desc": "Calorías, proteína, ayuno",
+    "unit": 48
+  },
+  {
+    "id": "l241",
+    "name": "Tareas domésticas",
+    "emoji": "🏠",
+    "desc": "Limpiar, ordenar, barrer",
+    "unit": 49
+  },
+  {
+    "id": "l242",
+    "name": "Limpieza",
+    "emoji": "🧼",
+    "desc": "Lavar, secar, planchar",
+    "unit": 49
+  },
+  {
+    "id": "l243",
+    "name": "Lavandería",
+    "emoji": "🧺",
+    "desc": "Detergente, lavadora, suavizante",
+    "unit": 49
+  },
+  {
+    "id": "l244",
+    "name": "Mudanza",
+    "emoji": "📦",
+    "desc": "Caja, camión, embalar",
+    "unit": 49
+  },
+  {
+    "id": "l245",
+    "name": "Decoración",
+    "emoji": "🖼️",
+    "desc": "Cortinas, alfombra, cuadro",
+    "unit": 49
+  },
+  {
+    "id": "l246",
+    "name": "Jardín",
+    "emoji": "🪴",
+    "desc": "Maceta, regar, semillas",
+    "unit": 50
+  },
+  {
+    "id": "l247",
+    "name": "Electrodomésticos",
+    "emoji": "🔌",
+    "desc": "Microondas, lavavajillas, robot",
+    "unit": 50
+  },
+  {
+    "id": "l248",
+    "name": "Fontanería casera",
+    "emoji": "🔧",
+    "desc": "Cañería, grifo, fuga",
+    "unit": 50
+  },
+  {
+    "id": "l249",
+    "name": "Salud dental",
+    "emoji": "🦷",
+    "desc": "Caries, empaste, hilo dental",
+    "unit": 50
+  },
+  {
+    "id": "l250",
+    "name": "Dermatología",
+    "emoji": "🧴",
+    "desc": "Piel, acné, manchas, crema",
+    "unit": 50
+  },
+  {
+    "id": "l251",
+    "name": "Ginecología",
+    "emoji": "🤰",
+    "desc": "Embarazo, parto, ciclo",
+    "unit": 51
+  },
+  {
+    "id": "l252",
+    "name": "Oftalmología",
+    "emoji": "👓",
+    "desc": "Gafas, lentillas, vista",
+    "unit": 51
+  },
+  {
+    "id": "l253",
+    "name": "Fisioterapia",
+    "emoji": "💪",
+    "desc": "Lesión, masaje, rehabilitación",
+    "unit": 51
+  },
+  {
+    "id": "l254",
+    "name": "Nutrición clínica",
+    "emoji": "💊",
+    "desc": "Vitaminas, minerales, suplementos",
+    "unit": 51
+  },
+  {
+    "id": "l255",
+    "name": "Medicamentos",
+    "emoji": "💉",
+    "desc": "Jarabe, pastilla, antibiótico",
+    "unit": 51
+  },
+  {
+    "id": "l256",
+    "name": "Alergias",
+    "emoji": "🤧",
+    "desc": "Polen, ácaros, estornudar",
+    "unit": 52
+  },
+  {
+    "id": "l257",
+    "name": "Hospital",
+    "emoji": "🏥",
+    "desc": "Camilla, quirófano, UCI",
+    "unit": 52
+  },
+  {
+    "id": "l258",
+    "name": "Urgencias",
+    "emoji": "🚑",
+    "desc": "Ambulancia, paro, herida",
+    "unit": 52
+  },
+  {
+    "id": "l259",
+    "name": "Carnicería",
+    "emoji": "🥩",
+    "desc": "Chuleta, filete, picada",
+    "unit": 52
+  },
+  {
+    "id": "l260",
+    "name": "Pescadería",
+    "emoji": "🐟",
+    "desc": "Atún, sardina, salmón",
+    "unit": 52
+  },
+  {
+    "id": "l261",
+    "name": "Panadería",
+    "emoji": "🥖",
+    "desc": "Pan, croissant, hornear",
+    "unit": 53
+  },
+  {
+    "id": "l262",
+    "name": "Farmacia avanzada",
+    "emoji": "💊",
+    "desc": "Receta, jarabe, suplementos",
+    "unit": 53
+  },
+  {
+    "id": "l263",
+    "name": "Peluquería avanzada",
+    "emoji": "💇",
+    "desc": "Mechas, tinte, flequillo",
+    "unit": 53
+  },
+  {
+    "id": "l264",
+    "name": "Mercería",
+    "emoji": "🧵",
+    "desc": "Botón, hilo, aguja",
+    "unit": 53
+  },
+  {
+    "id": "l265",
+    "name": "Vestuario formal",
+    "emoji": "👔",
+    "desc": "Traje, corbata, chaleco",
+    "unit": 53
+  },
+  {
+    "id": "l266",
+    "name": "Vestuario deportivo",
+    "emoji": "🎽",
+    "desc": "Chándal, zapatillas, sudadera",
+    "unit": 54
+  },
+  {
+    "id": "l267",
+    "name": "Joyería",
+    "emoji": "💍",
+    "desc": "Anillo, collar, pendientes",
+    "unit": 54
+  },
+  {
+    "id": "l268",
+    "name": "Calzado",
+    "emoji": "👠",
+    "desc": "Botas, sandalias, tacones",
+    "unit": 54
+  },
+  {
+    "id": "l269",
+    "name": "Cosmética",
+    "emoji": "💄",
+    "desc": "Rímel, labial, base",
+    "unit": 54
+  },
+  {
+    "id": "l270",
+    "name": "Telas",
+    "emoji": "🧶",
+    "desc": "Algodón, lana, seda, lino",
+    "unit": 54
+  },
+  {
+    "id": "l271",
+    "name": "Catástrofes",
+    "emoji": "🌪️",
+    "desc": "Terremoto, inundación, huracán",
+    "unit": 55
+  },
+  {
+    "id": "l272",
+    "name": "Ecología",
+    "emoji": "🌍",
+    "desc": "Contaminación, planeta, basura",
+    "unit": 55
+  },
+  {
+    "id": "l273",
+    "name": "Energías renovables",
+    "emoji": "🔋",
+    "desc": "Solar, eólica, biomasa",
+    "unit": 55
+  },
+  {
+    "id": "l274",
+    "name": "Reciclaje",
+    "emoji": "♻️",
+    "desc": "Orgánico, plástico, vidrio",
+    "unit": 55
+  },
+  {
+    "id": "l275",
+    "name": "Astronomía",
+    "emoji": "🔭",
+    "desc": "Planetas, estrellas, galaxia",
+    "unit": 55
+  },
+  {
+    "id": "l276",
+    "name": "Geografía",
+    "emoji": "🗺️",
+    "desc": "Continentes, océanos, ríos",
+    "unit": 56
+  },
+  {
+    "id": "l277",
+    "name": "Marketing",
+    "emoji": "📢",
+    "desc": "Marca, anuncio, cliente",
+    "unit": 56
+  },
+  {
+    "id": "l278",
+    "name": "Publicidad",
+    "emoji": "🪧",
+    "desc": "Eslogan, campaña, medios",
+    "unit": 56
+  },
+  {
+    "id": "l279",
+    "name": "Redes sociales",
+    "emoji": "📱",
+    "desc": "Post, seguidor, hashtag",
+    "unit": 56
+  },
+  {
+    "id": "l280",
+    "name": "SEO",
+    "emoji": "🔎",
+    "desc": "Búsqueda, palabra clave, ranking",
+    "unit": 56
+  },
+  {
+    "id": "l281",
+    "name": "Emprendimiento",
+    "emoji": "🚀",
+    "desc": "Startup, inversor, financiación",
+    "unit": 57
+  },
+  {
+    "id": "l282",
+    "name": "Bolsa de valores",
+    "emoji": "📈",
+    "desc": "Acción, dividendo, mercado",
+    "unit": 57
+  },
+  {
+    "id": "l283",
+    "name": "Criptomonedas",
+    "emoji": "🪙",
+    "desc": "Bitcoin, blockchain, billetera",
+    "unit": 57
+  },
+  {
+    "id": "l284",
+    "name": "Contabilidad",
+    "emoji": "🧮",
+    "desc": "Factura, balance, impuesto",
+    "unit": 57
+  },
+  {
+    "id": "l285",
+    "name": "Recursos humanos",
+    "emoji": "👔",
+    "desc": "Contratar, despedir, sueldo",
+    "unit": 57
+  },
+  {
+    "id": "l286",
+    "name": "Reuniones",
+    "emoji": "🌐",
+    "desc": "Delegado, agenda, traducir",
+    "unit": 58
+  },
+  {
+    "id": "l287",
+    "name": "Mecánica auto",
+    "emoji": "🔧",
+    "desc": "Motor, freno, aceite, rueda",
+    "unit": 58
+  },
+  {
+    "id": "l288",
+    "name": "Electricidad",
+    "emoji": "⚡",
+    "desc": "Cable, enchufe, fusible",
+    "unit": 58
+  },
+  {
+    "id": "l289",
+    "name": "Fontanería",
+    "emoji": "🚰",
+    "desc": "Tubería, válvula, fontanero",
+    "unit": 58
+  },
+  {
+    "id": "l290",
+    "name": "Carpintería",
+    "emoji": "🪚",
+    "desc": "Madera, sierra, martillo",
+    "unit": 58
+  },
+  {
+    "id": "l291",
+    "name": "Construcción",
+    "emoji": "🏗️",
+    "desc": "Obra, andamio, ladrillo",
+    "unit": 59
+  },
+  {
+    "id": "l292",
+    "name": "Agricultura",
+    "emoji": "🌾",
+    "desc": "Cosecha, semilla, granja",
+    "unit": 59
+  },
+  {
+    "id": "l293",
+    "name": "Ganadería",
+    "emoji": "🐄",
+    "desc": "Vaca, ordeñar, pastor",
+    "unit": 59
+  },
+  {
+    "id": "l294",
+    "name": "Pesca",
+    "emoji": "🎣",
+    "desc": "Red, anzuelo, pescador",
+    "unit": 59
+  },
+  {
+    "id": "l295",
+    "name": "Política internac.",
+    "emoji": "🏛️",
+    "desc": "Cumbre, acuerdo, embajador",
+    "unit": 59
+  },
+  {
+    "id": "l296",
+    "name": "ONU / UE",
+    "emoji": "🇺🇳",
+    "desc": "Organizaciones internacionales",
+    "unit": 60
+  },
+  {
+    "id": "l297",
+    "name": "Derechos humanos",
+    "emoji": "⚖️",
+    "desc": "Libertad, igualdad, justicia",
+    "unit": 60
+  },
+  {
+    "id": "l298",
+    "name": "Migración",
+    "emoji": "🛂",
+    "desc": "Migrante, refugiado, visado",
+    "unit": 60
+  },
+  {
+    "id": "l299",
+    "name": "Igualdad de género",
+    "emoji": "⚧️",
+    "desc": "Feminismo, brecha salarial",
+    "unit": 60
+  },
+  {
+    "id": "l300",
+    "name": "Voluntariado",
+    "emoji": "🤲",
+    "desc": "ONG, donación, causa",
+    "unit": 60
+  }
+]

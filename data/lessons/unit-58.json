@@ -1,0 +1,180 @@
+{
+  "unit": 58,
+  "lessons": [
+    {
+      "id": "l286",
+      "name": "Reuniones",
+      "emoji": "🌐",
+      "desc": "Delegado, agenda, traducir",
+      "exercises": [
+        { "t": "pick", "q": "«Делегат»", "opts": [
+          { "txt": "delegado",  "em": "🤝" },
+          { "txt": "cliente",   "em": "❌" },
+          { "txt": "invitado",  "em": "❌" },
+          { "txt": "operario",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Повестка дня»", "opts": [
+          { "txt": "agenda",   "em": "📋" },
+          { "txt": "informe",  "em": "❌" },
+          { "txt": "factura",  "em": "❌" },
+          { "txt": "tarjeta",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["reunión",    "совещание"],
+          ["agenda",     "повестка"],
+          ["delegado",   "делегат"],
+          ["traducir",   "переводить"]
+        ]},
+        { "t": "match", "pairs": [
+          ["intérprete",   "устный переводчик"],
+          ["sala de juntas","зал заседаний"],
+          ["pantalla",     "экран"],
+          ["acta",         "протокол"]
+        ]},
+        { "t": "translate", "from": "Нам нужен переводчик на собрании", "tiles": ["necesitamos", "un", "intérprete", "en", "la", "reunión", "traductor"], "answer": ["necesitamos", "un", "intérprete", "en", "la", "reunión"] },
+        { "t": "fill", "sentence": ["¿Cuál es la", null, "de hoy?"], "target": "agenda", "opts": ["agenda", "ducha", "cena"], "hint": "Какая повестка?" },
+        { "t": "typed", "from": "Соберёмся в 10 в зале заседаний", "answer": "nos reunimos a las diez en la sala de juntas", "answers": ["nos reunimos a las diez en la sala de juntas", "nos vemos a las 10 en la sala de juntas"], "hint": "sala de juntas" }
+      ]
+    },
+    {
+      "id": "l287",
+      "name": "Mecánica auto",
+      "emoji": "🔧",
+      "desc": "Motor, freno, aceite, rueda",
+      "exercises": [
+        { "t": "pick", "q": "«Двигатель»", "opts": [
+          { "txt": "motor",   "em": "🔧" },
+          { "txt": "freno",   "em": "❌" },
+          { "txt": "rueda",   "em": "❌" },
+          { "txt": "aceite",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Тормоз»", "opts": [
+          { "txt": "freno",   "em": "🛑" },
+          { "txt": "volante", "em": "❌" },
+          { "txt": "embrague","em": "❌" },
+          { "txt": "marcha",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["motor",   "двигатель"],
+          ["freno",   "тормоз"],
+          ["rueda",   "колесо"],
+          ["aceite",  "масло"]
+        ]},
+        { "t": "match", "pairs": [
+          ["taller",      "автосервис"],
+          ["mecánico",    "механик"],
+          ["batería",     "аккумулятор"],
+          ["pinchazo",    "прокол шины"]
+        ]},
+        { "t": "translate", "from": "Машина не заводится", "tiles": ["el", "coche", "no", "arranca", "comienza"], "answer": ["el", "coche", "no", "arranca"] },
+        { "t": "fill", "sentence": ["Hay que cambiar el", null, "."], "target": "aceite", "opts": ["aceite", "café", "fuego"], "hint": "Поменять масло" },
+        { "t": "typed", "from": "У меня прокол шины", "answer": "tengo un pinchazo", "answers": ["tengo un pinchazo", "se me pinchó la rueda"], "hint": "pinchazo" }
+      ]
+    },
+    {
+      "id": "l288",
+      "name": "Electricidad",
+      "emoji": "⚡",
+      "desc": "Cable, enchufe, fusible",
+      "exercises": [
+        { "t": "pick", "q": "«Розетка»", "opts": [
+          { "txt": "enchufe",  "em": "🔌" },
+          { "txt": "cable",    "em": "❌" },
+          { "txt": "fusible",  "em": "❌" },
+          { "txt": "bombilla", "em": "💡" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Лампочка»", "opts": [
+          { "txt": "bombilla","em": "💡" },
+          { "txt": "vela",    "em": "🕯️" },
+          { "txt": "linterna","em": "🔦" },
+          { "txt": "pantalla","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["enchufe",  "розетка"],
+          ["cable",    "провод"],
+          ["fusible",  "предохранитель"],
+          ["bombilla", "лампочка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["voltaje",   "напряжение"],
+          ["corriente", "ток"],
+          ["interruptor","выключатель"],
+          ["electricista","электрик"]
+        ]},
+        { "t": "translate", "from": "Перегорела лампочка", "tiles": ["se", "fundió", "la", "bombilla", "ventana"], "answer": ["se", "fundió", "la", "bombilla"] },
+        { "t": "fill", "sentence": ["Apaga el", null, "."], "target": "interruptor", "opts": ["interruptor", "menú", "agua"], "hint": "Выключи свет" },
+        { "t": "typed", "from": "Нет электричества", "answer": "no hay luz", "answers": ["no hay luz", "no hay electricidad", "se fue la luz"], "hint": "luz = свет/электричество" }
+      ]
+    },
+    {
+      "id": "l289",
+      "name": "Fontanería",
+      "emoji": "🚰",
+      "desc": "Tubería, válvula, fontanero",
+      "exercises": [
+        { "t": "pick", "q": "«Сантехник»", "opts": [
+          { "txt": "fontanero",  "em": "🔧" },
+          { "txt": "carpintero", "em": "❌" },
+          { "txt": "albañil",    "em": "❌" },
+          { "txt": "electricista","em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Труба»", "opts": [
+          { "txt": "tubería", "em": "🚿" },
+          { "txt": "cable",   "em": "❌" },
+          { "txt": "ladrillo","em": "❌" },
+          { "txt": "tabla",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["tubería",  "труба"],
+          ["válvula",  "вентиль"],
+          ["fuga",     "течь"],
+          ["llave",    "вентильный кран"]
+        ]},
+        { "t": "match", "pairs": [
+          ["caliente",   "горячая"],
+          ["fría",       "холодная"],
+          ["caldera",    "бойлер"],
+          ["depósito",   "бак"]
+        ]},
+        { "t": "translate", "from": "Воды нет", "tiles": ["no", "hay", "agua", "luz"], "answer": ["no", "hay", "agua"] },
+        { "t": "fill", "sentence": ["Cierra la", null, "del agua."], "target": "llave", "opts": ["llave", "puerta", "cama"], "hint": "Закрой кран" },
+        { "t": "typed", "from": "Сантехник придёт завтра", "answer": "el fontanero viene mañana", "answers": ["el fontanero viene mañana", "el fontanero vendrá mañana"], "hint": "fontanero = plomero (LatAm)" }
+      ]
+    },
+    {
+      "id": "l290",
+      "name": "Carpintería",
+      "emoji": "🪚",
+      "desc": "Madera, sierra, martillo",
+      "exercises": [
+        { "t": "pick", "q": "«Дерево (материал)»", "opts": [
+          { "txt": "madera",   "em": "🪵" },
+          { "txt": "árbol",    "em": "❌" },
+          { "txt": "hierro",   "em": "❌" },
+          { "txt": "plástico", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Молоток»", "opts": [
+          { "txt": "martillo","em": "🔨" },
+          { "txt": "sierra",  "em": "❌" },
+          { "txt": "clavo",   "em": "❌" },
+          { "txt": "tornillo","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["madera",   "дерево (мат.)"],
+          ["sierra",   "пила"],
+          ["martillo", "молоток"],
+          ["clavo",    "гвоздь"]
+        ]},
+        { "t": "match", "pairs": [
+          ["tornillo",   "винт"],
+          ["destornillador","отвёртка"],
+          ["taller",     "мастерская"],
+          ["carpintero", "плотник"]
+        ]},
+        { "t": "translate", "from": "Мне нужны гвозди и молоток", "tiles": ["necesito", "clavos", "y", "un", "martillo", "tornillos"], "answer": ["necesito", "clavos", "y", "un", "martillo"] },
+        { "t": "fill", "sentence": ["Esta mesa es de", null, "."], "target": "madera", "opts": ["madera", "agua", "carne"], "hint": "Стол из дерева" },
+        { "t": "typed", "from": "Я делаю шкаф", "answer": "estoy haciendo un armario", "answers": ["estoy haciendo un armario", "hago un armario"], "hint": "armario = шкаф" }
+      ]
+    }
+  ]
+}

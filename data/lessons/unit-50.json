@@ -1,0 +1,186 @@
+{
+  "unit": 50,
+  "lessons": [
+    {
+      "id": "l246",
+      "name": "Jardín",
+      "emoji": "🪴",
+      "desc": "Maceta, regar, semillas",
+      "exercises": [
+        { "t": "pick", "q": "«Горшок»", "opts": [
+          { "txt": "maceta",   "em": "🪴" },
+          { "txt": "florero",  "em": "❌" },
+          { "txt": "regadera", "em": "❌" },
+          { "txt": "tierra",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Поливать»", "opts": [
+          { "txt": "regar",   "em": "💧" },
+          { "txt": "secar",   "em": "❌" },
+          { "txt": "cortar",  "em": "✂️" },
+          { "txt": "plantar", "em": "🌱" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Семечко»", "opts": [
+          { "txt": "semilla", "em": "🌱" },
+          { "txt": "flor",    "em": "🌸" },
+          { "txt": "hoja",    "em": "🍃" },
+          { "txt": "raíz",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["maceta",  "горшок"],
+          ["semilla", "семечко"],
+          ["regar",   "поливать"],
+          ["plantar", "сажать"]
+        ]},
+        { "t": "match", "pairs": [
+          ["raíz",     "корень"],
+          ["hoja",     "лист"],
+          ["tronco",   "ствол"],
+          ["jardinero","садовник"]
+        ]},
+        { "t": "translate", "from": "Я поливаю растения каждый день", "tiles": ["riego", "las", "plantas", "cada", "día", "todos"], "answer": ["riego", "las", "plantas", "cada", "día"] },
+        { "t": "fill", "sentence": ["Voy a", null, "tomates en el jardín."], "target": "plantar", "opts": ["plantar", "fregar", "ver"], "hint": "Посажу помидоры" },
+        { "t": "typed", "from": "У меня много цветов на балконе", "answer": "tengo muchas flores en el balcón", "answers": ["tengo muchas flores en el balcón", "hay muchas flores en mi balcón"], "hint": "balcón = балкон" }
+      ]
+    },
+    {
+      "id": "l247",
+      "name": "Electrodomésticos",
+      "emoji": "🔌",
+      "desc": "Microondas, lavavajillas, robot",
+      "exercises": [
+        { "t": "pick", "q": "«Микроволновка»", "opts": [
+          { "txt": "microondas",  "em": "📡" },
+          { "txt": "horno",       "em": "🔥" },
+          { "txt": "tostadora",   "em": "🍞" },
+          { "txt": "nevera",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Посудомоечная машина»", "opts": [
+          { "txt": "lavadora",     "em": "❌" },
+          { "txt": "lavavajillas", "em": "🍽️" },
+          { "txt": "secadora",     "em": "❌" },
+          { "txt": "aspiradora",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["nevera / frigorífico","холодильник"],
+          ["microondas",          "микроволновка"],
+          ["lavavajillas",        "посудомойка"],
+          ["aspiradora",          "пылесос"]
+        ]},
+        { "t": "match", "pairs": [
+          ["robot aspirador","робот-пылесос"],
+          ["cafetera",       "кофеварка"],
+          ["batidora",       "блендер"],
+          ["tostadora",      "тостер"]
+        ]},
+        { "t": "translate", "from": "Включи стиральную машину, пожалуйста", "tiles": ["enciende", "la", "lavadora", "por", "favor", "apaga"], "answer": ["enciende", "la", "lavadora", "por", "favor"] },
+        { "t": "fill", "sentence": ["No funciona la", null, "."], "target": "nevera", "opts": ["nevera", "ciudad", "paloma"], "hint": "Холодильник не работает" },
+        { "t": "typed", "from": "Купил новый блендер", "answer": "compré una batidora nueva", "answers": ["compré una batidora nueva", "compré una nueva batidora"], "hint": "batidora = блендер/миксер" }
+      ]
+    },
+    {
+      "id": "l248",
+      "name": "Fontanería casera",
+      "emoji": "🔧",
+      "desc": "Cañería, grifo, fuga",
+      "exercises": [
+        { "t": "pick", "q": "«Кран (для воды)»", "opts": [
+          { "txt": "grifo",    "em": "🚰" },
+          { "txt": "tubo",     "em": "❌" },
+          { "txt": "enchufe",  "em": "🔌" },
+          { "txt": "ducha",    "em": "🚿" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Течь / утечка»", "opts": [
+          { "txt": "fuga",    "em": "💧" },
+          { "txt": "humo",    "em": "❌" },
+          { "txt": "ruido",   "em": "❌" },
+          { "txt": "olor",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["grifo",    "кран"],
+          ["cañería",  "труба"],
+          ["fuga",     "течь"],
+          ["desagüe",  "слив"]
+        ]},
+        { "t": "match", "pairs": [
+          ["atasco",     "засор"],
+          ["llave de paso","главный кран"],
+          ["caldera",    "котёл / бойлер"],
+          ["fontanero",  "сантехник"]
+        ]},
+        { "t": "translate", "from": "В кухне есть течь", "tiles": ["hay", "una", "fuga", "en", "la", "cocina", "fuego"], "answer": ["hay", "una", "fuga", "en", "la", "cocina"] },
+        { "t": "fill", "sentence": ["Llama al", null, "."], "target": "fontanero", "opts": ["fontanero", "panadero", "médico"], "hint": "Позвони сантехнику" },
+        { "t": "typed", "from": "Кран капает", "answer": "el grifo gotea", "answers": ["el grifo gotea", "el grifo está goteando"], "hint": "gotear = капать" }
+      ]
+    },
+    {
+      "id": "l249",
+      "name": "Salud dental",
+      "emoji": "🦷",
+      "desc": "Caries, empaste, hilo dental",
+      "exercises": [
+        { "t": "pick", "q": "«Кариес»", "opts": [
+          { "txt": "caries",   "em": "🦷" },
+          { "txt": "dolor",    "em": "❌" },
+          { "txt": "encía",    "em": "❌" },
+          { "txt": "empaste",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Пломба»", "opts": [
+          { "txt": "diente",    "em": "❌" },
+          { "txt": "empaste",   "em": "🔩" },
+          { "txt": "encía",     "em": "❌" },
+          { "txt": "lengua",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["diente",  "зуб"],
+          ["encía",   "десна"],
+          ["muela",   "коренной зуб"],
+          ["lengua",  "язык"]
+        ]},
+        { "t": "match", "pairs": [
+          ["caries",     "кариес"],
+          ["empaste",    "пломба"],
+          ["hilo dental","зубная нить"],
+          ["cepillo",    "щётка"]
+        ]},
+        { "t": "translate", "from": "У меня болит зуб", "tiles": ["me", "duele", "un", "diente", "el", "pie"], "answer": ["me", "duele", "un", "diente"] },
+        { "t": "fill", "sentence": ["Tengo cita con el", null, "."], "target": "dentista", "opts": ["dentista", "vecino", "panadero"], "hint": "Запись к стоматологу" },
+        { "t": "typed", "from": "Чисти зубы два раза в день", "answer": "cepíllate los dientes dos veces al día", "answers": ["cepíllate los dientes dos veces al día", "lávate los dientes dos veces al día"], "hint": "cepillarse los dientes" }
+      ]
+    },
+    {
+      "id": "l250",
+      "name": "Dermatología",
+      "emoji": "🧴",
+      "desc": "Piel, acné, manchas, crema",
+      "exercises": [
+        { "t": "pick", "q": "«Кожа»", "opts": [
+          { "txt": "piel",  "em": "🧴" },
+          { "txt": "pelo",  "em": "💇" },
+          { "txt": "uña",   "em": "❌" },
+          { "txt": "hueso", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Прыщи / акне»", "opts": [
+          { "txt": "acné",      "em": "🔴" },
+          { "txt": "alergia",   "em": "❌" },
+          { "txt": "arruga",    "em": "❌" },
+          { "txt": "cicatriz",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["piel",      "кожа"],
+          ["acné",      "акне"],
+          ["mancha",    "пятно"],
+          ["arruga",    "морщина"]
+        ]},
+        { "t": "match", "pairs": [
+          ["crema",        "крем"],
+          ["protector solar","солнцезащитный"],
+          ["lunar",        "родинка"],
+          ["cicatriz",     "шрам"]
+        ]},
+        { "t": "translate", "from": "У меня сухая кожа", "tiles": ["tengo", "la", "piel", "seca", "grasa"], "answer": ["tengo", "la", "piel", "seca"] },
+        { "t": "fill", "sentence": ["Usa", null, " todos los días."], "target": "crema", "opts": ["crema", "cama", "cuchara"], "hint": "Используй крем каждый день" },
+        { "t": "typed", "from": "Не забудь солнцезащитный крем", "answer": "no olvides el protector solar", "answers": ["no olvides el protector solar", "no te olvides del protector solar"], "hint": "protector solar" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "unit": 30,
+  "lessons": [
+    {
+      "id": "l146",
+      "name": "Conversación",
+      "emoji": "🗣️",
+      "desc": "Expresar opiniones, acuerdos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«По-моему / на мой взгляд»",
+          "opts": [
+            {
+              "txt": "en mi opinión",
+              "em": "💭"
+            },
+            {
+              "txt": "en realidad",
+              "em": "⚡"
+            },
+            {
+              "txt": "por supuesto",
+              "em": "✅"
+            },
+            {
+              "txt": "sin embargo",
+              "em": "🔀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Согласен / я согласен»",
+          "opts": [
+            {
+              "txt": "estoy de acuerdo",
+              "em": "👍"
+            },
+            {
+              "txt": "estoy enfermo",
+              "em": "🤒"
+            },
+            {
+              "txt": "estoy en casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "estoy seguro",
+              "em": "💪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Однако / тем не менее»",
+          "opts": [
+            {
+              "txt": "sin embargo",
+              "em": "🔀"
+            },
+            {
+              "txt": "por supuesto",
+              "em": "✅"
+            },
+            {
+              "txt": "a propósito",
+              "em": "💡"
+            },
+            {
+              "txt": "a menudo",
+              "em": "⏰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "en mi opinión",
+              "по-моему"
+            ],
+            [
+              "estoy de acuerdo",
+              "я согласен"
+            ],
+            [
+              "no estoy de acuerdo",
+              "я не согласен"
+            ],
+            [
+              "por supuesto",
+              "конечно"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sin embargo",
+              "однако"
+            ],
+            [
+              "además",
+              "кроме того"
+            ],
+            [
+              "por ejemplo",
+              "например"
+            ],
+            [
+              "en realidad",
+              "на самом деле"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "По-моему, это правда",
+          "tiles": [
+            "en",
+            "mi",
+            "opinión",
+            "es",
+            "verdad",
+            "soy"
+          ],
+          "answer": [
+            "en",
+            "mi",
+            "opinión",
+            "es",
+            "verdad"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No",
+            null,
+            "de acuerdo contigo."
+          ],
+          "target": "estoy",
+          "opts": [
+            "estoy",
+            "soy",
+            "sé"
+          ],
+          "hint": "я не согласен с тобой"
+        },
+        {
+          "t": "typed",
+          "from": "Например, мне нравится кофе",
+          "answer": "por ejemplo, me gusta el café",
+          "answers": [
+            "por ejemplo, me gusta el café",
+            "por ejemplo me gusta el café"
+          ],
+          "hint": "por ejemplo + me gusta"
+        }
+      ]
+    },
+    {
+      "id": "l147",
+      "name": "Argumentar",
+      "emoji": "⚖️",
+      "desc": "Discutir, convencer, persuadir",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я думаю, что...»",
+          "opts": [
+            {
+              "txt": "creo que",
+              "em": "💭"
+            },
+            {
+              "txt": "sé que",
+              "em": "✅"
+            },
+            {
+              "txt": "digo que",
+              "em": "💬"
+            },
+            {
+              "txt": "veo que",
+              "em": "👀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«С другой стороны»",
+          "opts": [
+            {
+              "txt": "por otro lado",
+              "em": "⚖️"
+            },
+            {
+              "txt": "por el camino",
+              "em": "🛣️"
+            },
+            {
+              "txt": "por el momento",
+              "em": "⏳"
+            },
+            {
+              "txt": "por la noche",
+              "em": "🌙"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«В заключение»",
+          "opts": [
+            {
+              "txt": "en conclusión",
+              "em": "🏁"
+            },
+            {
+              "txt": "en realidad",
+              "em": "⚡"
+            },
+            {
+              "txt": "en general",
+              "em": "📊"
+            },
+            {
+              "txt": "en privado",
+              "em": "🤫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "creo que",
+              "я думаю, что"
+            ],
+            [
+              "por otro lado",
+              "с другой стороны"
+            ],
+            [
+              "en conclusión",
+              "в заключение"
+            ],
+            [
+              "en primer lugar",
+              "во-первых"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "convencer",
+              "убеждать"
+            ],
+            [
+              "discutir",
+              "спорить"
+            ],
+            [
+              "argumento",
+              "аргумент"
+            ],
+            [
+              "razón",
+              "причина / разум"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "С одной стороны, это хорошо",
+          "tiles": [
+            "por",
+            "un",
+            "lado",
+            "es",
+            "bueno",
+            "una"
+          ],
+          "answer": [
+            "por",
+            "un",
+            "lado",
+            "es",
+            "bueno"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "En",
+            null,
+            "lugar, no me gusta."
+          ],
+          "target": "primer",
+          "opts": [
+            "primer",
+            "segunda",
+            "tercer"
+          ],
+          "hint": "во-первых, мне не нравится"
+        },
+        {
+          "t": "typed",
+          "from": "Я думаю, что ты прав",
+          "answer": "creo que tienes razón",
+          "answers": [
+            "creo que tienes razón",
+            "pienso que tienes razón"
+          ],
+          "hint": "creo / pienso que + tener razón"
+        }
+      ]
+    },
+    {
+      "id": "l148",
+      "name": "Modismos",
+      "emoji": "💡",
+      "desc": "Frases hechas del español",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Стоить руки и ноги» (очень дорого)",
+          "opts": [
+            {
+              "txt": "costar un ojo de la cara",
+              "em": "👁️"
+            },
+            {
+              "txt": "costar mucho dinero",
+              "em": "💰"
+            },
+            {
+              "txt": "comer mucho pan",
+              "em": "🍞"
+            },
+            {
+              "txt": "caer bien",
+              "em": "😊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Лить как из ведра» (cats and dogs)",
+          "opts": [
+            {
+              "txt": "estar como un pez en el agua",
+              "em": "🐟"
+            },
+            {
+              "txt": "llover a cántaros",
+              "em": "☔"
+            },
+            {
+              "txt": "estar en las nubes",
+              "em": "☁️"
+            },
+            {
+              "txt": "comer como un pájaro",
+              "em": "🐦"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Витать в облаках»",
+          "opts": [
+            {
+              "txt": "estar en las nubes",
+              "em": "☁️"
+            },
+            {
+              "txt": "estar en el cielo",
+              "em": "☀️"
+            },
+            {
+              "txt": "estar en la luna",
+              "em": "🌙"
+            },
+            {
+              "txt": "estar en el agua",
+              "em": "💧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "costar un ojo de la cara",
+              "очень дорого"
+            ],
+            [
+              "llover a cántaros",
+              "лить как из ведра"
+            ],
+            [
+              "estar en las nubes",
+              "витать в облаках"
+            ],
+            [
+              "caer bien",
+              "нравиться (о человеке)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tomar el pelo",
+              "дразнить"
+            ],
+            [
+              "no tener pelos en la lengua",
+              "прямо говорить"
+            ],
+            [
+              "ser pan comido",
+              "легче лёгкого"
+            ],
+            [
+              "hablar por los codos",
+              "болтать без умолку"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Это очень легко (=хлеб с маслом)",
+          "tiles": [
+            "es",
+            "pan",
+            "comido",
+            "come"
+          ],
+          "answer": [
+            "es",
+            "pan",
+            "comido"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hoy",
+            null,
+            "a cántaros."
+          ],
+          "target": "llueve",
+          "opts": [
+            "llueve",
+            "llora",
+            "lleva"
+          ],
+          "hint": "сегодня льёт как из ведра"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No me tomes el",
+            null,
+            "."
+          ],
+          "target": "pelo",
+          "opts": [
+            "pelo",
+            "café",
+            "pan"
+          ],
+          "hint": "не дразни меня"
+        },
+        {
+          "t": "typed",
+          "from": "Ты всегда витаешь в облаках",
+          "answer": "siempre estás en las nubes",
+          "answers": [
+            "siempre estás en las nubes",
+            "tú siempre estás en las nubes"
+          ],
+          "hint": "estar en las nubes"
+        }
+      ]
+    },
+    {
+      "id": "l149",
+      "name": "Refranes",
+      "emoji": "📜",
+      "desc": "Proverbios populares",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Тише едешь — дальше будешь»",
+          "opts": [
+            {
+              "txt": "no por mucho madrugar amanece más temprano",
+              "em": "🌅"
+            },
+            {
+              "txt": "a quien madruga, Dios le ayuda",
+              "em": "☀️"
+            },
+            {
+              "txt": "más vale tarde que nunca",
+              "em": "⏰"
+            },
+            {
+              "txt": "al mal tiempo, buena cara",
+              "em": "😊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Лучше поздно, чем никогда»",
+          "opts": [
+            {
+              "txt": "más vale tarde que nunca",
+              "em": "⏰"
+            },
+            {
+              "txt": "más vale pájaro en mano",
+              "em": "🐦"
+            },
+            {
+              "txt": "más vale prevenir que curar",
+              "em": "🛡️"
+            },
+            {
+              "txt": "más vale solo que mal acompañado",
+              "em": "👤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Кто рано встаёт, тому Бог подаёт»",
+          "opts": [
+            {
+              "txt": "a quien madruga, Dios le ayuda",
+              "em": "🌅"
+            },
+            {
+              "txt": "a caballo regalado",
+              "em": "🐎"
+            },
+            {
+              "txt": "en boca cerrada",
+              "em": "🤐"
+            },
+            {
+              "txt": "ojos que no ven",
+              "em": "👀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "más vale tarde que nunca",
+              "лучше поздно, чем никогда"
+            ],
+            [
+              "a quien madruga, Dios le ayuda",
+              "кто рано встаёт..."
+            ],
+            [
+              "en boca cerrada no entran moscas",
+              "молчание — золото"
+            ],
+            [
+              "ojos que no ven, corazón que no siente",
+              "с глаз долой — из сердца вон"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "más vale prevenir que curar",
+              "лучше предупредить, чем лечить"
+            ],
+            [
+              "no hay mal que por bien no venga",
+              "нет худа без добра"
+            ],
+            [
+              "cada loco con su tema",
+              "у каждого свой пунктик"
+            ],
+            [
+              "dime con quién andas",
+              "скажи мне, кто твой друг"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Лучше поздно, чем никогда",
+          "tiles": [
+            "más",
+            "vale",
+            "tarde",
+            "que",
+            "nunca",
+            "siempre"
+          ],
+          "answer": [
+            "más",
+            "vale",
+            "tarde",
+            "que",
+            "nunca"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Más vale",
+            null,
+            "que curar."
+          ],
+          "target": "prevenir",
+          "opts": [
+            "prevenir",
+            "comer",
+            "dormir"
+          ],
+          "hint": "лучше предупредить, чем лечить"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "A quien",
+            null,
+            ", Dios le ayuda."
+          ],
+          "target": "madruga",
+          "opts": [
+            "madruga",
+            "duerme",
+            "come"
+          ],
+          "hint": "кто рано встаёт"
+        },
+        {
+          "t": "typed",
+          "from": "Нет худа без добра",
+          "answer": "no hay mal que por bien no venga",
+          "answers": [
+            "no hay mal que por bien no venga"
+          ],
+          "hint": "no hay mal que por bien no venga"
+        }
+      ]
+    },
+    {
+      "id": "l150",
+      "name": "Repaso Maestro III",
+      "emoji": "🎓",
+      "desc": "Repaso final (126-149)",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Дом был построен»",
+          "opts": [
+            {
+              "txt": "la casa fue construida",
+              "em": "✅"
+            },
+            {
+              "txt": "la casa construye",
+              "em": "❌"
+            },
+            {
+              "txt": "la casa es construida",
+              "em": "⚠️"
+            },
+            {
+              "txt": "la casa se construye",
+              "em": "⚠️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Возможно, он придёт»",
+          "opts": [
+            {
+              "txt": "quizás venga",
+              "em": "✅"
+            },
+            {
+              "txt": "quizás viene",
+              "em": "❌"
+            },
+            {
+              "txt": "quizás vendrá",
+              "em": "❌"
+            },
+            {
+              "txt": "quizás vino",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я уже поел, когда ты пришёл»",
+          "opts": [
+            {
+              "txt": "ya había comido cuando llegaste",
+              "em": "✅"
+            },
+            {
+              "txt": "ya he comido cuando llegaste",
+              "em": "❌"
+            },
+            {
+              "txt": "ya comí cuando llegaste",
+              "em": "⚠️"
+            },
+            {
+              "txt": "ya como cuando llegaste",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы помог тебе»",
+          "opts": [
+            {
+              "txt": "te habría ayudado",
+              "em": "✅"
+            },
+            {
+              "txt": "te había ayudado",
+              "em": "❌"
+            },
+            {
+              "txt": "te he ayudado",
+              "em": "❌"
+            },
+            {
+              "txt": "te ayudaría",
+              "em": "⚠️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Танго (откуда?)»",
+          "opts": [
+            {
+              "txt": "Argentina",
+              "em": "🇦🇷"
+            },
+            {
+              "txt": "México",
+              "em": "🇲🇽"
+            },
+            {
+              "txt": "España",
+              "em": "🇪🇸"
+            },
+            {
+              "txt": "Cuba",
+              "em": "🇨🇺"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Паэлья (откуда?)»",
+          "opts": [
+            {
+              "txt": "España",
+              "em": "🇪🇸"
+            },
+            {
+              "txt": "Argentina",
+              "em": "🇦🇷"
+            },
+            {
+              "txt": "México",
+              "em": "🇲🇽"
+            },
+            {
+              "txt": "Perú",
+              "em": "🇵🇪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«По-моему»",
+          "opts": [
+            {
+              "txt": "en mi opinión",
+              "em": "💭"
+            },
+            {
+              "txt": "sin embargo",
+              "em": "🔀"
+            },
+            {
+              "txt": "por supuesto",
+              "em": "✅"
+            },
+            {
+              "txt": "en realidad",
+              "em": "⚡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fue escrito",
+              "был написан"
+            ],
+            [
+              "había comido",
+              "я уже поел"
+            ],
+            [
+              "habría dicho",
+              "я бы сказал"
+            ],
+            [
+              "sea",
+              "будь (subj)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "flamenco",
+              "фламенко"
+            ],
+            [
+              "mariachi",
+              "мариачи"
+            ],
+            [
+              "gazpacho",
+              "гаспачо"
+            ],
+            [
+              "paella",
+              "паэлья"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estoy de acuerdo",
+              "я согласен"
+            ],
+            [
+              "sin embargo",
+              "однако"
+            ],
+            [
+              "en conclusión",
+              "в заключение"
+            ],
+            [
+              "por ejemplo",
+              "например"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "periódico",
+              "газета"
+            ],
+            [
+              "gobierno",
+              "правительство"
+            ],
+            [
+              "siglo",
+              "век"
+            ],
+            [
+              "montaña",
+              "гора"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Картина была написана",
+          "tiles": [
+            "el",
+            "cuadro",
+            "fue",
+            "pintado",
+            "pinta"
+          ],
+          "answer": [
+            "el",
+            "cuadro",
+            "fue",
+            "pintado"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я бы сказал тебе",
+          "tiles": [
+            "te",
+            "habría",
+            "dicho",
+            "dije",
+            "diría"
+          ],
+          "answer": [
+            "te",
+            "habría",
+            "dicho"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "По-моему, это правда",
+          "tiles": [
+            "en",
+            "mi",
+            "opinión",
+            "es",
+            "verdad",
+            "soy"
+          ],
+          "answer": [
+            "en",
+            "mi",
+            "opinión",
+            "es",
+            "verdad"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No creo que",
+            null,
+            "verdad."
+          ],
+          "target": "sea",
+          "opts": [
+            "sea",
+            "es",
+            "era"
+          ],
+          "hint": "не думаю, что это правда"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hoy",
+            null,
+            "a cántaros."
+          ],
+          "target": "llueve",
+          "opts": [
+            "llueve",
+            "llora",
+            "lleva"
+          ],
+          "hint": "сегодня льёт как из ведра"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El libro",
+            null,
+            "escrito por Cervantes."
+          ],
+          "target": "fue",
+          "opts": [
+            "fue",
+            "es",
+            "está"
+          ],
+          "hint": "книга была написана Сервантесом"
+        },
+        {
+          "t": "typed",
+          "from": "Я бы сказал тебе правду",
+          "answer": "te habría dicho la verdad",
+          "answers": [
+            "te habría dicho la verdad",
+            "te hubiera dicho la verdad"
+          ],
+          "hint": "habría / hubiera + part."
+        },
+        {
+          "t": "typed",
+          "from": "Лучше поздно, чем никогда",
+          "answer": "más vale tarde que nunca",
+          "answers": [
+            "más vale tarde que nunca"
+          ],
+          "hint": "más vale tarde que nunca"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,890 @@
+{
+  "unit": 29,
+  "lessons": [
+    {
+      "id": "l141",
+      "name": "Noticias",
+      "emoji": "📰",
+      "desc": "Prensa, titulares y reportajes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Газета»",
+          "opts": [
+            {
+              "txt": "periódico",
+              "em": "📰"
+            },
+            {
+              "txt": "libro",
+              "em": "📖"
+            },
+            {
+              "txt": "pintura",
+              "em": "🖼️"
+            },
+            {
+              "txt": "paquete",
+              "em": "📦"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Новости»",
+          "opts": [
+            {
+              "txt": "noticias",
+              "em": "📢"
+            },
+            {
+              "txt": "novelas",
+              "em": "📕"
+            },
+            {
+              "txt": "noches",
+              "em": "🌙"
+            },
+            {
+              "txt": "nubes",
+              "em": "☁️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Заголовок»",
+          "opts": [
+            {
+              "txt": "titular",
+              "em": "📰"
+            },
+            {
+              "txt": "tijeras",
+              "em": "✂️"
+            },
+            {
+              "txt": "tigre",
+              "em": "🐯"
+            },
+            {
+              "txt": "tinta",
+              "em": "🖋️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "periódico",
+              "газета"
+            ],
+            [
+              "revista",
+              "журнал"
+            ],
+            [
+              "noticia",
+              "новость"
+            ],
+            [
+              "titular",
+              "заголовок"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "periodista",
+              "журналист"
+            ],
+            [
+              "reportaje",
+              "репортаж"
+            ],
+            [
+              "anuncio",
+              "объявление"
+            ],
+            [
+              "artículo",
+              "статья"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я читаю газету по утрам",
+          "tiles": [
+            "leo",
+            "el",
+            "periódico",
+            "por",
+            "la",
+            "mañana"
+          ],
+          "answer": [
+            "leo",
+            "el",
+            "periódico",
+            "por",
+            "la",
+            "mañana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Las",
+            null,
+            "son interesantes hoy."
+          ],
+          "target": "noticias",
+          "opts": [
+            "noticias",
+            "palabras",
+            "puertas"
+          ],
+          "hint": "новости сегодня интересные"
+        },
+        {
+          "t": "typed",
+          "from": "Этот журналист пишет хорошо",
+          "answer": "este periodista escribe bien",
+          "answers": [
+            "este periodista escribe bien",
+            "el periodista escribe bien"
+          ],
+          "hint": "periodista + escribir"
+        }
+      ]
+    },
+    {
+      "id": "l142",
+      "name": "Política",
+      "emoji": "🏛️",
+      "desc": "Gobierno, voto y elecciones",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Правительство»",
+          "opts": [
+            {
+              "txt": "gobierno",
+              "em": "🏛️"
+            },
+            {
+              "txt": "goloso",
+              "em": "🍬"
+            },
+            {
+              "txt": "golpe",
+              "em": "💥"
+            },
+            {
+              "txt": "gorra",
+              "em": "🧢"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Выборы»",
+          "opts": [
+            {
+              "txt": "eleciones",
+              "em": "❓"
+            },
+            {
+              "txt": "elecciones",
+              "em": "🗳️"
+            },
+            {
+              "txt": "edificios",
+              "em": "🏢"
+            },
+            {
+              "txt": "estaciones",
+              "em": "🚉"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Президент»",
+          "opts": [
+            {
+              "txt": "presidente",
+              "em": "👨‍💼"
+            },
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            },
+            {
+              "txt": "paciente",
+              "em": "🤒"
+            },
+            {
+              "txt": "periodista",
+              "em": "📰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gobierno",
+              "правительство"
+            ],
+            [
+              "presidente",
+              "президент"
+            ],
+            [
+              "elecciones",
+              "выборы"
+            ],
+            [
+              "ministro",
+              "министр"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "votar",
+              "голосовать"
+            ],
+            [
+              "ley",
+              "закон"
+            ],
+            [
+              "partido",
+              "партия"
+            ],
+            [
+              "ciudadano",
+              "гражданин"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я голосую завтра",
+          "tiles": [
+            "voto",
+            "mañana",
+            "hoy",
+            "votaré"
+          ],
+          "answer": [
+            "voto",
+            "mañana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hay",
+            null,
+            "el domingo."
+          ],
+          "target": "elecciones",
+          "opts": [
+            "elecciones",
+            "estaciones",
+            "edificios"
+          ],
+          "hint": "в воскресенье выборы"
+        },
+        {
+          "t": "typed",
+          "from": "Президент говорит сегодня",
+          "answer": "el presidente habla hoy",
+          "answers": [
+            "el presidente habla hoy",
+            "hoy habla el presidente"
+          ],
+          "hint": "el presidente habla..."
+        }
+      ]
+    },
+    {
+      "id": "l143",
+      "name": "Historia",
+      "emoji": "📜",
+      "desc": "Siglos, guerras y descubrimientos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«История»",
+          "opts": [
+            {
+              "txt": "historia",
+              "em": "📜"
+            },
+            {
+              "txt": "horario",
+              "em": "⏰"
+            },
+            {
+              "txt": "hotel",
+              "em": "🏨"
+            },
+            {
+              "txt": "hospital",
+              "em": "🏥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Век (столетие)»",
+          "opts": [
+            {
+              "txt": "siglo",
+              "em": "📜"
+            },
+            {
+              "txt": "sigla",
+              "em": "🔤"
+            },
+            {
+              "txt": "silla",
+              "em": "🪑"
+            },
+            {
+              "txt": "sigue",
+              "em": "➡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Война»",
+          "opts": [
+            {
+              "txt": "guerra",
+              "em": "⚔️"
+            },
+            {
+              "txt": "guapa",
+              "em": "😍"
+            },
+            {
+              "txt": "guante",
+              "em": "🧤"
+            },
+            {
+              "txt": "guisado",
+              "em": "🥘"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "historia",
+              "история"
+            ],
+            [
+              "siglo",
+              "век"
+            ],
+            [
+              "guerra",
+              "война"
+            ],
+            [
+              "paz",
+              "мир"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "descubrir",
+              "открывать"
+            ],
+            [
+              "descubrimiento",
+              "открытие"
+            ],
+            [
+              "rey",
+              "король"
+            ],
+            [
+              "reina",
+              "королева"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Колумб открыл Америку",
+          "tiles": [
+            "Colón",
+            "descubrió",
+            "América",
+            "descubre"
+          ],
+          "answer": [
+            "Colón",
+            "descubrió",
+            "América"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estamos en el",
+            null,
+            "XXI."
+          ],
+          "target": "siglo",
+          "opts": [
+            "siglo",
+            "sigla",
+            "sigue"
+          ],
+          "hint": "мы в XXI веке"
+        },
+        {
+          "t": "typed",
+          "from": "История этой страны очень богатая",
+          "answer": "la historia de este país es muy rica",
+          "answers": [
+            "la historia de este país es muy rica",
+            "la historia de este país es muy variada"
+          ],
+          "hint": "la historia es muy rica"
+        }
+      ]
+    },
+    {
+      "id": "l144",
+      "name": "Geografía",
+      "emoji": "🗺️",
+      "desc": "Continentes, ríos y montañas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Гора»",
+          "opts": [
+            {
+              "txt": "montaña",
+              "em": "⛰️"
+            },
+            {
+              "txt": "mantel",
+              "em": "🍽️"
+            },
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Река»",
+          "opts": [
+            {
+              "txt": "río",
+              "em": "🏞️"
+            },
+            {
+              "txt": "ropa",
+              "em": "👕"
+            },
+            {
+              "txt": "rico",
+              "em": "💰"
+            },
+            {
+              "txt": "rosa",
+              "em": "🌹"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Океан»",
+          "opts": [
+            {
+              "txt": "océano",
+              "em": "🌊"
+            },
+            {
+              "txt": "oso",
+              "em": "🐻"
+            },
+            {
+              "txt": "orquídea",
+              "em": "🌺"
+            },
+            {
+              "txt": "oreja",
+              "em": "👂"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "montaña",
+              "гора"
+            ],
+            [
+              "río",
+              "река"
+            ],
+            [
+              "mar",
+              "море"
+            ],
+            [
+              "océano",
+              "океан"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "continente",
+              "континент"
+            ],
+            [
+              "país",
+              "страна"
+            ],
+            [
+              "ciudad",
+              "город"
+            ],
+            [
+              "frontera",
+              "граница"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Эта гора очень высокая",
+          "tiles": [
+            "esta",
+            "montaña",
+            "es",
+            "muy",
+            "alta",
+            "alto"
+          ],
+          "answer": [
+            "esta",
+            "montaña",
+            "es",
+            "muy",
+            "alta"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El Amazonas es un",
+            null,
+            "."
+          ],
+          "target": "río",
+          "opts": [
+            "río",
+            "lago",
+            "mar"
+          ],
+          "hint": "Амазонка — река"
+        },
+        {
+          "t": "typed",
+          "from": "Испания находится в Европе",
+          "answer": "españa está en europa",
+          "answers": [
+            "españa está en europa",
+            "españa se encuentra en europa"
+          ],
+          "hint": "está en / se encuentra en"
+        }
+      ]
+    },
+    {
+      "id": "l145",
+      "name": "Repaso 24",
+      "emoji": "🌐",
+      "desc": "Repaso L141-L144",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Газета»",
+          "opts": [
+            {
+              "txt": "periódico",
+              "em": "📰"
+            },
+            {
+              "txt": "pintura",
+              "em": "🖼️"
+            },
+            {
+              "txt": "paquete",
+              "em": "📦"
+            },
+            {
+              "txt": "palabra",
+              "em": "💬"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Правительство»",
+          "opts": [
+            {
+              "txt": "gobierno",
+              "em": "🏛️"
+            },
+            {
+              "txt": "gusto",
+              "em": "😋"
+            },
+            {
+              "txt": "gente",
+              "em": "👥"
+            },
+            {
+              "txt": "gato",
+              "em": "🐈"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Век»",
+          "opts": [
+            {
+              "txt": "siglo",
+              "em": "📜"
+            },
+            {
+              "txt": "silla",
+              "em": "🪑"
+            },
+            {
+              "txt": "sigla",
+              "em": "🔤"
+            },
+            {
+              "txt": "sien",
+              "em": "🤕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Гора»",
+          "opts": [
+            {
+              "txt": "montaña",
+              "em": "⛰️"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            },
+            {
+              "txt": "mantel",
+              "em": "🍽️"
+            },
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "noticia",
+              "новость"
+            ],
+            [
+              "revista",
+              "журнал"
+            ],
+            [
+              "artículo",
+              "статья"
+            ],
+            [
+              "titular",
+              "заголовок"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "elecciones",
+              "выборы"
+            ],
+            [
+              "votar",
+              "голосовать"
+            ],
+            [
+              "ley",
+              "закон"
+            ],
+            [
+              "ministro",
+              "министр"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "guerra",
+              "война"
+            ],
+            [
+              "paz",
+              "мир"
+            ],
+            [
+              "río",
+              "река"
+            ],
+            [
+              "mar",
+              "море"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я читаю газету каждый день",
+          "tiles": [
+            "leo",
+            "el",
+            "periódico",
+            "cada",
+            "día"
+          ],
+          "answer": [
+            "leo",
+            "el",
+            "periódico",
+            "cada",
+            "día"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Эта страна очень большая",
+          "tiles": [
+            "este",
+            "país",
+            "es",
+            "muy",
+            "grande",
+            "esta"
+          ],
+          "answer": [
+            "este",
+            "país",
+            "es",
+            "muy",
+            "grande"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hay",
+            null,
+            "el domingo."
+          ],
+          "target": "elecciones",
+          "opts": [
+            "elecciones",
+            "estaciones",
+            "lecciones"
+          ],
+          "hint": "в воскресенье выборы"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estamos en el",
+            null,
+            "XXI."
+          ],
+          "target": "siglo",
+          "opts": [
+            "siglo",
+            "silla",
+            "sigla"
+          ],
+          "hint": "мы в XXI веке"
+        },
+        {
+          "t": "typed",
+          "from": "Россия находится в Европе и Азии",
+          "answer": "rusia está en europa y asia",
+          "answers": [
+            "rusia está en europa y asia",
+            "rusia se encuentra en europa y asia"
+          ],
+          "hint": "está en / se encuentra"
+        }
+      ]
+    }
+  ]
+}

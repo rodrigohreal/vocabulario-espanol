@@ -1,0 +1,813 @@
+{
+  "unit": 10,
+  "lessons": [
+    {
+      "id": "l46",
+      "name": "Demostrativos",
+      "emoji": "👉",
+      "desc": "Este, ese, aquel",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Этот»",
+          "opts": [
+            {
+              "txt": "este",
+              "em": "👉"
+            },
+            {
+              "txt": "ese",
+              "em": "👈"
+            },
+            {
+              "txt": "aquel",
+              "em": "🫵"
+            },
+            {
+              "txt": "mi",
+              "em": "👤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Та» (близко к тебе)",
+          "opts": [
+            {
+              "txt": "esta",
+              "em": "👉"
+            },
+            {
+              "txt": "esa",
+              "em": "👈"
+            },
+            {
+              "txt": "aquella",
+              "em": "🫵"
+            },
+            {
+              "txt": "ese",
+              "em": "👈"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Эти»",
+          "opts": [
+            {
+              "txt": "estos",
+              "em": "👉"
+            },
+            {
+              "txt": "esos",
+              "em": "👈"
+            },
+            {
+              "txt": "aquellos",
+              "em": "🫵"
+            },
+            {
+              "txt": "este",
+              "em": "👉"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "este",
+              "этот"
+            ],
+            [
+              "esta",
+              "эта"
+            ],
+            [
+              "ese",
+              "тот"
+            ],
+            [
+              "esa",
+              "та"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estos",
+              "эти"
+            ],
+            [
+              "aquellos",
+              "те (там)"
+            ],
+            [
+              "esto",
+              "это"
+            ],
+            [
+              "eso",
+              "то"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Этот кот",
+          "tiles": [
+            "este",
+            "gato",
+            "esta",
+            "perro"
+          ],
+          "answer": [
+            "este",
+            "gato"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero",
+            null,
+            "gato."
+          ],
+          "target": "este",
+          "opts": [
+            "este",
+            "esa",
+            "aquellos"
+          ],
+          "hint": "Я хочу этого кота"
+        },
+        {
+          "t": "pick",
+          "q": "«Эта книга мне нравится»",
+          "opts": [
+            {
+              "txt": "me gusta este libro",
+              "em": "✅"
+            },
+            {
+              "txt": "me gusta esta libro",
+              "em": "❌"
+            },
+            {
+              "txt": "me gusta esto libro",
+              "em": "❌"
+            },
+            {
+              "txt": "me gusta esos libro",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero",
+            null,
+            "casa, no aquélla."
+          ],
+          "target": "esta",
+          "opts": [
+            "esta",
+            "este",
+            "esa"
+          ],
+          "hint": "Я хочу этот дом, а не тот"
+        },
+        {
+          "t": "typed",
+          "from": "Это мой кот",
+          "answer": "este es mi gato",
+          "answers": [
+            "este es mi gato",
+            "éste es mi gato"
+          ],
+          "hint": "esto / este: используем «este» с глаголом ser + муж. род"
+        }
+      ]
+    },
+    {
+      "id": "l47",
+      "name": "Números 21-100",
+      "emoji": "💯",
+      "desc": "Veinte, treinta… cien",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«21»",
+          "opts": [
+            {
+              "txt": "veintiuno",
+              "em": "2️⃣1️⃣"
+            },
+            {
+              "txt": "veinte",
+              "em": "2️⃣0️⃣"
+            },
+            {
+              "txt": "treinta",
+              "em": "3️⃣0️⃣"
+            },
+            {
+              "txt": "doce",
+              "em": "1️⃣2️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«50»",
+          "opts": [
+            {
+              "txt": "cuarenta",
+              "em": "4️⃣0️⃣"
+            },
+            {
+              "txt": "cincuenta",
+              "em": "5️⃣0️⃣"
+            },
+            {
+              "txt": "sesenta",
+              "em": "6️⃣0️⃣"
+            },
+            {
+              "txt": "quince",
+              "em": "1️⃣5️⃣"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«100»",
+          "opts": [
+            {
+              "txt": "mil",
+              "em": "🔢"
+            },
+            {
+              "txt": "diez",
+              "em": "🔟"
+            },
+            {
+              "txt": "cien",
+              "em": "💯"
+            },
+            {
+              "txt": "ciento",
+              "em": "💯"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "veinte",
+              "20"
+            ],
+            [
+              "treinta",
+              "30"
+            ],
+            [
+              "cuarenta",
+              "40"
+            ],
+            [
+              "cincuenta",
+              "50"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sesenta",
+              "60"
+            ],
+            [
+              "setenta",
+              "70"
+            ],
+            [
+              "ochenta",
+              "80"
+            ],
+            [
+              "noventa",
+              "90"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне тридцать лет",
+          "tiles": [
+            "tengo",
+            "treinta",
+            "años",
+            "veinte"
+          ],
+          "answer": [
+            "tengo",
+            "treinta",
+            "años"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi abuela tiene",
+            null,
+            "años."
+          ],
+          "target": "ochenta",
+          "opts": [
+            "ochenta",
+            "cinco",
+            "doce"
+          ],
+          "hint": "Бабушке 80 лет"
+        }
+      ]
+    },
+    {
+      "id": "l48",
+      "name": "Dinero",
+      "emoji": "💰",
+      "desc": "Comprar, precio, caro, barato",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Покупать»",
+          "opts": [
+            {
+              "txt": "comprar",
+              "em": "🛒"
+            },
+            {
+              "txt": "vender",
+              "em": "💵"
+            },
+            {
+              "txt": "pagar",
+              "em": "💳"
+            },
+            {
+              "txt": "vivir",
+              "em": "🏠"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Дорого»",
+          "opts": [
+            {
+              "txt": "caro",
+              "em": "💸"
+            },
+            {
+              "txt": "barato",
+              "em": "🪙"
+            },
+            {
+              "txt": "nuevo",
+              "em": "✨"
+            },
+            {
+              "txt": "viejo",
+              "em": "👴"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сколько стоит?»",
+          "opts": [
+            {
+              "txt": "¿qué es?",
+              "em": "❓"
+            },
+            {
+              "txt": "¿dónde está?",
+              "em": "📍"
+            },
+            {
+              "txt": "¿cuánto cuesta?",
+              "em": "💰"
+            },
+            {
+              "txt": "¿cómo estás?",
+              "em": "🤔"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "comprar",
+              "покупать"
+            ],
+            [
+              "vender",
+              "продавать"
+            ],
+            [
+              "pagar",
+              "платить"
+            ],
+            [
+              "dinero",
+              "деньги"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caro",
+              "дорогой"
+            ],
+            [
+              "barato",
+              "дешёвый"
+            ],
+            [
+              "euro",
+              "евро"
+            ],
+            [
+              "tarjeta",
+              "карта"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сколько стоит хлеб?",
+          "tiles": [
+            "cuánto",
+            "cuesta",
+            "el",
+            "pan",
+            "dónde"
+          ],
+          "answer": [
+            "cuánto",
+            "cuesta",
+            "el",
+            "pan"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Este coche es muy",
+            null,
+            "."
+          ],
+          "target": "caro",
+          "opts": [
+            "caro",
+            "barato",
+            "nuevo"
+          ],
+          "hint": "Эта машина очень дорогая"
+        },
+        {
+          "t": "typed",
+          "from": "Сколько это стоит?",
+          "answer": "¿cuánto cuesta?",
+          "answers": [
+            "¿cuánto cuesta?",
+            "cuánto cuesta",
+            "cuanto cuesta"
+          ],
+          "hint": "cuesta = стоит (3-е лицо)"
+        }
+      ]
+    },
+    {
+      "id": "l49",
+      "name": "Restaurante",
+      "emoji": "🍴",
+      "desc": "Pedir comida y la cuenta",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Меню»",
+          "opts": [
+            {
+              "txt": "menú",
+              "em": "📜"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            },
+            {
+              "txt": "cuenta",
+              "em": "🧾"
+            },
+            {
+              "txt": "mesa",
+              "em": "🪑"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Счёт»",
+          "opts": [
+            {
+              "txt": "cuenta",
+              "em": "🧾"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            },
+            {
+              "txt": "menú",
+              "em": "📜"
+            },
+            {
+              "txt": "mesa",
+              "em": "🪑"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Официант»",
+          "opts": [
+            {
+              "txt": "camarero",
+              "em": "🤵"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "médico",
+              "em": "🩺"
+            },
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "camarero",
+              "официант"
+            ],
+            [
+              "menú",
+              "меню"
+            ],
+            [
+              "plato",
+              "блюдо"
+            ],
+            [
+              "cuenta",
+              "счёт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "pedir",
+              "заказывать"
+            ],
+            [
+              "beber",
+              "пить"
+            ],
+            [
+              "mesa",
+              "стол"
+            ],
+            [
+              "propina",
+              "чаевые"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Воду, пожалуйста",
+          "tiles": [
+            "agua",
+            "por",
+            "favor",
+            "gracias"
+          ],
+          "answer": [
+            "agua",
+            "por",
+            "favor"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            ", por favor."
+          ],
+          "target": "cuenta",
+          "opts": [
+            "cuenta",
+            "mesa",
+            "menú"
+          ],
+          "hint": "Счёт, пожалуйста"
+        }
+      ]
+    },
+    {
+      "id": "l50",
+      "name": "Repaso 7",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 46-49",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Этот»",
+          "opts": [
+            {
+              "txt": "este",
+              "em": "👉"
+            },
+            {
+              "txt": "ese",
+              "em": "👈"
+            },
+            {
+              "txt": "aquel",
+              "em": "🫵"
+            },
+            {
+              "txt": "mi",
+              "em": "👤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«50»",
+          "opts": [
+            {
+              "txt": "cuarenta",
+              "em": "4️⃣0️⃣"
+            },
+            {
+              "txt": "cincuenta",
+              "em": "5️⃣0️⃣"
+            },
+            {
+              "txt": "sesenta",
+              "em": "6️⃣0️⃣"
+            },
+            {
+              "txt": "cien",
+              "em": "💯"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Официант»",
+          "opts": [
+            {
+              "txt": "camarero",
+              "em": "🤵"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "médico",
+              "em": "🩺"
+            },
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "este",
+              "этот"
+            ],
+            [
+              "ese",
+              "тот"
+            ],
+            [
+              "comprar",
+              "покупать"
+            ],
+            [
+              "vender",
+              "продавать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "treinta",
+              "30"
+            ],
+            [
+              "cincuenta",
+              "50"
+            ],
+            [
+              "menú",
+              "меню"
+            ],
+            [
+              "cuenta",
+              "счёт"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сколько стоит хлеб?",
+          "tiles": [
+            "cuánto",
+            "cuesta",
+            "el",
+            "pan",
+            "dónde"
+          ],
+          "answer": [
+            "cuánto",
+            "cuesta",
+            "el",
+            "pan"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            ", por favor."
+          ],
+          "target": "cuenta",
+          "opts": [
+            "cuenta",
+            "noche",
+            "mesa"
+          ],
+          "hint": "Счёт, пожалуйста"
+        }
+      ]
+    }
+  ]
+}

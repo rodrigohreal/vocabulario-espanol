@@ -1,0 +1,180 @@
+{
+  "unit": 52,
+  "lessons": [
+    {
+      "id": "l256",
+      "name": "Alergias",
+      "emoji": "🤧",
+      "desc": "Polen, ácaros, estornudar",
+      "exercises": [
+        { "t": "pick", "q": "«Чихать»", "opts": [
+          { "txt": "estornudar", "em": "🤧" },
+          { "txt": "toser",      "em": "😷" },
+          { "txt": "respirar",   "em": "❌" },
+          { "txt": "soplar",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Пыльца»", "opts": [
+          { "txt": "polen",   "em": "🌼" },
+          { "txt": "polvo",   "em": "❌" },
+          { "txt": "humo",    "em": "❌" },
+          { "txt": "ácaros",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["alergia",    "аллергия"],
+          ["polen",      "пыльца"],
+          ["ácaros",     "пылевые клещи"],
+          ["picor",      "зуд"]
+        ]},
+        { "t": "match", "pairs": [
+          ["estornudar", "чихать"],
+          ["toser",      "кашлять"],
+          ["antihistamínico","антигистаминное"],
+          ["erupción",   "сыпь"]
+        ]},
+        { "t": "translate", "from": "У меня аллергия на кошек", "tiles": ["tengo", "alergia", "a", "los", "gatos", "del"], "answer": ["tengo", "alergia", "a", "los", "gatos"] },
+        { "t": "fill", "sentence": ["En primavera tengo mucha", null, "."], "target": "alergia", "opts": ["alergia", "fiesta", "comida"], "hint": "Весной у меня много аллергии" },
+        { "t": "typed", "from": "Не могу перестать чихать", "answer": "no puedo dejar de estornudar", "answers": ["no puedo dejar de estornudar", "no paro de estornudar"], "hint": "dejar de = перестать" }
+      ]
+    },
+    {
+      "id": "l257",
+      "name": "Hospital",
+      "emoji": "🏥",
+      "desc": "Camilla, quirófano, UCI",
+      "exercises": [
+        { "t": "pick", "q": "«Операционная»", "opts": [
+          { "txt": "quirófano",  "em": "🔪" },
+          { "txt": "habitación", "em": "❌" },
+          { "txt": "consulta",   "em": "❌" },
+          { "txt": "farmacia",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Реанимация (УИТ)»", "opts": [
+          { "txt": "UCI",      "em": "🚨" },
+          { "txt": "urgencias","em": "❌" },
+          { "txt": "consulta", "em": "❌" },
+          { "txt": "recepción","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["quirófano",   "операционная"],
+          ["UCI",         "реанимация"],
+          ["urgencias",   "приёмное"],
+          ["consulta",    "приём врача"]
+        ]},
+        { "t": "match", "pairs": [
+          ["camilla",     "каталка"],
+          ["enfermera",   "медсестра"],
+          ["cirujano",    "хирург"],
+          ["paciente",    "пациент"]
+        ]},
+        { "t": "translate", "from": "Меня кладут в больницу", "tiles": ["me", "ingresan", "en", "el", "hospital", "voy"], "answer": ["me", "ingresan", "en", "el", "hospital"] },
+        { "t": "fill", "sentence": ["Le operaron en el", null, "."], "target": "quirófano", "opts": ["quirófano", "cine", "parque"], "hint": "Оперировали в операционной" },
+        { "t": "typed", "from": "Иду в приёмное отделение", "answer": "voy a urgencias", "answers": ["voy a urgencias", "voy a la sala de urgencias"], "hint": "urgencias = ER" }
+      ]
+    },
+    {
+      "id": "l258",
+      "name": "Urgencias",
+      "emoji": "🚑",
+      "desc": "Ambulancia, paro, herida",
+      "exercises": [
+        { "t": "pick", "q": "«Скорая»", "opts": [
+          { "txt": "ambulancia",  "em": "🚑" },
+          { "txt": "policía",     "em": "🚓" },
+          { "txt": "bombero",     "em": "🚒" },
+          { "txt": "taxi",        "em": "🚕" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Рана»", "opts": [
+          { "txt": "herida",   "em": "🩹" },
+          { "txt": "mancha",   "em": "❌" },
+          { "txt": "marca",    "em": "❌" },
+          { "txt": "raya",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["paro cardíaco","остановка сердца"],
+          ["herida",       "рана"],
+          ["quemadura",    "ожог"],
+          ["fractura",     "перелом"]
+        ]},
+        { "t": "match", "pairs": [
+          ["RCP",        "СЛР"],
+          ["sangrar",    "кровоточить"],
+          ["desmayarse", "терять сознание"],
+          ["socorrista", "спасатель"]
+        ]},
+        { "t": "translate", "from": "Вызови скорую!", "tiles": ["¡", "llama", "a", "la", "ambulancia", "!", "taxi"], "answer": ["¡", "llama", "a", "la", "ambulancia", "!"] },
+        { "t": "fill", "sentence": ["Tengo una", null, "en la mano."], "target": "herida", "opts": ["herida", "carta", "lluvia"], "hint": "У меня рана на руке" },
+        { "t": "typed", "from": "Он потерял сознание", "answer": "se desmayó", "answers": ["se desmayó", "él se desmayó", "se ha desmayado"], "hint": "desmayarse" }
+      ]
+    },
+    {
+      "id": "l259",
+      "name": "Carnicería",
+      "emoji": "🥩",
+      "desc": "Chuleta, filete, picada",
+      "exercises": [
+        { "t": "pick", "q": "«Мясник»", "opts": [
+          { "txt": "carnicero",  "em": "🔪" },
+          { "txt": "panadero",   "em": "❌" },
+          { "txt": "pescadero",  "em": "❌" },
+          { "txt": "verdulero",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Фарш»", "opts": [
+          { "txt": "carne picada","em": "🍖" },
+          { "txt": "chuleta",     "em": "❌" },
+          { "txt": "filete",      "em": "❌" },
+          { "txt": "costilla",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["filete",   "стейк / филе"],
+          ["chuleta",  "котлета на кости"],
+          ["costilla", "ребро"],
+          ["pechuga",  "грудка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["carne picada","фарш"],
+          ["solomillo",   "вырезка"],
+          ["lomo",        "корейка"],
+          ["jamón",       "хамон"]
+        ]},
+        { "t": "translate", "from": "Полкило фарша, пожалуйста", "tiles": ["medio", "kilo", "de", "carne", "picada", "por", "favor"], "answer": ["medio", "kilo", "de", "carne", "picada", "por", "favor"] },
+        { "t": "fill", "sentence": ["Voy a la", null, "a comprar pollo."], "target": "carnicería", "opts": ["carnicería", "panadería", "biblioteca"], "hint": "Иду в мясную лавку" },
+        { "t": "typed", "from": "Два куриных филе", "answer": "dos filetes de pollo", "answers": ["dos filetes de pollo", "dos pechugas de pollo"], "hint": "filete de pollo" }
+      ]
+    },
+    {
+      "id": "l260",
+      "name": "Pescadería",
+      "emoji": "🐟",
+      "desc": "Atún, sardina, salmón",
+      "exercises": [
+        { "t": "pick", "q": "«Рыбный магазин»", "opts": [
+          { "txt": "pescadería", "em": "🐟" },
+          { "txt": "carnicería", "em": "❌" },
+          { "txt": "panadería",  "em": "❌" },
+          { "txt": "farmacia",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Лосось»", "opts": [
+          { "txt": "salmón",  "em": "🍣" },
+          { "txt": "atún",    "em": "❌" },
+          { "txt": "merluza", "em": "❌" },
+          { "txt": "sardina", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["atún",    "тунец"],
+          ["sardina", "сардина"],
+          ["merluza", "хек"],
+          ["bacalao", "треска"]
+        ]},
+        { "t": "match", "pairs": [
+          ["espina",   "косточка"],
+          ["escama",   "чешуя"],
+          ["fresco",   "свежий"],
+          ["congelado","заморож."]
+        ]},
+        { "t": "translate", "from": "Дайте мне свежий тунец", "tiles": ["deme", "atún", "fresco", "congelado"], "answer": ["deme", "atún", "fresco"] },
+        { "t": "fill", "sentence": ["El", null, " tiene muchas espinas."], "target": "pescado", "opts": ["pescado", "queso", "limón"], "hint": "В рыбе много костей" },
+        { "t": "typed", "from": "Я не ем рыбу", "answer": "no como pescado", "answers": ["no como pescado", "yo no como pescado"], "hint": "pescado = рыба (еда)" }
+      ]
+    }
+  ]
+}

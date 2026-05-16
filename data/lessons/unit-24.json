@@ -1,0 +1,952 @@
+{
+  "unit": 24,
+  "lessons": [
+    {
+      "id": "l116",
+      "name": "Pretérito perfecto",
+      "emoji": "✅",
+      "desc": "He comido, has visto…",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я (только что) ел»",
+          "opts": [
+            {
+              "txt": "he comido",
+              "em": "✅"
+            },
+            {
+              "txt": "comí",
+              "em": "⏪"
+            },
+            {
+              "txt": "comía",
+              "em": "⏳"
+            },
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ты видел?»",
+          "opts": [
+            {
+              "txt": "¿viste?",
+              "em": "⏪"
+            },
+            {
+              "txt": "¿has visto?",
+              "em": "✅"
+            },
+            {
+              "txt": "¿veías?",
+              "em": "⏳"
+            },
+            {
+              "txt": "¿ves?",
+              "em": "⏺️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Мы пошли»",
+          "opts": [
+            {
+              "txt": "fuimos",
+              "em": "⏪"
+            },
+            {
+              "txt": "íbamos",
+              "em": "⏳"
+            },
+            {
+              "txt": "hemos ido",
+              "em": "✅"
+            },
+            {
+              "txt": "vamos",
+              "em": "⏺️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "he",
+              "я (вспом.)"
+            ],
+            [
+              "has",
+              "ты (вспом.)"
+            ],
+            [
+              "ha",
+              "он/она (вспом.)"
+            ],
+            [
+              "hemos",
+              "мы (вспом.)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "comido",
+              "ел/съел"
+            ],
+            [
+              "bebido",
+              "пил/выпил"
+            ],
+            [
+              "visto",
+              "видел"
+            ],
+            [
+              "hecho",
+              "сделал"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сегодня я не ел",
+          "tiles": [
+            "hoy",
+            "no",
+            "he",
+            "comido",
+            "comí"
+          ],
+          "answer": [
+            "hoy",
+            "no",
+            "he",
+            "comido"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Esta mañana",
+            null,
+            "bebido café."
+          ],
+          "target": "he",
+          "opts": [
+            "he",
+            "has",
+            "ha"
+          ],
+          "hint": "Этим утром я пил кофе"
+        },
+        {
+          "t": "pick",
+          "q": "«Они пошли в кино»",
+          "opts": [
+            {
+              "txt": "han ido al cine",
+              "em": "✅"
+            },
+            {
+              "txt": "han id al cine",
+              "em": "❌"
+            },
+            {
+              "txt": "han voy al cine",
+              "em": "❌"
+            },
+            {
+              "txt": "han iendo al cine",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿",
+            null,
+            "visto mi llave?"
+          ],
+          "target": "has",
+          "opts": [
+            "has",
+            "he",
+            "ha"
+          ],
+          "hint": "Ты видел мой ключ?"
+        },
+        {
+          "t": "typed",
+          "from": "Я никогда не был в Испании",
+          "answer": "nunca he estado en españa",
+          "answers": [
+            "nunca he estado en españa",
+            "no he estado nunca en españa"
+          ],
+          "hint": "estar → estado"
+        }
+      ]
+    },
+    {
+      "id": "l117",
+      "name": "Pronombres OD",
+      "emoji": "🎯",
+      "desc": "Lo, la, los, las",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я его вижу» (el libro)",
+          "opts": [
+            {
+              "txt": "lo veo",
+              "em": "👀"
+            },
+            {
+              "txt": "la veo",
+              "em": "👀"
+            },
+            {
+              "txt": "le veo",
+              "em": "👀"
+            },
+            {
+              "txt": "veo lo",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я её покупаю» (la casa)",
+          "opts": [
+            {
+              "txt": "lo compro",
+              "em": "🛒"
+            },
+            {
+              "txt": "la compro",
+              "em": "🛒"
+            },
+            {
+              "txt": "les compro",
+              "em": "❌"
+            },
+            {
+              "txt": "compro la",
+              "em": "❌"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я их (м.р., мн.ч.) знаю»",
+          "opts": [
+            {
+              "txt": "las conozco",
+              "em": "👥"
+            },
+            {
+              "txt": "la conozco",
+              "em": "👤"
+            },
+            {
+              "txt": "los conozco",
+              "em": "👥"
+            },
+            {
+              "txt": "le conozco",
+              "em": "👤"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "lo",
+              "его (м.р.)"
+            ],
+            [
+              "la",
+              "её (ж.р.)"
+            ],
+            [
+              "los",
+              "их (м.р.)"
+            ],
+            [
+              "las",
+              "их (ж.р.)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "te veo",
+              "я тебя вижу"
+            ],
+            [
+              "me ves",
+              "ты меня видишь"
+            ],
+            [
+              "nos vemos",
+              "мы видимся"
+            ],
+            [
+              "os veo",
+              "я вас вижу (Spain)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я её знаю",
+          "tiles": [
+            "la",
+            "lo",
+            "conozco",
+            "sé"
+          ],
+          "answer": [
+            "la",
+            "conozco"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Tienes el libro? Sí,",
+            null,
+            "tengo."
+          ],
+          "target": "lo",
+          "opts": [
+            "lo",
+            "la",
+            "le"
+          ],
+          "hint": "Книга = м.р. → lo"
+        },
+        {
+          "t": "pick",
+          "q": "«Я её вижу» — порядок слов?",
+          "opts": [
+            {
+              "txt": "la veo",
+              "em": "✅"
+            },
+            {
+              "txt": "veo la",
+              "em": "❌"
+            },
+            {
+              "txt": "la yo veo",
+              "em": "❌"
+            },
+            {
+              "txt": "yo la la veo",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Las flores son bonitas, las",
+            null,
+            "."
+          ],
+          "target": "compro",
+          "opts": [
+            "compro",
+            "compra",
+            "compran"
+          ],
+          "hint": "Цветы красивые, я их покупаю"
+        },
+        {
+          "t": "typed",
+          "from": "Я его не вижу",
+          "answer": "no lo veo",
+          "answers": [
+            "no lo veo",
+            "yo no lo veo"
+          ],
+          "hint": "lo стоит перед глаголом"
+        }
+      ]
+    },
+    {
+      "id": "l118",
+      "name": "Pronombres OI",
+      "emoji": "➡️",
+      "desc": "Me, te, le, nos, les",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я ему пишу»",
+          "opts": [
+            {
+              "txt": "le escribo",
+              "em": "✉️"
+            },
+            {
+              "txt": "lo escribo",
+              "em": "❌"
+            },
+            {
+              "txt": "me escribo",
+              "em": "❌"
+            },
+            {
+              "txt": "escribo le",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я тебе говорю»",
+          "opts": [
+            {
+              "txt": "le digo",
+              "em": "💬"
+            },
+            {
+              "txt": "te digo",
+              "em": "💬"
+            },
+            {
+              "txt": "me digo",
+              "em": "💬"
+            },
+            {
+              "txt": "os digo",
+              "em": "💬"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я им даю»",
+          "opts": [
+            {
+              "txt": "le doy",
+              "em": "🎁"
+            },
+            {
+              "txt": "lo doy",
+              "em": "🎁"
+            },
+            {
+              "txt": "les doy",
+              "em": "🎁"
+            },
+            {
+              "txt": "me doy",
+              "em": "❌"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me",
+              "мне"
+            ],
+            [
+              "te",
+              "тебе"
+            ],
+            [
+              "le",
+              "ему/ей"
+            ],
+            [
+              "les",
+              "им"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me das",
+              "ты мне даёшь"
+            ],
+            [
+              "te doy",
+              "я тебе даю"
+            ],
+            [
+              "le digo",
+              "я ему говорю"
+            ],
+            [
+              "nos hablan",
+              "они нам говорят"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я ему говорю правду",
+          "tiles": [
+            "le",
+            "digo",
+            "la",
+            "verdad",
+            "lo"
+          ],
+          "answer": [
+            "le",
+            "digo",
+            "la",
+            "verdad"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi madre",
+            null,
+            "da dinero."
+          ],
+          "target": "me",
+          "opts": [
+            "me",
+            "te",
+            "le"
+          ],
+          "hint": "Моя мама мне даёт деньги"
+        },
+        {
+          "t": "pick",
+          "q": "«Ему нравится футбол»",
+          "opts": [
+            {
+              "txt": "le gusta el fútbol",
+              "em": "✅"
+            },
+            {
+              "txt": "lo gusta el fútbol",
+              "em": "❌"
+            },
+            {
+              "txt": "él gusta el fútbol",
+              "em": "❌"
+            },
+            {
+              "txt": "se gusta el fútbol",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿",
+            null,
+            "gusta el café? Sí, mucho."
+          ],
+          "target": "te",
+          "opts": [
+            "te",
+            "le",
+            "me"
+          ],
+          "hint": "Тебе нравится кофе?"
+        },
+        {
+          "t": "typed",
+          "from": "Я им пишу письмо",
+          "answer": "les escribo una carta",
+          "answers": [
+            "les escribo una carta",
+            "yo les escribo una carta"
+          ],
+          "hint": "OI: les"
+        }
+      ]
+    },
+    {
+      "id": "l119",
+      "name": "Pronombres juntos",
+      "emoji": "🔗",
+      "desc": "Me lo, te la, se lo",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я тебе это даю» (порядок?)",
+          "opts": [
+            {
+              "txt": "te lo doy",
+              "em": "✅"
+            },
+            {
+              "txt": "lo te doy",
+              "em": "❌"
+            },
+            {
+              "txt": "te doy lo",
+              "em": "❌"
+            },
+            {
+              "txt": "doy te lo",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я ему это говорю»",
+          "opts": [
+            {
+              "txt": "le lo digo",
+              "em": "❌"
+            },
+            {
+              "txt": "se lo digo",
+              "em": "✅"
+            },
+            {
+              "txt": "lo le digo",
+              "em": "❌"
+            },
+            {
+              "txt": "lo se digo",
+              "em": "❌"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я ей её (карту) показываю»",
+          "opts": [
+            {
+              "txt": "le la muestro",
+              "em": "❌"
+            },
+            {
+              "txt": "la le muestro",
+              "em": "❌"
+            },
+            {
+              "txt": "se la muestro",
+              "em": "✅"
+            },
+            {
+              "txt": "muestro le la",
+              "em": "❌"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me lo",
+              "мне это (м.р.)"
+            ],
+            [
+              "te la",
+              "тебе это (ж.р.)"
+            ],
+            [
+              "se lo",
+              "ему/ей это (м.р.)"
+            ],
+            [
+              "nos las",
+              "нам их (ж.р.)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me lo das",
+              "ты мне это даёшь"
+            ],
+            [
+              "te la doy",
+              "я тебе её даю"
+            ],
+            [
+              "se lo digo",
+              "я ему/ей это говорю"
+            ],
+            [
+              "nos lo dicen",
+              "нам это говорят"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я ей это даю",
+          "tiles": [
+            "se",
+            "le",
+            "lo",
+            "la",
+            "doy"
+          ],
+          "answer": [
+            "se",
+            "lo",
+            "doy"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi madre",
+            null,
+            "lo regaló."
+          ],
+          "target": "me",
+          "opts": [
+            "me",
+            "te",
+            "se"
+          ],
+          "hint": "Моя мама мне это подарила → me lo"
+        },
+        {
+          "t": "pick",
+          "q": "«Я ему её рассказываю» — как правильно?",
+          "opts": [
+            {
+              "txt": "se la cuento",
+              "em": "✅"
+            },
+            {
+              "txt": "le la cuento",
+              "em": "❌"
+            },
+            {
+              "txt": "la le cuento",
+              "em": "❌"
+            },
+            {
+              "txt": "le cuento la",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tu coche está sucio,",
+            null,
+            "lo lavo."
+          ],
+          "target": "te",
+          "opts": [
+            "te",
+            "me",
+            "se"
+          ],
+          "hint": "Твоя машина грязная, я её тебе помою → te lo"
+        },
+        {
+          "t": "typed",
+          "from": "Я тебе её дам",
+          "answer": "te la doy",
+          "answers": [
+            "te la doy",
+            "te la voy a dar",
+            "yo te la doy"
+          ],
+          "hint": "OI (te) + OD (la) + verbo"
+        }
+      ]
+    },
+    {
+      "id": "l120",
+      "name": "Repaso 19",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 116-119",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я (только что) ел»",
+          "opts": [
+            {
+              "txt": "he comido",
+              "em": "✅"
+            },
+            {
+              "txt": "comí",
+              "em": "⏪"
+            },
+            {
+              "txt": "comía",
+              "em": "⏳"
+            },
+            {
+              "txt": "como",
+              "em": "⏺️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я её вижу» (la casa)",
+          "opts": [
+            {
+              "txt": "lo veo",
+              "em": "❌"
+            },
+            {
+              "txt": "la veo",
+              "em": "👀"
+            },
+            {
+              "txt": "le veo",
+              "em": "❌"
+            },
+            {
+              "txt": "veo la",
+              "em": "❌"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я ему это говорю»",
+          "opts": [
+            {
+              "txt": "le lo digo",
+              "em": "❌"
+            },
+            {
+              "txt": "lo le digo",
+              "em": "❌"
+            },
+            {
+              "txt": "se lo digo",
+              "em": "✅"
+            },
+            {
+              "txt": "digo se lo",
+              "em": "❌"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "he comido",
+              "я ел (только что)"
+            ],
+            [
+              "hemos ido",
+              "мы пошли"
+            ],
+            [
+              "lo",
+              "его (м.р.)"
+            ],
+            [
+              "la",
+              "её (ж.р.)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "le",
+              "ему/ей"
+            ],
+            [
+              "les",
+              "им"
+            ],
+            [
+              "se lo",
+              "ему/ей это"
+            ],
+            [
+              "te la",
+              "тебе её"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сегодня я не ел",
+          "tiles": [
+            "hoy",
+            "no",
+            "he",
+            "comido"
+          ],
+          "answer": [
+            "hoy",
+            "no",
+            "he",
+            "comido"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Tienes el libro? Sí,",
+            null,
+            "tengo."
+          ],
+          "target": "lo",
+          "opts": [
+            "lo",
+            "la",
+            "le"
+          ],
+          "hint": "Книга = м.р. → lo"
+        }
+      ]
+    }
+  ]
+}

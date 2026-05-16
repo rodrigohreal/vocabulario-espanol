@@ -1,0 +1,186 @@
+{
+  "unit": 51,
+  "lessons": [
+    {
+      "id": "l251",
+      "name": "Ginecología",
+      "emoji": "🤰",
+      "desc": "Embarazo, parto, ciclo",
+      "exercises": [
+        { "t": "pick", "q": "«Беременность»", "opts": [
+          { "txt": "embarazo",   "em": "🤰" },
+          { "txt": "embarazada", "em": "❌" },
+          { "txt": "parto",      "em": "❌" },
+          { "txt": "óvulo",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я беременна»", "opts": [
+          { "txt": "estoy embarazada", "em": "🤰" },
+          { "txt": "soy embarazada",   "em": "❌" },
+          { "txt": "tengo embarazo",   "em": "❌" },
+          { "txt": "voy a embarazo",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["embarazo",  "беременность"],
+          ["parto",     "роды"],
+          ["óvulo",     "яйцеклетка"],
+          ["útero",     "матка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["ginecólogo", "гинеколог"],
+          ["ecografía",  "УЗИ"],
+          ["menstruación","месячные"],
+          ["menopausia", "менопауза"]
+        ]},
+        { "t": "translate", "from": "Я на пятом месяце беременности", "tiles": ["estoy", "de", "cinco", "meses", "embarazada", "soy"], "answer": ["estoy", "de", "cinco", "meses"] },
+        { "t": "fill", "sentence": ["Mañana tengo una", null, "."], "target": "ecografía", "opts": ["ecografía", "casa", "música"], "hint": "Завтра у меня УЗИ" },
+        { "t": "typed", "from": "Поздравляю с рождением!", "answer": "felicidades por el nacimiento", "answers": ["felicidades por el nacimiento", "enhorabuena por el nacimiento"], "hint": "nacimiento = рождение" }
+      ]
+    },
+    {
+      "id": "l252",
+      "name": "Oftalmología",
+      "emoji": "👓",
+      "desc": "Gafas, lentillas, vista",
+      "exercises": [
+        { "t": "pick", "q": "«Очки»", "opts": [
+          { "txt": "gafas / lentes", "em": "👓" },
+          { "txt": "lentillas",      "em": "❌" },
+          { "txt": "máscara",        "em": "❌" },
+          { "txt": "casco",          "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Контактные линзы»", "opts": [
+          { "txt": "lentillas / lentes de contacto", "em": "👁️" },
+          { "txt": "gafas",                          "em": "❌" },
+          { "txt": "binoculares",                    "em": "❌" },
+          { "txt": "telescopio",                     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["vista",       "зрение"],
+          ["miopía",      "близорукость"],
+          ["hipermetropía","дальнозоркость"],
+          ["astigmatismo","астигматизм"]
+        ]},
+        { "t": "match", "pairs": [
+          ["oculista / oftalmólogo","окулист"],
+          ["graduación",            "диоптрии"],
+          ["pupila",                "зрачок"],
+          ["lágrima",               "слеза"]
+        ]},
+        { "t": "translate", "from": "Мне нужны новые очки", "tiles": ["necesito", "gafas", "nuevas", "lentillas"], "answer": ["necesito", "gafas", "nuevas"] },
+        { "t": "fill", "sentence": ["Tengo", null, " desde los diez años."], "target": "miopía", "opts": ["miopía", "fiesta", "café"], "hint": "У меня близорукость с 10 лет" },
+        { "t": "typed", "from": "Глаза устали", "answer": "tengo los ojos cansados", "answers": ["tengo los ojos cansados", "los ojos están cansados"], "hint": "ojos = глаза" }
+      ]
+    },
+    {
+      "id": "l253",
+      "name": "Fisioterapia",
+      "emoji": "💪",
+      "desc": "Lesión, masaje, rehabilitación",
+      "exercises": [
+        { "t": "pick", "q": "«Травма»", "opts": [
+          { "txt": "lesión",   "em": "🤕" },
+          { "txt": "música",   "em": "❌" },
+          { "txt": "alergia",  "em": "❌" },
+          { "txt": "espejo",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Массаж»", "opts": [
+          { "txt": "masaje",      "em": "💆" },
+          { "txt": "ejercicio",   "em": "🏋️" },
+          { "txt": "estiramiento","em": "❌" },
+          { "txt": "vendaje",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["lesión",        "травма"],
+          ["fisioterapeuta","физиотерапевт"],
+          ["masaje",        "массаж"],
+          ["rehabilitación","реабилитация"]
+        ]},
+        { "t": "match", "pairs": [
+          ["esguince",      "растяжение"],
+          ["fractura",      "перелом"],
+          ["estiramiento",  "растяжка"],
+          ["recuperación",  "восстановление"]
+        ]},
+        { "t": "translate", "from": "У меня болит спина", "tiles": ["me", "duele", "la", "espalda", "el"], "answer": ["me", "duele", "la", "espalda"] },
+        { "t": "fill", "sentence": ["Tengo un", null, "en el tobillo."], "target": "esguince", "opts": ["esguince", "libro", "agua"], "hint": "У меня растяжение лодыжки" },
+        { "t": "typed", "from": "Я хожу к физиотерапевту", "answer": "voy al fisioterapeuta", "answers": ["voy al fisioterapeuta", "voy al fisio"], "hint": "fisio = разг." }
+      ]
+    },
+    {
+      "id": "l254",
+      "name": "Nutrición clínica",
+      "emoji": "💊",
+      "desc": "Vitaminas, minerales, suplementos",
+      "exercises": [
+        { "t": "pick", "q": "«Витамин»", "opts": [
+          { "txt": "vitamina",  "em": "💊" },
+          { "txt": "mineral",   "em": "🧂" },
+          { "txt": "calorías",  "em": "❌" },
+          { "txt": "proteína",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Анемия (низкое железо)»", "opts": [
+          { "txt": "anemia",    "em": "🩸" },
+          { "txt": "alergia",   "em": "❌" },
+          { "txt": "diabetes",  "em": "❌" },
+          { "txt": "anorexia",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["vitamina C","витамин С"],
+          ["hierro",    "железо"],
+          ["calcio",    "кальций"],
+          ["magnesio",  "магний"]
+        ]},
+        { "t": "match", "pairs": [
+          ["suplemento", "БАД / добавка"],
+          ["déficit",    "дефицит"],
+          ["anemia",     "анемия"],
+          ["nutriente",  "питательное в-во"]
+        ]},
+        { "t": "translate", "from": "Мне не хватает витамина D", "tiles": ["me", "falta", "vitamina", "D", "C"], "answer": ["me", "falta", "vitamina", "D"] },
+        { "t": "fill", "sentence": ["Tomo", null, " de hierro."], "target": "suplementos", "opts": ["suplementos", "fiesta", "agua"], "hint": "Принимаю добавки железа" },
+        { "t": "typed", "from": "Анализ крови показал анемию", "answer": "el análisis de sangre mostró anemia", "answers": ["el análisis de sangre mostró anemia", "el análisis mostró anemia"], "hint": "análisis = анализ" }
+      ]
+    },
+    {
+      "id": "l255",
+      "name": "Medicamentos",
+      "emoji": "💉",
+      "desc": "Jarabe, pastilla, antibiótico",
+      "exercises": [
+        { "t": "pick", "q": "«Таблетка»", "opts": [
+          { "txt": "pastilla",   "em": "💊" },
+          { "txt": "jarabe",     "em": "🍯" },
+          { "txt": "inyección",  "em": "💉" },
+          { "txt": "venda",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Сироп»", "opts": [
+          { "txt": "jarabe",    "em": "🥄" },
+          { "txt": "pastilla",  "em": "❌" },
+          { "txt": "crema",     "em": "❌" },
+          { "txt": "spray",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Рецепт врача»", "opts": [
+          { "txt": "receta",    "em": "📝" },
+          { "txt": "factura",   "em": "❌" },
+          { "txt": "menú",      "em": "❌" },
+          { "txt": "carta",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["antibiótico","антибиотик"],
+          ["analgésico", "обезболивающее"],
+          ["jarabe",     "сироп"],
+          ["pomada",     "мазь"]
+        ]},
+        { "t": "match", "pairs": [
+          ["dosis",      "доза"],
+          ["efecto secundario","побочка"],
+          ["caducidad",  "срок годности"],
+          ["prospecto",  "вкладыш / инструкция"]
+        ]},
+        { "t": "translate", "from": "Принимай по одной таблетке каждые 8 часов", "tiles": ["toma", "una", "pastilla", "cada", "ocho", "horas", "minutos"], "answer": ["toma", "una", "pastilla", "cada", "ocho", "horas"] },
+        { "t": "fill", "sentence": ["Necesito una", null, " para este medicamento."], "target": "receta", "opts": ["receta", "ducha", "lección"], "hint": "Нужен рецепт" },
+        { "t": "typed", "from": "У меня болит голова, дай таблетку", "answer": "me duele la cabeza, dame una pastilla", "answers": ["me duele la cabeza, dame una pastilla", "tengo dolor de cabeza, dame una pastilla"], "hint": "doler la cabeza" }
+      ]
+    }
+  ]
+}

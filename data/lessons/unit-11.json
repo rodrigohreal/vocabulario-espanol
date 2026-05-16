@@ -1,0 +1,906 @@
+{
+  "unit": 11,
+  "lessons": [
+    {
+      "id": "l51",
+      "name": "Direcciones",
+      "emoji": "🧭",
+      "desc": "Izquierda, derecha, recto",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Налево»",
+          "opts": [
+            {
+              "txt": "a la izquierda",
+              "em": "⬅️"
+            },
+            {
+              "txt": "a la derecha",
+              "em": "➡️"
+            },
+            {
+              "txt": "recto",
+              "em": "⬆️"
+            },
+            {
+              "txt": "atrás",
+              "em": "⬇️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Направо»",
+          "opts": [
+            {
+              "txt": "a la izquierda",
+              "em": "⬅️"
+            },
+            {
+              "txt": "a la derecha",
+              "em": "➡️"
+            },
+            {
+              "txt": "cerca",
+              "em": "📍"
+            },
+            {
+              "txt": "lejos",
+              "em": "🛫"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Прямо»",
+          "opts": [
+            {
+              "txt": "recto",
+              "em": "⬆️"
+            },
+            {
+              "txt": "lejos",
+              "em": "🛫"
+            },
+            {
+              "txt": "derecha",
+              "em": "➡️"
+            },
+            {
+              "txt": "esquina",
+              "em": "📐"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "izquierda",
+              "налево"
+            ],
+            [
+              "derecha",
+              "направо"
+            ],
+            [
+              "recto",
+              "прямо"
+            ],
+            [
+              "atrás",
+              "назад"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "cerca",
+              "близко"
+            ],
+            [
+              "lejos",
+              "далеко"
+            ],
+            [
+              "esquina",
+              "угол"
+            ],
+            [
+              "calle",
+              "улица"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Поверни направо",
+          "tiles": [
+            "gira",
+            "a",
+            "la",
+            "derecha",
+            "izquierda"
+          ],
+          "answer": [
+            "gira",
+            "a",
+            "la",
+            "derecha"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Sigue",
+            null,
+            "por la calle."
+          ],
+          "target": "recto",
+          "opts": [
+            "recto",
+            "cerca",
+            "lejos"
+          ],
+          "hint": "Иди прямо по улице"
+        }
+      ]
+    },
+    {
+      "id": "l52",
+      "name": "Verbos modales",
+      "emoji": "🎯",
+      "desc": "Poder, querer, deber, tener que",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я могу плавать»",
+          "opts": [
+            {
+              "txt": "puedo nadar",
+              "em": "💪"
+            },
+            {
+              "txt": "quiero nadar",
+              "em": "💖"
+            },
+            {
+              "txt": "debo nadar",
+              "em": "☝️"
+            },
+            {
+              "txt": "soy nadar",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я хочу есть»",
+          "opts": [
+            {
+              "txt": "puedo comer",
+              "em": "💪"
+            },
+            {
+              "txt": "quiero comer",
+              "em": "💖"
+            },
+            {
+              "txt": "voy comer",
+              "em": "❌"
+            },
+            {
+              "txt": "soy comer",
+              "em": "❌"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я должен учиться»",
+          "opts": [
+            {
+              "txt": "debo estudiar",
+              "em": "☝️"
+            },
+            {
+              "txt": "puedo estudiar",
+              "em": "💪"
+            },
+            {
+              "txt": "quiero estudiar",
+              "em": "💖"
+            },
+            {
+              "txt": "soy estudiar",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "poder",
+              "мочь"
+            ],
+            [
+              "querer",
+              "хотеть"
+            ],
+            [
+              "deber",
+              "быть должным"
+            ],
+            [
+              "tener que",
+              "надо / нужно"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "puedo",
+              "я могу"
+            ],
+            [
+              "quiero",
+              "я хочу"
+            ],
+            [
+              "debo",
+              "я должен"
+            ],
+            [
+              "tengo que",
+              "я должен (обязан)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу пить воду",
+          "tiles": [
+            "quiero",
+            "beber",
+            "agua",
+            "puedo"
+          ],
+          "answer": [
+            "quiero",
+            "beber",
+            "agua"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo",
+            null,
+            "trabajar."
+          ],
+          "target": "que",
+          "opts": [
+            "que",
+            "a",
+            "de"
+          ],
+          "hint": "Я должен работать (tengo que…)"
+        },
+        {
+          "t": "pick",
+          "q": "«Ты должен идти»",
+          "opts": [
+            {
+              "txt": "debes ir",
+              "em": "👉"
+            },
+            {
+              "txt": "debo ir",
+              "em": "👤"
+            },
+            {
+              "txt": "debe ir",
+              "em": "👨"
+            },
+            {
+              "txt": "deber ir",
+              "em": "➡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No",
+            null,
+            "hablar inglés."
+          ],
+          "target": "puedo",
+          "opts": [
+            "puedo",
+            "puedes",
+            "puede"
+          ],
+          "hint": "Я не могу говорить по-английски"
+        },
+        {
+          "t": "typed",
+          "from": "Я должен работать",
+          "answer": "tengo que trabajar",
+          "answers": [
+            "tengo que trabajar",
+            "debo trabajar",
+            "yo tengo que trabajar"
+          ],
+          "hint": "Два варианта: tener que ... / deber ..."
+        }
+      ]
+    },
+    {
+      "id": "l53",
+      "name": "Futuro: ir a",
+      "emoji": "🗓️",
+      "desc": "Voy a + infinitivo",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я собираюсь есть»",
+          "opts": [
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            },
+            {
+              "txt": "voy comer",
+              "em": "❌"
+            },
+            {
+              "txt": "como",
+              "em": "🍽️"
+            },
+            {
+              "txt": "comí",
+              "em": "⏪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ты будешь читать»",
+          "opts": [
+            {
+              "txt": "voy a leer",
+              "em": "⏩"
+            },
+            {
+              "txt": "vas a leer",
+              "em": "⏩"
+            },
+            {
+              "txt": "va a leer",
+              "em": "⏩"
+            },
+            {
+              "txt": "vamos a leer",
+              "em": "⏩"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Мы будем гулять»",
+          "opts": [
+            {
+              "txt": "voy a pasear",
+              "em": "⏩"
+            },
+            {
+              "txt": "vais a pasear",
+              "em": "⏩"
+            },
+            {
+              "txt": "vamos a pasear",
+              "em": "⏩"
+            },
+            {
+              "txt": "van a pasear",
+              "em": "⏩"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "voy a",
+              "я собираюсь"
+            ],
+            [
+              "vas a",
+              "ты собираешься"
+            ],
+            [
+              "va a",
+              "он/она собирается"
+            ],
+            [
+              "vamos a",
+              "мы собираемся"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "voy a comer",
+              "я буду есть"
+            ],
+            [
+              "voy a beber",
+              "я буду пить"
+            ],
+            [
+              "voy a dormir",
+              "я буду спать"
+            ],
+            [
+              "voy a leer",
+              "я буду читать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Завтра я буду учиться",
+          "tiles": [
+            "mañana",
+            "voy",
+            "a",
+            "estudiar",
+            "ayer"
+          ],
+          "answer": [
+            "mañana",
+            "voy",
+            "a",
+            "estudiar"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Esta noche",
+            null,
+            "a dormir temprano."
+          ],
+          "target": "voy",
+          "opts": [
+            "voy",
+            "vas",
+            "va"
+          ],
+          "hint": "Сегодня вечером я буду спать рано"
+        },
+        {
+          "t": "pick",
+          "q": "«Они будут спать»",
+          "opts": [
+            {
+              "txt": "van a dormir",
+              "em": "👥"
+            },
+            {
+              "txt": "vamos a dormir",
+              "em": "👫"
+            },
+            {
+              "txt": "vais a dormir",
+              "em": "👉"
+            },
+            {
+              "txt": "voy a dormir",
+              "em": "👤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mañana",
+            null,
+            "a viajar a España."
+          ],
+          "target": "voy",
+          "opts": [
+            "voy",
+            "vas",
+            "vamos"
+          ],
+          "hint": "Завтра я буду путешествовать в Испанию"
+        },
+        {
+          "t": "typed",
+          "from": "Я буду учить испанский",
+          "answer": "voy a estudiar español",
+          "answers": [
+            "voy a estudiar español",
+            "voy a aprender español",
+            "yo voy a estudiar español"
+          ],
+          "hint": "estudiar / aprender — оба годятся"
+        }
+      ]
+    },
+    {
+      "id": "l54",
+      "name": "Reflexivos",
+      "emoji": "🪞",
+      "desc": "Me llamo, me levanto, me ducho",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Меня зовут»",
+          "opts": [
+            {
+              "txt": "me llamo",
+              "em": "👤"
+            },
+            {
+              "txt": "te llamas",
+              "em": "👉"
+            },
+            {
+              "txt": "se llama",
+              "em": "👨"
+            },
+            {
+              "txt": "nos llamamos",
+              "em": "👥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я встаю»",
+          "opts": [
+            {
+              "txt": "me levanto",
+              "em": "⏰"
+            },
+            {
+              "txt": "me ducho",
+              "em": "🚿"
+            },
+            {
+              "txt": "me lavo",
+              "em": "🧼"
+            },
+            {
+              "txt": "me acuesto",
+              "em": "🛏️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я ложусь спать»",
+          "opts": [
+            {
+              "txt": "me levanto",
+              "em": "⏰"
+            },
+            {
+              "txt": "me acuesto",
+              "em": "🛏️"
+            },
+            {
+              "txt": "me ducho",
+              "em": "🚿"
+            },
+            {
+              "txt": "me lavo",
+              "em": "🧼"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me llamo",
+              "меня зовут"
+            ],
+            [
+              "me levanto",
+              "я встаю"
+            ],
+            [
+              "me ducho",
+              "я принимаю душ"
+            ],
+            [
+              "me acuesto",
+              "я ложусь спать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "me lavo",
+              "я моюсь"
+            ],
+            [
+              "me visto",
+              "я одеваюсь"
+            ],
+            [
+              "me peino",
+              "я причёсываюсь"
+            ],
+            [
+              "me siento",
+              "я сажусь"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Меня зовут Ана",
+          "tiles": [
+            "me",
+            "llamo",
+            "Ana",
+            "te"
+          ],
+          "answer": [
+            "me",
+            "llamo",
+            "Ana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Por la mañana",
+            null,
+            "levanto."
+          ],
+          "target": "me",
+          "opts": [
+            "me",
+            "te",
+            "se"
+          ],
+          "hint": "Утром я встаю"
+        },
+        {
+          "t": "pick",
+          "q": "«Он встаёт рано»",
+          "opts": [
+            {
+              "txt": "se levanta temprano",
+              "em": "👨"
+            },
+            {
+              "txt": "me levanta temprano",
+              "em": "❌"
+            },
+            {
+              "txt": "te levantas temprano",
+              "em": "❌"
+            },
+            {
+              "txt": "nos levantamos temprano",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tú",
+            null,
+            "duchas por la mañana."
+          ],
+          "target": "te",
+          "opts": [
+            "te",
+            "me",
+            "se"
+          ],
+          "hint": "Ты принимаешь душ по утрам"
+        },
+        {
+          "t": "typed",
+          "from": "Я ложусь спать в десять",
+          "answer": "me acuesto a las diez",
+          "answers": [
+            "me acuesto a las diez",
+            "yo me acuesto a las diez"
+          ],
+          "hint": "acostarse = ложиться спать"
+        }
+      ]
+    },
+    {
+      "id": "l55",
+      "name": "Repaso 8",
+      "emoji": "🏆",
+      "desc": "Repaso final (51-54)",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Налево»",
+          "opts": [
+            {
+              "txt": "a la izquierda",
+              "em": "⬅️"
+            },
+            {
+              "txt": "a la derecha",
+              "em": "➡️"
+            },
+            {
+              "txt": "recto",
+              "em": "⬆️"
+            },
+            {
+              "txt": "cerca",
+              "em": "📍"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я хочу есть»",
+          "opts": [
+            {
+              "txt": "puedo comer",
+              "em": "💪"
+            },
+            {
+              "txt": "quiero comer",
+              "em": "💖"
+            },
+            {
+              "txt": "debo comer",
+              "em": "☝️"
+            },
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я буду читать»",
+          "opts": [
+            {
+              "txt": "voy a leer",
+              "em": "⏩"
+            },
+            {
+              "txt": "leo",
+              "em": "📖"
+            },
+            {
+              "txt": "leí",
+              "em": "⏪"
+            },
+            {
+              "txt": "vamos a leer",
+              "em": "⏩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "izquierda",
+              "налево"
+            ],
+            [
+              "derecha",
+              "направо"
+            ],
+            [
+              "puedo",
+              "я могу"
+            ],
+            [
+              "quiero",
+              "я хочу"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "voy a",
+              "я собираюсь"
+            ],
+            [
+              "vamos a",
+              "мы собираемся"
+            ],
+            [
+              "me llamo",
+              "меня зовут"
+            ],
+            [
+              "me levanto",
+              "я встаю"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Завтра я буду спать",
+          "tiles": [
+            "mañana",
+            "voy",
+            "a",
+            "dormir",
+            "ayer"
+          ],
+          "answer": [
+            "mañana",
+            "voy",
+            "a",
+            "dormir"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Sigue",
+            null,
+            "por la calle."
+          ],
+          "target": "recto",
+          "opts": [
+            "recto",
+            "casa",
+            "noche"
+          ],
+          "hint": "Иди прямо по улице"
+        }
+      ]
+    }
+  ]
+}

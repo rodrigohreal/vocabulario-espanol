@@ -1,0 +1,180 @@
+{
+  "unit": 56,
+  "lessons": [
+    {
+      "id": "l276",
+      "name": "Geografía",
+      "emoji": "🗺️",
+      "desc": "Continentes, océanos, ríos",
+      "exercises": [
+        { "t": "pick", "q": "«Континент»", "opts": [
+          { "txt": "continente","em": "🌍" },
+          { "txt": "país",      "em": "❌" },
+          { "txt": "isla",      "em": "❌" },
+          { "txt": "ciudad",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Океан»", "opts": [
+          { "txt": "océano",  "em": "🌊" },
+          { "txt": "mar",     "em": "❌" },
+          { "txt": "lago",    "em": "❌" },
+          { "txt": "río",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["continente","континент"],
+          ["océano",    "океан"],
+          ["mar",       "море"],
+          ["isla",      "остров"]
+        ]},
+        { "t": "match", "pairs": [
+          ["río",       "река"],
+          ["lago",      "озеро"],
+          ["montaña",   "гора"],
+          ["cordillera","горный хребет"]
+        ]},
+        { "t": "translate", "from": "Анды — самая длинная горная цепь", "tiles": ["los", "Andes", "son", "la", "cordillera", "más", "larga", "alta"], "answer": ["los", "Andes", "son", "la", "cordillera", "más", "larga"] },
+        { "t": "fill", "sentence": ["El", null, "Amazonas es enorme."], "target": "río", "opts": ["río", "puente", "viaje"], "hint": "Река Амазонка" },
+        { "t": "typed", "from": "Сколько стран в Европе?", "answer": "cuántos países hay en Europa", "answers": ["cuántos países hay en europa", "cuántos países tiene europa"], "hint": "cuántos países" }
+      ]
+    },
+    {
+      "id": "l277",
+      "name": "Marketing",
+      "emoji": "📢",
+      "desc": "Marca, anuncio, cliente",
+      "exercises": [
+        { "t": "pick", "q": "«Бренд / марка»", "opts": [
+          { "txt": "marca",    "em": "🏷️" },
+          { "txt": "anuncio",  "em": "❌" },
+          { "txt": "cliente",  "em": "❌" },
+          { "txt": "ventas",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Клиент»", "opts": [
+          { "txt": "cliente",   "em": "🤝" },
+          { "txt": "vendedor",  "em": "❌" },
+          { "txt": "empleado",  "em": "❌" },
+          { "txt": "jefe",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["marca",       "бренд"],
+          ["público objetivo","ц.а."],
+          ["cliente",     "клиент"],
+          ["ventas",      "продажи"]
+        ]},
+        { "t": "match", "pairs": [
+          ["estrategia",   "стратегия"],
+          ["competencia",  "конкуренция"],
+          ["mercado",      "рынок"],
+          ["lanzamiento",  "запуск"]
+        ]},
+        { "t": "translate", "from": "Наша целевая аудитория — молодёжь", "tiles": ["nuestro", "público", "objetivo", "son", "los", "jóvenes", "niños"], "answer": ["nuestro", "público", "objetivo", "son", "los", "jóvenes"] },
+        { "t": "fill", "sentence": ["Tenemos mucha", null, "en este sector."], "target": "competencia", "opts": ["competencia", "cocina", "música"], "hint": "Много конкуренции" },
+        { "t": "typed", "from": "Запуск нового продукта", "answer": "lanzamiento de un nuevo producto", "answers": ["lanzamiento de un nuevo producto", "el lanzamiento de un nuevo producto"], "hint": "lanzamiento" }
+      ]
+    },
+    {
+      "id": "l278",
+      "name": "Publicidad",
+      "emoji": "🪧",
+      "desc": "Eslogan, campaña, medios",
+      "exercises": [
+        { "t": "pick", "q": "«Реклама»", "opts": [
+          { "txt": "anuncio",   "em": "📺" },
+          { "txt": "noticia",   "em": "❌" },
+          { "txt": "película",  "em": "❌" },
+          { "txt": "canción",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Слоган»", "opts": [
+          { "txt": "eslogan",   "em": "💬" },
+          { "txt": "logo",      "em": "❌" },
+          { "txt": "factura",   "em": "❌" },
+          { "txt": "muestra",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["anuncio",   "реклама"],
+          ["campaña",   "кампания"],
+          ["eslogan",   "слоган"],
+          ["logo",      "логотип"]
+        ]},
+        { "t": "match", "pairs": [
+          ["televisión","ТВ"],
+          ["radio",     "радио"],
+          ["prensa",    "пресса"],
+          ["medios",    "СМИ"]
+        ]},
+        { "t": "translate", "from": "Это новая рекламная кампания", "tiles": ["es", "una", "nueva", "campaña", "publicitaria", "antigua"], "answer": ["es", "una", "nueva", "campaña", "publicitaria"] },
+        { "t": "fill", "sentence": ["El", null, "es muy famoso."], "target": "eslogan", "opts": ["eslogan", "abrigo", "perro"], "hint": "Слоган очень известен" },
+        { "t": "typed", "from": "Реклама в социальных сетях", "answer": "publicidad en redes sociales", "answers": ["publicidad en redes sociales", "anuncios en redes sociales"], "hint": "redes sociales" }
+      ]
+    },
+    {
+      "id": "l279",
+      "name": "Redes sociales",
+      "emoji": "📱",
+      "desc": "Post, seguidor, hashtag",
+      "exercises": [
+        { "t": "pick", "q": "«Подписчик»", "opts": [
+          { "txt": "seguidor", "em": "👥" },
+          { "txt": "amigo",    "em": "❌" },
+          { "txt": "fan",      "em": "❌" },
+          { "txt": "líder",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Поставить лайк»", "opts": [
+          { "txt": "dar me gusta","em": "❤️" },
+          { "txt": "comentar",    "em": "❌" },
+          { "txt": "compartir",   "em": "❌" },
+          { "txt": "bloquear",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["seguidor",   "подписчик"],
+          ["publicación","пост"],
+          ["comentario", "коммент"],
+          ["compartir",  "поделиться"]
+        ]},
+        { "t": "match", "pairs": [
+          ["hashtag",      "хэштег"],
+          ["historia",     "сторис"],
+          ["influencer",   "инфлюенсер"],
+          ["viral",        "вирусный"]
+        ]},
+        { "t": "translate", "from": "Эта история стала вирусной", "tiles": ["esta", "historia", "se", "hizo", "viral", "famosa"], "answer": ["esta", "historia", "se", "hizo", "viral"] },
+        { "t": "fill", "sentence": ["Tiene un millón de", null, "."], "target": "seguidores", "opts": ["seguidores", "platos", "casas"], "hint": "Миллион подписчиков" },
+        { "t": "typed", "from": "Опубликуй фото", "answer": "publica una foto", "answers": ["publica una foto", "sube una foto"], "hint": "publicar / subir" }
+      ]
+    },
+    {
+      "id": "l280",
+      "name": "SEO",
+      "emoji": "🔎",
+      "desc": "Búsqueda, palabra clave, ranking",
+      "exercises": [
+        { "t": "pick", "q": "«Поиск»", "opts": [
+          { "txt": "búsqueda", "em": "🔎" },
+          { "txt": "tienda",   "em": "❌" },
+          { "txt": "mercado",  "em": "❌" },
+          { "txt": "compra",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Ключевое слово»", "opts": [
+          { "txt": "palabra clave","em": "🔑" },
+          { "txt": "frase",        "em": "❌" },
+          { "txt": "anuncio",      "em": "❌" },
+          { "txt": "noticia",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["buscador",   "поисковик"],
+          ["búsqueda",   "поиск"],
+          ["palabra clave","ключевое слово"],
+          ["enlace",     "ссылка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["posicionamiento","ранжирование"],
+          ["tráfico web",    "трафик"],
+          ["clic",           "клик"],
+          ["dominio",        "домен"]
+        ]},
+        { "t": "translate", "from": "Эта страница хорошо ранжируется в Google", "tiles": ["esta", "página", "posiciona", "bien", "en", "Google", "mal"], "answer": ["esta", "página", "posiciona", "bien", "en", "Google"] },
+        { "t": "fill", "sentence": ["Necesitamos más", null, "web."], "target": "tráfico", "opts": ["tráfico", "fuego", "queso"], "hint": "Нужен больший трафик" },
+        { "t": "typed", "from": "Оптимизация для поисковиков", "answer": "optimización para buscadores", "answers": ["optimización para buscadores", "seo"], "hint": "то, что озн. SEO" }
+      ]
+    }
+  ]
+}

@@ -706,6 +706,52 @@ html, body {
 .stat-chip:nth-child(1) { color: var(--text); }
 .stat-chip .chip-ico { font-size: 12px; opacity: 0.8; }
 
+/* Audio toggle chip: button-styled, dimmed when muted */
+.audio-chip {
+  cursor: pointer;
+  font: inherit;
+}
+.audio-chip:active { transform: scale(0.94); }
+.audio-chip.muted { opacity: 0.45; }
+
+/* Hearts chip — number + optional regen countdown */
+#topbar-hearts .chip-cd {
+  font-size: 10px;
+  color: var(--text-faint);
+  margin-left: 4px;
+  min-width: 28px;
+  text-align: right;
+}
+#topbar-hearts .chip-cd:empty { display: none; }
+
+/* Transient "no hearts" toast */
+.hearts-toast {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: rgba(40, 8, 12, 0.92);
+  border: 1px solid rgba(255, 100, 100, 0.45);
+  border-radius: 12px;
+  color: var(--text);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  z-index: 1000;
+  animation: hearts-toast-in 0.18s ease-out;
+}
+.hearts-toast-out {
+  animation: hearts-toast-out 0.4s ease-in forwards;
+}
+.hearts-toast .ht-ico   { font-size: 22px; }
+.hearts-toast .ht-body  { display: flex; flex-direction: column; gap: 1px; }
+.hearts-toast .ht-title { font-size: 13px; font-weight: 600; }
+.hearts-toast .ht-sub   { font-size: 11px; color: var(--text-faint); }
+@keyframes hearts-toast-in  { from { opacity: 0; transform: translate(-50%, -8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@keyframes hearts-toast-out { from { opacity: 1; } to { opacity: 0; transform: translate(-50%, -6px); } }
+
 #logout-btn { padding: 4px 10px; }
 
 /* Bottom navigation */
@@ -1835,6 +1881,32 @@ html, body {
   gap: 4px;
 }
 
+/* "Repaso de hoy" card — surfaces SRS-due exercises above the path. */
+.review-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 6px 14px 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(255,170,90,0.18), transparent 65%),
+    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,170,90,0.30);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.08s, border-color 0.15s;
+}
+.review-card:active { transform: scale(0.985); }
+.review-card:hover  { border-color: rgba(255,170,90,0.55); }
+.review-card-ico    { font-size: 26px; }
+.review-card-body   { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.review-card-title  { font-size: 14px; font-weight: 600; }
+.review-card-sub    { font-size: 12px; color: var(--text-faint); }
+.review-card-arrow  { font-size: 22px; color: var(--text-faint); }
+
 /* ── Unit banner: dark glass card with a coloured accent stripe ── */
 .unit-banner {
   margin: 22px 14px 4px;
@@ -2429,6 +2501,33 @@ html, body {
   background: transparent;
   padding: 0;
 }
+
+/* Small speaker button on pick options + fill tiles */
+.lex-option-speak,
+.lex-tile-speak {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-faint);
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.12s, background 0.12s, transform 0.08s;
+}
+.lex-option-speak:hover,
+.lex-tile-speak:hover { opacity: 1; background: var(--card-2); }
+.lex-option-speak:active,
+.lex-tile-speak:active { transform: scale(0.9); }
+
+.lex-tile-with-speak { position: relative; padding-right: 28px; }
+.lex-tile-with-speak .lex-tile-text { display: inline-block; }
 
 .lex-bubble {
   display: flex;

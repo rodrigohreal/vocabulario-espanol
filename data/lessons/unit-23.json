@@ -1,0 +1,756 @@
+{
+  "unit": 23,
+  "lessons": [
+    {
+      "id": "l111",
+      "name": "Familia II",
+      "emoji": "👨‍👩‍👧‍👦",
+      "desc": "Tíos, primos, sobrinos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Дядя»",
+          "opts": [
+            {
+              "txt": "tío",
+              "em": "👨"
+            },
+            {
+              "txt": "tía",
+              "em": "👩"
+            },
+            {
+              "txt": "primo",
+              "em": "👦"
+            },
+            {
+              "txt": "sobrino",
+              "em": "🧒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Двоюродная сестра»",
+          "opts": [
+            {
+              "txt": "hermana",
+              "em": "👧"
+            },
+            {
+              "txt": "prima",
+              "em": "👧"
+            },
+            {
+              "txt": "sobrina",
+              "em": "🧒"
+            },
+            {
+              "txt": "abuela",
+              "em": "👵"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Племянник»",
+          "opts": [
+            {
+              "txt": "tío",
+              "em": "👨"
+            },
+            {
+              "txt": "primo",
+              "em": "👦"
+            },
+            {
+              "txt": "sobrino",
+              "em": "🧒"
+            },
+            {
+              "txt": "nieto",
+              "em": "👶"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tío",
+              "дядя"
+            ],
+            [
+              "tía",
+              "тётя"
+            ],
+            [
+              "primo",
+              "двоюр. брат"
+            ],
+            [
+              "prima",
+              "двоюр. сестра"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sobrino",
+              "племянник"
+            ],
+            [
+              "sobrina",
+              "племянница"
+            ],
+            [
+              "nieto",
+              "внук"
+            ],
+            [
+              "nieta",
+              "внучка"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мой дядя",
+          "tiles": [
+            "mi",
+            "tío",
+            "tía",
+            "tu"
+          ],
+          "answer": [
+            "mi",
+            "tío"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "tiene tres hijos."
+          ],
+          "target": "tía",
+          "opts": [
+            "tía",
+            "sobrino",
+            "casa"
+          ],
+          "hint": "У моей тёти трое детей"
+        }
+      ]
+    },
+    {
+      "id": "l112",
+      "name": "Celebraciones",
+      "emoji": "🎉",
+      "desc": "Bodas y fiestas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Свадьба»",
+          "opts": [
+            {
+              "txt": "boda",
+              "em": "💒"
+            },
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            },
+            {
+              "txt": "regalo",
+              "em": "🎁"
+            },
+            {
+              "txt": "invitado",
+              "em": "🙋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Подарок»",
+          "opts": [
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            },
+            {
+              "txt": "regalo",
+              "em": "🎁"
+            },
+            {
+              "txt": "pastel",
+              "em": "🎂"
+            },
+            {
+              "txt": "baile",
+              "em": "💃"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Гость»",
+          "opts": [
+            {
+              "txt": "novio",
+              "em": "🤵"
+            },
+            {
+              "txt": "novia",
+              "em": "👰"
+            },
+            {
+              "txt": "invitado",
+              "em": "🙋"
+            },
+            {
+              "txt": "amigo",
+              "em": "🙂"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "boda",
+              "свадьба"
+            ],
+            [
+              "novio",
+              "жених"
+            ],
+            [
+              "novia",
+              "невеста"
+            ],
+            [
+              "anillo",
+              "кольцо"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fiesta",
+              "вечеринка"
+            ],
+            [
+              "regalo",
+              "подарок"
+            ],
+            [
+              "invitado",
+              "гость"
+            ],
+            [
+              "pastel",
+              "торт"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "С днём рождения!",
+          "tiles": [
+            "feliz",
+            "cumpleaños",
+            "navidad",
+            "año"
+          ],
+          "answer": [
+            "feliz",
+            "cumpleaños"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            "es en junio."
+          ],
+          "target": "boda",
+          "opts": [
+            "boda",
+            "lunes",
+            "mar"
+          ],
+          "hint": "Свадьба в июне"
+        }
+      ]
+    },
+    {
+      "id": "l113",
+      "name": "Bebés",
+      "emoji": "👶",
+      "desc": "Niños y crianza",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Малыш»",
+          "opts": [
+            {
+              "txt": "bebé",
+              "em": "👶"
+            },
+            {
+              "txt": "niño",
+              "em": "🧒"
+            },
+            {
+              "txt": "joven",
+              "em": "🧑"
+            },
+            {
+              "txt": "adulto",
+              "em": "👨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Игрушка»",
+          "opts": [
+            {
+              "txt": "cuna",
+              "em": "🛏️"
+            },
+            {
+              "txt": "juguete",
+              "em": "🧸"
+            },
+            {
+              "txt": "biberón",
+              "em": "🍼"
+            },
+            {
+              "txt": "pañal",
+              "em": "🩲"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Плакать»",
+          "opts": [
+            {
+              "txt": "reír",
+              "em": "😄"
+            },
+            {
+              "txt": "jugar",
+              "em": "🎮"
+            },
+            {
+              "txt": "llorar",
+              "em": "😭"
+            },
+            {
+              "txt": "dormir",
+              "em": "😴"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "bebé",
+              "малыш"
+            ],
+            [
+              "cuna",
+              "колыбель"
+            ],
+            [
+              "biberón",
+              "бутылочка"
+            ],
+            [
+              "pañal",
+              "подгузник"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "llorar",
+              "плакать"
+            ],
+            [
+              "reír",
+              "смеяться"
+            ],
+            [
+              "jugar",
+              "играть"
+            ],
+            [
+              "gatear",
+              "ползать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Малыш играет",
+          "tiles": [
+            "el",
+            "bebé",
+            "juega",
+            "llora"
+          ],
+          "answer": [
+            "el",
+            "bebé",
+            "juega"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El bebé",
+            null,
+            "porque tiene hambre."
+          ],
+          "target": "llora",
+          "opts": [
+            "llora",
+            "come",
+            "duerme"
+          ],
+          "hint": "Малыш плачет, потому что голоден"
+        }
+      ]
+    },
+    {
+      "id": "l114",
+      "name": "Edades",
+      "emoji": "🌱",
+      "desc": "Etapas de la vida",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Молодой»",
+          "opts": [
+            {
+              "txt": "joven",
+              "em": "🧑"
+            },
+            {
+              "txt": "viejo",
+              "em": "👴"
+            },
+            {
+              "txt": "niño",
+              "em": "🧒"
+            },
+            {
+              "txt": "adulto",
+              "em": "👨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Подросток»",
+          "opts": [
+            {
+              "txt": "bebé",
+              "em": "👶"
+            },
+            {
+              "txt": "adolescente",
+              "em": "🧑"
+            },
+            {
+              "txt": "adulto",
+              "em": "👨"
+            },
+            {
+              "txt": "anciano",
+              "em": "👴"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Старик»",
+          "opts": [
+            {
+              "txt": "adulto",
+              "em": "👨"
+            },
+            {
+              "txt": "joven",
+              "em": "🧑"
+            },
+            {
+              "txt": "anciano",
+              "em": "👴"
+            },
+            {
+              "txt": "niño",
+              "em": "🧒"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "bebé",
+              "малыш"
+            ],
+            [
+              "niño",
+              "ребёнок"
+            ],
+            [
+              "adolescente",
+              "подросток"
+            ],
+            [
+              "adulto",
+              "взрослый"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "joven",
+              "молодой"
+            ],
+            [
+              "viejo",
+              "старый"
+            ],
+            [
+              "anciano",
+              "старик"
+            ],
+            [
+              "edad",
+              "возраст"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Моей бабушке семьдесят лет",
+          "tiles": [
+            "mi",
+            "abuela",
+            "tiene",
+            "setenta",
+            "años",
+            "siete"
+          ],
+          "answer": [
+            "mi",
+            "abuela",
+            "tiene",
+            "setenta",
+            "años"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Soy todavía",
+            null,
+            "."
+          ],
+          "target": "joven",
+          "opts": [
+            "joven",
+            "azul",
+            "mesa"
+          ],
+          "hint": "Я ещё молод"
+        }
+      ]
+    },
+    {
+      "id": "l115",
+      "name": "Repaso 18",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 111-114",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Дядя»",
+          "opts": [
+            {
+              "txt": "tío",
+              "em": "👨"
+            },
+            {
+              "txt": "tía",
+              "em": "👩"
+            },
+            {
+              "txt": "primo",
+              "em": "👦"
+            },
+            {
+              "txt": "sobrino",
+              "em": "🧒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Подарок»",
+          "opts": [
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            },
+            {
+              "txt": "regalo",
+              "em": "🎁"
+            },
+            {
+              "txt": "invitado",
+              "em": "🙋"
+            },
+            {
+              "txt": "baile",
+              "em": "💃"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Старик»",
+          "opts": [
+            {
+              "txt": "adulto",
+              "em": "👨"
+            },
+            {
+              "txt": "joven",
+              "em": "🧑"
+            },
+            {
+              "txt": "anciano",
+              "em": "👴"
+            },
+            {
+              "txt": "niño",
+              "em": "🧒"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tío",
+              "дядя"
+            ],
+            [
+              "sobrino",
+              "племянник"
+            ],
+            [
+              "bebé",
+              "малыш"
+            ],
+            [
+              "juguete",
+              "игрушка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "boda",
+              "свадьба"
+            ],
+            [
+              "regalo",
+              "подарок"
+            ],
+            [
+              "joven",
+              "молодой"
+            ],
+            [
+              "viejo",
+              "старый"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Моей бабушке семьдесят лет",
+          "tiles": [
+            "mi",
+            "abuela",
+            "tiene",
+            "setenta",
+            "años"
+          ],
+          "answer": [
+            "mi",
+            "abuela",
+            "tiene",
+            "setenta",
+            "años"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El bebé",
+            null,
+            "porque tiene hambre."
+          ],
+          "target": "llora",
+          "opts": [
+            "llora",
+            "come",
+            "duerme"
+          ],
+          "hint": "Малыш плачет"
+        }
+      ]
+    }
+  ]
+}

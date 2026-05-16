@@ -1,0 +1,820 @@
+{
+  "unit": 2,
+  "lessons": [
+    {
+      "id": "l6",
+      "name": "Comida",
+      "emoji": "🍎",
+      "desc": "Comida básica",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Хлеб»",
+          "opts": [
+            {
+              "txt": "pan",
+              "em": "🍞"
+            },
+            {
+              "txt": "queso",
+              "em": "🧀"
+            },
+            {
+              "txt": "huevo",
+              "em": "🥚"
+            },
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Вода»",
+          "opts": [
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Яблоко»",
+          "opts": [
+            {
+              "txt": "pollo",
+              "em": "🍗"
+            },
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            },
+            {
+              "txt": "arroz",
+              "em": "🍚"
+            },
+            {
+              "txt": "queso",
+              "em": "🧀"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "pan",
+              "хлеб"
+            ],
+            [
+              "agua",
+              "вода"
+            ],
+            [
+              "leche",
+              "молоко"
+            ],
+            [
+              "queso",
+              "сыр"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "café",
+              "кофе"
+            ],
+            [
+              "té",
+              "чай"
+            ],
+            [
+              "huevo",
+              "яйцо"
+            ],
+            [
+              "manzana",
+              "яблоко"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я пью воду",
+          "tiles": [
+            "yo",
+            "bebo",
+            "agua",
+            "como"
+          ],
+          "answer": [
+            "yo",
+            "bebo",
+            "agua"
+          ],
+          "answers": [
+            [
+              "yo",
+              "bebo",
+              "agua"
+            ],
+            [
+              "bebo",
+              "agua"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Como una",
+            null,
+            "."
+          ],
+          "target": "manzana",
+          "opts": [
+            "manzana",
+            "agua",
+            "leche"
+          ],
+          "hint": "Я ем яблоко"
+        }
+      ]
+    },
+    {
+      "id": "l7",
+      "name": "Animales",
+      "emoji": "🐶",
+      "desc": "Animales comunes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Собака»",
+          "opts": [
+            {
+              "txt": "gato",
+              "em": "🐱"
+            },
+            {
+              "txt": "perro",
+              "em": "🐶"
+            },
+            {
+              "txt": "pez",
+              "em": "🐟"
+            },
+            {
+              "txt": "pájaro",
+              "em": "🐦"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Кот»",
+          "opts": [
+            {
+              "txt": "gato",
+              "em": "🐱"
+            },
+            {
+              "txt": "caballo",
+              "em": "🐴"
+            },
+            {
+              "txt": "oveja",
+              "em": "🐑"
+            },
+            {
+              "txt": "conejo",
+              "em": "🐰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Лошадь»",
+          "opts": [
+            {
+              "txt": "vaca",
+              "em": "🐮"
+            },
+            {
+              "txt": "oveja",
+              "em": "🐑"
+            },
+            {
+              "txt": "caballo",
+              "em": "🐴"
+            },
+            {
+              "txt": "perro",
+              "em": "🐶"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "perro",
+              "собака"
+            ],
+            [
+              "gato",
+              "кот"
+            ],
+            [
+              "pájaro",
+              "птица"
+            ],
+            [
+              "pez",
+              "рыба"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caballo",
+              "лошадь"
+            ],
+            [
+              "vaca",
+              "корова"
+            ],
+            [
+              "oveja",
+              "овца"
+            ],
+            [
+              "conejo",
+              "кролик"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть собака",
+          "tiles": [
+            "tengo",
+            "un",
+            "perro",
+            "gato"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "perro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "maúlla."
+          ],
+          "target": "gato",
+          "opts": [
+            "gato",
+            "perro",
+            "pez"
+          ],
+          "hint": "Кот мяукает"
+        }
+      ]
+    },
+    {
+      "id": "l8",
+      "name": "Días",
+      "emoji": "📅",
+      "desc": "Días de la semana",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Понедельник»",
+          "opts": [
+            {
+              "txt": "lunes",
+              "em": "1️⃣"
+            },
+            {
+              "txt": "martes",
+              "em": "2️⃣"
+            },
+            {
+              "txt": "jueves",
+              "em": "4️⃣"
+            },
+            {
+              "txt": "domingo",
+              "em": "7️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Суббота»",
+          "opts": [
+            {
+              "txt": "viernes",
+              "em": "5️⃣"
+            },
+            {
+              "txt": "sábado",
+              "em": "6️⃣"
+            },
+            {
+              "txt": "domingo",
+              "em": "7️⃣"
+            },
+            {
+              "txt": "lunes",
+              "em": "1️⃣"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Воскресенье»",
+          "opts": [
+            {
+              "txt": "lunes",
+              "em": "1️⃣"
+            },
+            {
+              "txt": "sábado",
+              "em": "6️⃣"
+            },
+            {
+              "txt": "domingo",
+              "em": "7️⃣"
+            },
+            {
+              "txt": "miércoles",
+              "em": "3️⃣"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "lunes",
+              "понедельник"
+            ],
+            [
+              "martes",
+              "вторник"
+            ],
+            [
+              "miércoles",
+              "среда"
+            ],
+            [
+              "jueves",
+              "четверг"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "viernes",
+              "пятница"
+            ],
+            [
+              "sábado",
+              "суббота"
+            ],
+            [
+              "domingo",
+              "воскресенье"
+            ],
+            [
+              "hoy",
+              "сегодня"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сегодня понедельник",
+          "tiles": [
+            "hoy",
+            "es",
+            "lunes",
+            "martes"
+          ],
+          "answer": [
+            "hoy",
+            "es",
+            "lunes"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mañana es",
+            null,
+            "."
+          ],
+          "target": "sábado",
+          "opts": [
+            "sábado",
+            "lunes",
+            "hoy"
+          ],
+          "hint": "Завтра суббота"
+        }
+      ]
+    },
+    {
+      "id": "l9",
+      "name": "Verbos",
+      "emoji": "🏃",
+      "desc": "Verbos básicos",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Есть/Кушать»",
+          "opts": [
+            {
+              "txt": "comer",
+              "em": "🍽️"
+            },
+            {
+              "txt": "beber",
+              "em": "🥤"
+            },
+            {
+              "txt": "hablar",
+              "em": "💬"
+            },
+            {
+              "txt": "vivir",
+              "em": "🏠"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Пить»",
+          "opts": [
+            {
+              "txt": "comer",
+              "em": "🍽️"
+            },
+            {
+              "txt": "beber",
+              "em": "🥤"
+            },
+            {
+              "txt": "ir",
+              "em": "🚶"
+            },
+            {
+              "txt": "tener",
+              "em": "✋"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Говорить»",
+          "opts": [
+            {
+              "txt": "ir",
+              "em": "🚶"
+            },
+            {
+              "txt": "vivir",
+              "em": "🏠"
+            },
+            {
+              "txt": "hablar",
+              "em": "💬"
+            },
+            {
+              "txt": "tener",
+              "em": "✋"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Я ем» — какая форма?",
+          "opts": [
+            {
+              "txt": "como",
+              "em": "👤"
+            },
+            {
+              "txt": "comes",
+              "em": "👉"
+            },
+            {
+              "txt": "come",
+              "em": "👨"
+            },
+            {
+              "txt": "comer",
+              "em": "➡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ser",
+              "быть"
+            ],
+            [
+              "tener",
+              "иметь"
+            ],
+            [
+              "ir",
+              "идти"
+            ],
+            [
+              "hablar",
+              "говорить"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "comer",
+              "есть"
+            ],
+            [
+              "beber",
+              "пить"
+            ],
+            [
+              "vivir",
+              "жить"
+            ],
+            [
+              "estar",
+              "находиться"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я ем хлеб",
+          "tiles": [
+            "yo",
+            "como",
+            "pan",
+            "bebo"
+          ],
+          "answer": [
+            "yo",
+            "como",
+            "pan"
+          ],
+          "answers": [
+            [
+              "yo",
+              "como",
+              "pan"
+            ],
+            [
+              "como",
+              "pan"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo",
+            null,
+            "español."
+          ],
+          "target": "hablo",
+          "opts": [
+            "hablo",
+            "como",
+            "tengo"
+          ],
+          "hint": "Я говорю по-испански"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tú",
+            null,
+            "agua."
+          ],
+          "target": "bebes",
+          "opts": [
+            "bebes",
+            "bebo",
+            "beber"
+          ],
+          "hint": "Ты пьёшь воду"
+        },
+        {
+          "t": "typed",
+          "from": "Я говорю по-испански",
+          "answer": "hablo español",
+          "answers": [
+            "hablo español",
+            "yo hablo español"
+          ],
+          "hint": "Подсказка: hablar = говорить"
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "name": "Frases útiles",
+      "emoji": "💬",
+      "desc": "Frases del día a día",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Спасибо»",
+          "opts": [
+            {
+              "txt": "gracias",
+              "em": "🙏"
+            },
+            {
+              "txt": "por favor",
+              "em": "🤲"
+            },
+            {
+              "txt": "perdón",
+              "em": "🙇"
+            },
+            {
+              "txt": "salud",
+              "em": "🥂"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Пожалуйста»",
+          "opts": [
+            {
+              "txt": "gracias",
+              "em": "🙏"
+            },
+            {
+              "txt": "por favor",
+              "em": "🤲"
+            },
+            {
+              "txt": "sí",
+              "em": "✅"
+            },
+            {
+              "txt": "no",
+              "em": "❌"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Извини»",
+          "opts": [
+            {
+              "txt": "gracias",
+              "em": "🙏"
+            },
+            {
+              "txt": "salud",
+              "em": "🥂"
+            },
+            {
+              "txt": "perdón",
+              "em": "🙇"
+            },
+            {
+              "txt": "mucho gusto",
+              "em": "🤝"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gracias",
+              "спасибо"
+            ],
+            [
+              "por favor",
+              "пожалуйста"
+            ],
+            [
+              "sí",
+              "да"
+            ],
+            [
+              "no",
+              "нет"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "perdón",
+              "извини"
+            ],
+            [
+              "hasta luego",
+              "до свидания"
+            ],
+            [
+              "mucho gusto",
+              "приятно познакомиться"
+            ],
+            [
+              "lo siento",
+              "мне жаль"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Большое спасибо",
+          "tiles": [
+            "muchas",
+            "gracias",
+            "por",
+            "favor"
+          ],
+          "answer": [
+            "muchas",
+            "gracias"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mucho",
+            null,
+            "."
+          ],
+          "target": "gusto",
+          "opts": [
+            "gusto",
+            "gracias",
+            "favor"
+          ],
+          "hint": "Приятно познакомиться"
+        }
+      ]
+    }
+  ]
+}

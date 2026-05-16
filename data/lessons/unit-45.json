@@ -1,0 +1,197 @@
+{
+  "unit": 45,
+  "lessons": [
+    {
+      "id": "l221",
+      "name": "Subjuntivo II",
+      "emoji": "🤔",
+      "desc": "Dudar, no creer, cuando + futuro",
+      "exercises": [
+        { "t": "pick", "q": "«Сомневаюсь, что он придёт»", "opts": [
+          { "txt": "dudo que viene",  "em": "❌" },
+          { "txt": "dudo que venga",  "em": "🤷" },
+          { "txt": "dudo a que venga","em": "❌" },
+          { "txt": "dudo de viene",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Не думаю, что это правда»", "opts": [
+          { "txt": "no creo que es verdad",  "em": "❌" },
+          { "txt": "no creo que sea verdad", "em": "🚫" },
+          { "txt": "creo que sea verdad",    "em": "❌" },
+          { "txt": "creo no que es verdad",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Когда приедешь, позвони» (subj. для будущего)", "opts": [
+          { "txt": "cuando llegas, llama",  "em": "❌" },
+          { "txt": "cuando llegues, llama", "em": "📞" },
+          { "txt": "cuando llegaste, llama","em": "❌" },
+          { "txt": "cuando llegará, llama", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["dudo que",       "сомневаюсь, что"],
+          ["no creo que",    "не думаю, что"],
+          ["es posible que", "возможно, что"],
+          ["es necesario que","нужно, чтобы"]
+        ]},
+        { "t": "match", "pairs": [
+          ["cuando + subj",   "когда (в будущем)"],
+          ["antes de que + subj","прежде чем"],
+          ["para que + subj", "чтобы (цель)"],
+          ["a menos que + subj","если только не"]
+        ]},
+        { "t": "translate", "from": "Делаю это, чтобы ты понял", "tiles": ["lo", "hago", "para", "que", "entiendas", "entiendes"], "answer": ["lo", "hago", "para", "que", "entiendas"] },
+        { "t": "fill", "sentence": ["Avísame cuando", null, "."], "target": "llegues", "opts": ["llegues", "llegas", "llegaste"], "hint": "Сообщи, когда приедешь" },
+        { "t": "fill", "sentence": ["Es importante que", null, " la verdad."], "target": "sepas", "opts": ["sepas", "sabes", "supiste"], "hint": "Важно, чтобы ты знал правду" },
+        { "t": "typed", "from": "Не думаю, что у него есть деньги", "answer": "no creo que tenga dinero", "answers": ["no creo que tenga dinero", "dudo que tenga dinero"], "hint": "tener → tenga (subj.)" }
+      ]
+    },
+    {
+      "id": "l222",
+      "name": "Subj. imperfecto",
+      "emoji": "🌀",
+      "desc": "-ara, -iera: hablara, comiera",
+      "exercises": [
+        { "t": "pick", "q": "«Хотел бы, чтобы ты говорил»", "opts": [
+          { "txt": "quería que hablas",    "em": "❌" },
+          { "txt": "quería que hablaras",  "em": "💬" },
+          { "txt": "quería que hablabas",  "em": "❌" },
+          { "txt": "quería que hablar",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Если бы я мог»", "opts": [
+          { "txt": "si puedo",    "em": "❌" },
+          { "txt": "si pude",     "em": "❌" },
+          { "txt": "si pudiera",  "em": "🌟" },
+          { "txt": "si podía",    "em": "❌" }
+        ], "correct": 2 },
+        { "t": "pick", "q": "Imperf. subj. от «ir»", "opts": [
+          { "txt": "iría",   "em": "❌" },
+          { "txt": "fuera",  "em": "✈️" },
+          { "txt": "iba",    "em": "❌" },
+          { "txt": "vaya",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["hablara",   "(чтобы) я говорил"],
+          ["comiera",   "(чтобы) я ел"],
+          ["viviera",   "(чтобы) я жил"],
+          ["fuera",     "(чтобы) я был / шёл"]
+        ]},
+        { "t": "match", "pairs": [
+          ["tuviera",  "имел бы"],
+          ["pudiera",  "мог бы"],
+          ["supiera",  "знал бы"],
+          ["hiciera",  "сделал бы"]
+        ]},
+        { "t": "translate", "from": "Хотел бы, чтобы ты пришёл", "tiles": ["quería", "que", "vinieras", "vienes"], "answer": ["quería", "que", "vinieras"] },
+        { "t": "fill", "sentence": ["Ojalá", null, "más tiempo."], "target": "tuviera", "opts": ["tuviera", "tengo", "tuve"], "hint": "Хоть бы у меня было больше времени" },
+        { "t": "fill", "sentence": ["Si yo", null, ", te ayudaría."], "target": "pudiera", "opts": ["pudiera", "puedo", "pude"], "hint": "Если бы я мог..." },
+        { "t": "typed", "from": "Хоть бы он знал", "answer": "ojalá supiera", "answers": ["ojalá supiera", "ojalá él supiera", "ojalá lo supiera"], "hint": "saber → supiera" }
+      ]
+    },
+    {
+      "id": "l223",
+      "name": "Subj. imperf. uso",
+      "emoji": "💫",
+      "desc": "Hipótesis y deseos",
+      "exercises": [
+        { "t": "pick", "q": "«Хочу, чтобы ты говорил тише» — вежливо", "opts": [
+          { "txt": "quería que hablaras más bajo","em": "🤫" },
+          { "txt": "quiero que hablas más bajo",  "em": "❌" },
+          { "txt": "quiero que hablar más bajo",  "em": "❌" },
+          { "txt": "querer que hablas más bajo",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Quisiera» (вежливое «я хотел бы»)", "opts": [
+          { "txt": "quiero",    "em": "❌" },
+          { "txt": "quisiera",  "em": "🙏" },
+          { "txt": "querría",   "em": "✅" },
+          { "txt": "quería",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Как будто он был» (como si)", "opts": [
+          { "txt": "como si era",   "em": "❌" },
+          { "txt": "como si fuera", "em": "🎭" },
+          { "txt": "como si es",    "em": "❌" },
+          { "txt": "como si fue",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["ojalá + subj. imp", "хоть бы (несбыточное)"],
+          ["si + subj. imp",    "если бы"],
+          ["como si + subj. imp","как будто (нереально)"],
+          ["quisiera",          "вежливое «хотелось бы»"]
+        ]},
+        { "t": "translate", "from": "Хотел бы стакан воды, пожалуйста", "tiles": ["quisiera", "un", "vaso", "de", "agua", "por", "favor", "quiero"], "answer": ["quisiera", "un", "vaso", "de", "agua", "por", "favor"] },
+        { "t": "fill", "sentence": ["Habla como si", null, "experto."], "target": "fuera", "opts": ["fuera", "es", "fue"], "hint": "Говорит, как будто эксперт" },
+        { "t": "fill", "sentence": ["Si", null, "más joven, viajaría."], "target": "fuera", "opts": ["fuera", "soy", "fui"], "hint": "Если бы был моложе..." },
+        { "t": "typed", "from": "Хотел бы кофе, пожалуйста", "answer": "quisiera un café por favor", "answers": ["quisiera un café por favor", "quisiera un café, por favor"], "hint": "вежливо: quisiera + сущ." }
+      ]
+    },
+    {
+      "id": "l224",
+      "name": "Condicionales I/II",
+      "emoji": "🌦️",
+      "desc": "Реальное и нереальное условие",
+      "exercises": [
+        { "t": "pick", "q": "«Если будет дождь, я останусь дома» (реальное)", "opts": [
+          { "txt": "si lloverá, me quedo",  "em": "❌" },
+          { "txt": "si llueve, me quedo",   "em": "🌧️" },
+          { "txt": "si lloviera, me quedo", "em": "❌" },
+          { "txt": "si lluviera, me quedo", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Если бы у меня были деньги, я бы путешествовал»", "opts": [
+          { "txt": "si tengo dinero, viajaría",     "em": "❌" },
+          { "txt": "si tuviera dinero, viajaría",   "em": "✈️" },
+          { "txt": "si tuviera dinero, viajaba",    "em": "❌" },
+          { "txt": "si tendría dinero, viajaría",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "Если+настоящее, то...", "opts": [
+          { "txt": "пред. время",  "em": "❌" },
+          { "txt": "буд. / наст.", "em": "✅" },
+          { "txt": "imp. subj.",   "em": "❌" },
+          { "txt": "плюсквамперф.","em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["si + presente, futuro/presente",  "тип 1: реально"],
+          ["si + imp. subj., condicional",    "тип 2: гипотеза"],
+          ["si tengo, voy",                   "если есть — иду"],
+          ["si tuviera, iría",                "если бы было — пошёл бы"]
+        ]},
+        { "t": "translate", "from": "Если бы я знал, я бы тебе сказал", "tiles": ["si", "lo", "supiera", "te", "diría", "sé", "digo"], "answer": ["si", "lo", "supiera", "te", "diría"] },
+        { "t": "fill", "sentence": ["Si", null, "tiempo, te llamo."], "target": "tengo", "opts": ["tengo", "tuviera", "tendría"], "hint": "Если будет время... (реально)" },
+        { "t": "fill", "sentence": ["Si", null, "rico, compraría una isla."], "target": "fuera", "opts": ["fuera", "soy", "fui"], "hint": "Если бы был богат (нереально)" },
+        { "t": "typed", "from": "Если бы я мог, я пришёл бы", "answer": "si pudiera, vendría", "answers": ["si pudiera, vendría", "si yo pudiera vendría", "vendría si pudiera"], "hint": "тип 2: imp. subj. + condicional" }
+      ]
+    },
+    {
+      "id": "l225",
+      "name": "Condicional III",
+      "emoji": "⏪",
+      "desc": "Тип 3: si hubiera + habría",
+      "exercises": [
+        { "t": "pick", "q": "«Если бы я знал (в прошлом)...»", "opts": [
+          { "txt": "si supe",         "em": "❌" },
+          { "txt": "si sabía",        "em": "❌" },
+          { "txt": "si hubiera sabido","em": "💭" },
+          { "txt": "si sabré",        "em": "❌" }
+        ], "correct": 2 },
+        { "t": "pick", "q": "«...я бы тебе сказал»", "opts": [
+          { "txt": "te dije",         "em": "❌" },
+          { "txt": "te decía",        "em": "❌" },
+          { "txt": "te diría",        "em": "❌" },
+          { "txt": "te habría dicho", "em": "💬" }
+        ], "correct": 3 },
+        { "t": "pick", "q": "«Если бы я учился, я бы сдал экзамен»", "opts": [
+          { "txt": "si estudiaba, aprobaba",                "em": "❌" },
+          { "txt": "si hubiera estudiado, habría aprobado", "em": "🎓" },
+          { "txt": "si estudiara, aprobaría",               "em": "❌" },
+          { "txt": "si estudio, apruebo",                   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["si hubiera + part.", "если бы (в прошлом)"],
+          ["habría + part.",     "сделал бы (в прошлом)"],
+          ["hubiera comido",     "(если бы) я ел"],
+          ["habría comido",      "я бы съел"]
+        ]},
+        { "t": "translate", "from": "Если бы ты пришёл, мы бы тебя видели", "tiles": ["si", "hubieras", "venido", "te", "habríamos", "visto", "ves"], "answer": ["si", "hubieras", "venido", "te", "habríamos", "visto"] },
+        { "t": "fill", "sentence": ["Si", null, "más tiempo, habría terminado."], "target": "hubiera tenido", "opts": ["hubiera tenido", "tendría", "tuve"], "hint": "Если бы у меня было больше времени..." },
+        { "t": "fill", "sentence": ["Yo", null, "ido si me hubieras llamado."], "target": "habría", "opts": ["habría", "hubiera", "había"], "hint": "Я бы пошёл, если бы ты позвонил" },
+        { "t": "typed", "from": "Если бы я знал, я бы пришёл", "answer": "si hubiera sabido, habría venido", "answers": ["si hubiera sabido, habría venido", "habría venido si hubiera sabido"], "hint": "тип 3: hubiera + habría" }
+      ]
+    }
+  ]
+}

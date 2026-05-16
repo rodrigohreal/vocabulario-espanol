@@ -1,0 +1,763 @@
+{
+  "unit": 8,
+  "lessons": [
+    {
+      "id": "l36",
+      "name": "Música y Arte",
+      "emoji": "🎵",
+      "desc": "Música, pintura, instrumentos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Музыка»",
+          "opts": [
+            {
+              "txt": "música",
+              "em": "🎵"
+            },
+            {
+              "txt": "pintura",
+              "em": "🎨"
+            },
+            {
+              "txt": "canción",
+              "em": "🎤"
+            },
+            {
+              "txt": "baile",
+              "em": "💃"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Гитара»",
+          "opts": [
+            {
+              "txt": "piano",
+              "em": "🎹"
+            },
+            {
+              "txt": "guitarra",
+              "em": "🎸"
+            },
+            {
+              "txt": "violín",
+              "em": "🎻"
+            },
+            {
+              "txt": "tambor",
+              "em": "🥁"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Картина»",
+          "opts": [
+            {
+              "txt": "lápiz",
+              "em": "✏️"
+            },
+            {
+              "txt": "pincel",
+              "em": "🖌️"
+            },
+            {
+              "txt": "cuadro",
+              "em": "🖼️"
+            },
+            {
+              "txt": "cámara",
+              "em": "📷"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "música",
+              "музыка"
+            ],
+            [
+              "canción",
+              "песня"
+            ],
+            [
+              "baile",
+              "танец"
+            ],
+            [
+              "cantante",
+              "певец"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "guitarra",
+              "гитара"
+            ],
+            [
+              "piano",
+              "пианино"
+            ],
+            [
+              "violín",
+              "скрипка"
+            ],
+            [
+              "cuadro",
+              "картина"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я играю на гитаре",
+          "tiles": [
+            "toco",
+            "la",
+            "guitarra",
+            "piano"
+          ],
+          "answer": [
+            "toco",
+            "la",
+            "guitarra"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Escucho la",
+            null,
+            "."
+          ],
+          "target": "música",
+          "opts": [
+            "música",
+            "casa",
+            "mano"
+          ],
+          "hint": "Я слушаю музыку"
+        }
+      ]
+    },
+    {
+      "id": "l37",
+      "name": "Tecnología",
+      "emoji": "📱",
+      "desc": "Teléfono, internet, redes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Телефон»",
+          "opts": [
+            {
+              "txt": "teléfono",
+              "em": "📱"
+            },
+            {
+              "txt": "ordenador",
+              "em": "💻"
+            },
+            {
+              "txt": "pantalla",
+              "em": "📺"
+            },
+            {
+              "txt": "teclado",
+              "em": "⌨️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Интернет»",
+          "opts": [
+            {
+              "txt": "correo",
+              "em": "📧"
+            },
+            {
+              "txt": "internet",
+              "em": "🌐"
+            },
+            {
+              "txt": "archivo",
+              "em": "📁"
+            },
+            {
+              "txt": "red",
+              "em": "🕸️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Сообщение»",
+          "opts": [
+            {
+              "txt": "llamada",
+              "em": "📞"
+            },
+            {
+              "txt": "video",
+              "em": "📹"
+            },
+            {
+              "txt": "mensaje",
+              "em": "💬"
+            },
+            {
+              "txt": "foto",
+              "em": "📷"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "teléfono",
+              "телефон"
+            ],
+            [
+              "ordenador",
+              "компьютер"
+            ],
+            [
+              "internet",
+              "интернет"
+            ],
+            [
+              "pantalla",
+              "экран"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mensaje",
+              "сообщение"
+            ],
+            [
+              "llamada",
+              "звонок"
+            ],
+            [
+              "correo",
+              "почта"
+            ],
+            [
+              "contraseña",
+              "пароль"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня новый телефон",
+          "tiles": [
+            "tengo",
+            "un",
+            "teléfono",
+            "nuevo",
+            "viejo"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "teléfono",
+            "nuevo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mando un",
+            null,
+            "."
+          ],
+          "target": "mensaje",
+          "opts": [
+            "mensaje",
+            "árbol",
+            "queso"
+          ],
+          "hint": "Я отправляю сообщение"
+        },
+        {
+          "t": "typed",
+          "from": "У меня компьютер",
+          "answer": "tengo un ordenador",
+          "answers": [
+            "tengo un ordenador",
+            "tengo una computadora",
+            "yo tengo un ordenador"
+          ],
+          "hint": "ordenador (Spain) / computadora (LatAm)"
+        }
+      ]
+    },
+    {
+      "id": "l38",
+      "name": "Tiempo libre",
+      "emoji": "🎮",
+      "desc": "Hobbies y diversión",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Игра»",
+          "opts": [
+            {
+              "txt": "juego",
+              "em": "🎮"
+            },
+            {
+              "txt": "película",
+              "em": "🎬"
+            },
+            {
+              "txt": "libro",
+              "em": "📖"
+            },
+            {
+              "txt": "viaje",
+              "em": "✈️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Фильм»",
+          "opts": [
+            {
+              "txt": "canción",
+              "em": "🎵"
+            },
+            {
+              "txt": "película",
+              "em": "🎬"
+            },
+            {
+              "txt": "pintura",
+              "em": "🎨"
+            },
+            {
+              "txt": "baile",
+              "em": "💃"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Путешествие»",
+          "opts": [
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            },
+            {
+              "txt": "paseo",
+              "em": "🚶"
+            },
+            {
+              "txt": "viaje",
+              "em": "✈️"
+            },
+            {
+              "txt": "sueño",
+              "em": "💤"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "juego",
+              "игра"
+            ],
+            [
+              "película",
+              "фильм"
+            ],
+            [
+              "viaje",
+              "путешествие"
+            ],
+            [
+              "fiesta",
+              "вечеринка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jugar",
+              "играть"
+            ],
+            [
+              "mirar",
+              "смотреть"
+            ],
+            [
+              "viajar",
+              "путешествовать"
+            ],
+            [
+              "bailar",
+              "танцевать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я смотрю фильм",
+          "tiles": [
+            "veo",
+            "una",
+            "película",
+            "libro"
+          ],
+          "answer": [
+            "veo",
+            "una",
+            "película"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me gusta",
+            null,
+            "."
+          ],
+          "target": "bailar",
+          "opts": [
+            "bailar",
+            "casa",
+            "verde"
+          ],
+          "hint": "Мне нравится танцевать"
+        }
+      ]
+    },
+    {
+      "id": "l39",
+      "name": "Pasado",
+      "emoji": "⏪",
+      "desc": "Hablar del ayer",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Вчера»",
+          "opts": [
+            {
+              "txt": "ayer",
+              "em": "⏪"
+            },
+            {
+              "txt": "hoy",
+              "em": "📅"
+            },
+            {
+              "txt": "mañana",
+              "em": "⏩"
+            },
+            {
+              "txt": "ahora",
+              "em": "⏰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я был / пошёл»",
+          "opts": [
+            {
+              "txt": "soy",
+              "em": "🧬"
+            },
+            {
+              "txt": "fui",
+              "em": "⏪"
+            },
+            {
+              "txt": "era",
+              "em": "🕰️"
+            },
+            {
+              "txt": "eres",
+              "em": "👉"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я ел / съел»",
+          "opts": [
+            {
+              "txt": "como",
+              "em": "🍽️"
+            },
+            {
+              "txt": "comeré",
+              "em": "⏩"
+            },
+            {
+              "txt": "comí",
+              "em": "⏪"
+            },
+            {
+              "txt": "comer",
+              "em": "🍴"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ayer",
+              "вчера"
+            ],
+            [
+              "anteayer",
+              "позавчера"
+            ],
+            [
+              "anoche",
+              "вчера ночью"
+            ],
+            [
+              "antes",
+              "раньше"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fui",
+              "я был / я пошёл"
+            ],
+            [
+              "comí",
+              "я ел"
+            ],
+            [
+              "bebí",
+              "я пил"
+            ],
+            [
+              "hablé",
+              "я говорил"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Вчера я ел хлеб",
+          "tiles": [
+            "ayer",
+            "comí",
+            "pan",
+            "como"
+          ],
+          "answer": [
+            "ayer",
+            "comí",
+            "pan"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ayer",
+            null,
+            "al parque."
+          ],
+          "target": "fui",
+          "opts": [
+            "fui",
+            "voy",
+            "eres"
+          ],
+          "hint": "Вчера я пошёл в парк"
+        }
+      ]
+    },
+    {
+      "id": "l40",
+      "name": "Repaso 5",
+      "emoji": "🏆",
+      "desc": "Repaso final (31-39)",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«13» (тринадцать)",
+          "opts": [
+            {
+              "txt": "doce",
+              "em": "1️⃣2️⃣"
+            },
+            {
+              "txt": "trece",
+              "em": "1️⃣3️⃣"
+            },
+            {
+              "txt": "catorce",
+              "em": "1️⃣4️⃣"
+            },
+            {
+              "txt": "quince",
+              "em": "1️⃣5️⃣"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Лекарство»",
+          "opts": [
+            {
+              "txt": "fiebre",
+              "em": "🌡️"
+            },
+            {
+              "txt": "tos",
+              "em": "😷"
+            },
+            {
+              "txt": "medicina",
+              "em": "💊"
+            },
+            {
+              "txt": "venda",
+              "em": "🩹"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Гитара»",
+          "opts": [
+            {
+              "txt": "guitarra",
+              "em": "🎸"
+            },
+            {
+              "txt": "piano",
+              "em": "🎹"
+            },
+            {
+              "txt": "violín",
+              "em": "🎻"
+            },
+            {
+              "txt": "tambor",
+              "em": "🥁"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "Rusia",
+              "Россия"
+            ],
+            [
+              "España",
+              "Испания"
+            ],
+            [
+              "teléfono",
+              "телефон"
+            ],
+            [
+              "internet",
+              "интернет"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "dormir",
+              "спать"
+            ],
+            [
+              "leer",
+              "читать"
+            ],
+            [
+              "película",
+              "фильм"
+            ],
+            [
+              "juego",
+              "игра"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Вчера я ел хлеб",
+          "tiles": [
+            "ayer",
+            "comí",
+            "pan",
+            "como"
+          ],
+          "answer": [
+            "ayer",
+            "comí",
+            "pan"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Soy de",
+            null,
+            "."
+          ],
+          "target": "Rusia",
+          "opts": [
+            "Rusia",
+            "mesa",
+            "tres"
+          ],
+          "hint": "Я из России"
+        }
+      ]
+    }
+  ]
+}

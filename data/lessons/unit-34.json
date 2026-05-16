@@ -1,0 +1,883 @@
+{
+  "unit": 34,
+  "lessons": [
+    {
+      "id": "l166",
+      "name": "Inversiones",
+      "emoji": "📈",
+      "desc": "Bolsa, acciones, ahorrar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Биржа»",
+          "opts": [
+            {
+              "txt": "bolsa",
+              "em": "📈"
+            },
+            {
+              "txt": "banda",
+              "em": "🎸"
+            },
+            {
+              "txt": "botella",
+              "em": "🍾"
+            },
+            {
+              "txt": "bombilla",
+              "em": "💡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Акция (на бирже)»",
+          "opts": [
+            {
+              "txt": "acción",
+              "em": "📊"
+            },
+            {
+              "txt": "acento",
+              "em": "🔤"
+            },
+            {
+              "txt": "aceite",
+              "em": "🛢️"
+            },
+            {
+              "txt": "acera",
+              "em": "🚶"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Инвестировать»",
+          "opts": [
+            {
+              "txt": "invertir",
+              "em": "💸"
+            },
+            {
+              "txt": "invitar",
+              "em": "🎉"
+            },
+            {
+              "txt": "inventar",
+              "em": "💡"
+            },
+            {
+              "txt": "investigar",
+              "em": "🔍"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "bolsa",
+              "биржа"
+            ],
+            [
+              "acción",
+              "акция"
+            ],
+            [
+              "inversión",
+              "инвестиция"
+            ],
+            [
+              "interés",
+              "процент"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "invertir",
+              "инвестировать"
+            ],
+            [
+              "ganar",
+              "выигрывать / зарабатывать"
+            ],
+            [
+              "perder",
+              "терять"
+            ],
+            [
+              "ahorrar",
+              "копить"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я инвестирую в акции",
+          "tiles": [
+            "invierto",
+            "en",
+            "acciones",
+            "invertir"
+          ],
+          "answer": [
+            "invierto",
+            "en",
+            "acciones"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo que",
+            null,
+            "más dinero."
+          ],
+          "target": "ahorrar",
+          "opts": [
+            "ahorrar",
+            "comer",
+            "dormir"
+          ],
+          "hint": "мне нужно копить больше денег"
+        },
+        {
+          "t": "typed",
+          "from": "Я потерял деньги на бирже",
+          "answer": "perdí dinero en la bolsa",
+          "answers": [
+            "perdí dinero en la bolsa",
+            "he perdido dinero en la bolsa"
+          ],
+          "hint": "perder en la bolsa"
+        }
+      ]
+    },
+    {
+      "id": "l167",
+      "name": "Impuestos",
+      "emoji": "🧾",
+      "desc": "Hacienda, declarar, pagar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Налог»",
+          "opts": [
+            {
+              "txt": "impuesto",
+              "em": "🧾"
+            },
+            {
+              "txt": "impreso",
+              "em": "🖨️"
+            },
+            {
+              "txt": "impulso",
+              "em": "⚡"
+            },
+            {
+              "txt": "imán",
+              "em": "🧲"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Декларация»",
+          "opts": [
+            {
+              "txt": "declaración",
+              "em": "📄"
+            },
+            {
+              "txt": "decoración",
+              "em": "🎀"
+            },
+            {
+              "txt": "dedicación",
+              "em": "🎯"
+            },
+            {
+              "txt": "devolución",
+              "em": "↩️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Налоговая инспекция»",
+          "opts": [
+            {
+              "txt": "Hacienda",
+              "em": "🏛️"
+            },
+            {
+              "txt": "farmacia",
+              "em": "💊"
+            },
+            {
+              "txt": "fábrica",
+              "em": "🏭"
+            },
+            {
+              "txt": "familia",
+              "em": "👨‍👩‍👧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "impuesto",
+              "налог"
+            ],
+            [
+              "declaración",
+              "декларация"
+            ],
+            [
+              "Hacienda",
+              "налоговая"
+            ],
+            [
+              "factura",
+              "счёт-фактура"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "pagar",
+              "платить"
+            ],
+            [
+              "declarar",
+              "декларировать"
+            ],
+            [
+              "cobrar",
+              "получать (деньги)"
+            ],
+            [
+              "devolver",
+              "возвращать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я плачу налоги каждый год",
+          "tiles": [
+            "pago",
+            "impuestos",
+            "cada",
+            "año",
+            "meses"
+          ],
+          "answer": [
+            "pago",
+            "impuestos",
+            "cada",
+            "año"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo que hacer la",
+            null,
+            "."
+          ],
+          "target": "declaración",
+          "opts": [
+            "declaración",
+            "decoración",
+            "dedicación"
+          ],
+          "hint": "я должен сделать декларацию"
+        },
+        {
+          "t": "typed",
+          "from": "Налоги очень высокие здесь",
+          "answer": "los impuestos son muy altos aquí",
+          "answers": [
+            "los impuestos son muy altos aquí",
+            "aquí los impuestos son muy altos"
+          ],
+          "hint": "los impuestos son altos"
+        }
+      ]
+    },
+    {
+      "id": "l168",
+      "name": "Seguros",
+      "emoji": "🛡️",
+      "desc": "Póliza, accidente, cobertura",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Страховка»",
+          "opts": [
+            {
+              "txt": "seguro",
+              "em": "🛡️"
+            },
+            {
+              "txt": "sello",
+              "em": "📮"
+            },
+            {
+              "txt": "sentido",
+              "em": "🧭"
+            },
+            {
+              "txt": "silencio",
+              "em": "🤫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Полис»",
+          "opts": [
+            {
+              "txt": "póliza",
+              "em": "📄"
+            },
+            {
+              "txt": "policía",
+              "em": "👮"
+            },
+            {
+              "txt": "político",
+              "em": "🏛️"
+            },
+            {
+              "txt": "polvo",
+              "em": "💨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Авария»",
+          "opts": [
+            {
+              "txt": "accidente",
+              "em": "💥"
+            },
+            {
+              "txt": "acceso",
+              "em": "🚪"
+            },
+            {
+              "txt": "aceite",
+              "em": "🛢️"
+            },
+            {
+              "txt": "acción",
+              "em": "⚡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "seguro",
+              "страховка"
+            ],
+            [
+              "póliza",
+              "полис"
+            ],
+            [
+              "accidente",
+              "авария"
+            ],
+            [
+              "cobertura",
+              "покрытие"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "asegurar",
+              "страховать"
+            ],
+            [
+              "cubrir",
+              "покрывать"
+            ],
+            [
+              "reclamar",
+              "требовать"
+            ],
+            [
+              "compensar",
+              "возмещать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть страховка",
+          "tiles": [
+            "tengo",
+            "un",
+            "seguro",
+            "segura",
+            "sin"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "seguro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tuve un",
+            null,
+            "de coche."
+          ],
+          "target": "accidente",
+          "opts": [
+            "accidente",
+            "acceso",
+            "aceite"
+          ],
+          "hint": "у меня была автоавария"
+        },
+        {
+          "t": "typed",
+          "from": "Этот полис не покрывает всё",
+          "answer": "esta póliza no cubre todo",
+          "answers": [
+            "esta póliza no cubre todo",
+            "la póliza no cubre todo"
+          ],
+          "hint": "esta póliza no cubre"
+        }
+      ]
+    },
+    {
+      "id": "l169",
+      "name": "Inmobiliaria",
+      "emoji": "🏘️",
+      "desc": "Alquilar, comprar piso, hipoteca",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Снимать (квартиру)»",
+          "opts": [
+            {
+              "txt": "alquilar",
+              "em": "🔑"
+            },
+            {
+              "txt": "almorzar",
+              "em": "🍽️"
+            },
+            {
+              "txt": "almohada",
+              "em": "🛏️"
+            },
+            {
+              "txt": "alma",
+              "em": "👻"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Квартира (Испания)»",
+          "opts": [
+            {
+              "txt": "piso",
+              "em": "🏢"
+            },
+            {
+              "txt": "peso",
+              "em": "⚖️"
+            },
+            {
+              "txt": "paso",
+              "em": "🚶"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ипотека»",
+          "opts": [
+            {
+              "txt": "hipoteca",
+              "em": "🏦"
+            },
+            {
+              "txt": "hospital",
+              "em": "🏥"
+            },
+            {
+              "txt": "historia",
+              "em": "📜"
+            },
+            {
+              "txt": "hierba",
+              "em": "🌿"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "piso",
+              "квартира"
+            ],
+            [
+              "alquilar",
+              "снимать"
+            ],
+            [
+              "hipoteca",
+              "ипотека"
+            ],
+            [
+              "inmueble",
+              "недвижимость"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "propietario",
+              "владелец"
+            ],
+            [
+              "inquilino",
+              "арендатор"
+            ],
+            [
+              "contrato",
+              "договор"
+            ],
+            [
+              "fianza",
+              "залог"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я снимаю квартиру в центре",
+          "tiles": [
+            "alquilo",
+            "un",
+            "piso",
+            "en",
+            "el",
+            "centro"
+          ],
+          "answer": [
+            "alquilo",
+            "un",
+            "piso",
+            "en",
+            "el",
+            "centro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesito una",
+            null,
+            "para comprar la casa."
+          ],
+          "target": "hipoteca",
+          "opts": [
+            "hipoteca",
+            "historia",
+            "hospital"
+          ],
+          "hint": "мне нужна ипотека, чтобы купить дом"
+        },
+        {
+          "t": "typed",
+          "from": "Хозяин квартиры очень добрый",
+          "answer": "el propietario del piso es muy amable",
+          "answers": [
+            "el propietario del piso es muy amable",
+            "el dueño del piso es muy amable"
+          ],
+          "hint": "propietario / dueño"
+        }
+      ]
+    },
+    {
+      "id": "l170",
+      "name": "Repaso 28",
+      "emoji": "💰",
+      "desc": "Repaso L166-L169",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Биржа»",
+          "opts": [
+            {
+              "txt": "bolsa",
+              "em": "📈"
+            },
+            {
+              "txt": "botella",
+              "em": "🍾"
+            },
+            {
+              "txt": "banda",
+              "em": "🎸"
+            },
+            {
+              "txt": "bombilla",
+              "em": "💡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Налог»",
+          "opts": [
+            {
+              "txt": "impuesto",
+              "em": "🧾"
+            },
+            {
+              "txt": "impulso",
+              "em": "⚡"
+            },
+            {
+              "txt": "impreso",
+              "em": "🖨️"
+            },
+            {
+              "txt": "imagen",
+              "em": "🖼️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Страховка»",
+          "opts": [
+            {
+              "txt": "seguro",
+              "em": "🛡️"
+            },
+            {
+              "txt": "sello",
+              "em": "📮"
+            },
+            {
+              "txt": "sentido",
+              "em": "🧭"
+            },
+            {
+              "txt": "siglo",
+              "em": "📜"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ипотека»",
+          "opts": [
+            {
+              "txt": "hipoteca",
+              "em": "🏦"
+            },
+            {
+              "txt": "historia",
+              "em": "📜"
+            },
+            {
+              "txt": "hospital",
+              "em": "🏥"
+            },
+            {
+              "txt": "horario",
+              "em": "⏰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "acción",
+              "акция"
+            ],
+            [
+              "interés",
+              "процент"
+            ],
+            [
+              "invertir",
+              "инвестировать"
+            ],
+            [
+              "ahorrar",
+              "копить"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "Hacienda",
+              "налоговая"
+            ],
+            [
+              "declaración",
+              "декларация"
+            ],
+            [
+              "póliza",
+              "полис"
+            ],
+            [
+              "accidente",
+              "авария"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "piso",
+              "квартира"
+            ],
+            [
+              "alquilar",
+              "снимать"
+            ],
+            [
+              "propietario",
+              "владелец"
+            ],
+            [
+              "contrato",
+              "договор"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я инвестирую в акции",
+          "tiles": [
+            "invierto",
+            "en",
+            "acciones",
+            "compro"
+          ],
+          "answer": [
+            "invierto",
+            "en",
+            "acciones"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть страховка",
+          "tiles": [
+            "tengo",
+            "un",
+            "seguro",
+            "segura"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "seguro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo que",
+            null,
+            "más dinero."
+          ],
+          "target": "ahorrar",
+          "opts": [
+            "ahorrar",
+            "invertir",
+            "gastar"
+          ],
+          "hint": "мне нужно копить больше"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Pago muchos",
+            null,
+            "."
+          ],
+          "target": "impuestos",
+          "opts": [
+            "impuestos",
+            "impulsos",
+            "impresos"
+          ],
+          "hint": "я плачу много налогов"
+        },
+        {
+          "t": "typed",
+          "from": "Я снимаю квартиру в центре",
+          "answer": "alquilo un piso en el centro",
+          "answers": [
+            "alquilo un piso en el centro",
+            "rento un piso en el centro"
+          ],
+          "hint": "alquilar / rentar un piso"
+        }
+      ]
+    }
+  ]
+}

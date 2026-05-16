@@ -1,0 +1,896 @@
+{
+  "unit": 37,
+  "lessons": [
+    {
+      "id": "l181",
+      "name": "Camping",
+      "emoji": "🏕️",
+      "desc": "Tienda, fogata, mochila",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Палатка»",
+          "opts": [
+            {
+              "txt": "tienda",
+              "em": "⛺"
+            },
+            {
+              "txt": "tarjeta",
+              "em": "💳"
+            },
+            {
+              "txt": "tortilla",
+              "em": "🌯"
+            },
+            {
+              "txt": "tigre",
+              "em": "🐯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Костёр»",
+          "opts": [
+            {
+              "txt": "fogata",
+              "em": "🔥"
+            },
+            {
+              "txt": "fuente",
+              "em": "⛲"
+            },
+            {
+              "txt": "foto",
+              "em": "📷"
+            },
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Рюкзак»",
+          "opts": [
+            {
+              "txt": "mochila",
+              "em": "🎒"
+            },
+            {
+              "txt": "maleta",
+              "em": "🧳"
+            },
+            {
+              "txt": "manta",
+              "em": "🛌"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tienda de campaña",
+              "палатка"
+            ],
+            [
+              "fogata",
+              "костёр"
+            ],
+            [
+              "mochila",
+              "рюкзак"
+            ],
+            [
+              "saco de dormir",
+              "спальный мешок"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sendero",
+              "тропа"
+            ],
+            [
+              "acampar",
+              "разбивать лагерь"
+            ],
+            [
+              "fuego",
+              "огонь"
+            ],
+            [
+              "linterna",
+              "фонарик"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я люблю кемпинг в горах",
+          "tiles": [
+            "me",
+            "gusta",
+            "acampar",
+            "en",
+            "la",
+            "montaña",
+            "el"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "acampar",
+            "en",
+            "la",
+            "montaña"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos a montar la",
+            null,
+            "."
+          ],
+          "target": "tienda",
+          "opts": [
+            "tienda",
+            "tarjeta",
+            "tortilla"
+          ],
+          "hint": "установим палатку"
+        },
+        {
+          "t": "typed",
+          "from": "Не забудь фонарик",
+          "answer": "no olvides la linterna",
+          "answers": [
+            "no olvides la linterna",
+            "no te olvides de la linterna"
+          ],
+          "hint": "no olvides / no te olvides de"
+        }
+      ]
+    },
+    {
+      "id": "l182",
+      "name": "Peluquería",
+      "emoji": "💇",
+      "desc": "Cortar el pelo, salón, maquillaje",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Парикмахерская»",
+          "opts": [
+            {
+              "txt": "peluquería",
+              "em": "💇"
+            },
+            {
+              "txt": "panadería",
+              "em": "🥖"
+            },
+            {
+              "txt": "pescadería",
+              "em": "🐟"
+            },
+            {
+              "txt": "pastelería",
+              "em": "🍰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Стричь волосы»",
+          "opts": [
+            {
+              "txt": "cortar el pelo",
+              "em": "✂️"
+            },
+            {
+              "txt": "lavar el pelo",
+              "em": "🧴"
+            },
+            {
+              "txt": "secar el pelo",
+              "em": "💨"
+            },
+            {
+              "txt": "pintar el pelo",
+              "em": "🎨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Макияж»",
+          "opts": [
+            {
+              "txt": "maquillaje",
+              "em": "💄"
+            },
+            {
+              "txt": "masaje",
+              "em": "💆"
+            },
+            {
+              "txt": "mascarilla",
+              "em": "🎭"
+            },
+            {
+              "txt": "manicura",
+              "em": "💅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "peluquería",
+              "парикмахерская"
+            ],
+            [
+              "pelo",
+              "волосы"
+            ],
+            [
+              "cepillo",
+              "расчёска"
+            ],
+            [
+              "tijeras",
+              "ножницы"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "maquillaje",
+              "макияж"
+            ],
+            [
+              "manicura",
+              "маникюр"
+            ],
+            [
+              "barba",
+              "борода"
+            ],
+            [
+              "bigote",
+              "усы"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу подстричься",
+          "tiles": [
+            "quiero",
+            "cortarme",
+            "el",
+            "pelo",
+            "cortar"
+          ],
+          "answer": [
+            "quiero",
+            "cortarme",
+            "el",
+            "pelo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a la",
+            null,
+            "esta tarde."
+          ],
+          "target": "peluquería",
+          "opts": [
+            "peluquería",
+            "pescadería",
+            "panadería"
+          ],
+          "hint": "я иду в парикмахерскую"
+        },
+        {
+          "t": "typed",
+          "from": "Она красит волосы каждый месяц",
+          "answer": "ella se tiñe el pelo cada mes",
+          "answers": [
+            "ella se tiñe el pelo cada mes",
+            "se tiñe el pelo cada mes",
+            "ella se pinta el pelo cada mes"
+          ],
+          "hint": "teñirse / pintarse el pelo"
+        }
+      ]
+    },
+    {
+      "id": "l183",
+      "name": "Herramientas",
+      "emoji": "🔧",
+      "desc": "Martillo, clavo, taladro",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Молоток»",
+          "opts": [
+            {
+              "txt": "martillo",
+              "em": "🔨"
+            },
+            {
+              "txt": "mantel",
+              "em": "🍽️"
+            },
+            {
+              "txt": "marisco",
+              "em": "🦐"
+            },
+            {
+              "txt": "mariposa",
+              "em": "🦋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Гвоздь»",
+          "opts": [
+            {
+              "txt": "clavo",
+              "em": "🔩"
+            },
+            {
+              "txt": "claro",
+              "em": "☀️"
+            },
+            {
+              "txt": "clase",
+              "em": "🏫"
+            },
+            {
+              "txt": "clima",
+              "em": "🌡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Дрель»",
+          "opts": [
+            {
+              "txt": "taladro",
+              "em": "🪛"
+            },
+            {
+              "txt": "tarjeta",
+              "em": "💳"
+            },
+            {
+              "txt": "tablero",
+              "em": "📋"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "martillo",
+              "молоток"
+            ],
+            [
+              "clavo",
+              "гвоздь"
+            ],
+            [
+              "taladro",
+              "дрель"
+            ],
+            [
+              "tornillo",
+              "винт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "destornillador",
+              "отвёртка"
+            ],
+            [
+              "sierra",
+              "пила"
+            ],
+            [
+              "cinta métrica",
+              "рулетка"
+            ],
+            [
+              "llave inglesa",
+              "гаечный ключ"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужен молоток",
+          "tiles": [
+            "necesito",
+            "un",
+            "martillo",
+            "el"
+          ],
+          "answer": [
+            "necesito",
+            "un",
+            "martillo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Pásame el",
+            null,
+            ", por favor."
+          ],
+          "target": "destornillador",
+          "opts": [
+            "destornillador",
+            "desayuno",
+            "descanso"
+          ],
+          "hint": "передай мне отвёртку"
+        },
+        {
+          "t": "typed",
+          "from": "Я строю стол из дерева",
+          "answer": "construyo una mesa de madera",
+          "answers": [
+            "construyo una mesa de madera",
+            "estoy construyendo una mesa de madera"
+          ],
+          "hint": "construir una mesa de madera"
+        }
+      ]
+    },
+    {
+      "id": "l184",
+      "name": "Jardinería",
+      "emoji": "🌱",
+      "desc": "Plantar, regar, semillas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Сажать»",
+          "opts": [
+            {
+              "txt": "plantar",
+              "em": "🌱"
+            },
+            {
+              "txt": "planchar",
+              "em": "👔"
+            },
+            {
+              "txt": "planear",
+              "em": "📋"
+            },
+            {
+              "txt": "planar",
+              "em": "✈️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Поливать»",
+          "opts": [
+            {
+              "txt": "regar",
+              "em": "💧"
+            },
+            {
+              "txt": "reír",
+              "em": "😂"
+            },
+            {
+              "txt": "rezar",
+              "em": "🙏"
+            },
+            {
+              "txt": "remar",
+              "em": "🚣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Семя / семечко»",
+          "opts": [
+            {
+              "txt": "semilla",
+              "em": "🌱"
+            },
+            {
+              "txt": "semana",
+              "em": "📅"
+            },
+            {
+              "txt": "semáforo",
+              "em": "🚦"
+            },
+            {
+              "txt": "semestre",
+              "em": "📚"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "plantar",
+              "сажать"
+            ],
+            [
+              "regar",
+              "поливать"
+            ],
+            [
+              "semilla",
+              "семя"
+            ],
+            [
+              "flor",
+              "цветок"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hoja",
+              "лист"
+            ],
+            [
+              "raíz",
+              "корень"
+            ],
+            [
+              "tallo",
+              "стебель"
+            ],
+            [
+              "tierra",
+              "земля / почва"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я поливаю цветы каждый день",
+          "tiles": [
+            "riego",
+            "las",
+            "flores",
+            "cada",
+            "día",
+            "agua"
+          ],
+          "answer": [
+            "riego",
+            "las",
+            "flores",
+            "cada",
+            "día"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos a",
+            null,
+            "tomates."
+          ],
+          "target": "plantar",
+          "opts": [
+            "plantar",
+            "planchar",
+            "planear"
+          ],
+          "hint": "мы посадим помидоры"
+        },
+        {
+          "t": "typed",
+          "from": "У меня есть сад с розами",
+          "answer": "tengo un jardín con rosas",
+          "answers": [
+            "tengo un jardín con rosas",
+            "tengo un jardín de rosas"
+          ],
+          "hint": "un jardín con / de rosas"
+        }
+      ]
+    },
+    {
+      "id": "l185",
+      "name": "Repaso 30",
+      "emoji": "🏕️",
+      "desc": "Repaso L181-L184",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Палатка»",
+          "opts": [
+            {
+              "txt": "tienda",
+              "em": "⛺"
+            },
+            {
+              "txt": "tarjeta",
+              "em": "💳"
+            },
+            {
+              "txt": "tortilla",
+              "em": "🌯"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Парикмахерская»",
+          "opts": [
+            {
+              "txt": "peluquería",
+              "em": "💇"
+            },
+            {
+              "txt": "panadería",
+              "em": "🥖"
+            },
+            {
+              "txt": "pescadería",
+              "em": "🐟"
+            },
+            {
+              "txt": "pastelería",
+              "em": "🍰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Молоток»",
+          "opts": [
+            {
+              "txt": "martillo",
+              "em": "🔨"
+            },
+            {
+              "txt": "mantel",
+              "em": "🍽️"
+            },
+            {
+              "txt": "marisco",
+              "em": "🦐"
+            },
+            {
+              "txt": "mariposa",
+              "em": "🦋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Поливать»",
+          "opts": [
+            {
+              "txt": "regar",
+              "em": "💧"
+            },
+            {
+              "txt": "rezar",
+              "em": "🙏"
+            },
+            {
+              "txt": "reír",
+              "em": "😂"
+            },
+            {
+              "txt": "remar",
+              "em": "🚣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fogata",
+              "костёр"
+            ],
+            [
+              "mochila",
+              "рюкзак"
+            ],
+            [
+              "saco de dormir",
+              "спальный мешок"
+            ],
+            [
+              "linterna",
+              "фонарик"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "maquillaje",
+              "макияж"
+            ],
+            [
+              "manicura",
+              "маникюр"
+            ],
+            [
+              "cepillo",
+              "расчёска"
+            ],
+            [
+              "tijeras",
+              "ножницы"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "clavo",
+              "гвоздь"
+            ],
+            [
+              "destornillador",
+              "отвёртка"
+            ],
+            [
+              "semilla",
+              "семя"
+            ],
+            [
+              "flor",
+              "цветок"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я люблю кемпинг в горах",
+          "tiles": [
+            "me",
+            "gusta",
+            "acampar",
+            "en",
+            "la",
+            "montaña"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "acampar",
+            "en",
+            "la",
+            "montaña"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я поливаю цветы каждый день",
+          "tiles": [
+            "riego",
+            "las",
+            "flores",
+            "cada",
+            "día"
+          ],
+          "answer": [
+            "riego",
+            "las",
+            "flores",
+            "cada",
+            "día"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a la",
+            null,
+            "esta tarde."
+          ],
+          "target": "peluquería",
+          "opts": [
+            "peluquería",
+            "pescadería",
+            "panadería"
+          ],
+          "hint": "я иду в парикмахерскую"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Pásame el",
+            null,
+            ", por favor."
+          ],
+          "target": "martillo",
+          "opts": [
+            "martillo",
+            "mantel",
+            "marisco"
+          ],
+          "hint": "передай мне молоток"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу подстричься",
+          "answer": "quiero cortarme el pelo",
+          "answers": [
+            "quiero cortarme el pelo",
+            "quiero un corte de pelo"
+          ],
+          "hint": "cortarme el pelo"
+        }
+      ]
+    }
+  ]
+}

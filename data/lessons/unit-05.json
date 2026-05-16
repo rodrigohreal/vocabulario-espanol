@@ -1,0 +1,866 @@
+{
+  "unit": 5,
+  "lessons": [
+    {
+      "id": "l21",
+      "name": "Verbos II",
+      "emoji": "💪",
+      "desc": "Más verbos esenciales",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Хотеть»",
+          "opts": [
+            {
+              "txt": "querer",
+              "em": "💖"
+            },
+            {
+              "txt": "poder",
+              "em": "💪"
+            },
+            {
+              "txt": "saber",
+              "em": "🧠"
+            },
+            {
+              "txt": "venir",
+              "em": "⬅️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Идти»",
+          "opts": [
+            {
+              "txt": "venir",
+              "em": "⬅️"
+            },
+            {
+              "txt": "ir",
+              "em": "🚶"
+            },
+            {
+              "txt": "ver",
+              "em": "👀"
+            },
+            {
+              "txt": "estar",
+              "em": "📍"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Иметь»",
+          "opts": [
+            {
+              "txt": "ser",
+              "em": "🧬"
+            },
+            {
+              "txt": "estar",
+              "em": "📍"
+            },
+            {
+              "txt": "tener",
+              "em": "✋"
+            },
+            {
+              "txt": "hacer",
+              "em": "🔨"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "querer",
+              "хотеть"
+            ],
+            [
+              "poder",
+              "мочь"
+            ],
+            [
+              "saber",
+              "знать"
+            ],
+            [
+              "ver",
+              "видеть"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hacer",
+              "делать"
+            ],
+            [
+              "decir",
+              "говорить (сказать)"
+            ],
+            [
+              "venir",
+              "приходить"
+            ],
+            [
+              "dar",
+              "давать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу воду",
+          "tiles": [
+            "quiero",
+            "agua",
+            "yo",
+            "como"
+          ],
+          "answer": [
+            "yo",
+            "quiero",
+            "agua"
+          ],
+          "answers": [
+            [
+              "yo",
+              "quiero",
+              "agua"
+            ],
+            [
+              "quiero",
+              "agua"
+            ]
+          ]
+        },
+        {
+          "t": "pick",
+          "q": "«Я хочу» — какая форма?",
+          "opts": [
+            {
+              "txt": "quiero",
+              "em": "👤"
+            },
+            {
+              "txt": "quieres",
+              "em": "👉"
+            },
+            {
+              "txt": "quiere",
+              "em": "👨"
+            },
+            {
+              "txt": "queremos",
+              "em": "👥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No",
+            null,
+            "hablar inglés."
+          ],
+          "target": "puedo",
+          "opts": [
+            "puedo",
+            "tengo",
+            "soy"
+          ],
+          "hint": "Я не могу говорить по-английски"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ella",
+            null,
+            "ver la película."
+          ],
+          "target": "quiere",
+          "opts": [
+            "quiere",
+            "quiero",
+            "quieres"
+          ],
+          "hint": "Она хочет посмотреть фильм"
+        },
+        {
+          "t": "typed",
+          "from": "Я могу плавать",
+          "answer": "puedo nadar",
+          "answers": [
+            "puedo nadar",
+            "yo puedo nadar"
+          ],
+          "hint": "poder + nadar"
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "name": "Adjetivos",
+      "emoji": "📏",
+      "desc": "Grande, pequeño, alto…",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Большой»",
+          "opts": [
+            {
+              "txt": "grande",
+              "em": "⬛"
+            },
+            {
+              "txt": "pequeño",
+              "em": "◽"
+            },
+            {
+              "txt": "alto",
+              "em": "🔼"
+            },
+            {
+              "txt": "bajo",
+              "em": "🔽"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Маленький»",
+          "opts": [
+            {
+              "txt": "gordo",
+              "em": "🐖"
+            },
+            {
+              "txt": "pequeño",
+              "em": "◽"
+            },
+            {
+              "txt": "largo",
+              "em": "➡️"
+            },
+            {
+              "txt": "corto",
+              "em": "↔️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Новый»",
+          "opts": [
+            {
+              "txt": "viejo",
+              "em": "👴"
+            },
+            {
+              "txt": "feo",
+              "em": "🤢"
+            },
+            {
+              "txt": "nuevo",
+              "em": "✨"
+            },
+            {
+              "txt": "malo",
+              "em": "👎"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "grande",
+              "большой"
+            ],
+            [
+              "pequeño",
+              "маленький"
+            ],
+            [
+              "alto",
+              "высокий"
+            ],
+            [
+              "bajo",
+              "низкий"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "bonito",
+              "красивый"
+            ],
+            [
+              "feo",
+              "некрасивый"
+            ],
+            [
+              "nuevo",
+              "новый"
+            ],
+            [
+              "viejo",
+              "старый"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Большой дом",
+          "tiles": [
+            "una",
+            "casa",
+            "grande",
+            "pequeña"
+          ],
+          "answer": [
+            "una",
+            "casa",
+            "grande"
+          ],
+          "answers": [
+            [
+              "una",
+              "casa",
+              "grande"
+            ],
+            [
+              "casa",
+              "grande"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El elefante es muy",
+            null,
+            "."
+          ],
+          "target": "grande",
+          "opts": [
+            "grande",
+            "pequeño",
+            "corto"
+          ],
+          "hint": "Слон очень большой"
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "name": "Repaso 1",
+      "emoji": "🔁",
+      "desc": "Repasa lo aprendido (1-5)",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Привет»",
+          "opts": [
+            {
+              "txt": "hola",
+              "em": "👋"
+            },
+            {
+              "txt": "gracias",
+              "em": "🙏"
+            },
+            {
+              "txt": "adiós",
+              "em": "🙋"
+            },
+            {
+              "txt": "perdón",
+              "em": "🙇"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«7» (семь)",
+          "opts": [
+            {
+              "txt": "cinco",
+              "em": "5️⃣"
+            },
+            {
+              "txt": "seis",
+              "em": "6️⃣"
+            },
+            {
+              "txt": "siete",
+              "em": "7️⃣"
+            },
+            {
+              "txt": "ocho",
+              "em": "8️⃣"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Зелёный»",
+          "opts": [
+            {
+              "txt": "azul",
+              "em": "🔵"
+            },
+            {
+              "txt": "verde",
+              "em": "🟢"
+            },
+            {
+              "txt": "rojo",
+              "em": "🔴"
+            },
+            {
+              "txt": "negro",
+              "em": "⚫"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "madre",
+              "мама"
+            ],
+            [
+              "padre",
+              "папа"
+            ],
+            [
+              "rojo",
+              "красный"
+            ],
+            [
+              "azul",
+              "синий"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hola",
+              "привет"
+            ],
+            [
+              "adiós",
+              "пока"
+            ],
+            [
+              "uno",
+              "один"
+            ],
+            [
+              "dos",
+              "два"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я Денис",
+          "tiles": [
+            "yo",
+            "soy",
+            "Denis",
+            "eres"
+          ],
+          "answer": [
+            "yo",
+            "soy",
+            "Denis"
+          ],
+          "answers": [
+            [
+              "yo",
+              "soy",
+              "Denis"
+            ],
+            [
+              "soy",
+              "Denis"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Buenos",
+            null,
+            "."
+          ],
+          "target": "días",
+          "opts": [
+            "días",
+            "tardes",
+            "noches"
+          ],
+          "hint": "Доброе утро"
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "name": "Preguntas",
+      "emoji": "❓",
+      "desc": "Qué, quién, dónde, cuándo",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Что?»",
+          "opts": [
+            {
+              "txt": "¿qué?",
+              "em": "❓"
+            },
+            {
+              "txt": "¿quién?",
+              "em": "👤"
+            },
+            {
+              "txt": "¿dónde?",
+              "em": "📍"
+            },
+            {
+              "txt": "¿cuándo?",
+              "em": "⏰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Где?»",
+          "opts": [
+            {
+              "txt": "¿cómo?",
+              "em": "🤔"
+            },
+            {
+              "txt": "¿dónde?",
+              "em": "📍"
+            },
+            {
+              "txt": "¿por qué?",
+              "em": "🧐"
+            },
+            {
+              "txt": "¿cuánto?",
+              "em": "🔢"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Кто?»",
+          "opts": [
+            {
+              "txt": "¿qué?",
+              "em": "❓"
+            },
+            {
+              "txt": "¿cuál?",
+              "em": "🔀"
+            },
+            {
+              "txt": "¿quién?",
+              "em": "👤"
+            },
+            {
+              "txt": "¿cómo?",
+              "em": "🤔"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "qué",
+              "что"
+            ],
+            [
+              "quién",
+              "кто"
+            ],
+            [
+              "dónde",
+              "где"
+            ],
+            [
+              "cuándo",
+              "когда"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cómo",
+              "как"
+            ],
+            [
+              "por qué",
+              "почему"
+            ],
+            [
+              "cuánto",
+              "сколько"
+            ],
+            [
+              "cuál",
+              "какой"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Где ты?",
+          "tiles": [
+            "dónde",
+            "estás",
+            "tú",
+            "cómo"
+          ],
+          "answer": [
+            "dónde",
+            "estás"
+          ],
+          "answers": [
+            [
+              "dónde",
+              "estás"
+            ],
+            [
+              "dónde",
+              "estás",
+              "tú"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿",
+            null,
+            "te llamas?"
+          ],
+          "target": "cómo",
+          "opts": [
+            "cómo",
+            "qué",
+            "dónde"
+          ],
+          "hint": "Как тебя зовут?"
+        }
+      ]
+    },
+    {
+      "id": "l25",
+      "name": "Frutas",
+      "emoji": "🍎",
+      "desc": "Frutas comunes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Яблоко»",
+          "opts": [
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            },
+            {
+              "txt": "plátano",
+              "em": "🍌"
+            },
+            {
+              "txt": "naranja",
+              "em": "🍊"
+            },
+            {
+              "txt": "uva",
+              "em": "🍇"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Банан»",
+          "opts": [
+            {
+              "txt": "pera",
+              "em": "🍐"
+            },
+            {
+              "txt": "plátano",
+              "em": "🍌"
+            },
+            {
+              "txt": "fresa",
+              "em": "🍓"
+            },
+            {
+              "txt": "sandía",
+              "em": "🍉"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Апельсин»",
+          "opts": [
+            {
+              "txt": "limón",
+              "em": "🍋"
+            },
+            {
+              "txt": "piña",
+              "em": "🍍"
+            },
+            {
+              "txt": "naranja",
+              "em": "🍊"
+            },
+            {
+              "txt": "cereza",
+              "em": "🍒"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "manzana",
+              "яблоко"
+            ],
+            [
+              "plátano",
+              "банан"
+            ],
+            [
+              "naranja",
+              "апельсин"
+            ],
+            [
+              "uva",
+              "виноград"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fresa",
+              "клубника"
+            ],
+            [
+              "limón",
+              "лимон"
+            ],
+            [
+              "sandía",
+              "арбуз"
+            ],
+            [
+              "piña",
+              "ананас"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я ем банан",
+          "tiles": [
+            "yo",
+            "como",
+            "un",
+            "plátano",
+            "manzana"
+          ],
+          "answer": [
+            "como",
+            "un",
+            "plátano"
+          ],
+          "answers": [
+            [
+              "como",
+              "un",
+              "plátano"
+            ],
+            [
+              "yo",
+              "como",
+              "un",
+              "plátano"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            "es roja."
+          ],
+          "target": "manzana",
+          "opts": [
+            "manzana",
+            "plátano",
+            "limón"
+          ],
+          "hint": "Яблоко красное"
+        },
+        {
+          "t": "typed",
+          "from": "У меня есть яблоко",
+          "answer": "tengo una manzana",
+          "answers": [
+            "tengo una manzana",
+            "yo tengo una manzana"
+          ],
+          "hint": "manzana — женский род"
+        }
+      ]
+    }
+  ]
+}

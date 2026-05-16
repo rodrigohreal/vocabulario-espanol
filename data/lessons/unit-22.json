@@ -1,0 +1,877 @@
+{
+  "unit": 22,
+  "lessons": [
+    {
+      "id": "l106",
+      "name": "Imperativo",
+      "emoji": "📢",
+      "desc": "Mandatos: ¡come!, ¡ven!",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Ешь!»",
+          "opts": [
+            {
+              "txt": "¡come!",
+              "em": "🍽️"
+            },
+            {
+              "txt": "¡bebe!",
+              "em": "🥤"
+            },
+            {
+              "txt": "¡habla!",
+              "em": "💬"
+            },
+            {
+              "txt": "¡mira!",
+              "em": "👀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Иди!»",
+          "opts": [
+            {
+              "txt": "¡ven!",
+              "em": "⬅️"
+            },
+            {
+              "txt": "¡ve!",
+              "em": "🚶"
+            },
+            {
+              "txt": "¡di!",
+              "em": "💬"
+            },
+            {
+              "txt": "¡haz!",
+              "em": "🔨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Приходи!»",
+          "opts": [
+            {
+              "txt": "¡ve!",
+              "em": "🚶"
+            },
+            {
+              "txt": "¡mira!",
+              "em": "👀"
+            },
+            {
+              "txt": "¡ven!",
+              "em": "⬅️"
+            },
+            {
+              "txt": "¡corre!",
+              "em": "🏃"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "¡come!",
+              "ешь!"
+            ],
+            [
+              "¡bebe!",
+              "пей!"
+            ],
+            [
+              "¡habla!",
+              "говори!"
+            ],
+            [
+              "¡mira!",
+              "смотри!"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "¡ven!",
+              "приходи!"
+            ],
+            [
+              "¡escucha!",
+              "слушай!"
+            ],
+            [
+              "¡espera!",
+              "жди!"
+            ],
+            [
+              "¡ayúdame!",
+              "помоги мне!"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Пей воду!",
+          "tiles": [
+            "bebe",
+            "agua",
+            "come",
+            "pan"
+          ],
+          "answer": [
+            "bebe",
+            "agua"
+          ]
+        },
+        {
+          "t": "pick",
+          "q": "«Не ешь это!»",
+          "opts": [
+            {
+              "txt": "¡no comas eso!",
+              "em": "✅"
+            },
+            {
+              "txt": "¡no comes eso!",
+              "em": "❌"
+            },
+            {
+              "txt": "¡no come eso!",
+              "em": "❌"
+            },
+            {
+              "txt": "¡no comer eso!",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¡",
+            null,
+            "la puerta, por favor!"
+          ],
+          "target": "abre",
+          "opts": [
+            "abre",
+            "cierra",
+            "mira"
+          ],
+          "hint": "Открой дверь, пожалуйста!"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¡No",
+            null,
+            "eso!"
+          ],
+          "target": "hagas",
+          "opts": [
+            "hagas",
+            "haces",
+            "hago"
+          ],
+          "hint": "Не делай этого! (отриц. imperativo)"
+        },
+        {
+          "t": "typed",
+          "from": "Помоги мне!",
+          "answer": "¡ayúdame!",
+          "answers": [
+            "¡ayúdame!",
+            "ayúdame",
+            "ayudame"
+          ],
+          "hint": "ayudar + me"
+        }
+      ]
+    },
+    {
+      "id": "l107",
+      "name": "Adjetivos II",
+      "emoji": "🎨",
+      "desc": "Rápido, lento, fácil…",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Быстрый»",
+          "opts": [
+            {
+              "txt": "rápido",
+              "em": "⚡"
+            },
+            {
+              "txt": "lento",
+              "em": "🐢"
+            },
+            {
+              "txt": "fácil",
+              "em": "👍"
+            },
+            {
+              "txt": "difícil",
+              "em": "🤯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Лёгкий (простой)»",
+          "opts": [
+            {
+              "txt": "difícil",
+              "em": "🤯"
+            },
+            {
+              "txt": "fácil",
+              "em": "👍"
+            },
+            {
+              "txt": "lento",
+              "em": "🐢"
+            },
+            {
+              "txt": "fuerte",
+              "em": "💪"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Важный»",
+          "opts": [
+            {
+              "txt": "libre",
+              "em": "🕊️"
+            },
+            {
+              "txt": "ocupado",
+              "em": "⏳"
+            },
+            {
+              "txt": "importante",
+              "em": "⭐"
+            },
+            {
+              "txt": "aburrido",
+              "em": "😐"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "rápido",
+              "быстрый"
+            ],
+            [
+              "lento",
+              "медленный"
+            ],
+            [
+              "fácil",
+              "лёгкий"
+            ],
+            [
+              "difícil",
+              "трудный"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "libre",
+              "свободный"
+            ],
+            [
+              "ocupado",
+              "занятый"
+            ],
+            [
+              "importante",
+              "важный"
+            ],
+            [
+              "interesante",
+              "интересный"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Быстрая машина",
+          "tiles": [
+            "un",
+            "coche",
+            "rápido",
+            "lento"
+          ],
+          "answer": [
+            "un",
+            "coche",
+            "rápido"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Este libro es muy",
+            null,
+            "."
+          ],
+          "target": "interesante",
+          "opts": [
+            "interesante",
+            "lunes",
+            "pan"
+          ],
+          "hint": "Эта книга очень интересная"
+        }
+      ]
+    },
+    {
+      "id": "l108",
+      "name": "Adverbios II",
+      "emoji": "🎚️",
+      "desc": "Bien, mal, muy, mucho…",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Очень»",
+          "opts": [
+            {
+              "txt": "muy",
+              "em": "❗"
+            },
+            {
+              "txt": "poco",
+              "em": "🤏"
+            },
+            {
+              "txt": "mucho",
+              "em": "💯"
+            },
+            {
+              "txt": "tanto",
+              "em": "🟰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Много»",
+          "opts": [
+            {
+              "txt": "poco",
+              "em": "🤏"
+            },
+            {
+              "txt": "mucho",
+              "em": "💯"
+            },
+            {
+              "txt": "casi",
+              "em": "⏳"
+            },
+            {
+              "txt": "apenas",
+              "em": "🪶"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Быстро»",
+          "opts": [
+            {
+              "txt": "bien",
+              "em": "👍"
+            },
+            {
+              "txt": "mal",
+              "em": "👎"
+            },
+            {
+              "txt": "rápidamente",
+              "em": "⚡"
+            },
+            {
+              "txt": "lentamente",
+              "em": "🐢"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "muy",
+              "очень"
+            ],
+            [
+              "mucho",
+              "много"
+            ],
+            [
+              "poco",
+              "мало"
+            ],
+            [
+              "demasiado",
+              "слишком"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "rápidamente",
+              "быстро"
+            ],
+            [
+              "lentamente",
+              "медленно"
+            ],
+            [
+              "fácilmente",
+              "легко"
+            ],
+            [
+              "claramente",
+              "ясно"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я очень хорошо",
+          "tiles": [
+            "estoy",
+            "muy",
+            "bien",
+            "mal"
+          ],
+          "answer": [
+            "estoy",
+            "muy",
+            "bien"
+          ]
+        },
+        {
+          "t": "pick",
+          "q": "«У меня очень много друзей»",
+          "opts": [
+            {
+              "txt": "tengo muchos amigos",
+              "em": "✅"
+            },
+            {
+              "txt": "tengo muy muchos amigos",
+              "em": "❌"
+            },
+            {
+              "txt": "tengo muy amigos",
+              "em": "❌"
+            },
+            {
+              "txt": "tengo mucho amigos",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hablas español",
+            null,
+            "."
+          ],
+          "target": "bien",
+          "opts": [
+            "bien",
+            "mucho",
+            "muy"
+          ],
+          "hint": "Ты говоришь по-испански хорошо"
+        }
+      ]
+    },
+    {
+      "id": "l109",
+      "name": "Conjunciones",
+      "emoji": "🔗",
+      "desc": "Pero, porque, aunque…",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Но»",
+          "opts": [
+            {
+              "txt": "pero",
+              "em": "↔️"
+            },
+            {
+              "txt": "porque",
+              "em": "❓"
+            },
+            {
+              "txt": "aunque",
+              "em": "🤷"
+            },
+            {
+              "txt": "y",
+              "em": "➕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Потому что»",
+          "opts": [
+            {
+              "txt": "aunque",
+              "em": "🤷"
+            },
+            {
+              "txt": "porque",
+              "em": "❓"
+            },
+            {
+              "txt": "pero",
+              "em": "↔️"
+            },
+            {
+              "txt": "si",
+              "em": "🔀"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Хотя»",
+          "opts": [
+            {
+              "txt": "porque",
+              "em": "❓"
+            },
+            {
+              "txt": "pero",
+              "em": "↔️"
+            },
+            {
+              "txt": "aunque",
+              "em": "🤷"
+            },
+            {
+              "txt": "también",
+              "em": "➕"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "y",
+              "и"
+            ],
+            [
+              "o",
+              "или"
+            ],
+            [
+              "pero",
+              "но"
+            ],
+            [
+              "porque",
+              "потому что"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "aunque",
+              "хотя"
+            ],
+            [
+              "también",
+              "тоже"
+            ],
+            [
+              "además",
+              "кроме того"
+            ],
+            [
+              "sin embargo",
+              "однако"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу пить, но не голоден",
+          "tiles": [
+            "tengo",
+            "sed",
+            "pero",
+            "no",
+            "hambre"
+          ],
+          "answer": [
+            "tengo",
+            "sed",
+            "pero",
+            "no",
+            "hambre"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No voy",
+            null,
+            "estoy cansado."
+          ],
+          "target": "porque",
+          "opts": [
+            "porque",
+            "aunque",
+            "pero"
+          ],
+          "hint": "Я не иду, потому что устал"
+        },
+        {
+          "t": "pick",
+          "q": "«Отец и сын» — как правильно?",
+          "opts": [
+            {
+              "txt": "padre e hijo",
+              "em": "✅"
+            },
+            {
+              "txt": "padre y hijo",
+              "em": "⚠️"
+            },
+            {
+              "txt": "padre o hijo",
+              "em": "❌"
+            },
+            {
+              "txt": "padre pero hijo",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Es caro",
+            null,
+            "lo compro."
+          ],
+          "target": "pero",
+          "opts": [
+            "pero",
+            "porque",
+            "y"
+          ],
+          "hint": "Это дорого, но я это куплю"
+        },
+        {
+          "t": "typed",
+          "from": "Я устал, но счастлив",
+          "answer": "estoy cansado pero feliz",
+          "answers": [
+            "estoy cansado pero feliz",
+            "estoy cansada pero feliz"
+          ],
+          "hint": "pero = но"
+        }
+      ]
+    },
+    {
+      "id": "l110",
+      "name": "Repaso 17",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 106-109",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Ешь!»",
+          "opts": [
+            {
+              "txt": "¡come!",
+              "em": "🍽️"
+            },
+            {
+              "txt": "¡bebe!",
+              "em": "🥤"
+            },
+            {
+              "txt": "¡habla!",
+              "em": "💬"
+            },
+            {
+              "txt": "¡mira!",
+              "em": "👀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Быстрый»",
+          "opts": [
+            {
+              "txt": "lento",
+              "em": "🐢"
+            },
+            {
+              "txt": "fácil",
+              "em": "👍"
+            },
+            {
+              "txt": "rápido",
+              "em": "⚡"
+            },
+            {
+              "txt": "difícil",
+              "em": "🤯"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Но»",
+          "opts": [
+            {
+              "txt": "pero",
+              "em": "↔️"
+            },
+            {
+              "txt": "porque",
+              "em": "❓"
+            },
+            {
+              "txt": "aunque",
+              "em": "🤷"
+            },
+            {
+              "txt": "y",
+              "em": "➕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "¡ven!",
+              "приходи!"
+            ],
+            [
+              "¡mira!",
+              "смотри!"
+            ],
+            [
+              "rápido",
+              "быстрый"
+            ],
+            [
+              "fácil",
+              "лёгкий"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "muy",
+              "очень"
+            ],
+            [
+              "mucho",
+              "много"
+            ],
+            [
+              "porque",
+              "потому что"
+            ],
+            [
+              "aunque",
+              "хотя"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу пить, но не голоден",
+          "tiles": [
+            "tengo",
+            "sed",
+            "pero",
+            "no",
+            "hambre"
+          ],
+          "answer": [
+            "tengo",
+            "sed",
+            "pero",
+            "no",
+            "hambre"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hablas español",
+            null,
+            "."
+          ],
+          "target": "bien",
+          "opts": [
+            "bien",
+            "mucho",
+            "muy"
+          ],
+          "hint": "Ты говоришь хорошо"
+        }
+      ]
+    }
+  ]
+}

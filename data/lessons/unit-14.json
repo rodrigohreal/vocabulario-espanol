@@ -1,0 +1,767 @@
+{
+  "unit": 14,
+  "lessons": [
+    {
+      "id": "l66",
+      "name": "Animales II",
+      "emoji": "🐮",
+      "desc": "Animales de la granja",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Лошадь»",
+          "opts": [
+            {
+              "txt": "caballo",
+              "em": "🐴"
+            },
+            {
+              "txt": "vaca",
+              "em": "🐮"
+            },
+            {
+              "txt": "oveja",
+              "em": "🐑"
+            },
+            {
+              "txt": "cerdo",
+              "em": "🐷"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Корова»",
+          "opts": [
+            {
+              "txt": "caballo",
+              "em": "🐴"
+            },
+            {
+              "txt": "vaca",
+              "em": "🐮"
+            },
+            {
+              "txt": "pato",
+              "em": "🦆"
+            },
+            {
+              "txt": "oveja",
+              "em": "🐑"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Овца»",
+          "opts": [
+            {
+              "txt": "gallina",
+              "em": "🐔"
+            },
+            {
+              "txt": "conejo",
+              "em": "🐰"
+            },
+            {
+              "txt": "oveja",
+              "em": "🐑"
+            },
+            {
+              "txt": "cerdo",
+              "em": "🐷"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caballo",
+              "лошадь"
+            ],
+            [
+              "vaca",
+              "корова"
+            ],
+            [
+              "oveja",
+              "овца"
+            ],
+            [
+              "cerdo",
+              "свинья"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "conejo",
+              "кролик"
+            ],
+            [
+              "gallina",
+              "курица"
+            ],
+            [
+              "pato",
+              "утка"
+            ],
+            [
+              "pájaro",
+              "птица"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть лошадь",
+          "tiles": [
+            "tengo",
+            "un",
+            "una",
+            "caballo",
+            "vaca"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "caballo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            "da leche."
+          ],
+          "target": "vaca",
+          "opts": [
+            "vaca",
+            "oveja",
+            "gallina"
+          ],
+          "hint": "Корова даёт молоко"
+        },
+        {
+          "t": "typed",
+          "from": "У меня есть корова",
+          "answer": "tengo una vaca",
+          "answers": [
+            "tengo una vaca",
+            "yo tengo una vaca"
+          ],
+          "hint": "vaca — женский род → una"
+        }
+      ]
+    },
+    {
+      "id": "l67",
+      "name": "Verduras",
+      "emoji": "🥦",
+      "desc": "Verduras y hortalizas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Помидор»",
+          "opts": [
+            {
+              "txt": "tomate",
+              "em": "🍅"
+            },
+            {
+              "txt": "cebolla",
+              "em": "🧅"
+            },
+            {
+              "txt": "pepino",
+              "em": "🥒"
+            },
+            {
+              "txt": "lechuga",
+              "em": "🥬"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Морковь»",
+          "opts": [
+            {
+              "txt": "patata",
+              "em": "🥔"
+            },
+            {
+              "txt": "zanahoria",
+              "em": "🥕"
+            },
+            {
+              "txt": "pimiento",
+              "em": "🌶️"
+            },
+            {
+              "txt": "ajo",
+              "em": "🧄"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Лук»",
+          "opts": [
+            {
+              "txt": "ajo",
+              "em": "🧄"
+            },
+            {
+              "txt": "lechuga",
+              "em": "🥬"
+            },
+            {
+              "txt": "cebolla",
+              "em": "🧅"
+            },
+            {
+              "txt": "maíz",
+              "em": "🌽"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tomate",
+              "помидор"
+            ],
+            [
+              "zanahoria",
+              "морковь"
+            ],
+            [
+              "cebolla",
+              "лук"
+            ],
+            [
+              "lechuga",
+              "салат"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "patata",
+              "картофель"
+            ],
+            [
+              "pepino",
+              "огурец"
+            ],
+            [
+              "pimiento",
+              "перец"
+            ],
+            [
+              "ajo",
+              "чеснок"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу салат с помидором",
+          "tiles": [
+            "quiero",
+            "una",
+            "ensalada",
+            "con",
+            "tomate",
+            "pan"
+          ],
+          "answer": [
+            "quiero",
+            "una",
+            "ensalada",
+            "con",
+            "tomate"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Compro",
+            null,
+            "en el mercado."
+          ],
+          "target": "verduras",
+          "opts": [
+            "verduras",
+            "casas",
+            "libros"
+          ],
+          "hint": "Я покупаю овощи на рынке"
+        }
+      ]
+    },
+    {
+      "id": "l68",
+      "name": "Supermercado",
+      "emoji": "🛒",
+      "desc": "De compras",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Тележка»",
+          "opts": [
+            {
+              "txt": "carrito",
+              "em": "🛒"
+            },
+            {
+              "txt": "bolsa",
+              "em": "👜"
+            },
+            {
+              "txt": "caja",
+              "em": "📦"
+            },
+            {
+              "txt": "lista",
+              "em": "📝"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Список»",
+          "opts": [
+            {
+              "txt": "carrito",
+              "em": "🛒"
+            },
+            {
+              "txt": "lista",
+              "em": "📝"
+            },
+            {
+              "txt": "precio",
+              "em": "💲"
+            },
+            {
+              "txt": "bolsa",
+              "em": "🛍️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Цена»",
+          "opts": [
+            {
+              "txt": "caja",
+              "em": "📦"
+            },
+            {
+              "txt": "oferta",
+              "em": "🏷️"
+            },
+            {
+              "txt": "precio",
+              "em": "💲"
+            },
+            {
+              "txt": "bolsa",
+              "em": "🛍️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "carrito",
+              "тележка"
+            ],
+            [
+              "lista",
+              "список"
+            ],
+            [
+              "precio",
+              "цена"
+            ],
+            [
+              "bolsa",
+              "сумка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caja",
+              "касса"
+            ],
+            [
+              "oferta",
+              "акция"
+            ],
+            [
+              "producto",
+              "товар"
+            ],
+            [
+              "mercado",
+              "рынок"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужен пакет",
+          "tiles": [
+            "necesito",
+            "una",
+            "un",
+            "bolsa",
+            "carrito"
+          ],
+          "answer": [
+            "necesito",
+            "una",
+            "bolsa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Cuál es el",
+            null,
+            "del pan?"
+          ],
+          "target": "precio",
+          "opts": [
+            "precio",
+            "carrito",
+            "mapa"
+          ],
+          "hint": "Какая цена у хлеба?"
+        }
+      ]
+    },
+    {
+      "id": "l69",
+      "name": "Adverbios",
+      "emoji": "🕰️",
+      "desc": "Siempre, nunca, a veces",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Всегда»",
+          "opts": [
+            {
+              "txt": "siempre",
+              "em": "♾️"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚫"
+            },
+            {
+              "txt": "a veces",
+              "em": "🕰️"
+            },
+            {
+              "txt": "casi",
+              "em": "≈"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Никогда»",
+          "opts": [
+            {
+              "txt": "siempre",
+              "em": "♾️"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚫"
+            },
+            {
+              "txt": "también",
+              "em": "➕"
+            },
+            {
+              "txt": "mucho",
+              "em": "🔝"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Иногда»",
+          "opts": [
+            {
+              "txt": "siempre",
+              "em": "♾️"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚫"
+            },
+            {
+              "txt": "a veces",
+              "em": "🕰️"
+            },
+            {
+              "txt": "muy",
+              "em": "❗"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "siempre",
+              "всегда"
+            ],
+            [
+              "nunca",
+              "никогда"
+            ],
+            [
+              "a veces",
+              "иногда"
+            ],
+            [
+              "casi",
+              "почти"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "también",
+              "тоже"
+            ],
+            [
+              "tampoco",
+              "тоже не"
+            ],
+            [
+              "mucho",
+              "много"
+            ],
+            [
+              "poco",
+              "мало"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я никогда не курю",
+          "tiles": [
+            "yo",
+            "nunca",
+            "fumo",
+            "siempre",
+            "no"
+          ],
+          "answer": [
+            "yo",
+            "nunca",
+            "fumo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            null,
+            "tomo café por la mañana."
+          ],
+          "target": "Siempre",
+          "opts": [
+            "Siempre",
+            "Nunca",
+            "Tampoco"
+          ],
+          "hint": "Я всегда пью кофе утром"
+        }
+      ]
+    },
+    {
+      "id": "l70",
+      "name": "Repaso 11",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 66-69",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Корова»",
+          "opts": [
+            {
+              "txt": "caballo",
+              "em": "🐴"
+            },
+            {
+              "txt": "vaca",
+              "em": "🐮"
+            },
+            {
+              "txt": "pato",
+              "em": "🦆"
+            },
+            {
+              "txt": "oveja",
+              "em": "🐑"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Помидор»",
+          "opts": [
+            {
+              "txt": "tomate",
+              "em": "🍅"
+            },
+            {
+              "txt": "cebolla",
+              "em": "🧅"
+            },
+            {
+              "txt": "lechuga",
+              "em": "🥬"
+            },
+            {
+              "txt": "pepino",
+              "em": "🥒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Никогда»",
+          "opts": [
+            {
+              "txt": "siempre",
+              "em": "♾️"
+            },
+            {
+              "txt": "nunca",
+              "em": "🚫"
+            },
+            {
+              "txt": "a veces",
+              "em": "🕰️"
+            },
+            {
+              "txt": "también",
+              "em": "➕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "caballo",
+              "лошадь"
+            ],
+            [
+              "oveja",
+              "овца"
+            ],
+            [
+              "zanahoria",
+              "морковь"
+            ],
+            [
+              "cebolla",
+              "лук"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "carrito",
+              "тележка"
+            ],
+            [
+              "precio",
+              "цена"
+            ],
+            [
+              "siempre",
+              "всегда"
+            ],
+            [
+              "a veces",
+              "иногда"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужен пакет",
+          "tiles": [
+            "necesito",
+            "una",
+            "bolsa",
+            "caja"
+          ],
+          "answer": [
+            "necesito",
+            "una",
+            "bolsa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo",
+            null,
+            "fumo."
+          ],
+          "target": "nunca",
+          "opts": [
+            "nunca",
+            "siempre",
+            "también"
+          ],
+          "hint": "Я никогда не курю"
+        }
+      ]
+    }
+  ]
+}

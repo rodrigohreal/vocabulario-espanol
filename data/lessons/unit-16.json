@@ -1,0 +1,755 @@
+{
+  "unit": 16,
+  "lessons": [
+    {
+      "id": "l76",
+      "name": "Saludos II",
+      "emoji": "🤝",
+      "desc": "Saludos formales",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Как Вы?» (вежливо)",
+          "opts": [
+            {
+              "txt": "¿cómo estás?",
+              "em": "👋"
+            },
+            {
+              "txt": "¿cómo está usted?",
+              "em": "🤝"
+            },
+            {
+              "txt": "¿qué tal?",
+              "em": "😊"
+            },
+            {
+              "txt": "¿quién eres?",
+              "em": "👤"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Очень приятно»",
+          "opts": [
+            {
+              "txt": "mucho gusto",
+              "em": "🤝"
+            },
+            {
+              "txt": "de nada",
+              "em": "🙏"
+            },
+            {
+              "txt": "por favor",
+              "em": "🙏"
+            },
+            {
+              "txt": "adiós",
+              "em": "👋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Очень рад»",
+          "opts": [
+            {
+              "txt": "cansado",
+              "em": "😴"
+            },
+            {
+              "txt": "encantado",
+              "em": "🤩"
+            },
+            {
+              "txt": "aburrido",
+              "em": "😑"
+            },
+            {
+              "txt": "enfadado",
+              "em": "😠"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "señor",
+              "господин"
+            ],
+            [
+              "señora",
+              "госпожа"
+            ],
+            [
+              "señorita",
+              "мисс"
+            ],
+            [
+              "usted",
+              "Вы"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mucho gusto",
+              "очень приятно"
+            ],
+            [
+              "encantado",
+              "очень рад"
+            ],
+            [
+              "hasta luego",
+              "до встречи"
+            ],
+            [
+              "hasta pronto",
+              "до скорого"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Очень приятно",
+          "tiles": [
+            "mucho",
+            "gusto",
+            "bien",
+            "gracias"
+          ],
+          "answer": [
+            "mucho",
+            "gusto"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Buenos días,",
+            null,
+            "."
+          ],
+          "target": "señor",
+          "opts": [
+            "señor",
+            "casa",
+            "verde"
+          ],
+          "hint": "Доброе утро, господин"
+        }
+      ]
+    },
+    {
+      "id": "l77",
+      "name": "Oficina",
+      "emoji": "💼",
+      "desc": "En el trabajo",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Начальник»",
+          "opts": [
+            {
+              "txt": "empleado",
+              "em": "🧑‍💼"
+            },
+            {
+              "txt": "cliente",
+              "em": "🤵"
+            },
+            {
+              "txt": "jefe",
+              "em": "👔"
+            },
+            {
+              "txt": "compañero",
+              "em": "👥"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Компьютер»",
+          "opts": [
+            {
+              "txt": "ordenador",
+              "em": "💻"
+            },
+            {
+              "txt": "teléfono",
+              "em": "☎️"
+            },
+            {
+              "txt": "libro",
+              "em": "📕"
+            },
+            {
+              "txt": "silla",
+              "em": "🪑"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Совещание»",
+          "opts": [
+            {
+              "txt": "oficina",
+              "em": "🏢"
+            },
+            {
+              "txt": "reunión",
+              "em": "🗣️"
+            },
+            {
+              "txt": "mesa",
+              "em": "🪑"
+            },
+            {
+              "txt": "puerta",
+              "em": "🚪"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jefe",
+              "начальник"
+            ],
+            [
+              "empleado",
+              "сотрудник"
+            ],
+            [
+              "oficina",
+              "офис"
+            ],
+            [
+              "reunión",
+              "совещание"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ordenador",
+              "компьютер"
+            ],
+            [
+              "teléfono",
+              "телефон"
+            ],
+            [
+              "papel",
+              "бумага"
+            ],
+            [
+              "mesa",
+              "стол"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я работаю в офисе",
+          "tiles": [
+            "trabajo",
+            "en",
+            "la",
+            "una",
+            "oficina"
+          ],
+          "answer": [
+            "trabajo",
+            "en",
+            "la",
+            "oficina"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "está en una reunión."
+          ],
+          "target": "jefe",
+          "opts": [
+            "jefe",
+            "café",
+            "mar"
+          ],
+          "hint": "Начальник на совещании"
+        }
+      ]
+    },
+    {
+      "id": "l78",
+      "name": "Colegio",
+      "emoji": "🎒",
+      "desc": "Vida escolar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Школа»",
+          "opts": [
+            {
+              "txt": "escuela",
+              "em": "🏫"
+            },
+            {
+              "txt": "casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "parque",
+              "em": "🌳"
+            },
+            {
+              "txt": "tienda",
+              "em": "🏪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ученик»",
+          "opts": [
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            },
+            {
+              "txt": "alumno",
+              "em": "🧑‍🎓"
+            },
+            {
+              "txt": "amigo",
+              "em": "🤝"
+            },
+            {
+              "txt": "jefe",
+              "em": "👔"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Карандаш»",
+          "opts": [
+            {
+              "txt": "libro",
+              "em": "📕"
+            },
+            {
+              "txt": "cuaderno",
+              "em": "📓"
+            },
+            {
+              "txt": "lápiz",
+              "em": "✏️"
+            },
+            {
+              "txt": "goma",
+              "em": "🧽"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "escuela",
+              "школа"
+            ],
+            [
+              "clase",
+              "класс"
+            ],
+            [
+              "profesor",
+              "учитель"
+            ],
+            [
+              "alumno",
+              "ученик"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "libro",
+              "книга"
+            ],
+            [
+              "cuaderno",
+              "тетрадь"
+            ],
+            [
+              "lápiz",
+              "карандаш"
+            ],
+            [
+              "examen",
+              "экзамен"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть книга",
+          "tiles": [
+            "tengo",
+            "un",
+            "una",
+            "libro",
+            "cuaderno"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "libro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "es muy bueno."
+          ],
+          "target": "profesor",
+          "opts": [
+            "profesor",
+            "silla",
+            "agua"
+          ],
+          "hint": "Мой учитель очень хороший"
+        }
+      ]
+    },
+    {
+      "id": "l79",
+      "name": "Internet",
+      "emoji": "🌐",
+      "desc": "Vocabulario web",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Электронная почта»",
+          "opts": [
+            {
+              "txt": "correo",
+              "em": "📧"
+            },
+            {
+              "txt": "teléfono",
+              "em": "☎️"
+            },
+            {
+              "txt": "carta",
+              "em": "✉️"
+            },
+            {
+              "txt": "red",
+              "em": "🌐"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Пароль»",
+          "opts": [
+            {
+              "txt": "usuario",
+              "em": "👤"
+            },
+            {
+              "txt": "contraseña",
+              "em": "🔒"
+            },
+            {
+              "txt": "cuenta",
+              "em": "🪪"
+            },
+            {
+              "txt": "mensaje",
+              "em": "💬"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Страница»",
+          "opts": [
+            {
+              "txt": "red",
+              "em": "🌐"
+            },
+            {
+              "txt": "sitio",
+              "em": "🗺️"
+            },
+            {
+              "txt": "página",
+              "em": "📄"
+            },
+            {
+              "txt": "enlace",
+              "em": "🔗"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "correo",
+              "почта"
+            ],
+            [
+              "contraseña",
+              "пароль"
+            ],
+            [
+              "usuario",
+              "пользователь"
+            ],
+            [
+              "mensaje",
+              "сообщение"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "página",
+              "страница"
+            ],
+            [
+              "red",
+              "сеть"
+            ],
+            [
+              "enlace",
+              "ссылка"
+            ],
+            [
+              "archivo",
+              "файл"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Какой у тебя пароль?",
+          "tiles": [
+            "cuál",
+            "es",
+            "tu",
+            "contraseña",
+            "usuario"
+          ],
+          "answer": [
+            "cuál",
+            "es",
+            "tu",
+            "contraseña"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Te envío un",
+            null,
+            "."
+          ],
+          "target": "correo",
+          "opts": [
+            "correo",
+            "pan",
+            "sol"
+          ],
+          "hint": "Я отправлю тебе письмо"
+        }
+      ]
+    },
+    {
+      "id": "l80",
+      "name": "Repaso 12",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 76-79",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Очень приятно»",
+          "opts": [
+            {
+              "txt": "mucho gusto",
+              "em": "🤝"
+            },
+            {
+              "txt": "de nada",
+              "em": "🙏"
+            },
+            {
+              "txt": "por favor",
+              "em": "🙏"
+            },
+            {
+              "txt": "adiós",
+              "em": "👋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Начальник»",
+          "opts": [
+            {
+              "txt": "empleado",
+              "em": "🧑‍💼"
+            },
+            {
+              "txt": "jefe",
+              "em": "👔"
+            },
+            {
+              "txt": "amigo",
+              "em": "🤝"
+            },
+            {
+              "txt": "alumno",
+              "em": "🧑‍🎓"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Школа»",
+          "opts": [
+            {
+              "txt": "casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "tienda",
+              "em": "🏪"
+            },
+            {
+              "txt": "escuela",
+              "em": "🏫"
+            },
+            {
+              "txt": "oficina",
+              "em": "🏢"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "señor",
+              "господин"
+            ],
+            [
+              "oficina",
+              "офис"
+            ],
+            [
+              "profesor",
+              "учитель"
+            ],
+            [
+              "lápiz",
+              "карандаш"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "correo",
+              "почта"
+            ],
+            [
+              "contraseña",
+              "пароль"
+            ],
+            [
+              "página",
+              "страница"
+            ],
+            [
+              "archivo",
+              "файл"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я работаю в офисе",
+          "tiles": [
+            "trabajo",
+            "en",
+            "la",
+            "oficina"
+          ],
+          "answer": [
+            "trabajo",
+            "en",
+            "la",
+            "oficina"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "es muy bueno."
+          ],
+          "target": "profesor",
+          "opts": [
+            "profesor",
+            "mar",
+            "agua"
+          ],
+          "hint": "Мой учитель очень хороший"
+        }
+      ]
+    }
+  ]
+}

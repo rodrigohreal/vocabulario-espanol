@@ -1,0 +1,756 @@
+{
+  "unit": 18,
+  "lessons": [
+    {
+      "id": "l86",
+      "name": "Cocinar",
+      "emoji": "👨‍🍳",
+      "desc": "Verbos de cocina",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Резать»",
+          "opts": [
+            {
+              "txt": "cortar",
+              "em": "🔪"
+            },
+            {
+              "txt": "freír",
+              "em": "🍳"
+            },
+            {
+              "txt": "hervir",
+              "em": "♨️"
+            },
+            {
+              "txt": "mezclar",
+              "em": "🥣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Жарить»",
+          "opts": [
+            {
+              "txt": "cortar",
+              "em": "🔪"
+            },
+            {
+              "txt": "freír",
+              "em": "🍳"
+            },
+            {
+              "txt": "hornear",
+              "em": "🍞"
+            },
+            {
+              "txt": "lavar",
+              "em": "🧼"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Варить»",
+          "opts": [
+            {
+              "txt": "cortar",
+              "em": "🔪"
+            },
+            {
+              "txt": "mezclar",
+              "em": "🥣"
+            },
+            {
+              "txt": "hervir",
+              "em": "♨️"
+            },
+            {
+              "txt": "comer",
+              "em": "🍴"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cortar",
+              "резать"
+            ],
+            [
+              "freír",
+              "жарить"
+            ],
+            [
+              "hervir",
+              "варить"
+            ],
+            [
+              "mezclar",
+              "смешивать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hornear",
+              "печь"
+            ],
+            [
+              "lavar",
+              "мыть"
+            ],
+            [
+              "probar",
+              "пробовать"
+            ],
+            [
+              "servir",
+              "подавать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я режу хлеб",
+          "tiles": [
+            "corto",
+            "el",
+            "pan",
+            "la",
+            "frío"
+          ],
+          "answer": [
+            "corto",
+            "el",
+            "pan"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a",
+            null,
+            "la sopa."
+          ],
+          "target": "hervir",
+          "opts": [
+            "hervir",
+            "leer",
+            "jugar"
+          ],
+          "hint": "Я буду варить суп"
+        }
+      ]
+    },
+    {
+      "id": "l87",
+      "name": "Recetas",
+      "emoji": "📖",
+      "desc": "En la cocina",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Ингредиент»",
+          "opts": [
+            {
+              "txt": "ingrediente",
+              "em": "🥕"
+            },
+            {
+              "txt": "receta",
+              "em": "📖"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Рецепт»",
+          "opts": [
+            {
+              "txt": "libro",
+              "em": "📕"
+            },
+            {
+              "txt": "receta",
+              "em": "📖"
+            },
+            {
+              "txt": "mapa",
+              "em": "🗺️"
+            },
+            {
+              "txt": "cuenta",
+              "em": "🧾"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Грамм»",
+          "opts": [
+            {
+              "txt": "litro",
+              "em": "💧"
+            },
+            {
+              "txt": "kilo",
+              "em": "⚖️"
+            },
+            {
+              "txt": "gramo",
+              "em": "⚖️"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "receta",
+              "рецепт"
+            ],
+            [
+              "ingrediente",
+              "ингредиент"
+            ],
+            [
+              "plato",
+              "блюдо"
+            ],
+            [
+              "sabor",
+              "вкус"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "kilo",
+              "кило"
+            ],
+            [
+              "gramo",
+              "грамм"
+            ],
+            [
+              "litro",
+              "литр"
+            ],
+            [
+              "cucharada",
+              "ст. ложка"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Это лёгкий рецепт",
+          "tiles": [
+            "es",
+            "una",
+            "un",
+            "receta",
+            "fácil"
+          ],
+          "answer": [
+            "es",
+            "una",
+            "receta",
+            "fácil"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesito un",
+            null,
+            "de azúcar."
+          ],
+          "target": "kilo",
+          "opts": [
+            "kilo",
+            "plato",
+            "libro"
+          ],
+          "hint": "Мне нужен килограмм сахара"
+        }
+      ]
+    },
+    {
+      "id": "l88",
+      "name": "En el bar",
+      "emoji": "☕",
+      "desc": "Pedir bebidas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Сок»",
+          "opts": [
+            {
+              "txt": "jugo",
+              "em": "🧃"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "refresco",
+              "em": "🥤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Газировка»",
+          "opts": [
+            {
+              "txt": "jugo",
+              "em": "🧃"
+            },
+            {
+              "txt": "refresco",
+              "em": "🥤"
+            },
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Без сахара»",
+          "opts": [
+            {
+              "txt": "con azúcar",
+              "em": "➕"
+            },
+            {
+              "txt": "con leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "sin azúcar",
+              "em": "🚫"
+            },
+            {
+              "txt": "caliente",
+              "em": "🔥"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jugo",
+              "сок"
+            ],
+            [
+              "refresco",
+              "газировка"
+            ],
+            [
+              "cerveza",
+              "пиво"
+            ],
+            [
+              "vino",
+              "вино"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "con",
+              "с"
+            ],
+            [
+              "sin",
+              "без"
+            ],
+            [
+              "hielo",
+              "лёд"
+            ],
+            [
+              "camarero",
+              "официант"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Кофе, пожалуйста",
+          "tiles": [
+            "un",
+            "café",
+            "por",
+            "favor",
+            "gracias"
+          ],
+          "answer": [
+            "un",
+            "café",
+            "por",
+            "favor"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero un té",
+            null,
+            "leche."
+          ],
+          "target": "con",
+          "opts": [
+            "con",
+            "sin",
+            "a"
+          ],
+          "hint": "Я хочу чай с молоком"
+        }
+      ]
+    },
+    {
+      "id": "l89",
+      "name": "Postres",
+      "emoji": "🍰",
+      "desc": "Dulces y postres",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Мороженое»",
+          "opts": [
+            {
+              "txt": "helado",
+              "em": "🍦"
+            },
+            {
+              "txt": "pastel",
+              "em": "🍰"
+            },
+            {
+              "txt": "galleta",
+              "em": "🍪"
+            },
+            {
+              "txt": "chocolate",
+              "em": "🍫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Торт»",
+          "opts": [
+            {
+              "txt": "helado",
+              "em": "🍦"
+            },
+            {
+              "txt": "pastel",
+              "em": "🍰"
+            },
+            {
+              "txt": "fruta",
+              "em": "🍓"
+            },
+            {
+              "txt": "pan",
+              "em": "🍞"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Печенье»",
+          "opts": [
+            {
+              "txt": "helado",
+              "em": "🍦"
+            },
+            {
+              "txt": "pastel",
+              "em": "🍰"
+            },
+            {
+              "txt": "galleta",
+              "em": "🍪"
+            },
+            {
+              "txt": "chocolate",
+              "em": "🍫"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "helado",
+              "мороженое"
+            ],
+            [
+              "pastel",
+              "торт"
+            ],
+            [
+              "galleta",
+              "печенье"
+            ],
+            [
+              "chocolate",
+              "шоколад"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "dulce",
+              "сладкий"
+            ],
+            [
+              "azúcar",
+              "сахар"
+            ],
+            [
+              "miel",
+              "мёд"
+            ],
+            [
+              "nata",
+              "сливки"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу мороженое",
+          "tiles": [
+            "quiero",
+            "un",
+            "helado",
+            "pastel"
+          ],
+          "answer": [
+            "quiero",
+            "un",
+            "helado"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me gusta el",
+            null,
+            "."
+          ],
+          "target": "chocolate",
+          "opts": [
+            "chocolate",
+            "libro",
+            "sol"
+          ],
+          "hint": "Мне нравится шоколад"
+        }
+      ]
+    },
+    {
+      "id": "l90",
+      "name": "Repaso 14",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 86-89",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Резать»",
+          "opts": [
+            {
+              "txt": "cortar",
+              "em": "🔪"
+            },
+            {
+              "txt": "freír",
+              "em": "🍳"
+            },
+            {
+              "txt": "mezclar",
+              "em": "🥣"
+            },
+            {
+              "txt": "lavar",
+              "em": "🧼"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Рецепт»",
+          "opts": [
+            {
+              "txt": "libro",
+              "em": "📕"
+            },
+            {
+              "txt": "receta",
+              "em": "📖"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            },
+            {
+              "txt": "mapa",
+              "em": "🗺️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Мороженое»",
+          "opts": [
+            {
+              "txt": "pastel",
+              "em": "🍰"
+            },
+            {
+              "txt": "galleta",
+              "em": "🍪"
+            },
+            {
+              "txt": "helado",
+              "em": "🍦"
+            },
+            {
+              "txt": "chocolate",
+              "em": "🍫"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cortar",
+              "резать"
+            ],
+            [
+              "hervir",
+              "варить"
+            ],
+            [
+              "receta",
+              "рецепт"
+            ],
+            [
+              "plato",
+              "блюдо"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jugo",
+              "сок"
+            ],
+            [
+              "café",
+              "кофе"
+            ],
+            [
+              "pastel",
+              "торт"
+            ],
+            [
+              "dulce",
+              "сладкий"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Кофе, пожалуйста",
+          "tiles": [
+            "un",
+            "café",
+            "por",
+            "favor"
+          ],
+          "answer": [
+            "un",
+            "café",
+            "por",
+            "favor"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me gusta el",
+            null,
+            "."
+          ],
+          "target": "chocolate",
+          "opts": [
+            "chocolate",
+            "libro",
+            "mar"
+          ],
+          "hint": "Мне нравится шоколад"
+        }
+      ]
+    }
+  ]
+}

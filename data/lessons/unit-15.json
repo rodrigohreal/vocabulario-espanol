@@ -1,0 +1,1071 @@
+{
+  "unit": 15,
+  "lessons": [
+    {
+      "id": "l71",
+      "name": "Verbos irreg.",
+      "emoji": "🔀",
+      "desc": "Tener, venir, hacer, decir",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«У меня есть» (1 л. ед.ч.)",
+          "opts": [
+            {
+              "txt": "tengo",
+              "em": "🙋"
+            },
+            {
+              "txt": "tienes",
+              "em": "👉"
+            },
+            {
+              "txt": "tiene",
+              "em": "👤"
+            },
+            {
+              "txt": "tenéis",
+              "em": "👥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я делаю»",
+          "opts": [
+            {
+              "txt": "hago",
+              "em": "🔨"
+            },
+            {
+              "txt": "haces",
+              "em": "👉"
+            },
+            {
+              "txt": "hace",
+              "em": "👤"
+            },
+            {
+              "txt": "hacer",
+              "em": "➡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я говорю» (decir)",
+          "opts": [
+            {
+              "txt": "hablo",
+              "em": "🗣️"
+            },
+            {
+              "txt": "dice",
+              "em": "👤"
+            },
+            {
+              "txt": "digo",
+              "em": "💬"
+            },
+            {
+              "txt": "decir",
+              "em": "➡️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tengo",
+              "у меня есть"
+            ],
+            [
+              "vengo",
+              "я прихожу"
+            ],
+            [
+              "hago",
+              "я делаю"
+            ],
+            [
+              "digo",
+              "я говорю"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "salgo",
+              "я выхожу"
+            ],
+            [
+              "pongo",
+              "я кладу"
+            ],
+            [
+              "traigo",
+              "я приношу"
+            ],
+            [
+              "veo",
+              "я вижу"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня есть собака",
+          "tiles": [
+            "tengo",
+            "un",
+            "una",
+            "perro",
+            "gato"
+          ],
+          "answer": [
+            "tengo",
+            "un",
+            "perro"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo",
+            null,
+            "la verdad."
+          ],
+          "target": "digo",
+          "opts": [
+            "digo",
+            "dice",
+            "decir"
+          ],
+          "hint": "Я говорю правду"
+        },
+        {
+          "t": "pick",
+          "q": "«Ты приходишь»",
+          "opts": [
+            {
+              "txt": "vienes",
+              "em": "👉"
+            },
+            {
+              "txt": "vengo",
+              "em": "👤"
+            },
+            {
+              "txt": "viene",
+              "em": "👨"
+            },
+            {
+              "txt": "venir",
+              "em": "➡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo",
+            null,
+            "la verdad siempre."
+          ],
+          "target": "digo",
+          "opts": [
+            "digo",
+            "dice",
+            "decir"
+          ],
+          "hint": "Я всегда говорю правду"
+        },
+        {
+          "t": "typed",
+          "from": "Я выхожу из дома",
+          "answer": "salgo de casa",
+          "answers": [
+            "salgo de casa",
+            "yo salgo de casa",
+            "salgo de la casa"
+          ],
+          "hint": "salir = выходить"
+        }
+      ]
+    },
+    {
+      "id": "l72",
+      "name": "Condicional",
+      "emoji": "🤔",
+      "desc": "Yo haría, gustaría, podría",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я бы хотел»",
+          "opts": [
+            {
+              "txt": "me gusta",
+              "em": "👍"
+            },
+            {
+              "txt": "me gustaba",
+              "em": "⏪"
+            },
+            {
+              "txt": "me gustaría",
+              "em": "🤔"
+            },
+            {
+              "txt": "me gustará",
+              "em": "⏩"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы мог»",
+          "opts": [
+            {
+              "txt": "puedo",
+              "em": "💪"
+            },
+            {
+              "txt": "podría",
+              "em": "🤔"
+            },
+            {
+              "txt": "podía",
+              "em": "⏪"
+            },
+            {
+              "txt": "podré",
+              "em": "⏩"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы сделал»",
+          "opts": [
+            {
+              "txt": "hago",
+              "em": "⏺️"
+            },
+            {
+              "txt": "hice",
+              "em": "⏪"
+            },
+            {
+              "txt": "haría",
+              "em": "🤔"
+            },
+            {
+              "txt": "haré",
+              "em": "⏩"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hablaría",
+              "я бы говорил"
+            ],
+            [
+              "comería",
+              "я бы ел"
+            ],
+            [
+              "viviría",
+              "я бы жил"
+            ],
+            [
+              "iría",
+              "я бы пошёл"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "querría",
+              "я бы хотел"
+            ],
+            [
+              "podría",
+              "я бы смог"
+            ],
+            [
+              "tendría",
+              "у меня бы было"
+            ],
+            [
+              "sería",
+              "я был бы"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я бы хотел кофе",
+          "tiles": [
+            "me",
+            "gustaría",
+            "un",
+            "café",
+            "gusta"
+          ],
+          "answer": [
+            "me",
+            "gustaría",
+            "un",
+            "café"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿",
+            null,
+            "ayudarme, por favor?"
+          ],
+          "target": "Podría",
+          "opts": [
+            "Podría",
+            "Puedo",
+            "Podía"
+          ],
+          "hint": "Не мог бы ты мне помочь?"
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы пошёл с тобой»",
+          "opts": [
+            {
+              "txt": "iría contigo",
+              "em": "🤔"
+            },
+            {
+              "txt": "iba contigo",
+              "em": "⏪"
+            },
+            {
+              "txt": "iré contigo",
+              "em": "⏩"
+            },
+            {
+              "txt": "voy contigo",
+              "em": "⏺️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿",
+            null,
+            "ayudarme, por favor?"
+          ],
+          "target": "Podrías",
+          "opts": [
+            "Podrías",
+            "Puedes",
+            "Podías"
+          ],
+          "hint": "Не мог бы ты мне помочь? (ты)"
+        },
+        {
+          "t": "typed",
+          "from": "Я бы хотел кофе",
+          "answer": "me gustaría un café",
+          "answers": [
+            "me gustaría un café",
+            "querría un café",
+            "me gustaría café",
+            "yo querría un café"
+          ],
+          "hint": "me gustaría / querría — оба корректны"
+        }
+      ]
+    },
+    {
+      "id": "l73",
+      "name": "Por vs Para",
+      "emoji": "🔁",
+      "desc": "Cuándo usar por o para",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Спасибо за всё» — por или para?",
+          "opts": [
+            {
+              "txt": "por",
+              "em": "⏪"
+            },
+            {
+              "txt": "para",
+              "em": "🎯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Это для тебя» — por или para?",
+          "opts": [
+            {
+              "txt": "por",
+              "em": "⏪"
+            },
+            {
+              "txt": "para",
+              "em": "🎯"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я иду в парк» — por или para?",
+          "opts": [
+            {
+              "txt": "por (через)",
+              "em": "🚶"
+            },
+            {
+              "txt": "para (цель)",
+              "em": "🎯"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "por",
+              "причина / через"
+            ],
+            [
+              "para",
+              "цель / для"
+            ],
+            [
+              "gracias por",
+              "спасибо за"
+            ],
+            [
+              "para ti",
+              "для тебя"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Это для моей мамы",
+          "tiles": [
+            "es",
+            "para",
+            "por",
+            "mi",
+            "madre"
+          ],
+          "answer": [
+            "es",
+            "para",
+            "mi",
+            "madre"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Gracias",
+            null,
+            "el regalo."
+          ],
+          "target": "por",
+          "opts": [
+            "por",
+            "para",
+            "a"
+          ],
+          "hint": "Спасибо за подарок"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estudio español",
+            null,
+            "viajar."
+          ],
+          "target": "para",
+          "opts": [
+            "para",
+            "por",
+            "con"
+          ],
+          "hint": "Я учу испанский, чтобы путешествовать"
+        },
+        {
+          "t": "pick",
+          "q": "«Этот подарок для тебя»",
+          "opts": [
+            {
+              "txt": "este regalo es para ti",
+              "em": "✅"
+            },
+            {
+              "txt": "este regalo es por ti",
+              "em": "❌"
+            },
+            {
+              "txt": "este regalo es a ti",
+              "em": "❌"
+            },
+            {
+              "txt": "este regalo es con ti",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estudio mucho",
+            null,
+            "aprobar el examen."
+          ],
+          "target": "para",
+          "opts": [
+            "para",
+            "por",
+            "a"
+          ],
+          "hint": "Цель / namerenie → para"
+        },
+        {
+          "t": "typed",
+          "from": "Спасибо за подарок",
+          "answer": "gracias por el regalo",
+          "answers": [
+            "gracias por el regalo",
+            "muchas gracias por el regalo"
+          ],
+          "hint": "gracias por (причина)"
+        }
+      ]
+    },
+    {
+      "id": "l74",
+      "name": "Subjuntivo",
+      "emoji": "🌠",
+      "desc": "Espero que, ojalá, quiero que",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Хоть бы...» / «Дай Бог»",
+          "opts": [
+            {
+              "txt": "quizás",
+              "em": "🤷"
+            },
+            {
+              "txt": "ojalá",
+              "em": "🌠"
+            },
+            {
+              "txt": "porque",
+              "em": "➡️"
+            },
+            {
+              "txt": "aunque",
+              "em": "🔀"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я надеюсь, что...»",
+          "opts": [
+            {
+              "txt": "espero que",
+              "em": "🌠"
+            },
+            {
+              "txt": "creo que",
+              "em": "💭"
+            },
+            {
+              "txt": "sé que",
+              "em": "✅"
+            },
+            {
+              "txt": "digo que",
+              "em": "💬"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я хочу, чтобы ты пришёл»",
+          "opts": [
+            {
+              "txt": "quiero que vienes",
+              "em": "❌"
+            },
+            {
+              "txt": "quiero que vengas",
+              "em": "✅"
+            },
+            {
+              "txt": "quiero que vendrás",
+              "em": "❌"
+            },
+            {
+              "txt": "quiero venir",
+              "em": "❓"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ojalá",
+              "дай бог"
+            ],
+            [
+              "espero que",
+              "надеюсь, что"
+            ],
+            [
+              "quiero que",
+              "хочу, чтобы"
+            ],
+            [
+              "es bueno que",
+              "хорошо, что"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я надеюсь, что ты придёшь",
+          "tiles": [
+            "espero",
+            "que",
+            "vengas",
+            "vienes",
+            "tú"
+          ],
+          "answer": [
+            "espero",
+            "que",
+            "vengas"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ojalá",
+            null,
+            "sol mañana."
+          ],
+          "target": "haga",
+          "opts": [
+            "haga",
+            "hace",
+            "hizo"
+          ],
+          "hint": "Хоть бы завтра было солнце"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero que",
+            null,
+            "feliz."
+          ],
+          "target": "seas",
+          "opts": [
+            "seas",
+            "eres",
+            "eras"
+          ],
+          "hint": "Я хочу, чтобы ты был счастлив"
+        },
+        {
+          "t": "pick",
+          "q": "«Сомневаюсь, что он придёт»",
+          "opts": [
+            {
+              "txt": "dudo que venga",
+              "em": "✅"
+            },
+            {
+              "txt": "dudo que viene",
+              "em": "❌"
+            },
+            {
+              "txt": "dudo que vendrá",
+              "em": "❌"
+            },
+            {
+              "txt": "dudo que vino",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Es importante que",
+            null,
+            "atento."
+          ],
+          "target": "estés",
+          "opts": [
+            "estés",
+            "estás",
+            "estaba"
+          ],
+          "hint": "Важно, чтобы ты был внимателен"
+        },
+        {
+          "t": "typed",
+          "from": "Надеюсь, что ты счастлив",
+          "answer": "espero que seas feliz",
+          "answers": [
+            "espero que seas feliz",
+            "espero que estés feliz",
+            "yo espero que seas feliz"
+          ],
+          "hint": "espero que + subjuntivo"
+        }
+      ]
+    },
+    {
+      "id": "l75",
+      "name": "Repaso Final",
+      "emoji": "🎓",
+      "desc": "Repasa lecciones 71-74",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я делаю»",
+          "opts": [
+            {
+              "txt": "hago",
+              "em": "🔨"
+            },
+            {
+              "txt": "haces",
+              "em": "👉"
+            },
+            {
+              "txt": "hace",
+              "em": "👤"
+            },
+            {
+              "txt": "haré",
+              "em": "⏩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы хотел»",
+          "opts": [
+            {
+              "txt": "me gusta",
+              "em": "👍"
+            },
+            {
+              "txt": "me gustaría",
+              "em": "🤔"
+            },
+            {
+              "txt": "me gustaba",
+              "em": "⏪"
+            },
+            {
+              "txt": "me gustará",
+              "em": "⏩"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Хоть бы...»",
+          "opts": [
+            {
+              "txt": "quizás",
+              "em": "🤷"
+            },
+            {
+              "txt": "ojalá",
+              "em": "🌠"
+            },
+            {
+              "txt": "porque",
+              "em": "➡️"
+            },
+            {
+              "txt": "también",
+              "em": "➕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Я говорю» (decir)",
+          "opts": [
+            {
+              "txt": "digo",
+              "em": "👤"
+            },
+            {
+              "txt": "dices",
+              "em": "👉"
+            },
+            {
+              "txt": "dice",
+              "em": "👨"
+            },
+            {
+              "txt": "decir",
+              "em": "➡️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Хочу, чтобы ты пришёл»",
+          "opts": [
+            {
+              "txt": "quiero que vengas",
+              "em": "✅"
+            },
+            {
+              "txt": "quiero que vienes",
+              "em": "❌"
+            },
+            {
+              "txt": "quiero que vendrás",
+              "em": "❌"
+            },
+            {
+              "txt": "quiero venir",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я учу испанский, чтобы путешествовать»",
+          "opts": [
+            {
+              "txt": "estudio español para viajar",
+              "em": "✅"
+            },
+            {
+              "txt": "estudio español por viajar",
+              "em": "❌"
+            },
+            {
+              "txt": "estudio español a viajar",
+              "em": "❌"
+            },
+            {
+              "txt": "estudio español de viajar",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tengo",
+              "у меня есть"
+            ],
+            [
+              "digo",
+              "я говорю"
+            ],
+            [
+              "gustaría",
+              "я бы хотел"
+            ],
+            [
+              "podría",
+              "я бы смог"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "por",
+              "за / через"
+            ],
+            [
+              "para",
+              "для / чтобы"
+            ],
+            [
+              "ojalá",
+              "дай бог"
+            ],
+            [
+              "espero que",
+              "надеюсь, что"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hablaba",
+              "я говорил"
+            ],
+            [
+              "comía",
+              "я ел"
+            ],
+            [
+              "vivía",
+              "я жил"
+            ],
+            [
+              "era",
+              "я был"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я бы хотел кофе",
+          "tiles": [
+            "me",
+            "gustaría",
+            "un",
+            "café",
+            "gusta"
+          ],
+          "answer": [
+            "me",
+            "gustaría",
+            "un",
+            "café"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я надеюсь, что ты придёшь",
+          "tiles": [
+            "espero",
+            "que",
+            "vengas",
+            "vienes",
+            "tú"
+          ],
+          "answer": [
+            "espero",
+            "que",
+            "vengas"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Gracias",
+            null,
+            "todo."
+          ],
+          "target": "por",
+          "opts": [
+            "por",
+            "para",
+            "a"
+          ],
+          "hint": "Спасибо за всё"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero que",
+            null,
+            "feliz."
+          ],
+          "target": "seas",
+          "opts": [
+            "seas",
+            "eres",
+            "eras"
+          ],
+          "hint": "Я хочу, чтобы ты был счастлив"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿",
+            null,
+            "ayudarme?"
+          ],
+          "target": "Podrías",
+          "opts": [
+            "Podrías",
+            "Puedes",
+            "Podías"
+          ],
+          "hint": "Не мог бы ты мне помочь?"
+        },
+        {
+          "t": "typed",
+          "from": "Я бы хотел кофе, пожалуйста",
+          "answer": "me gustaría un café, por favor",
+          "answers": [
+            "me gustaría un café por favor",
+            "me gustaría un café, por favor",
+            "querría un café por favor"
+          ],
+          "hint": "me gustaría / querría + por favor"
+        }
+      ]
+    }
+  ]
+}

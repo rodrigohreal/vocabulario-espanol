@@ -1,0 +1,208 @@
+{
+  "unit": 41,
+  "lessons": [
+    {
+      "id": "l201",
+      "name": "Ser vs Estar 1",
+      "emoji": "⚖️",
+      "desc": "Identidad vs estado temporal",
+      "exercises": [
+        { "t": "pick", "q": "«Я Анна» — какой глагол?", "opts": [
+          { "txt": "soy",   "em": "🪪" },
+          { "txt": "estoy", "em": "📍" },
+          { "txt": "somos", "em": "👥" },
+          { "txt": "es",    "em": "👤" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я устал»", "opts": [
+          { "txt": "soy cansado",   "em": "❌" },
+          { "txt": "estoy cansado", "em": "😴" },
+          { "txt": "eres cansado",  "em": "❌" },
+          { "txt": "es cansado",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Он врач»", "opts": [
+          { "txt": "está médico", "em": "❌" },
+          { "txt": "es médico",   "em": "👨‍⚕️" },
+          { "txt": "soy médico",  "em": "❌" },
+          { "txt": "son médico",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["soy",   "я (есть/являюсь)"],
+          ["eres",  "ты (есть)"],
+          ["es",    "он/она (есть)"],
+          ["somos", "мы (есть)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["estoy",  "я нахожусь / мне сейчас"],
+          ["estás",  "ты находишься"],
+          ["está",   "он/она находится"],
+          ["estamos","мы находимся"]
+        ]},
+        { "t": "translate", "from": "Я Хуан, я уставший", "tiles": ["soy", "Juan", "estoy", "cansado", "es"], "answer": ["soy", "Juan", "estoy", "cansado"] },
+        { "t": "fill", "sentence": ["María", null, "doctora."], "target": "es", "opts": ["es", "está", "son"], "hint": "Мария — врач (профессия = постоянное)" },
+        { "t": "fill", "sentence": ["Mis amigos", null, "aquí."], "target": "están", "opts": ["están", "son", "somos"], "hint": "Мои друзья здесь (местоположение)" },
+        { "t": "typed", "from": "Я красивая", "answer": "soy bonita", "answers": ["soy bonita", "soy guapa", "soy hermosa"], "hint": "красота = качество → ser" }
+      ]
+    },
+    {
+      "id": "l202",
+      "name": "Ser vs Estar 2",
+      "emoji": "🌍",
+      "desc": "Origen (ser) vs ubicación (estar)",
+      "exercises": [
+        { "t": "pick", "q": "«Я из России» (откуда)", "opts": [
+          { "txt": "soy de Rusia",   "em": "🇷🇺" },
+          { "txt": "estoy de Rusia", "em": "❌" },
+          { "txt": "soy en Rusia",   "em": "❌" },
+          { "txt": "estoy a Rusia",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я в Москве» (где)", "opts": [
+          { "txt": "soy en Moscú",     "em": "❌" },
+          { "txt": "estoy en Moscú",   "em": "🏙️" },
+          { "txt": "soy de Moscú",     "em": "❌" },
+          { "txt": "estoy de Moscú",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Барселона в Испании»", "opts": [
+          { "txt": "Barcelona es en España",   "em": "❌" },
+          { "txt": "Barcelona está en España", "em": "📍" },
+          { "txt": "Barcelona es de España",   "em": "❌" },
+          { "txt": "Barcelona son España",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["ser de",   "быть откуда (происхождение)"],
+          ["estar en", "находиться где"],
+          ["ser",      "сущность/качество"],
+          ["estar",    "состояние/место"]
+        ]},
+        { "t": "translate", "from": "Я из Мадрида, но я в Барселоне", "tiles": ["soy", "de", "Madrid", "pero", "estoy", "en", "Barcelona", "es"], "answer": ["soy", "de", "Madrid", "pero", "estoy", "en", "Barcelona"] },
+        { "t": "fill", "sentence": ["¿De dónde", null, "tú?"], "target": "eres", "opts": ["eres", "estás", "son"], "hint": "Откуда ты?" },
+        { "t": "fill", "sentence": ["El gato", null, "en la cocina."], "target": "está", "opts": ["está", "es", "son"], "hint": "Кот на кухне" },
+        { "t": "typed", "from": "Я из Аргентины", "answer": "soy de Argentina", "answers": ["soy de Argentina", "yo soy de Argentina"], "hint": "происхождение → ser de" }
+      ]
+    },
+    {
+      "id": "l203",
+      "name": "Ser vs Estar 3",
+      "emoji": "🔀",
+      "desc": "Cualidades vs sentimientos",
+      "exercises": [
+        { "t": "pick", "q": "«Он умный» (постоянное)", "opts": [
+          { "txt": "es inteligente",   "em": "🧠" },
+          { "txt": "está inteligente", "em": "❌" },
+          { "txt": "soy inteligente",  "em": "❌" },
+          { "txt": "son inteligente",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я счастлив сейчас»", "opts": [
+          { "txt": "soy feliz",   "em": "❌" },
+          { "txt": "estoy feliz", "em": "😊" },
+          { "txt": "es feliz",    "em": "❌" },
+          { "txt": "está feliz",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Кофе горячий»", "opts": [
+          { "txt": "el café es caliente",   "em": "❌" },
+          { "txt": "el café está caliente", "em": "☕" },
+          { "txt": "el café son caliente",  "em": "❌" },
+          { "txt": "los cafés es caliente", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["es alto",      "он высокий (всегда)"],
+          ["está alto",    "он сейчас выше (заметно вырос)"],
+          ["es aburrido",  "он скучный (характер)"],
+          ["está aburrido","ему скучно сейчас"]
+        ]},
+        { "t": "match", "pairs": [
+          ["es bueno",    "он добрый (характер)"],
+          ["está bueno",  "это вкусно (еда)"],
+          ["es listo",    "он умный"],
+          ["está listo",  "он готов"]
+        ]},
+        { "t": "translate", "from": "Суп очень вкусный сегодня", "tiles": ["la", "sopa", "está", "muy", "rica", "hoy", "es"], "answer": ["la", "sopa", "está", "muy", "rica", "hoy"] },
+        { "t": "fill", "sentence": ["Mi hermana", null, "rubia."], "target": "es", "opts": ["es", "está", "son"], "hint": "цвет волос = постоянное" },
+        { "t": "fill", "sentence": ["¡Qué guapa", null, "hoy!"], "target": "estás", "opts": ["estás", "eres", "soy"], "hint": "выглядишь красиво сегодня (сейчас)" },
+        { "t": "typed", "from": "Я готов", "answer": "estoy listo", "answers": ["estoy listo", "estoy lista", "ya estoy listo"], "hint": "готовность = временное → estar listo" }
+      ]
+    },
+    {
+      "id": "l204",
+      "name": "Género",
+      "emoji": "♀️",
+      "desc": "Masculino y femenino: el, la",
+      "exercises": [
+        { "t": "pick", "q": "«Дом» (мужской)", "opts": [
+          { "txt": "la casa", "em": "❌" },
+          { "txt": "el casa", "em": "❌" },
+          { "txt": "la casas","em": "❌" },
+          { "txt": "la casa (es femenina)","em": "🏠" }
+        ], "correct": 3 },
+        { "t": "pick", "q": "«Стол»", "opts": [
+          { "txt": "la mesa", "em": "🍽️" },
+          { "txt": "el mesa", "em": "❌" },
+          { "txt": "el meso", "em": "❌" },
+          { "txt": "la meso", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Карта» — внимание, исключение!", "opts": [
+          { "txt": "la mapa", "em": "❌" },
+          { "txt": "el mapa", "em": "🗺️" },
+          { "txt": "la mapo", "em": "❌" },
+          { "txt": "el mapo", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Рука» — тоже исключение!", "opts": [
+          { "txt": "el mano", "em": "❌" },
+          { "txt": "la mano", "em": "✋" },
+          { "txt": "la mana", "em": "❌" },
+          { "txt": "el mana", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["el libro",  "книга (м.)"],
+          ["la silla",  "стул (ж.)"],
+          ["el coche",  "машина (м.)"],
+          ["la noche",  "ночь (ж.)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["el problema", "проблема (м.! искл.)"],
+          ["el día",      "день (м.! искл.)"],
+          ["la foto",     "фото (ж.! искл.)"],
+          ["la moto",     "мотоцикл (ж.! искл.)"]
+        ]},
+        { "t": "fill", "sentence": [null, "sistema funciona bien."], "target": "El", "opts": ["El", "La", "Los"], "hint": "система = искл. мужской" },
+        { "t": "fill", "sentence": ["Quiero", null, "agua."], "target": "el", "opts": ["el", "la", "los"], "hint": "agua = ж., но артикль el в ед.ч. (фонетика)" },
+        { "t": "typed", "from": "Проблема большая", "answer": "el problema es grande", "answers": ["el problema es grande", "el problema es muy grande"], "hint": "problema — мужской род" }
+      ]
+    },
+    {
+      "id": "l205",
+      "name": "Plurales",
+      "emoji": "📚",
+      "desc": "Formar plurales: -s, -es, irregulares",
+      "exercises": [
+        { "t": "pick", "q": "Множ. от «casa»", "opts": [
+          { "txt": "casas",  "em": "🏘️" },
+          { "txt": "cases",  "em": "❌" },
+          { "txt": "casos",  "em": "❌" },
+          { "txt": "casaes", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "Множ. от «flor»", "opts": [
+          { "txt": "flors",   "em": "❌" },
+          { "txt": "flores",  "em": "🌸" },
+          { "txt": "flora",   "em": "❌" },
+          { "txt": "florees", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "Множ. от «lápiz»", "opts": [
+          { "txt": "lápizes", "em": "❌" },
+          { "txt": "lápizs",  "em": "❌" },
+          { "txt": "lápices", "em": "✏️" },
+          { "txt": "lapices", "em": "❌" }
+        ], "correct": 2 },
+        { "t": "match", "pairs": [
+          ["libro → libros",   "оканч. на гласную → +s"],
+          ["mes → meses",      "оканч. на согл. → +es"],
+          ["luz → luces",      "z → ces"],
+          ["lunes → lunes",    "дни недели не меняются"]
+        ]},
+        { "t": "translate", "from": "Три красных цветка", "tiles": ["tres", "flores", "rojas", "flor", "roja"], "answer": ["tres", "flores", "rojas"] },
+        { "t": "fill", "sentence": ["Tengo dos", null, "."], "target": "lápices", "opts": ["lápices", "lápizs", "lápizes"], "hint": "два карандаша" },
+        { "t": "fill", "sentence": ["Los", null, "son largos."], "target": "meses", "opts": ["meses", "mes", "messes"], "hint": "месяцы длинные" },
+        { "t": "typed", "from": "Учители хорошие", "answer": "los profesores son buenos", "answers": ["los profesores son buenos", "los profesores son simpáticos"], "hint": "profesor → profesores" }
+      ]
+    }
+  ]
+}

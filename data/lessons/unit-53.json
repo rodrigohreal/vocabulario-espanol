@@ -1,0 +1,180 @@
+{
+  "unit": 53,
+  "lessons": [
+    {
+      "id": "l261",
+      "name": "Panadería",
+      "emoji": "🥖",
+      "desc": "Pan, croissant, hornear",
+      "exercises": [
+        { "t": "pick", "q": "«Хлеб»", "opts": [
+          { "txt": "pan",       "em": "🍞" },
+          { "txt": "queso",     "em": "🧀" },
+          { "txt": "croissant", "em": "🥐" },
+          { "txt": "harina",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Багет»", "opts": [
+          { "txt": "baguette",  "em": "🥖" },
+          { "txt": "magdalena", "em": "❌" },
+          { "txt": "galleta",   "em": "❌" },
+          { "txt": "pan tostado","em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["pan",      "хлеб"],
+          ["panadero", "пекарь"],
+          ["horno",    "печь"],
+          ["hornear",  "печь (глаг.)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["harina",    "мука"],
+          ["levadura",  "дрожжи"],
+          ["masa",      "тесто"],
+          ["miga",      "мякиш"]
+        ]},
+        { "t": "translate", "from": "Две булочки и круассан, пожалуйста", "tiles": ["dos", "panecillos", "y", "un", "croissant", "por", "favor"], "answer": ["dos", "panecillos", "y", "un", "croissant", "por", "favor"] },
+        { "t": "fill", "sentence": ["El pan está", null, "."], "target": "fresco", "opts": ["fresco", "duro", "cansado"], "hint": "Хлеб свежий" },
+        { "t": "typed", "from": "Хочу испечь хлеб", "answer": "quiero hornear pan", "answers": ["quiero hornear pan", "quiero hacer pan"], "hint": "hornear = печь" }
+      ]
+    },
+    {
+      "id": "l262",
+      "name": "Farmacia avanzada",
+      "emoji": "💊",
+      "desc": "Receta, jarabe, suplementos",
+      "exercises": [
+        { "t": "pick", "q": "«Аптека»", "opts": [
+          { "txt": "farmacia",   "em": "💊" },
+          { "txt": "panadería",  "em": "❌" },
+          { "txt": "perfumería", "em": "❌" },
+          { "txt": "florería",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Рецепт»", "opts": [
+          { "txt": "receta",   "em": "📝" },
+          { "txt": "factura",  "em": "❌" },
+          { "txt": "ticket",   "em": "❌" },
+          { "txt": "tarjeta",  "em": "💳" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["farmacéutico", "фармацевт"],
+          ["receta",       "рецепт"],
+          ["dosis",        "доза"],
+          ["jarabe",       "сироп"]
+        ]},
+        { "t": "match", "pairs": [
+          ["paracetamol",  "парацетамол"],
+          ["ibuprofeno",   "ибупрофен"],
+          ["aspirina",     "аспирин"],
+          ["antihistamínico","антигистамин."]
+        ]},
+        { "t": "translate", "from": "Нужно что-то от головной боли", "tiles": ["necesito", "algo", "para", "el", "dolor", "de", "cabeza", "ojos"], "answer": ["necesito", "algo", "para", "el", "dolor", "de", "cabeza"] },
+        { "t": "fill", "sentence": ["¿Tiene", null, " sin receta?"], "target": "ibuprofeno", "opts": ["ibuprofeno", "cama", "lápiz"], "hint": "Без рецепта" },
+        { "t": "typed", "from": "Ближайшая дежурная аптека", "answer": "la farmacia de guardia más cercana", "answers": ["la farmacia de guardia más cercana", "la farmacia de turno más cercana"], "hint": "de guardia = дежурная" }
+      ]
+    },
+    {
+      "id": "l263",
+      "name": "Peluquería avanzada",
+      "emoji": "💇",
+      "desc": "Mechas, tinte, flequillo",
+      "exercises": [
+        { "t": "pick", "q": "«Постричь волосы»", "opts": [
+          { "txt": "cortar el pelo", "em": "✂️" },
+          { "txt": "lavar el pelo",  "em": "❌" },
+          { "txt": "secar el pelo",  "em": "❌" },
+          { "txt": "peinar",         "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Покраска»", "opts": [
+          { "txt": "tinte",     "em": "🎨" },
+          { "txt": "champú",    "em": "❌" },
+          { "txt": "flequillo", "em": "❌" },
+          { "txt": "mechas",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["flequillo", "чёлка"],
+          ["mechas",    "мелирование"],
+          ["tinte",     "покраска"],
+          ["corte",     "стрижка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["peluquero",  "парикмахер"],
+          ["secador",    "фен"],
+          ["tijeras",    "ножницы"],
+          ["espejo",     "зеркало"]
+        ]},
+        { "t": "translate", "from": "Хочу подстричь чёлку", "tiles": ["quiero", "cortarme", "el", "flequillo", "pelo"], "answer": ["quiero", "cortarme", "el", "flequillo"] },
+        { "t": "fill", "sentence": ["Voy a hacerme un", null, "."], "target": "corte", "opts": ["corte", "café", "viaje"], "hint": "Сделаю стрижку" },
+        { "t": "typed", "from": "Просто помойте, без сушки", "answer": "solo lavado, sin secado", "answers": ["solo lavado, sin secado", "solo lavar, sin secar"], "hint": "sin secado = без сушки" }
+      ]
+    },
+    {
+      "id": "l264",
+      "name": "Mercería",
+      "emoji": "🧵",
+      "desc": "Botón, hilo, aguja",
+      "exercises": [
+        { "t": "pick", "q": "«Пуговица»", "opts": [
+          { "txt": "botón",  "em": "🔘" },
+          { "txt": "hilo",   "em": "❌" },
+          { "txt": "aguja",  "em": "❌" },
+          { "txt": "cinta",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Нитка»", "opts": [
+          { "txt": "hilo",  "em": "🧵" },
+          { "txt": "aguja", "em": "❌" },
+          { "txt": "tela",  "em": "❌" },
+          { "txt": "lana",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["botón",     "пуговица"],
+          ["hilo",      "нитка"],
+          ["aguja",     "игла"],
+          ["cremallera","молния"]
+        ]},
+        { "t": "match", "pairs": [
+          ["cinta",     "лента"],
+          ["dedal",     "напёрсток"],
+          ["tijeras",   "ножницы"],
+          ["coser",     "шить"]
+        ]},
+        { "t": "translate", "from": "Мне нужны иголка и чёрная нить", "tiles": ["necesito", "aguja", "e", "hilo", "negro", "blanco"], "answer": ["necesito", "aguja", "e", "hilo", "negro"] },
+        { "t": "fill", "sentence": ["Se me cayó un", null, "."], "target": "botón", "opts": ["botón", "monte", "libro"], "hint": "У меня отвалилась пуговица" },
+        { "t": "typed", "from": "Мама шьёт платье", "answer": "mi madre cose un vestido", "answers": ["mi madre cose un vestido", "mamá cose un vestido"], "hint": "coser = шить" }
+      ]
+    },
+    {
+      "id": "l265",
+      "name": "Vestuario formal",
+      "emoji": "👔",
+      "desc": "Traje, corbata, chaleco",
+      "exercises": [
+        { "t": "pick", "q": "«Костюм»", "opts": [
+          { "txt": "traje",    "em": "👔" },
+          { "txt": "camiseta", "em": "❌" },
+          { "txt": "abrigo",   "em": "❌" },
+          { "txt": "pijama",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Галстук»", "opts": [
+          { "txt": "corbata",  "em": "👔" },
+          { "txt": "bufanda",  "em": "❌" },
+          { "txt": "cinturón", "em": "❌" },
+          { "txt": "guante",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["traje",    "костюм"],
+          ["corbata",  "галстук"],
+          ["chaleco",  "жилет"],
+          ["camisa",   "рубашка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["gemelos",   "запонки"],
+          ["pañuelo",   "платок"],
+          ["esmoquin",  "смокинг"],
+          ["pajarita",  "бабочка"]
+        ]},
+        { "t": "translate", "from": "Он в новом костюме", "tiles": ["lleva", "un", "traje", "nuevo", "está"], "answer": ["lleva", "un", "traje", "nuevo"] },
+        { "t": "fill", "sentence": ["Para la boda llevo", null, "."], "target": "esmoquin", "opts": ["esmoquin", "fiesta", "manzana"], "hint": "На свадьбе смокинг" },
+        { "t": "typed", "from": "Завяжи галстук", "answer": "ata la corbata", "answers": ["ata la corbata", "anuda la corbata"], "hint": "atar = завязать" }
+      ]
+    }
+  ]
+}

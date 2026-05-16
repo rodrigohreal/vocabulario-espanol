@@ -1,0 +1,883 @@
+{
+  "unit": 27,
+  "lessons": [
+    {
+      "id": "l131",
+      "name": "Cine",
+      "emoji": "🎬",
+      "desc": "Películas, butacas y palomitas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Кино / фильм»",
+          "opts": [
+            {
+              "txt": "película",
+              "em": "🎞️"
+            },
+            {
+              "txt": "pintura",
+              "em": "🖼️"
+            },
+            {
+              "txt": "piscina",
+              "em": "🏊"
+            },
+            {
+              "txt": "pelota",
+              "em": "⚽"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Попкорн»",
+          "opts": [
+            {
+              "txt": "pan",
+              "em": "🍞"
+            },
+            {
+              "txt": "palomitas",
+              "em": "🍿"
+            },
+            {
+              "txt": "pasteles",
+              "em": "🍰"
+            },
+            {
+              "txt": "patatas",
+              "em": "🥔"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Билет»",
+          "opts": [
+            {
+              "txt": "entrada",
+              "em": "🎟️"
+            },
+            {
+              "txt": "salida",
+              "em": "🚪"
+            },
+            {
+              "txt": "pantalla",
+              "em": "🖥️"
+            },
+            {
+              "txt": "silla",
+              "em": "🪑"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "película",
+              "фильм"
+            ],
+            [
+              "cine",
+              "кинотеатр"
+            ],
+            [
+              "entrada",
+              "билет"
+            ],
+            [
+              "butaca",
+              "кресло"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "palomitas",
+              "попкорн"
+            ],
+            [
+              "pantalla",
+              "экран"
+            ],
+            [
+              "director",
+              "режиссёр"
+            ],
+            [
+              "actor",
+              "актёр"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу посмотреть фильм",
+          "tiles": [
+            "quiero",
+            "ver",
+            "una",
+            "película",
+            "veo"
+          ],
+          "answer": [
+            "quiero",
+            "ver",
+            "una",
+            "película"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Compré dos",
+            null,
+            "para el cine."
+          ],
+          "target": "entradas",
+          "opts": [
+            "entradas",
+            "salidas",
+            "sillas"
+          ],
+          "hint": "я купил два билета"
+        },
+        {
+          "t": "typed",
+          "from": "Этот фильм очень интересный",
+          "answer": "esta película es muy interesante",
+          "answers": [
+            "esta película es muy interesante",
+            "la película es muy interesante"
+          ],
+          "hint": "esta película es..."
+        }
+      ]
+    },
+    {
+      "id": "l132",
+      "name": "Conciertos",
+      "emoji": "🎤",
+      "desc": "Bandas, canciones y conciertos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Песня»",
+          "opts": [
+            {
+              "txt": "canción",
+              "em": "🎶"
+            },
+            {
+              "txt": "baile",
+              "em": "💃"
+            },
+            {
+              "txt": "libro",
+              "em": "📖"
+            },
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Группа / рок-группа»",
+          "opts": [
+            {
+              "txt": "banda",
+              "em": "🎸"
+            },
+            {
+              "txt": "banco",
+              "em": "🏦"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            },
+            {
+              "txt": "novia",
+              "em": "👰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сцена»",
+          "opts": [
+            {
+              "txt": "escena",
+              "em": "🎭"
+            },
+            {
+              "txt": "escenario",
+              "em": "🎪"
+            },
+            {
+              "txt": "butaca",
+              "em": "🪑"
+            },
+            {
+              "txt": "puerta",
+              "em": "🚪"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "canción",
+              "песня"
+            ],
+            [
+              "cantante",
+              "певец"
+            ],
+            [
+              "banda",
+              "группа"
+            ],
+            [
+              "concierto",
+              "концерт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "escenario",
+              "сцена"
+            ],
+            [
+              "micrófono",
+              "микрофон"
+            ],
+            [
+              "letra",
+              "текст песни"
+            ],
+            [
+              "ritmo",
+              "ритм"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится эта песня",
+          "tiles": [
+            "me",
+            "gusta",
+            "esta",
+            "canción",
+            "eso"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "esta",
+            "canción"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos al",
+            null,
+            "esta noche."
+          ],
+          "target": "concierto",
+          "opts": [
+            "concierto",
+            "cuento",
+            "consejo"
+          ],
+          "hint": "идём на концерт сегодня вечером"
+        },
+        {
+          "t": "typed",
+          "from": "Этот певец очень знаменит",
+          "answer": "este cantante es muy famoso",
+          "answers": [
+            "este cantante es muy famoso",
+            "el cantante es muy famoso"
+          ],
+          "hint": "este cantante es..."
+        }
+      ]
+    },
+    {
+      "id": "l133",
+      "name": "Literatura",
+      "emoji": "📚",
+      "desc": "Novelas, autores y poesía",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Роман»",
+          "opts": [
+            {
+              "txt": "novela",
+              "em": "📕"
+            },
+            {
+              "txt": "cuento",
+              "em": "📖"
+            },
+            {
+              "txt": "poema",
+              "em": "📜"
+            },
+            {
+              "txt": "periódico",
+              "em": "📰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Автор / писатель»",
+          "opts": [
+            {
+              "txt": "lector",
+              "em": "👓"
+            },
+            {
+              "txt": "autor",
+              "em": "✍️"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            },
+            {
+              "txt": "pintor",
+              "em": "🎨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Стихотворение»",
+          "opts": [
+            {
+              "txt": "poema",
+              "em": "📜"
+            },
+            {
+              "txt": "novela",
+              "em": "📕"
+            },
+            {
+              "txt": "capítulo",
+              "em": "📄"
+            },
+            {
+              "txt": "biblioteca",
+              "em": "🏛️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "novela",
+              "роман"
+            ],
+            [
+              "cuento",
+              "рассказ"
+            ],
+            [
+              "poema",
+              "стихотворение"
+            ],
+            [
+              "ensayo",
+              "эссе"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "autor",
+              "автор"
+            ],
+            [
+              "lector",
+              "читатель"
+            ],
+            [
+              "biblioteca",
+              "библиотека"
+            ],
+            [
+              "página",
+              "страница"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я читаю интересную книгу",
+          "tiles": [
+            "leo",
+            "un",
+            "libro",
+            "interesante",
+            "libros"
+          ],
+          "answer": [
+            "leo",
+            "un",
+            "libro",
+            "interesante"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Cervantes es un gran",
+            null,
+            "."
+          ],
+          "target": "autor",
+          "opts": [
+            "autor",
+            "lector",
+            "actor"
+          ],
+          "hint": "Сервантес — великий автор"
+        },
+        {
+          "t": "typed",
+          "from": "Я только что закончил роман",
+          "answer": "acabo de terminar una novela",
+          "answers": [
+            "acabo de terminar una novela",
+            "acabo de terminar la novela"
+          ],
+          "hint": "acabar de + infinitivo"
+        }
+      ]
+    },
+    {
+      "id": "l134",
+      "name": "Teatro y arte",
+      "emoji": "🎭",
+      "desc": "Obras, pinturas y museos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Театр»",
+          "opts": [
+            {
+              "txt": "teatro",
+              "em": "🎭"
+            },
+            {
+              "txt": "cine",
+              "em": "🎬"
+            },
+            {
+              "txt": "museo",
+              "em": "🏛️"
+            },
+            {
+              "txt": "escuela",
+              "em": "🏫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Картина»",
+          "opts": [
+            {
+              "txt": "cuadro",
+              "em": "🖼️"
+            },
+            {
+              "txt": "cuento",
+              "em": "📖"
+            },
+            {
+              "txt": "cuerda",
+              "em": "🪢"
+            },
+            {
+              "txt": "cuello",
+              "em": "👔"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Музей»",
+          "opts": [
+            {
+              "txt": "mercado",
+              "em": "🛒"
+            },
+            {
+              "txt": "museo",
+              "em": "🏛️"
+            },
+            {
+              "txt": "mesón",
+              "em": "🍽️"
+            },
+            {
+              "txt": "metro",
+              "em": "🚇"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "teatro",
+              "театр"
+            ],
+            [
+              "obra",
+              "пьеса / произведение"
+            ],
+            [
+              "actor",
+              "актёр"
+            ],
+            [
+              "actriz",
+              "актриса"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "museo",
+              "музей"
+            ],
+            [
+              "cuadro",
+              "картина"
+            ],
+            [
+              "escultura",
+              "скульптура"
+            ],
+            [
+              "pintor",
+              "художник"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я иду в музей",
+          "tiles": [
+            "voy",
+            "al",
+            "museo",
+            "casa",
+            "a"
+          ],
+          "answer": [
+            "voy",
+            "al",
+            "museo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Esta",
+            null,
+            "es de Picasso."
+          ],
+          "target": "pintura",
+          "opts": [
+            "pintura",
+            "puerta",
+            "pelota"
+          ],
+          "hint": "эта картина — Пикассо"
+        },
+        {
+          "t": "typed",
+          "from": "Вчера я был в театре",
+          "answer": "ayer estuve en el teatro",
+          "answers": [
+            "ayer estuve en el teatro",
+            "ayer fui al teatro"
+          ],
+          "hint": "estuve / fui al teatro"
+        }
+      ]
+    },
+    {
+      "id": "l135",
+      "name": "Repaso 22",
+      "emoji": "🎬",
+      "desc": "Repaso L131-L134",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Фильм»",
+          "opts": [
+            {
+              "txt": "película",
+              "em": "🎞️"
+            },
+            {
+              "txt": "pintura",
+              "em": "🖼️"
+            },
+            {
+              "txt": "palomitas",
+              "em": "🍿"
+            },
+            {
+              "txt": "pelota",
+              "em": "⚽"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Концерт»",
+          "opts": [
+            {
+              "txt": "concierto",
+              "em": "🎤"
+            },
+            {
+              "txt": "consejo",
+              "em": "💡"
+            },
+            {
+              "txt": "cuento",
+              "em": "📖"
+            },
+            {
+              "txt": "comedor",
+              "em": "🍽️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Автор»",
+          "opts": [
+            {
+              "txt": "autor",
+              "em": "✍️"
+            },
+            {
+              "txt": "actor",
+              "em": "🎭"
+            },
+            {
+              "txt": "lector",
+              "em": "👓"
+            },
+            {
+              "txt": "pintor",
+              "em": "🎨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Музей»",
+          "opts": [
+            {
+              "txt": "museo",
+              "em": "🏛️"
+            },
+            {
+              "txt": "teatro",
+              "em": "🎭"
+            },
+            {
+              "txt": "cine",
+              "em": "🎬"
+            },
+            {
+              "txt": "mercado",
+              "em": "🛒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "película",
+              "фильм"
+            ],
+            [
+              "canción",
+              "песня"
+            ],
+            [
+              "novela",
+              "роман"
+            ],
+            [
+              "cuadro",
+              "картина"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cine",
+              "кинотеатр"
+            ],
+            [
+              "concierto",
+              "концерт"
+            ],
+            [
+              "biblioteca",
+              "библиотека"
+            ],
+            [
+              "teatro",
+              "театр"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "palomitas",
+              "попкорн"
+            ],
+            [
+              "entrada",
+              "билет"
+            ],
+            [
+              "poema",
+              "стихотворение"
+            ],
+            [
+              "actriz",
+              "актриса"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится эта песня",
+          "tiles": [
+            "me",
+            "gusta",
+            "esta",
+            "canción"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "esta",
+            "canción"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я иду в кино",
+          "tiles": [
+            "voy",
+            "al",
+            "cine",
+            "museo"
+          ],
+          "answer": [
+            "voy",
+            "al",
+            "cine"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Compré dos",
+            null,
+            "para el teatro."
+          ],
+          "target": "entradas",
+          "opts": [
+            "entradas",
+            "salidas",
+            "palomitas"
+          ],
+          "hint": "я купил два билета"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Cervantes escribió esta",
+            null,
+            "."
+          ],
+          "target": "novela",
+          "opts": [
+            "novela",
+            "película",
+            "canción"
+          ],
+          "hint": "Сервантес написал этот роман"
+        },
+        {
+          "t": "typed",
+          "from": "Вчера я ходил в музей",
+          "answer": "ayer fui al museo",
+          "answers": [
+            "ayer fui al museo",
+            "ayer estuve en el museo"
+          ],
+          "hint": "fui al / estuve en el museo"
+        }
+      ]
+    }
+  ]
+}

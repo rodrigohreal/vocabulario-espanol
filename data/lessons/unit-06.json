@@ -1,0 +1,789 @@
+{
+  "unit": 6,
+  "lessons": [
+    {
+      "id": "l26",
+      "name": "Transporte",
+      "emoji": "🚗",
+      "desc": "Vehículos y viajes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Машина»",
+          "opts": [
+            {
+              "txt": "coche",
+              "em": "🚗"
+            },
+            {
+              "txt": "autobús",
+              "em": "🚌"
+            },
+            {
+              "txt": "tren",
+              "em": "🚆"
+            },
+            {
+              "txt": "avión",
+              "em": "✈️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Самолёт»",
+          "opts": [
+            {
+              "txt": "barco",
+              "em": "🚢"
+            },
+            {
+              "txt": "avión",
+              "em": "✈️"
+            },
+            {
+              "txt": "moto",
+              "em": "🏍️"
+            },
+            {
+              "txt": "taxi",
+              "em": "🚕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Велосипед»",
+          "opts": [
+            {
+              "txt": "tren",
+              "em": "🚆"
+            },
+            {
+              "txt": "autobús",
+              "em": "🚌"
+            },
+            {
+              "txt": "bicicleta",
+              "em": "🚲"
+            },
+            {
+              "txt": "metro",
+              "em": "🚇"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "coche",
+              "машина"
+            ],
+            [
+              "autobús",
+              "автобус"
+            ],
+            [
+              "tren",
+              "поезд"
+            ],
+            [
+              "avión",
+              "самолёт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "bicicleta",
+              "велосипед"
+            ],
+            [
+              "barco",
+              "корабль"
+            ],
+            [
+              "moto",
+              "мотоцикл"
+            ],
+            [
+              "taxi",
+              "такси"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я еду на машине",
+          "tiles": [
+            "voy",
+            "en",
+            "coche",
+            "a"
+          ],
+          "answer": [
+            "voy",
+            "en",
+            "coche"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "es rápido."
+          ],
+          "target": "tren",
+          "opts": [
+            "tren",
+            "casa",
+            "pan"
+          ],
+          "hint": "Поезд быстрый"
+        }
+      ]
+    },
+    {
+      "id": "l27",
+      "name": "Repaso 2",
+      "emoji": "🔁",
+      "desc": "Repasa lo aprendido (6-10)",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Вода»",
+          "opts": [
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            },
+            {
+              "txt": "té",
+              "em": "🍵"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Кот»",
+          "opts": [
+            {
+              "txt": "perro",
+              "em": "🐶"
+            },
+            {
+              "txt": "pez",
+              "em": "🐟"
+            },
+            {
+              "txt": "gato",
+              "em": "🐱"
+            },
+            {
+              "txt": "vaca",
+              "em": "🐮"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Пятница»",
+          "opts": [
+            {
+              "txt": "viernes",
+              "em": "5️⃣"
+            },
+            {
+              "txt": "sábado",
+              "em": "6️⃣"
+            },
+            {
+              "txt": "lunes",
+              "em": "1️⃣"
+            },
+            {
+              "txt": "jueves",
+              "em": "4️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "comer",
+              "есть"
+            ],
+            [
+              "beber",
+              "пить"
+            ],
+            [
+              "pan",
+              "хлеб"
+            ],
+            [
+              "agua",
+              "вода"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gracias",
+              "спасибо"
+            ],
+            [
+              "por favor",
+              "пожалуйста"
+            ],
+            [
+              "hoy",
+              "сегодня"
+            ],
+            [
+              "lunes",
+              "понедельник"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я пью воду",
+          "tiles": [
+            "yo",
+            "bebo",
+            "agua",
+            "como"
+          ],
+          "answer": [
+            "yo",
+            "bebo",
+            "agua"
+          ],
+          "answers": [
+            [
+              "yo",
+              "bebo",
+              "agua"
+            ],
+            [
+              "bebo",
+              "agua"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo un",
+            null,
+            "."
+          ],
+          "target": "perro",
+          "opts": [
+            "perro",
+            "lunes",
+            "pan"
+          ],
+          "hint": "У меня собака"
+        }
+      ]
+    },
+    {
+      "id": "l28",
+      "name": "Posiciones",
+      "emoji": "📍",
+      "desc": "Dónde está…",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«В / внутри»",
+          "opts": [
+            {
+              "txt": "en",
+              "em": "📦"
+            },
+            {
+              "txt": "sobre",
+              "em": "⬆️"
+            },
+            {
+              "txt": "debajo",
+              "em": "⬇️"
+            },
+            {
+              "txt": "cerca",
+              "em": "↔️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Под»",
+          "opts": [
+            {
+              "txt": "sobre",
+              "em": "⬆️"
+            },
+            {
+              "txt": "debajo",
+              "em": "⬇️"
+            },
+            {
+              "txt": "detrás",
+              "em": "🔙"
+            },
+            {
+              "txt": "delante",
+              "em": "🔜"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Между»",
+          "opts": [
+            {
+              "txt": "lejos",
+              "em": "🌍"
+            },
+            {
+              "txt": "cerca",
+              "em": "↔️"
+            },
+            {
+              "txt": "entre",
+              "em": "↔️"
+            },
+            {
+              "txt": "aquí",
+              "em": "📍"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "en",
+              "в"
+            ],
+            [
+              "sobre",
+              "на"
+            ],
+            [
+              "debajo",
+              "под"
+            ],
+            [
+              "entre",
+              "между"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "cerca",
+              "близко"
+            ],
+            [
+              "lejos",
+              "далеко"
+            ],
+            [
+              "aquí",
+              "здесь"
+            ],
+            [
+              "allí",
+              "там"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Кот в кухне",
+          "tiles": [
+            "el",
+            "gato",
+            "está",
+            "en",
+            "la",
+            "cocina"
+          ],
+          "answer": [
+            "el",
+            "gato",
+            "está",
+            "en",
+            "la",
+            "cocina"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El libro está",
+            null,
+            "la mesa."
+          ],
+          "target": "sobre",
+          "opts": [
+            "sobre",
+            "aquí",
+            "lejos"
+          ],
+          "hint": "Книга на столе"
+        }
+      ]
+    },
+    {
+      "id": "l29",
+      "name": "Conversación",
+      "emoji": "💬",
+      "desc": "Frases para conocer gente",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Приятно познакомиться»",
+          "opts": [
+            {
+              "txt": "mucho gusto",
+              "em": "🤝"
+            },
+            {
+              "txt": "lo siento",
+              "em": "😔"
+            },
+            {
+              "txt": "salud",
+              "em": "🥂"
+            },
+            {
+              "txt": "hasta luego",
+              "em": "👋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Откуда ты?»",
+          "opts": [
+            {
+              "txt": "¿adónde vas?",
+              "em": "➡️"
+            },
+            {
+              "txt": "¿de dónde eres?",
+              "em": "🌍"
+            },
+            {
+              "txt": "¿qué haces?",
+              "em": "🤔"
+            },
+            {
+              "txt": "¿cómo estás?",
+              "em": "😊"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Сколько тебе лет?»",
+          "opts": [
+            {
+              "txt": "¿qué hora es?",
+              "em": "⏰"
+            },
+            {
+              "txt": "¿cómo te llamas?",
+              "em": "👤"
+            },
+            {
+              "txt": "¿cuántos años tienes?",
+              "em": "🎂"
+            },
+            {
+              "txt": "¿dónde vives?",
+              "em": "🏠"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mucho gusto",
+              "приятно познакомиться"
+            ],
+            [
+              "¿de dónde eres?",
+              "откуда ты?"
+            ],
+            [
+              "¿cómo estás?",
+              "как дела?"
+            ],
+            [
+              "hasta luego",
+              "до свидания"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "¿cómo te llamas?",
+              "как тебя зовут?"
+            ],
+            [
+              "me llamo",
+              "меня зовут"
+            ],
+            [
+              "soy de",
+              "я из"
+            ],
+            [
+              "vivo en",
+              "я живу в"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Меня зовут Ана",
+          "tiles": [
+            "me",
+            "llamo",
+            "Ana",
+            "soy",
+            "tú"
+          ],
+          "answer": [
+            "me",
+            "llamo",
+            "Ana"
+          ],
+          "answers": [
+            [
+              "me",
+              "llamo",
+              "Ana"
+            ],
+            [
+              "soy",
+              "Ana"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Soy",
+            null,
+            "Rusia."
+          ],
+          "target": "de",
+          "opts": [
+            "de",
+            "en",
+            "a"
+          ],
+          "hint": "Я из России"
+        },
+        {
+          "t": "typed",
+          "from": "Как тебя зовут?",
+          "answer": "¿cómo te llamas?",
+          "answers": [
+            "¿cómo te llamas?",
+            "cómo te llamas",
+            "¿como te llamas?"
+          ],
+          "hint": "Используй кнопку ¿ внизу"
+        }
+      ]
+    },
+    {
+      "id": "l30",
+      "name": "Repaso 3",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 11-20",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Кухня»",
+          "opts": [
+            {
+              "txt": "cocina",
+              "em": "🍳"
+            },
+            {
+              "txt": "baño",
+              "em": "🚿"
+            },
+            {
+              "txt": "sala",
+              "em": "🛋️"
+            },
+            {
+              "txt": "jardín",
+              "em": "🌳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Дождь»",
+          "opts": [
+            {
+              "txt": "sol",
+              "em": "☀️"
+            },
+            {
+              "txt": "lluvia",
+              "em": "🌧️"
+            },
+            {
+              "txt": "nieve",
+              "em": "❄️"
+            },
+            {
+              "txt": "viento",
+              "em": "💨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Учитель»",
+          "opts": [
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "médico",
+              "em": "👨‍⚕️"
+            },
+            {
+              "txt": "profesor",
+              "em": "👩‍🏫"
+            },
+            {
+              "txt": "piloto",
+              "em": "✈️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "casa",
+              "дом"
+            ],
+            [
+              "cocina",
+              "кухня"
+            ],
+            [
+              "camisa",
+              "рубашка"
+            ],
+            [
+              "zapatos",
+              "туфли"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "árbol",
+              "дерево"
+            ],
+            [
+              "flor",
+              "цветок"
+            ],
+            [
+              "cabeza",
+              "голова"
+            ],
+            [
+              "mano",
+              "рука"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я счастлив",
+          "tiles": [
+            "estoy",
+            "feliz",
+            "triste",
+            "soy"
+          ],
+          "answer": [
+            "estoy",
+            "feliz"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Qué",
+            null,
+            "es?"
+          ],
+          "target": "hora",
+          "opts": [
+            "hora",
+            "casa",
+            "mar"
+          ],
+          "hint": "Который час?"
+        }
+      ]
+    }
+  ]
+}

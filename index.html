@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0d1a">
   <title>Vocabulario Español</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=21">
+  <link rel="stylesheet" href="style.css?v=26">
 </head>
 <body>
   <div id="app">
@@ -34,8 +34,10 @@
           <span id="user-name"></span>
         </div>
         <div class="topbar-stats">
+          <span class="stat-chip" id="topbar-hearts" title="Vidas"><span class="chip-ico">❤️</span><span id="topbar-hearts-num">5</span><span id="topbar-hearts-cd" class="chip-cd"></span></span>
           <span class="stat-chip" id="topbar-streak" title="Racha"><span class="chip-ico">🔥</span><span id="topbar-streak-num">0</span></span>
           <span class="stat-chip" id="topbar-xp" title="XP"><span class="chip-ico">⭐</span><span id="topbar-xp-num">0</span></span>
+          <button class="stat-chip audio-chip" id="topbar-audio" title="Audio" aria-label="Activar o desactivar audio"><span class="chip-ico" id="topbar-audio-ico">🔊</span></button>
         </div>
         <button id="logout-btn" class="logout-btn" aria-label="Cerrar sesión">↪</button>
       </div>
@@ -408,6 +410,9 @@
     </nav>
 
   </div>
-  <script src="app.js?v=21"></script>
+  <script src="storage.js?v=26"></script>
+  <script src="tts.js?v=26"></script>
+  <script src="srs.js?v=26"></script>
+  <script src="app.js?v=26"></script>
 </body>
 </html>

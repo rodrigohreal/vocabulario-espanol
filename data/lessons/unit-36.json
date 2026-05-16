@@ -1,0 +1,885 @@
+{
+  "unit": 36,
+  "lessons": [
+    {
+      "id": "l176",
+      "name": "Citas",
+      "emoji": "💘",
+      "desc": "Salir, primera cita, gustar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Свидание»",
+          "opts": [
+            {
+              "txt": "cita",
+              "em": "💘"
+            },
+            {
+              "txt": "casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "cama",
+              "em": "🛏️"
+            },
+            {
+              "txt": "cara",
+              "em": "😊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Влюбиться»",
+          "opts": [
+            {
+              "txt": "enamorarse",
+              "em": "😍"
+            },
+            {
+              "txt": "enojarse",
+              "em": "😠"
+            },
+            {
+              "txt": "enfermarse",
+              "em": "🤒"
+            },
+            {
+              "txt": "enseñarse",
+              "em": "👀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Парень / девушка (партнёр)»",
+          "opts": [
+            {
+              "txt": "novio/a",
+              "em": "💑"
+            },
+            {
+              "txt": "amigo/a",
+              "em": "🙋"
+            },
+            {
+              "txt": "hijo/a",
+              "em": "👶"
+            },
+            {
+              "txt": "primo/a",
+              "em": "👫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cita",
+              "свидание"
+            ],
+            [
+              "novio",
+              "парень"
+            ],
+            [
+              "novia",
+              "девушка"
+            ],
+            [
+              "pareja",
+              "пара / партнёр"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "enamorarse",
+              "влюбиться"
+            ],
+            [
+              "besar",
+              "целовать"
+            ],
+            [
+              "abrazar",
+              "обнимать"
+            ],
+            [
+              "casarse",
+              "жениться"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я влюбился в неё",
+          "tiles": [
+            "me",
+            "enamoré",
+            "de",
+            "ella",
+            "él"
+          ],
+          "answer": [
+            "me",
+            "enamoré",
+            "de",
+            "ella"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo una",
+            null,
+            "esta noche."
+          ],
+          "target": "cita",
+          "opts": [
+            "cita",
+            "casa",
+            "cara"
+          ],
+          "hint": "у меня свидание сегодня вечером"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу выйти с тобой",
+          "answer": "quiero salir contigo",
+          "answers": [
+            "quiero salir contigo",
+            "me gustaría salir contigo"
+          ],
+          "hint": "salir / quiero salir contigo"
+        }
+      ]
+    },
+    {
+      "id": "l177",
+      "name": "Problemas",
+      "emoji": "⚠️",
+      "desc": "Crisis, soluciones, ayuda",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Проблема»",
+          "opts": [
+            {
+              "txt": "problema",
+              "em": "⚠️"
+            },
+            {
+              "txt": "programa",
+              "em": "📺"
+            },
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            },
+            {
+              "txt": "producto",
+              "em": "📦"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Решение»",
+          "opts": [
+            {
+              "txt": "solución",
+              "em": "💡"
+            },
+            {
+              "txt": "sopa",
+              "em": "🍲"
+            },
+            {
+              "txt": "silla",
+              "em": "🪑"
+            },
+            {
+              "txt": "salida",
+              "em": "🚪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Помощь»",
+          "opts": [
+            {
+              "txt": "ayuda",
+              "em": "🤝"
+            },
+            {
+              "txt": "azúcar",
+              "em": "🍬"
+            },
+            {
+              "txt": "azul",
+              "em": "🔵"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "problema",
+              "проблема"
+            ],
+            [
+              "solución",
+              "решение"
+            ],
+            [
+              "crisis",
+              "кризис"
+            ],
+            [
+              "conflicto",
+              "конфликт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "resolver",
+              "решать"
+            ],
+            [
+              "ayudar",
+              "помогать"
+            ],
+            [
+              "enfrentar",
+              "противостоять"
+            ],
+            [
+              "superar",
+              "преодолевать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужна помощь",
+          "tiles": [
+            "necesito",
+            "ayuda",
+            "la",
+            "ayudar"
+          ],
+          "answer": [
+            "necesito",
+            "ayuda"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo un",
+            null,
+            "grave."
+          ],
+          "target": "problema",
+          "opts": [
+            "problema",
+            "programa",
+            "producto"
+          ],
+          "hint": "у меня серьёзная проблема"
+        },
+        {
+          "t": "typed",
+          "from": "Мы должны решить это вместе",
+          "answer": "tenemos que resolverlo juntos",
+          "answers": [
+            "tenemos que resolverlo juntos",
+            "debemos resolverlo juntos"
+          ],
+          "hint": "tener que / deber + resolverlo juntos"
+        }
+      ]
+    },
+    {
+      "id": "l178",
+      "name": "Voluntariado",
+      "emoji": "🤲",
+      "desc": "ONG, donar, ayudar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Волонтёр»",
+          "opts": [
+            {
+              "txt": "voluntario",
+              "em": "🙋"
+            },
+            {
+              "txt": "vecino",
+              "em": "🏘️"
+            },
+            {
+              "txt": "visitante",
+              "em": "🚶"
+            },
+            {
+              "txt": "vendedor",
+              "em": "🛒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Жертвовать»",
+          "opts": [
+            {
+              "txt": "donar",
+              "em": "🎁"
+            },
+            {
+              "txt": "dormir",
+              "em": "😴"
+            },
+            {
+              "txt": "doblar",
+              "em": "↩️"
+            },
+            {
+              "txt": "dudar",
+              "em": "🤔"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Благотворительность»",
+          "opts": [
+            {
+              "txt": "caridad",
+              "em": "❤️"
+            },
+            {
+              "txt": "calidad",
+              "em": "⭐"
+            },
+            {
+              "txt": "cantidad",
+              "em": "🔢"
+            },
+            {
+              "txt": "capital",
+              "em": "🏙️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "voluntario",
+              "волонтёр"
+            ],
+            [
+              "ONG",
+              "НКО"
+            ],
+            [
+              "donación",
+              "пожертвование"
+            ],
+            [
+              "caridad",
+              "благотворительность"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "donar",
+              "жертвовать"
+            ],
+            [
+              "ayudar",
+              "помогать"
+            ],
+            [
+              "recaudar",
+              "собирать (деньги)"
+            ],
+            [
+              "repartir",
+              "раздавать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я работаю волонтёром в больнице",
+          "tiles": [
+            "trabajo",
+            "como",
+            "voluntario",
+            "en",
+            "el",
+            "hospital"
+          ],
+          "answer": [
+            "trabajo",
+            "como",
+            "voluntario",
+            "en",
+            "el",
+            "hospital"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero",
+            null,
+            "dinero a la ONG."
+          ],
+          "target": "donar",
+          "opts": [
+            "donar",
+            "dormir",
+            "doblar"
+          ],
+          "hint": "я хочу пожертвовать деньги"
+        },
+        {
+          "t": "typed",
+          "from": "Помогать другим важно",
+          "answer": "ayudar a los demás es importante",
+          "answers": [
+            "ayudar a los demás es importante",
+            "es importante ayudar a los demás",
+            "ayudar a otros es importante"
+          ],
+          "hint": "ayudar a los demás / a otros"
+        }
+      ]
+    },
+    {
+      "id": "l179",
+      "name": "Clima",
+      "emoji": "🌡️",
+      "desc": "Calentamiento, sequía, plástico",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Глобальное потепление»",
+          "opts": [
+            {
+              "txt": "calentamiento global",
+              "em": "🌡️"
+            },
+            {
+              "txt": "calefacción central",
+              "em": "🔥"
+            },
+            {
+              "txt": "cambio rápido",
+              "em": "⚡"
+            },
+            {
+              "txt": "sol fuerte",
+              "em": "☀️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Засуха»",
+          "opts": [
+            {
+              "txt": "sequía",
+              "em": "🏜️"
+            },
+            {
+              "txt": "sequedad",
+              "em": "💨"
+            },
+            {
+              "txt": "secuela",
+              "em": "⛓️"
+            },
+            {
+              "txt": "senda",
+              "em": "🛤️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Загрязнение»",
+          "opts": [
+            {
+              "txt": "contaminación",
+              "em": "☣️"
+            },
+            {
+              "txt": "concentración",
+              "em": "🎯"
+            },
+            {
+              "txt": "conservación",
+              "em": "🧪"
+            },
+            {
+              "txt": "consternación",
+              "em": "😨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "calentamiento",
+              "потепление"
+            ],
+            [
+              "sequía",
+              "засуха"
+            ],
+            [
+              "inundación",
+              "наводнение"
+            ],
+            [
+              "contaminación",
+              "загрязнение"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "plástico",
+              "пластик"
+            ],
+            [
+              "energía solar",
+              "солнечная энергия"
+            ],
+            [
+              "reciclar",
+              "перерабатывать"
+            ],
+            [
+              "ahorrar agua",
+              "экономить воду"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мы должны защищать планету",
+          "tiles": [
+            "tenemos",
+            "que",
+            "proteger",
+            "el",
+            "planeta",
+            "la"
+          ],
+          "answer": [
+            "tenemos",
+            "que",
+            "proteger",
+            "el",
+            "planeta"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hay mucha",
+            null,
+            "en el aire."
+          ],
+          "target": "contaminación",
+          "opts": [
+            "contaminación",
+            "conservación",
+            "concentración"
+          ],
+          "hint": "в воздухе много загрязнения"
+        },
+        {
+          "t": "typed",
+          "from": "Глобальное потепление — серьёзная проблема",
+          "answer": "el calentamiento global es un problema grave",
+          "answers": [
+            "el calentamiento global es un problema grave",
+            "el calentamiento global es un problema serio"
+          ],
+          "hint": "un problema grave / serio"
+        }
+      ]
+    },
+    {
+      "id": "l180",
+      "name": "Repaso 29",
+      "emoji": "🤝",
+      "desc": "Repaso L176-L179",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Свидание»",
+          "opts": [
+            {
+              "txt": "cita",
+              "em": "💘"
+            },
+            {
+              "txt": "casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "cara",
+              "em": "😊"
+            },
+            {
+              "txt": "cama",
+              "em": "🛏️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Проблема»",
+          "opts": [
+            {
+              "txt": "problema",
+              "em": "⚠️"
+            },
+            {
+              "txt": "programa",
+              "em": "📺"
+            },
+            {
+              "txt": "producto",
+              "em": "📦"
+            },
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Волонтёр»",
+          "opts": [
+            {
+              "txt": "voluntario",
+              "em": "🙋"
+            },
+            {
+              "txt": "vendedor",
+              "em": "🛒"
+            },
+            {
+              "txt": "visitante",
+              "em": "🚶"
+            },
+            {
+              "txt": "vecino",
+              "em": "🏘️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Загрязнение»",
+          "opts": [
+            {
+              "txt": "contaminación",
+              "em": "☣️"
+            },
+            {
+              "txt": "conservación",
+              "em": "🧪"
+            },
+            {
+              "txt": "concentración",
+              "em": "🎯"
+            },
+            {
+              "txt": "consternación",
+              "em": "😨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "novio",
+              "парень"
+            ],
+            [
+              "novia",
+              "девушка"
+            ],
+            [
+              "pareja",
+              "пара"
+            ],
+            [
+              "enamorarse",
+              "влюбиться"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "solución",
+              "решение"
+            ],
+            [
+              "ayuda",
+              "помощь"
+            ],
+            [
+              "crisis",
+              "кризис"
+            ],
+            [
+              "resolver",
+              "решать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ONG",
+              "НКО"
+            ],
+            [
+              "donación",
+              "пожертвование"
+            ],
+            [
+              "sequía",
+              "засуха"
+            ],
+            [
+              "reciclar",
+              "перерабатывать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужна помощь",
+          "tiles": [
+            "necesito",
+            "ayuda",
+            "tu"
+          ],
+          "answer": [
+            "necesito",
+            "ayuda"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я влюбился в неё",
+          "tiles": [
+            "me",
+            "enamoré",
+            "de",
+            "ella"
+          ],
+          "answer": [
+            "me",
+            "enamoré",
+            "de",
+            "ella"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo un",
+            null,
+            "grave."
+          ],
+          "target": "problema",
+          "opts": [
+            "problema",
+            "programa",
+            "producto"
+          ],
+          "hint": "у меня серьёзная проблема"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero",
+            null,
+            "dinero."
+          ],
+          "target": "donar",
+          "opts": [
+            "donar",
+            "dormir",
+            "doblar"
+          ],
+          "hint": "я хочу пожертвовать"
+        },
+        {
+          "t": "typed",
+          "from": "Мы должны защищать планету",
+          "answer": "tenemos que proteger el planeta",
+          "answers": [
+            "tenemos que proteger el planeta",
+            "debemos proteger el planeta"
+          ],
+          "hint": "tener que / deber + proteger"
+        }
+      ]
+    }
+  ]
+}

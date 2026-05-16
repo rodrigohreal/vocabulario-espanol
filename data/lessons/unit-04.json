@@ -1,0 +1,773 @@
+{
+  "unit": 4,
+  "lessons": [
+    {
+      "id": "l16",
+      "name": "La Hora",
+      "emoji": "🕐",
+      "desc": "Decir la hora",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Час»",
+          "opts": [
+            {
+              "txt": "hora",
+              "em": "⏰"
+            },
+            {
+              "txt": "minuto",
+              "em": "⏱️"
+            },
+            {
+              "txt": "día",
+              "em": "☀️"
+            },
+            {
+              "txt": "noche",
+              "em": "🌙"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сейчас»",
+          "opts": [
+            {
+              "txt": "después",
+              "em": "➡️"
+            },
+            {
+              "txt": "ahora",
+              "em": "⏰"
+            },
+            {
+              "txt": "antes",
+              "em": "⬅️"
+            },
+            {
+              "txt": "tarde",
+              "em": "🌆"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Утро»",
+          "opts": [
+            {
+              "txt": "noche",
+              "em": "🌙"
+            },
+            {
+              "txt": "tarde",
+              "em": "🌆"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            },
+            {
+              "txt": "medio",
+              "em": "🕛"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hora",
+              "час"
+            ],
+            [
+              "minuto",
+              "минута"
+            ],
+            [
+              "mañana",
+              "утро"
+            ],
+            [
+              "noche",
+              "ночь"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "ahora",
+              "сейчас"
+            ],
+            [
+              "después",
+              "потом"
+            ],
+            [
+              "temprano",
+              "рано"
+            ],
+            [
+              "tarde",
+              "поздно/вечер"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Который час?",
+          "tiles": [
+            "qué",
+            "hora",
+            "es",
+            "son"
+          ],
+          "answer": [
+            "qué",
+            "hora",
+            "es"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Son las",
+            null,
+            "."
+          ],
+          "target": "tres",
+          "opts": [
+            "tres",
+            "tarde",
+            "lunes"
+          ],
+          "hint": "Сейчас три часа"
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "name": "Lugares",
+      "emoji": "🏙️",
+      "desc": "Lugares de la ciudad",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Школа»",
+          "opts": [
+            {
+              "txt": "escuela",
+              "em": "🏫"
+            },
+            {
+              "txt": "tienda",
+              "em": "🏪"
+            },
+            {
+              "txt": "hospital",
+              "em": "🏥"
+            },
+            {
+              "txt": "parque",
+              "em": "🌳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Больница»",
+          "opts": [
+            {
+              "txt": "banco",
+              "em": "🏦"
+            },
+            {
+              "txt": "hospital",
+              "em": "🏥"
+            },
+            {
+              "txt": "iglesia",
+              "em": "⛪"
+            },
+            {
+              "txt": "mercado",
+              "em": "🛒"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Магазин»",
+          "opts": [
+            {
+              "txt": "parque",
+              "em": "🌳"
+            },
+            {
+              "txt": "museo",
+              "em": "🏛️"
+            },
+            {
+              "txt": "tienda",
+              "em": "🏪"
+            },
+            {
+              "txt": "estación",
+              "em": "🚉"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "escuela",
+              "школа"
+            ],
+            [
+              "hospital",
+              "больница"
+            ],
+            [
+              "tienda",
+              "магазин"
+            ],
+            [
+              "parque",
+              "парк"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "banco",
+              "банк"
+            ],
+            [
+              "iglesia",
+              "церковь"
+            ],
+            [
+              "museo",
+              "музей"
+            ],
+            [
+              "estación",
+              "станция"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я иду в школу",
+          "tiles": [
+            "voy",
+            "a",
+            "la",
+            "escuela",
+            "casa"
+          ],
+          "answer": [
+            "voy",
+            "a",
+            "la",
+            "escuela"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El médico trabaja en el",
+            null,
+            "."
+          ],
+          "target": "hospital",
+          "opts": [
+            "hospital",
+            "parque",
+            "banco"
+          ],
+          "hint": "Врач работает в больнице"
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "name": "Profesiones",
+      "emoji": "👷",
+      "desc": "Trabajos y oficios",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Учитель»",
+          "opts": [
+            {
+              "txt": "profesor",
+              "em": "👩‍🏫"
+            },
+            {
+              "txt": "médico",
+              "em": "👨‍⚕️"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "policía",
+              "em": "👮"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Врач»",
+          "opts": [
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "médico",
+              "em": "👨‍⚕️"
+            },
+            {
+              "txt": "bombero",
+              "em": "🧑‍🚒"
+            },
+            {
+              "txt": "piloto",
+              "em": "✈️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Повар»",
+          "opts": [
+            {
+              "txt": "pintor",
+              "em": "🎨"
+            },
+            {
+              "txt": "músico",
+              "em": "🎵"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "escritor",
+              "em": "📝"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "profesor",
+              "учитель"
+            ],
+            [
+              "médico",
+              "врач"
+            ],
+            [
+              "policía",
+              "полицейский"
+            ],
+            [
+              "bombero",
+              "пожарный"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cocinero",
+              "повар"
+            ],
+            [
+              "piloto",
+              "пилот"
+            ],
+            [
+              "músico",
+              "музыкант"
+            ],
+            [
+              "pintor",
+              "художник"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я учитель",
+          "tiles": [
+            "soy",
+            "profesor",
+            "yo",
+            "eres"
+          ],
+          "answer": [
+            "soy",
+            "profesor"
+          ],
+          "answers": [
+            [
+              "soy",
+              "profesor"
+            ],
+            [
+              "yo",
+              "soy",
+              "profesor"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "cura a los enfermos."
+          ],
+          "target": "médico",
+          "opts": [
+            "médico",
+            "piloto",
+            "pintor"
+          ],
+          "hint": "Врач лечит больных"
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "name": "Sentimientos",
+      "emoji": "😊",
+      "desc": "Cómo te sientes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Счастливый»",
+          "opts": [
+            {
+              "txt": "feliz",
+              "em": "😊"
+            },
+            {
+              "txt": "triste",
+              "em": "😢"
+            },
+            {
+              "txt": "enojado",
+              "em": "😠"
+            },
+            {
+              "txt": "cansado",
+              "em": "😴"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Грустный»",
+          "opts": [
+            {
+              "txt": "enfermo",
+              "em": "🤒"
+            },
+            {
+              "txt": "triste",
+              "em": "😢"
+            },
+            {
+              "txt": "feliz",
+              "em": "😊"
+            },
+            {
+              "txt": "asustado",
+              "em": "😨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Уставший»",
+          "opts": [
+            {
+              "txt": "feliz",
+              "em": "😊"
+            },
+            {
+              "txt": "enojado",
+              "em": "😠"
+            },
+            {
+              "txt": "cansado",
+              "em": "😴"
+            },
+            {
+              "txt": "enfermo",
+              "em": "🤒"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "feliz",
+              "счастливый"
+            ],
+            [
+              "triste",
+              "грустный"
+            ],
+            [
+              "enojado",
+              "злой"
+            ],
+            [
+              "cansado",
+              "уставший"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "enfermo",
+              "больной"
+            ],
+            [
+              "asustado",
+              "испуганный"
+            ],
+            [
+              "aburrido",
+              "скучающий"
+            ],
+            [
+              "emocionado",
+              "взволнованный"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я счастлив",
+          "tiles": [
+            "estoy",
+            "feliz",
+            "triste",
+            "soy"
+          ],
+          "answer": [
+            "estoy",
+            "feliz"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estoy muy",
+            null,
+            "."
+          ],
+          "target": "cansado",
+          "opts": [
+            "cansado",
+            "lunes",
+            "mesa"
+          ],
+          "hint": "Я очень устал"
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "name": "Naturaleza",
+      "emoji": "🌳",
+      "desc": "Naturaleza y paisajes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Дерево»",
+          "opts": [
+            {
+              "txt": "árbol",
+              "em": "🌳"
+            },
+            {
+              "txt": "flor",
+              "em": "🌸"
+            },
+            {
+              "txt": "piedra",
+              "em": "🪨"
+            },
+            {
+              "txt": "río",
+              "em": "🏞️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Цветок»",
+          "opts": [
+            {
+              "txt": "hoja",
+              "em": "🍃"
+            },
+            {
+              "txt": "flor",
+              "em": "🌸"
+            },
+            {
+              "txt": "sol",
+              "em": "☀️"
+            },
+            {
+              "txt": "mar",
+              "em": "🌊"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Гора»",
+          "opts": [
+            {
+              "txt": "lago",
+              "em": "🏞️"
+            },
+            {
+              "txt": "bosque",
+              "em": "🌲"
+            },
+            {
+              "txt": "montaña",
+              "em": "⛰️"
+            },
+            {
+              "txt": "playa",
+              "em": "🏖️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "árbol",
+              "дерево"
+            ],
+            [
+              "flor",
+              "цветок"
+            ],
+            [
+              "hoja",
+              "лист"
+            ],
+            [
+              "hierba",
+              "трава"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mar",
+              "море"
+            ],
+            [
+              "río",
+              "река"
+            ],
+            [
+              "montaña",
+              "гора"
+            ],
+            [
+              "bosque",
+              "лес"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Зелёное дерево",
+          "tiles": [
+            "un",
+            "árbol",
+            "verde",
+            "rojo"
+          ],
+          "answer": [
+            "un",
+            "árbol",
+            "verde"
+          ],
+          "answers": [
+            [
+              "un",
+              "árbol",
+              "verde"
+            ],
+            [
+              "árbol",
+              "verde"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "es azul."
+          ],
+          "target": "mar",
+          "opts": [
+            "mar",
+            "árbol",
+            "flor"
+          ],
+          "hint": "Море синее"
+        }
+      ]
+    }
+  ]
+}

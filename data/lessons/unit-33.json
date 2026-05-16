@@ -1,0 +1,889 @@
+{
+  "unit": 33,
+  "lessons": [
+    {
+      "id": "l161",
+      "name": "Dentista",
+      "emoji": "🦷",
+      "desc": "Dientes, caries, dolor",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Зуб»",
+          "opts": [
+            {
+              "txt": "diente",
+              "em": "🦷"
+            },
+            {
+              "txt": "dedo",
+              "em": "🖐️"
+            },
+            {
+              "txt": "día",
+              "em": "☀️"
+            },
+            {
+              "txt": "dios",
+              "em": "⛪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Стоматолог»",
+          "opts": [
+            {
+              "txt": "dentista",
+              "em": "🦷"
+            },
+            {
+              "txt": "doctor",
+              "em": "👨‍⚕️"
+            },
+            {
+              "txt": "director",
+              "em": "👔"
+            },
+            {
+              "txt": "discípulo",
+              "em": "👨‍🎓"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Зубная щётка»",
+          "opts": [
+            {
+              "txt": "cepillo de dientes",
+              "em": "🪥"
+            },
+            {
+              "txt": "cuchillo",
+              "em": "🔪"
+            },
+            {
+              "txt": "cuchara",
+              "em": "🥄"
+            },
+            {
+              "txt": "cuello",
+              "em": "👔"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "diente",
+              "зуб"
+            ],
+            [
+              "dentista",
+              "стоматолог"
+            ],
+            [
+              "caries",
+              "кариес"
+            ],
+            [
+              "encía",
+              "десна"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cepillo de dientes",
+              "зубная щётка"
+            ],
+            [
+              "pasta de dientes",
+              "зубная паста"
+            ],
+            [
+              "hilo dental",
+              "зубная нить"
+            ],
+            [
+              "boca",
+              "рот"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня болит зуб",
+          "tiles": [
+            "me",
+            "duele",
+            "un",
+            "diente",
+            "la",
+            "dolor"
+          ],
+          "answer": [
+            "me",
+            "duele",
+            "un",
+            "diente"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy al",
+            null,
+            "mañana."
+          ],
+          "target": "dentista",
+          "opts": [
+            "dentista",
+            "director",
+            "doctor"
+          ],
+          "hint": "я иду к стоматологу завтра"
+        },
+        {
+          "t": "typed",
+          "from": "Я чищу зубы каждый день",
+          "answer": "me cepillo los dientes cada día",
+          "answers": [
+            "me cepillo los dientes cada día",
+            "me cepillo los dientes todos los días",
+            "me lavo los dientes cada día"
+          ],
+          "hint": "me cepillo / me lavo los dientes"
+        }
+      ]
+    },
+    {
+      "id": "l162",
+      "name": "Cirugía",
+      "emoji": "🩺",
+      "desc": "Operación, hospital, recuperación",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Операция»",
+          "opts": [
+            {
+              "txt": "operación",
+              "em": "🩺"
+            },
+            {
+              "txt": "opinión",
+              "em": "💭"
+            },
+            {
+              "txt": "oportunidad",
+              "em": "🍀"
+            },
+            {
+              "txt": "orquesta",
+              "em": "🎻"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Хирург»",
+          "opts": [
+            {
+              "txt": "cirujano",
+              "em": "🩺"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "conductor",
+              "em": "🚗"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Анестезия / наркоз»",
+          "opts": [
+            {
+              "txt": "anestesia",
+              "em": "💉"
+            },
+            {
+              "txt": "amistad",
+              "em": "👬"
+            },
+            {
+              "txt": "apertura",
+              "em": "🔓"
+            },
+            {
+              "txt": "aldea",
+              "em": "🏘️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "operación",
+              "операция"
+            ],
+            [
+              "cirujano",
+              "хирург"
+            ],
+            [
+              "anestesia",
+              "наркоз"
+            ],
+            [
+              "quirófano",
+              "операционная"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "recuperación",
+              "восстановление"
+            ],
+            [
+              "herida",
+              "рана"
+            ],
+            [
+              "cicatriz",
+              "шрам"
+            ],
+            [
+              "punto",
+              "шов"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Хирург делает операцию",
+          "tiles": [
+            "el",
+            "cirujano",
+            "hace",
+            "una",
+            "operación",
+            "pero"
+          ],
+          "answer": [
+            "el",
+            "cirujano",
+            "hace",
+            "una",
+            "operación"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La",
+            null,
+            "fue exitosa."
+          ],
+          "target": "operación",
+          "opts": [
+            "operación",
+            "opinión",
+            "oportunidad"
+          ],
+          "hint": "операция была успешной"
+        },
+        {
+          "t": "typed",
+          "from": "Мне нужна операция",
+          "answer": "necesito una operación",
+          "answers": [
+            "necesito una operación",
+            "necesito una cirugía"
+          ],
+          "hint": "necesito una operación / cirugía"
+        }
+      ]
+    },
+    {
+      "id": "l163",
+      "name": "Embarazo",
+      "emoji": "🤰",
+      "desc": "Bebé, parto, esperar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Беременная»",
+          "opts": [
+            {
+              "txt": "embarazada",
+              "em": "🤰"
+            },
+            {
+              "txt": "enojada",
+              "em": "😠"
+            },
+            {
+              "txt": "enferma",
+              "em": "🤒"
+            },
+            {
+              "txt": "enamorada",
+              "em": "😍"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Роды»",
+          "opts": [
+            {
+              "txt": "parto",
+              "em": "👶"
+            },
+            {
+              "txt": "parque",
+              "em": "🌳"
+            },
+            {
+              "txt": "partido",
+              "em": "⚽"
+            },
+            {
+              "txt": "pared",
+              "em": "🧱"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Беременность»",
+          "opts": [
+            {
+              "txt": "embarazo",
+              "em": "🤰"
+            },
+            {
+              "txt": "embarque",
+              "em": "🛬"
+            },
+            {
+              "txt": "embajada",
+              "em": "🏛️"
+            },
+            {
+              "txt": "emoción",
+              "em": "😊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "embarazo",
+              "беременность"
+            ],
+            [
+              "embarazada",
+              "беременная"
+            ],
+            [
+              "bebé",
+              "малыш"
+            ],
+            [
+              "parto",
+              "роды"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "esperar un bebé",
+              "ждать ребёнка"
+            ],
+            [
+              "mes",
+              "месяц"
+            ],
+            [
+              "recién nacido",
+              "новорождённый"
+            ],
+            [
+              "guardería",
+              "детский сад"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Она беременна 8 месяцев",
+          "tiles": [
+            "ella",
+            "está",
+            "embarazada",
+            "de",
+            "ocho",
+            "meses"
+          ],
+          "answer": [
+            "ella",
+            "está",
+            "embarazada",
+            "de",
+            "ocho",
+            "meses"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi hermana está",
+            null,
+            "."
+          ],
+          "target": "embarazada",
+          "opts": [
+            "embarazada",
+            "enferma",
+            "enojada"
+          ],
+          "hint": "моя сестра беременна"
+        },
+        {
+          "t": "typed",
+          "from": "Мы ждём ребёнка",
+          "answer": "esperamos un bebé",
+          "answers": [
+            "esperamos un bebé",
+            "estamos esperando un bebé"
+          ],
+          "hint": "esperar un bebé"
+        }
+      ]
+    },
+    {
+      "id": "l164",
+      "name": "Salud mental",
+      "emoji": "🧠",
+      "desc": "Estrés, terapia, ansiedad",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Стресс»",
+          "opts": [
+            {
+              "txt": "estrés",
+              "em": "😫"
+            },
+            {
+              "txt": "estreno",
+              "em": "🎬"
+            },
+            {
+              "txt": "estación",
+              "em": "🚉"
+            },
+            {
+              "txt": "estilo",
+              "em": "👗"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Тревога»",
+          "opts": [
+            {
+              "txt": "ansiedad",
+              "em": "😰"
+            },
+            {
+              "txt": "amistad",
+              "em": "👬"
+            },
+            {
+              "txt": "aldea",
+              "em": "🏘️"
+            },
+            {
+              "txt": "antigüedad",
+              "em": "⏳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Терапия»",
+          "opts": [
+            {
+              "txt": "terapia",
+              "em": "💬"
+            },
+            {
+              "txt": "tarea",
+              "em": "📝"
+            },
+            {
+              "txt": "tijera",
+              "em": "✂️"
+            },
+            {
+              "txt": "tortilla",
+              "em": "🌯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estrés",
+              "стресс"
+            ],
+            [
+              "ansiedad",
+              "тревога"
+            ],
+            [
+              "depresión",
+              "депрессия"
+            ],
+            [
+              "terapia",
+              "терапия"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "relajarse",
+              "расслабляться"
+            ],
+            [
+              "respirar",
+              "дышать"
+            ],
+            [
+              "descansar",
+              "отдыхать"
+            ],
+            [
+              "meditar",
+              "медитировать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужно расслабиться",
+          "tiles": [
+            "necesito",
+            "relajarme",
+            "descansar",
+            "me"
+          ],
+          "answer": [
+            "necesito",
+            "relajarme"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo mucho",
+            null,
+            "en el trabajo."
+          ],
+          "target": "estrés",
+          "opts": [
+            "estrés",
+            "estilo",
+            "estreno"
+          ],
+          "hint": "у меня много стресса на работе"
+        },
+        {
+          "t": "typed",
+          "from": "Я хожу к психологу",
+          "answer": "voy al psicólogo",
+          "answers": [
+            "voy al psicólogo",
+            "voy a la psicóloga",
+            "voy a terapia"
+          ],
+          "hint": "ir al psicólogo / a terapia"
+        }
+      ]
+    },
+    {
+      "id": "l165",
+      "name": "Repaso 27",
+      "emoji": "🩺",
+      "desc": "Repaso L161-L164",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Зуб»",
+          "opts": [
+            {
+              "txt": "diente",
+              "em": "🦷"
+            },
+            {
+              "txt": "dedo",
+              "em": "🖐️"
+            },
+            {
+              "txt": "día",
+              "em": "☀️"
+            },
+            {
+              "txt": "duele",
+              "em": "🤕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Хирург»",
+          "opts": [
+            {
+              "txt": "cirujano",
+              "em": "🩺"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            },
+            {
+              "txt": "conductor",
+              "em": "🚗"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Беременная»",
+          "opts": [
+            {
+              "txt": "embarazada",
+              "em": "🤰"
+            },
+            {
+              "txt": "enojada",
+              "em": "😠"
+            },
+            {
+              "txt": "enamorada",
+              "em": "😍"
+            },
+            {
+              "txt": "enferma",
+              "em": "🤒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Стресс»",
+          "opts": [
+            {
+              "txt": "estrés",
+              "em": "😫"
+            },
+            {
+              "txt": "estilo",
+              "em": "👗"
+            },
+            {
+              "txt": "estreno",
+              "em": "🎬"
+            },
+            {
+              "txt": "estación",
+              "em": "🚉"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "dentista",
+              "стоматолог"
+            ],
+            [
+              "cepillo de dientes",
+              "зубная щётка"
+            ],
+            [
+              "caries",
+              "кариес"
+            ],
+            [
+              "boca",
+              "рот"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "operación",
+              "операция"
+            ],
+            [
+              "anestesia",
+              "наркоз"
+            ],
+            [
+              "herida",
+              "рана"
+            ],
+            [
+              "cicatriz",
+              "шрам"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "parto",
+              "роды"
+            ],
+            [
+              "bebé",
+              "малыш"
+            ],
+            [
+              "ansiedad",
+              "тревога"
+            ],
+            [
+              "terapia",
+              "терапия"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня болит зуб",
+          "tiles": [
+            "me",
+            "duele",
+            "un",
+            "diente"
+          ],
+          "answer": [
+            "me",
+            "duele",
+            "un",
+            "diente"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мы ждём ребёнка",
+          "tiles": [
+            "esperamos",
+            "un",
+            "bebé",
+            "a"
+          ],
+          "answer": [
+            "esperamos",
+            "un",
+            "bebé"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy al",
+            null,
+            "mañana."
+          ],
+          "target": "dentista",
+          "opts": [
+            "dentista",
+            "director",
+            "doctor"
+          ],
+          "hint": "я иду к стоматологу завтра"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo mucho",
+            null,
+            "."
+          ],
+          "target": "estrés",
+          "opts": [
+            "estrés",
+            "estilo",
+            "estación"
+          ],
+          "hint": "у меня много стресса"
+        },
+        {
+          "t": "typed",
+          "from": "Мне нужна операция",
+          "answer": "necesito una operación",
+          "answers": [
+            "necesito una operación",
+            "necesito una cirugía"
+          ],
+          "hint": "necesito una operación / cirugía"
+        }
+      ]
+    }
+  ]
+}

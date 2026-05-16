@@ -1,0 +1,180 @@
+{
+  "unit": 57,
+  "lessons": [
+    {
+      "id": "l281",
+      "name": "Emprendimiento",
+      "emoji": "🚀",
+      "desc": "Startup, inversor, financiación",
+      "exercises": [
+        { "t": "pick", "q": "«Стартап»", "opts": [
+          { "txt": "startup / emprendimiento","em": "🚀" },
+          { "txt": "fábrica",                 "em": "❌" },
+          { "txt": "tienda",                  "em": "❌" },
+          { "txt": "oficina",                 "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Инвестор»", "opts": [
+          { "txt": "inversor",  "em": "💼" },
+          { "txt": "cliente",   "em": "❌" },
+          { "txt": "vendedor",  "em": "❌" },
+          { "txt": "operario",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["emprendedor",    "предприниматель"],
+          ["inversor",       "инвестор"],
+          ["financiación",   "финансирование"],
+          ["socio",          "партнёр"]
+        ]},
+        { "t": "match", "pairs": [
+          ["ronda",      "раунд"],
+          ["capital",    "капитал"],
+          ["riesgo",     "риск"],
+          ["beneficio",  "прибыль"]
+        ]},
+        { "t": "translate", "from": "Мы ищем инвестора для стартапа", "tiles": ["buscamos", "un", "inversor", "para", "nuestra", "startup", "tienda"], "answer": ["buscamos", "un", "inversor", "para", "nuestra", "startup"] },
+        { "t": "fill", "sentence": ["Mi", null, "tiene una nueva idea."], "target": "socio", "opts": ["socio", "perro", "viaje"], "hint": "Партнёр" },
+        { "t": "typed", "from": "Запускаем компанию", "answer": "lanzamos una empresa", "answers": ["lanzamos una empresa", "vamos a lanzar una empresa", "estamos lanzando una empresa"], "hint": "lanzar = запускать" }
+      ]
+    },
+    {
+      "id": "l282",
+      "name": "Bolsa de valores",
+      "emoji": "📈",
+      "desc": "Acción, dividendo, mercado",
+      "exercises": [
+        { "t": "pick", "q": "«Акция»", "opts": [
+          { "txt": "acción",   "em": "📈" },
+          { "txt": "bono",     "em": "❌" },
+          { "txt": "cheque",   "em": "❌" },
+          { "txt": "moneda",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Дивиденд»", "opts": [
+          { "txt": "dividendo","em": "💰" },
+          { "txt": "interés",  "em": "❌" },
+          { "txt": "deuda",    "em": "❌" },
+          { "txt": "factura",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["acción",     "акция"],
+          ["bono",       "облигация"],
+          ["dividendo",  "дивиденд"],
+          ["bolsa",      "биржа"]
+        ]},
+        { "t": "match", "pairs": [
+          ["subir",      "расти"],
+          ["bajar",      "падать"],
+          ["ganancia",   "доход"],
+          ["pérdida",    "убыток"]
+        ]},
+        { "t": "translate", "from": "Акции упали сегодня", "tiles": ["las", "acciones", "bajaron", "hoy", "subieron"], "answer": ["las", "acciones", "bajaron", "hoy"] },
+        { "t": "fill", "sentence": ["Invierto en la", null, "."], "target": "bolsa", "opts": ["bolsa", "ducha", "música"], "hint": "Инвестирую на бирже" },
+        { "t": "typed", "from": "Купил облигации", "answer": "compré bonos", "answers": ["compré bonos", "he comprado bonos"], "hint": "bono = облигация" }
+      ]
+    },
+    {
+      "id": "l283",
+      "name": "Criptomonedas",
+      "emoji": "🪙",
+      "desc": "Bitcoin, blockchain, billetera",
+      "exercises": [
+        { "t": "pick", "q": "«Криптовалюта»", "opts": [
+          { "txt": "criptomoneda","em": "🪙" },
+          { "txt": "billete",     "em": "❌" },
+          { "txt": "tarjeta",     "em": "❌" },
+          { "txt": "factura",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Кошелёк (крипто)»", "opts": [
+          { "txt": "billetera / cartera","em": "👛" },
+          { "txt": "banco",              "em": "❌" },
+          { "txt": "fondo",              "em": "❌" },
+          { "txt": "factura",            "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["bitcoin",   "биткоин"],
+          ["blockchain","блокчейн"],
+          ["minar",     "майнить"],
+          ["billetera", "кошелёк"]
+        ]},
+        { "t": "match", "pairs": [
+          ["volatilidad", "волатильность"],
+          ["criptomoneda","криптовалюта"],
+          ["token",       "токен"],
+          ["NFT",         "НФТ"]
+        ]},
+        { "t": "translate", "from": "У биткоина высокая волатильность", "tiles": ["el", "bitcoin", "tiene", "alta", "volatilidad", "baja"], "answer": ["el", "bitcoin", "tiene", "alta", "volatilidad"] },
+        { "t": "fill", "sentence": ["Guarda tus claves en una", null, "segura."], "target": "billetera", "opts": ["billetera", "cocina", "puerta"], "hint": "В безопасном кошельке" },
+        { "t": "typed", "from": "Я инвестировал в криптовалюты", "answer": "invertí en criptomonedas", "answers": ["invertí en criptomonedas", "he invertido en criptomonedas"], "hint": "invertir en" }
+      ]
+    },
+    {
+      "id": "l284",
+      "name": "Contabilidad",
+      "emoji": "🧮",
+      "desc": "Factura, balance, impuesto",
+      "exercises": [
+        { "t": "pick", "q": "«Счёт / накладная»", "opts": [
+          { "txt": "factura",  "em": "🧾" },
+          { "txt": "recibo",   "em": "❌" },
+          { "txt": "menú",     "em": "❌" },
+          { "txt": "carta",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Налог»", "opts": [
+          { "txt": "impuesto", "em": "💰" },
+          { "txt": "factura",  "em": "❌" },
+          { "txt": "sueldo",   "em": "❌" },
+          { "txt": "ahorro",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["factura",  "счёт-фактура"],
+          ["recibo",   "квитанция"],
+          ["impuesto", "налог"],
+          ["IVA",      "НДС"]
+        ]},
+        { "t": "match", "pairs": [
+          ["balance",   "баланс"],
+          ["ingreso",   "доход"],
+          ["gasto",     "расход"],
+          ["beneficio", "прибыль"]
+        ]},
+        { "t": "translate", "from": "Налог включён в цену", "tiles": ["el", "impuesto", "está", "incluido", "en", "el", "precio", "menú"], "answer": ["el", "impuesto", "está", "incluido", "en", "el", "precio"] },
+        { "t": "fill", "sentence": ["¿Tiene la", null, ", por favor?"], "target": "factura", "opts": ["factura", "fiesta", "puerta"], "hint": "У вас есть счёт?" },
+        { "t": "typed", "from": "В этом месяце много расходов", "answer": "tengo muchos gastos este mes", "answers": ["tengo muchos gastos este mes", "este mes tengo muchos gastos"], "hint": "gasto = расход" }
+      ]
+    },
+    {
+      "id": "l285",
+      "name": "Recursos humanos",
+      "emoji": "👔",
+      "desc": "Contratar, despedir, sueldo",
+      "exercises": [
+        { "t": "pick", "q": "«Нанимать»", "opts": [
+          { "txt": "contratar","em": "🤝" },
+          { "txt": "despedir", "em": "❌" },
+          { "txt": "ascender", "em": "❌" },
+          { "txt": "renunciar","em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Увольнять»", "opts": [
+          { "txt": "despedir","em": "🚪" },
+          { "txt": "contratar","em": "❌" },
+          { "txt": "comprar", "em": "❌" },
+          { "txt": "vender",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["contrato",  "контракт"],
+          ["sueldo / salario","зарплата"],
+          ["nómina",    "ведомость"],
+          ["bonus",     "бонус"]
+        ]},
+        { "t": "match", "pairs": [
+          ["jefe",       "начальник"],
+          ["empleado",   "сотрудник"],
+          ["entrevista", "собеседование"],
+          ["currículum", "резюме"]
+        ]},
+        { "t": "translate", "from": "Они меня уволили", "tiles": ["me", "despidieron", "contrataron"], "answer": ["me", "despidieron"] },
+        { "t": "fill", "sentence": ["Necesitamos", null, "más personal."], "target": "contratar", "opts": ["contratar", "comer", "bailar"], "hint": "Нанять больше людей" },
+        { "t": "typed", "from": "Сколько твоя зарплата?", "answer": "cuánto es tu sueldo", "answers": ["cuánto es tu sueldo", "cuánto ganas"], "hint": "sueldo = salario" }
+      ]
+    }
+  ]
+}

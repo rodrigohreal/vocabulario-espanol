@@ -1,0 +1,215 @@
+{
+  "unit": 43,
+  "lessons": [
+    {
+      "id": "l211",
+      "name": "Pretérito -ar",
+      "emoji": "📜",
+      "desc": "Regulares -ar: hablé, hablaste",
+      "exercises": [
+        { "t": "pick", "q": "«Я говорил вчера»", "opts": [
+          { "txt": "hablé",     "em": "💬" },
+          { "txt": "hablo",     "em": "❌" },
+          { "txt": "hablaba",   "em": "❌" },
+          { "txt": "hablar",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Ты вчера купил»", "opts": [
+          { "txt": "compré",     "em": "❌" },
+          { "txt": "compraste",  "em": "🛒" },
+          { "txt": "compras",    "em": "❌" },
+          { "txt": "compró",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Они танцевали»", "opts": [
+          { "txt": "bailaron",  "em": "💃" },
+          { "txt": "bailaban",  "em": "❌" },
+          { "txt": "bailan",    "em": "❌" },
+          { "txt": "bailamos",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["hablé",      "я говорил"],
+          ["hablaste",   "ты говорил"],
+          ["habló",      "он говорил"],
+          ["hablamos",   "мы говорили"]
+        ]},
+        { "t": "match", "pairs": [
+          ["hablasteis", "вы говорили (исп.)"],
+          ["hablaron",   "они говорили"],
+          ["trabajé",    "я работал"],
+          ["estudió",    "он учился"]
+        ]},
+        { "t": "translate", "from": "Вчера я работал восемь часов", "tiles": ["ayer", "trabajé", "ocho", "horas", "trabajo"], "answer": ["ayer", "trabajé", "ocho", "horas"] },
+        { "t": "fill", "sentence": ["El año pasado", null, "español."], "target": "estudié", "opts": ["estudié", "estudio", "estudiaba"], "hint": "в прошлом году я учил испанский" },
+        { "t": "fill", "sentence": ["Mis padres", null, "en México."], "target": "viajaron", "opts": ["viajaron", "viajan", "viajaban"], "hint": "родители ездили в Мексику" },
+        { "t": "typed", "from": "Анна позвонила вчера", "answer": "Ana llamó ayer", "answers": ["ana llamó ayer", "ayer ana llamó", "ana me llamó ayer"], "hint": "llamar → llamó" }
+      ]
+    },
+    {
+      "id": "l212",
+      "name": "Pretérito -er/-ir",
+      "emoji": "🍽️",
+      "desc": "Regulares -er/-ir: comí, viví",
+      "exercises": [
+        { "t": "pick", "q": "«Я съел»", "opts": [
+          { "txt": "comí",   "em": "🍔" },
+          { "txt": "como",   "em": "❌" },
+          { "txt": "comía",  "em": "❌" },
+          { "txt": "comer",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Они жили»", "opts": [
+          { "txt": "viven",    "em": "❌" },
+          { "txt": "vivieron", "em": "🏠" },
+          { "txt": "vivían",   "em": "❌" },
+          { "txt": "viva",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Ты открыл»", "opts": [
+          { "txt": "abriste", "em": "🚪" },
+          { "txt": "abrí",    "em": "❌" },
+          { "txt": "abres",   "em": "❌" },
+          { "txt": "abrió",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["comí",     "я съел"],
+          ["comiste",  "ты съел"],
+          ["comió",    "он съел"],
+          ["comimos",  "мы съели"]
+        ]},
+        { "t": "match", "pairs": [
+          ["viví",      "я жил"],
+          ["viviste",   "ты жил"],
+          ["vivió",     "он жил"],
+          ["vivieron",  "они жили"]
+        ]},
+        { "t": "translate", "from": "Я написал письмо вчера", "tiles": ["escribí", "una", "carta", "ayer", "escribo"], "answer": ["escribí", "una", "carta", "ayer"] },
+        { "t": "fill", "sentence": ["¿", null, " la película?"], "target": "Viste", "opts": ["Viste", "Ves", "Veías"], "hint": "Ты смотрел фильм?" },
+        { "t": "fill", "sentence": ["Nosotros", null, "tres horas."], "target": "corrimos", "opts": ["corrimos", "corremos", "corríamos"], "hint": "Мы бегали 3 часа" },
+        { "t": "typed", "from": "Я родился в Москве", "answer": "nací en Moscú", "answers": ["nací en moscú", "yo nací en moscú"], "hint": "nacer → nací" }
+      ]
+    },
+    {
+      "id": "l213",
+      "name": "Pret. irreg. I",
+      "emoji": "🔀",
+      "desc": "Ser/Ir, Dar, Ver (одинаковые формы!)",
+      "exercises": [
+        { "t": "pick", "q": "«Я пошёл / был» (одинаково)", "opts": [
+          { "txt": "fui",    "em": "✈️" },
+          { "txt": "iba",    "em": "❌" },
+          { "txt": "voy",    "em": "❌" },
+          { "txt": "fuiste", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я дал»", "opts": [
+          { "txt": "doy",   "em": "❌" },
+          { "txt": "di",    "em": "🎁" },
+          { "txt": "daba",  "em": "❌" },
+          { "txt": "diste", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Я увидел»", "opts": [
+          { "txt": "veo",  "em": "❌" },
+          { "txt": "vi",   "em": "👀" },
+          { "txt": "veía", "em": "❌" },
+          { "txt": "ver",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["fui",     "я пошёл / я был"],
+          ["fuiste",  "ты пошёл / был"],
+          ["fue",     "он пошёл / был"],
+          ["fuimos",  "мы пошли / были"]
+        ]},
+        { "t": "match", "pairs": [
+          ["di",     "я дал"],
+          ["diste",  "ты дал"],
+          ["dio",    "он дал"],
+          ["dieron", "они дали"]
+        ]},
+        { "t": "translate", "from": "Вчера я пошёл в кино", "tiles": ["ayer", "fui", "al", "cine", "fue"], "answer": ["ayer", "fui", "al", "cine"] },
+        { "t": "fill", "sentence": ["Carlos", null, "presidente."], "target": "fue", "opts": ["fue", "era", "es"], "hint": "Карлос был президентом (краткое)" },
+        { "t": "fill", "sentence": ["¿Le", null, "tú el regalo?"], "target": "diste", "opts": ["diste", "das", "dabas"], "hint": "Ты подарил ему подарок?" },
+        { "t": "typed", "from": "Я увидел Марию вчера", "answer": "vi a María ayer", "answers": ["vi a maría ayer", "ayer vi a maría", "vi a maria ayer"], "hint": "ver → vi (с предлогом a перед людьми)" }
+      ]
+    },
+    {
+      "id": "l214",
+      "name": "Pret. irreg. II",
+      "emoji": "💪",
+      "desc": "Tener, Estar, Poder, Poner, Saber",
+      "exercises": [
+        { "t": "pick", "q": "«У меня было / я имел»", "opts": [
+          { "txt": "tengo",  "em": "❌" },
+          { "txt": "tuve",   "em": "🎒" },
+          { "txt": "tenía",  "em": "❌" },
+          { "txt": "tener",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Я был (где-то)»", "opts": [
+          { "txt": "estuve", "em": "📍" },
+          { "txt": "estoy",  "em": "❌" },
+          { "txt": "estaba", "em": "❌" },
+          { "txt": "fui",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я смог»", "opts": [
+          { "txt": "puedo", "em": "❌" },
+          { "txt": "pude",  "em": "✊" },
+          { "txt": "podía", "em": "❌" },
+          { "txt": "puse",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["tuve",     "я имел"],
+          ["tuviste",  "ты имел"],
+          ["tuvo",     "он имел"],
+          ["tuvieron", "они имели"]
+        ]},
+        { "t": "match", "pairs": [
+          ["estuve",  "я был (где)"],
+          ["pude",    "я смог"],
+          ["puse",    "я положил"],
+          ["supe",    "я узнал"]
+        ]},
+        { "t": "translate", "from": "Вчера у меня было много работы", "tiles": ["ayer", "tuve", "mucho", "trabajo", "tenía"], "answer": ["ayer", "tuve", "mucho", "trabajo"] },
+        { "t": "fill", "sentence": ["Anoche", null, "en casa de Ana."], "target": "estuve", "opts": ["estuve", "estaba", "fui"], "hint": "Вчера вечером я был у Анны" },
+        { "t": "fill", "sentence": ["No", null, "venir, lo siento."], "target": "pude", "opts": ["pude", "podía", "puedo"], "hint": "Я не смог прийти (точный факт)" },
+        { "t": "typed", "from": "Я узнал правду", "answer": "supe la verdad", "answers": ["supe la verdad", "yo supe la verdad"], "hint": "saber → supe (узнал в момент)" }
+      ]
+    },
+    {
+      "id": "l215",
+      "name": "Pret. irreg. III",
+      "emoji": "🗣️",
+      "desc": "Decir, Hacer, Venir, Traer",
+      "exercises": [
+        { "t": "pick", "q": "«Я сказал»", "opts": [
+          { "txt": "digo",    "em": "❌" },
+          { "txt": "dije",    "em": "💬" },
+          { "txt": "decía",   "em": "❌" },
+          { "txt": "diciendo","em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Я сделал»", "opts": [
+          { "txt": "hago",   "em": "❌" },
+          { "txt": "hice",   "em": "🔨" },
+          { "txt": "hacía",  "em": "❌" },
+          { "txt": "haciendo","em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Они пришли»", "opts": [
+          { "txt": "vienen",   "em": "❌" },
+          { "txt": "vinieron", "em": "🚶" },
+          { "txt": "venían",   "em": "❌" },
+          { "txt": "vienen",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["dije",     "я сказал"],
+          ["dijiste",  "ты сказал"],
+          ["dijo",     "он сказал"],
+          ["dijeron",  "они сказали (внимание: -jeron!)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["hice",     "я сделал"],
+          ["hiciste",  "ты сделал"],
+          ["hizo",     "он сделал (z!)"],
+          ["hicieron", "они сделали"]
+        ]},
+        { "t": "translate", "from": "Я ничего не сказал", "tiles": ["no", "dije", "nada", "digo"], "answer": ["no", "dije", "nada"] },
+        { "t": "fill", "sentence": ["¿Quién", null, "esto?"], "target": "hizo", "opts": ["hizo", "hace", "hacía"], "hint": "Кто это сделал? (3-е лицо: hizo)" },
+        { "t": "fill", "sentence": ["Mis amigos", null, "ayer."], "target": "vinieron", "opts": ["vinieron", "vienen", "venían"], "hint": "Друзья пришли вчера" },
+        { "t": "typed", "from": "Они принесли подарок", "answer": "trajeron un regalo", "answers": ["trajeron un regalo", "trajeron el regalo"], "hint": "traer → trajeron" }
+      ]
+    }
+  ]
+}

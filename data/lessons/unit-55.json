@@ -1,0 +1,180 @@
+{
+  "unit": 55,
+  "lessons": [
+    {
+      "id": "l271",
+      "name": "Catástrofes",
+      "emoji": "🌪️",
+      "desc": "Terremoto, inundación, huracán",
+      "exercises": [
+        { "t": "pick", "q": "«Землетрясение»", "opts": [
+          { "txt": "terremoto", "em": "🌋" },
+          { "txt": "inundación","em": "🌊" },
+          { "txt": "huracán",   "em": "🌪️" },
+          { "txt": "sequía",    "em": "🏜️" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Наводнение»", "opts": [
+          { "txt": "inundación","em": "🌊" },
+          { "txt": "incendio",  "em": "🔥" },
+          { "txt": "tornado",   "em": "❌" },
+          { "txt": "sequía",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["terremoto",  "землетрясение"],
+          ["inundación", "наводнение"],
+          ["huracán",    "ураган"],
+          ["sequía",     "засуха"]
+        ]},
+        { "t": "match", "pairs": [
+          ["incendio",      "пожар"],
+          ["tsunami",       "цунами"],
+          ["volcán",        "вулкан"],
+          ["evacuación",    "эвакуация"]
+        ]},
+        { "t": "translate", "from": "Был сильный пожар вчера", "tiles": ["hubo", "un", "incendio", "fuerte", "ayer", "agua"], "answer": ["hubo", "un", "incendio", "fuerte", "ayer"] },
+        { "t": "fill", "sentence": ["La gente tuvo que", null, "."], "target": "evacuar", "opts": ["evacuar", "comer", "cantar"], "hint": "Людям пришлось эвакуироваться" },
+        { "t": "typed", "from": "Землетрясение силой шесть", "answer": "un terremoto de magnitud seis", "answers": ["un terremoto de magnitud seis", "un terremoto de seis grados"], "hint": "magnitud = магнитуда" }
+      ]
+    },
+    {
+      "id": "l272",
+      "name": "Ecología",
+      "emoji": "🌍",
+      "desc": "Contaminación, planeta, basura",
+      "exercises": [
+        { "t": "pick", "q": "«Загрязнение»", "opts": [
+          { "txt": "contaminación","em": "🏭" },
+          { "txt": "reciclaje",    "em": "♻️" },
+          { "txt": "naturaleza",   "em": "🌳" },
+          { "txt": "agua",         "em": "💧" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Мусор»", "opts": [
+          { "txt": "basura",   "em": "🗑️" },
+          { "txt": "papel",    "em": "❌" },
+          { "txt": "plástico", "em": "❌" },
+          { "txt": "tierra",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["planeta",      "планета"],
+          ["medio ambiente","окружающая среда"],
+          ["contaminación", "загрязнение"],
+          ["basura",        "мусор"]
+        ]},
+        { "t": "match", "pairs": [
+          ["ecologista",   "эколог"],
+          ["sostenible",   "устойчивый"],
+          ["calentamiento global","глобальное потеп."],
+          ["emisiones",    "выбросы"]
+        ]},
+        { "t": "translate", "from": "Мы должны защищать планету", "tiles": ["debemos", "proteger", "el", "planeta", "comprar"], "answer": ["debemos", "proteger", "el", "planeta"] },
+        { "t": "fill", "sentence": ["La", null, "del aire es preocupante."], "target": "contaminación", "opts": ["contaminación", "cocina", "puerta"], "hint": "Загрязнение воздуха" },
+        { "t": "typed", "from": "Не выбрасывай мусор на улице", "answer": "no tires basura en la calle", "answers": ["no tires basura en la calle", "no tires la basura en la calle"], "hint": "tirar = бросать" }
+      ]
+    },
+    {
+      "id": "l273",
+      "name": "Energías renovables",
+      "emoji": "🔋",
+      "desc": "Solar, eólica, biomasa",
+      "exercises": [
+        { "t": "pick", "q": "«Солнечная энергия»", "opts": [
+          { "txt": "energía solar",   "em": "☀️" },
+          { "txt": "energía eólica",  "em": "💨" },
+          { "txt": "energía nuclear", "em": "☢️" },
+          { "txt": "carbón",          "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Ветроэнергетика»", "opts": [
+          { "txt": "eólica",  "em": "🌬️" },
+          { "txt": "solar",   "em": "❌" },
+          { "txt": "fósil",   "em": "❌" },
+          { "txt": "carbón",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["renovable",  "возобновляемый"],
+          ["solar",      "солнечный"],
+          ["eólica",     "ветровой"],
+          ["biomasa",    "биомасса"]
+        ]},
+        { "t": "match", "pairs": [
+          ["panel solar",   "солнечная панель"],
+          ["aerogenerador", "ветряк"],
+          ["red eléctrica", "электросеть"],
+          ["batería",       "аккумулятор"]
+        ]},
+        { "t": "translate", "from": "Мы используем солнечные панели", "tiles": ["usamos", "paneles", "solares", "eólicos"], "answer": ["usamos", "paneles", "solares"] },
+        { "t": "fill", "sentence": ["España invierte en energía", null, "."], "target": "renovable", "opts": ["renovable", "nueva", "salada"], "hint": "Возобновляемая энергия" },
+        { "t": "typed", "from": "Энергия из ветра", "answer": "energía del viento", "answers": ["energía del viento", "energía eólica"], "hint": "del viento" }
+      ]
+    },
+    {
+      "id": "l274",
+      "name": "Reciclaje",
+      "emoji": "♻️",
+      "desc": "Orgánico, plástico, vidrio",
+      "exercises": [
+        { "t": "pick", "q": "«Стекло»", "opts": [
+          { "txt": "vidrio",   "em": "🍾" },
+          { "txt": "plástico", "em": "🥤" },
+          { "txt": "papel",    "em": "📄" },
+          { "txt": "metal",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Контейнер»", "opts": [
+          { "txt": "contenedor","em": "🚮" },
+          { "txt": "bolsa",     "em": "❌" },
+          { "txt": "caja",      "em": "❌" },
+          { "txt": "jarra",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["orgánico", "органический"],
+          ["plástico", "пластик"],
+          ["papel",    "бумага"],
+          ["vidrio",   "стекло"]
+        ]},
+        { "t": "match", "pairs": [
+          ["reciclar",   "перерабатывать"],
+          ["reutilizar", "повторно использовать"],
+          ["reducir",    "сокращать"],
+          ["compost",    "компост"]
+        ]},
+        { "t": "translate", "from": "Я перерабатываю весь пластик", "tiles": ["reciclo", "todo", "el", "plástico", "papel"], "answer": ["reciclo", "todo", "el", "plástico"] },
+        { "t": "fill", "sentence": ["Esto va en el", null, "amarillo."], "target": "contenedor", "opts": ["contenedor", "horno", "vaso"], "hint": "В жёлтый контейнер" },
+        { "t": "typed", "from": "Уменьши, используй повторно, перерабатывай", "answer": "reducir, reutilizar, reciclar", "answers": ["reducir, reutilizar, reciclar", "reduce, reutiliza, recicla"], "hint": "три R" }
+      ]
+    },
+    {
+      "id": "l275",
+      "name": "Astronomía",
+      "emoji": "🔭",
+      "desc": "Planetas, estrellas, galaxia",
+      "exercises": [
+        { "t": "pick", "q": "«Звезда»", "opts": [
+          { "txt": "estrella", "em": "⭐" },
+          { "txt": "planeta",  "em": "🪐" },
+          { "txt": "galaxia",  "em": "🌌" },
+          { "txt": "luna",     "em": "🌙" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Планета»", "opts": [
+          { "txt": "planeta",  "em": "🪐" },
+          { "txt": "satélite", "em": "❌" },
+          { "txt": "cometa",   "em": "☄️" },
+          { "txt": "sol",      "em": "☀️" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["estrella", "звезда"],
+          ["planeta",  "планета"],
+          ["galaxia",  "галактика"],
+          ["luna",     "луна"]
+        ]},
+        { "t": "match", "pairs": [
+          ["telescopio", "телескоп"],
+          ["órbita",     "орбита"],
+          ["cohete",     "ракета"],
+          ["astronauta", "космонавт"]
+        ]},
+        { "t": "translate", "from": "Луна вращается вокруг Земли", "tiles": ["la", "luna", "gira", "alrededor", "de", "la", "Tierra", "sol"], "answer": ["la", "luna", "gira", "alrededor", "de", "la", "Tierra"] },
+        { "t": "fill", "sentence": ["Veo muchas", null, " en el cielo."], "target": "estrellas", "opts": ["estrellas", "casas", "manos"], "hint": "Много звёзд на небе" },
+        { "t": "typed", "from": "Млечный Путь", "answer": "la Vía Láctea", "answers": ["la vía láctea", "vía láctea"], "hint": "имя нашей галактики" }
+      ]
+    }
+  ]
+}

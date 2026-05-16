@@ -1,0 +1,204 @@
+{
+  "unit": 47,
+  "lessons": [
+    {
+      "id": "l231",
+      "name": "Mariscos",
+      "emoji": "🦐",
+      "desc": "Camarón, pulpo, mejillones…",
+      "exercises": [
+        { "t": "pick", "q": "«Креветка»", "opts": [
+          { "txt": "camarón",  "em": "🦐" },
+          { "txt": "cangrejo", "em": "🦀" },
+          { "txt": "pulpo",    "em": "🐙" },
+          { "txt": "almeja",   "em": "🐚" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Осьминог»", "opts": [
+          { "txt": "calamar", "em": "🦑" },
+          { "txt": "pulpo",   "em": "🐙" },
+          { "txt": "langosta","em": "🦞" },
+          { "txt": "mejillón","em": "🦪" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["camarón / gamba", "креветка"],
+          ["langosta",        "омар"],
+          ["calamar",         "кальмар"],
+          ["pulpo",           "осьминог"]
+        ]},
+        { "t": "match", "pairs": [
+          ["mejillón",  "мидия"],
+          ["almeja",    "моллюск"],
+          ["ostra",     "устрица"],
+          ["cangrejo",  "краб"]
+        ]},
+        { "t": "translate", "from": "Я люблю осьминога с картошкой", "tiles": ["me", "gusta", "el", "pulpo", "con", "patatas", "papas"], "answer": ["me", "gusta", "el", "pulpo", "con", "patatas"] },
+        { "t": "fill", "sentence": ["La paella lleva", null, "."], "target": "mariscos", "opts": ["mariscos", "vegetales", "frutas"], "hint": "Паэлья с морепродуктами" },
+        { "t": "typed", "from": "Хочу полкило креветок", "answer": "quiero medio kilo de camarones", "answers": ["quiero medio kilo de camarones", "quiero medio kilo de gambas"], "hint": "camarón (LatAm) / gamba (Esp.)" }
+      ]
+    },
+    {
+      "id": "l232",
+      "name": "Carnes",
+      "emoji": "🥩",
+      "desc": "Res, cerdo, cordero, jamón",
+      "exercises": [
+        { "t": "pick", "q": "«Говядина»", "opts": [
+          { "txt": "res / ternera", "em": "🐄" },
+          { "txt": "cerdo",         "em": "🐖" },
+          { "txt": "pollo",         "em": "🐔" },
+          { "txt": "cordero",       "em": "🐑" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Свинина»", "opts": [
+          { "txt": "ternera", "em": "❌" },
+          { "txt": "cerdo",   "em": "🐖" },
+          { "txt": "pavo",    "em": "❌" },
+          { "txt": "pato",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Хамон» (испанский)", "opts": [
+          { "txt": "jamón",     "em": "🍖" },
+          { "txt": "salchicha", "em": "🌭" },
+          { "txt": "chorizo",   "em": "❌" },
+          { "txt": "tocino",    "em": "🥓" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["ternera",  "телятина / говядина"],
+          ["cordero",  "баранина"],
+          ["pavo",     "индейка"],
+          ["pato",     "утка"]
+        ]},
+        { "t": "match", "pairs": [
+          ["chorizo",   "колбаса с перцем"],
+          ["salchicha", "сосиска"],
+          ["tocino",    "бекон"],
+          ["jamón serrano","хамон сыровяленый"]
+        ]},
+        { "t": "translate", "from": "Я хочу стейк из говядины", "tiles": ["quiero", "un", "filete", "de", "ternera", "cerdo"], "answer": ["quiero", "un", "filete", "de", "ternera"] },
+        { "t": "fill", "sentence": ["Para Navidad comemos", null, "."], "target": "cordero", "opts": ["cordero", "calamar", "pato"], "hint": "На Рождество едим баранину" },
+        { "t": "typed", "from": "Курица с рисом", "answer": "pollo con arroz", "answers": ["pollo con arroz", "el pollo con arroz"], "hint": "pollo = курица" }
+      ]
+    },
+    {
+      "id": "l233",
+      "name": "Especias",
+      "emoji": "🧂",
+      "desc": "Sal, pimienta, ajo, comino",
+      "exercises": [
+        { "t": "pick", "q": "«Соль»", "opts": [
+          { "txt": "sal",      "em": "🧂" },
+          { "txt": "pimienta", "em": "🌶️" },
+          { "txt": "azúcar",   "em": "🍬" },
+          { "txt": "vinagre",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Перец чёрный»", "opts": [
+          { "txt": "pimienta",  "em": "⚫" },
+          { "txt": "pimiento",  "em": "🫑" },
+          { "txt": "ajo",       "em": "🧄" },
+          { "txt": "perejil",   "em": "🌿" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Чеснок»", "opts": [
+          { "txt": "cebolla", "em": "🧅" },
+          { "txt": "ajo",     "em": "🧄" },
+          { "txt": "jengibre","em": "❌" },
+          { "txt": "laurel",  "em": "🌿" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["sal",      "соль"],
+          ["pimienta", "перец чёрный"],
+          ["azúcar",   "сахар"],
+          ["vinagre",  "уксус"]
+        ]},
+        { "t": "match", "pairs": [
+          ["ajo",       "чеснок"],
+          ["cilantro",  "кинза"],
+          ["comino",    "тмин"],
+          ["canela",    "корица"]
+        ]},
+        { "t": "translate", "from": "Добавь немного соли и перца", "tiles": ["añade", "un", "poco", "de", "sal", "y", "pimienta", "azúcar"], "answer": ["añade", "un", "poco", "de", "sal", "y", "pimienta"] },
+        { "t": "fill", "sentence": ["El gazpacho lleva", null, "."], "target": "ajo", "opts": ["ajo", "canela", "azúcar"], "hint": "В гаспачо чеснок" },
+        { "t": "typed", "from": "Корица и сахар", "answer": "canela y azúcar", "answers": ["canela y azúcar", "azúcar y canela"], "hint": "corizza... canela!" }
+      ]
+    },
+    {
+      "id": "l234",
+      "name": "Lácteos",
+      "emoji": "🥛",
+      "desc": "Mantequilla, yogur, queso, crema",
+      "exercises": [
+        { "t": "pick", "q": "«Сливочное масло»", "opts": [
+          { "txt": "aceite",      "em": "❌" },
+          { "txt": "mantequilla", "em": "🧈" },
+          { "txt": "margarina",   "em": "❌" },
+          { "txt": "yogur",       "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Йогурт»", "opts": [
+          { "txt": "yogur",  "em": "🍶" },
+          { "txt": "queso",  "em": "🧀" },
+          { "txt": "crema",  "em": "❌" },
+          { "txt": "leche",  "em": "🥛" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Творог»", "opts": [
+          { "txt": "queso",     "em": "❌" },
+          { "txt": "requesón",  "em": "🧀" },
+          { "txt": "nata",      "em": "❌" },
+          { "txt": "yogur",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["leche",       "молоко"],
+          ["queso",       "сыр"],
+          ["mantequilla", "масло"],
+          ["yogur",       "йогурт"]
+        ]},
+        { "t": "match", "pairs": [
+          ["nata / crema",  "сливки"],
+          ["requesón",      "творог"],
+          ["mozzarella",    "моцарелла"],
+          ["parmesano",     "пармезан"]
+        ]},
+        { "t": "translate", "from": "Хочу йогурт со сливками", "tiles": ["quiero", "un", "yogur", "con", "nata", "queso"], "answer": ["quiero", "un", "yogur", "con", "nata"] },
+        { "t": "fill", "sentence": ["El tostado lleva", null, " y mermelada."], "target": "mantequilla", "opts": ["mantequilla", "vinagre", "azúcar"], "hint": "Тост с маслом и джемом" },
+        { "t": "typed", "from": "Кусочек сыра", "answer": "un trozo de queso", "answers": ["un trozo de queso", "una porción de queso", "un pedazo de queso"], "hint": "trozo = кусочек" }
+      ]
+    },
+    {
+      "id": "l235",
+      "name": "Repostería",
+      "emoji": "🍰",
+      "desc": "Galletas, churros, tartas",
+      "exercises": [
+        { "t": "pick", "q": "«Печенье»", "opts": [
+          { "txt": "galleta", "em": "🍪" },
+          { "txt": "pastel",  "em": "🎂" },
+          { "txt": "flan",    "em": "🍮" },
+          { "txt": "tarta",   "em": "🍰" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Чуррос» (испанская сладость)", "opts": [
+          { "txt": "churro",    "em": "🥨" },
+          { "txt": "tarta",     "em": "🍰" },
+          { "txt": "magdalena", "em": "🧁" },
+          { "txt": "flan",      "em": "🍮" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Кекс / маффин»", "opts": [
+          { "txt": "magdalena", "em": "🧁" },
+          { "txt": "tarta",     "em": "❌" },
+          { "txt": "pan",       "em": "❌" },
+          { "txt": "torta",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["pastel / torta", "торт"],
+          ["tarta",          "торт / тарт"],
+          ["flan",           "флан / пудинг"],
+          ["bizcocho",       "бисквит"]
+        ]},
+        { "t": "match", "pairs": [
+          ["galleta",   "печенье"],
+          ["magdalena", "кекс"],
+          ["churro",    "чуррос"],
+          ["donut / dona", "пончик"]
+        ]},
+        { "t": "translate", "from": "Хочу шоколадный торт", "tiles": ["quiero", "una", "tarta", "de", "chocolate", "queso"], "answer": ["quiero", "una", "tarta", "de", "chocolate"] },
+        { "t": "fill", "sentence": ["Para el cumpleaños haré un", null, "."], "target": "pastel", "opts": ["pastel", "flan", "yogur"], "hint": "Сделаю торт на день рождения" },
+        { "t": "typed", "from": "Чуррос с шоколадом", "answer": "churros con chocolate", "answers": ["churros con chocolate", "unos churros con chocolate"], "hint": "классическое исп. сочетание" }
+      ]
+    }
+  ]
+}

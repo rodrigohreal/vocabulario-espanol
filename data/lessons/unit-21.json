@@ -1,0 +1,764 @@
+{
+  "unit": 21,
+  "lessons": [
+    {
+      "id": "l101",
+      "name": "Cuerpo III",
+      "emoji": "🫀",
+      "desc": "Órganos internos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Сердце»",
+          "opts": [
+            {
+              "txt": "corazón",
+              "em": "❤️"
+            },
+            {
+              "txt": "pulmón",
+              "em": "🫁"
+            },
+            {
+              "txt": "estómago",
+              "em": "🫃"
+            },
+            {
+              "txt": "cerebro",
+              "em": "🧠"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Лёгкие»",
+          "opts": [
+            {
+              "txt": "hígado",
+              "em": "🫘"
+            },
+            {
+              "txt": "pulmones",
+              "em": "🫁"
+            },
+            {
+              "txt": "riñón",
+              "em": "🫘"
+            },
+            {
+              "txt": "sangre",
+              "em": "🩸"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Мозг»",
+          "opts": [
+            {
+              "txt": "corazón",
+              "em": "❤️"
+            },
+            {
+              "txt": "hueso",
+              "em": "🦴"
+            },
+            {
+              "txt": "cerebro",
+              "em": "🧠"
+            },
+            {
+              "txt": "piel",
+              "em": "✋"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "corazón",
+              "сердце"
+            ],
+            [
+              "cerebro",
+              "мозг"
+            ],
+            [
+              "estómago",
+              "желудок"
+            ],
+            [
+              "pulmón",
+              "лёгкое"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hueso",
+              "кость"
+            ],
+            [
+              "sangre",
+              "кровь"
+            ],
+            [
+              "piel",
+              "кожа"
+            ],
+            [
+              "hígado",
+              "печень"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня болит сердце",
+          "tiles": [
+            "me",
+            "duele",
+            "el",
+            "corazón",
+            "la"
+          ],
+          "answer": [
+            "me",
+            "duele",
+            "el",
+            "corazón"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "piensa."
+          ],
+          "target": "cerebro",
+          "opts": [
+            "cerebro",
+            "hueso",
+            "piel"
+          ],
+          "hint": "Мозг думает"
+        }
+      ]
+    },
+    {
+      "id": "l102",
+      "name": "Mente",
+      "emoji": "💭",
+      "desc": "Pensar, recordar, soñar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Думать»",
+          "opts": [
+            {
+              "txt": "pensar",
+              "em": "🤔"
+            },
+            {
+              "txt": "recordar",
+              "em": "🧠"
+            },
+            {
+              "txt": "olvidar",
+              "em": "🤷"
+            },
+            {
+              "txt": "soñar",
+              "em": "💭"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Помнить»",
+          "opts": [
+            {
+              "txt": "olvidar",
+              "em": "🤷"
+            },
+            {
+              "txt": "recordar",
+              "em": "🧠"
+            },
+            {
+              "txt": "sentir",
+              "em": "💖"
+            },
+            {
+              "txt": "creer",
+              "em": "🙏"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Забывать»",
+          "opts": [
+            {
+              "txt": "pensar",
+              "em": "🤔"
+            },
+            {
+              "txt": "recordar",
+              "em": "🧠"
+            },
+            {
+              "txt": "olvidar",
+              "em": "🤷"
+            },
+            {
+              "txt": "saber",
+              "em": "💡"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "pensar",
+              "думать"
+            ],
+            [
+              "recordar",
+              "помнить"
+            ],
+            [
+              "olvidar",
+              "забывать"
+            ],
+            [
+              "soñar",
+              "мечтать/спать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "creer",
+              "верить"
+            ],
+            [
+              "saber",
+              "знать"
+            ],
+            [
+              "entender",
+              "понимать"
+            ],
+            [
+              "imaginar",
+              "представлять"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я не помню",
+          "tiles": [
+            "no",
+            "recuerdo",
+            "olvido",
+            "me"
+          ],
+          "answer": [
+            "no",
+            "recuerdo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ahora",
+            null,
+            "en ti."
+          ],
+          "target": "pienso",
+          "opts": [
+            "pienso",
+            "olvido",
+            "sé"
+          ],
+          "hint": "Сейчас я думаю о тебе"
+        }
+      ]
+    },
+    {
+      "id": "l103",
+      "name": "Dormir",
+      "emoji": "😴",
+      "desc": "Sueño y descanso",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Просыпаться»",
+          "opts": [
+            {
+              "txt": "despertarse",
+              "em": "⏰"
+            },
+            {
+              "txt": "acostarse",
+              "em": "🛏️"
+            },
+            {
+              "txt": "soñar",
+              "em": "💭"
+            },
+            {
+              "txt": "roncar",
+              "em": "😪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Подушка»",
+          "opts": [
+            {
+              "txt": "cama",
+              "em": "🛏️"
+            },
+            {
+              "txt": "almohada",
+              "em": "🛌"
+            },
+            {
+              "txt": "manta",
+              "em": "🧣"
+            },
+            {
+              "txt": "sábana",
+              "em": "📜"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Одеяло»",
+          "opts": [
+            {
+              "txt": "sábana",
+              "em": "📜"
+            },
+            {
+              "txt": "almohada",
+              "em": "🛌"
+            },
+            {
+              "txt": "manta",
+              "em": "🧣"
+            },
+            {
+              "txt": "cama",
+              "em": "🛏️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cama",
+              "кровать"
+            ],
+            [
+              "almohada",
+              "подушка"
+            ],
+            [
+              "manta",
+              "одеяло"
+            ],
+            [
+              "sábana",
+              "простыня"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "dormirse",
+              "засыпать"
+            ],
+            [
+              "despertarse",
+              "просыпаться"
+            ],
+            [
+              "descansar",
+              "отдыхать"
+            ],
+            [
+              "soñar",
+              "видеть сон"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу спать",
+          "tiles": [
+            "tengo",
+            "sueño",
+            "quiero",
+            "dormir",
+            "comer"
+          ],
+          "answer": [
+            "tengo",
+            "sueño"
+          ],
+          "answers": [
+            [
+              "tengo",
+              "sueño"
+            ],
+            [
+              "quiero",
+              "dormir"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Por la noche",
+            null,
+            "en mi cama."
+          ],
+          "target": "duermo",
+          "opts": [
+            "duermo",
+            "corro",
+            "leo"
+          ],
+          "hint": "Ночью я сплю в своей кровати"
+        }
+      ]
+    },
+    {
+      "id": "l104",
+      "name": "Ejercicio",
+      "emoji": "🏋️",
+      "desc": "Gimnasio y fitness",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Спортзал»",
+          "opts": [
+            {
+              "txt": "gimnasio",
+              "em": "🏋️"
+            },
+            {
+              "txt": "parque",
+              "em": "🌳"
+            },
+            {
+              "txt": "piscina",
+              "em": "🏊"
+            },
+            {
+              "txt": "estadio",
+              "em": "🏟️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сильный»",
+          "opts": [
+            {
+              "txt": "débil",
+              "em": "🥱"
+            },
+            {
+              "txt": "fuerte",
+              "em": "💪"
+            },
+            {
+              "txt": "rápido",
+              "em": "⚡"
+            },
+            {
+              "txt": "lento",
+              "em": "🐢"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Мускул»",
+          "opts": [
+            {
+              "txt": "hueso",
+              "em": "🦴"
+            },
+            {
+              "txt": "sangre",
+              "em": "🩸"
+            },
+            {
+              "txt": "músculo",
+              "em": "💪"
+            },
+            {
+              "txt": "piel",
+              "em": "✋"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gimnasio",
+              "спортзал"
+            ],
+            [
+              "músculo",
+              "мускул"
+            ],
+            [
+              "fuerte",
+              "сильный"
+            ],
+            [
+              "débil",
+              "слабый"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "entrenar",
+              "тренироваться"
+            ],
+            [
+              "levantar",
+              "поднимать"
+            ],
+            [
+              "estirarse",
+              "растягиваться"
+            ],
+            [
+              "sudar",
+              "потеть"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я бегаю в парке",
+          "tiles": [
+            "corro",
+            "en",
+            "el",
+            "parque",
+            "gimnasio"
+          ],
+          "answer": [
+            "corro",
+            "en",
+            "el",
+            "parque"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy al",
+            null,
+            "tres veces por semana."
+          ],
+          "target": "gimnasio",
+          "opts": [
+            "gimnasio",
+            "cama",
+            "cielo"
+          ],
+          "hint": "Я хожу в спортзал три раза в неделю"
+        }
+      ]
+    },
+    {
+      "id": "l105",
+      "name": "Repaso 16",
+      "emoji": "🔁",
+      "desc": "Repasa lecciones 101-104",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Сердце»",
+          "opts": [
+            {
+              "txt": "pulmón",
+              "em": "🫁"
+            },
+            {
+              "txt": "corazón",
+              "em": "❤️"
+            },
+            {
+              "txt": "estómago",
+              "em": "🫃"
+            },
+            {
+              "txt": "cerebro",
+              "em": "🧠"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Помнить»",
+          "opts": [
+            {
+              "txt": "olvidar",
+              "em": "🤷"
+            },
+            {
+              "txt": "pensar",
+              "em": "🤔"
+            },
+            {
+              "txt": "recordar",
+              "em": "🧠"
+            },
+            {
+              "txt": "soñar",
+              "em": "💭"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Сильный»",
+          "opts": [
+            {
+              "txt": "fuerte",
+              "em": "💪"
+            },
+            {
+              "txt": "débil",
+              "em": "🥱"
+            },
+            {
+              "txt": "lento",
+              "em": "🐢"
+            },
+            {
+              "txt": "rápido",
+              "em": "⚡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "corazón",
+              "сердце"
+            ],
+            [
+              "cerebro",
+              "мозг"
+            ],
+            [
+              "cama",
+              "кровать"
+            ],
+            [
+              "almohada",
+              "подушка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "pensar",
+              "думать"
+            ],
+            [
+              "recordar",
+              "помнить"
+            ],
+            [
+              "gimnasio",
+              "спортзал"
+            ],
+            [
+              "músculo",
+              "мускул"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я не помню",
+          "tiles": [
+            "no",
+            "recuerdo",
+            "olvido",
+            "me"
+          ],
+          "answer": [
+            "no",
+            "recuerdo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Por la noche",
+            null,
+            "en mi cama."
+          ],
+          "target": "duermo",
+          "opts": [
+            "duermo",
+            "corro",
+            "leo"
+          ],
+          "hint": "Ночью я сплю в кровати"
+        }
+      ]
+    }
+  ]
+}

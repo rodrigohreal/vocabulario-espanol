@@ -1,0 +1,202 @@
+{
+  "unit": 42,
+  "lessons": [
+    {
+      "id": "l206",
+      "name": "Artículos",
+      "emoji": "📰",
+      "desc": "el, la, los, las, un, una",
+      "exercises": [
+        { "t": "pick", "q": "«Книга» (определённый)", "opts": [
+          { "txt": "el libro",  "em": "📖" },
+          { "txt": "la libro",  "em": "❌" },
+          { "txt": "un libro",  "em": "❌" },
+          { "txt": "los libro", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Какая-то девушка»", "opts": [
+          { "txt": "la chica",   "em": "❌" },
+          { "txt": "una chica",  "em": "👧" },
+          { "txt": "un chica",   "em": "❌" },
+          { "txt": "unas chica", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["el",  "м. ед. (тот)"],
+          ["la",  "ж. ед. (та)"],
+          ["los", "м. мн. (те)"],
+          ["las", "ж. мн. (те)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["un",   "м. ед. (один/какой-то)"],
+          ["una",  "ж. ед. (одна/какая-то)"],
+          ["unos", "м. мн. (несколько)"],
+          ["unas", "ж. мн. (несколько)"]
+        ]},
+        { "t": "translate", "from": "Студенты изучают язык", "tiles": ["los", "estudiantes", "estudian", "el", "idioma", "la"], "answer": ["los", "estudiantes", "estudian", "el", "idioma"] },
+        { "t": "fill", "sentence": ["Quiero", null, "café, por favor."], "target": "un", "opts": ["un", "el", "una"], "hint": "хочу кофе (какой-то)" },
+        { "t": "fill", "sentence": [null, "sol brilla."], "target": "El", "opts": ["El", "La", "Un"], "hint": "Солнце светит (определённое)" },
+        { "t": "typed", "from": "Это книга", "answer": "es un libro", "answers": ["es un libro", "esto es un libro"], "hint": "впервые упомянуто → un" }
+      ]
+    },
+    {
+      "id": "l207",
+      "name": "al, del, lo",
+      "emoji": "🔗",
+      "desc": "Contracciones y artículo neutro",
+      "exercises": [
+        { "t": "pick", "q": "«К парку»", "opts": [
+          { "txt": "a el parque",  "em": "❌" },
+          { "txt": "al parque",    "em": "🌳" },
+          { "txt": "a la parque",  "em": "❌" },
+          { "txt": "del parque",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Из ресторана»", "opts": [
+          { "txt": "de el restaurante", "em": "❌" },
+          { "txt": "del restaurante",   "em": "🍴" },
+          { "txt": "al restaurante",    "em": "❌" },
+          { "txt": "a el restaurante",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Хорошее (то, что хорошо)»", "opts": [
+          { "txt": "el bueno",  "em": "❌" },
+          { "txt": "lo bueno",  "em": "✨" },
+          { "txt": "la buena",  "em": "❌" },
+          { "txt": "los buenos","em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["a + el → al",   "к + м.р."],
+          ["de + el → del", "от/из + м.р."],
+          ["a la",          "(не сокращается)"],
+          ["de la",         "(не сокращается)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["lo bueno",    "хорошее (нейтр.)"],
+          ["lo malo",     "плохое"],
+          ["lo importante","важное"],
+          ["lo que",      "то, что"]
+        ]},
+        { "t": "translate", "from": "Иду в магазин и возвращаюсь из парка", "tiles": ["voy", "al", "supermercado", "y", "vuelvo", "del", "parque", "a", "de"], "answer": ["voy", "al", "supermercado", "y", "vuelvo", "del", "parque"] },
+        { "t": "fill", "sentence": ["Lo importante es", null, "."], "target": "estudiar", "opts": ["estudiar", "estudio", "estudia"], "hint": "важно — учиться (инфинитив после lo)" },
+        { "t": "fill", "sentence": ["Vamos", null, "cine."], "target": "al", "opts": ["al", "del", "a"], "hint": "идём в кино" },
+        { "t": "typed", "from": "Самое лучшее — отдых", "answer": "lo mejor es descansar", "answers": ["lo mejor es descansar", "lo mejor es el descanso"], "hint": "lo + прил. = абстрактное" }
+      ]
+    },
+    {
+      "id": "l208",
+      "name": "Adjetivos: concordancia",
+      "emoji": "🎯",
+      "desc": "Согласование рода и числа",
+      "exercises": [
+        { "t": "pick", "q": "«Высокая девочка»", "opts": [
+          { "txt": "la chica alto",  "em": "❌" },
+          { "txt": "la chica alta",  "em": "👧" },
+          { "txt": "el chica alta",  "em": "❌" },
+          { "txt": "la chicas alta", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Умные мальчики»", "opts": [
+          { "txt": "los chicos inteligente",  "em": "❌" },
+          { "txt": "los chico inteligentes",  "em": "❌" },
+          { "txt": "los chicos inteligentes", "em": "🧠" },
+          { "txt": "las chicas inteligentes", "em": "❌" }
+        ], "correct": 2 },
+        { "t": "pick", "q": "«Зелёные дома» (verde не меняет рода)", "opts": [
+          { "txt": "casas verdes",   "em": "🟢" },
+          { "txt": "casas verdas",   "em": "❌" },
+          { "txt": "casa verdes",    "em": "❌" },
+          { "txt": "casas verdees",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["alto / alta",       "о/а — изм. род"],
+          ["inteligente",       "не меняется по роду"],
+          ["fácil / fáciles",   "согл. → +es во мн.ч."],
+          ["azul / azules",     "цвета на согл. → +es"]
+        ]},
+        { "t": "translate", "from": "Маленькие красные машины", "tiles": ["los", "coches", "pequeños", "rojos", "pequeño", "rojo"], "answer": ["los", "coches", "pequeños", "rojos"] },
+        { "t": "fill", "sentence": ["Mi madre es", null, "."], "target": "rubia", "opts": ["rubia", "rubio", "rubias"], "hint": "мама — блондинка (ж.)" },
+        { "t": "fill", "sentence": ["Los libros son", null, "."], "target": "interesantes", "opts": ["interesantes", "interesante", "interesanto"], "hint": "книги интересные (мн.)" },
+        { "t": "typed", "from": "Большая красная сумка", "answer": "una bolsa grande y roja", "answers": ["una bolsa grande y roja", "la bolsa grande y roja"], "hint": "сумка — ж., оба прил. в ж.р." }
+      ]
+    },
+    {
+      "id": "l209",
+      "name": "Posición de adjetivos",
+      "emoji": "📍",
+      "desc": "Gran hombre ≠ hombre grande",
+      "exercises": [
+        { "t": "pick", "q": "«Большой человек (физически)»", "opts": [
+          { "txt": "gran hombre",   "em": "❌" },
+          { "txt": "hombre grande", "em": "💪" },
+          { "txt": "grande hombre", "em": "❌" },
+          { "txt": "hombre gran",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Великий человек (по характеру)»", "opts": [
+          { "txt": "gran hombre",   "em": "🌟" },
+          { "txt": "hombre grande", "em": "❌" },
+          { "txt": "grande hombre", "em": "❌" },
+          { "txt": "hombre gran",   "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Старый друг (давний)»", "opts": [
+          { "txt": "amigo viejo",  "em": "👴" },
+          { "txt": "viejo amigo",  "em": "🤝" },
+          { "txt": "amigo vieja",  "em": "❌" },
+          { "txt": "viejos amigo", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["gran ciudad",    "великий город"],
+          ["ciudad grande",  "большой город"],
+          ["viejo amigo",    "давний друг"],
+          ["amigo viejo",    "пожилой друг"]
+        ]},
+        { "t": "match", "pairs": [
+          ["pobre hombre",   "бедняга (несчастный)"],
+          ["hombre pobre",   "бедный (без денег)"],
+          ["mismo día",      "тот же день"],
+          ["día mismo",      "тот самый день"]
+        ]},
+        { "t": "translate", "from": "Это великий писатель", "tiles": ["es", "un", "gran", "escritor", "grande"], "answer": ["es", "un", "gran", "escritor"] },
+        { "t": "fill", "sentence": ["Tengo un coche", null, "."], "target": "rojo", "opts": ["rojo", "roja", "rojos"], "hint": "цвет всегда после (обычное правило)" },
+        { "t": "typed", "from": "Бедный мальчик (несчастный)", "answer": "pobre chico", "answers": ["pobre chico", "el pobre chico", "pobre niño"], "hint": "перед существ. = эмоция, после = без денег" }
+      ]
+    },
+    {
+      "id": "l210",
+      "name": "Apócope",
+      "emoji": "✂️",
+      "desc": "Сокращение прил. перед сущ.",
+      "exercises": [
+        { "t": "pick", "q": "«Хороший день»", "opts": [
+          { "txt": "bueno día",  "em": "❌" },
+          { "txt": "buen día",   "em": "☀️" },
+          { "txt": "buena día",  "em": "❌" },
+          { "txt": "día bueno",  "em": "✅" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Первый этаж»", "opts": [
+          { "txt": "primero piso", "em": "❌" },
+          { "txt": "primer piso",  "em": "1️⃣" },
+          { "txt": "primera piso", "em": "❌" },
+          { "txt": "uno piso",     "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Святой Иосиф»", "opts": [
+          { "txt": "santo José", "em": "❌" },
+          { "txt": "san José",   "em": "✝️" },
+          { "txt": "santa José", "em": "❌" },
+          { "txt": "santos José","em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["bueno → buen",    "хороший (перед м.р.)"],
+          ["malo → mal",      "плохой (перед м.р.)"],
+          ["primero → primer","первый (перед м.р.)"],
+          ["tercero → tercer","третий (перед м.р.)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["grande → gran",  "перед любым родом ед.ч."],
+          ["santo → san",    "перед м.р. (не Domingo/Tomás)"],
+          ["ninguno → ningún","ни один (перед м.р.)"],
+          ["alguno → algún", "какой-то (перед м.р.)"]
+        ]},
+        { "t": "translate", "from": "Это плохой пример", "tiles": ["es", "un", "mal", "ejemplo", "malo"], "answer": ["es", "un", "mal", "ejemplo"] },
+        { "t": "fill", "sentence": ["Es el", null, "día de clase."], "target": "primer", "opts": ["primer", "primero", "primera"], "hint": "первый день (перед м.р.)" },
+        { "t": "fill", "sentence": ["No tengo", null, "problema."], "target": "ningún", "opts": ["ningún", "ninguno", "ninguna"], "hint": "никакой проблемы" },
+        { "t": "typed", "from": "Доброе утро", "answer": "buenos días", "answers": ["buenos días", "buen día"], "hint": "стандартно «buenos días» во мн.ч." }
+      ]
+    }
+  ]
+}

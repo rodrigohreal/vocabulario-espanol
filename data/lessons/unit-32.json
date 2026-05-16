@@ -1,0 +1,893 @@
+{
+  "unit": 32,
+  "lessons": [
+    {
+      "id": "l156",
+      "name": "Ciencia",
+      "emoji": "🔬",
+      "desc": "Investigar, descubrir, experimentar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Наука»",
+          "opts": [
+            {
+              "txt": "ciencia",
+              "em": "🔬"
+            },
+            {
+              "txt": "cielo",
+              "em": "☁️"
+            },
+            {
+              "txt": "cien",
+              "em": "💯"
+            },
+            {
+              "txt": "cierto",
+              "em": "✅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Эксперимент / опыт»",
+          "opts": [
+            {
+              "txt": "experimento",
+              "em": "🧪"
+            },
+            {
+              "txt": "expresión",
+              "em": "😀"
+            },
+            {
+              "txt": "experto",
+              "em": "👨‍🔬"
+            },
+            {
+              "txt": "explosión",
+              "em": "💥"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Учёный»",
+          "opts": [
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "científico",
+              "em": "👨‍🔬"
+            },
+            {
+              "txt": "capitán",
+              "em": "👨‍✈️"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ciencia",
+              "наука"
+            ],
+            [
+              "científico",
+              "учёный"
+            ],
+            [
+              "experimento",
+              "эксперимент"
+            ],
+            [
+              "teoría",
+              "теория"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "investigar",
+              "исследовать"
+            ],
+            [
+              "descubrir",
+              "открывать"
+            ],
+            [
+              "probar",
+              "доказывать"
+            ],
+            [
+              "comprobar",
+              "проверять"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Учёные проводят эксперимент",
+          "tiles": [
+            "los",
+            "científicos",
+            "hacen",
+            "un",
+            "experimento"
+          ],
+          "answer": [
+            "los",
+            "científicos",
+            "hacen",
+            "un",
+            "experimento"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Es una",
+            null,
+            "muy interesante."
+          ],
+          "target": "teoría",
+          "opts": [
+            "teoría",
+            "tienda",
+            "tarjeta"
+          ],
+          "hint": "это очень интересная теория"
+        },
+        {
+          "t": "typed",
+          "from": "Наука изменяет мир",
+          "answer": "la ciencia cambia el mundo",
+          "answers": [
+            "la ciencia cambia el mundo"
+          ],
+          "hint": "la ciencia + cambiar + el mundo"
+        }
+      ]
+    },
+    {
+      "id": "l157",
+      "name": "Espacio",
+      "emoji": "🚀",
+      "desc": "Estrellas, planetas, cohetes",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Звезда»",
+          "opts": [
+            {
+              "txt": "estrella",
+              "em": "⭐"
+            },
+            {
+              "txt": "escuela",
+              "em": "🏫"
+            },
+            {
+              "txt": "esquí",
+              "em": "⛷️"
+            },
+            {
+              "txt": "esposa",
+              "em": "👰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Планета»",
+          "opts": [
+            {
+              "txt": "planeta",
+              "em": "🪐"
+            },
+            {
+              "txt": "plata",
+              "em": "🥈"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            },
+            {
+              "txt": "playa",
+              "em": "🏖️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Ракета»",
+          "opts": [
+            {
+              "txt": "cohete",
+              "em": "🚀"
+            },
+            {
+              "txt": "coche",
+              "em": "🚗"
+            },
+            {
+              "txt": "cocina",
+              "em": "🍳"
+            },
+            {
+              "txt": "colina",
+              "em": "⛰️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estrella",
+              "звезда"
+            ],
+            [
+              "planeta",
+              "планета"
+            ],
+            [
+              "galaxia",
+              "галактика"
+            ],
+            [
+              "universo",
+              "вселенная"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cohete",
+              "ракета"
+            ],
+            [
+              "astronauta",
+              "космонавт"
+            ],
+            [
+              "Tierra",
+              "Земля"
+            ],
+            [
+              "Luna",
+              "Луна"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Космонавт идёт на Луну",
+          "tiles": [
+            "el",
+            "astronauta",
+            "va",
+            "a",
+            "la",
+            "Luna"
+          ],
+          "answer": [
+            "el",
+            "astronauta",
+            "va",
+            "a",
+            "la",
+            "Luna"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La Tierra es un",
+            null,
+            "."
+          ],
+          "target": "planeta",
+          "opts": [
+            "planeta",
+            "pueblo",
+            "plato"
+          ],
+          "hint": "Земля — это планета"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу путешествовать в космос",
+          "answer": "quiero viajar al espacio",
+          "answers": [
+            "quiero viajar al espacio"
+          ],
+          "hint": "viajar al espacio"
+        }
+      ]
+    },
+    {
+      "id": "l158",
+      "name": "IA",
+      "emoji": "🤖",
+      "desc": "Robot, algoritmo, datos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Робот»",
+          "opts": [
+            {
+              "txt": "robot",
+              "em": "🤖"
+            },
+            {
+              "txt": "ropa",
+              "em": "👕"
+            },
+            {
+              "txt": "rosa",
+              "em": "🌹"
+            },
+            {
+              "txt": "ratón",
+              "em": "🐭"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Искусственный интеллект»",
+          "opts": [
+            {
+              "txt": "inteligencia artificial",
+              "em": "🤖"
+            },
+            {
+              "txt": "inteligencia natural",
+              "em": "🧠"
+            },
+            {
+              "txt": "intención antigua",
+              "em": "📜"
+            },
+            {
+              "txt": "industria activa",
+              "em": "🏭"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Данные»",
+          "opts": [
+            {
+              "txt": "datos",
+              "em": "📊"
+            },
+            {
+              "txt": "dados",
+              "em": "🎲"
+            },
+            {
+              "txt": "dedos",
+              "em": "🖐️"
+            },
+            {
+              "txt": "días",
+              "em": "📅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "robot",
+              "робот"
+            ],
+            [
+              "algoritmo",
+              "алгоритм"
+            ],
+            [
+              "datos",
+              "данные"
+            ],
+            [
+              "modelo",
+              "модель"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "aprender",
+              "обучаться"
+            ],
+            [
+              "entrenar",
+              "тренировать"
+            ],
+            [
+              "predecir",
+              "предсказывать"
+            ],
+            [
+              "automático",
+              "автоматический"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Робот понимает голос",
+          "tiles": [
+            "el",
+            "robot",
+            "entiende",
+            "la",
+            "voz",
+            "oír"
+          ],
+          "answer": [
+            "el",
+            "robot",
+            "entiende",
+            "la",
+            "voz"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesitamos más",
+            null,
+            "."
+          ],
+          "target": "datos",
+          "opts": [
+            "datos",
+            "días",
+            "dedos"
+          ],
+          "hint": "нам нужно больше данных"
+        },
+        {
+          "t": "typed",
+          "from": "Искусственный интеллект изменяет всё",
+          "answer": "la inteligencia artificial cambia todo",
+          "answers": [
+            "la inteligencia artificial cambia todo",
+            "la ia cambia todo"
+          ],
+          "hint": "la inteligencia artificial / la IA"
+        }
+      ]
+    },
+    {
+      "id": "l159",
+      "name": "Invenciones",
+      "emoji": "⚙️",
+      "desc": "Construir, diseñar, máquinas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Изобретение»",
+          "opts": [
+            {
+              "txt": "invención",
+              "em": "💡"
+            },
+            {
+              "txt": "invierno",
+              "em": "❄️"
+            },
+            {
+              "txt": "inicio",
+              "em": "🚀"
+            },
+            {
+              "txt": "isla",
+              "em": "🏝️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Машина / станок»",
+          "opts": [
+            {
+              "txt": "máquina",
+              "em": "⚙️"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            },
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            },
+            {
+              "txt": "maleta",
+              "em": "🧳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Изобретать»",
+          "opts": [
+            {
+              "txt": "inventar",
+              "em": "💡"
+            },
+            {
+              "txt": "inventar",
+              "em": "💡"
+            },
+            {
+              "txt": "imprimir",
+              "em": "🖨️"
+            },
+            {
+              "txt": "instalar",
+              "em": "🔧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "invención",
+              "изобретение"
+            ],
+            [
+              "máquina",
+              "машина"
+            ],
+            [
+              "ingeniero",
+              "инженер"
+            ],
+            [
+              "diseño",
+              "дизайн"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "inventar",
+              "изобретать"
+            ],
+            [
+              "construir",
+              "строить"
+            ],
+            [
+              "diseñar",
+              "проектировать"
+            ],
+            [
+              "funcionar",
+              "работать (о приборе)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Эта машина не работает",
+          "tiles": [
+            "esta",
+            "máquina",
+            "no",
+            "funciona",
+            "trabajar"
+          ],
+          "answer": [
+            "esta",
+            "máquina",
+            "no",
+            "funciona"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Edison",
+            null,
+            "la bombilla."
+          ],
+          "target": "inventó",
+          "opts": [
+            "inventó",
+            "imprimió",
+            "instaló"
+          ],
+          "hint": "Эдисон изобрёл лампочку"
+        },
+        {
+          "t": "typed",
+          "from": "Инженеры строят мост",
+          "answer": "los ingenieros construyen un puente",
+          "answers": [
+            "los ingenieros construyen un puente",
+            "los ingenieros construyen el puente"
+          ],
+          "hint": "construir un / el puente"
+        }
+      ]
+    },
+    {
+      "id": "l160",
+      "name": "Repaso 26",
+      "emoji": "🔬",
+      "desc": "Repaso L156-L159",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Наука»",
+          "opts": [
+            {
+              "txt": "ciencia",
+              "em": "🔬"
+            },
+            {
+              "txt": "cielo",
+              "em": "☁️"
+            },
+            {
+              "txt": "cierto",
+              "em": "✅"
+            },
+            {
+              "txt": "cien",
+              "em": "💯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Планета»",
+          "opts": [
+            {
+              "txt": "planeta",
+              "em": "🪐"
+            },
+            {
+              "txt": "plato",
+              "em": "🍽️"
+            },
+            {
+              "txt": "playa",
+              "em": "🏖️"
+            },
+            {
+              "txt": "plata",
+              "em": "🥈"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Робот»",
+          "opts": [
+            {
+              "txt": "robot",
+              "em": "🤖"
+            },
+            {
+              "txt": "ratón",
+              "em": "🐭"
+            },
+            {
+              "txt": "rosa",
+              "em": "🌹"
+            },
+            {
+              "txt": "rico",
+              "em": "💰"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Изобретение»",
+          "opts": [
+            {
+              "txt": "invención",
+              "em": "💡"
+            },
+            {
+              "txt": "invierno",
+              "em": "❄️"
+            },
+            {
+              "txt": "invitación",
+              "em": "✉️"
+            },
+            {
+              "txt": "invalidez",
+              "em": "♿"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "científico",
+              "учёный"
+            ],
+            [
+              "experimento",
+              "эксперимент"
+            ],
+            [
+              "teoría",
+              "теория"
+            ],
+            [
+              "investigar",
+              "исследовать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "estrella",
+              "звезда"
+            ],
+            [
+              "galaxia",
+              "галактика"
+            ],
+            [
+              "cohete",
+              "ракета"
+            ],
+            [
+              "astronauta",
+              "космонавт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "algoritmo",
+              "алгоритм"
+            ],
+            [
+              "datos",
+              "данные"
+            ],
+            [
+              "máquina",
+              "машина"
+            ],
+            [
+              "ingeniero",
+              "инженер"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Учёные открыли новую планету",
+          "tiles": [
+            "los",
+            "científicos",
+            "descubrieron",
+            "un",
+            "nuevo",
+            "planeta"
+          ],
+          "answer": [
+            "los",
+            "científicos",
+            "descubrieron",
+            "un",
+            "nuevo",
+            "planeta"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Эта машина не работает",
+          "tiles": [
+            "esta",
+            "máquina",
+            "no",
+            "funciona"
+          ],
+          "answer": [
+            "esta",
+            "máquina",
+            "no",
+            "funciona"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La Tierra es un",
+            null,
+            "."
+          ],
+          "target": "planeta",
+          "opts": [
+            "planeta",
+            "plato",
+            "pueblo"
+          ],
+          "hint": "Земля — это планета"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesitamos más",
+            null,
+            "."
+          ],
+          "target": "datos",
+          "opts": [
+            "datos",
+            "dedos",
+            "días"
+          ],
+          "hint": "нам нужно больше данных"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу быть учёным",
+          "answer": "quiero ser científico",
+          "answers": [
+            "quiero ser científico",
+            "quiero ser científica"
+          ],
+          "hint": "quiero ser + científico/a"
+        }
+      ]
+    }
+  ]
+}

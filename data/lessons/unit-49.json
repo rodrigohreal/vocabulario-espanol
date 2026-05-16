@@ -1,0 +1,192 @@
+{
+  "unit": 49,
+  "lessons": [
+    {
+      "id": "l241",
+      "name": "Tareas domésticas",
+      "emoji": "🏠",
+      "desc": "Limpiar, ordenar, barrer",
+      "exercises": [
+        { "t": "pick", "q": "«Убирать»", "opts": [
+          { "txt": "limpiar", "em": "🧹" },
+          { "txt": "ensuciar","em": "❌" },
+          { "txt": "comer",   "em": "❌" },
+          { "txt": "lavar",   "em": "🧺" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Подметать»", "opts": [
+          { "txt": "barrer", "em": "🧹" },
+          { "txt": "fregar", "em": "❌" },
+          { "txt": "doblar", "em": "❌" },
+          { "txt": "secar",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Наводить порядок»", "opts": [
+          { "txt": "desordenar","em": "❌" },
+          { "txt": "ordenar",   "em": "✅" },
+          { "txt": "romper",    "em": "❌" },
+          { "txt": "perder",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["limpiar", "убирать"],
+          ["ordenar", "наводить порядок"],
+          ["barrer",  "подметать"],
+          ["fregar",  "мыть пол / посуду"]
+        ]},
+        { "t": "match", "pairs": [
+          ["sacar la basura", "выносить мусор"],
+          ["hacer la cama",   "застилать кровать"],
+          ["pasar la aspiradora","пылесосить"],
+          ["quitar el polvo", "вытирать пыль"]
+        ]},
+        { "t": "translate", "from": "Я подметаю и мою пол", "tiles": ["barro", "y", "friego", "el", "suelo", "limpio"], "answer": ["barro", "y", "friego", "el", "suelo"] },
+        { "t": "fill", "sentence": ["Tengo que", null, "la basura."], "target": "sacar", "opts": ["sacar", "comer", "leer"], "hint": "Надо вынести мусор" },
+        { "t": "typed", "from": "Я застилаю кровать каждое утро", "answer": "hago la cama cada mañana", "answers": ["hago la cama cada mañana", "hago la cama todas las mañanas"], "hint": "hacer la cama" }
+      ]
+    },
+    {
+      "id": "l242",
+      "name": "Limpieza",
+      "emoji": "🧼",
+      "desc": "Lavar, secar, planchar",
+      "exercises": [
+        { "t": "pick", "q": "«Стирать (одежду)»", "opts": [
+          { "txt": "lavar la ropa", "em": "👕" },
+          { "txt": "secar",         "em": "❌" },
+          { "txt": "planchar",      "em": "❌" },
+          { "txt": "doblar",        "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Гладить»", "opts": [
+          { "txt": "secar",    "em": "❌" },
+          { "txt": "planchar", "em": "🪡" },
+          { "txt": "lavar",    "em": "❌" },
+          { "txt": "tender",   "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["lavar",    "стирать / мыть"],
+          ["secar",    "сушить"],
+          ["planchar", "гладить"],
+          ["doblar",   "складывать"]
+        ]},
+        { "t": "match", "pairs": [
+          ["tender la ropa", "развешивать бельё"],
+          ["recoger",        "собирать"],
+          ["frotar",         "тереть"],
+          ["aclarar",        "ополаскивать"]
+        ]},
+        { "t": "translate", "from": "Я стираю и сушу одежду", "tiles": ["lavo", "y", "seco", "la", "ropa", "plancho"], "answer": ["lavo", "y", "seco", "la", "ropa"] },
+        { "t": "fill", "sentence": ["Hay que", null, " la camisa."], "target": "planchar", "opts": ["planchar", "comer", "tender"], "hint": "Нужно погладить рубашку" },
+        { "t": "typed", "from": "Я складываю бельё", "answer": "doblo la ropa", "answers": ["doblo la ropa", "estoy doblando la ropa"], "hint": "doblar la ropa" }
+      ]
+    },
+    {
+      "id": "l243",
+      "name": "Lavandería",
+      "emoji": "🧺",
+      "desc": "Detergente, lavadora, suavizante",
+      "exercises": [
+        { "t": "pick", "q": "«Стиральная машина»", "opts": [
+          { "txt": "lavadora",    "em": "🧺" },
+          { "txt": "secadora",    "em": "❌" },
+          { "txt": "nevera",      "em": "❌" },
+          { "txt": "microondas",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Стиральный порошок»", "opts": [
+          { "txt": "detergente",  "em": "🧴" },
+          { "txt": "suavizante",  "em": "❌" },
+          { "txt": "jabón",       "em": "❌" },
+          { "txt": "champú",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["lavadora",   "стиральная машина"],
+          ["secadora",   "сушилка"],
+          ["detergente", "порошок"],
+          ["suavizante", "кондиционер"]
+        ]},
+        { "t": "match", "pairs": [
+          ["ropa sucia",  "грязная одежда"],
+          ["ropa limpia", "чистая одежда"],
+          ["mancha",      "пятно"],
+          ["ciclo",       "цикл / программа"]
+        ]},
+        { "t": "translate", "from": "Положи бельё в стиральную машину", "tiles": ["pon", "la", "ropa", "en", "la", "lavadora", "secadora"], "answer": ["pon", "la", "ropa", "en", "la", "lavadora"] },
+        { "t": "fill", "sentence": ["Hay una", null, "en mi camiseta."], "target": "mancha", "opts": ["mancha", "ventana", "puerta"], "hint": "На футболке пятно" },
+        { "t": "typed", "from": "Стиральная машина сломалась", "answer": "la lavadora se rompió", "answers": ["la lavadora se rompió", "la lavadora está rota", "se rompió la lavadora"], "hint": "romperse = ломаться" }
+      ]
+    },
+    {
+      "id": "l244",
+      "name": "Mudanza",
+      "emoji": "📦",
+      "desc": "Caja, camión, embalar",
+      "exercises": [
+        { "t": "pick", "q": "«Переезд»", "opts": [
+          { "txt": "mudanza",    "em": "📦" },
+          { "txt": "vacaciones", "em": "❌" },
+          { "txt": "viaje",      "em": "❌" },
+          { "txt": "fiesta",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Коробка»", "opts": [
+          { "txt": "caja",     "em": "📦" },
+          { "txt": "maleta",   "em": "❌" },
+          { "txt": "bolsa",    "em": "❌" },
+          { "txt": "armario",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["mudarse",   "переезжать"],
+          ["embalar",   "упаковывать"],
+          ["desembalar","распаковывать"],
+          ["alquilar",  "арендовать"]
+        ]},
+        { "t": "match", "pairs": [
+          ["caja",       "коробка"],
+          ["camión",     "грузовик"],
+          ["mudancero",  "грузчик"],
+          ["depósito",   "залог"]
+        ]},
+        { "t": "translate", "from": "Я переезжаю в новую квартиру", "tiles": ["me", "mudo", "a", "un", "piso", "nuevo", "mudanza"], "answer": ["me", "mudo", "a", "un", "piso", "nuevo"] },
+        { "t": "fill", "sentence": ["Necesito veinte", null, "."], "target": "cajas", "opts": ["cajas", "patas", "puertas"], "hint": "Нужно 20 коробок" },
+        { "t": "typed", "from": "Завтра переезжаю", "answer": "mañana me mudo", "answers": ["mañana me mudo", "me mudo mañana"], "hint": "mudarse" }
+      ]
+    },
+    {
+      "id": "l245",
+      "name": "Decoración",
+      "emoji": "🖼️",
+      "desc": "Cortinas, alfombra, cuadro",
+      "exercises": [
+        { "t": "pick", "q": "«Шторы»", "opts": [
+          { "txt": "cortinas",  "em": "🪟" },
+          { "txt": "almohada",  "em": "❌" },
+          { "txt": "alfombra",  "em": "❌" },
+          { "txt": "cuadro",    "em": "🖼️" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Ковёр»", "opts": [
+          { "txt": "alfombra",  "em": "🟫" },
+          { "txt": "manta",     "em": "❌" },
+          { "txt": "sábana",    "em": "❌" },
+          { "txt": "toalla",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Картина»", "opts": [
+          { "txt": "espejo",    "em": "❌" },
+          { "txt": "cuadro",    "em": "🖼️" },
+          { "txt": "lámpara",   "em": "💡" },
+          { "txt": "estantería","em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["cortina",   "штора"],
+          ["alfombra",  "ковёр"],
+          ["cuadro",    "картина"],
+          ["lámpara",   "лампа"]
+        ]},
+        { "t": "match", "pairs": [
+          ["espejo",      "зеркало"],
+          ["estantería",  "стеллаж"],
+          ["jarrón",      "ваза"],
+          ["vela",        "свеча"]
+        ]},
+        { "t": "translate", "from": "Я повесил картину на стену", "tiles": ["colgué", "un", "cuadro", "en", "la", "pared", "cortina"], "answer": ["colgué", "un", "cuadro", "en", "la", "pared"] },
+        { "t": "fill", "sentence": ["La", null, "está rota."], "target": "lámpara", "opts": ["lámpara", "música", "soja"], "hint": "Лампа сломана" },
+        { "t": "typed", "from": "Красивая ваза на столе", "answer": "un jarrón bonito en la mesa", "answers": ["un jarrón bonito en la mesa", "un bonito jarrón en la mesa", "hay un jarrón bonito en la mesa"], "hint": "jarrón = ваза" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1106 @@
+{
+  "unit": 35,
+  "lessons": [
+    {
+      "id": "l171",
+      "name": "Si hubiera...",
+      "emoji": "🌀",
+      "desc": "Si hubiera sabido, habría...",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Если бы я знал...»",
+          "opts": [
+            {
+              "txt": "si hubiera sabido",
+              "em": "✅"
+            },
+            {
+              "txt": "si sabía",
+              "em": "⚠️"
+            },
+            {
+              "txt": "si supe",
+              "em": "❌"
+            },
+            {
+              "txt": "si sabré",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Если бы ты пришёл, я бы поел»",
+          "opts": [
+            {
+              "txt": "si hubieras venido, habría comido",
+              "em": "✅"
+            },
+            {
+              "txt": "si vienes, comería",
+              "em": "❌"
+            },
+            {
+              "txt": "si vendrías, comía",
+              "em": "❌"
+            },
+            {
+              "txt": "si has venido, he comido",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Если бы он был дома, он бы услышал»",
+          "opts": [
+            {
+              "txt": "si hubiera estado en casa, habría oído",
+              "em": "✅"
+            },
+            {
+              "txt": "si está en casa, oye",
+              "em": "❌"
+            },
+            {
+              "txt": "si estaba en casa, oía",
+              "em": "❌"
+            },
+            {
+              "txt": "si estará en casa, oirá",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hubiera sabido",
+              "я бы знал"
+            ],
+            [
+              "hubieras venido",
+              "ты бы пришёл"
+            ],
+            [
+              "hubiera podido",
+              "я бы смог"
+            ],
+            [
+              "hubiéramos visto",
+              "мы бы увидели"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "si hubiera + part.",
+              "если бы + глагол"
+            ],
+            [
+              "habría + part.",
+              "я бы + глагол"
+            ],
+            [
+              "ojalá hubiera...",
+              "жаль, что не..."
+            ],
+            [
+              "como si",
+              "как будто"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Если бы я знал, я бы пришёл",
+          "tiles": [
+            "si",
+            "hubiera",
+            "sabido",
+            "habría",
+            "venido"
+          ],
+          "answer": [
+            "si",
+            "hubiera",
+            "sabido",
+            "habría",
+            "venido"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Si",
+            null,
+            "tiempo, te habría llamado."
+          ],
+          "target": "hubiera",
+          "opts": [
+            "hubiera",
+            "había",
+            "tengo"
+          ],
+          "hint": "если бы у меня было время"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ojalá",
+            null,
+            "estudiado más."
+          ],
+          "target": "hubiera",
+          "opts": [
+            "hubiera",
+            "había",
+            "haya"
+          ],
+          "hint": "жаль, что я не учился больше"
+        },
+        {
+          "t": "typed",
+          "from": "Если бы ты сказал мне, я бы помог",
+          "answer": "si me hubieras dicho, te habría ayudado",
+          "answers": [
+            "si me hubieras dicho, te habría ayudado",
+            "si me hubieras dicho te habría ayudado",
+            "si me hubieses dicho te habría ayudado"
+          ],
+          "hint": "si + hubieras + ..., + habría"
+        }
+      ]
+    },
+    {
+      "id": "l172",
+      "name": "Acabo de / Voy a",
+      "emoji": "⏳",
+      "desc": "Perífrasis verbales: acabar, ir, estar",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я только что поел»",
+          "opts": [
+            {
+              "txt": "acabo de comer",
+              "em": "✅"
+            },
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            },
+            {
+              "txt": "estoy comiendo",
+              "em": "🍽️"
+            },
+            {
+              "txt": "he comido",
+              "em": "⏳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я собираюсь поесть»",
+          "opts": [
+            {
+              "txt": "voy a comer",
+              "em": "✅"
+            },
+            {
+              "txt": "acabo de comer",
+              "em": "❌"
+            },
+            {
+              "txt": "estoy comiendo",
+              "em": "❌"
+            },
+            {
+              "txt": "tengo que comer",
+              "em": "⚠️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я вот-вот ухожу»",
+          "opts": [
+            {
+              "txt": "estoy a punto de salir",
+              "em": "✅"
+            },
+            {
+              "txt": "salgo a punto",
+              "em": "❌"
+            },
+            {
+              "txt": "voy salir",
+              "em": "❌"
+            },
+            {
+              "txt": "salí",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "acabar de + inf.",
+              "только что"
+            ],
+            [
+              "ir a + inf.",
+              "собираться"
+            ],
+            [
+              "estar a punto de",
+              "вот-вот"
+            ],
+            [
+              "volver a + inf.",
+              "снова делать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tener que + inf.",
+              "должен"
+            ],
+            [
+              "hay que + inf.",
+              "нужно (вообще)"
+            ],
+            [
+              "deber + inf.",
+              "следует"
+            ],
+            [
+              "poder + inf.",
+              "мочь"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я только что приехал",
+          "tiles": [
+            "acabo",
+            "de",
+            "llegar",
+            "llego",
+            "voy"
+          ],
+          "answer": [
+            "acabo",
+            "de",
+            "llegar"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estoy",
+            null,
+            "punto de salir."
+          ],
+          "target": "a",
+          "opts": [
+            "a",
+            "de",
+            "en"
+          ],
+          "hint": "я вот-вот ухожу"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            null,
+            "que estudiar más."
+          ],
+          "target": "Tengo",
+          "opts": [
+            "Tengo",
+            "Hay",
+            "Soy"
+          ],
+          "hint": "я должен учиться больше"
+        },
+        {
+          "t": "typed",
+          "from": "Мы собираемся открыть магазин",
+          "answer": "vamos a abrir una tienda",
+          "answers": [
+            "vamos a abrir una tienda",
+            "vamos a abrir la tienda"
+          ],
+          "hint": "ir a + inf."
+        }
+      ]
+    },
+    {
+      "id": "l173",
+      "name": "Conectores",
+      "emoji": "🔗",
+      "desc": "A pesar de, por lo tanto, mientras",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Несмотря на...»",
+          "opts": [
+            {
+              "txt": "a pesar de",
+              "em": "🔀"
+            },
+            {
+              "txt": "a propósito",
+              "em": "💡"
+            },
+            {
+              "txt": "a menudo",
+              "em": "⏰"
+            },
+            {
+              "txt": "a veces",
+              "em": "🕓"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Поэтому / следовательно»",
+          "opts": [
+            {
+              "txt": "por lo tanto",
+              "em": "➡️"
+            },
+            {
+              "txt": "por supuesto",
+              "em": "✅"
+            },
+            {
+              "txt": "por favor",
+              "em": "🙏"
+            },
+            {
+              "txt": "por ejemplo",
+              "em": "💡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«В то время как»",
+          "opts": [
+            {
+              "txt": "mientras",
+              "em": "⏳"
+            },
+            {
+              "txt": "siempre",
+              "em": "♾️"
+            },
+            {
+              "txt": "cuando",
+              "em": "⌚"
+            },
+            {
+              "txt": "porque",
+              "em": "❓"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "a pesar de",
+              "несмотря на"
+            ],
+            [
+              "por lo tanto",
+              "поэтому"
+            ],
+            [
+              "mientras",
+              "в то время как"
+            ],
+            [
+              "de hecho",
+              "на самом деле"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "no obstante",
+              "тем не менее"
+            ],
+            [
+              "en cambio",
+              "наоборот"
+            ],
+            [
+              "así que",
+              "так что"
+            ],
+            [
+              "ya que",
+              "поскольку"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Несмотря на дождь, я вышел",
+          "tiles": [
+            "a",
+            "pesar",
+            "de",
+            "la",
+            "lluvia",
+            "salí"
+          ],
+          "answer": [
+            "a",
+            "pesar",
+            "de",
+            "la",
+            "lluvia",
+            "salí"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Llueve,",
+            null,
+            "lo tanto, no salgo."
+          ],
+          "target": "por",
+          "opts": [
+            "por",
+            "para",
+            "en"
+          ],
+          "hint": "дождь, поэтому я не выйду"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo trabajo, ",
+            null,
+            "él descansa."
+          ],
+          "target": "mientras",
+          "opts": [
+            "mientras",
+            "aunque",
+            "porque"
+          ],
+          "hint": "я работаю, в то время как он отдыхает"
+        },
+        {
+          "t": "typed",
+          "from": "На самом деле я не знаю",
+          "answer": "de hecho no lo sé",
+          "answers": [
+            "de hecho no lo sé",
+            "de hecho, no lo sé",
+            "en realidad no lo sé"
+          ],
+          "hint": "de hecho / en realidad"
+        }
+      ]
+    },
+    {
+      "id": "l174",
+      "name": "Estilo indirecto",
+      "emoji": "💬",
+      "desc": "Reported speech: dijo que...",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Он сказал, что устал»",
+          "opts": [
+            {
+              "txt": "dijo que estaba cansado",
+              "em": "✅"
+            },
+            {
+              "txt": "dijo \"estoy cansado\"",
+              "em": "⚠️"
+            },
+            {
+              "txt": "dice que está cansado",
+              "em": "⚠️"
+            },
+            {
+              "txt": "decía que estaría cansado",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Она спросила, где я живу»",
+          "opts": [
+            {
+              "txt": "preguntó dónde vivía",
+              "em": "✅"
+            },
+            {
+              "txt": "preguntó dónde vivo",
+              "em": "⚠️"
+            },
+            {
+              "txt": "pregunta dónde vivía",
+              "em": "❌"
+            },
+            {
+              "txt": "pregunta \"dónde vives\"",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Он попросил меня прийти»",
+          "opts": [
+            {
+              "txt": "me pidió que viniera",
+              "em": "✅"
+            },
+            {
+              "txt": "me pidió que vengo",
+              "em": "❌"
+            },
+            {
+              "txt": "me pidió que vendré",
+              "em": "❌"
+            },
+            {
+              "txt": "me pidió que vine",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "dijo que...",
+              "сказал, что"
+            ],
+            [
+              "preguntó si...",
+              "спросил, если"
+            ],
+            [
+              "contestó que...",
+              "ответил, что"
+            ],
+            [
+              "pidió que...",
+              "попросил, чтобы"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "\"estoy\" → estaba",
+              "презенс → имперфект"
+            ],
+            [
+              "\"iré\" → iría",
+              "будущее → условное"
+            ],
+            [
+              "\"he ido\" → había ido",
+              "перфект → плюсквамперф."
+            ],
+            [
+              "\"ven\" → que viniera",
+              "императив → субъюнк."
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Он сказал, что придёт",
+          "tiles": [
+            "dijo",
+            "que",
+            "vendría",
+            "viene",
+            "vendrá"
+          ],
+          "answer": [
+            "dijo",
+            "que",
+            "vendría"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Ella dijo que",
+            null,
+            "enferma."
+          ],
+          "target": "estaba",
+          "opts": [
+            "estaba",
+            "está",
+            "estuvo"
+          ],
+          "hint": "она сказала, что больна (репорт.)"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me preguntó",
+            null,
+            "quería café."
+          ],
+          "target": "si",
+          "opts": [
+            "si",
+            "que",
+            "cuando"
+          ],
+          "hint": "он спросил, хочу ли я кофе"
+        },
+        {
+          "t": "typed",
+          "from": "Она сказала мне, что не знает",
+          "answer": "me dijo que no sabía",
+          "answers": [
+            "me dijo que no sabía",
+            "ella me dijo que no sabía"
+          ],
+          "hint": "me dijo que no sabía"
+        }
+      ]
+    },
+    {
+      "id": "l175",
+      "name": "Repaso Maestro IV",
+      "emoji": "🎓",
+      "desc": "Repaso final (151-174)",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Собеседование»",
+          "opts": [
+            {
+              "txt": "entrevista",
+              "em": "🗣️"
+            },
+            {
+              "txt": "entrega",
+              "em": "📦"
+            },
+            {
+              "txt": "entrada",
+              "em": "🚪"
+            },
+            {
+              "txt": "entrenador",
+              "em": "🏋️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Учёный»",
+          "opts": [
+            {
+              "txt": "científico",
+              "em": "👨‍🔬"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "capitán",
+              "em": "👨‍✈️"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Хирург»",
+          "opts": [
+            {
+              "txt": "cirujano",
+              "em": "🩺"
+            },
+            {
+              "txt": "cocinero",
+              "em": "👨‍🍳"
+            },
+            {
+              "txt": "conductor",
+              "em": "🚗"
+            },
+            {
+              "txt": "cantante",
+              "em": "🎤"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Налог»",
+          "opts": [
+            {
+              "txt": "impuesto",
+              "em": "🧾"
+            },
+            {
+              "txt": "impulso",
+              "em": "⚡"
+            },
+            {
+              "txt": "impreso",
+              "em": "🖨️"
+            },
+            {
+              "txt": "imagen",
+              "em": "🖼️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Если бы я знал»",
+          "opts": [
+            {
+              "txt": "si hubiera sabido",
+              "em": "✅"
+            },
+            {
+              "txt": "si sabía",
+              "em": "⚠️"
+            },
+            {
+              "txt": "si supe",
+              "em": "❌"
+            },
+            {
+              "txt": "si sabré",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я только что поел»",
+          "opts": [
+            {
+              "txt": "acabo de comer",
+              "em": "✅"
+            },
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            },
+            {
+              "txt": "estoy comiendo",
+              "em": "❌"
+            },
+            {
+              "txt": "he comido",
+              "em": "⏳"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Он сказал, что устал»",
+          "opts": [
+            {
+              "txt": "dijo que estaba cansado",
+              "em": "✅"
+            },
+            {
+              "txt": "dice que está cansado",
+              "em": "⚠️"
+            },
+            {
+              "txt": "dijo \"estoy cansado\"",
+              "em": "⚠️"
+            },
+            {
+              "txt": "decía que estaría cansado",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "jefe",
+              "начальник"
+            ],
+            [
+              "sueldo",
+              "зарплата"
+            ],
+            [
+              "currículum",
+              "резюме"
+            ],
+            [
+              "reunión",
+              "встреча"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ciencia",
+              "наука"
+            ],
+            [
+              "estrella",
+              "звезда"
+            ],
+            [
+              "robot",
+              "робот"
+            ],
+            [
+              "máquina",
+              "машина"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "dentista",
+              "стоматолог"
+            ],
+            [
+              "operación",
+              "операция"
+            ],
+            [
+              "embarazo",
+              "беременность"
+            ],
+            [
+              "estrés",
+              "стресс"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "bolsa",
+              "биржа"
+            ],
+            [
+              "Hacienda",
+              "налоговая"
+            ],
+            [
+              "seguro",
+              "страховка"
+            ],
+            [
+              "hipoteca",
+              "ипотека"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hubiera sabido",
+              "я бы знал"
+            ],
+            [
+              "acabo de",
+              "только что"
+            ],
+            [
+              "a pesar de",
+              "несмотря на"
+            ],
+            [
+              "dijo que",
+              "сказал, что"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Если бы я знал, я бы пришёл",
+          "tiles": [
+            "si",
+            "hubiera",
+            "sabido",
+            "habría",
+            "venido"
+          ],
+          "answer": [
+            "si",
+            "hubiera",
+            "sabido",
+            "habría",
+            "venido"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я только что приехал",
+          "tiles": [
+            "acabo",
+            "de",
+            "llegar",
+            "llego",
+            "voy"
+          ],
+          "answer": [
+            "acabo",
+            "de",
+            "llegar"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Он сказал, что придёт",
+          "tiles": [
+            "dijo",
+            "que",
+            "vendría",
+            "viene"
+          ],
+          "answer": [
+            "dijo",
+            "que",
+            "vendría"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Llueve,",
+            null,
+            "lo tanto, no salgo."
+          ],
+          "target": "por",
+          "opts": [
+            "por",
+            "para",
+            "en"
+          ],
+          "hint": "дождь, поэтому я не выйду"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me preguntó",
+            null,
+            "quería café."
+          ],
+          "target": "si",
+          "opts": [
+            "si",
+            "que",
+            "cuando"
+          ],
+          "hint": "спросил, если я хочу кофе"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Alquilo un",
+            null,
+            "en el centro."
+          ],
+          "target": "piso",
+          "opts": [
+            "piso",
+            "plato",
+            "peso"
+          ],
+          "hint": "я снимаю квартиру в центре"
+        },
+        {
+          "t": "typed",
+          "from": "Если бы ты сказал мне, я бы помог",
+          "answer": "si me hubieras dicho, te habría ayudado",
+          "answers": [
+            "si me hubieras dicho, te habría ayudado",
+            "si me hubieras dicho te habría ayudado",
+            "si me hubieses dicho te habría ayudado"
+          ],
+          "hint": "si + hubieras + ..., + habría"
+        },
+        {
+          "t": "typed",
+          "from": "Мы собираемся открыть магазин",
+          "answer": "vamos a abrir una tienda",
+          "answers": [
+            "vamos a abrir una tienda",
+            "vamos a abrir la tienda"
+          ],
+          "hint": "ir a + inf."
+        }
+      ]
+    }
+  ]
+}

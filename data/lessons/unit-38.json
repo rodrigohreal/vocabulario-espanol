@@ -1,0 +1,901 @@
+{
+  "unit": 38,
+  "lessons": [
+    {
+      "id": "l186",
+      "name": "Crimen",
+      "emoji": "🚔",
+      "desc": "Robar, ladrón, denuncia",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Вор»",
+          "opts": [
+            {
+              "txt": "ladrón",
+              "em": "🦹"
+            },
+            {
+              "txt": "libro",
+              "em": "📖"
+            },
+            {
+              "txt": "limón",
+              "em": "🍋"
+            },
+            {
+              "txt": "león",
+              "em": "🦁"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Красть»",
+          "opts": [
+            {
+              "txt": "robar",
+              "em": "💰"
+            },
+            {
+              "txt": "rezar",
+              "em": "🙏"
+            },
+            {
+              "txt": "reír",
+              "em": "😂"
+            },
+            {
+              "txt": "romper",
+              "em": "💔"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Преступление»",
+          "opts": [
+            {
+              "txt": "delito",
+              "em": "🚔"
+            },
+            {
+              "txt": "detalle",
+              "em": "🔍"
+            },
+            {
+              "txt": "destino",
+              "em": "🗺️"
+            },
+            {
+              "txt": "derecho",
+              "em": "⚖️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "delito",
+              "преступление"
+            ],
+            [
+              "ladrón",
+              "вор"
+            ],
+            [
+              "víctima",
+              "жертва"
+            ],
+            [
+              "testigo",
+              "свидетель"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "robar",
+              "красть"
+            ],
+            [
+              "atacar",
+              "нападать"
+            ],
+            [
+              "denunciar",
+              "заявлять"
+            ],
+            [
+              "detener",
+              "задерживать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Вор украл сумку",
+          "tiles": [
+            "el",
+            "ladrón",
+            "robó",
+            "la",
+            "bolsa",
+            "una"
+          ],
+          "answer": [
+            "el",
+            "ladrón",
+            "robó",
+            "la",
+            "bolsa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Quiero hacer una",
+            null,
+            "."
+          ],
+          "target": "denuncia",
+          "opts": [
+            "denuncia",
+            "denegación",
+            "dependencia"
+          ],
+          "hint": "я хочу подать заявление"
+        },
+        {
+          "t": "typed",
+          "from": "У меня украли телефон",
+          "answer": "me robaron el teléfono",
+          "answers": [
+            "me robaron el teléfono",
+            "me han robado el teléfono",
+            "me robaron el móvil"
+          ],
+          "hint": "me robaron / me han robado el móvil"
+        }
+      ]
+    },
+    {
+      "id": "l187",
+      "name": "Tribunal",
+      "emoji": "⚖️",
+      "desc": "Juez, abogado, sentencia",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Судья»",
+          "opts": [
+            {
+              "txt": "juez",
+              "em": "👨‍⚖️"
+            },
+            {
+              "txt": "jugo",
+              "em": "🥤"
+            },
+            {
+              "txt": "jamón",
+              "em": "🍖"
+            },
+            {
+              "txt": "joven",
+              "em": "🧒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Адвокат»",
+          "opts": [
+            {
+              "txt": "abogado",
+              "em": "👨‍💼"
+            },
+            {
+              "txt": "abuelo",
+              "em": "👴"
+            },
+            {
+              "txt": "abrazo",
+              "em": "🤗"
+            },
+            {
+              "txt": "abeja",
+              "em": "🐝"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Суд (учреждение)»",
+          "opts": [
+            {
+              "txt": "tribunal",
+              "em": "⚖️"
+            },
+            {
+              "txt": "túnel",
+              "em": "🚇"
+            },
+            {
+              "txt": "turismo",
+              "em": "🏝️"
+            },
+            {
+              "txt": "tornillo",
+              "em": "🔩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "juez",
+              "судья"
+            ],
+            [
+              "abogado",
+              "адвокат"
+            ],
+            [
+              "tribunal",
+              "суд"
+            ],
+            [
+              "fiscal",
+              "прокурор"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "juicio",
+              "суд (процесс)"
+            ],
+            [
+              "sentencia",
+              "приговор"
+            ],
+            [
+              "acusado",
+              "обвиняемый"
+            ],
+            [
+              "inocente",
+              "невиновный"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужен хороший адвокат",
+          "tiles": [
+            "necesito",
+            "un",
+            "buen",
+            "abogado",
+            "una"
+          ],
+          "answer": [
+            "necesito",
+            "un",
+            "buen",
+            "abogado"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "decidió ayer."
+          ],
+          "target": "juez",
+          "opts": [
+            "juez",
+            "juego",
+            "joven"
+          ],
+          "hint": "судья решил вчера"
+        },
+        {
+          "t": "typed",
+          "from": "Обвиняемый невиновен",
+          "answer": "el acusado es inocente",
+          "answers": [
+            "el acusado es inocente",
+            "el acusado está inocente"
+          ],
+          "hint": "el acusado es inocente"
+        }
+      ]
+    },
+    {
+      "id": "l188",
+      "name": "Policía",
+      "emoji": "👮",
+      "desc": "Agentes, comisaría, multa",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Полицейский»",
+          "opts": [
+            {
+              "txt": "policía",
+              "em": "👮"
+            },
+            {
+              "txt": "político",
+              "em": "🏛️"
+            },
+            {
+              "txt": "polvo",
+              "em": "💨"
+            },
+            {
+              "txt": "polo",
+              "em": "🧊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Полицейский участок»",
+          "opts": [
+            {
+              "txt": "comisaría",
+              "em": "🏢"
+            },
+            {
+              "txt": "comedia",
+              "em": "😂"
+            },
+            {
+              "txt": "comercio",
+              "em": "🛒"
+            },
+            {
+              "txt": "comuna",
+              "em": "🏘️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Штраф»",
+          "opts": [
+            {
+              "txt": "multa",
+              "em": "💸"
+            },
+            {
+              "txt": "mula",
+              "em": "🐴"
+            },
+            {
+              "txt": "milla",
+              "em": "🛣️"
+            },
+            {
+              "txt": "manta",
+              "em": "🛌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "policía",
+              "полицейский"
+            ],
+            [
+              "comisaría",
+              "участок"
+            ],
+            [
+              "agente",
+              "агент"
+            ],
+            [
+              "patrulla",
+              "патруль"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "multa",
+              "штраф"
+            ],
+            [
+              "esposas",
+              "наручники"
+            ],
+            [
+              "arrestar",
+              "арестовывать"
+            ],
+            [
+              "emergencia",
+              "чрезвычайная"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Позвони в полицию!",
+          "tiles": [
+            "¡",
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "!"
+          ],
+          "answer": [
+            "¡",
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "!"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Me pusieron una",
+            null,
+            "."
+          ],
+          "target": "multa",
+          "opts": [
+            "multa",
+            "milla",
+            "mula"
+          ],
+          "hint": "мне выписали штраф"
+        },
+        {
+          "t": "typed",
+          "from": "Полицейский участок здесь рядом",
+          "answer": "la comisaría está aquí cerca",
+          "answers": [
+            "la comisaría está aquí cerca",
+            "la comisaría queda aquí cerca"
+          ],
+          "hint": "la comisaría está / queda cerca"
+        }
+      ]
+    },
+    {
+      "id": "l189",
+      "name": "Servicios",
+      "emoji": "💡",
+      "desc": "Luz, agua, gas, factura",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Свет / электричество»",
+          "opts": [
+            {
+              "txt": "luz",
+              "em": "💡"
+            },
+            {
+              "txt": "lupa",
+              "em": "🔍"
+            },
+            {
+              "txt": "luna",
+              "em": "🌙"
+            },
+            {
+              "txt": "lluvia",
+              "em": "🌧️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Газ»",
+          "opts": [
+            {
+              "txt": "gas",
+              "em": "🔥"
+            },
+            {
+              "txt": "gasa",
+              "em": "🩹"
+            },
+            {
+              "txt": "goma",
+              "em": "🧽"
+            },
+            {
+              "txt": "gota",
+              "em": "💧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Счёт (за услуги)»",
+          "opts": [
+            {
+              "txt": "factura",
+              "em": "🧾"
+            },
+            {
+              "txt": "fortuna",
+              "em": "🍀"
+            },
+            {
+              "txt": "fábrica",
+              "em": "🏭"
+            },
+            {
+              "txt": "familia",
+              "em": "👨‍👩‍👧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "luz",
+              "свет"
+            ],
+            [
+              "agua",
+              "вода"
+            ],
+            [
+              "gas",
+              "газ"
+            ],
+            [
+              "internet",
+              "интернет"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "factura",
+              "счёт"
+            ],
+            [
+              "contador",
+              "счётчик"
+            ],
+            [
+              "suministro",
+              "снабжение"
+            ],
+            [
+              "avería",
+              "поломка"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я плачу за свет каждый месяц",
+          "tiles": [
+            "pago",
+            "la",
+            "luz",
+            "cada",
+            "mes",
+            "el"
+          ],
+          "answer": [
+            "pago",
+            "la",
+            "luz",
+            "cada",
+            "mes"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No hay",
+            null,
+            "en mi casa."
+          ],
+          "target": "agua",
+          "opts": [
+            "agua",
+            "aire",
+            "arena"
+          ],
+          "hint": "в моём доме нет воды"
+        },
+        {
+          "t": "typed",
+          "from": "Свет отключился",
+          "answer": "se cortó la luz",
+          "answers": [
+            "se cortó la luz",
+            "se ha cortado la luz",
+            "se fue la luz"
+          ],
+          "hint": "se cortó / se fue la luz"
+        }
+      ]
+    },
+    {
+      "id": "l190",
+      "name": "Repaso 31",
+      "emoji": "⚖️",
+      "desc": "Repaso L186-L189",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Вор»",
+          "opts": [
+            {
+              "txt": "ladrón",
+              "em": "🦹"
+            },
+            {
+              "txt": "libro",
+              "em": "📖"
+            },
+            {
+              "txt": "limón",
+              "em": "🍋"
+            },
+            {
+              "txt": "león",
+              "em": "🦁"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Судья»",
+          "opts": [
+            {
+              "txt": "juez",
+              "em": "👨‍⚖️"
+            },
+            {
+              "txt": "jugo",
+              "em": "🥤"
+            },
+            {
+              "txt": "joven",
+              "em": "🧒"
+            },
+            {
+              "txt": "jamón",
+              "em": "🍖"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Полицейский»",
+          "opts": [
+            {
+              "txt": "policía",
+              "em": "👮"
+            },
+            {
+              "txt": "político",
+              "em": "🏛️"
+            },
+            {
+              "txt": "polvo",
+              "em": "💨"
+            },
+            {
+              "txt": "polo",
+              "em": "🧊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Свет»",
+          "opts": [
+            {
+              "txt": "luz",
+              "em": "💡"
+            },
+            {
+              "txt": "luna",
+              "em": "🌙"
+            },
+            {
+              "txt": "lupa",
+              "em": "🔍"
+            },
+            {
+              "txt": "lluvia",
+              "em": "🌧️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "delito",
+              "преступление"
+            ],
+            [
+              "víctima",
+              "жертва"
+            ],
+            [
+              "testigo",
+              "свидетель"
+            ],
+            [
+              "denuncia",
+              "заявление"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "abogado",
+              "адвокат"
+            ],
+            [
+              "tribunal",
+              "суд"
+            ],
+            [
+              "sentencia",
+              "приговор"
+            ],
+            [
+              "inocente",
+              "невиновный"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "comisaría",
+              "участок"
+            ],
+            [
+              "multa",
+              "штраф"
+            ],
+            [
+              "factura",
+              "счёт"
+            ],
+            [
+              "agua",
+              "вода"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Вор украл сумку",
+          "tiles": [
+            "el",
+            "ladrón",
+            "robó",
+            "la",
+            "bolsa"
+          ],
+          "answer": [
+            "el",
+            "ladrón",
+            "robó",
+            "la",
+            "bolsa"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Позвони в полицию!",
+          "tiles": [
+            "¡",
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "!"
+          ],
+          "answer": [
+            "¡",
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "!"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesito un buen",
+            null,
+            "."
+          ],
+          "target": "abogado",
+          "opts": [
+            "abogado",
+            "abuelo",
+            "abrazo"
+          ],
+          "hint": "мне нужен хороший адвокат"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No hay",
+            null,
+            "en mi casa."
+          ],
+          "target": "agua",
+          "opts": [
+            "agua",
+            "aire",
+            "arena"
+          ],
+          "hint": "в моём доме нет воды"
+        },
+        {
+          "t": "typed",
+          "from": "У меня украли телефон",
+          "answer": "me robaron el teléfono",
+          "answers": [
+            "me robaron el teléfono",
+            "me han robado el teléfono",
+            "me robaron el móvil"
+          ],
+          "hint": "me robaron el móvil / teléfono"
+        }
+      ]
+    }
+  ]
+}

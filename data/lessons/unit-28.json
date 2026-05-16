@@ -1,0 +1,894 @@
+{
+  "unit": 28,
+  "lessons": [
+    {
+      "id": "l136",
+      "name": "España",
+      "emoji": "🇪🇸",
+      "desc": "Flamenco, paella y fiestas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Фламенко»",
+          "opts": [
+            {
+              "txt": "flamenco",
+              "em": "💃"
+            },
+            {
+              "txt": "fútbol",
+              "em": "⚽"
+            },
+            {
+              "txt": "flamingo",
+              "em": "🦩"
+            },
+            {
+              "txt": "falda",
+              "em": "👗"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Паэлья»",
+          "opts": [
+            {
+              "txt": "paella",
+              "em": "🥘"
+            },
+            {
+              "txt": "patata",
+              "em": "🥔"
+            },
+            {
+              "txt": "palabra",
+              "em": "💬"
+            },
+            {
+              "txt": "paloma",
+              "em": "🕊️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сиеста (дневной сон)»",
+          "opts": [
+            {
+              "txt": "fiesta",
+              "em": "🎉"
+            },
+            {
+              "txt": "siesta",
+              "em": "😴"
+            },
+            {
+              "txt": "silla",
+              "em": "🪑"
+            },
+            {
+              "txt": "sopa",
+              "em": "🍲"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "flamenco",
+              "фламенко"
+            ],
+            [
+              "toros",
+              "корриды (быки)"
+            ],
+            [
+              "paella",
+              "паэлья"
+            ],
+            [
+              "tapas",
+              "тапас (закуски)"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "siesta",
+              "дневной сон"
+            ],
+            [
+              "fiesta",
+              "праздник"
+            ],
+            [
+              "plaza",
+              "площадь"
+            ],
+            [
+              "guitarra",
+              "гитара"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится испанская кухня",
+          "tiles": [
+            "me",
+            "gusta",
+            "la",
+            "cocina",
+            "española",
+            "pero"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "la",
+            "cocina",
+            "española"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Después de comer hago una",
+            null,
+            "."
+          ],
+          "target": "siesta",
+          "opts": [
+            "siesta",
+            "fiesta",
+            "silla"
+          ],
+          "hint": "после еды я устраиваю сиесту"
+        },
+        {
+          "t": "typed",
+          "from": "Паэлья типичное испанское блюдо",
+          "answer": "la paella es un plato típico español",
+          "answers": [
+            "la paella es un plato típico español",
+            "la paella es un plato típico de españa"
+          ],
+          "hint": "un plato típico..."
+        }
+      ]
+    },
+    {
+      "id": "l137",
+      "name": "Latinoamérica",
+      "emoji": "🌎",
+      "desc": "Tango, mate y mariachi",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Танго»",
+          "opts": [
+            {
+              "txt": "tango",
+              "em": "💃"
+            },
+            {
+              "txt": "mango",
+              "em": "🥭"
+            },
+            {
+              "txt": "banco",
+              "em": "🏦"
+            },
+            {
+              "txt": "taco",
+              "em": "🌮"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Тако (мексик. блюдо)»",
+          "opts": [
+            {
+              "txt": "tapas",
+              "em": "🍢"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            },
+            {
+              "txt": "taco",
+              "em": "🌮"
+            },
+            {
+              "txt": "tango",
+              "em": "💃"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Мариачи»",
+          "opts": [
+            {
+              "txt": "mariachi",
+              "em": "🎺"
+            },
+            {
+              "txt": "martillo",
+              "em": "🔨"
+            },
+            {
+              "txt": "maíz",
+              "em": "🌽"
+            },
+            {
+              "txt": "manzana",
+              "em": "🍎"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tango",
+              "танго"
+            ],
+            [
+              "mate",
+              "мате (напиток)"
+            ],
+            [
+              "mariachi",
+              "мариачи"
+            ],
+            [
+              "taco",
+              "тако"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "Argentina",
+              "Аргентина"
+            ],
+            [
+              "México",
+              "Мексика"
+            ],
+            [
+              "Perú",
+              "Перу"
+            ],
+            [
+              "Cuba",
+              "Куба"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я люблю мексиканскую еду",
+          "tiles": [
+            "me",
+            "encanta",
+            "la",
+            "comida",
+            "mexicana",
+            "gusta"
+          ],
+          "answer": [
+            "me",
+            "encanta",
+            "la",
+            "comida",
+            "mexicana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "En Argentina bailan",
+            null,
+            "."
+          ],
+          "target": "tango",
+          "opts": [
+            "tango",
+            "salsa",
+            "rap"
+          ],
+          "hint": "в Аргентине танцуют танго"
+        },
+        {
+          "t": "typed",
+          "from": "Мате типичный аргентинский напиток",
+          "answer": "el mate es una bebida típica argentina",
+          "answers": [
+            "el mate es una bebida típica argentina",
+            "el mate es una bebida típica de argentina"
+          ],
+          "hint": "una bebida típica..."
+        }
+      ]
+    },
+    {
+      "id": "l138",
+      "name": "Comida regional",
+      "emoji": "🌮",
+      "desc": "Sabores del mundo hispano",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Гаспачо (холодный суп)»",
+          "opts": [
+            {
+              "txt": "gazpacho",
+              "em": "🥣"
+            },
+            {
+              "txt": "guisado",
+              "em": "🥘"
+            },
+            {
+              "txt": "galleta",
+              "em": "🍪"
+            },
+            {
+              "txt": "gambas",
+              "em": "🦐"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Тортилья»",
+          "opts": [
+            {
+              "txt": "tortilla",
+              "em": "🌯"
+            },
+            {
+              "txt": "tarta",
+              "em": "🎂"
+            },
+            {
+              "txt": "tomate",
+              "em": "🍅"
+            },
+            {
+              "txt": "tostada",
+              "em": "🍞"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Чурро»",
+          "opts": [
+            {
+              "txt": "churros",
+              "em": "🥖"
+            },
+            {
+              "txt": "chocolate",
+              "em": "🍫"
+            },
+            {
+              "txt": "chuleta",
+              "em": "🥩"
+            },
+            {
+              "txt": "cheese",
+              "em": "🧀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gazpacho",
+              "гаспачо"
+            ],
+            [
+              "tortilla",
+              "тортилья"
+            ],
+            [
+              "churros",
+              "чурро"
+            ],
+            [
+              "empanada",
+              "эмпанада"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "picante",
+              "острый"
+            ],
+            [
+              "salado",
+              "солёный"
+            ],
+            [
+              "dulce",
+              "сладкий"
+            ],
+            [
+              "amargo",
+              "горький"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу тако с курицей",
+          "tiles": [
+            "quiero",
+            "un",
+            "taco",
+            "de",
+            "pollo"
+          ],
+          "answer": [
+            "quiero",
+            "un",
+            "taco",
+            "de",
+            "pollo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Esta comida está muy",
+            null,
+            "."
+          ],
+          "target": "picante",
+          "opts": [
+            "picante",
+            "frío",
+            "lento"
+          ],
+          "hint": "эта еда очень острая"
+        },
+        {
+          "t": "typed",
+          "from": "Я никогда не пробовал паэлью",
+          "answer": "nunca he probado la paella",
+          "answers": [
+            "nunca he probado la paella",
+            "no he probado nunca la paella"
+          ],
+          "hint": "nunca he + part."
+        }
+      ]
+    },
+    {
+      "id": "l139",
+      "name": "Tradiciones",
+      "emoji": "🎉",
+      "desc": "Navidad, Año Nuevo, fiestas",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Рождество»",
+          "opts": [
+            {
+              "txt": "Navidad",
+              "em": "🎄"
+            },
+            {
+              "txt": "cumpleaños",
+              "em": "🎂"
+            },
+            {
+              "txt": "verano",
+              "em": "☀️"
+            },
+            {
+              "txt": "boda",
+              "em": "💍"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Новый Год»",
+          "opts": [
+            {
+              "txt": "Año Nuevo",
+              "em": "🎆"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            },
+            {
+              "txt": "medianoche",
+              "em": "🕛"
+            },
+            {
+              "txt": "fin de semana",
+              "em": "📅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Подарок»",
+          "opts": [
+            {
+              "txt": "regalo",
+              "em": "🎁"
+            },
+            {
+              "txt": "recuerdo",
+              "em": "📷"
+            },
+            {
+              "txt": "reloj",
+              "em": "⌚"
+            },
+            {
+              "txt": "regla",
+              "em": "📏"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "Navidad",
+              "Рождество"
+            ],
+            [
+              "Año Nuevo",
+              "Новый Год"
+            ],
+            [
+              "cumpleaños",
+              "день рождения"
+            ],
+            [
+              "Semana Santa",
+              "Страстная неделя"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "regalo",
+              "подарок"
+            ],
+            [
+              "fuegos artificiales",
+              "фейерверк"
+            ],
+            [
+              "celebrar",
+              "праздновать"
+            ],
+            [
+              "brindis",
+              "тост"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Поздравляю с Рождеством!",
+          "tiles": [
+            "¡",
+            "feliz",
+            "Navidad",
+            "!",
+            "cumpleaños"
+          ],
+          "answer": [
+            "¡",
+            "feliz",
+            "Navidad",
+            "!"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Vamos a",
+            null,
+            "el cumpleaños."
+          ],
+          "target": "celebrar",
+          "opts": [
+            "celebrar",
+            "comer",
+            "comprar"
+          ],
+          "hint": "мы празднуем день рождения"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу подарить тебе подарок",
+          "answer": "quiero darte un regalo",
+          "answers": [
+            "quiero darte un regalo",
+            "te quiero dar un regalo"
+          ],
+          "hint": "darte un regalo / te quiero dar"
+        }
+      ]
+    },
+    {
+      "id": "l140",
+      "name": "Repaso 23",
+      "emoji": "🌍",
+      "desc": "Repaso L136-L139",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Паэлья»",
+          "opts": [
+            {
+              "txt": "paella",
+              "em": "🥘"
+            },
+            {
+              "txt": "pasta",
+              "em": "🍝"
+            },
+            {
+              "txt": "pizza",
+              "em": "🍕"
+            },
+            {
+              "txt": "pollo",
+              "em": "🍗"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Танго»",
+          "opts": [
+            {
+              "txt": "tango",
+              "em": "💃"
+            },
+            {
+              "txt": "salsa",
+              "em": "🌶️"
+            },
+            {
+              "txt": "flamenco",
+              "em": "👗"
+            },
+            {
+              "txt": "mariachi",
+              "em": "🎺"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Тако»",
+          "opts": [
+            {
+              "txt": "taco",
+              "em": "🌮"
+            },
+            {
+              "txt": "tapas",
+              "em": "🍢"
+            },
+            {
+              "txt": "tarta",
+              "em": "🎂"
+            },
+            {
+              "txt": "tortilla",
+              "em": "🌯"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Рождество»",
+          "opts": [
+            {
+              "txt": "Navidad",
+              "em": "🎄"
+            },
+            {
+              "txt": "cumpleaños",
+              "em": "🎂"
+            },
+            {
+              "txt": "Año Nuevo",
+              "em": "🎆"
+            },
+            {
+              "txt": "Semana Santa",
+              "em": "⛪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "flamenco",
+              "фламенко"
+            ],
+            [
+              "siesta",
+              "сиеста"
+            ],
+            [
+              "mate",
+              "мате"
+            ],
+            [
+              "mariachi",
+              "мариачи"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "gazpacho",
+              "гаспачо"
+            ],
+            [
+              "tortilla",
+              "тортилья"
+            ],
+            [
+              "churros",
+              "чурро"
+            ],
+            [
+              "empanada",
+              "эмпанада"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "regalo",
+              "подарок"
+            ],
+            [
+              "celebrar",
+              "праздновать"
+            ],
+            [
+              "picante",
+              "острый"
+            ],
+            [
+              "dulce",
+              "сладкий"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я люблю мексиканскую еду",
+          "tiles": [
+            "me",
+            "encanta",
+            "la",
+            "comida",
+            "mexicana"
+          ],
+          "answer": [
+            "me",
+            "encanta",
+            "la",
+            "comida",
+            "mexicana"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "С Новым Годом!",
+          "tiles": [
+            "¡",
+            "feliz",
+            "Año",
+            "Nuevo",
+            "!"
+          ],
+          "answer": [
+            "¡",
+            "feliz",
+            "Año",
+            "Nuevo",
+            "!"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "En Argentina bailan",
+            null,
+            "."
+          ],
+          "target": "tango",
+          "opts": [
+            "tango",
+            "salsa",
+            "rap"
+          ],
+          "hint": "в Аргентине танцуют танго"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Esta sopa está muy",
+            null,
+            "."
+          ],
+          "target": "picante",
+          "opts": [
+            "picante",
+            "frío",
+            "rápido"
+          ],
+          "hint": "этот суп очень острый"
+        },
+        {
+          "t": "typed",
+          "from": "Я хочу попробовать паэлью",
+          "answer": "quiero probar la paella",
+          "answers": [
+            "quiero probar la paella",
+            "quiero probar paella"
+          ],
+          "hint": "probar la paella"
+        }
+      ]
+    }
+  ]
+}

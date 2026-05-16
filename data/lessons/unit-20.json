@@ -1,0 +1,963 @@
+{
+  "unit": 20,
+  "lessons": [
+    {
+      "id": "l96",
+      "name": "Emociones II",
+      "emoji": "😌",
+      "desc": "Más sentimientos",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Спокойный»",
+          "opts": [
+            {
+              "txt": "tranquilo",
+              "em": "😌"
+            },
+            {
+              "txt": "nervioso",
+              "em": "😬"
+            },
+            {
+              "txt": "sorprendido",
+              "em": "😲"
+            },
+            {
+              "txt": "aburrido",
+              "em": "😑"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Нервный»",
+          "opts": [
+            {
+              "txt": "tranquilo",
+              "em": "😌"
+            },
+            {
+              "txt": "nervioso",
+              "em": "😬"
+            },
+            {
+              "txt": "feliz",
+              "em": "😊"
+            },
+            {
+              "txt": "cansado",
+              "em": "😴"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Удивлённый»",
+          "opts": [
+            {
+              "txt": "feliz",
+              "em": "😊"
+            },
+            {
+              "txt": "aburrido",
+              "em": "😑"
+            },
+            {
+              "txt": "sorprendido",
+              "em": "😲"
+            },
+            {
+              "txt": "enfadado",
+              "em": "😠"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tranquilo",
+              "спокойный"
+            ],
+            [
+              "nervioso",
+              "нервный"
+            ],
+            [
+              "sorprendido",
+              "удивлённый"
+            ],
+            [
+              "aburrido",
+              "скучающий"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "orgulloso",
+              "гордый"
+            ],
+            [
+              "celoso",
+              "ревнивый"
+            ],
+            [
+              "avergonzado",
+              "смущённый"
+            ],
+            [
+              "emocionado",
+              "взволнованный"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я очень спокоен",
+          "tiles": [
+            "estoy",
+            "muy",
+            "tranquilo",
+            "nervioso"
+          ],
+          "answer": [
+            "estoy",
+            "muy",
+            "tranquilo"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hoy estoy",
+            null,
+            "."
+          ],
+          "target": "feliz",
+          "opts": [
+            "feliz",
+            "libro",
+            "mar"
+          ],
+          "hint": "Сегодня я счастлив"
+        }
+      ]
+    },
+    {
+      "id": "l97",
+      "name": "El cuerpo II",
+      "emoji": "💪",
+      "desc": "Más partes del cuerpo",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Сердце»",
+          "opts": [
+            {
+              "txt": "corazón",
+              "em": "❤️"
+            },
+            {
+              "txt": "estómago",
+              "em": "🍽️"
+            },
+            {
+              "txt": "pulmón",
+              "em": "🫁"
+            },
+            {
+              "txt": "hígado",
+              "em": "🍖"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Спина»",
+          "opts": [
+            {
+              "txt": "pecho",
+              "em": "🫀"
+            },
+            {
+              "txt": "espalda",
+              "em": "🔙"
+            },
+            {
+              "txt": "cuello",
+              "em": "🦒"
+            },
+            {
+              "txt": "rodilla",
+              "em": "🦵"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Колено»",
+          "opts": [
+            {
+              "txt": "codo",
+              "em": "💪"
+            },
+            {
+              "txt": "hombro",
+              "em": "💪"
+            },
+            {
+              "txt": "rodilla",
+              "em": "🦵"
+            },
+            {
+              "txt": "tobillo",
+              "em": "🦶"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "corazón",
+              "сердце"
+            ],
+            [
+              "espalda",
+              "спина"
+            ],
+            [
+              "hombro",
+              "плечо"
+            ],
+            [
+              "rodilla",
+              "колено"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "codo",
+              "локоть"
+            ],
+            [
+              "cuello",
+              "шея"
+            ],
+            [
+              "pecho",
+              "грудь"
+            ],
+            [
+              "estómago",
+              "желудок"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "У меня болит спина",
+          "tiles": [
+            "me",
+            "duele",
+            "la",
+            "espalda",
+            "el"
+          ],
+          "answer": [
+            "me",
+            "duele",
+            "la",
+            "espalda"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo dolor de",
+            null,
+            "."
+          ],
+          "target": "cabeza",
+          "opts": [
+            "cabeza",
+            "libro",
+            "sol"
+          ],
+          "hint": "У меня болит голова"
+        }
+      ]
+    },
+    {
+      "id": "l98",
+      "name": "Farmacia",
+      "emoji": "💊",
+      "desc": "En la farmacia",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Таблетка»",
+          "opts": [
+            {
+              "txt": "pastilla",
+              "em": "💊"
+            },
+            {
+              "txt": "jarabe",
+              "em": "🍯"
+            },
+            {
+              "txt": "venda",
+              "em": "🩹"
+            },
+            {
+              "txt": "receta",
+              "em": "📋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сироп»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "jarabe",
+              "em": "🍯"
+            },
+            {
+              "txt": "leche",
+              "em": "🥛"
+            },
+            {
+              "txt": "café",
+              "em": "☕"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Температура»",
+          "opts": [
+            {
+              "txt": "tos",
+              "em": "🤧"
+            },
+            {
+              "txt": "dolor",
+              "em": "🤕"
+            },
+            {
+              "txt": "fiebre",
+              "em": "🤒"
+            },
+            {
+              "txt": "frío",
+              "em": "🥶"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "pastilla",
+              "таблетка"
+            ],
+            [
+              "jarabe",
+              "сироп"
+            ],
+            [
+              "receta",
+              "рецепт"
+            ],
+            [
+              "venda",
+              "бинт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "dolor",
+              "боль"
+            ],
+            [
+              "fiebre",
+              "температура"
+            ],
+            [
+              "tos",
+              "кашель"
+            ],
+            [
+              "gripe",
+              "грипп"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нужна таблетка",
+          "tiles": [
+            "necesito",
+            "una",
+            "pastilla",
+            "un"
+          ],
+          "answer": [
+            "necesito",
+            "una",
+            "pastilla"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo",
+            null,
+            "."
+          ],
+          "target": "fiebre",
+          "opts": [
+            "fiebre",
+            "mar",
+            "sol"
+          ],
+          "hint": "У меня температура"
+        }
+      ]
+    },
+    {
+      "id": "l99",
+      "name": "Emergencias",
+      "emoji": "🚨",
+      "desc": "Ayuda y peligro",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Помощь!»",
+          "opts": [
+            {
+              "txt": "¡ayuda!",
+              "em": "🆘"
+            },
+            {
+              "txt": "¡gracias!",
+              "em": "🙏"
+            },
+            {
+              "txt": "¡hola!",
+              "em": "👋"
+            },
+            {
+              "txt": "¡vamos!",
+              "em": "🚶"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Огонь»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "fuego",
+              "em": "🔥"
+            },
+            {
+              "txt": "humo",
+              "em": "💨"
+            },
+            {
+              "txt": "frío",
+              "em": "🥶"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Полиция»",
+          "opts": [
+            {
+              "txt": "bombero",
+              "em": "🧑‍🚒"
+            },
+            {
+              "txt": "médico",
+              "em": "🩺"
+            },
+            {
+              "txt": "policía",
+              "em": "👮"
+            },
+            {
+              "txt": "profesor",
+              "em": "👨‍🏫"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ayuda",
+              "помощь"
+            ],
+            [
+              "peligro",
+              "опасность"
+            ],
+            [
+              "fuego",
+              "огонь"
+            ],
+            [
+              "accidente",
+              "авария"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "policía",
+              "полиция"
+            ],
+            [
+              "bombero",
+              "пожарный"
+            ],
+            [
+              "hospital",
+              "больница"
+            ],
+            [
+              "ambulancia",
+              "скорая помощь"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Позвони в полицию",
+          "tiles": [
+            "llama",
+            "a",
+            "la",
+            "policía",
+            "hospital"
+          ],
+          "answer": [
+            "llama",
+            "a",
+            "la",
+            "policía"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¡Cuidado, hay",
+            null,
+            "!"
+          ],
+          "target": "fuego",
+          "opts": [
+            "fuego",
+            "libro",
+            "sol"
+          ],
+          "hint": "Осторожно, огонь!"
+        }
+      ]
+    },
+    {
+      "id": "l100",
+      "name": "Repaso Maestro",
+      "emoji": "🏆",
+      "desc": "Repaso final (76-99)",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Очень приятно»",
+          "opts": [
+            {
+              "txt": "mucho gusto",
+              "em": "🤝"
+            },
+            {
+              "txt": "de nada",
+              "em": "🙏"
+            },
+            {
+              "txt": "por favor",
+              "em": "🙏"
+            },
+            {
+              "txt": "adiós",
+              "em": "👋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Бежать»",
+          "opts": [
+            {
+              "txt": "caminar",
+              "em": "🚶"
+            },
+            {
+              "txt": "correr",
+              "em": "🏃"
+            },
+            {
+              "txt": "saltar",
+              "em": "🤾"
+            },
+            {
+              "txt": "nadar",
+              "em": "🏊"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Сердце»",
+          "opts": [
+            {
+              "txt": "estómago",
+              "em": "🍽️"
+            },
+            {
+              "txt": "espalda",
+              "em": "🔙"
+            },
+            {
+              "txt": "corazón",
+              "em": "❤️"
+            },
+            {
+              "txt": "hombro",
+              "em": "💪"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Офис»",
+          "opts": [
+            {
+              "txt": "oficina",
+              "em": "🏢"
+            },
+            {
+              "txt": "escuela",
+              "em": "🏫"
+            },
+            {
+              "txt": "tienda",
+              "em": "🏪"
+            },
+            {
+              "txt": "farmacia",
+              "em": "💊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Песок»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "arena",
+              "em": "🏖️"
+            },
+            {
+              "txt": "mar",
+              "em": "🌊"
+            },
+            {
+              "txt": "sol",
+              "em": "☀️"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Жарить»",
+          "opts": [
+            {
+              "txt": "hervir",
+              "em": "♨️"
+            },
+            {
+              "txt": "cortar",
+              "em": "🔪"
+            },
+            {
+              "txt": "freír",
+              "em": "🍳"
+            },
+            {
+              "txt": "mezclar",
+              "em": "🥣"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Скорая помощь»",
+          "opts": [
+            {
+              "txt": "ambulancia",
+              "em": "🚑"
+            },
+            {
+              "txt": "policía",
+              "em": "👮"
+            },
+            {
+              "txt": "bombero",
+              "em": "🧑‍🚒"
+            },
+            {
+              "txt": "farmacia",
+              "em": "💊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "oficina",
+              "офис"
+            ],
+            [
+              "playa",
+              "пляж"
+            ],
+            [
+              "fútbol",
+              "футбол"
+            ],
+            [
+              "guitarra",
+              "гитара"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "delfín",
+              "дельфин"
+            ],
+            [
+              "mariposa",
+              "бабочка"
+            ],
+            [
+              "tranquilo",
+              "спокойный"
+            ],
+            [
+              "pastilla",
+              "таблетка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ayuda",
+              "помощь"
+            ],
+            [
+              "fuego",
+              "огонь"
+            ],
+            [
+              "policía",
+              "полиция"
+            ],
+            [
+              "hospital",
+              "больница"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "café",
+              "кофе"
+            ],
+            [
+              "cerveza",
+              "пиво"
+            ],
+            [
+              "tarta",
+              "торт"
+            ],
+            [
+              "helado",
+              "мороженое"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я играю на гитаре",
+          "tiles": [
+            "toco",
+            "la",
+            "el",
+            "guitarra"
+          ],
+          "answer": [
+            "toco",
+            "la",
+            "guitarra"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мне нравится футбол",
+          "tiles": [
+            "me",
+            "gusta",
+            "gustan",
+            "el",
+            "fútbol"
+          ],
+          "answer": [
+            "me",
+            "gusta",
+            "el",
+            "fútbol"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу пойти на пляж",
+          "tiles": [
+            "quiero",
+            "ir",
+            "a",
+            "la",
+            "playa",
+            "el"
+          ],
+          "answer": [
+            "quiero",
+            "ir",
+            "a",
+            "la",
+            "playa"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¡Cuidado, hay",
+            null,
+            "!"
+          ],
+          "target": "fuego",
+          "opts": [
+            "fuego",
+            "libro",
+            "sol"
+          ],
+          "hint": "Осторожно, огонь!"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a",
+            null,
+            "la cena."
+          ],
+          "target": "cocinar",
+          "opts": [
+            "cocinar",
+            "comer",
+            "limpiar"
+          ],
+          "hint": "Я буду готовить ужин"
+        },
+        {
+          "t": "typed",
+          "from": "Помоги мне, пожалуйста",
+          "answer": "ayúdame por favor",
+          "answers": [
+            "ayúdame por favor",
+            "ayúdame, por favor",
+            "ayudame por favor"
+          ],
+          "hint": "imperativo: ayúdame"
+        },
+        {
+          "t": "typed",
+          "from": "Мне нравится играть на гитаре",
+          "answer": "me gusta tocar la guitarra",
+          "answers": [
+            "me gusta tocar la guitarra",
+            "me gusta tocar guitarra"
+          ],
+          "hint": "gustar + инфинитив"
+        }
+      ]
+    }
+  ]
+}

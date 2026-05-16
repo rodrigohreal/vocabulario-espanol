@@ -1,0 +1,941 @@
+{
+  "unit": 25,
+  "lessons": [
+    {
+      "id": "l121",
+      "name": "Banco",
+      "emoji": "🏦",
+      "desc": "Cajero, cuenta, ahorrar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Банк»",
+          "opts": [
+            {
+              "txt": "banco",
+              "em": "🏦"
+            },
+            {
+              "txt": "cajero",
+              "em": "🏧"
+            },
+            {
+              "txt": "tarjeta",
+              "em": "💳"
+            },
+            {
+              "txt": "cuenta",
+              "em": "📋"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Банкомат»",
+          "opts": [
+            {
+              "txt": "banco",
+              "em": "🏦"
+            },
+            {
+              "txt": "cajero",
+              "em": "🏧"
+            },
+            {
+              "txt": "efectivo",
+              "em": "💵"
+            },
+            {
+              "txt": "cambio",
+              "em": "🔄"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Сберегать»",
+          "opts": [
+            {
+              "txt": "gastar",
+              "em": "💸"
+            },
+            {
+              "txt": "cobrar",
+              "em": "💰"
+            },
+            {
+              "txt": "ahorrar",
+              "em": "🐷"
+            },
+            {
+              "txt": "prestar",
+              "em": "🤝"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "banco",
+              "банк"
+            ],
+            [
+              "cajero",
+              "банкомат"
+            ],
+            [
+              "cuenta",
+              "счёт"
+            ],
+            [
+              "tarjeta",
+              "карта"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "swap": true,
+          "pairs": [
+            [
+              "ahorrar",
+              "сберегать"
+            ],
+            [
+              "gastar",
+              "тратить"
+            ],
+            [
+              "prestar",
+              "одолжить"
+            ],
+            [
+              "deber",
+              "быть должным"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я хочу снять деньги",
+          "tiles": [
+            "quiero",
+            "sacar",
+            "dinero",
+            "meter"
+          ],
+          "answer": [
+            "quiero",
+            "sacar",
+            "dinero"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Necesito una",
+            null,
+            "nueva."
+          ],
+          "target": "tarjeta",
+          "opts": [
+            "tarjeta",
+            "casa",
+            "flor"
+          ],
+          "hint": "Мне нужна новая карта"
+        }
+      ]
+    },
+    {
+      "id": "l122",
+      "name": "Conducir",
+      "emoji": "🚗",
+      "desc": "Gasolina, semáforo, multa",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Водить»",
+          "opts": [
+            {
+              "txt": "conducir",
+              "em": "🚗"
+            },
+            {
+              "txt": "caminar",
+              "em": "🚶"
+            },
+            {
+              "txt": "volar",
+              "em": "✈️"
+            },
+            {
+              "txt": "nadar",
+              "em": "🏊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Бензин»",
+          "opts": [
+            {
+              "txt": "aceite",
+              "em": "🛢️"
+            },
+            {
+              "txt": "gasolina",
+              "em": "⛽"
+            },
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "aire",
+              "em": "💨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Светофор»",
+          "opts": [
+            {
+              "txt": "calle",
+              "em": "🛣️"
+            },
+            {
+              "txt": "señal",
+              "em": "🚸"
+            },
+            {
+              "txt": "semáforo",
+              "em": "🚦"
+            },
+            {
+              "txt": "esquina",
+              "em": "📐"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "conducir",
+              "водить"
+            ],
+            [
+              "gasolina",
+              "бензин"
+            ],
+            [
+              "semáforo",
+              "светофор"
+            ],
+            [
+              "multa",
+              "штраф"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "carnet",
+              "права"
+            ],
+            [
+              "rueda",
+              "колесо"
+            ],
+            [
+              "volante",
+              "руль"
+            ],
+            [
+              "aparcar",
+              "парковаться"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я не умею водить",
+          "tiles": [
+            "no",
+            "sé",
+            "conducir",
+            "puedo"
+          ],
+          "answer": [
+            "no",
+            "sé",
+            "conducir"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El",
+            null,
+            "está en rojo."
+          ],
+          "target": "semáforo",
+          "opts": [
+            "semáforo",
+            "banco",
+            "pan"
+          ],
+          "hint": "Светофор красный"
+        }
+      ]
+    },
+    {
+      "id": "l123",
+      "name": "Medio ambiente",
+      "emoji": "🌍",
+      "desc": "Planeta, reciclar, basura",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Планета»",
+          "opts": [
+            {
+              "txt": "planeta",
+              "em": "🌍"
+            },
+            {
+              "txt": "estrella",
+              "em": "⭐"
+            },
+            {
+              "txt": "luna",
+              "em": "🌙"
+            },
+            {
+              "txt": "sol",
+              "em": "☀️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Мусор»",
+          "opts": [
+            {
+              "txt": "agua",
+              "em": "💧"
+            },
+            {
+              "txt": "basura",
+              "em": "🗑️"
+            },
+            {
+              "txt": "aire",
+              "em": "💨"
+            },
+            {
+              "txt": "tierra",
+              "em": "🌱"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Перерабатывать»",
+          "opts": [
+            {
+              "txt": "tirar",
+              "em": "🗑️"
+            },
+            {
+              "txt": "comprar",
+              "em": "🛒"
+            },
+            {
+              "txt": "reciclar",
+              "em": "♻️"
+            },
+            {
+              "txt": "limpiar",
+              "em": "🧹"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "planeta",
+              "планета"
+            ],
+            [
+              "Tierra",
+              "Земля"
+            ],
+            [
+              "basura",
+              "мусор"
+            ],
+            [
+              "reciclar",
+              "перерабатывать"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "aire",
+              "воздух"
+            ],
+            [
+              "agua",
+              "вода"
+            ],
+            [
+              "contaminación",
+              "загрязнение"
+            ],
+            [
+              "naturaleza",
+              "природа"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мы должны беречь планету",
+          "tiles": [
+            "debemos",
+            "cuidar",
+            "el",
+            "planeta",
+            "comer"
+          ],
+          "answer": [
+            "debemos",
+            "cuidar",
+            "el",
+            "planeta"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hay que",
+            null,
+            "el plástico."
+          ],
+          "target": "reciclar",
+          "opts": [
+            "reciclar",
+            "comer",
+            "beber"
+          ],
+          "hint": "Надо перерабатывать пластик"
+        }
+      ]
+    },
+    {
+      "id": "l124",
+      "name": "Tecnología II",
+      "emoji": "📲",
+      "desc": "Apps, redes, descargar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Приложение»",
+          "opts": [
+            {
+              "txt": "aplicación",
+              "em": "📲"
+            },
+            {
+              "txt": "pantalla",
+              "em": "🖥️"
+            },
+            {
+              "txt": "teclado",
+              "em": "⌨️"
+            },
+            {
+              "txt": "ratón",
+              "em": "🖱️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Скачать»",
+          "opts": [
+            {
+              "txt": "subir",
+              "em": "⬆️"
+            },
+            {
+              "txt": "descargar",
+              "em": "⬇️"
+            },
+            {
+              "txt": "borrar",
+              "em": "🗑️"
+            },
+            {
+              "txt": "guardar",
+              "em": "💾"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Социальные сети»",
+          "opts": [
+            {
+              "txt": "correo",
+              "em": "📧"
+            },
+            {
+              "txt": "video",
+              "em": "📹"
+            },
+            {
+              "txt": "redes sociales",
+              "em": "🌐"
+            },
+            {
+              "txt": "archivo",
+              "em": "📁"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "aplicación",
+              "приложение"
+            ],
+            [
+              "descargar",
+              "скачать"
+            ],
+            [
+              "subir",
+              "загружать"
+            ],
+            [
+              "redes sociales",
+              "соцсети"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "enviar",
+              "отправлять"
+            ],
+            [
+              "recibir",
+              "получать"
+            ],
+            [
+              "compartir",
+              "делиться"
+            ],
+            [
+              "comentar",
+              "комментировать"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я скачиваю приложение",
+          "tiles": [
+            "descargo",
+            "una",
+            "aplicación",
+            "subo"
+          ],
+          "answer": [
+            "descargo",
+            "una",
+            "aplicación"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a",
+            null,
+            "una foto en internet."
+          ],
+          "target": "subir",
+          "opts": [
+            "subir",
+            "comer",
+            "dormir"
+          ],
+          "hint": "Я загружу фото в интернет"
+        },
+        {
+          "t": "typed",
+          "from": "Я отправляю сообщение",
+          "answer": "envío un mensaje",
+          "answers": [
+            "envío un mensaje",
+            "mando un mensaje",
+            "yo envío un mensaje"
+          ],
+          "hint": "enviar / mandar"
+        }
+      ]
+    },
+    {
+      "id": "l125",
+      "name": "Repaso Maestro II",
+      "emoji": "🎓",
+      "desc": "Repaso final (101-124)",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Сердце»",
+          "opts": [
+            {
+              "txt": "corazón",
+              "em": "❤️"
+            },
+            {
+              "txt": "cerebro",
+              "em": "🧠"
+            },
+            {
+              "txt": "pulmón",
+              "em": "🫁"
+            },
+            {
+              "txt": "hueso",
+              "em": "🦴"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Иди!»",
+          "opts": [
+            {
+              "txt": "¡ven!",
+              "em": "⬅️"
+            },
+            {
+              "txt": "¡ve!",
+              "em": "🚶"
+            },
+            {
+              "txt": "¡di!",
+              "em": "💬"
+            },
+            {
+              "txt": "¡haz!",
+              "em": "🔨"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Племянник»",
+          "opts": [
+            {
+              "txt": "tío",
+              "em": "👨"
+            },
+            {
+              "txt": "primo",
+              "em": "👦"
+            },
+            {
+              "txt": "sobrino",
+              "em": "🧒"
+            },
+            {
+              "txt": "nieto",
+              "em": "👶"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Я (только что) ел»",
+          "opts": [
+            {
+              "txt": "he comido",
+              "em": "✅"
+            },
+            {
+              "txt": "comí",
+              "em": "⏪"
+            },
+            {
+              "txt": "comía",
+              "em": "⏳"
+            },
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Скачать»",
+          "opts": [
+            {
+              "txt": "subir",
+              "em": "⬆️"
+            },
+            {
+              "txt": "descargar",
+              "em": "⬇️"
+            },
+            {
+              "txt": "borrar",
+              "em": "🗑️"
+            },
+            {
+              "txt": "enviar",
+              "em": "📤"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "corazón",
+              "сердце"
+            ],
+            [
+              "cerebro",
+              "мозг"
+            ],
+            [
+              "cama",
+              "кровать"
+            ],
+            [
+              "almohada",
+              "подушка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "¡ven!",
+              "приходи!"
+            ],
+            [
+              "rápido",
+              "быстрый"
+            ],
+            [
+              "pero",
+              "но"
+            ],
+            [
+              "porque",
+              "потому что"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tío",
+              "дядя"
+            ],
+            [
+              "sobrino",
+              "племянник"
+            ],
+            [
+              "boda",
+              "свадьба"
+            ],
+            [
+              "regalo",
+              "подарок"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "lo",
+              "его (м.р.)"
+            ],
+            [
+              "la",
+              "её (ж.р.)"
+            ],
+            [
+              "le",
+              "ему/ей"
+            ],
+            [
+              "se lo",
+              "ему/ей это"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "banco",
+              "банк"
+            ],
+            [
+              "conducir",
+              "водить"
+            ],
+            [
+              "reciclar",
+              "перерабатывать"
+            ],
+            [
+              "redes sociales",
+              "соцсети"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сегодня я не ел",
+          "tiles": [
+            "hoy",
+            "no",
+            "he",
+            "comido",
+            "como"
+          ],
+          "answer": [
+            "hoy",
+            "no",
+            "he",
+            "comido"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я тебе её даю",
+          "tiles": [
+            "te",
+            "le",
+            "la",
+            "lo",
+            "doy"
+          ],
+          "answer": [
+            "te",
+            "la",
+            "doy"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Пей воду!",
+          "tiles": [
+            "bebe",
+            "agua",
+            "come",
+            "pan"
+          ],
+          "answer": [
+            "bebe",
+            "agua"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Hay que",
+            null,
+            "el plástico."
+          ],
+          "target": "reciclar",
+          "opts": [
+            "reciclar",
+            "comer",
+            "dormir"
+          ],
+          "hint": "Нужно перерабатывать"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¡",
+            null,
+            "la puerta!"
+          ],
+          "target": "abre",
+          "opts": [
+            "abre",
+            "cierra",
+            "come"
+          ],
+          "hint": "Открой дверь!"
+        },
+        {
+          "t": "typed",
+          "from": "Я никогда не был в Испании",
+          "answer": "nunca he estado en españa",
+          "answers": [
+            "nunca he estado en españa",
+            "no he estado nunca en españa"
+          ],
+          "hint": "pretérito perfecto: he estado"
+        },
+        {
+          "t": "typed",
+          "from": "Я ему это даю",
+          "answer": "se lo doy",
+          "answers": [
+            "se lo doy",
+            "yo se lo doy"
+          ],
+          "hint": "le + lo → se lo"
+        }
+      ]
+    }
+  ]
+}

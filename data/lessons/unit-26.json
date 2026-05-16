@@ -1,0 +1,863 @@
+{
+  "unit": 26,
+  "lessons": [
+    {
+      "id": "l126",
+      "name": "Voz pasiva",
+      "emoji": "🔄",
+      "desc": "La casa fue construida",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Дом был построен»",
+          "opts": [
+            {
+              "txt": "la casa fue construida",
+              "em": "🏠"
+            },
+            {
+              "txt": "la casa construye",
+              "em": "🔨"
+            },
+            {
+              "txt": "la casa es bonita",
+              "em": "✨"
+            },
+            {
+              "txt": "la casa está lejos",
+              "em": "🛣️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Книга была написана Борхесом»",
+          "opts": [
+            {
+              "txt": "el libro fue escrito por Borges",
+              "em": "📕"
+            },
+            {
+              "txt": "el libro escribió a Borges",
+              "em": "✍️"
+            },
+            {
+              "txt": "Borges es un libro",
+              "em": "👤"
+            },
+            {
+              "txt": "el libro está de Borges",
+              "em": "📚"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fue escrito",
+              "был написан"
+            ],
+            [
+              "fue construida",
+              "была построена"
+            ],
+            [
+              "fue vendido",
+              "был продан"
+            ],
+            [
+              "fue creado",
+              "был создан"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "por",
+              "кем (агент)"
+            ],
+            [
+              "ser + part.",
+              "быть + причастие"
+            ],
+            [
+              "estar + part.",
+              "состояние"
+            ],
+            [
+              "se vende",
+              "продаётся"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Картина была написана",
+          "tiles": [
+            "el",
+            "cuadro",
+            "fue",
+            "pintado",
+            "pinta"
+          ],
+          "answer": [
+            "el",
+            "cuadro",
+            "fue",
+            "pintado"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "La carta",
+            null,
+            "enviada ayer."
+          ],
+          "target": "fue",
+          "opts": [
+            "fue",
+            "es",
+            "está"
+          ],
+          "hint": "была отправлена"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Aquí",
+            null,
+            "venden libros."
+          ],
+          "target": "se",
+          "opts": [
+            "se",
+            "son",
+            "es"
+          ],
+          "hint": "Здесь продаются книги"
+        },
+        {
+          "t": "typed",
+          "from": "Дом был продан в 2020 году",
+          "answer": "la casa fue vendida en 2020",
+          "answers": [
+            "la casa fue vendida en 2020",
+            "la casa se vendió en 2020"
+          ],
+          "hint": "fue / se vendió"
+        }
+      ]
+    },
+    {
+      "id": "l127",
+      "name": "Subjuntivo II",
+      "emoji": "🌟",
+      "desc": "Subjuntivo presente avanzado",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Возможно, он придёт» (presente subj.)",
+          "opts": [
+            {
+              "txt": "quizás venga",
+              "em": "✅"
+            },
+            {
+              "txt": "quizás viene",
+              "em": "❌"
+            },
+            {
+              "txt": "quizás vendrá",
+              "em": "❌"
+            },
+            {
+              "txt": "quizás vino",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Когда увидишь его...»",
+          "opts": [
+            {
+              "txt": "cuando lo veas",
+              "em": "✅"
+            },
+            {
+              "txt": "cuando lo ves",
+              "em": "❌"
+            },
+            {
+              "txt": "cuando lo verás",
+              "em": "❌"
+            },
+            {
+              "txt": "cuando lo viste",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я не думаю, что это правда»",
+          "opts": [
+            {
+              "txt": "no creo que sea verdad",
+              "em": "✅"
+            },
+            {
+              "txt": "no creo que es verdad",
+              "em": "❌"
+            },
+            {
+              "txt": "no creo es verdad",
+              "em": "❌"
+            },
+            {
+              "txt": "no creo que era verdad",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "quizás",
+              "возможно"
+            ],
+            [
+              "tal vez",
+              "может быть"
+            ],
+            [
+              "aunque",
+              "хотя"
+            ],
+            [
+              "antes de que",
+              "прежде чем"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sea",
+              "будь / есть (subj)"
+            ],
+            [
+              "tenga",
+              "у меня было бы (subj)"
+            ],
+            [
+              "vaya",
+              "я пошёл бы (subj)"
+            ],
+            [
+              "venga",
+              "он пришёл бы (subj)"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Когда придёшь, позвони",
+          "tiles": [
+            "cuando",
+            "vengas",
+            "vienes",
+            "llama"
+          ],
+          "answer": [
+            "cuando",
+            "vengas",
+            "llama"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No creo que",
+            null,
+            "fácil."
+          ],
+          "target": "sea",
+          "opts": [
+            "sea",
+            "es",
+            "era"
+          ],
+          "hint": "Не думаю, что это легко"
+        },
+        {
+          "t": "typed",
+          "from": "Возможно, завтра пойдёт дождь",
+          "answer": "quizás llueva mañana",
+          "answers": [
+            "quizás llueva mañana",
+            "tal vez llueva mañana",
+            "quizá llueva mañana"
+          ],
+          "hint": "quizás / tal vez + subjuntivo"
+        }
+      ]
+    },
+    {
+      "id": "l128",
+      "name": "Pluscuamperfecto",
+      "emoji": "⏪",
+      "desc": "Había comido / I had eaten",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я уже поел (до того как)»",
+          "opts": [
+            {
+              "txt": "había comido",
+              "em": "✅"
+            },
+            {
+              "txt": "he comido",
+              "em": "⏳"
+            },
+            {
+              "txt": "comí",
+              "em": "⏪"
+            },
+            {
+              "txt": "voy a comer",
+              "em": "⏩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Когда ты пришёл, я уже ушёл»",
+          "opts": [
+            {
+              "txt": "cuando llegaste, ya me había ido",
+              "em": "✅"
+            },
+            {
+              "txt": "cuando llegaste, ya me he ido",
+              "em": "❌"
+            },
+            {
+              "txt": "cuando llegaste, ya me fui",
+              "em": "❌"
+            },
+            {
+              "txt": "cuando llegabas, ya me iría",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "había comido",
+              "я уже поел"
+            ],
+            [
+              "habías visto",
+              "ты уже видел"
+            ],
+            [
+              "había salido",
+              "он уже вышел"
+            ],
+            [
+              "habíamos hecho",
+              "мы уже сделали"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "ya",
+              "уже"
+            ],
+            [
+              "todavía no",
+              "ещё не"
+            ],
+            [
+              "antes de que",
+              "до того как"
+            ],
+            [
+              "cuando",
+              "когда"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я никогда не видел такого",
+          "tiles": [
+            "nunca",
+            "había",
+            "visto",
+            "algo",
+            "así",
+            "ve"
+          ],
+          "answer": [
+            "nunca",
+            "había",
+            "visto",
+            "algo",
+            "así"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Cuando llegué, ellos ya",
+            null,
+            "cenado."
+          ],
+          "target": "habían",
+          "opts": [
+            "habían",
+            "han",
+            "habrán"
+          ],
+          "hint": "они уже поужинали"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo nunca",
+            null,
+            "estado allí antes."
+          ],
+          "target": "había",
+          "opts": [
+            "había",
+            "he",
+            "estaba"
+          ],
+          "hint": "я никогда не был там раньше"
+        },
+        {
+          "t": "typed",
+          "from": "Я уже ел, когда ты позвонил",
+          "answer": "ya había comido cuando llamaste",
+          "answers": [
+            "ya había comido cuando llamaste",
+            "yo ya había comido cuando llamaste"
+          ],
+          "hint": "había + participio"
+        }
+      ]
+    },
+    {
+      "id": "l129",
+      "name": "Cond. perfecto",
+      "emoji": "💫",
+      "desc": "Habría hecho — I would have done",
+      "hearts": 4,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я бы поел (но не поел)»",
+          "opts": [
+            {
+              "txt": "habría comido",
+              "em": "✅"
+            },
+            {
+              "txt": "había comido",
+              "em": "⏪"
+            },
+            {
+              "txt": "he comido",
+              "em": "⏳"
+            },
+            {
+              "txt": "comería",
+              "em": "🔂"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы пришёл, но не мог»",
+          "opts": [
+            {
+              "txt": "habría venido, pero no pude",
+              "em": "✅"
+            },
+            {
+              "txt": "vendría, pero no pude",
+              "em": "⚠️"
+            },
+            {
+              "txt": "vine, pero no pude",
+              "em": "❌"
+            },
+            {
+              "txt": "venía, pero no pude",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "habría hecho",
+              "я бы сделал"
+            ],
+            [
+              "habrías ido",
+              "ты бы пошёл"
+            ],
+            [
+              "habría dicho",
+              "он бы сказал"
+            ],
+            [
+              "habríamos sido",
+              "мы бы были"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "si hubiera...",
+              "если бы..."
+            ],
+            [
+              "habría + part.",
+              "я бы + сделал"
+            ],
+            [
+              "pero no pudo",
+              "но не смог"
+            ],
+            [
+              "en tu lugar",
+              "на твоём месте"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я бы помог тебе",
+          "tiles": [
+            "te",
+            "habría",
+            "ayudado",
+            "ayudo",
+            "ayudaría"
+          ],
+          "answer": [
+            "te",
+            "habría",
+            "ayudado"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo",
+            null,
+            "ido, pero no tuve tiempo."
+          ],
+          "target": "habría",
+          "opts": [
+            "habría",
+            "había",
+            "he"
+          ],
+          "hint": "я бы пошёл, но не было времени"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "En tu lugar, lo",
+            null,
+            "comprado."
+          ],
+          "target": "habría",
+          "opts": [
+            "habría",
+            "había",
+            "compré"
+          ],
+          "hint": "на твоём месте я бы это купил"
+        },
+        {
+          "t": "typed",
+          "from": "Я бы сказал тебе правду",
+          "answer": "te habría dicho la verdad",
+          "answers": [
+            "te habría dicho la verdad",
+            "te hubiera dicho la verdad"
+          ],
+          "hint": "habría dicho / hubiera dicho"
+        }
+      ]
+    },
+    {
+      "id": "l130",
+      "name": "Repaso 21",
+      "emoji": "🎓",
+      "desc": "Repaso L126-L129",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Книга была написана»",
+          "opts": [
+            {
+              "txt": "el libro fue escrito",
+              "em": "✅"
+            },
+            {
+              "txt": "el libro escribió",
+              "em": "❌"
+            },
+            {
+              "txt": "el libro está escrito",
+              "em": "⚠️"
+            },
+            {
+              "txt": "el libro se escribe",
+              "em": "⚠️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Возможно, он придёт»",
+          "opts": [
+            {
+              "txt": "quizás venga",
+              "em": "✅"
+            },
+            {
+              "txt": "quizás viene",
+              "em": "❌"
+            },
+            {
+              "txt": "quizás vendrá",
+              "em": "❌"
+            },
+            {
+              "txt": "quizás vino",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я уже поел, когда ты пришёл»",
+          "opts": [
+            {
+              "txt": "ya había comido cuando llegaste",
+              "em": "✅"
+            },
+            {
+              "txt": "ya he comido cuando llegaste",
+              "em": "❌"
+            },
+            {
+              "txt": "ya comí cuando llegaste",
+              "em": "⚠️"
+            },
+            {
+              "txt": "ya comía cuando llegaste",
+              "em": "❌"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Я бы сделал это»",
+          "opts": [
+            {
+              "txt": "lo habría hecho",
+              "em": "✅"
+            },
+            {
+              "txt": "lo había hecho",
+              "em": "❌"
+            },
+            {
+              "txt": "lo he hecho",
+              "em": "❌"
+            },
+            {
+              "txt": "lo haría",
+              "em": "⚠️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "fue escrito",
+              "был написан"
+            ],
+            [
+              "se vende",
+              "продаётся"
+            ],
+            [
+              "sea",
+              "будь (subj)"
+            ],
+            [
+              "venga",
+              "пусть придёт"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "había comido",
+              "я уже поел"
+            ],
+            [
+              "habría comido",
+              "я бы поел"
+            ],
+            [
+              "ya",
+              "уже"
+            ],
+            [
+              "todavía no",
+              "ещё не"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я бы помог тебе, но не мог",
+          "tiles": [
+            "te",
+            "habría",
+            "ayudado",
+            "pero",
+            "no",
+            "pude"
+          ],
+          "answer": [
+            "te",
+            "habría",
+            "ayudado",
+            "pero",
+            "no",
+            "pude"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Когда придёшь, позвони",
+          "tiles": [
+            "cuando",
+            "vengas",
+            "vienes",
+            "llama",
+            "me"
+          ],
+          "answer": [
+            "cuando",
+            "vengas",
+            "llama"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Cuando llegué, ya",
+            null,
+            "salido."
+          ],
+          "target": "habían",
+          "opts": [
+            "habían",
+            "han",
+            "habrán"
+          ],
+          "hint": "когда я пришёл, они уже ушли"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "No creo que",
+            null,
+            "verdad."
+          ],
+          "target": "sea",
+          "opts": [
+            "sea",
+            "es",
+            "era"
+          ],
+          "hint": "не думаю, что это правда"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Aquí",
+            null,
+            "venden flores."
+          ],
+          "target": "se",
+          "opts": [
+            "se",
+            "son",
+            "es"
+          ],
+          "hint": "здесь продаются цветы"
+        },
+        {
+          "t": "typed",
+          "from": "Я бы сказал тебе раньше",
+          "answer": "te habría dicho antes",
+          "answers": [
+            "te habría dicho antes",
+            "te hubiera dicho antes"
+          ],
+          "hint": "habría / hubiera + part."
+        }
+      ]
+    }
+  ]
+}

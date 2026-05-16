@@ -1,0 +1,758 @@
+{
+  "unit": 3,
+  "lessons": [
+    {
+      "id": "l11",
+      "name": "La Casa",
+      "emoji": "🏠",
+      "desc": "Habitaciones de la casa",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Кухня»",
+          "opts": [
+            {
+              "txt": "cocina",
+              "em": "🍳"
+            },
+            {
+              "txt": "baño",
+              "em": "🚿"
+            },
+            {
+              "txt": "sala",
+              "em": "🛋️"
+            },
+            {
+              "txt": "dormitorio",
+              "em": "🛏️"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Спальня»",
+          "opts": [
+            {
+              "txt": "comedor",
+              "em": "🍽️"
+            },
+            {
+              "txt": "cocina",
+              "em": "🍳"
+            },
+            {
+              "txt": "dormitorio",
+              "em": "🛏️"
+            },
+            {
+              "txt": "jardín",
+              "em": "🌳"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Ванная»",
+          "opts": [
+            {
+              "txt": "sala",
+              "em": "🛋️"
+            },
+            {
+              "txt": "baño",
+              "em": "🚿"
+            },
+            {
+              "txt": "casa",
+              "em": "🏠"
+            },
+            {
+              "txt": "puerta",
+              "em": "🚪"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "casa",
+              "дом"
+            ],
+            [
+              "cocina",
+              "кухня"
+            ],
+            [
+              "baño",
+              "ванная"
+            ],
+            [
+              "dormitorio",
+              "спальня"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sala",
+              "гостиная"
+            ],
+            [
+              "comedor",
+              "столовая"
+            ],
+            [
+              "puerta",
+              "дверь"
+            ],
+            [
+              "ventana",
+              "окно"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Моя кухня",
+          "tiles": [
+            "mi",
+            "cocina",
+            "tu",
+            "baño"
+          ],
+          "answer": [
+            "mi",
+            "cocina"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Duermo en el",
+            null,
+            "."
+          ],
+          "target": "dormitorio",
+          "opts": [
+            "dormitorio",
+            "baño",
+            "comedor"
+          ],
+          "hint": "Я сплю в спальне"
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "name": "El Cuerpo",
+      "emoji": "🧍",
+      "desc": "Partes del cuerpo",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Голова»",
+          "opts": [
+            {
+              "txt": "cabeza",
+              "em": "👤"
+            },
+            {
+              "txt": "mano",
+              "em": "✋"
+            },
+            {
+              "txt": "pie",
+              "em": "🦶"
+            },
+            {
+              "txt": "brazo",
+              "em": "💪"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Глаз»",
+          "opts": [
+            {
+              "txt": "boca",
+              "em": "👄"
+            },
+            {
+              "txt": "nariz",
+              "em": "👃"
+            },
+            {
+              "txt": "ojo",
+              "em": "👁️"
+            },
+            {
+              "txt": "oreja",
+              "em": "👂"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Рука» (кисть)",
+          "opts": [
+            {
+              "txt": "pierna",
+              "em": "🦵"
+            },
+            {
+              "txt": "mano",
+              "em": "✋"
+            },
+            {
+              "txt": "pelo",
+              "em": "💇"
+            },
+            {
+              "txt": "diente",
+              "em": "🦷"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "cabeza",
+              "голова"
+            ],
+            [
+              "ojo",
+              "глаз"
+            ],
+            [
+              "boca",
+              "рот"
+            ],
+            [
+              "nariz",
+              "нос"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "mano",
+              "рука"
+            ],
+            [
+              "pie",
+              "нога/стопа"
+            ],
+            [
+              "brazo",
+              "рука (плечо)"
+            ],
+            [
+              "pierna",
+              "нога"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Мои глаза",
+          "tiles": [
+            "mis",
+            "ojos",
+            "mi",
+            "ojo"
+          ],
+          "answer": [
+            "mis",
+            "ojos"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo dos",
+            null,
+            "."
+          ],
+          "target": "manos",
+          "opts": [
+            "manos",
+            "mano",
+            "cabeza"
+          ],
+          "hint": "У меня две руки"
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "name": "La Ropa",
+      "emoji": "👕",
+      "desc": "Prendas de vestir",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Рубашка»",
+          "opts": [
+            {
+              "txt": "camisa",
+              "em": "👔"
+            },
+            {
+              "txt": "pantalón",
+              "em": "👖"
+            },
+            {
+              "txt": "zapatos",
+              "em": "👟"
+            },
+            {
+              "txt": "sombrero",
+              "em": "🎩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Брюки»",
+          "opts": [
+            {
+              "txt": "falda",
+              "em": "👗"
+            },
+            {
+              "txt": "pantalón",
+              "em": "👖"
+            },
+            {
+              "txt": "calcetín",
+              "em": "🧦"
+            },
+            {
+              "txt": "abrigo",
+              "em": "🧥"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Туфли/обувь»",
+          "opts": [
+            {
+              "txt": "gorra",
+              "em": "🧢"
+            },
+            {
+              "txt": "guantes",
+              "em": "🧤"
+            },
+            {
+              "txt": "zapatos",
+              "em": "👟"
+            },
+            {
+              "txt": "bufanda",
+              "em": "🧣"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "camisa",
+              "рубашка"
+            ],
+            [
+              "pantalón",
+              "брюки"
+            ],
+            [
+              "vestido",
+              "платье"
+            ],
+            [
+              "falda",
+              "юбка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "zapatos",
+              "туфли"
+            ],
+            [
+              "calcetines",
+              "носки"
+            ],
+            [
+              "abrigo",
+              "пальто"
+            ],
+            [
+              "gorra",
+              "кепка"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Чёрная рубашка",
+          "tiles": [
+            "una",
+            "camisa",
+            "negra",
+            "roja"
+          ],
+          "answer": [
+            "una",
+            "camisa",
+            "negra"
+          ],
+          "answers": [
+            [
+              "una",
+              "camisa",
+              "negra"
+            ],
+            [
+              "camisa",
+              "negra"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Llevo",
+            null,
+            "azules."
+          ],
+          "target": "pantalones",
+          "opts": [
+            "pantalones",
+            "camisa",
+            "falda"
+          ],
+          "hint": "Я ношу синие брюки"
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "name": "El Tiempo",
+      "emoji": "🌤️",
+      "desc": "Clima y estaciones",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Солнце»",
+          "opts": [
+            {
+              "txt": "sol",
+              "em": "☀️"
+            },
+            {
+              "txt": "luna",
+              "em": "🌙"
+            },
+            {
+              "txt": "lluvia",
+              "em": "🌧️"
+            },
+            {
+              "txt": "viento",
+              "em": "💨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Дождь»",
+          "opts": [
+            {
+              "txt": "nieve",
+              "em": "❄️"
+            },
+            {
+              "txt": "lluvia",
+              "em": "🌧️"
+            },
+            {
+              "txt": "nube",
+              "em": "☁️"
+            },
+            {
+              "txt": "calor",
+              "em": "🥵"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Холодно»",
+          "opts": [
+            {
+              "txt": "calor",
+              "em": "🥵"
+            },
+            {
+              "txt": "sol",
+              "em": "☀️"
+            },
+            {
+              "txt": "frío",
+              "em": "🥶"
+            },
+            {
+              "txt": "lluvia",
+              "em": "🌧️"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "sol",
+              "солнце"
+            ],
+            [
+              "lluvia",
+              "дождь"
+            ],
+            [
+              "nieve",
+              "снег"
+            ],
+            [
+              "viento",
+              "ветер"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "verano",
+              "лето"
+            ],
+            [
+              "invierno",
+              "зима"
+            ],
+            [
+              "primavera",
+              "весна"
+            ],
+            [
+              "otoño",
+              "осень"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Сегодня жарко",
+          "tiles": [
+            "hoy",
+            "hace",
+            "calor",
+            "frío"
+          ],
+          "answer": [
+            "hoy",
+            "hace",
+            "calor"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "En invierno hace",
+            null,
+            "."
+          ],
+          "target": "frío",
+          "opts": [
+            "frío",
+            "calor",
+            "sol"
+          ],
+          "hint": "Зимой холодно"
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "name": "Meses",
+      "emoji": "📆",
+      "desc": "Meses del año",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Январь»",
+          "opts": [
+            {
+              "txt": "enero",
+              "em": "1️⃣"
+            },
+            {
+              "txt": "febrero",
+              "em": "2️⃣"
+            },
+            {
+              "txt": "marzo",
+              "em": "3️⃣"
+            },
+            {
+              "txt": "abril",
+              "em": "4️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Май»",
+          "opts": [
+            {
+              "txt": "marzo",
+              "em": "3️⃣"
+            },
+            {
+              "txt": "abril",
+              "em": "4️⃣"
+            },
+            {
+              "txt": "mayo",
+              "em": "5️⃣"
+            },
+            {
+              "txt": "junio",
+              "em": "6️⃣"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Декабрь»",
+          "opts": [
+            {
+              "txt": "octubre",
+              "em": "🎃"
+            },
+            {
+              "txt": "noviembre",
+              "em": "🍂"
+            },
+            {
+              "txt": "diciembre",
+              "em": "🎄"
+            },
+            {
+              "txt": "septiembre",
+              "em": "📚"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "enero",
+              "январь"
+            ],
+            [
+              "febrero",
+              "февраль"
+            ],
+            [
+              "marzo",
+              "март"
+            ],
+            [
+              "abril",
+              "апрель"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "julio",
+              "июль"
+            ],
+            [
+              "agosto",
+              "август"
+            ],
+            [
+              "septiembre",
+              "сентябрь"
+            ],
+            [
+              "octubre",
+              "октябрь"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "В июне",
+          "tiles": [
+            "en",
+            "junio",
+            "julio",
+            "enero"
+          ],
+          "answer": [
+            "en",
+            "junio"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi cumpleaños es en",
+            null,
+            "."
+          ],
+          "target": "mayo",
+          "opts": [
+            "mayo",
+            "lunes",
+            "rojo"
+          ],
+          "hint": "Мой день рождения в мае"
+        }
+      ]
+    }
+  ]
+}

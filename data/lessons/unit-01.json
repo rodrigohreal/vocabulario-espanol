@@ -1,0 +1,726 @@
+{
+  "unit": 1,
+  "lessons": [
+    {
+      "id": "l1",
+      "name": "Saludos",
+      "emoji": "👋",
+      "desc": "Saluda en español",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Привет»",
+          "opts": [
+            {
+              "txt": "hola",
+              "em": "👋"
+            },
+            {
+              "txt": "adiós",
+              "em": "🙋"
+            },
+            {
+              "txt": "gracias",
+              "em": "🙏"
+            },
+            {
+              "txt": "perdón",
+              "em": "🙇"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "translate",
+          "from": "Доброе утро",
+          "tiles": [
+            "buenos",
+            "días",
+            "noches",
+            "tardes"
+          ],
+          "answer": [
+            "buenos",
+            "días"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Добрый день",
+          "tiles": [
+            "buenas",
+            "tardes",
+            "noches",
+            "hola"
+          ],
+          "answer": [
+            "buenas",
+            "tardes"
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hola",
+              "привет"
+            ],
+            [
+              "adiós",
+              "пока"
+            ],
+            [
+              "bien",
+              "хорошо"
+            ],
+            [
+              "mal",
+              "плохо"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Buenas",
+            null,
+            "."
+          ],
+          "target": "noches",
+          "opts": [
+            "noches",
+            "días",
+            "mal"
+          ],
+          "hint": "«Спокойной ночи»"
+        },
+        {
+          "t": "pick",
+          "q": "«Как дела?»",
+          "opts": [
+            {
+              "txt": "¿cómo estás?",
+              "em": "🤔"
+            },
+            {
+              "txt": "me llamo Ana",
+              "em": "👤"
+            },
+            {
+              "txt": "gracias",
+              "em": "🙏"
+            },
+            {
+              "txt": "adiós",
+              "em": "🙋"
+            }
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "name": "Yo soy",
+      "emoji": "🙋",
+      "desc": "Pronombres y verbo ser",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Я»",
+          "opts": [
+            {
+              "txt": "yo",
+              "em": "👤"
+            },
+            {
+              "txt": "tú",
+              "em": "👉"
+            },
+            {
+              "txt": "él",
+              "em": "👨"
+            },
+            {
+              "txt": "ella",
+              "em": "👩"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Она»",
+          "opts": [
+            {
+              "txt": "él",
+              "em": "👨"
+            },
+            {
+              "txt": "ella",
+              "em": "👩"
+            },
+            {
+              "txt": "yo",
+              "em": "👤"
+            },
+            {
+              "txt": "tú",
+              "em": "👉"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "yo",
+              "я"
+            ],
+            [
+              "tú",
+              "ты"
+            ],
+            [
+              "él",
+              "он"
+            ],
+            [
+              "nosotros",
+              "мы"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Меня зовут Ана",
+          "tiles": [
+            "me",
+            "llamo",
+            "Ana",
+            "soy",
+            "tú"
+          ],
+          "answer": [
+            "me",
+            "llamo",
+            "Ana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Yo",
+            null,
+            "María."
+          ],
+          "target": "soy",
+          "opts": [
+            "soy",
+            "eres",
+            "es"
+          ],
+          "hint": "«Я» Мария"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "¿Cómo te",
+            null,
+            "?"
+          ],
+          "target": "llamas",
+          "opts": [
+            "llamas",
+            "llamo",
+            "llama"
+          ],
+          "hint": "Как тебя зовут?"
+        },
+        {
+          "t": "translate",
+          "from": "Я Денис",
+          "tiles": [
+            "yo",
+            "soy",
+            "Denis",
+            "eres"
+          ],
+          "answer": [
+            "yo",
+            "soy",
+            "Denis"
+          ],
+          "answers": [
+            [
+              "yo",
+              "soy",
+              "Denis"
+            ],
+            [
+              "soy",
+              "Denis"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "name": "Familia",
+      "emoji": "👨‍👩‍👧",
+      "desc": "Miembros de la familia",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Мама»",
+          "opts": [
+            {
+              "txt": "madre",
+              "em": "👩"
+            },
+            {
+              "txt": "padre",
+              "em": "👨"
+            },
+            {
+              "txt": "hermana",
+              "em": "👧"
+            },
+            {
+              "txt": "abuela",
+              "em": "👵"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Папа»",
+          "opts": [
+            {
+              "txt": "hermano",
+              "em": "👦"
+            },
+            {
+              "txt": "hijo",
+              "em": "🧒"
+            },
+            {
+              "txt": "padre",
+              "em": "👨"
+            },
+            {
+              "txt": "abuelo",
+              "em": "👴"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«Сестра»",
+          "opts": [
+            {
+              "txt": "hermano",
+              "em": "👦"
+            },
+            {
+              "txt": "hermana",
+              "em": "👧"
+            },
+            {
+              "txt": "hija",
+              "em": "👶"
+            },
+            {
+              "txt": "madre",
+              "em": "👩"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "madre",
+              "мама"
+            ],
+            [
+              "padre",
+              "папа"
+            ],
+            [
+              "hijo",
+              "сын"
+            ],
+            [
+              "hija",
+              "дочь"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "hermano",
+              "брат"
+            ],
+            [
+              "hermana",
+              "сестра"
+            ],
+            [
+              "abuelo",
+              "дедушка"
+            ],
+            [
+              "abuela",
+              "бабушка"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Моя сестра",
+          "tiles": [
+            "mi",
+            "hermana",
+            "hermano",
+            "su"
+          ],
+          "answer": [
+            "mi",
+            "hermana"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "es alta."
+          ],
+          "target": "madre",
+          "opts": [
+            "madre",
+            "padre",
+            "hermano"
+          ],
+          "hint": "Моя мама высокая"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "name": "Números",
+      "emoji": "🔢",
+      "desc": "Cuenta del 1 al 10",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«1» (один)",
+          "opts": [
+            {
+              "txt": "uno",
+              "em": "1️⃣"
+            },
+            {
+              "txt": "dos",
+              "em": "2️⃣"
+            },
+            {
+              "txt": "tres",
+              "em": "3️⃣"
+            },
+            {
+              "txt": "cuatro",
+              "em": "4️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«5» (пять)",
+          "opts": [
+            {
+              "txt": "tres",
+              "em": "3️⃣"
+            },
+            {
+              "txt": "cuatro",
+              "em": "4️⃣"
+            },
+            {
+              "txt": "cinco",
+              "em": "5️⃣"
+            },
+            {
+              "txt": "seis",
+              "em": "6️⃣"
+            }
+          ],
+          "correct": 2
+        },
+        {
+          "t": "pick",
+          "q": "«10» (десять)",
+          "opts": [
+            {
+              "txt": "siete",
+              "em": "7️⃣"
+            },
+            {
+              "txt": "ocho",
+              "em": "8️⃣"
+            },
+            {
+              "txt": "nueve",
+              "em": "9️⃣"
+            },
+            {
+              "txt": "diez",
+              "em": "🔟"
+            }
+          ],
+          "correct": 3
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "uno",
+              "один"
+            ],
+            [
+              "dos",
+              "два"
+            ],
+            [
+              "tres",
+              "три"
+            ],
+            [
+              "cuatro",
+              "четыре"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "seis",
+              "шесть"
+            ],
+            [
+              "siete",
+              "семь"
+            ],
+            [
+              "ocho",
+              "восемь"
+            ],
+            [
+              "nueve",
+              "девять"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Два кота",
+          "tiles": [
+            "dos",
+            "tres",
+            "gatos",
+            "gato"
+          ],
+          "answer": [
+            "dos",
+            "gatos"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Tengo",
+            null,
+            "años."
+          ],
+          "target": "siete",
+          "opts": [
+            "siete",
+            "ocho",
+            "sí"
+          ],
+          "hint": "Мне 7 лет"
+        }
+      ]
+    },
+    {
+      "id": "l5",
+      "name": "Colores",
+      "emoji": "🎨",
+      "desc": "Aprende los colores",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Красный»",
+          "opts": [
+            {
+              "txt": "rojo",
+              "em": "🔴"
+            },
+            {
+              "txt": "azul",
+              "em": "🔵"
+            },
+            {
+              "txt": "verde",
+              "em": "🟢"
+            },
+            {
+              "txt": "amarillo",
+              "em": "🟡"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Синий»",
+          "opts": [
+            {
+              "txt": "verde",
+              "em": "🟢"
+            },
+            {
+              "txt": "azul",
+              "em": "🔵"
+            },
+            {
+              "txt": "rosa",
+              "em": "🌸"
+            },
+            {
+              "txt": "rojo",
+              "em": "🔴"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "pick",
+          "q": "«Жёлтый»",
+          "opts": [
+            {
+              "txt": "naranja",
+              "em": "🟠"
+            },
+            {
+              "txt": "amarillo",
+              "em": "🟡"
+            },
+            {
+              "txt": "blanco",
+              "em": "⚪"
+            },
+            {
+              "txt": "negro",
+              "em": "⚫"
+            }
+          ],
+          "correct": 1
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "rojo",
+              "красный"
+            ],
+            [
+              "azul",
+              "синий"
+            ],
+            [
+              "verde",
+              "зелёный"
+            ],
+            [
+              "negro",
+              "чёрный"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "amarillo",
+              "жёлтый"
+            ],
+            [
+              "blanco",
+              "белый"
+            ],
+            [
+              "rosa",
+              "розовый"
+            ],
+            [
+              "naranja",
+              "оранжевый"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Красная роза",
+          "tiles": [
+            "una",
+            "rosa",
+            "roja",
+            "azul"
+          ],
+          "answer": [
+            "una",
+            "rosa",
+            "roja"
+          ],
+          "answers": [
+            [
+              "una",
+              "rosa",
+              "roja"
+            ],
+            [
+              "rosa",
+              "roja"
+            ]
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "El cielo es",
+            null,
+            "."
+          ],
+          "target": "azul",
+          "opts": [
+            "azul",
+            "verde",
+            "rojo"
+          ],
+          "hint": "Небо синее"
+        }
+      ]
+    }
+  ]
+}

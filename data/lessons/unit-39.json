@@ -1,0 +1,880 @@
+{
+  "unit": 39,
+  "lessons": [
+    {
+      "id": "l191",
+      "name": "Universidad",
+      "emoji": "🎓",
+      "desc": "Facultad, carrera, campus",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Университет»",
+          "opts": [
+            {
+              "txt": "universidad",
+              "em": "🎓"
+            },
+            {
+              "txt": "universal",
+              "em": "🌍"
+            },
+            {
+              "txt": "urbanización",
+              "em": "🏘️"
+            },
+            {
+              "txt": "unidad",
+              "em": "1️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Студент»",
+          "opts": [
+            {
+              "txt": "estudiante",
+              "em": "👨‍🎓"
+            },
+            {
+              "txt": "estudio",
+              "em": "🏛️"
+            },
+            {
+              "txt": "estación",
+              "em": "🚉"
+            },
+            {
+              "txt": "esquina",
+              "em": "📐"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Факультет»",
+          "opts": [
+            {
+              "txt": "facultad",
+              "em": "🏛️"
+            },
+            {
+              "txt": "facilidad",
+              "em": "✅"
+            },
+            {
+              "txt": "falsedad",
+              "em": "❌"
+            },
+            {
+              "txt": "familia",
+              "em": "👨‍👩‍👧"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "universidad",
+              "университет"
+            ],
+            [
+              "facultad",
+              "факультет"
+            ],
+            [
+              "carrera",
+              "специальность"
+            ],
+            [
+              "campus",
+              "кампус"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "profesor",
+              "преподаватель"
+            ],
+            [
+              "estudiante",
+              "студент"
+            ],
+            [
+              "conferencia",
+              "лекция"
+            ],
+            [
+              "biblioteca",
+              "библиотека"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я учусь в университете",
+          "tiles": [
+            "estudio",
+            "en",
+            "la",
+            "universidad",
+            "estudia"
+          ],
+          "answer": [
+            "estudio",
+            "en",
+            "la",
+            "universidad"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Mi",
+            null,
+            "es medicina."
+          ],
+          "target": "carrera",
+          "opts": [
+            "carrera",
+            "casa",
+            "cara"
+          ],
+          "hint": "моя специальность — медицина"
+        },
+        {
+          "t": "typed",
+          "from": "Я изучаю историю",
+          "answer": "estudio historia",
+          "answers": [
+            "estudio historia",
+            "yo estudio historia"
+          ],
+          "hint": "estudio + asignatura"
+        }
+      ]
+    },
+    {
+      "id": "l192",
+      "name": "Exámenes",
+      "emoji": "📝",
+      "desc": "Aprobar, suspender, nota",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Экзамен»",
+          "opts": [
+            {
+              "txt": "examen",
+              "em": "📝"
+            },
+            {
+              "txt": "ejemplo",
+              "em": "💡"
+            },
+            {
+              "txt": "edificio",
+              "em": "🏢"
+            },
+            {
+              "txt": "efecto",
+              "em": "✨"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сдать (экзамен)»",
+          "opts": [
+            {
+              "txt": "aprobar",
+              "em": "✅"
+            },
+            {
+              "txt": "aprender",
+              "em": "📚"
+            },
+            {
+              "txt": "aplastar",
+              "em": "🥞"
+            },
+            {
+              "txt": "aparecer",
+              "em": "👀"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Провалить»",
+          "opts": [
+            {
+              "txt": "suspender",
+              "em": "❌"
+            },
+            {
+              "txt": "sustituir",
+              "em": "🔄"
+            },
+            {
+              "txt": "subir",
+              "em": "⬆️"
+            },
+            {
+              "txt": "sumar",
+              "em": "➕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "examen",
+              "экзамен"
+            ],
+            [
+              "aprobar",
+              "сдать"
+            ],
+            [
+              "suspender",
+              "провалить"
+            ],
+            [
+              "nota",
+              "оценка"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "matrícula",
+              "регистрация"
+            ],
+            [
+              "asignatura",
+              "предмет"
+            ],
+            [
+              "curso",
+              "курс"
+            ],
+            [
+              "pizarra",
+              "доска"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я сдал экзамен",
+          "tiles": [
+            "aprobé",
+            "el",
+            "examen",
+            "aprueba"
+          ],
+          "answer": [
+            "aprobé",
+            "el",
+            "examen"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Saqué buena",
+            null,
+            "en matemáticas."
+          ],
+          "target": "nota",
+          "opts": [
+            "nota",
+            "nube",
+            "noche"
+          ],
+          "hint": "у меня хорошая оценка по математике"
+        },
+        {
+          "t": "typed",
+          "from": "Завтра у меня важный экзамен",
+          "answer": "mañana tengo un examen importante",
+          "answers": [
+            "mañana tengo un examen importante",
+            "tengo un examen importante mañana"
+          ],
+          "hint": "tengo un examen importante"
+        }
+      ]
+    },
+    {
+      "id": "l193",
+      "name": "Investigación",
+      "emoji": "🔬",
+      "desc": "Tesis, doctorado, publicación",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Диссертация / тезис»",
+          "opts": [
+            {
+              "txt": "tesis",
+              "em": "📄"
+            },
+            {
+              "txt": "teoría",
+              "em": "💭"
+            },
+            {
+              "txt": "tela",
+              "em": "🧵"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Докторская степень»",
+          "opts": [
+            {
+              "txt": "doctorado",
+              "em": "🎓"
+            },
+            {
+              "txt": "doctor",
+              "em": "👨‍⚕️"
+            },
+            {
+              "txt": "documento",
+              "em": "📄"
+            },
+            {
+              "txt": "docena",
+              "em": "🔢"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Публикация»",
+          "opts": [
+            {
+              "txt": "publicación",
+              "em": "📚"
+            },
+            {
+              "txt": "publicidad",
+              "em": "📣"
+            },
+            {
+              "txt": "pueblo",
+              "em": "🏘️"
+            },
+            {
+              "txt": "puerto",
+              "em": "⚓"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "tesis",
+              "диссертация"
+            ],
+            [
+              "doctorado",
+              "докторантура"
+            ],
+            [
+              "máster",
+              "магистратура"
+            ],
+            [
+              "licenciatura",
+              "бакалавриат"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "investigación",
+              "исследование"
+            ],
+            [
+              "publicación",
+              "публикация"
+            ],
+            [
+              "hipótesis",
+              "гипотеза"
+            ],
+            [
+              "resultados",
+              "результаты"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я пишу диссертацию",
+          "tiles": [
+            "escribo",
+            "una",
+            "tesis",
+            "escribe",
+            "la"
+          ],
+          "answer": [
+            "escribo",
+            "una",
+            "tesis"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Estudio el",
+            null,
+            "en biología."
+          ],
+          "target": "doctorado",
+          "opts": [
+            "doctorado",
+            "doctor",
+            "documento"
+          ],
+          "hint": "я учусь в докторантуре по биологии"
+        },
+        {
+          "t": "typed",
+          "from": "Я опубликовал статью",
+          "answer": "he publicado un artículo",
+          "answers": [
+            "he publicado un artículo",
+            "publiqué un artículo"
+          ],
+          "hint": "he publicado / publiqué un artículo"
+        }
+      ]
+    },
+    {
+      "id": "l194",
+      "name": "Becas",
+      "emoji": "💰",
+      "desc": "Beca, matrícula, solicitar",
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Стипендия»",
+          "opts": [
+            {
+              "txt": "beca",
+              "em": "💰"
+            },
+            {
+              "txt": "boca",
+              "em": "👄"
+            },
+            {
+              "txt": "bolsa",
+              "em": "👜"
+            },
+            {
+              "txt": "boda",
+              "em": "💒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Подавать заявление»",
+          "opts": [
+            {
+              "txt": "solicitar",
+              "em": "📋"
+            },
+            {
+              "txt": "subir",
+              "em": "⬆️"
+            },
+            {
+              "txt": "soñar",
+              "em": "💭"
+            },
+            {
+              "txt": "sonreír",
+              "em": "😊"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Плата за обучение»",
+          "opts": [
+            {
+              "txt": "matrícula",
+              "em": "💸"
+            },
+            {
+              "txt": "maestría",
+              "em": "🎓"
+            },
+            {
+              "txt": "maleta",
+              "em": "🧳"
+            },
+            {
+              "txt": "mañana",
+              "em": "🌅"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "beca",
+              "стипендия"
+            ],
+            [
+              "matrícula",
+              "плата за обучение"
+            ],
+            [
+              "solicitud",
+              "заявление"
+            ],
+            [
+              "admisión",
+              "приём"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "solicitar",
+              "подавать"
+            ],
+            [
+              "aceptar",
+              "принимать"
+            ],
+            [
+              "rechazar",
+              "отклонять"
+            ],
+            [
+              "pagar",
+              "платить"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я получил стипендию",
+          "tiles": [
+            "gané",
+            "una",
+            "beca",
+            "gana",
+            "mi"
+          ],
+          "answer": [
+            "gané",
+            "una",
+            "beca"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a",
+            null,
+            "una beca."
+          ],
+          "target": "solicitar",
+          "opts": [
+            "solicitar",
+            "subir",
+            "soñar"
+          ],
+          "hint": "я подам заявление на стипендию"
+        },
+        {
+          "t": "typed",
+          "from": "Плата за обучение очень высокая",
+          "answer": "la matrícula es muy alta",
+          "answers": [
+            "la matrícula es muy alta",
+            "la matrícula es muy cara"
+          ],
+          "hint": "la matrícula es alta / cara"
+        }
+      ]
+    },
+    {
+      "id": "l195",
+      "name": "Repaso 32",
+      "emoji": "🎓",
+      "desc": "Repaso L191-L194",
+      "hearts": 2,
+      "exercises": [
+        {
+          "t": "pick",
+          "q": "«Университет»",
+          "opts": [
+            {
+              "txt": "universidad",
+              "em": "🎓"
+            },
+            {
+              "txt": "universal",
+              "em": "🌍"
+            },
+            {
+              "txt": "urbanización",
+              "em": "🏘️"
+            },
+            {
+              "txt": "unidad",
+              "em": "1️⃣"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Сдать экзамен»",
+          "opts": [
+            {
+              "txt": "aprobar",
+              "em": "✅"
+            },
+            {
+              "txt": "suspender",
+              "em": "❌"
+            },
+            {
+              "txt": "aprender",
+              "em": "📚"
+            },
+            {
+              "txt": "aplastar",
+              "em": "🥞"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Диссертация»",
+          "opts": [
+            {
+              "txt": "tesis",
+              "em": "📄"
+            },
+            {
+              "txt": "teoría",
+              "em": "💭"
+            },
+            {
+              "txt": "taza",
+              "em": "☕"
+            },
+            {
+              "txt": "tela",
+              "em": "🧵"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "pick",
+          "q": "«Стипендия»",
+          "opts": [
+            {
+              "txt": "beca",
+              "em": "💰"
+            },
+            {
+              "txt": "boca",
+              "em": "👄"
+            },
+            {
+              "txt": "bolsa",
+              "em": "👜"
+            },
+            {
+              "txt": "boda",
+              "em": "💒"
+            }
+          ],
+          "correct": 0
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "facultad",
+              "факультет"
+            ],
+            [
+              "carrera",
+              "специальность"
+            ],
+            [
+              "estudiante",
+              "студент"
+            ],
+            [
+              "profesor",
+              "преподаватель"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "examen",
+              "экзамен"
+            ],
+            [
+              "nota",
+              "оценка"
+            ],
+            [
+              "asignatura",
+              "предмет"
+            ],
+            [
+              "matrícula",
+              "плата"
+            ]
+          ]
+        },
+        {
+          "t": "match",
+          "pairs": [
+            [
+              "doctorado",
+              "докторантура"
+            ],
+            [
+              "investigación",
+              "исследование"
+            ],
+            [
+              "publicación",
+              "публикация"
+            ],
+            [
+              "solicitud",
+              "заявление"
+            ]
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я учусь в университете",
+          "tiles": [
+            "estudio",
+            "en",
+            "la",
+            "universidad"
+          ],
+          "answer": [
+            "estudio",
+            "en",
+            "la",
+            "universidad"
+          ]
+        },
+        {
+          "t": "translate",
+          "from": "Я сдал экзамен",
+          "tiles": [
+            "aprobé",
+            "el",
+            "examen",
+            "suspendí"
+          ],
+          "answer": [
+            "aprobé",
+            "el",
+            "examen"
+          ]
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Saqué buena",
+            null,
+            "."
+          ],
+          "target": "nota",
+          "opts": [
+            "nota",
+            "nube",
+            "noche"
+          ],
+          "hint": "я получил хорошую оценку"
+        },
+        {
+          "t": "fill",
+          "sentence": [
+            "Voy a",
+            null,
+            "una beca."
+          ],
+          "target": "solicitar",
+          "opts": [
+            "solicitar",
+            "subir",
+            "soñar"
+          ],
+          "hint": "я подам заявление на стипендию"
+        },
+        {
+          "t": "typed",
+          "from": "У меня важный экзамен завтра",
+          "answer": "tengo un examen importante mañana",
+          "answers": [
+            "tengo un examen importante mañana",
+            "mañana tengo un examen importante"
+          ],
+          "hint": "tengo un examen importante"
+        }
+      ]
+    }
+  ]
+}

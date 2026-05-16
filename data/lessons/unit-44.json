@@ -1,0 +1,215 @@
+{
+  "unit": 44,
+  "lessons": [
+    {
+      "id": "l216",
+      "name": "Pret. vs Imperfecto 1",
+      "emoji": "⏳",
+      "desc": "Acción concreta vs descripción",
+      "exercises": [
+        { "t": "pick", "q": "«Я ел, когда зазвонил телефон»: ел...", "opts": [
+          { "txt": "comí",    "em": "❌" },
+          { "txt": "comía",   "em": "🍽️" },
+          { "txt": "como",    "em": "❌" },
+          { "txt": "comeré",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "...«зазвонил» (мгновенно)", "opts": [
+          { "txt": "sonó",     "em": "📞" },
+          { "txt": "sonaba",   "em": "❌" },
+          { "txt": "suena",    "em": "❌" },
+          { "txt": "sonaría",  "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«В детстве я играл (привычка)»", "opts": [
+          { "txt": "jugué",   "em": "❌" },
+          { "txt": "jugaba",  "em": "🧸" },
+          { "txt": "juego",   "em": "❌" },
+          { "txt": "jugando", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["Pretérito",  "законченное событие, конкретно"],
+          ["Imperfecto", "описание, привычка, фон"],
+          ["ayer",       "сигнал pretérito"],
+          ["antes",      "сигнал imperfecto"]
+        ]},
+        { "t": "match", "pairs": [
+          ["siempre",    "imperfecto (привычка)"],
+          ["de repente", "pretérito (внезапно)"],
+          ["todos los días", "imperfecto"],
+          ["una vez",    "pretérito (1 раз)"]
+        ]},
+        { "t": "translate", "from": "Когда я был маленьким, я жил в Москве", "tiles": ["cuando", "era", "pequeño", "vivía", "en", "Moscú", "fui"], "answer": ["cuando", "era", "pequeño", "vivía", "en", "Moscú"] },
+        { "t": "fill", "sentence": ["Ayer", null, "a las 8."], "target": "llegué", "opts": ["llegué", "llegaba", "llego"], "hint": "Вчера я приехал в 8 (точный момент)" },
+        { "t": "fill", "sentence": ["De niño,", null, "al fútbol."], "target": "jugaba", "opts": ["jugaba", "jugué", "juego"], "hint": "В детстве я играл (привычка)" },
+        { "t": "typed", "from": "Шёл дождь, когда я вышел", "answer": "llovía cuando salí", "answers": ["llovía cuando salí", "estaba lloviendo cuando salí"], "hint": "фон → imperfecto; действие → pretérito" }
+      ]
+    },
+    {
+      "id": "l217",
+      "name": "Pret. vs Imperfecto 2",
+      "emoji": "🔄",
+      "desc": "Mientras, cuando, dos acciones",
+      "exercises": [
+        { "t": "pick", "q": "«Пока я готовил, она читала»: оба...", "opts": [
+          { "txt": "preterito (cociné/leyó)",      "em": "❌" },
+          { "txt": "imperfecto (cocinaba/leía)",   "em": "📖" },
+          { "txt": "presente (cocino/lee)",        "em": "❌" },
+          { "txt": "futuro (cocinaré/leerá)",      "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Когда я вошёл, она спала»: вошёл / спала?", "opts": [
+          { "txt": "entré / dormía",   "em": "🚪" },
+          { "txt": "entraba / dormí",  "em": "❌" },
+          { "txt": "entré / durmió",   "em": "❌" },
+          { "txt": "entraba / dormía", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Дом был большим»", "opts": [
+          { "txt": "la casa era grande",    "em": "🏠" },
+          { "txt": "la casa fue grande",    "em": "❌" },
+          { "txt": "la casa es grande",     "em": "❌" },
+          { "txt": "la casa estaba grande", "em": "❌" }
+        ], "correct": 0 },
+        { "t": "match", "pairs": [
+          ["mientras",     "imperfecto + imperfecto (параллель)"],
+          ["cuando + pret","событие прервало другое"],
+          ["era + pret",   "описание + событие"],
+          ["dos veces",    "pretérito"]
+        ]},
+        { "t": "translate", "from": "Я смотрел телевизор, когда пришёл Хуан", "tiles": ["veía", "la", "tele", "cuando", "llegó", "Juan", "vi"], "answer": ["veía", "la", "tele", "cuando", "llegó", "Juan"] },
+        { "t": "fill", "sentence": ["Mientras", null, ", el bebé dormía."], "target": "estudiaba", "opts": ["estudiaba", "estudié", "estudio"], "hint": "Пока я учился..." },
+        { "t": "fill", "sentence": ["Cuando llegué,", null, "lloviendo."], "target": "estaba", "opts": ["estaba", "estuvo", "está"], "hint": "Когда я приехал, шёл дождь" },
+        { "t": "typed", "from": "Я готовил, когда зазвонил телефон", "answer": "cocinaba cuando sonó el teléfono", "answers": ["cocinaba cuando sonó el teléfono", "estaba cocinando cuando sonó el teléfono"], "hint": "фон (imperf) + событие (pret)" }
+      ]
+    },
+    {
+      "id": "l218",
+      "name": "Saber vs Conocer",
+      "emoji": "🧠",
+      "desc": "Знать факты vs знать людей/места",
+      "exercises": [
+        { "t": "pick", "q": "«Я знаю математику» (факт)", "opts": [
+          { "txt": "sé matemáticas",     "em": "🧮" },
+          { "txt": "conozco matemáticas","em": "❌" },
+          { "txt": "sabo matemáticas",   "em": "❌" },
+          { "txt": "conocer matemáticas","em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Я знаю Марию» (человека)", "opts": [
+          { "txt": "sé a María",      "em": "❌" },
+          { "txt": "conozco a María", "em": "🤝" },
+          { "txt": "conoces a María", "em": "❌" },
+          { "txt": "sé María",        "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Я умею плавать»", "opts": [
+          { "txt": "sé nadar",     "em": "🏊" },
+          { "txt": "conozco nadar","em": "❌" },
+          { "txt": "puedo a nadar","em": "❌" },
+          { "txt": "soy nadar",    "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Ты знаешь Мадрид?»", "opts": [
+          { "txt": "¿Sabes Madrid?",    "em": "❌" },
+          { "txt": "¿Conoces Madrid?",  "em": "🇪🇸" },
+          { "txt": "¿Conoces a Madrid?","em": "❌" },
+          { "txt": "¿Estás Madrid?",    "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["saber",      "знать факт / уметь"],
+          ["conocer",    "быть знакомым (люди, места)"],
+          ["sé que...",  "я знаю, что..."],
+          ["conozco a...", "я знаком с..."]
+        ]},
+        { "t": "match", "pairs": [
+          ["sé inglés",     "я знаю английский (как факт)"],
+          ["conozco España","я бывал в Испании"],
+          ["sé cocinar",    "я умею готовить"],
+          ["conozco a Juan","я знаком с Хуаном"]
+        ]},
+        { "t": "translate", "from": "Я не знаю, где он", "tiles": ["no", "sé", "dónde", "está", "conozco"], "answer": ["no", "sé", "dónde", "está"] },
+        { "t": "fill", "sentence": ["¿", null, " la verdad?"], "target": "Sabes", "opts": ["Sabes", "Conoces", "Estás"], "hint": "Ты знаешь правду? (факт)" },
+        { "t": "fill", "sentence": ["¿", null, " a mi hermano?"], "target": "Conoces", "opts": ["Conoces", "Sabes", "Tienes"], "hint": "Ты знаком с моим братом?" },
+        { "t": "typed", "from": "Я умею водить", "answer": "sé conducir", "answers": ["sé conducir", "sé manejar"], "hint": "уметь = saber + инф." }
+      ]
+    },
+    {
+      "id": "l219",
+      "name": "Adverbios -mente",
+      "emoji": "🎚️",
+      "desc": "Формируем наречия",
+      "exercises": [
+        { "t": "pick", "q": "«Быстро» (от rápido)", "opts": [
+          { "txt": "rápidamente", "em": "🏃" },
+          { "txt": "rápidomente", "em": "❌" },
+          { "txt": "rápida",      "em": "❌" },
+          { "txt": "rapidly",     "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Легко» (от fácil)", "opts": [
+          { "txt": "fácilmente", "em": "✅" },
+          { "txt": "fácilamente","em": "❌" },
+          { "txt": "facilemente","em": "❌" },
+          { "txt": "fácil",      "em": "❌" }
+        ], "correct": 0 },
+        { "t": "pick", "q": "«Внезапно»", "opts": [
+          { "txt": "súbito",        "em": "❌" },
+          { "txt": "súbitamente",   "em": "⚡" },
+          { "txt": "súbitemente",   "em": "❌" },
+          { "txt": "súbito-mente",  "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["rápido → rápidamente",     "ж.р. + mente"],
+          ["fácil → fácilmente",       "+ mente (без изм.)"],
+          ["claro → claramente",       "о/а → а + mente"],
+          ["lento → lentamente",       "медленно"]
+        ]},
+        { "t": "match", "pairs": [
+          ["bien",       "хорошо (искл., не -mente)"],
+          ["mal",        "плохо (искл.)"],
+          ["así",        "так"],
+          ["aún",        "ещё"]
+        ]},
+        { "t": "translate", "from": "Он говорит быстро и чётко", "tiles": ["habla", "rápida", "y", "claramente", "mente"], "answer": ["habla", "rápida", "y", "claramente"] },
+        { "t": "fill", "sentence": ["Trabaja", null, "."], "target": "perfectamente", "opts": ["perfectamente", "perfecto", "perfecte"], "hint": "Он работает идеально" },
+        { "t": "fill", "sentence": ["Caminó", null, ", sin prisa."], "target": "lentamente", "opts": ["lentamente", "lento", "lentadamente"], "hint": "Шёл медленно, без спешки" },
+        { "t": "typed", "from": "Внимательно слушаю", "answer": "escucho atentamente", "answers": ["escucho atentamente", "atentamente escucho"], "hint": "atento → atentamente" }
+      ]
+    },
+    {
+      "id": "l220",
+      "name": "Subjuntivo I",
+      "emoji": "🌠",
+      "desc": "Querer/Esperar/Ojalá que + subj.",
+      "exercises": [
+        { "t": "pick", "q": "«Хочу, чтобы ты пришёл»", "opts": [
+          { "txt": "quiero que vienes",   "em": "❌" },
+          { "txt": "quiero que vengas",   "em": "🤞" },
+          { "txt": "quiero que venir",    "em": "❌" },
+          { "txt": "quiero a que vengas", "em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Надеюсь, ты приедешь»", "opts": [
+          { "txt": "espero que vienes",  "em": "❌" },
+          { "txt": "espero que vengas",  "em": "✈️" },
+          { "txt": "espero a vienes",    "em": "❌" },
+          { "txt": "espero que vinieres","em": "❌" }
+        ], "correct": 1 },
+        { "t": "pick", "q": "«Ojalá» означает...", "opts": [
+          { "txt": "к сожалению",      "em": "❌" },
+          { "txt": "хоть бы / надеюсь","em": "🙏" },
+          { "txt": "конечно",          "em": "❌" },
+          { "txt": "никогда",          "em": "❌" }
+        ], "correct": 1 },
+        { "t": "match", "pairs": [
+          ["hable",   "я говорил бы (subj. -ar)"],
+          ["coma",    "я ел бы (subj. -er)"],
+          ["viva",    "я жил бы (subj. -ir)"],
+          ["sea",     "был бы (ser)"]
+        ]},
+        { "t": "match", "pairs": [
+          ["quiero que",   "хочу, чтобы..."],
+          ["espero que",   "надеюсь, что..."],
+          ["ojalá",        "хоть бы..."],
+          ["dudo que",     "сомневаюсь, что..."]
+        ]},
+        { "t": "translate", "from": "Хочу, чтобы ты говорил по-испански", "tiles": ["quiero", "que", "hables", "español", "hablas"], "answer": ["quiero", "que", "hables", "español"] },
+        { "t": "fill", "sentence": ["Ojalá", null, "buen tiempo."], "target": "haga", "opts": ["haga", "hace", "hizo"], "hint": "Хоть бы была хорошая погода" },
+        { "t": "fill", "sentence": ["Mis padres quieren que yo", null, "."], "target": "estudie", "opts": ["estudie", "estudio", "estudiar"], "hint": "Родители хотят, чтобы я учился" },
+        { "t": "typed", "from": "Надеюсь, ты придёшь завтра", "answer": "espero que vengas mañana", "answers": ["espero que vengas mañana", "espero que mañana vengas"], "hint": "venir → vengas (subj.)" }
+      ]
+    }
+  ]
+}

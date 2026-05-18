@@ -1,0 +1,86 @@
+{
+  "image_file": "tareas domesticas.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "word",
+      "x": 86,
+      "y": 216,
+      "width": 106,
+      "height": 43,
+      "label": "Word 1"
+    },
+    {
+      "id": "word_1",
+      "type": "word",
+      "x": 305,
+      "y": 217,
+      "width": 224,
+      "height": 41,
+      "label": "Word 2"
+    },
+    {
+      "id": "word_2",
+      "type": "word",
+      "x": 641,
+      "y": 225,
+      "width": 121,
+      "height": 22,
+      "label": "Word 3"
+    },
+    {
+      "id": "word_3",
+      "type": "word",
+      "x": 573,
+      "y": 454,
+      "width": 276,
+      "height": 40,
+      "label": "Word 4"
+    },
+    {
+      "id": "word_4",
+      "type": "word",
+      "x": 302,
+      "y": 458,
+      "width": 205,
+      "height": 34,
+      "label": "Word 5"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 72,
+      "y": 463,
+      "width": 85,
+      "height": 25,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 75,
+      "y": 684,
+      "width": 120,
+      "height": 32,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 372,
+      "y": 684,
+      "width": 99,
+      "height": 32,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 578,
+      "y": 687,
+      "width": 270,
+      "height": 31,
+      "label": "Word 9"
+    }
+  ]
+}

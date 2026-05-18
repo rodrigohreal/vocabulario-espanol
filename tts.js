@@ -31,15 +31,49 @@ const TTS = (() => {
     }
   }
 
+  // Keywords that mark high-quality / neural voices across platforms.
+  // iOS/macOS:  "Mónica (Enhanced)", "Paulina (Premium)"
+  // Edge:       "Microsoft ... Online (Natural) - Spanish (Spain)"
+  // Chrome:     "Google español"
+  const _QUALITY_RX = /(premium|enhanced|neural|natural|online|wavenet|studio)/i;
+
+  function _scoreVoice(v) {
+    const name = (v.name || '').toLowerCase();
+    const lang = (v.lang || '').toLowerCase();
+    if (!lang.startsWith('es')) return -1;
+
+    let s = 0;
+    // Locale preference: es-ES first, then es-MX, then any es-*
+    if (lang === 'es-es') s += 10;
+    else if (lang === 'es-mx') s += 8;
+    else if (lang.startsWith('es-')) s += 6;
+    else s += 4;
+
+    // Big boost for explicitly natural/neural voices.
+    if (_QUALITY_RX.test(name)) s += 30;
+
+    // Google + Microsoft cloud voices are dramatically better than eSpeak.
+    if (name.includes('google')) s += 20;
+    if (name.includes('microsoft')) s += 12;
+
+    // Cloud-rendered voices on Chrome/Edge mark themselves as non-local.
+    if (v.localService === false) s += 8;
+
+    // Penalize the obvious robotic defaults.
+    if (name.includes('espeak')) s -= 40;
+    if (name.includes('compact')) s -= 10; // iOS "compact" voices = low-quality
+
+    return s;
+  }
+
   function _pickVoice() {
     if (!_supported()) return;
     const voices = speechSynthesis.getVoices();
     if (!voices.length) return;
-    _voice = voices.find(v => v.lang === 'es-ES')
-          || voices.find(v => v.lang === 'es-MX')
-          || voices.find(v => v.lang && v.lang.startsWith('es-'))
-          || voices.find(v => v.lang && v.lang.toLowerCase().startsWith('es'))
-          || null;
+    const spanish = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('es'));
+    if (!spanish.length) { _voice = null; return; }
+    spanish.sort((a, b) => _scoreVoice(b) - _scoreVoice(a));
+    _voice = spanish[0];
   }
 
   // Voices load asynchronously on some browsers (notably Chrome).

@@ -2502,12 +2502,12 @@ html, body {
   padding: 0;
 }
 
-/* Small speaker button on pick options + fill tiles */
+/* Small speaker button on pick options + fill tiles.
+   Laid out inline so it never overlaps the word: centered below the
+   text on pick cards, left of the word on fill tiles. */
 .lex-option-speak,
 .lex-tile-speak {
-  position: absolute;
-  top: 4px;
-  right: 4px;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   padding: 0;
@@ -2518,15 +2518,23 @@ html, body {
   border-radius: 6px;
   color: var(--text-faint);
   cursor: pointer;
-  opacity: 0.55;
+  opacity: 0.6;
   transition: opacity 0.12s, background 0.12s, transform 0.08s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
+.lex-option-speak { margin-top: 2px; }
 .lex-option-speak:hover,
 .lex-tile-speak:hover { opacity: 1; background: var(--card-2); }
 .lex-option-speak:active,
 .lex-tile-speak:active { transform: scale(0.9); }
 
-.lex-tile-with-speak { position: relative; padding-right: 28px; }
+.lex-tile-with-speak {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 .lex-tile-with-speak .lex-tile-text { display: inline-block; }
 
 .lex-bubble {

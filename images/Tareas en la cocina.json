@@ -1,0 +1,113 @@
+{
+  "image_file": "Tareas en la cocina.png",
+  "rectangles": [
+    {
+      "id": "word_0",
+      "type": "word",
+      "x": 94,
+      "y": 233,
+      "width": 101,
+      "height": 32,
+      "label": "Word 1"
+    },
+    {
+      "id": "word_1",
+      "type": "word",
+      "x": 375,
+      "y": 235,
+      "width": 93,
+      "height": 28,
+      "label": "Word 2"
+    },
+    {
+      "id": "word_2",
+      "type": "word",
+      "x": 658,
+      "y": 230,
+      "width": 102,
+      "height": 35,
+      "label": "Word 3"
+    },
+    {
+      "id": "word_3",
+      "type": "word",
+      "x": 946,
+      "y": 234,
+      "width": 130,
+      "height": 31,
+      "label": "Word 4"
+    },
+    {
+      "id": "word_4",
+      "type": "word",
+      "x": 946,
+      "y": 478,
+      "width": 103,
+      "height": 37,
+      "label": "Word 5"
+    },
+    {
+      "id": "word_5",
+      "type": "word",
+      "x": 644,
+      "y": 480,
+      "width": 138,
+      "height": 24,
+      "label": "Word 6"
+    },
+    {
+      "id": "word_6",
+      "type": "word",
+      "x": 331,
+      "y": 470,
+      "width": 192,
+      "height": 43,
+      "label": "Word 7"
+    },
+    {
+      "id": "word_7",
+      "type": "word",
+      "x": 97,
+      "y": 474,
+      "width": 89,
+      "height": 32,
+      "label": "Word 8"
+    },
+    {
+      "id": "word_8",
+      "type": "word",
+      "x": 90,
+      "y": 715,
+      "width": 102,
+      "height": 36,
+      "label": "Word 9"
+    },
+    {
+      "id": "word_9",
+      "type": "word",
+      "x": 378,
+      "y": 717,
+      "width": 93,
+      "height": 34,
+      "label": "Word 10"
+    },
+    {
+      "id": "word_10",
+      "type": "word",
+      "x": 649,
+      "y": 720,
+      "width": 117,
+      "height": 28,
+      "label": "Word 11"
+    },
+    {
+      "id": "word_11",
+      "type": "word",
+      "x": 950,
+      "y": 720,
+      "width": 79,
+      "height": 30,
+      "label": "Word 12"
+    }
+  ]
+}

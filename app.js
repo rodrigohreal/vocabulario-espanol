@@ -2711,7 +2711,7 @@ function renderFillExercise(root, ex) {
   shuffled.forEach(opt => {
     const tile = document.createElement('div');
     tile.className = 'lex-tile lex-tile-with-speak';
-    tile.innerHTML = `<span class="lex-tile-text"></span><button type="button" class="lex-tile-speak" aria-label="Escuchar">🔊</button>`;
+    tile.innerHTML = `<button type="button" class="lex-tile-speak" aria-label="Escuchar">🔊</button><span class="lex-tile-text"></span>`;
     tile.querySelector('.lex-tile-text').textContent = opt;
     tile.addEventListener('click', () => {
       haptic.light();

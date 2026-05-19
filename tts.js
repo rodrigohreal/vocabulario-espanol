@@ -18,7 +18,9 @@
 
 const TTS = (() => {
   const AUDIO_PREF_KEY = 'audio_enabled';
-  const MANIFEST_URL   = 'audio/manifest.json';
+  // Bump the ?v= when the manifest's contents change so browsers / GitHub
+  // Pages don't serve a stale cached copy missing newly-added entries.
+  const MANIFEST_URL   = 'audio/manifest.json?v=2';
   const AUDIO_DIR      = 'audio/';
 
   let _voice = null;            // chosen Web Speech voice (fallback path)
@@ -67,7 +69,9 @@ const TTS = (() => {
   function _loadManifest() {
     if (_manifestReady || _manifest !== null) return;
     _manifest = {}; // treat as empty until fetch resolves
-    fetch(MANIFEST_URL, { cache: 'force-cache' })
+    // Default fetch cache mode → browser sends a conditional GET, so the
+    // manifest refreshes whenever the server's copy changes.
+    fetch(MANIFEST_URL)
       .then(r => r.ok ? r.json() : null)
       .then(json => {
         if (json && typeof json === 'object') _manifest = json;
@@ -136,7 +140,7 @@ const TTS = (() => {
   _loadManifest();
 
   // ── Playback paths ────────────────────────────────────────
-  function _playMp3(filename, opts) {
+  function _playMp3(filename, opts, fallbackText) {
     let el = _audioCache.get(filename);
     if (!el) {
       el = new Audio(AUDIO_DIR + filename);
@@ -149,10 +153,17 @@ const TTS = (() => {
       el.playbackRate = opts.rate ?? 1;
       el.currentTime = 0;
       const p = el.play();
-      // Some browsers reject if no user gesture yet — fail silently.
-      if (p && typeof p.catch === 'function') p.catch(() => {});
+      if (p && typeof p.catch === 'function') {
+        // If the MP3 can't load (404, decode error, etc.) fall back to
+        // Web Speech so the user still hears _something_ rather than silence.
+        p.catch(() => {
+          _audioCache.delete(filename);
+          if (fallbackText) _speakWebSpeech(fallbackText, opts);
+        });
+      }
     } catch (e) {
       console.warn('TTS.play (mp3) failed', e);
+      if (fallbackText) _speakWebSpeech(fallbackText, opts);
     }
   }
 
@@ -185,7 +196,7 @@ const TTS = (() => {
     const key = _normalize(text);
     const filename = _manifest && _manifest[key];
     if (filename) {
-      _playMp3(filename, opts);
+      _playMp3(filename, opts, text);
       return;
     }
     _speakWebSpeech(text, opts);

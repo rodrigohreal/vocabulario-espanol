@@ -2436,6 +2436,19 @@ function updateLessonProgressBar() {
   $('lesson-progress').style.width = ((cur / total) * 100) + '%';
 }
 
+// Assemble a fill-in-the-blank exercise's `sentence` array into a single
+// readable string with the blank filled in. Matches the Python extractor
+// in tools/generate_audio.py so the manifest lookup hits.
+//   ["El cielo es", null, "."]  +  "azul"  →  "El cielo es azul."
+function buildFillSentence(ex, fill) {
+  if (!ex || !Array.isArray(ex.sentence)) return fill || '';
+  const parts = ex.sentence.map(p => p === null ? fill : p).filter(p => p);
+  let text = parts.join(' ');
+  text = text.replace(/\s+([.,!?;:])/g, '$1');
+  text = text.replace(/\s+/g, ' ').trim();
+  return text;
+}
+
 // Collect every Spanish string an exercise might play, so we can warm the
 // HTTP cache before the user taps a speaker button.
 function collectExerciseSpokenStrings(ex) {
@@ -2448,6 +2461,9 @@ function collectExerciseSpokenStrings(ex) {
   } else if (ex.t === 'fill') {
     (ex.opts || []).forEach(o => o && out.push(o));
     if (ex.target) out.push(ex.target);
+    // Full sentence with the target filled in — spoken on feedback.
+    const target = ex.target || (ex.targets && ex.targets[0]);
+    if (target) out.push(buildFillSentence(ex, target));
   } else if (ex.t === 'typed') {
     if (ex.answer) out.push(ex.answer);
   }
@@ -2857,6 +2873,7 @@ function onCheckPressed() {
   let correct = false;
   let userAnswerText = '';
   let correctText = '';
+  let spokenText = '';   // what TTS plays — may differ from the displayed answer
 
   if (ex.t === 'pick') {
     correct = lessonState.pickChoice === ex.correct;
@@ -2876,6 +2893,8 @@ function onCheckPressed() {
     correct = validTargets.includes(lessonState.fillChoice);
     userAnswerText = lessonState.fillChoice || '';
     correctText = ex.target || validTargets[0];
+    // Speak the full sentence with the answer filled in, not just the word.
+    spokenText = buildFillSentence(ex, correctText);
   } else if (ex.t === 'typed') {
     const validAnswers = ex.answers || [ex.answer];
     const userNorm = normalizeAnswer(lessonState.typedAnswer);
@@ -2884,7 +2903,7 @@ function onCheckPressed() {
     correctText = ex.answer || validAnswers[0];
   }
 
-  showFeedback(correct, correctText);
+  showFeedback(correct, correctText, spokenText || correctText);
   if (!correct) {
     lessonState.wrong++;
     loseHeart();
@@ -2903,7 +2922,7 @@ function arraysEqual(a, b) {
   return true;
 }
 
-function showFeedback(correct, correctText) {
+function showFeedback(correct, correctText, spokenText) {
   const fb = $('lesson-feedback');
   fb.classList.remove('hidden');
   fb.classList.toggle('correct', correct);
@@ -2923,7 +2942,10 @@ function showFeedback(correct, correctText) {
   if (correct) haptic.success(); else haptic.error();
   // Speak the canonical Spanish answer so the learner hears correct pronunciation,
   // whether they got it right or wrong. Match exercises have no correctText.
-  if (correctText) TTS.speak(correctText);
+  // For fill exercises spokenText is the full sentence with the blank filled
+  // in, so the learner hears "El cielo es azul." rather than just "azul".
+  const toSpeak = spokenText || correctText;
+  if (toSpeak) TTS.speak(toSpeak);
   // React with the lesson's mini axolotl in the speech bubble
   reactLessonMiniAxolotl(correct);
 }

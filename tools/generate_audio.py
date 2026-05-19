@@ -37,6 +37,7 @@ import asyncio
 import hashlib
 import json
 import os
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -82,6 +83,21 @@ def _is_spanish(text: str) -> bool:
     return not any("Ѐ" <= ch <= "ӿ" for ch in text)
 
 
+def _assemble_fill_sentence(sentence: list, fill: str) -> str:
+    """Reproduce the JS buildFillSentence() helper exactly, so both sides
+    produce the same manifest key.
+        ["El cielo es", None, "."]  +  "azul"  →  "El cielo es azul."
+    """
+    if not isinstance(sentence, list):
+        return fill or ""
+    parts = [fill if p is None else p for p in sentence]
+    parts = [p for p in parts if p]
+    text = " ".join(parts)
+    text = re.sub(r"\s+([.,!?;:])", r"\1", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
 def collect_spanish_strings() -> set[str]:
     """Walk every unit JSON and return the set of strings the runtime speaks."""
     texts: set[str] = set()
@@ -119,7 +135,14 @@ def collect_spanish_strings() -> set[str]:
                 elif t == "fill":
                     for opt in ex.get("opts", []) or []:
                         add(opt)
-                    add(ex.get("target"))
+                    target = ex.get("target")
+                    add(target)
+                    # Also add the assembled sentence with the target filled in,
+                    # because the runtime speaks the full sentence on feedback.
+                    sentence = ex.get("sentence")
+                    fill_target = target or (ex.get("targets") or [None])[0]
+                    if sentence and fill_target:
+                        add(_assemble_fill_sentence(sentence, fill_target))
 
                 elif t == "typed":
                     add(ex.get("answer"))

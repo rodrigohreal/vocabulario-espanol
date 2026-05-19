@@ -1,40 +1,85 @@
 /* ═══════════════════════════════════════════════════════════
-   TTS — Spanish text-to-speech via the Web Speech API
+   TTS — Spanish text-to-speech
    ────────────────────────────────────────────────────────────
-   Zero-dependency, browser-native. Picks the first es-ES voice
-   (falling back to any es-*), caches it, and exposes a single
-   `speak(text)` helper.
+   Plays a pre-generated MP3 from `audio/` when one exists for
+   the requested text (high-quality Google Cloud TTS, rendered
+   once by tools/generate_audio.py), and falls back to the
+   browser's Web Speech API when no MP3 is available.
+
+   The MP3 lookup table lives in `audio/manifest.json`:
+     { "<normalized text>": "<filename>.mp3", ... }
+   Keys are lowercased, NFC-normalized, whitespace-collapsed.
+   The Python generator and this file MUST agree on that
+   normalization.
 
    Audio can be globally muted via `TTS.setEnabled(false)`; the
-   preference persists in localStorage as `audio_enabled` (a
-   device-scoped setting, not synced — environment noise / device
-   audio support vary per device).
+   preference persists in localStorage as `audio_enabled`.
    ════════════════════════════════════════════════════════ */
 
 const TTS = (() => {
   const AUDIO_PREF_KEY = 'audio_enabled';
-  let _voice = null;
+  const MANIFEST_URL   = 'audio/manifest.json';
+  const AUDIO_DIR      = 'audio/';
 
+  let _voice = null;            // chosen Web Speech voice (fallback path)
+  let _manifest = null;          // { normalizedText: filename }
+  let _manifestReady = false;    // true once the fetch resolves (succeed or fail)
+  let _audioCache = new Map();   // filename -> HTMLAudioElement
+  let _currentAudio = null;      // currently-playing element, so we can stop it
+
+  // ── Capability checks ─────────────────────────────────────
   function _supported() {
     return typeof window !== 'undefined' && 'speechSynthesis' in window;
   }
 
+  // ── Persisted mute toggle ─────────────────────────────────
   function isEnabled() {
-    // Default ON; only the explicit string 'false' disables.
     return localStorage.getItem(AUDIO_PREF_KEY) !== 'false';
   }
 
   function setEnabled(on) {
     localStorage.setItem(AUDIO_PREF_KEY, on ? 'true' : 'false');
-    if (!on && _supported()) {
+    if (!on) _stopAll();
+  }
+
+  function _stopAll() {
+    if (_currentAudio) {
+      try { _currentAudio.pause(); _currentAudio.currentTime = 0; } catch {}
+      _currentAudio = null;
+    }
+    if (_supported()) {
       try { speechSynthesis.cancel(); } catch {}
     }
   }
 
-  // Keywords that mark high-quality / neural voices across platforms.
-  // iOS/macOS:  "Mónica (Enhanced)", "Paulina (Premium)"
-  // Edge:       "Microsoft ... Online (Natural) - Spanish (Spain)"
-  // Chrome:     "Google español"
+  // ── Normalization — MUST match tools/generate_audio.py ────
+  function _normalize(text) {
+    if (text == null) return '';
+    return String(text)
+      .normalize('NFC')
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, ' ');
+  }
+
+  // ── Manifest loader (lazy, fire-and-forget on first use) ──
+  function _loadManifest() {
+    if (_manifestReady || _manifest !== null) return;
+    _manifest = {}; // treat as empty until fetch resolves
+    fetch(MANIFEST_URL, { cache: 'force-cache' })
+      .then(r => r.ok ? r.json() : null)
+      .then(json => {
+        if (json && typeof json === 'object') _manifest = json;
+        _manifestReady = true;
+      })
+      .catch(() => { _manifestReady = true; /* offline / no file → silent fallback */ });
+  }
+
+  // ── Voice picker (fallback Web Speech path) ───────────────
+  // Keywords marking high-quality / neural voices across platforms:
+  //   iOS / macOS: "Mónica (Enhanced)", "Paulina (Premium)"
+  //   Edge:        "Microsoft … Online (Natural) - Spanish (Spain)"
+  //   Chrome:      "Google español"
   const _QUALITY_RX = /(premium|enhanced|neural|natural|online|wavenet|studio)/i;
 
   function _scoreVoice(v) {
@@ -43,25 +88,17 @@ const TTS = (() => {
     if (!lang.startsWith('es')) return -1;
 
     let s = 0;
-    // Locale preference: es-ES first, then es-MX, then any es-*
-    if (lang === 'es-es') s += 10;
-    else if (lang === 'es-mx') s += 8;
-    else if (lang.startsWith('es-')) s += 6;
-    else s += 4;
+    if (lang === 'es-es')             s += 10;
+    else if (lang === 'es-mx')        s += 8;
+    else if (lang.startsWith('es-'))  s += 6;
+    else                              s += 4;
 
-    // Big boost for explicitly natural/neural voices.
-    if (_QUALITY_RX.test(name)) s += 30;
-
-    // Google + Microsoft cloud voices are dramatically better than eSpeak.
-    if (name.includes('google')) s += 20;
-    if (name.includes('microsoft')) s += 12;
-
-    // Cloud-rendered voices on Chrome/Edge mark themselves as non-local.
-    if (v.localService === false) s += 8;
-
-    // Penalize the obvious robotic defaults.
-    if (name.includes('espeak')) s -= 40;
-    if (name.includes('compact')) s -= 10; // iOS "compact" voices = low-quality
+    if (_QUALITY_RX.test(name))                   s += 30;
+    if (name.includes('google'))                  s += 20;
+    if (name.includes('microsoft'))               s += 12;
+    if (v.localService === false)                 s += 8;
+    if (name.includes('espeak'))                  s -= 40;
+    if (name.includes('compact'))                 s -= 10;
 
     return s;
   }
@@ -82,35 +119,79 @@ const TTS = (() => {
     if (!_voice && typeof speechSynthesis.addEventListener === 'function') {
       speechSynthesis.addEventListener('voiceschanged', _pickVoice);
     } else if (!_voice) {
-      // Older fallback
       speechSynthesis.onvoiceschanged = _pickVoice;
     }
   }
 
-  /**
-   * Speak the given Spanish text aloud.
-   * Silently no-ops if audio is disabled, the API is missing,
-   * or no Spanish voice was found.
-   *
-   * @param {string} text
-   * @param {{ rate?: number, pitch?: number, lang?: string }} [opts]
-   */
-  function speak(text, opts = {}) {
-    if (!text || !isEnabled() || !_supported()) return;
+  // Kick off manifest fetch as soon as the module loads.
+  _loadManifest();
+
+  // ── Playback paths ────────────────────────────────────────
+  function _playMp3(filename, opts) {
+    let el = _audioCache.get(filename);
+    if (!el) {
+      el = new Audio(AUDIO_DIR + filename);
+      el.preload = 'auto';
+      _audioCache.set(filename, el);
+    }
+    _stopAll();
+    _currentAudio = el;
+    try {
+      el.playbackRate = opts.rate ?? 1;
+      el.currentTime = 0;
+      const p = el.play();
+      // Some browsers reject if no user gesture yet — fail silently.
+      if (p && typeof p.catch === 'function') p.catch(() => {});
+    } catch (e) {
+      console.warn('TTS.play (mp3) failed', e);
+    }
+  }
+
+  function _speakWebSpeech(text, opts) {
+    if (!_supported()) return;
     try {
       const u = new SpeechSynthesisUtterance(String(text));
       if (_voice) u.voice = _voice;
       u.lang  = opts.lang  || (_voice && _voice.lang) || 'es-ES';
       u.rate  = opts.rate  ?? 0.9;
       u.pitch = opts.pitch ?? 1;
-      speechSynthesis.cancel(); // avoid overlapping utterances
+      speechSynthesis.cancel();
       speechSynthesis.speak(u);
     } catch (e) {
-      console.warn('TTS.speak failed', e);
+      console.warn('TTS.speak (web speech) failed', e);
     }
+  }
+
+  /**
+   * Speak the given Spanish text aloud.
+   * Prefers a pre-rendered MP3 when one exists; otherwise falls back to
+   * the browser's Web Speech API. Silent if audio is globally disabled.
+   *
+   * @param {string} text
+   * @param {{ rate?: number, pitch?: number, lang?: string }} [opts]
+   */
+  function speak(text, opts = {}) {
+    if (!text || !isEnabled()) return;
+
+    const key = _normalize(text);
+    const filename = _manifest && _manifest[key];
+    if (filename) {
+      _playMp3(filename, opts);
+      return;
+    }
+    _speakWebSpeech(text, opts);
   }
 
   function hasVoice() { return !!_voice; }
 
-  return { speak, isEnabled, setEnabled, hasVoice };
+  // Useful for debugging from the console.
+  function _debug() {
+    return {
+      manifestReady: _manifestReady,
+      manifestSize: _manifest ? Object.keys(_manifest).length : 0,
+      voice: _voice && { name: _voice.name, lang: _voice.lang, local: _voice.localService },
+    };
+  }
+
+  return { speak, isEnabled, setEnabled, hasVoice, _debug };
 })();

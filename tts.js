@@ -26,6 +26,7 @@ const TTS = (() => {
   let _manifestReady = false;    // true once the fetch resolves (succeed or fail)
   let _audioCache = new Map();   // filename -> HTMLAudioElement
   let _currentAudio = null;      // currently-playing element, so we can stop it
+  let _pendingPreload = [];      // strings queued before manifest was ready
 
   // ── Capability checks ─────────────────────────────────────
   function _supported() {
@@ -70,9 +71,17 @@ const TTS = (() => {
       .then(r => r.ok ? r.json() : null)
       .then(json => {
         if (json && typeof json === 'object') _manifest = json;
-        _manifestReady = true;
       })
-      .catch(() => { _manifestReady = true; /* offline / no file → silent fallback */ });
+      .catch(() => { /* offline / no file → silent fallback */ })
+      .finally(() => {
+        _manifestReady = true;
+        // Drain any preload requests that came in before manifest was ready.
+        if (_pendingPreload.length) {
+          const queued = _pendingPreload;
+          _pendingPreload = [];
+          preload(queued);
+        }
+      });
   }
 
   // ── Voice picker (fallback Web Speech path) ───────────────
@@ -182,6 +191,37 @@ const TTS = (() => {
     _speakWebSpeech(text, opts);
   }
 
+  /**
+   * Warm the HTTP cache for `text` so a subsequent speak() plays
+   * without the first-fetch delay. Cheap to call repeatedly — once
+   * the Audio element is cached we don't re-fetch.
+   *
+   * Accepts a single string or an array of strings; nullish / non-
+   * Spanish entries are ignored silently.
+   */
+  function preload(textOrList) {
+    if (!isEnabled()) return;
+    const list = Array.isArray(textOrList) ? textOrList : [textOrList];
+    // If the manifest hasn't loaded yet, queue and bail — _loadManifest()
+    // will replay these once it resolves.
+    if (!_manifestReady) {
+      for (const t of list) if (t) _pendingPreload.push(t);
+      return;
+    }
+    for (const text of list) {
+      if (!text) continue;
+      const key = _normalize(text);
+      if (!key) continue;
+      const filename = _manifest && _manifest[key];
+      if (!filename) continue;            // Web-Speech fallback can't be preloaded
+      if (_audioCache.has(filename)) continue;
+      const el = new Audio(AUDIO_DIR + filename);
+      el.preload = 'auto';
+      _audioCache.set(filename, el);
+      try { el.load(); } catch {}         // kicks off the network fetch
+    }
+  }
+
   function hasVoice() { return !!_voice; }
 
   // Useful for debugging from the console.
@@ -193,5 +233,5 @@ const TTS = (() => {
     };
   }
 
-  return { speak, isEnabled, setEnabled, hasVoice, _debug };
+  return { speak, preload, isEnabled, setEnabled, hasVoice, _debug };
 })();

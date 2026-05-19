@@ -2436,6 +2436,24 @@ function updateLessonProgressBar() {
   $('lesson-progress').style.width = ((cur / total) * 100) + '%';
 }
 
+// Collect every Spanish string an exercise might play, so we can warm the
+// HTTP cache before the user taps a speaker button.
+function collectExerciseSpokenStrings(ex) {
+  const out = [];
+  if (ex.t === 'pick') {
+    (ex.opts || []).forEach(o => o && o.txt && out.push(o.txt));
+  } else if (ex.t === 'translate') {
+    if (ex.answer) out.push(ex.answer.join(' '));
+    (ex.answers || []).forEach(alt => out.push(alt.join(' ')));
+  } else if (ex.t === 'fill') {
+    (ex.opts || []).forEach(o => o && out.push(o));
+    if (ex.target) out.push(ex.target);
+  } else if (ex.t === 'typed') {
+    if (ex.answer) out.push(ex.answer);
+  }
+  return out;
+}
+
 function renderCurrentExercise() {
   const ex = lessonState.exercises[lessonState.current];
   if (!ex) return completeLesson();
@@ -2462,6 +2480,12 @@ function renderCurrentExercise() {
 
   const root = $('lesson-exercise');
   root.innerHTML = '';
+
+  // Warm the audio cache for this exercise + the next one, so taps feel
+  // instant instead of incurring a ~1s first-fetch delay each time.
+  TTS.preload(collectExerciseSpokenStrings(ex));
+  const next = lessonState.exercises[lessonState.current + 1];
+  if (next) TTS.preload(collectExerciseSpokenStrings(next));
 
   if (ex.t === 'pick')           renderPickExercise(root, ex);
   else if (ex.t === 'translate') renderTranslateExercise(root, ex);
